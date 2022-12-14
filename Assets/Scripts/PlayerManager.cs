@@ -29,6 +29,10 @@ public class PlayerManager : MonoBehaviour
     //Spawns/Respawn player
     private void Spawn()
     {
+        if (!PV.IsMine)
+        {
+            return;
+        }
         int randomNumber = Random.Range(0, spawnPoints.Count);
         Transform spawnPoint = spawnPoints[randomNumber];
 
