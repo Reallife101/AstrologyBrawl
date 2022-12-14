@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 2212813536629527073}
   - component: {fileID: 2476616717886758476}
   - component: {fileID: 3585974711449169387}
-  - component: {fileID: 8006069860379282847}
+  - component: {fileID: 7328130180652725418}
   m_Layer: 7
   m_Name: PlayerPrefab1
   m_TagString: Untagged
@@ -237,12 +237,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raycastOrigin: {fileID: 7327343584912840211}
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 128
   raycastDistance: 1000
   gunDamage: 12
---- !u!114 &8006069860379282847
+--- !u!114 &7328130180652725418
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -251,9 +248,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3016257482074367028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b58d44e380df0704391dff0a059b2459, type: 3}
+  m_Script: {fileID: 11500000, guid: a4981084ca802d44cb8a63c46e20f981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myPV: {fileID: 0}
 --- !u!1 &4785156661360743209
 GameObject:
   m_ObjectHideFlags: 0

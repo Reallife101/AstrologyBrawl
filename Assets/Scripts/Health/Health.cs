@@ -4,13 +4,13 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
-public class Health : MonoBehaviourPunCallbacks, IDamageable
+public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
 {
     [SerializeField] const float MaxHealth = 100f;
 
     private float currentHealth = MaxHealth;
 
-    private PhotonView myPV;
+    public PhotonView myPV;
 
     private void Awake()
     {
@@ -24,7 +24,7 @@ public class Health : MonoBehaviourPunCallbacks, IDamageable
     }
 
     [PunRPC]
-    void RPC_TakeDamage(float damage)
+    public void RPC_TakeDamage(float damage)
     {
         if (!myPV.IsMine)
             return;
@@ -37,9 +37,6 @@ public class Health : MonoBehaviourPunCallbacks, IDamageable
         }
     }
 
-    void Die()
-    {
-
-    }
+    public abstract void Die();
 
 }
