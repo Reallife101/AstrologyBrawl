@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour
 {
+    [SerializeField] Ability ability1;
+    
     public PlayerManager myPM;
     private PhotonView myPV;
     private Rigidbody2D myRB;
@@ -32,6 +34,11 @@ public class playerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.B) & PhotonNetwork.IsMasterClient)
         {
             PhotonNetwork.LoadLevel("Lobby");
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            ability1.Use();
         }
     }
 }
