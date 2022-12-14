@@ -11,6 +11,8 @@ public class PlayerManager : MonoBehaviour
     private GameObject spawnPointParent;
     private List<Transform> spawnPoints = new List<Transform>();
 
+    GameObject controller;
+
 
     private void Awake()
     {
@@ -23,20 +25,25 @@ public class PlayerManager : MonoBehaviour
     }
     private void Start()
     {
-        Spawn();
+        if (PV.IsMine)
+        {
+            Spawn();
+        }
     }
 
     //Spawns/Respawn player
     private void Spawn()
     {
-        if (!PV.IsMine)
-        {
-            return;
-        }
         int randomNumber = Random.Range(0, spawnPoints.Count);
         Transform spawnPoint = spawnPoints[randomNumber];
 
         GameObject playerToSpawn = playerPrefabs[(int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]];
-        PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
+        controller = PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
+    }
+
+    public void Die()
+    {
+        PhotonNetwork.Destroy(controller);
+        Spawn();
     }
 }
