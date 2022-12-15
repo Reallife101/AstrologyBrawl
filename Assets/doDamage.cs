@@ -8,12 +8,38 @@ public class doDamage : MonoBehaviour
 {
     [SerializeField] float damage;
     [SerializeField] bool destroyOnTouch;
+    [SerializeField] float lifeTime;
+
+    private PhotonView pv;
+
+    private void Awake()
+    {
+        pv = GetComponent<PhotonView>();
+        StartCoroutine(WaitAndKill(lifeTime));
+    }
+
+    IEnumerator WaitAndKill(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        if (pv.IsMine)
+            PhotonNetwork.Destroy(gameObject);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!GetComponent<PhotonView>().IsMine)
+        if (!pv.IsMine)
             return;
 
-        collision.gameObject.gameObject.GetComponent<IDamageable>()?.TakeDamage(damage);
-        PhotonNetwork.Destroy(gameObject);
+        IDamageable dmg = collision.gameObject.gameObject.GetComponent<IDamageable>();
+
+        if (dmg != null)
+        {
+            dmg.TakeDamage(damage);
+            
+            if (destroyOnTouch)
+            {
+                PhotonNetwork.Destroy(gameObject);
+            }
+        }
     }
 }
