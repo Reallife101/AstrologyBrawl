@@ -101,6 +101,10 @@ public class playerController : MonoBehaviour
     {
         //Grounded movement
         movementVector = playerMove.ReadValue<Vector2>();
+        if (movementVector.x != 0)
+        {
+            transform.localScale = new Vector3(Mathf.Sign(movementVector.x), transform.localScale.y, transform.localScale.z);
+        }
         Vector3 VelocityChange = new Vector2(Time.fixedDeltaTime * moveSpeed * 10 * movementVector.x, myRB.velocity.y);
         myRB.velocity = Vector3.SmoothDamp(myRB.velocity, VelocityChange, ref StartVelocity, movementSmoothing);
 
