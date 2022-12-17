@@ -3,12 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Burst.CompilerServices;
 using UnityEngine;
+using UnityEngine.InputSystem.HID;
 
 public class doDamage : MonoBehaviour
 {
     [SerializeField] float damage;
     [SerializeField] bool destroyOnTouch;
     [SerializeField] float lifeTime;
+
+    public int ownerID;
 
     private PhotonView pv;
 
@@ -25,9 +28,9 @@ public class doDamage : MonoBehaviour
             PhotonNetwork.Destroy(gameObject);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!pv.IsMine)
+        if (!pv.IsMine || collision.gameObject.GetComponent<PhotonView>()?.GetInstanceID() == ownerID)
             return;
 
         IDamageable dmg = collision.gameObject.gameObject.GetComponent<IDamageable>();
@@ -35,11 +38,12 @@ public class doDamage : MonoBehaviour
         if (dmg != null)
         {
             dmg.TakeDamage(damage);
-            
+
             if (destroyOnTouch)
             {
                 PhotonNetwork.Destroy(gameObject);
             }
         }
     }
+
 }

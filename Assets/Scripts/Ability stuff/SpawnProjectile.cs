@@ -16,7 +16,16 @@ public class SpawnProjectile : Ranged
     void spawn()
     {
         GameObject pro = PhotonNetwork.Instantiate(projectile.name, spawnOrigin.position, Quaternion.identity);
+
+        //If spawned object has doDamage and spawner has a photon view
+        PhotonView pv = GetComponent<PhotonView>();
+        doDamage dm = pro.GetComponent<doDamage>();
         
+        if (pv && dm)
+        {
+            dm.ownerID = pv.GetInstanceID();
+        }
+
         // If the character faces the other direction, flip the scale and right transform
         if (transform.localScale.x<0)
         {
