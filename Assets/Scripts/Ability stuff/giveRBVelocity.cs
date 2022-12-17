@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class giveRBVelocity : MonoBehaviour
 {
-    public Vector2 motion;
-    private void Awake()
+    public float speed;
+
+    private void Start()
     {
-        GetComponent<Rigidbody2D>().velocity = motion;
+        GetComponent<Rigidbody2D>().velocity = transform.right * speed;
     }
 }
