@@ -6,13 +6,8 @@ public class giveRBVelocity : MonoBehaviour
 {
     public float speed;
 
-    Rigidbody2D rb;
-    private void Awake()
+    private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-    }
-    void Update()
-    {
-        rb.velocity = transform.right*speed;
+        GetComponent<Rigidbody2D>().velocity = transform.right * speed;
     }
 }
