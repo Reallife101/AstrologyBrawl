@@ -15,5 +15,5 @@ MonoBehaviour:
   damage: 70
   attackAnimationName: Attack3
   duration: 0.5
-  inputBufferTime: 0.25
+  inputBufferTime: 0.35
   NextAttackFrameSO: {fileID: 0}
