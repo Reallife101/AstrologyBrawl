@@ -10,6 +10,7 @@ public class doDamage : MonoBehaviour
     [SerializeField] float damage;
     [SerializeField] bool destroyOnTouch;
     [SerializeField] float lifeTime;
+    [SerializeField] bool hasInfiniteLifeTime;
 
     public int ownerID;
 
@@ -18,7 +19,10 @@ public class doDamage : MonoBehaviour
     private void Awake()
     {
         pv = GetComponent<PhotonView>();
-        StartCoroutine(WaitAndKill(lifeTime));
+        if (!hasInfiniteLifeTime)
+        {
+            StartCoroutine(WaitAndKill(lifeTime));
+        }
     }
 
     IEnumerator WaitAndKill(float waitTime)
@@ -38,6 +42,7 @@ public class doDamage : MonoBehaviour
         if (dmg != null)
         {
             dmg.TakeDamage(damage);
+            Debug.Log("Dealt: " + damage);
 
             if (destroyOnTouch)
             {

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da60d73c482bb39469dd75590f34006c, type: 3}
   m_Name: AQ-LA-2
   m_EditorClassIdentifier: 
-  damage: 0
-  attackAnimationName: 
-  duration: 0
-  inputBufferTime: 0
-  NextAttackFrameSO: {fileID: 0}
+  damage: 40
+  attackAnimationName: Attack2
+  duration: 0.5
+  inputBufferTime: 0.25
+  NextAttackFrameSO: {fileID: 11400000, guid: 77da65241b169524cb97801da3d79825, type: 2}
