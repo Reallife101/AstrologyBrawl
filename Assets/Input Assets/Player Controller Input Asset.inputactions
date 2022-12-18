@@ -1,5 +1,5 @@
 {
-    "name": "Player Controller",
+    "name": "Player Controller Input Asset",
     "maps": [
         {
             "name": "Player",
@@ -27,6 +27,15 @@
                     "name": "Ability1",
                     "type": "Button",
                     "id": "a23a8536-24f7-49de-880a-be4d7d4aa1dd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LightAttack",
+                    "type": "Button",
+                    "id": "aed7e0f0-a099-422e-9e6f-b28ad139c779",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -103,11 +112,22 @@
                 {
                     "name": "",
                     "id": "f2430d5b-367a-490d-a0ae-ae1d40c88140",
-                    "path": "<Mouse>/leftButton",
+                    "path": "<Keyboard>/1",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Ability1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5da78c31-2c3a-4ab2-a900-cdd06361505c",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LightAttack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

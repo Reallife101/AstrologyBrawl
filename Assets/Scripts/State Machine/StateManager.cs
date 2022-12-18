@@ -5,7 +5,7 @@ using Photon.Pun;
 
 public class StateManager : MonoBehaviour
 {
-    private enum States
+    public enum States
     {
         Idle,
         GroundLight,
@@ -17,9 +17,9 @@ public class StateManager : MonoBehaviour
     [SerializeField] private AttackFrameSO firstLightAttack;
     private AttackFrameSO currentAttack;
     private PhotonView myPV;
-    private States currentState;
+    public States currentState { get; private set; }
     [SerializeField] private doDamage hitbox;
-    private Animator playerAnimator;
+    [SerializeField] private Animator playerAnimator;
     //Attack state values
     private float inputBufferTimeRemaining;
     private float attackTimeRemaining;
@@ -29,7 +29,6 @@ public class StateManager : MonoBehaviour
     private void Awake()
     {
         myPV = GetComponent<PhotonView>();
-        playerAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
