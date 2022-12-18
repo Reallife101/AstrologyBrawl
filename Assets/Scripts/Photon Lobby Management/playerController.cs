@@ -14,6 +14,8 @@ public class playerController : MonoBehaviour
     public InputAction playerJump { get; private set; }
     public InputAction abilityOneAction { get; private set; }
 
+    public InputAction lightAttackAction { get; private set; }
+
     //Standard move values
     private Vector3 StartVelocity = Vector3.zero;
     private Vector2 movementVector;
@@ -25,6 +27,7 @@ public class playerController : MonoBehaviour
     //Movement bools
     private bool isGrounded;
     private bool canDoubleJump;
+    private bool movementLocked = false;
 
     //Grounded things
     [Header("Grounded Check Items")]
@@ -35,11 +38,13 @@ public class playerController : MonoBehaviour
     private PlayerManager myPM;
     private PhotonView myPV;
     private Rigidbody2D myRB;
+    private StateManager mySM;
 
     void Awake()
     {
         myPV = GetComponent<PhotonView>();
         myRB = GetComponent<Rigidbody2D>();
+        mySM = GetComponent<StateManager>();
 
         myPM = PhotonView.Find((int) myPV.InstantiationData[0]).GetComponent<PlayerManager>();
 
@@ -47,10 +52,11 @@ public class playerController : MonoBehaviour
         playerMove = input.Player.Move;
         playerJump = input.Player.Jump;
         abilityOneAction = input.Player.Ability1;
+        lightAttackAction = input.Player.LightAttack;
 
         playerJump.started += jumpBehavior =>
         {
-            if (!myPV.IsMine)
+            if (!myPV.IsMine || movementLocked)
             {
                 return;
             }
@@ -78,6 +84,16 @@ public class playerController : MonoBehaviour
 
             ability1.Use();
         };
+
+        lightAttackAction.started += lightAttackBehavior =>
+        {
+            if (!myPV.IsMine)
+            {
+                return;
+            }
+
+            mySM.LightAttackPressed(isGrounded);
+        };
     }
 
     // Update is called once per frame
@@ -94,11 +110,25 @@ public class playerController : MonoBehaviour
             canDoubleJump = true;
         }
 
+        if (mySM.currentState != StateManager.States.Idle)
+        {
+            movementLocked = true;
+        }
+        else
+        {
+            movementLocked = false;
+        }
+
         Movement();
     }
 
     private void Movement()
     {
+        //If attacking, lock movement
+        if (movementLocked)
+        {
+            return;
+        }
         //Grounded movement
         movementVector = playerMove.ReadValue<Vector2>();
         if (movementVector.x != 0)
@@ -115,6 +145,7 @@ public class playerController : MonoBehaviour
         playerMove.Enable();
         playerJump.Enable();
         abilityOneAction.Enable();
+        lightAttackAction.Enable();
     }
 
     private void OnDisable()
@@ -122,6 +153,7 @@ public class playerController : MonoBehaviour
         playerMove.Disable();
         playerJump.Disable();
         abilityOneAction.Disable();
+        lightAttackAction.Enable();
     }
 
 }

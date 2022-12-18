@@ -53,6 +53,15 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""LightAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""aed7e0f0-a099-422e-9e6f-b28ad139c779"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -125,11 +134,22 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 {
                     ""name"": """",
                     ""id"": ""f2430d5b-367a-490d-a0ae-ae1d40c88140"",
-                    ""path"": ""<Mouse>/leftButton"",
+                    ""path"": ""<Keyboard>/1"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Ability1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5da78c31-2c3a-4ab2-a900-cdd06361505c"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LightAttack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -143,6 +163,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_Ability1 = m_Player.FindAction("Ability1", throwIfNotFound: true);
+        m_Player_LightAttack = m_Player.FindAction("LightAttack", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -205,6 +226,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_Ability1;
+    private readonly InputAction m_Player_LightAttack;
     public struct PlayerActions
     {
         private @PlayerControllerInputAsset m_Wrapper;
@@ -212,6 +234,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputAction @Ability1 => m_Wrapper.m_Player_Ability1;
+        public InputAction @LightAttack => m_Wrapper.m_Player_LightAttack;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -230,6 +253,9 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 @Ability1.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAbility1;
                 @Ability1.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAbility1;
                 @Ability1.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAbility1;
+                @LightAttack.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLightAttack;
+                @LightAttack.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLightAttack;
+                @LightAttack.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLightAttack;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -243,6 +269,9 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 @Ability1.started += instance.OnAbility1;
                 @Ability1.performed += instance.OnAbility1;
                 @Ability1.canceled += instance.OnAbility1;
+                @LightAttack.started += instance.OnLightAttack;
+                @LightAttack.performed += instance.OnLightAttack;
+                @LightAttack.canceled += instance.OnLightAttack;
             }
         }
     }
@@ -252,5 +281,6 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnAbility1(InputAction.CallbackContext context);
+        void OnLightAttack(InputAction.CallbackContext context);
     }
 }
