@@ -46,4 +46,9 @@ public class doDamage : MonoBehaviour
         }
     }
 
+    public void SetDamage(int damageNum)
+    {
+        damage = damageNum;
+    }
+
 }
