@@ -16,6 +16,6 @@ MonoBehaviour:
   attackAnimationName: Attack1
   duration: 0.5
   inputBufferTime: 0.35
-  forwardMovement: 1.5
-  finisherEndlag: 0
+  forwardMovement: 3
+  finisherEndlag: 0.15
   NextAttackFrameSO: {fileID: 11400000, guid: 75b078323f67bad4e9f0c111c44318ff, type: 2}
