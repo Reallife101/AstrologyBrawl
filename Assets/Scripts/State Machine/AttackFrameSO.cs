@@ -9,5 +9,6 @@ public class AttackFrameSO : ScriptableObject
     public string attackAnimationName;
     public float duration;
     public float inputBufferTime;
+    public float forwardMovement;
     public AttackFrameSO NextAttackFrameSO = null;
 }

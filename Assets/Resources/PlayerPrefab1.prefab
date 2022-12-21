@@ -374,7 +374,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 4
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9c497a4ce1f356b448c0dd3eca091d35, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -530,7 +530,6 @@ MonoBehaviour:
   firstHeavyGround: {fileID: 11400000, guid: 77da65241b169524cb97801da3d79825, type: 2}
   firstLightAir: {fileID: 11400000, guid: fdb0611cf10c78f4ebedcf8ed6df7861, type: 2}
   firstHeavyAir: {fileID: 11400000, guid: 77da65241b169524cb97801da3d79825, type: 2}
-  aerialGravity: 1
   hitbox: {fileID: 3780375295810477137}
   playerAnimator: {fileID: 8589663318342298076}
 --- !u!114 &4888351954668950257

@@ -97,6 +97,8 @@ public class StateManager : MonoBehaviour
         attackTimeRemaining = currentAttack.duration;
         hitbox.SetDamage(currentAttack.damage);
         playerAnimator.SetTrigger(currentAttack.attackAnimationName);
+        myRB.velocity = Vector2.zero;
+        myRB.AddForce(new Vector2(Mathf.Sign(transform.localScale.x) * currentAttack.forwardMovement, 0), ForceMode2D.Impulse);
     }
 
     //When light attack is pressed, check if grounded and idle, if so start the attack chain. If an attack is in progress, allow input buffer.
@@ -117,7 +119,6 @@ public class StateManager : MonoBehaviour
 
         else if (currentState == States.Idle && !isGrounded)
         {
-            myRB.velocity = Vector2.zero;
             myRB.gravityScale = 0;
             currentState = States.AirLight;
             currentAttack = firstLightAir;
@@ -146,7 +147,6 @@ public class StateManager : MonoBehaviour
 
         else if (currentState == States.Idle && !isGrounded)
         {
-            myRB.velocity = Vector2.zero;
             myRB.gravityScale = 0;
             currentState = States.AirHeavy;
             currentAttack = firstHeavyAir;
