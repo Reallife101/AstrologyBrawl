@@ -122,7 +122,7 @@ public class playerController : MonoBehaviour
             canDoubleJump = true;
         }
 
-        if (mySM.currentState != StateManager.States.Idle)
+        if (mySM.currentState != StateManager.States.Idle && mySM.currentState != StateManager.States.Recovery)
         {
             movementLocked = true;
         }

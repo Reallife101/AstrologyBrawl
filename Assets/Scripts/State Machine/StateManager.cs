@@ -13,6 +13,7 @@ public class StateManager : MonoBehaviour
         GroundHeavy,
         AirLight,
         AirHeavy,
+        Recovery,
     }
     //Attacks
     [SerializeField] private AttackFrameSO firstLightGround;
@@ -33,6 +34,7 @@ public class StateManager : MonoBehaviour
     //Attack state values
     private float inputBufferTimeRemaining;
     private float attackTimeRemaining;
+    private float recoveryTimeLeft;
     
 
 
@@ -51,6 +53,17 @@ public class StateManager : MonoBehaviour
             return;
         }
 
+        recoveryTimeLeft -= Time.deltaTime;
+        if (currentState == States.Recovery)
+        {
+            if (recoveryTimeLeft <= 0)
+            {
+                ReturnToNeutral();
+            }
+            return;
+        }
+        
+
         //Count down
         attackTimeRemaining -= Time.deltaTime;
         inputBufferTimeRemaining -= Time.deltaTime;
@@ -61,7 +74,7 @@ public class StateManager : MonoBehaviour
             //And there is no input buffered
             if (inputBufferTimeRemaining <= 0)
             {
-                ReturnToNeutral();
+                InitiateRecovery();
             }
             //And there is input buffered
             else
@@ -71,7 +84,7 @@ public class StateManager : MonoBehaviour
                 //If there's no next in the combo, return to idle
                 if (nextAttack == null)
                 {
-                    ReturnToNeutral();
+                    InitiateRecovery();
                 }
                 //If there is, begin next attack
                 else
@@ -84,11 +97,20 @@ public class StateManager : MonoBehaviour
 
     }
 
+
+
+    private void InitiateRecovery()
+    {
+        currentState = States.Recovery;
+        recoveryTimeLeft = currentAttack.finisherEndlag;
+        myRB.velocity = Vector2.zero;
+        myRB.gravityScale = originalGravity;
+    }
+
     private void ReturnToNeutral()
     {
         currentState = States.Idle;
         currentAttack = null;
-        myRB.gravityScale = originalGravity;
     }
 
     private void UpdateAttackInfo()

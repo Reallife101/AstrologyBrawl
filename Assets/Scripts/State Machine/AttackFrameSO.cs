@@ -10,5 +10,6 @@ public class AttackFrameSO : ScriptableObject
     public float duration;
     public float inputBufferTime;
     public float forwardMovement;
+    public float finisherEndlag;
     public AttackFrameSO NextAttackFrameSO = null;
 }
