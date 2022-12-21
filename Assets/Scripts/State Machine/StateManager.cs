@@ -5,6 +5,7 @@ using Photon.Pun;
 
 public class StateManager : MonoBehaviour
 {
+    //Combat states
     public enum States
     {
         Idle,
@@ -12,23 +13,36 @@ public class StateManager : MonoBehaviour
         GroundHeavy,
         AirLight,
         AirHeavy,
+        Recovery,
     }
-
-    [SerializeField] private AttackFrameSO firstLightAttack;
+    //Attacks
+    [SerializeField] private AttackFrameSO firstLightGround;
+    [SerializeField] private AttackFrameSO firstHeavyGround;
+    [SerializeField] private AttackFrameSO firstLightAir;
+    [SerializeField] private AttackFrameSO firstHeavyAir;
     private AttackFrameSO currentAttack;
+    //Components
     private PhotonView myPV;
+    private Rigidbody2D myRB;
+    //Aerial variables
+    private float originalGravity;
     public States currentState { get; private set; }
     [SerializeField] private doDamage hitbox;
     [SerializeField] private Animator playerAnimator;
+
+
     //Attack state values
     private float inputBufferTimeRemaining;
     private float attackTimeRemaining;
+    private float recoveryTimeLeft;
     
 
 
     private void Awake()
     {
         myPV = GetComponent<PhotonView>();
+        myRB = GetComponent<Rigidbody2D>();
+        originalGravity = myRB.gravityScale;
     }
 
     // Update is called once per frame
@@ -38,6 +52,18 @@ public class StateManager : MonoBehaviour
         {
             return;
         }
+
+        recoveryTimeLeft -= Time.deltaTime;
+        if (currentState == States.Recovery)
+        {
+            if (recoveryTimeLeft <= 0)
+            {
+                ReturnToNeutral();
+            }
+            return;
+        }
+        
+
         //Count down
         attackTimeRemaining -= Time.deltaTime;
         inputBufferTimeRemaining -= Time.deltaTime;
@@ -48,9 +74,7 @@ public class StateManager : MonoBehaviour
             //And there is no input buffered
             if (inputBufferTimeRemaining <= 0)
             {
-                //Reset to idle
-                currentState = States.Idle;
-                currentAttack = null;
+                InitiateRecovery();
             }
             //And there is input buffered
             else
@@ -60,8 +84,7 @@ public class StateManager : MonoBehaviour
                 //If there's no next in the combo, return to idle
                 if (nextAttack == null)
                 {
-                    currentState = States.Idle;
-                    currentAttack = null;
+                    InitiateRecovery();
                 }
                 //If there is, begin next attack
                 else
@@ -74,12 +97,30 @@ public class StateManager : MonoBehaviour
 
     }
 
+
+
+    private void InitiateRecovery()
+    {
+        currentState = States.Recovery;
+        recoveryTimeLeft = currentAttack.finisherEndlag;
+        myRB.velocity = Vector2.zero;
+        myRB.gravityScale = originalGravity;
+    }
+
+    private void ReturnToNeutral()
+    {
+        currentState = States.Idle;
+        currentAttack = null;
+    }
+
     private void UpdateAttackInfo()
     {
         //Starts the countdown for the current attack's duration, changes damage of the hitbox to match the current attack, and starts the corresponding attack anim
         attackTimeRemaining = currentAttack.duration;
         hitbox.SetDamage(currentAttack.damage);
         playerAnimator.SetTrigger(currentAttack.attackAnimationName);
+        myRB.velocity = Vector2.zero;
+        myRB.AddForce(new Vector2(Mathf.Sign(transform.localScale.x) * currentAttack.forwardMovement, 0), ForceMode2D.Impulse);
     }
 
     //When light attack is pressed, check if grounded and idle, if so start the attack chain. If an attack is in progress, allow input buffer.
@@ -92,12 +133,49 @@ public class StateManager : MonoBehaviour
 
         if(currentState == States.Idle && isGrounded)
         {
+
             currentState = States.GroundLight;
-            currentAttack = firstLightAttack;
+            currentAttack = firstLightGround;
             UpdateAttackInfo();
         }
 
-        if (currentAttack != null)
+        else if (currentState == States.Idle && !isGrounded)
+        {
+            myRB.gravityScale = 0;
+            currentState = States.AirLight;
+            currentAttack = firstLightAir;
+            UpdateAttackInfo();
+        }
+
+        if (currentAttack != null && currentState == States.GroundLight || currentState == States.AirLight)
+        {
+            inputBufferTimeRemaining = currentAttack.inputBufferTime;
+        }
+    }
+
+    public void HeavyAttackPressed(bool isGrounded)
+    {
+        if (!myPV.IsMine)
+        {
+            return;
+        }
+
+        if (currentState == States.Idle && isGrounded)
+        {
+            currentState = States.GroundHeavy;
+            currentAttack = firstHeavyGround;
+            UpdateAttackInfo();
+        }
+
+        else if (currentState == States.Idle && !isGrounded)
+        {
+            myRB.gravityScale = 0;
+            currentState = States.AirHeavy;
+            currentAttack = firstHeavyAir;
+            UpdateAttackInfo();
+        }
+
+        if (currentAttack != null & currentState == States.GroundHeavy || currentState == States.AirHeavy)
         {
             inputBufferTimeRemaining = currentAttack.inputBufferTime;
         }
