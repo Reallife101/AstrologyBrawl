@@ -13,8 +13,9 @@ public class playerController : MonoBehaviour
     public InputAction playerMove { get; private set; }
     public InputAction playerJump { get; private set; }
     public InputAction abilityOneAction { get; private set; }
-
     public InputAction lightAttackAction { get; private set; }
+    public InputAction heavyAttackAction { get; private set; }
+
 
     //Standard move values
     private Vector3 StartVelocity = Vector3.zero;
@@ -53,6 +54,7 @@ public class playerController : MonoBehaviour
         playerJump = input.Player.Jump;
         abilityOneAction = input.Player.Ability1;
         lightAttackAction = input.Player.LightAttack;
+        heavyAttackAction = input.Player.HeavyAttack;
 
         playerJump.started += jumpBehavior =>
         {
@@ -93,6 +95,16 @@ public class playerController : MonoBehaviour
             }
 
             mySM.LightAttackPressed(isGrounded);
+        };
+
+        heavyAttackAction.started += heavyAttackBehavior =>
+        {
+            if (!myPV.IsMine)
+            {
+                return;
+            }
+
+            mySM.HeavyAttackPressed(isGrounded);
         };
     }
 
@@ -146,6 +158,7 @@ public class playerController : MonoBehaviour
         playerJump.Enable();
         abilityOneAction.Enable();
         lightAttackAction.Enable();
+        heavyAttackAction.Enable();
     }
 
     private void OnDisable()
@@ -154,6 +167,7 @@ public class playerController : MonoBehaviour
         playerJump.Disable();
         abilityOneAction.Disable();
         lightAttackAction.Enable();
+        heavyAttackAction.Enable();
     }
 
 }
