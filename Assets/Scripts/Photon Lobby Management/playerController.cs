@@ -130,19 +130,9 @@ public class playerController : MonoBehaviour
 
         //Manage grounded state
         isGrounded = Physics2D.Linecast(transform.position, groundedCheckObject.position, groundLayer);
-        if (isGrounded)
-        {
-            canDoubleJump = true;
-        }
+        canDoubleJump = isGrounded;
 
-        if (mySM.currentState != StateManager.States.Idle && mySM.currentState != StateManager.States.Recovery)
-        {
-            movementLocked = true;
-        }
-        else
-        {
-            movementLocked = false;
-        }
+        movementLocked = mySM.currentState != StateManager.States.Idle && mySM.currentState != StateManager.States.Recovery;
 
         Movement();
     }
