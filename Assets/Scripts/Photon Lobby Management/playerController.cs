@@ -7,12 +7,14 @@ using UnityEngine.InputSystem;
 public class playerController : MonoBehaviour
 {
     [SerializeField] Ability ability1;
+    [SerializeField] Ability ability2;
 
     //Input Actions
     private PlayerControllerInputAsset input;
     public InputAction playerMove { get; private set; }
     public InputAction playerJump { get; private set; }
     public InputAction abilityOneAction { get; private set; }
+    public InputAction abilityTwoAction { get; private set; }
     public InputAction lightAttackAction { get; private set; }
     public InputAction heavyAttackAction { get; private set; }
 
@@ -53,6 +55,7 @@ public class playerController : MonoBehaviour
         playerMove = input.Player.Move;
         playerJump = input.Player.Jump;
         abilityOneAction = input.Player.Ability1;
+        abilityTwoAction = input.Player.Ability2;
         lightAttackAction = input.Player.LightAttack;
         heavyAttackAction = input.Player.HeavyAttack;
 
@@ -87,6 +90,16 @@ public class playerController : MonoBehaviour
             ability1.Use();
         };
 
+        abilityTwoAction.started += ability2Behavior =>
+        {
+            if (!myPV.IsMine)
+            {
+                return;
+            }
+
+            ability2.Use();
+        };
+
         lightAttackAction.started += lightAttackBehavior =>
         {
             if (!myPV.IsMine)
@@ -117,19 +130,9 @@ public class playerController : MonoBehaviour
 
         //Manage grounded state
         isGrounded = Physics2D.Linecast(transform.position, groundedCheckObject.position, groundLayer);
-        if (isGrounded)
-        {
-            canDoubleJump = true;
-        }
+        canDoubleJump = isGrounded;
 
-        if (mySM.currentState != StateManager.States.Idle && mySM.currentState != StateManager.States.Recovery)
-        {
-            movementLocked = true;
-        }
-        else
-        {
-            movementLocked = false;
-        }
+        movementLocked = mySM.currentState != StateManager.States.Idle && mySM.currentState != StateManager.States.Recovery;
 
         Movement();
     }
@@ -157,6 +160,7 @@ public class playerController : MonoBehaviour
         playerMove.Enable();
         playerJump.Enable();
         abilityOneAction.Enable();
+        abilityTwoAction.Enable();
         lightAttackAction.Enable();
         heavyAttackAction.Enable();
     }
@@ -166,6 +170,7 @@ public class playerController : MonoBehaviour
         playerMove.Disable();
         playerJump.Disable();
         abilityOneAction.Disable();
+        abilityTwoAction.Disable();
         lightAttackAction.Enable();
         heavyAttackAction.Enable();
     }
