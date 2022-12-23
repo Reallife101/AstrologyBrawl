@@ -39,18 +39,11 @@ public class doDamage : MonoBehaviour
 
         // Get components
         IDamageable dmg = collision.gameObject.GetComponent<IDamageable>();
-        Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
 
         if (dmg != null)
         {
-            dmg.TakeDamage(damage);
-
-            //Apply forces
-            if (rb)
-            {
-                Vector2 launchVector = new Vector2(collision.transform.position.x - transform.position.x, collision.transform.position.y - transform.position.y);
-                //rb.AddForce(launchVector * 50, ForceMode2D.Impulse);
-            }
+            Vector2 launchVector = new Vector2(collision.transform.position.x - transform.position.x, collision.transform.position.y - transform.position.y);
+            dmg.TakeDamage(damage, launchVector*50);
 
             //Destroy object
             if (destroyOnTouch)

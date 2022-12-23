@@ -19,19 +19,25 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
 
     public void TakeDamage(float damage)
     {
-        myPV.RPC("RPC_TakeDamage", RpcTarget.All, damage);
+        myPV.RPC("RPC_TakeDamage", RpcTarget.All, damage, Vector2.zero);
+
+    }
+
+    public void TakeDamage(float damage, Vector2 launchVector)
+    {
+        myPV.RPC("RPC_TakeDamage", RpcTarget.All, damage, launchVector);
 
     }
 
     [PunRPC]
-    public void RPC_TakeDamage(float damage)
+    public void RPC_TakeDamage(float damage, Vector2 launchVector)
     {
         if (!myPV.IsMine)
             return;
 
         currentHealth -= damage;
 
-        GetComponent<Rigidbody2D>().AddForce(Vector2.up * 50f, ForceMode2D.Impulse);
+        GetComponent<Rigidbody2D>().AddForce(launchVector, ForceMode2D.Impulse);
 
         if (currentHealth <=0)
         {
