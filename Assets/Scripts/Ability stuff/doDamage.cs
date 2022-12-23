@@ -11,6 +11,7 @@ public class doDamage : MonoBehaviour
     [SerializeField] bool destroyOnTouch;
     [SerializeField] float lifeTime;
     [SerializeField] bool hasInfiniteLifeTime;
+    [SerializeField] float launchForce;
 
     public int ownerID;
 
@@ -37,13 +38,15 @@ public class doDamage : MonoBehaviour
         if (!pv.IsMine || collision.gameObject.GetComponent<PhotonView>()?.GetInstanceID() == ownerID)
             return;
 
-        IDamageable dmg = collision.gameObject.gameObject.GetComponent<IDamageable>();
+        // Get components
+        IDamageable dmg = collision.gameObject.GetComponent<IDamageable>();
 
         if (dmg != null)
         {
-            dmg.TakeDamage(damage);
-            Debug.Log("Dealt: " + damage);
+            Vector2 launchVector = new Vector2(collision.transform.position.x - transform.position.x, collision.transform.position.y - transform.position.y+0.25f);
+            dmg.TakeDamage(damage, launchVector* launchForce);
 
+            //Destroy object
             if (destroyOnTouch)
             {
                 PhotonNetwork.Destroy(gameObject);
