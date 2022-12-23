@@ -22,7 +22,14 @@ public class selfProjectile : Ability
     public override void Use()
     {
         toggleHurtbox();
-        rb.AddForce(forceVector, ForceMode2D.Impulse);
+        if (transform.localScale.x <=0)
+        {
+            rb.AddForce(new Vector2(-forceVector.x, forceVector.y), ForceMode2D.Impulse);
+        }
+        else
+        {
+            rb.AddForce(forceVector, ForceMode2D.Impulse);
+        }
     }
 
     void toggleHurtbox()
