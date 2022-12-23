@@ -11,6 +11,7 @@ public class doDamage : MonoBehaviour
     [SerializeField] bool destroyOnTouch;
     [SerializeField] float lifeTime;
     [SerializeField] bool hasInfiniteLifeTime;
+    [SerializeField] float launchForce;
 
     public int ownerID;
 
@@ -42,8 +43,8 @@ public class doDamage : MonoBehaviour
 
         if (dmg != null)
         {
-            Vector2 launchVector = new Vector2(collision.transform.position.x - transform.position.x, collision.transform.position.y - transform.position.y);
-            dmg.TakeDamage(damage, launchVector*50);
+            Vector2 launchVector = new Vector2(collision.transform.position.x - transform.position.x, collision.transform.position.y - transform.position.y+0.25f);
+            dmg.TakeDamage(damage, launchVector* launchForce);
 
             //Destroy object
             if (destroyOnTouch)
