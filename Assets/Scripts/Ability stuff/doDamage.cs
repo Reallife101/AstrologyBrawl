@@ -37,13 +37,22 @@ public class doDamage : MonoBehaviour
         if (!pv.IsMine || collision.gameObject.GetComponent<PhotonView>()?.GetInstanceID() == ownerID)
             return;
 
-        IDamageable dmg = collision.gameObject.gameObject.GetComponent<IDamageable>();
+        // Get components
+        IDamageable dmg = collision.gameObject.GetComponent<IDamageable>();
+        Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
 
         if (dmg != null)
         {
             dmg.TakeDamage(damage);
-            Debug.Log("Dealt: " + damage);
 
+            //Apply forces
+            if (rb)
+            {
+                Vector2 launchVector = new Vector2(collision.transform.position.x - transform.position.x, collision.transform.position.y - transform.position.y);
+                rb.AddForce(launchVector * 50, ForceMode2D.Impulse);
+            }
+
+            //Destroy object
             if (destroyOnTouch)
             {
                 PhotonNetwork.Destroy(gameObject);
