@@ -49,7 +49,7 @@ public class doDamage : MonoBehaviour
             if (rb)
             {
                 Vector2 launchVector = new Vector2(collision.transform.position.x - transform.position.x, collision.transform.position.y - transform.position.y);
-                rb.AddForce(launchVector * 50, ForceMode2D.Impulse);
+                //rb.AddForce(launchVector * 50, ForceMode2D.Impulse);
             }
 
             //Destroy object

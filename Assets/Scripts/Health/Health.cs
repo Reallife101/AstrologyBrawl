@@ -31,6 +31,8 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
 
         currentHealth -= damage;
 
+        GetComponent<Rigidbody2D>().AddForce(Vector2.up * 50f, ForceMode2D.Impulse);
+
         if (currentHealth <=0)
         {
             Die();
