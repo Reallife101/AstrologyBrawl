@@ -8,6 +8,8 @@ public class Scoreboard : MonoBehaviourPunCallbacks
 {
     [SerializeField] private Transform container;
     [SerializeField] private GameObject scoreboardItemPrefab;
+    [SerializeField] private CanvasGroup CanvasGroup;
+    private bool scoreboardOff = true;
 
     Dictionary<Player, ScoreboardItem> scoreboardItems = new Dictionary<Player, ScoreboardItem>();
     // Start is called before the first frame update
@@ -30,5 +32,19 @@ public class Scoreboard : MonoBehaviourPunCallbacks
     {
         Destroy(scoreboardItems[player].gameObject);
         scoreboardItems.Remove(player);
+    }
+
+    public void ToggleScoreboard()
+    {
+        if (scoreboardOff)
+        {
+            CanvasGroup.alpha = 1;
+            scoreboardOff = false;
+        }
+        else
+        {
+            CanvasGroup.alpha = 0;
+            scoreboardOff = true;
+        }
     }
 }

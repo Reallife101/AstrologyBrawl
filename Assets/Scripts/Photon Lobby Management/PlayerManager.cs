@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using Photon.Realtime;
+using System.Linq;
+using System.IO;
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -12,6 +16,9 @@ public class PlayerManager : MonoBehaviour
     private List<Transform> spawnPoints = new List<Transform>();
 
     GameObject controller;
+
+    private int kills;
+    private int deaths;
 
 
     private void Awake()
@@ -43,7 +50,35 @@ public class PlayerManager : MonoBehaviour
 
     public void Die()
     {
+        //Deaths can be tracked locally
         PhotonNetwork.Destroy(controller);
         Spawn();
+
+        deaths++;
+
+        Hashtable hash = new Hashtable();
+        hash.Add("deaths", deaths);
+        PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+    }
+
+    public void GetKill()
+    {
+        //But we need to tell our killer that they killed us
+        PV.RPC(nameof(RPC_GetKill), PV.Owner);
+    }
+
+    [PunRPC]
+    void RPC_GetKill()
+    {
+        kills++;
+
+        Hashtable hash = new Hashtable();
+        hash.Add("kills", kills);
+        PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+    }
+
+    public static PlayerManager Find(Player player)
+    {
+        return FindObjectsOfType<PlayerManager>().SingleOrDefault(x => x.PV.Owner == player);
     }
 }
