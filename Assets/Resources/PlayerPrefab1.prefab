@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 6851651114009476759}
   - component: {fileID: 3780375295810477137}
   - component: {fileID: 3958859480390694109}
+  - component: {fileID: 1385364046071209854}
   m_Layer: 0
   m_Name: Hitbox
   m_TagString: Untagged
@@ -266,6 +267,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1326904, y: 0.7234955}
   m_EdgeRadius: 0
+--- !u!114 &1385364046071209854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2434522066618130176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters: []
+  m_SynchronizeLayers: []
 --- !u!1 &3016257482074367028
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,6 +630,7 @@ GameObject:
   - component: {fileID: 743779953244687314}
   - component: {fileID: 2926048837673055937}
   - component: {fileID: 4742095407731698304}
+  - component: {fileID: 2526129928733174280}
   m_Layer: 0
   m_Name: playerProjectile
   m_TagString: Untagged
@@ -679,6 +697,28 @@ MonoBehaviour:
   hasInfiniteLifeTime: 1
   launchForce: 20
   ownerID: 0
+--- !u!114 &2526129928733174280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4772053801581189281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &4785156661360743209
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,6 +761,7 @@ GameObject:
   - component: {fileID: 1296854930112708182}
   - component: {fileID: 4456246149412257730}
   - component: {fileID: 4372743333961510285}
+  - component: {fileID: 4522046420772155104}
   m_Layer: 0
   m_Name: playerProjectile 2
   m_TagString: Untagged
@@ -787,3 +828,25 @@ MonoBehaviour:
   hasInfiniteLifeTime: 1
   launchForce: 20
   ownerID: 0
+--- !u!114 &4522046420772155104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4831391645166455353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
