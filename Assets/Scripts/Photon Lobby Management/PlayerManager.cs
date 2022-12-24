@@ -19,6 +19,7 @@ public class PlayerManager : MonoBehaviour
 
     private int kills;
     private int deaths;
+    [SerializeField] private int killGoal;
 
 
     private void Awake()
@@ -75,6 +76,17 @@ public class PlayerManager : MonoBehaviour
         Hashtable hash = new Hashtable();
         hash.Add("kills", kills);
         PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+
+        if (kills >= killGoal)
+        {
+            PV.RPC(nameof(RPC_EndGame), RpcTarget.All);
+        }
+    }
+
+    [PunRPC]
+    void RPC_EndGame()
+    {
+        PhotonNetwork.LoadLevel("Lobby");
     }
 
     public static PlayerManager Find(Player player)
