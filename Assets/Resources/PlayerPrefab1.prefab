@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 6851651114009476759}
   - component: {fileID: 3780375295810477137}
   - component: {fileID: 3958859480390694109}
-  - component: {fileID: 1385364046071209854}
+  - component: {fileID: 7937400202793783752}
   m_Layer: 0
   m_Name: Hitbox
   m_TagString: Untagged
@@ -267,7 +267,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1326904, y: 0.7234955}
   m_EdgeRadius: 0
---- !u!114 &1385364046071209854
+--- !u!114 &7937400202793783752
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -276,13 +276,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 2434522066618130176}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShowLayerWeightsInspector: 1
-  ShowParameterInspector: 1
-  m_SynchronizeParameters: []
-  m_SynchronizeLayers: []
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &3016257482074367028
 GameObject:
   m_ObjectHideFlags: 0
