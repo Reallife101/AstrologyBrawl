@@ -200,7 +200,6 @@ GameObject:
   - component: {fileID: 6851651114009476759}
   - component: {fileID: 3780375295810477137}
   - component: {fileID: 3958859480390694109}
-  - component: {fileID: 5212130150644913461}
   m_Layer: 0
   m_Name: Hitbox
   m_TagString: Untagged
@@ -267,28 +266,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1326904, y: 0.7234955}
   m_EdgeRadius: 0
---- !u!114 &5212130150644913461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2434522066618130176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents: []
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!1 &3016257482074367028
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,7 +613,7 @@ GameObject:
   - component: {fileID: 743779953244687314}
   - component: {fileID: 2926048837673055937}
   - component: {fileID: 4742095407731698304}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: playerProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -744,7 +721,7 @@ GameObject:
   - component: {fileID: 1296854930112708182}
   - component: {fileID: 4456246149412257730}
   - component: {fileID: 4372743333961510285}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: playerProjectile 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
