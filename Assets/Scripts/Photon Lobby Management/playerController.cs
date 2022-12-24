@@ -17,6 +17,7 @@ public class playerController : MonoBehaviour
     public InputAction abilityTwoAction { get; private set; }
     public InputAction lightAttackAction { get; private set; }
     public InputAction heavyAttackAction { get; private set; }
+    public InputAction scoreboardInputAction { get; private set; }
 
 
     //Standard move values
@@ -42,12 +43,14 @@ public class playerController : MonoBehaviour
     private PhotonView myPV;
     private Rigidbody2D myRB;
     private StateManager mySM;
+    private Scoreboard myScoreboard;
 
     void Awake()
     {
         myPV = GetComponent<PhotonView>();
         myRB = GetComponent<Rigidbody2D>();
         mySM = GetComponent<StateManager>();
+        myScoreboard = FindObjectOfType<Scoreboard>();
 
         myPM = PhotonView.Find((int) myPV.InstantiationData[0]).GetComponent<PlayerManager>();
 
@@ -58,6 +61,7 @@ public class playerController : MonoBehaviour
         abilityTwoAction = input.Player.Ability2;
         lightAttackAction = input.Player.LightAttack;
         heavyAttackAction = input.Player.HeavyAttack;
+        scoreboardInputAction = input.Player.Scoreboard;
 
         playerJump.started += jumpBehavior =>
         {
@@ -119,6 +123,16 @@ public class playerController : MonoBehaviour
 
             mySM.HeavyAttackPressed(isGrounded);
         };
+
+        scoreboardInputAction.started += scoreboardToggle =>
+        {
+            if (!myPV.IsMine)
+            {
+                return;
+            }
+
+            myScoreboard.ToggleScoreboard();
+        };
     }
 
     // Update is called once per frame
@@ -167,6 +181,7 @@ public class playerController : MonoBehaviour
         abilityTwoAction.Enable();
         lightAttackAction.Enable();
         heavyAttackAction.Enable();
+        scoreboardInputAction.Enable();
     }
 
     private void OnDisable()
@@ -175,8 +190,9 @@ public class playerController : MonoBehaviour
         playerJump.Disable();
         abilityOneAction.Disable();
         abilityTwoAction.Disable();
-        lightAttackAction.Enable();
-        heavyAttackAction.Enable();
+        lightAttackAction.Disable();
+        heavyAttackAction.Disable();
+        scoreboardInputAction.Disable();
     }
 
 }

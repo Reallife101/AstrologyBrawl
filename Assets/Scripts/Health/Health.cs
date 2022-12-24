@@ -19,21 +19,19 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
 
     public void TakeDamage(float damage)
     {
-        myPV.RPC("RPC_TakeDamage", RpcTarget.All, damage, Vector2.zero);
+        myPV.RPC("RPC_TakeDamage", myPV.Owner, damage, Vector2.zero);
 
     }
 
     public void TakeDamage(float damage, Vector2 launchVector)
     {
-        myPV.RPC("RPC_TakeDamage", RpcTarget.All, damage, launchVector);
+        myPV.RPC("RPC_TakeDamage", myPV.Owner, damage, launchVector);
 
     }
 
     [PunRPC]
-    public void RPC_TakeDamage(float damage, Vector2 launchVector)
+    public void RPC_TakeDamage(float damage, Vector2 launchVector, PhotonMessageInfo info)
     {
-        if (!myPV.IsMine)
-            return;
 
         currentHealth -= damage;
 
@@ -42,6 +40,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
         if (currentHealth <=0)
         {
             Die();
+            PlayerManager.Find(info.Sender).GetKill();
         }
     }
 

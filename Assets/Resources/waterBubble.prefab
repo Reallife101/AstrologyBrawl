@@ -166,6 +166,7 @@ MonoBehaviour:
   destroyOnTouch: 1
   lifeTime: 10
   hasInfiniteLifeTime: 0
+  launchForce: 0
   ownerID: 0
 --- !u!114 &1752425406030071846
 MonoBehaviour:
