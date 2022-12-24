@@ -239,6 +239,7 @@ MonoBehaviour:
   destroyOnTouch: 0
   lifeTime: 0
   hasInfiniteLifeTime: 1
+  launchForce: 0
   ownerID: 0
 --- !u!61 &3958859480390694109
 BoxCollider2D:
