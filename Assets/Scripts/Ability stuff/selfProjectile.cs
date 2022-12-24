@@ -8,6 +8,7 @@ public class selfProjectile : Ability
     [SerializeField] Collider2D hurtbox;
     [SerializeField] float toggleTime;
     [SerializeField] Vector2 forceVector;
+    [SerializeField] doDamage dm;
 
     private PhotonView pv;
     private Rigidbody2D rb;
@@ -16,7 +17,6 @@ public class selfProjectile : Ability
     {
         pv = GetComponent<PhotonView>();
         rb = GetComponent<Rigidbody2D>();
-        doDamage dm = GetComponent<doDamage>();
         dm.ownerID = pv.GetInstanceID();
     }
     public override void Use()

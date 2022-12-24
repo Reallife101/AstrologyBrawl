@@ -541,6 +541,7 @@ MonoBehaviour:
   hurtbox: {fileID: 4456246149412257730}
   toggleTime: 0.75
   forceVector: {x: 0, y: 50}
+  dm: {fileID: 4372743333961510285}
 --- !u!114 &871457696214121824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -556,6 +557,7 @@ MonoBehaviour:
   hurtbox: {fileID: 2926048837673055937}
   toggleTime: 1
   forceVector: {x: 50, y: 15}
+  dm: {fileID: 4742095407731698304}
 --- !u!114 &4784899803647350958
 MonoBehaviour:
   m_ObjectHideFlags: 0
