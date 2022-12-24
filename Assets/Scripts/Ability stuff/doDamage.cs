@@ -54,7 +54,7 @@ public class doDamage : MonoBehaviour
         }
     }
 
-    public void SetDamage(int damageNum)
+    public void SetDamage(float damageNum)
     {
         damage = damageNum;
     }

@@ -8,7 +8,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
 {
     [SerializeField] const float MaxHealth = 100f;
 
-    private float currentHealth = MaxHealth;
+    public float currentHealth = MaxHealth;
 
     public PhotonView myPV;
 
