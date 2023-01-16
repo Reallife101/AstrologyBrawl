@@ -17,8 +17,8 @@ public class PlayerManager : MonoBehaviour
 
     GameObject controller;
 
-    private int kills;
-    private int deaths;
+    private int kills = 0;
+    private int deaths = 0;
     [SerializeField] private int killGoal;
 
 
@@ -30,6 +30,11 @@ public class PlayerManager : MonoBehaviour
         {
             spawnPoints.Add(point);
         }
+        Hashtable hash = new Hashtable();
+        hash.Add("kills", kills);
+        hash.Add("deaths", deaths);
+        PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+
     }
     private void Start()
     {
@@ -86,11 +91,25 @@ public class PlayerManager : MonoBehaviour
     [PunRPC]
     void RPC_EndGame()
     {
-        PhotonNetwork.LoadLevel("Lobby");
+        StartCoroutine(EndGameCoroutine());
     }
 
     public static PlayerManager Find(Player player)
     {
         return FindObjectsOfType<PlayerManager>().SingleOrDefault(x => x.PV.Owner == player);
+    }
+
+    private IEnumerator EndGameCoroutine()
+    {
+        yield return new WaitForSeconds(0.5f);
+        if (controller)
+        {
+            controller.GetComponent<playerController>().DisableInput();
+        }
+        CanvasGroup gameOverText = GameObject.FindWithTag("GameEndSplashText").GetComponent<CanvasGroup>();
+        gameOverText.alpha = 1;
+        yield return new WaitForSeconds(3f);
+        gameOverText.alpha = 0;
+        PhotonNetwork.LoadLevel("Lobby");
     }
 }
