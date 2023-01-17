@@ -20,6 +20,7 @@ public class PlayerManager : MonoBehaviour
     private int kills = 0;
     private int deaths = 0;
     [SerializeField] private int killGoal;
+    private bool gameOver = false;
 
 
     private void Awake()
@@ -47,6 +48,10 @@ public class PlayerManager : MonoBehaviour
     //Spawns/Respawn player
     private void Spawn()
     {
+        if (gameOver)
+        {
+            return;
+        }
         int randomNumber = Random.Range(0, spawnPoints.Count);
         Transform spawnPoint = spawnPoints[randomNumber];
 
@@ -91,6 +96,7 @@ public class PlayerManager : MonoBehaviour
     [PunRPC]
     void RPC_EndGame()
     {
+        gameOver = true;
         StartCoroutine(EndGameCoroutine());
     }
 
@@ -101,7 +107,6 @@ public class PlayerManager : MonoBehaviour
 
     private IEnumerator EndGameCoroutine()
     {
-        yield return new WaitForSeconds(0.5f);
         if (controller)
         {
             controller.GetComponent<playerController>().DisableInput();
