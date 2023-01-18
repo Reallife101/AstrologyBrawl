@@ -28,7 +28,20 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-        PhotonNetwork.JoinLobby();
+        if (PhotonNetwork.CurrentRoom != null)
+        {
+            if (PhotonNetwork.IsMasterClient)
+            {
+                PhotonNetwork.CurrentRoom.IsOpen = true;
+                PhotonNetwork.CurrentRoom.IsVisible = true;
+            }
+            OnJoinedRoom();
+        }
+        else
+        {
+            PhotonNetwork.JoinLobby();
+        }
+        
     }
 
     private void Update()
@@ -61,6 +74,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
+        Debug.Log("Man");
         if (Time.time >= nextUpdateTime)
         {
             UpdateRoomList(roomList);
@@ -79,9 +93,13 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
         foreach (RoomInfo room in list)
         {
-            roomItem newRoom = Instantiate(roomItemPrefab, contentObject);
-            newRoom.SetRoomName(room.Name);
-            roomItemsList.Add(newRoom);
+            if (room.IsOpen && room.IsVisible)
+            {
+                roomItem newRoom = Instantiate(roomItemPrefab, contentObject);
+                newRoom.SetRoomName(room.Name);
+                roomItemsList.Add(newRoom);
+            }
+            
         }
     }
 
@@ -147,6 +165,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public void OnClickPlayButton()
     {
         PhotonNetwork.LoadLevel("Game");
+        PhotonNetwork.CurrentRoom.IsOpen = false;
+        PhotonNetwork.CurrentRoom.IsVisible = false;
     }
 
 }

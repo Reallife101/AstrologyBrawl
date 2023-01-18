@@ -80,6 +80,15 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Scoreboard"",
+                    ""type"": ""Button"",
+                    ""id"": ""87fb1e3f-111a-45df-926a-abdb6ccaebe8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -192,6 +201,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""action"": ""Ability2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ec457811-7dca-40a1-a6f0-a21b77b71647"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Scoreboard"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -206,6 +226,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         m_Player_LightAttack = m_Player.FindAction("LightAttack", throwIfNotFound: true);
         m_Player_HeavyAttack = m_Player.FindAction("HeavyAttack", throwIfNotFound: true);
         m_Player_Ability2 = m_Player.FindAction("Ability2", throwIfNotFound: true);
+        m_Player_Scoreboard = m_Player.FindAction("Scoreboard", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -271,6 +292,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
     private readonly InputAction m_Player_LightAttack;
     private readonly InputAction m_Player_HeavyAttack;
     private readonly InputAction m_Player_Ability2;
+    private readonly InputAction m_Player_Scoreboard;
     public struct PlayerActions
     {
         private @PlayerControllerInputAsset m_Wrapper;
@@ -281,6 +303,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         public InputAction @LightAttack => m_Wrapper.m_Player_LightAttack;
         public InputAction @HeavyAttack => m_Wrapper.m_Player_HeavyAttack;
         public InputAction @Ability2 => m_Wrapper.m_Player_Ability2;
+        public InputAction @Scoreboard => m_Wrapper.m_Player_Scoreboard;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -308,6 +331,9 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 @Ability2.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAbility2;
                 @Ability2.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAbility2;
                 @Ability2.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAbility2;
+                @Scoreboard.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnScoreboard;
+                @Scoreboard.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnScoreboard;
+                @Scoreboard.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnScoreboard;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -330,6 +356,9 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 @Ability2.started += instance.OnAbility2;
                 @Ability2.performed += instance.OnAbility2;
                 @Ability2.canceled += instance.OnAbility2;
+                @Scoreboard.started += instance.OnScoreboard;
+                @Scoreboard.performed += instance.OnScoreboard;
+                @Scoreboard.canceled += instance.OnScoreboard;
             }
         }
     }
@@ -342,5 +371,6 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         void OnLightAttack(InputAction.CallbackContext context);
         void OnHeavyAttack(InputAction.CallbackContext context);
         void OnAbility2(InputAction.CallbackContext context);
+        void OnScoreboard(InputAction.CallbackContext context);
     }
 }
