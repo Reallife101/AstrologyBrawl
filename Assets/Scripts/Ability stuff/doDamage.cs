@@ -35,7 +35,7 @@ public class doDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!pv.IsMine || collision.gameObject.GetComponent<PhotonView>()?.GetInstanceID() == ownerID)
+        if (!pv || !pv.IsMine || collision.gameObject.GetComponent<PhotonView>()?.GetInstanceID() == ownerID)
             return;
 
         // Get components
@@ -54,7 +54,7 @@ public class doDamage : MonoBehaviour
         }
     }
 
-    public void SetDamage(int damageNum)
+    public void SetDamage(float damageNum)
     {
         damage = damageNum;
     }

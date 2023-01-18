@@ -9,6 +9,7 @@ public class SingleShotRaycast : Ranged
     [SerializeField] float raycastDistance;
 
     [SerializeField] float gunDamage;
+    [SerializeField] float launchForce;
     public override void Use()
     {
         Shoot();
@@ -16,11 +17,20 @@ public class SingleShotRaycast : Ranged
 
     void Shoot()
     {
-        RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, Vector2.right, raycastDistance);
+        RaycastHit2D hit;
+        if (transform.localScale.x <=0)
+        {
+            hit = Physics2D.Raycast(raycastOrigin.position, -Vector2.right, raycastDistance);
+        }
+        else
+        {
+            hit = Physics2D.Raycast(raycastOrigin.position, Vector2.right, raycastDistance);
+        }
         
         if (hit.collider != null)
         {
-            hit.collider.gameObject.GetComponent<IDamageable>()?.TakeDamage(gunDamage);
+            Vector2 launchVector = new Vector2(hit.transform.position.x - transform.position.x, hit.transform.position.y - transform.position.y + 0.25f);
+            hit.collider.gameObject.GetComponent<IDamageable>()?.TakeDamage(gunDamage, launchVector.normalized*launchForce);
         }
     }
 
