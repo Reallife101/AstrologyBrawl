@@ -14,6 +14,7 @@ public class StateManager : MonoBehaviour
         AirLight,
         AirHeavy,
         Recovery,
+        HitStun,
     }
     //Attacks
     [SerializeField] private AttackFrameSO firstLightGround;
@@ -180,4 +181,10 @@ public class StateManager : MonoBehaviour
             inputBufferTimeRemaining = currentAttack.inputBufferTime;
         }
     }
+    [PunRPC]
+    void HitStunned(float hitStunValue)
+    {
+        Debug.Log(hitStunValue);
+    }
+
 }
