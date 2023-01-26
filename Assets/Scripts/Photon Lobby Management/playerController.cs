@@ -86,7 +86,7 @@ public class playerController : MonoBehaviour
 
         abilityOneAction.started += ability1Behavior =>
         {
-            if (!myPV.IsMine)
+            if (!myPV.IsMine || movementLocked)
             {
                 return;
             }
@@ -96,7 +96,7 @@ public class playerController : MonoBehaviour
 
         abilityTwoAction.started += ability2Behavior =>
         {
-            if (!myPV.IsMine)
+            if (!myPV.IsMine || movementLocked)
             {
                 return;
             }
