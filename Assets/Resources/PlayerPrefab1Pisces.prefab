@@ -186,6 +186,9 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 1
     Name: Attack3
+  - Type: 4
+    SynchronizeType: 1
+    Name: HitStun
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -457,6 +460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4981084ca802d44cb8a63c46e20f981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentHealth: 100
   myPV: {fileID: 0}
 --- !u!114 &4331885266338997498
 MonoBehaviour:
