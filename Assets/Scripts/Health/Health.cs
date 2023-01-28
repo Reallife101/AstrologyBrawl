@@ -23,16 +23,16 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
 
     }
 
-    public void TakeDamage(float damage, Vector2 launchVector)
+    public void TakeDamage(float damage, Vector2 launchVector, float hitStunValue = 0.25f)
     {
-        myPV.RPC("RPC_TakeDamage", myPV.Owner, damage, launchVector);
+        myPV.RPC("RPC_TakeDamage", myPV.Owner, damage, launchVector, hitStunValue);
 
     }
 
     [PunRPC]
-    public void RPC_TakeDamage(float damage, Vector2 launchVector, PhotonMessageInfo info)
+    public void RPC_TakeDamage(float damage, Vector2 launchVector, float hitStunValue, PhotonMessageInfo info)
     {
-
+        myPV.RPC("HitStunned", myPV.Owner, hitStunValue);
         currentHealth -= damage;
 
         GetComponent<Rigidbody2D>().AddForce(launchVector, ForceMode2D.Impulse);

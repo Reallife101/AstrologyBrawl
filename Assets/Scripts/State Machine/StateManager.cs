@@ -14,6 +14,7 @@ public class StateManager : MonoBehaviour
         AirLight,
         AirHeavy,
         Recovery,
+        HitStun,
     }
     //Attacks
     [SerializeField] private AttackFrameSO firstLightGround;
@@ -35,6 +36,7 @@ public class StateManager : MonoBehaviour
     private float inputBufferTimeRemaining;
     private float attackTimeRemaining;
     private float recoveryTimeLeft;
+    private float hitStunTimeLeft;
     
 
 
@@ -53,6 +55,7 @@ public class StateManager : MonoBehaviour
             return;
         }
 
+        //Count down recovery time, if over return to neutral
         recoveryTimeLeft -= Time.deltaTime;
         if (currentState == States.Recovery)
         {
@@ -62,7 +65,19 @@ public class StateManager : MonoBehaviour
             }
             return;
         }
-        
+
+        hitStunTimeLeft -= Time.deltaTime;
+        if (currentState == States.HitStun)
+        {
+            if (hitStunTimeLeft <= 0)
+            {
+                playerAnimator.SetBool("HitStun", false);
+                ReturnToNeutral();
+            }
+            return;
+        }
+
+
 
         //Count down
         attackTimeRemaining -= Time.deltaTime;
@@ -180,4 +195,18 @@ public class StateManager : MonoBehaviour
             inputBufferTimeRemaining = currentAttack.inputBufferTime;
         }
     }
+    [PunRPC]
+    void HitStunned(float hitStunValue)
+    {
+        Debug.Log("Oof ouch owie ow");
+        inputBufferTimeRemaining = 0;
+        attackTimeRemaining = 0;
+        recoveryTimeLeft = 0;
+        hitStunTimeLeft = hitStunValue;
+        myRB.gravityScale = originalGravity;
+        currentState = States.HitStun;
+        playerAnimator.SetBool("HitStun", true);
+        playerAnimator.SetTrigger("HitStunTrigger");
+    }
+
 }
