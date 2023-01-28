@@ -5,5 +5,5 @@ using UnityEngine.UI;
 
 public abstract class TarotCard : MonoBehaviour
 {
-    public abstract void Apply();
+    public abstract void Effect();
 }

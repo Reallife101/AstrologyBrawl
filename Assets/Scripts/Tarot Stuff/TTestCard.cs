@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class TTestCard : TarotCard
 {
-    public override void Apply()
+    public override void Effect()
     {
-        Debug.Log("Apply Effect");
-    }
-
-    private void Start()
-    {
-        Apply();
+        Debug.Log("wOwzer! .< >>> Effect");
     }
 }
