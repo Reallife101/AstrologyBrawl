@@ -27,11 +27,13 @@ public class playerController : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private float movementSmoothing;
     [SerializeField] private float jumpPower;
+    [SerializeField] private float fastFallSpeed;
     [SerializeField] private float doubleJumpPower;
     //Movement bools
     private bool isGrounded;
     private bool canDoubleJump;
     private bool movementLocked = false;
+    private bool fastFall;
 
     //Grounded things
     [Header("Grounded Check Items")]
@@ -91,6 +93,7 @@ public class playerController : MonoBehaviour
                 return;
             }
 
+            fastFall = false;
             ability1.Use();
         };
 
@@ -101,6 +104,7 @@ public class playerController : MonoBehaviour
                 return;
             }
 
+            fastFall = false;
             ability2.Use();
         };
 
@@ -111,6 +115,7 @@ public class playerController : MonoBehaviour
                 return;
             }
 
+            fastFall = false;
             mySM.LightAttackPressed(isGrounded);
         };
 
@@ -121,6 +126,7 @@ public class playerController : MonoBehaviour
                 return;
             }
 
+            fastFall = false;
             mySM.HeavyAttackPressed(isGrounded);
         };
 
@@ -148,6 +154,7 @@ public class playerController : MonoBehaviour
         if (isGrounded)
         {
             canDoubleJump = true;
+            fastFall = false;
         }
 
         movementLocked = mySM.currentState != StateManager.States.Idle && mySM.currentState != StateManager.States.Recovery;
@@ -168,7 +175,24 @@ public class playerController : MonoBehaviour
         {
             transform.localScale = new Vector3(Mathf.Sign(movementVector.x), transform.localScale.y, transform.localScale.z);
         }
-        Vector3 VelocityChange = new Vector2(Time.fixedDeltaTime * moveSpeed * 10 * movementVector.x, myRB.velocity.y);
+
+        // Check for fastFall
+        if (movementVector.y<0 && isGrounded == false)
+        {
+            fastFall = true;
+        }
+
+        float ySpeed;
+        if (fastFall)
+        {
+            ySpeed = -fastFallSpeed;
+        }
+        else
+        {
+            ySpeed = myRB.velocity.y;
+        }
+
+        Vector3 VelocityChange = new Vector2(Time.fixedDeltaTime * moveSpeed * 10 * movementVector.x, ySpeed);
         myRB.velocity = Vector3.SmoothDamp(myRB.velocity, VelocityChange, ref StartVelocity, movementSmoothing);
 
     }
