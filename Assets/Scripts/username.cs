@@ -12,9 +12,14 @@ public class username : MonoBehaviour
     
     void Start()
     {
-
+     
         text.text = playerPV.Owner.NickName;
 
+    }
+
+    private void Update()
+    {
+        gameObject.transform.localScale = new Vector3(playerPV.gameObject.transform.localScale.x, 1, 1);
     }
 
 
