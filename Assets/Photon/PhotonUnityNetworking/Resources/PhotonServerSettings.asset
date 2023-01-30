@@ -43,6 +43,8 @@ MonoBehaviour:
   - RPC_GetKill
   - RPC_EndGame
   - HitStunned
+  - RPC_Effect
+  - RPC_CallEffect
   - RPC_UpdateCamera
   DisableAutoOpenWizard: 1
   ShowSettings: 0
