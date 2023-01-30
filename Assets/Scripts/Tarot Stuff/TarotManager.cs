@@ -10,7 +10,7 @@ public class TarotManager : MonoBehaviourPunCallbacks
     private List<TarotCard> tarotCards;
 
     private int KillIndex = 0;
-    [SerializeField] private int MaxKills;    //going to replace with the PlayerManager's maxkills
+    [SerializeField] private int MaxKills;    //going to be replaced with the PlayerManager's maxkills
     [SerializeField] private float[] KillThresholds;
 
     void Awake()
@@ -29,7 +29,7 @@ public class TarotManager : MonoBehaviourPunCallbacks
 
             if ((float)NumOfKills / MaxKills == KillThresholds[KillIndex])
             {
-                PV.RPC("RPC_CallEffect", targetPlayer, targetPlayer.NickName);
+                PV.RPC("RPC_CallEffect", targetPlayer, targetPlayer.ActorNumber);
                 KillIndex++;
             }
         }
@@ -44,12 +44,15 @@ public class TarotManager : MonoBehaviourPunCallbacks
     }
 
     [PunRPC]
-    public void RPC_CallEffect(string NickName, PhotonMessageInfo info)
+    public void RPC_CallEffect(int ActorNumber, PhotonMessageInfo info)
     {
-        if(NickName == info.Sender.NickName)
+        if(ActorNumber == info.Sender.ActorNumber)
         {
             //Picks a random tarot card
             int RandomIndex = Random.Range(0, tarotCards.Count);
+
+            PlayerManager.Find(info.Sender);    //can be used to get the player manager we need (probably going to give effect)
+
             tarotCards[RandomIndex].Effect();
 
             //Used for debugging

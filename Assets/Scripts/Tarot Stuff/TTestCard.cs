@@ -8,7 +8,7 @@ public class TTestCard : TarotCard
 {
     public override void Effect()
     {
-        Debug.Log("Horseshit");
+        Debug.Log("wOEW ozers ?R !");
     }
 
     
