@@ -14,5 +14,5 @@ public abstract class TarotCard : MonoBehaviour
         PV = GetComponent<PhotonView>();
     }
 
-    public abstract void Effect(Player player);
+    public abstract void Effect();
 }

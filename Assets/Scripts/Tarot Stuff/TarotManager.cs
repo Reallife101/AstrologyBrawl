@@ -30,10 +30,21 @@ public class TarotManager : MonoBehaviourPunCallbacks
             //{
             //int RandomIndex = Random.Range(0, tarotCards.Count);
             //tarotCards[RandomIndex].Effect(targetPlayer);
-            TTestCard t = new TTestCard();
-            t.Effect(targetPlayer);
-            KillIndex++;
+            
+            if(NumOfKills != 0)
+            {
+                PV.RPC("RPC_CallEffect", targetPlayer);
+                KillIndex++;
+            }
+
             //}
         }
+    }
+
+    [PunRPC]
+    public void RPC_CallEffect()
+    {
+        TTestCard t = new TTestCard();
+        t.Effect();
     }
 }

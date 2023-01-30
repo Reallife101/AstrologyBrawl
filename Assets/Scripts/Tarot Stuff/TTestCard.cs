@@ -6,14 +6,10 @@ using Photon.Pun;
 
 public class TTestCard : TarotCard
 {
-    public override void Effect(Player player)
-    {
-        PV.RPC("RPC_CallEffect", player);
-    }
-
-    [PunRPC]
-    public void RPC_CallEffect()
+    public override void Effect()
     {
         Debug.Log("Horseshit");
     }
+
+    
 }
