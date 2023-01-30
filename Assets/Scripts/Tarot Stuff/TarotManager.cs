@@ -10,7 +10,7 @@ public class TarotManager : MonoBehaviourPunCallbacks
     private List<TarotCard> tarotCards;
 
     private int KillIndex = 0;
-    [SerializeField] private float MaxKills;    //going to replace with the PlayerManager's maxkills
+    [SerializeField] private int MaxKills;    //going to replace with the PlayerManager's maxkills
     [SerializeField] private float[] KillThresholds;
 
     void Awake()
@@ -23,22 +23,24 @@ public class TarotManager : MonoBehaviourPunCallbacks
     {
         if (changedProps.ContainsKey("kills"))
         {
+            //Get the number of kills
             targetPlayer.CustomProperties.TryGetValue("kills", out object kills);
             int NumOfKills = (int)kills;
-            //if (NumOfKills / MaxKills == KillThresholds[KillIndex])
-            //{
-            //int RandomIndex = Random.Range(0, tarotCards.Count);
-            //tarotCards[RandomIndex].Effect(targetPlayer);
-            
-            if(NumOfKills != 0)
+
+            if ((float)NumOfKills / MaxKills == KillThresholds[KillIndex])
             {
                 PV.RPC("RPC_CallEffect", targetPlayer, targetPlayer.NickName);
                 KillIndex++;
-                Debug.Log("NumOfKills is " + NumOfKills);
             }
-
-            //}
         }
+
+        //Used for debugging
+        /*if (NumOfKills != 0)
+        {
+            PV.RPC("RPC_CallEffect", targetPlayer, targetPlayer.NickName);
+            KillIndex++;
+            Debug.Log("NumOfKills is " + NumOfKills);
+        }*/
     }
 
     [PunRPC]
@@ -46,8 +48,13 @@ public class TarotManager : MonoBehaviourPunCallbacks
     {
         if(NickName == info.Sender.NickName)
         {
-            TTestCard t = new TTestCard();
-            t.Effect();
+            //Picks a random tarot card
+            int RandomIndex = Random.Range(0, tarotCards.Count);
+            tarotCards[RandomIndex].Effect();
+
+            //Used for debugging
+            /*TTestCard t = new TTestCard();
+            t.Effect();*/
         }
     }
 }
