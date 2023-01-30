@@ -7,7 +7,6 @@ using Photon.Pun;
 public class TarotManager : MonoBehaviourPunCallbacks
 {
     private PhotonView PV;
-
     private List<TarotCard> tarotCards;
 
     private int KillIndex = 0;
@@ -33,8 +32,9 @@ public class TarotManager : MonoBehaviourPunCallbacks
             
             if(NumOfKills != 0)
             {
-                PV.RPC("RPC_CallEffect", targetPlayer);
+                PV.RPC("RPC_CallEffect", targetPlayer, targetPlayer.NickName);
                 KillIndex++;
+                Debug.Log("NumOfKills is " + NumOfKills);
             }
 
             //}
@@ -42,9 +42,12 @@ public class TarotManager : MonoBehaviourPunCallbacks
     }
 
     [PunRPC]
-    public void RPC_CallEffect()
+    public void RPC_CallEffect(string NickName, PhotonMessageInfo info)
     {
-        TTestCard t = new TTestCard();
-        t.Effect();
+        if(NickName == info.Sender.NickName)
+        {
+            TTestCard t = new TTestCard();
+            t.Effect();
+        }
     }
 }
