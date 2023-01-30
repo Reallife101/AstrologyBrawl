@@ -8,13 +8,12 @@ public class TTestCard : TarotCard
 {
     public override void Effect(Player player)
     {
-        PV.RPC("RPC_Effect", RpcTarget.All, player);
-        //Debug.Log("wOwzer! .< >>> Effect");
+        PV.RPC("RPC_CallEffect", player);
     }
 
     [PunRPC]
-    public override void RPC_Effect()
+    public void RPC_CallEffect()
     {
-
+        Debug.Log("Horseshit");
     }
 }

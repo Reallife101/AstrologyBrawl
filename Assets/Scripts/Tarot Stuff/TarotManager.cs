@@ -11,7 +11,7 @@ public class TarotManager : MonoBehaviourPunCallbacks
     private List<TarotCard> tarotCards;
 
     private int KillIndex = 0;
-    [SerializeField] private int MaxKills;    //going to replace with the PlayerManager's maxkills
+    [SerializeField] private float MaxKills;    //going to replace with the PlayerManager's maxkills
     [SerializeField] private float[] KillThresholds;
 
     void Awake()
@@ -22,16 +22,18 @@ public class TarotManager : MonoBehaviourPunCallbacks
 
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, ExitGames.Client.Photon.Hashtable changedProps)
     {
-        /*if (changedProps.ContainsKey("kills"))
+        if (changedProps.ContainsKey("kills"))
         {
             targetPlayer.CustomProperties.TryGetValue("kills", out object kills);
-            float NumOfKills = (float)kills;
-            if (NumOfKills / MaxKills == KillThresholds[KillIndex])
-            {
-                int RandomIndex = Random.Range(0, tarotCards.Count);
-                tarotCards[RandomIndex].Effect(targetPlayer);
-                KillIndex++;
-            }
-        }*/
+            int NumOfKills = (int)kills;
+            //if (NumOfKills / MaxKills == KillThresholds[KillIndex])
+            //{
+            //int RandomIndex = Random.Range(0, tarotCards.Count);
+            //tarotCards[RandomIndex].Effect(targetPlayer);
+            TTestCard t = new TTestCard();
+            t.Effect(targetPlayer);
+            KillIndex++;
+            //}
+        }
     }
 }

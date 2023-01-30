@@ -15,6 +15,4 @@ public abstract class TarotCard : MonoBehaviour
     }
 
     public abstract void Effect(Player player);
-
-    public abstract void RPC_Effect();
 }
