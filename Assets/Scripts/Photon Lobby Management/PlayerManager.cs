@@ -22,6 +22,8 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private int killGoal;
     private bool gameOver = false;
 
+    private addPlayersToFollow targetGroup;
+
 
     private void Awake()
     {
@@ -35,6 +37,7 @@ public class PlayerManager : MonoBehaviour
         hash.Add("kills", kills);
         hash.Add("deaths", deaths);
         PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+        targetGroup = GameObject.FindGameObjectWithTag("targetGroup").GetComponent<addPlayersToFollow>();
 
     }
     private void Start()
@@ -57,7 +60,8 @@ public class PlayerManager : MonoBehaviour
 
         GameObject playerToSpawn = playerPrefabs[(int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]];
         controller = PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
-        
+        PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
+
     }
 
     public void Die()
@@ -78,6 +82,13 @@ public class PlayerManager : MonoBehaviour
         //But we need to tell our killer that they killed us
         PV.RPC(nameof(RPC_GetKill), PV.Owner);
     }
+
+    [PunRPC]
+    void RPC_UpdateCamera()
+    {
+        targetGroup.changeMembers(GameObject.FindGameObjectsWithTag("Player"));
+    }
+
 
     [PunRPC]
     void RPC_GetKill()
