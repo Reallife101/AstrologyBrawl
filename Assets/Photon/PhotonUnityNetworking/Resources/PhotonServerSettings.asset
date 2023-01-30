@@ -45,6 +45,7 @@ MonoBehaviour:
   - HitStunned
   - RPC_Effect
   - RPC_CallEffect
+  - RPC_UpdateCamera
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
