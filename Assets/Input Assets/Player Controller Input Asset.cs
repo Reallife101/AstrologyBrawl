@@ -149,8 +149,30 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 },
                 {
                     ""name"": """",
+                    ""id"": ""091b365d-fd24-4a99-af59-1a4da491a91d"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""5b3e4844-a8a0-4a76-ac9a-1e9b149cd8c5"",
                     ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c891b381-52b8-4243-8b64-96b618fd9f34"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -171,8 +193,30 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 },
                 {
                     ""name"": """",
+                    ""id"": ""c1375d98-492b-4626-8a47-da8f67907dfa"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ability1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""5da78c31-2c3a-4ab2-a900-cdd06361505c"",
                     ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LightAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d1fc1e41-f1e3-4cdc-8b0e-6fe9fe4fa173"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -193,6 +237,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 },
                 {
                     ""name"": """",
+                    ""id"": ""839fe4fe-3367-46cb-b38e-750c21e4142e"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HeavyAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""fdb77643-b269-4b98-b402-f8b61d653e87"",
                     ""path"": ""<Keyboard>/2"",
                     ""interactions"": """",
@@ -204,8 +259,30 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 },
                 {
                     ""name"": """",
+                    ""id"": ""a84e7548-96e3-4830-a4f2-6edf8fe83a60"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ability2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""ec457811-7dca-40a1-a6f0-a21b77b71647"",
                     ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Scoreboard"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3b5db967-6487-4abb-a1bf-8f0af1c8daf9"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
