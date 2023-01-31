@@ -1638,6 +1638,7 @@ MonoBehaviour:
   levels:
   - Game
   - Battlefield
+  - BetterBattleField
 --- !u!1 &533071285
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,7 +2034,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 91801776}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999434
+  m_Size: 0.99949825
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3434,7 +3435,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00060203834}
+  m_AnchoredPosition: {x: 0, y: 0.000093753646}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2060837561
