@@ -524,7 +524,7 @@ MonoBehaviour:
   ability2: {fileID: 871457696214121824}
   moveSpeed: 40
   movementSmoothing: 0.05
-  jumpPower: 30
+  jumpPower: 65
   fastFallSpeed: 30
   doubleJumpPower: 30
   groundedCheckObject: {fileID: 4887830797730787154}
