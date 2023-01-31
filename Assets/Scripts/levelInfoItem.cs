@@ -3,8 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Photon.Realtime;
 
-public class levelInfoItem : MonoBehaviourPun
+public class levelInfoItem : MonoBehaviourPunCallbacks
 {
     [SerializeField]
     private string[] levels;
@@ -17,8 +18,20 @@ public class levelInfoItem : MonoBehaviourPun
     {
         levelText = GetComponent<TMP_Text>();
         levelIndex = 0;
-        updateText();
+        if (PhotonNetwork.IsMasterClient)
+        {
+            updateText();
+        }
     }
+
+    public override void OnPlayerEnteredRoom(Player newPlayer)
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            updateText();
+        }
+    }
+
 
     void updateText()
     {
