@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SpawnPoints
   - GameEndSplashText
+  - targetGroup
   layers:
   - Default
   - TransparentFX
