@@ -31,6 +31,12 @@ public class PlayerManager : MonoBehaviour
         {
             spawnPoints.Add(point);
         }
+
+        if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("killsToWin"))
+        {
+            killGoal = (int)PhotonNetwork.LocalPlayer.CustomProperties["killsToWin"];
+        }
+
         Hashtable hash = new Hashtable();
         hash.Add("kills", kills);
         hash.Add("deaths", deaths);
