@@ -6,7 +6,7 @@ using Photon.Pun;
 
 public class TTestCard : TarotCard
 {
-    [SerializeField] private float moveSpeedDecreaseFactor = 0.7f;
+    [SerializeField] private float moveSpeedDecreaseFactor = 0.2f;
 
     public override void Effect()
     {

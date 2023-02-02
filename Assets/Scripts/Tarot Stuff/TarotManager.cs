@@ -27,20 +27,22 @@ public class TarotManager : MonoBehaviourPunCallbacks
             targetPlayer.CustomProperties.TryGetValue("kills", out object kills);
             int NumOfKills = (int)kills;
 
-            if ((float)NumOfKills / MaxKills == KillThresholds[KillIndex])
+            /*if ((float)NumOfKills / MaxKills == KillThresholds[KillIndex])
             {
                 PV.RPC("RPC_CallEffect", targetPlayer, targetPlayer.ActorNumber);
                 KillIndex++;
+            }*/
+
+            //Used for debugging
+            if (NumOfKills != 0)
+            {
+                PV.RPC("RPC_CallEffect", targetPlayer, targetPlayer.NickName);
+                KillIndex++;
+                Debug.Log("NumOfKills is " + NumOfKills);
             }
         }
 
-        //Used for debugging
-        /*if (NumOfKills != 0)
-        {
-            PV.RPC("RPC_CallEffect", targetPlayer, targetPlayer.NickName);
-            KillIndex++;
-            Debug.Log("NumOfKills is " + NumOfKills);
-        }*/
+        
     }
 
     [PunRPC]
@@ -49,15 +51,15 @@ public class TarotManager : MonoBehaviourPunCallbacks
         if(ActorNumber == info.Sender.ActorNumber)
         {
             //Picks a random tarot card
-            int RandomIndex = Random.Range(0, tarotCards.Count);
+            /*int RandomIndex = Random.Range(0, tarotCards.Count);
 
             PlayerManager.Find(info.Sender);    //can be used to get the player manager we need (probably going to give effect)
 
-            tarotCards[RandomIndex].Effect();
+            tarotCards[RandomIndex].Effect();*/
 
             //Used for debugging
-            /*TTestCard t = new TTestCard();
-            t.Effect();*/
+            TTestCard t = new TTestCard();
+            t.Effect();
         }
     }
 }
