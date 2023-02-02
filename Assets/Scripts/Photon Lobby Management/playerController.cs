@@ -37,7 +37,8 @@ public class playerController : MonoBehaviour
 
     //Grounded things
     [Header("Grounded Check Items")]
-    [SerializeField] private Transform groundedCheckObject;
+    [SerializeField] private Transform groundedCheckObjectLeft;
+    [SerializeField] private Transform groundedCheckObjectRight;
     [SerializeField] private LayerMask groundLayer;
 
     //Components
@@ -149,8 +150,13 @@ public class playerController : MonoBehaviour
             return;
 
         //Manage grounded state
-        isGrounded = Physics2D.Linecast(transform.position, groundedCheckObject.position, groundLayer);
-        
+        bool isGroundedLeft = Physics2D.Linecast(transform.position, groundedCheckObjectLeft.position, groundLayer);
+        bool isGroundedRight = Physics2D.Linecast(transform.position, groundedCheckObjectRight.position, groundLayer);
+
+        isGrounded = isGroundedLeft || isGroundedRight;
+
+
+
         if (isGrounded)
         {
             canDoubleJump = true;

@@ -340,6 +340,7 @@ Transform:
   - {fileID: 7217666807969326043}
   - {fileID: 7327343584912840211}
   - {fileID: 2204496378394938765}
+  - {fileID: 7029830045469411569}
   - {fileID: 4887830797730787154}
   - {fileID: 743779953244687314}
   - {fileID: 1296854930112708182}
@@ -426,7 +427,8 @@ MonoBehaviour:
   jumpPower: 30
   fastFallSpeed: 30
   doubleJumpPower: 30
-  groundedCheckObject: {fileID: 4887830797730787154}
+  groundedCheckObjectLeft: {fileID: 7029830045469411569}
+  groundedCheckObjectRight: {fileID: 4887830797730787154}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -614,7 +616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4887830797730787154}
   m_Layer: 7
-  m_Name: groundedCheck Origin
+  m_Name: groundedCheck Origin Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -628,12 +630,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3109441835425417713}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.6, z: 0}
+  m_LocalPosition: {x: 0.33, y: -0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3016257482074367029}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4772053801581189281
 GameObject:
@@ -667,7 +669,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3016257482074367029}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2926048837673055937
 BoxCollider2D:
@@ -799,7 +801,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3016257482074367029}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &4456246149412257730
 BoxCollider2D:
@@ -868,3 +870,34 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!1 &8843395928689273439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7029830045469411569}
+  m_Layer: 7
+  m_Name: groundedCheck Origin Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7029830045469411569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8843395928689273439}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.46, y: -0.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3016257482074367029}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
