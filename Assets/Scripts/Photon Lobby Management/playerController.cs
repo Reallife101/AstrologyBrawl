@@ -94,7 +94,7 @@ public class playerController : MonoBehaviour
             }
 
             fastFall = false;
-            ability1.Use();
+            ability1.activate();
         };
 
         abilityTwoAction.started += ability2Behavior =>
@@ -105,7 +105,7 @@ public class playerController : MonoBehaviour
             }
 
             fastFall = false;
-            ability2.Use();
+            ability2.activate();
         };
 
         lightAttackAction.started += lightAttackBehavior =>

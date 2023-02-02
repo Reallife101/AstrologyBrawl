@@ -545,6 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8626fa831c95a441b94bd1631e4ed39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldownTime: 0.5
   hurtbox: {fileID: 4456246149412257730}
   toggleTime: 0.75
   forceVector: {x: 0, y: 50}
@@ -561,6 +562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8626fa831c95a441b94bd1631e4ed39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldownTime: 0.5
   hurtbox: {fileID: 2926048837673055937}
   toggleTime: 1
   forceVector: {x: 50, y: 15}
