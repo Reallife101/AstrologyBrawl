@@ -36,7 +36,7 @@ public class TarotManager : MonoBehaviourPunCallbacks
             //Used for debugging
             if (NumOfKills != 0)
             {
-                PV.RPC("RPC_CallEffect", targetPlayer, targetPlayer.NickName);
+                PV.RPC("RPC_CallEffect", targetPlayer, targetPlayer.ActorNumber);
                 KillIndex++;
                 Debug.Log("NumOfKills is " + NumOfKills);
             }
