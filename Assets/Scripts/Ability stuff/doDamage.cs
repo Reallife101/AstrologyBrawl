@@ -12,6 +12,7 @@ public class doDamage : MonoBehaviour
     [SerializeField] float lifeTime;
     [SerializeField] bool hasInfiniteLifeTime;
     [SerializeField] float launchForce;
+    [SerializeField] float hitStunTime = 0.25f;
 
     public int ownerID;
 
@@ -44,7 +45,7 @@ public class doDamage : MonoBehaviour
         if (dmg != null)
         {
             Vector2 launchVector = new Vector2(collision.transform.position.x - transform.position.x, collision.transform.position.y - transform.position.y+0.25f);
-            dmg.TakeDamage(damage, launchVector* launchForce);
+            dmg.TakeDamage(damage, launchVector* launchForce, hitStunTime);
 
             //Destroy object
             if (destroyOnTouch)
@@ -54,9 +55,17 @@ public class doDamage : MonoBehaviour
         }
     }
 
-    public void SetDamage(float damageNum)
+
+    public void SetValues(float damageNum)
     {
         damage = damageNum;
+    }
+
+    public void SetValues(float damageNum, float hitStunNum, float knockbackNum)
+    {
+        damage = damageNum;
+        hitStunTime = hitStunNum;
+        launchForce = knockbackNum;
     }
 
 }

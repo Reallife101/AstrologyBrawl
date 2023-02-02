@@ -1,6 +1,26 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8551096959772937557
+--- !u!114 &-8844762814205021062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODAssets/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638066128645705234
+  FileSizes:
+  - Name: 
+    Value: 712
+  Exists: 1
+--- !u!114 &-1105131376724052805
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15,7 +35,7 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638108588893324377
+  lastModified: 638066128645694439
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -31,33 +51,13 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 3865685779914837840}
-  - {fileID: -8551096959772937557}
+  - {fileID: -8844762814205021062}
+  - {fileID: -1105131376724052805}
   EditorEvents: []
   EditorParameters: []
   MasterBanks:
-  - {fileID: -8551096959772937557}
+  - {fileID: -1105131376724052805}
   StringsBanks:
-  - {fileID: 3865685779914837840}
-  cacheTime: 638108588893347987
+  - {fileID: -8844762814205021062}
+  cacheTime: 638066128645705234
   cacheVersion: 131601
---- !u!114 &3865685779914837840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMODAssets/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638108588893347987
-  FileSizes:
-  - Name: 
-    Value: 712
-  Exists: 1

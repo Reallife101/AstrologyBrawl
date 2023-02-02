@@ -25,6 +25,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public Transform playerItemParent;
 
     public GameObject playButton;
+    public GameObject selectLevel;
+    public levelInfoItem levelInfo;
 
     private void Start()
     {
@@ -53,6 +55,16 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         else
         {
             playButton.SetActive(false);
+        }
+
+        //Turn on Level Changer if master Client
+        if (PhotonNetwork.IsMasterClient)
+        {
+            selectLevel.SetActive(true);
+        }
+        else
+        {
+            selectLevel.SetActive(false);
         }
     }
 
@@ -164,7 +176,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public void OnClickPlayButton()
     {
-        PhotonNetwork.LoadLevel("Game");
+        PhotonNetwork.LoadLevel(levelInfo.getSceneName());
         PhotonNetwork.CurrentRoom.IsOpen = false;
         PhotonNetwork.CurrentRoom.IsVisible = false;
     }

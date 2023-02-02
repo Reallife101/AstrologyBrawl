@@ -17,7 +17,7 @@ public class rageMeter : MonoBehaviour
     {
         if (oldHL != hl.currentHealth)
         {
-            dd.SetDamage(calculateDamage());
+            dd.SetValues(calculateDamage());
         }
 
         oldHL = hl.currentHealth;
