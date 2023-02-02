@@ -18,4 +18,6 @@ MonoBehaviour:
   inputBufferTime: 0.35
   forwardMovement: 5
   finisherEndlag: 0.15
+  hitStunTime: 0.5
+  knockbackPower: 10
   NextAttackFrameSO: {fileID: 11400000, guid: 77da65241b169524cb97801da3d79825, type: 2}
