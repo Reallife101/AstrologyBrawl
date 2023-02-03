@@ -8,11 +8,24 @@ public class TTestCard : TarotCard
 {
     [SerializeField] private float moveSpeedDecreaseFactor = 0.2f;
 
-    public override void Effect()
+    public override void Effect(int actorNumber)
     {
         Debug.Log("wOEW ozers ?R !");
 
-        pc.MoveSpeed = pc.MoveSpeed * moveSpeedDecreaseFactor;
+        for (int viewId = actorNumber * PhotonNetwork.MAX_VIEW_IDS + 1; viewId < (actorNumber + 1) * PhotonNetwork.MAX_VIEW_IDS; viewId++)
+        {
+            PhotonView photonView = PhotonView.Find(viewId);
+
+            if (photonView)
+            {
+                playerController pc = photonView.gameObject.GetComponent<playerController>();
+
+                if (pc)
+                {
+                    pc.MoveSpeed = pc.MoveSpeed * moveSpeedDecreaseFactor;
+                }
+            }
+        }
     }
 
     

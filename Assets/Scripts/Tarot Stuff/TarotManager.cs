@@ -59,7 +59,7 @@ public class TarotManager : MonoBehaviourPunCallbacks
 
             //Used for debugging
             TTestCard t = new TTestCard();
-            t.Effect();
+            t.Effect(ActorNumber);
         }
     }
 }
