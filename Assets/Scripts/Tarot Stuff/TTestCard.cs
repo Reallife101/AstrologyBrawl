@@ -6,9 +6,26 @@ using Photon.Pun;
 
 public class TTestCard : TarotCard
 {
-    public override void Effect()
+    [SerializeField] private float moveSpeedDecreaseFactor = 0.2f;
+
+    public override void Effect(int actorNumber)
     {
         Debug.Log("wOEW ozers ?R !");
+
+        // checking all possible photon views of the given player's actor number for a playerController
+        for (int viewId = actorNumber * PhotonNetwork.MAX_VIEW_IDS + 1; viewId < (actorNumber + 1) * PhotonNetwork.MAX_VIEW_IDS; viewId++)
+        {
+            PhotonView photonView = PhotonView.Find(viewId);
+            if (photonView)
+            {
+                playerController pc = photonView.gameObject.GetComponent<playerController>();
+                if (pc)
+                {
+                    pc.MoveSpeed = pc.MoveSpeed * moveSpeedDecreaseFactor;
+                    break;
+                }
+            }
+        }
     }
 
     

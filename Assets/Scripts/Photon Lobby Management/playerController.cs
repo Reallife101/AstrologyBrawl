@@ -29,6 +29,14 @@ public class playerController : MonoBehaviour
     [SerializeField] private float jumpPower;
     [SerializeField] private float fastFallSpeed;
     [SerializeField] private float doubleJumpPower;
+
+    //Public setters for move values
+    public float MoveSpeed { get { return moveSpeed; } set { moveSpeed = value; } }
+    public float MovementSmoothing { get { return movementSmoothing; } set { movementSmoothing = value; } }
+    public float JumpPower { get { return jumpPower; } set { jumpPower = value; } }
+    public float FastFallSpeedg { get { return fastFallSpeed; } set { fastFallSpeed = value; } }
+    public float DoubleJumpPower { get { return doubleJumpPower; } set { doubleJumpPower = value; } }
+
     //Movement bools
     private bool isGrounded;
     private bool canDoubleJump;

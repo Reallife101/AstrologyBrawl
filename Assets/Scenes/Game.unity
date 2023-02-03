@@ -988,6 +988,67 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1001 &1390994473
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 545501925706496026, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 545501925706496026, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.943258
+      objectReference: {fileID: 0}
+    - target: {fileID: 545501925706496026, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.290078
+      objectReference: {fileID: 0}
+    - target: {fileID: 545501925706496026, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.16915956
+      objectReference: {fileID: 0}
+    - target: {fileID: 545501925706496026, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 545501925706496026, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 545501925706496026, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 545501925706496026, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 545501925706496026, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 545501925706496026, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 545501925706496026, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7112092622711952794, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+      propertyPath: sceneViewId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8821505165250913375, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+      propertyPath: m_Name
+      value: TarotManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
 --- !u!1 &1452950502
 GameObject:
   m_ObjectHideFlags: 0

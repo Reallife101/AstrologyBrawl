@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using Photon.Realtime;
 using Photon.Pun;
 
-public abstract class TarotCard : MonoBehaviour
+public abstract class TarotCard : MonoBehaviourPunCallbacks
 {
-    public abstract void Effect();
+    public abstract void Effect(int actorNumber);
 }
