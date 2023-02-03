@@ -12,6 +12,7 @@ public class TTestCard : TarotCard
     {
         Debug.Log("wOEW ozers ?R !");
 
+        // checking all possible photon views of the given player's actor number for a playerController
         for (int viewId = actorNumber * PhotonNetwork.MAX_VIEW_IDS + 1; viewId < (actorNumber + 1) * PhotonNetwork.MAX_VIEW_IDS; viewId++)
         {
             PhotonView photonView = PhotonView.Find(viewId);
@@ -23,6 +24,7 @@ public class TTestCard : TarotCard
                 if (pc)
                 {
                     pc.MoveSpeed = pc.MoveSpeed * moveSpeedDecreaseFactor;
+                    break;
                 }
             }
         }

@@ -17,6 +17,22 @@ public class TarotManager : MonoBehaviourPunCallbacks
     {
         PV = GetComponent<PhotonView>();
         tarotCards = new List<TarotCard>();
+        TTestCard t = new TTestCard();
+        tarotCards.Add(t);
+        
+        foreach (Player player in PhotonNetwork.PlayerList)
+        {
+            if (player.IsMasterClient)
+            {
+                if (player.CustomProperties.ContainsKey("killsToWin"))
+                {
+                    player.CustomProperties.TryGetValue("killsToWin", out object killsToWin);
+                    int killGoal = (int)killsToWin;
+
+                    PV.RPC("RPC_SetKillGoal", RpcTarget.All, killGoal);
+                }
+            }
+        }
     }
 
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, ExitGames.Client.Photon.Hashtable changedProps)
@@ -27,13 +43,6 @@ public class TarotManager : MonoBehaviourPunCallbacks
             targetPlayer.CustomProperties.TryGetValue("kills", out object kills);
             int NumOfKills = (int)kills;
 
-            /*if ((float)NumOfKills / MaxKills == KillThresholds[KillIndex])
-            {
-                PV.RPC("RPC_CallEffect", targetPlayer, targetPlayer.ActorNumber);
-                KillIndex++;
-            }*/
-
-            //Used for debugging
             if (NumOfKills != 0)
             {
                 PV.RPC("RPC_CallEffect", targetPlayer, targetPlayer.ActorNumber);
@@ -51,15 +60,13 @@ public class TarotManager : MonoBehaviourPunCallbacks
         if(ActorNumber == info.Sender.ActorNumber)
         {
             //Picks a random tarot card
-            /*int RandomIndex = Random.Range(0, tarotCards.Count);
-
-            PlayerManager.Find(info.Sender);    //can be used to get the player manager we need (probably going to give effect)
-
-            tarotCards[RandomIndex].Effect();*/
-
-            //Used for debugging
-            TTestCard t = new TTestCard();
-            t.Effect(ActorNumber);
+            tarotCards[Random.Range(0, tarotCards.Count)].Effect(ActorNumber);
         }
+    }
+
+    [PunRPC]
+    public void RPC_SetKillGoal(int killGoal)
+    {
+        MaxKills = killGoal;
     }
 }
