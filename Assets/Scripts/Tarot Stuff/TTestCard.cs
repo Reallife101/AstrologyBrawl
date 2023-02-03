@@ -16,11 +16,9 @@ public class TTestCard : TarotCard
         for (int viewId = actorNumber * PhotonNetwork.MAX_VIEW_IDS + 1; viewId < (actorNumber + 1) * PhotonNetwork.MAX_VIEW_IDS; viewId++)
         {
             PhotonView photonView = PhotonView.Find(viewId);
-
             if (photonView)
             {
                 playerController pc = photonView.gameObject.GetComponent<playerController>();
-
                 if (pc)
                 {
                     pc.MoveSpeed = pc.MoveSpeed * moveSpeedDecreaseFactor;

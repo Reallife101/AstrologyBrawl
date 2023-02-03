@@ -20,6 +20,7 @@ public class TarotManager : MonoBehaviourPunCallbacks
         TTestCard t = new TTestCard();
         tarotCards.Add(t);
         
+        //Sets the kill goal on all TarotManagers
         foreach (Player player in PhotonNetwork.PlayerList)
         {
             if (player.IsMasterClient)
@@ -30,6 +31,8 @@ public class TarotManager : MonoBehaviourPunCallbacks
                     int killGoal = (int)killsToWin;
 
                     PV.RPC("RPC_SetKillGoal", RpcTarget.All, killGoal);
+
+                    //TODO: Set the KillThresholds
                 }
             }
         }
@@ -43,8 +46,11 @@ public class TarotManager : MonoBehaviourPunCallbacks
             targetPlayer.CustomProperties.TryGetValue("kills", out object kills);
             int NumOfKills = (int)kills;
 
+            //OnPlayerProperties updates on initialization, so prevents any tarots from activating at 0
             if (NumOfKills != 0)
             {
+                //TODO: Use KillThresholds as another check
+
                 PV.RPC("RPC_CallEffect", targetPlayer, targetPlayer.ActorNumber);
                 KillIndex++;
                 Debug.Log("NumOfKills is " + NumOfKills);
