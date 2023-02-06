@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class killbox : MonoBehaviour
 {
-    private void OnTriggerStayD(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
 
         // Get components
