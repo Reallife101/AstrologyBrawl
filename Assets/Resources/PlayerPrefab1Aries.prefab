@@ -348,6 +348,7 @@ MonoBehaviour:
   hasInfiniteLifeTime: 1
   launchForce: 0
   hitStunTime: 0.25
+  launchDirection: {x: 0, y: 0}
   ownerID: 0
 --- !u!61 &3958859480390694109
 BoxCollider2D:
@@ -415,10 +416,8 @@ GameObject:
   - component: {fileID: 3127367030068314295}
   - component: {fileID: 2270851739153014609}
   - component: {fileID: 4888351954668950257}
+  - component: {fileID: 5367980014787998885}
   - component: {fileID: 3763205129772730148}
-  - component: {fileID: 871457696214121824}
-  - component: {fileID: 4784899803647350958}
-  - component: {fileID: 7210752947104960888}
   m_Layer: 7
   m_Name: PlayerPrefab1Aries
   m_TagString: Player
@@ -523,7 +522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ability1: {fileID: 3763205129772730148}
-  ability2: {fileID: 871457696214121824}
+  ability2: {fileID: 5367980014787998885}
   moveSpeed: 40
   movementSmoothing: 0.05
   jumpPower: 65
@@ -638,6 +637,21 @@ MonoBehaviour:
   m_SynchronizeRotation: 0
   m_SynchronizeScale: 1
   m_UseLocal: 1
+--- !u!114 &5367980014787998885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 1
+  spawnOrigin: {fileID: 2204496378394938765}
+  projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
 --- !u!114 &3763205129772730148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -655,59 +669,6 @@ MonoBehaviour:
   toggleTime: 0.75
   forceVector: {x: 0, y: 50}
   dm: {fileID: 4372743333961510285}
---- !u!114 &871457696214121824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3016257482074367028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8626fa831c95a441b94bd1631e4ed39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownTime: 0.5
-  hurtbox: {fileID: 2926048837673055937}
-  toggleTime: 1
-  forceVector: {x: 50, y: 15}
-  dm: {fileID: 4742095407731698304}
---- !u!114 &4784899803647350958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3016257482074367028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89728136ff5ed964ca87f2486d672d89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minDamage: 10
-  maxDamage: 50
-  minHealth: 0
-  maxHealth: 100
-  dd: {fileID: 4742095407731698304}
-  hl: {fileID: 7328130180652725418}
---- !u!114 &7210752947104960888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3016257482074367028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89728136ff5ed964ca87f2486d672d89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minDamage: 10
-  maxDamage: 50
-  minHealth: 0
-  maxHealth: 100
-  dd: {fileID: 4372743333961510285}
-  hl: {fileID: 7328130180652725418}
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,6 +809,7 @@ MonoBehaviour:
   hasInfiniteLifeTime: 1
   launchForce: 20
   hitStunTime: 0.25
+  launchDirection: {x: 0, y: 0}
   ownerID: 0
 --- !u!114 &2526129928733174280
 MonoBehaviour:
@@ -980,6 +942,7 @@ MonoBehaviour:
   hasInfiniteLifeTime: 1
   launchForce: 20
   hitStunTime: 0.25
+  launchDirection: {x: 0, y: 0}
   ownerID: 0
 --- !u!114 &4522046420772155104
 MonoBehaviour:

@@ -12,6 +12,8 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
 
     public PhotonView myPV;
 
+    private Player lastPlayer;
+
     private void Awake()
     {
         myPV = GetComponent<PhotonView>();
@@ -40,7 +42,18 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
         if (currentHealth <=0)
         {
             Die();
-            PlayerManager.Find(info.Sender).GetKill();
+            if (info.Sender != null && info.Sender != PhotonNetwork.LocalPlayer)
+            {
+                PlayerManager.Find(info.Sender).GetKill();
+            }
+            else if (lastPlayer != null)
+            {
+                PlayerManager.Find(lastPlayer).GetKill();
+            }
+        }
+        if (info.Sender != PhotonNetwork.LocalPlayer)
+        {
+            lastPlayer = info.Sender;
         }
     }
 
