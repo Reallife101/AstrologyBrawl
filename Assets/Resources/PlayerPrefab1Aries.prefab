@@ -522,7 +522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ability1: {fileID: 3763205129772730148}
-  ability2: {fileID: 0}
+  ability2: {fileID: 5367980014787998885}
   moveSpeed: 40
   movementSmoothing: 0.05
   jumpPower: 65
