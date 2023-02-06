@@ -42,7 +42,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
         if (currentHealth <=0)
         {
             Die();
-            if (info.Sender != null)
+            if (info.Sender != null && info.Sender != PhotonNetwork.LocalPlayer)
             {
                 PlayerManager.Find(info.Sender).GetKill();
             }
@@ -51,7 +51,10 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
                 PlayerManager.Find(lastPlayer).GetKill();
             }
         }
-        lastPlayer = info.Sender;
+        if (info.Sender != PhotonNetwork.LocalPlayer)
+        {
+            lastPlayer = info.Sender;
+        }
     }
 
     public abstract void Die();
