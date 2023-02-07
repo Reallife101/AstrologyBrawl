@@ -78,11 +78,12 @@ public class doDamage : MonoBehaviour
         damage = damageNum;
     }
 
-    public void SetValues(float damageNum, float hitStunNum, float knockbackNum)
+    public void SetValues(float damageNum, float hitStunNum, float knockbackNum, Vector2 launchDir)
     {
         damage = damageNum;
         hitStunTime = hitStunNum;
         launchForce = knockbackNum;
+        launchDirection = launchDir;
     }
 
 }
