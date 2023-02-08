@@ -18,7 +18,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
     protected void Awake()
     {
         myPV = GetComponent<PhotonView>();
-        healthbar = Instantiate(healthbarPrefab).GetComponent<Healthbar>();
+        healthbar = Instantiate(healthbarPrefab, transform.transform, false).GetComponent<Healthbar>();
         healthbar.UpdateHealthUI(currentHealth);
     }
 
