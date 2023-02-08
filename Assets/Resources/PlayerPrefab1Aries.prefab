@@ -534,6 +534,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  healthbarUI: {fileID: 6950569148298300808, guid: fe3245130abfb6849bbcc1da83dcc24f, type: 3}
 --- !u!61 &2476616717886758476
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -56,12 +56,16 @@ public class playerController : MonoBehaviour
     private StateManager mySM;
     private Scoreboard myScoreboard;
 
+    //HealthUI
+    [SerializeField] private GameObject healthbarUI;
+
     void Awake()
     {
         myPV = GetComponent<PhotonView>();
         myRB = GetComponent<Rigidbody2D>();
         mySM = GetComponent<StateManager>();
         myScoreboard = FindObjectOfType<Scoreboard>();
+        healthbarUI = Instantiate(healthbarUI);
 
         myPM = PhotonView.Find((int) myPV.InstantiationData[0]).GetComponent<PlayerManager>();
 
