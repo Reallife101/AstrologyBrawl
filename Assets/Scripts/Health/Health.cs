@@ -10,16 +10,11 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
 
     public float currentHealth = MaxHealth;
 
-    [SerializeField] private GameObject healthbarPrefab;
-    private Healthbar healthbar;
-
     public PhotonView myPV;
 
     protected void Awake()
     {
         myPV = GetComponent<PhotonView>();
-        healthbar = Instantiate(healthbarPrefab).GetComponent<Healthbar>();
-        healthbar.UpdateHealthUI(currentHealth);
     }
 
     public void TakeDamage(float damage)
