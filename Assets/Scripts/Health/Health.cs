@@ -10,16 +10,11 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
 
     public float currentHealth = MaxHealth;
 
-    [SerializeField] private GameObject healthbarPrefab;
-    private Healthbar healthbar;
-
     public PhotonView myPV;
 
     protected void Awake()
     {
         myPV = GetComponent<PhotonView>();
-        healthbar = Instantiate(healthbarPrefab, transform.transform, false).GetComponent<Healthbar>();
-        healthbar.UpdateHealthUI(currentHealth);
     }
 
     public void TakeDamage(float damage)
@@ -39,7 +34,6 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
     {
         myPV.RPC("HitStunned", myPV.Owner, hitStunValue);
         currentHealth -= damage;
-        healthbar.UpdateHealthUI(currentHealth);
 
         GetComponent<Rigidbody2D>().AddForce(launchVector, ForceMode2D.Impulse);
 
