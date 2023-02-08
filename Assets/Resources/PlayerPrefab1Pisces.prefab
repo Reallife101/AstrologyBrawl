@@ -468,7 +468,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 100
+  healthbarPrefab: {fileID: 6950569148298300808, guid: fe3245130abfb6849bbcc1da83dcc24f, type: 3}
   myPV: {fileID: 0}
+  healthbar: {fileID: 0}
 --- !u!114 &4331885266338997498
 MonoBehaviour:
   m_ObjectHideFlags: 0
