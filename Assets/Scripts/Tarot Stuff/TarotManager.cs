@@ -11,7 +11,6 @@ public class TarotManager : MonoBehaviourPunCallbacks
 
     private int KillIndex = 0;
     [SerializeField] private int MaxKills;    //going to be replaced with the PlayerManager's maxkills
-    [SerializeField] private float[] KillThresholds;
 
     void Awake()
     {
@@ -47,7 +46,7 @@ public class TarotManager : MonoBehaviourPunCallbacks
             int NumOfKills = (int)kills;
 
             //OnPlayerProperties updates on initialization, so prevents any tarots from activating at 0
-            if (NumOfKills != 0)
+            if (NumOfKills != 0 && ((float)NumOfKills / MaxKills) % 0.2 == 0)
             {
                 //TODO: Use KillThresholds as another check
 
