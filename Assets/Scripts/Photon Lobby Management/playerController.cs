@@ -191,7 +191,7 @@ public class playerController : MonoBehaviour
         }
 
         // Check for fastFall
-        if (movementVector.y<0 && isGrounded == false)
+        if (movementVector.y<-0.95f && isGrounded == false)
         {
             fastFall = true;
         }
