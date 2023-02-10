@@ -20,4 +20,5 @@ MonoBehaviour:
   finisherEndlag: 0.25
   hitStunTime: 0.5
   knockbackPower: 50
+  launchDirection: {x: 10, y: 0}
   NextAttackFrameSO: {fileID: 0}

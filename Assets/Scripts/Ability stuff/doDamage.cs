@@ -13,6 +13,7 @@ public class doDamage : MonoBehaviour
     [SerializeField] bool hasInfiniteLifeTime;
     [SerializeField] float launchForce;
     [SerializeField] float hitStunTime = 0.25f;
+    [SerializeField] Vector2 launchDirection;
 
     public int ownerID;
 
@@ -44,8 +45,24 @@ public class doDamage : MonoBehaviour
 
         if (dmg != null)
         {
-            Vector2 launchVector = new Vector2(collision.transform.position.x - transform.position.x, collision.transform.position.y - transform.position.y+0.25f);
-            dmg.TakeDamage(damage, launchVector* launchForce, hitStunTime);
+            //Check to see which launch we should use
+            if (launchDirection.magnitude >.1)
+            {
+                //flip the x if we are facing the wrong direction
+                if (transform.localScale.x < 0)
+                {
+                    dmg.TakeDamage(damage, new Vector2(-launchDirection.x, launchDirection.y), hitStunTime);
+                }
+                else
+                {
+                    dmg.TakeDamage(damage, launchDirection, hitStunTime);
+                }
+            }
+            else
+            {
+                Vector2 launchVector = new Vector2(collision.transform.position.x - transform.position.x, collision.transform.position.y - transform.position.y + 0.25f);
+                dmg.TakeDamage(damage, launchVector * launchForce, hitStunTime);
+            }
 
             //Destroy object
             if (destroyOnTouch)
@@ -61,11 +78,12 @@ public class doDamage : MonoBehaviour
         damage = damageNum;
     }
 
-    public void SetValues(float damageNum, float hitStunNum, float knockbackNum)
+    public void SetValues(float damageNum, float hitStunNum, float knockbackNum, Vector2 launchDir)
     {
         damage = damageNum;
         hitStunTime = hitStunNum;
         launchForce = knockbackNum;
+        launchDirection = launchDir;
     }
 
 }

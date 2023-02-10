@@ -13,5 +13,6 @@ public class AttackFrameSO : ScriptableObject
     public float finisherEndlag;
     public float hitStunTime;
     public float knockbackPower;
+    public Vector2 launchDirection;
     public AttackFrameSO NextAttackFrameSO = null;
 }

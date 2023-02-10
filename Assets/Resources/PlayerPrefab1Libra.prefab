@@ -416,10 +416,10 @@ GameObject:
   - component: {fileID: 3127367030068314295}
   - component: {fileID: 2270851739153014609}
   - component: {fileID: 4888351954668950257}
+  - component: {fileID: 8649130518893083904}
   - component: {fileID: 5367980014787998885}
-  - component: {fileID: 3763205129772730148}
   m_Layer: 7
-  m_Name: PlayerPrefab1Aries
+  m_Name: PlayerPrefab1Libra
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -521,7 +521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876586a5a6023f6489fb060da5dc71df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ability1: {fileID: 3763205129772730148}
+  ability1: {fileID: 8649130518893083904}
   ability2: {fileID: 5367980014787998885}
   moveSpeed: 40
   movementSmoothing: 0.05
@@ -571,8 +571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4981084ca802d44cb8a63c46e20f981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cntr: {fileID: 8649130518893083904}
   currentHealth: 100
-  healthbarPrefab: {fileID: 6950569148298300808, guid: fe3245130abfb6849bbcc1da83dcc24f, type: 3}
   myPV: {fileID: 0}
 --- !u!114 &3127367030068314295
 MonoBehaviour:
@@ -638,6 +638,21 @@ MonoBehaviour:
   m_SynchronizeRotation: 0
   m_SynchronizeScale: 1
   m_UseLocal: 1
+--- !u!114 &8649130518893083904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 513004987f4cef04ca72638b4f2afbe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 0
+  health: {fileID: 7328130180652725418}
+  counterLength: 20
 --- !u!114 &5367980014787998885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,23 +668,6 @@ MonoBehaviour:
   cooldownTime: 1
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
---- !u!114 &3763205129772730148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3016257482074367028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8626fa831c95a441b94bd1631e4ed39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownTime: 0.5
-  hurtbox: {fileID: 4456246149412257730}
-  toggleTime: 0.75
-  forceVector: {x: 0, y: 50}
-  dm: {fileID: 4372743333961510285}
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
