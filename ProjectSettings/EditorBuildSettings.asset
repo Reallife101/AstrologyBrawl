@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IdiotSandwich.unity
     guid: 013699f005b3413429497a4a907f1407
+  - enabled: 1
+    path: Assets/Scenes/Ed&DuncanTest.unity
+    guid: 0b6a1fc595ce0a9429fc0fda1fbc0f5e
   m_configObjects: {}

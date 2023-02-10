@@ -12,7 +12,7 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
     [SerializeField] private GameObject HealthItemPrefab;
     [SerializeField] private Transform HUDTransform;
 
-    private List<HealthItem> HealthItems;
+    private List<HealthItem> HealthItems = new List<HealthItem>();
 
     public void AddHealthItem(string nickname, int actornum)
     {

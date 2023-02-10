@@ -16,6 +16,8 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
 
     private Player lastPlayer;
 
+    private HealthItem healthItem;
+
     private void Awake()
     {
         myPV = GetComponent<PhotonView>();
