@@ -193,6 +193,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876586a5a6023f6489fb060da5dc71df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ability1: {fileID: 0}
+  ability2: {fileID: 0}
+  moveSpeed: 0
+  movementSmoothing: 0
+  jumpPower: 0
+  fastFallSpeed: 0
+  doubleJumpPower: 0
+  groundedCheckObjectLeft: {fileID: 0}
+  groundedCheckObjectRight: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!61 &6039216522012890231
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -24,6 +24,7 @@ public class PlayerManager : MonoBehaviour
 
     private addPlayersToFollow targetGroup;
 
+    private HealthHUDManager healthHUDManager;
 
     private void Awake()
     {
@@ -66,8 +67,22 @@ public class PlayerManager : MonoBehaviour
 
         GameObject playerToSpawn = playerPrefabs[(int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]];
         controller = PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
+
+        healthHUDManager = FindObjectOfType<HealthHUDManager>();
+        if (healthHUDManager != null) 
+        {
+            PV.RPC("RPC_CreateHealthItem", RpcTarget.All);
+        }
+
         PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
 
+    }
+
+    [PunRPC]
+    private void RPC_CreateHealthItem(PhotonMessageInfo info)
+    {
+        
+        healthHUDManager.AddHealthItem(info.Sender.NickName, info.Sender.ActorNumber);
     }
 
     public void Die()

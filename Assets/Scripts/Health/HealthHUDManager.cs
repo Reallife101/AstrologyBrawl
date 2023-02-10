@@ -1,20 +1,18 @@
+using Photon.Pun;
+using Photon.Realtime;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class HealthHUDManager : MonoBehaviour
 {
+    [SerializeField] private GameObject HealthItemPrefab;
+    [SerializeField] private Transform HUDTransform;
 
-
-    public void Awake()
+    public void AddHealthItem(string nickname, int actornum)
     {
-        GameObject[] test = GameObject.FindGameObjectsWithTag("Player");
-        Debug.Log(test.Length);
-    }
-
-    public void Start()
-    {
-        GameObject[] test = GameObject.FindGameObjectsWithTag("Player");
-        Debug.Log(test.Length);
+        HealthItem item = Instantiate(HealthItemPrefab, HUDTransform).GetComponent<HealthItem>();
+        item.Initialize(nickname, actornum);
     }
 }
