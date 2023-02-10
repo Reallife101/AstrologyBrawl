@@ -47,6 +47,8 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
         myPV.RPC("HitStunned", myPV.Owner, hitStunValue);
         currentHealth -= damage;
 
+        healthItem.SetHealth(currentHealth);
+
         GetComponent<Rigidbody2D>().AddForce(launchVector, ForceMode2D.Impulse);
 
         //if health below 0, die

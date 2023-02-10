@@ -21,8 +21,12 @@ public class HealthItem : MonoBehaviour
         PlayerName.text = nickname;
     }
 
-    public void SetHealth(int health)
+    public void SetHealth(float health)
     {
+        if(health < 0f)
+        {
+            health = 0f;
+        }
         Health.text = health.ToString();
     }
 }
