@@ -128,7 +128,7 @@ public class playerController : MonoBehaviour
             mySM.LightAttackPressed(isGrounded);
         };
 
-        heavyAttackAction.started += heavyAttackBehavior =>
+        heavyAttackAction.performed += heavyAttackBehavior =>
         {
             if (!myPV.IsMine)
             {
@@ -137,7 +137,20 @@ public class playerController : MonoBehaviour
 
             fastFall = false;
             mySM.HeavyAttackPressed(isGrounded);
+            Debug.Log("TheManBehind");
         };
+
+        heavyAttackAction.canceled += heavyAttackRelease =>
+        {
+            if (!myPV.IsMine)
+            {
+                return;
+            }
+
+            mySM.EndCharge();
+        };
+
+
 
         scoreboardInputAction.started += scoreboardToggle =>
         {
