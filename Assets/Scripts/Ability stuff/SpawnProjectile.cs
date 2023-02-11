@@ -7,6 +7,7 @@ public class SpawnProjectile : Ranged
 {
     [SerializeField] Transform spawnOrigin;
     [SerializeField] GameObject projectile;
+    [SerializeField] GameObject player;
 
     public override void Use()
     {
@@ -24,10 +25,11 @@ public class SpawnProjectile : Ranged
         if (pv && dm)
         {
             dm.ownerID = pv.GetInstanceID();
+            dm.SetSender(gameObject.transform.parent.gameObject); //SpawnProjectile is always going to be a child of the player prefab
         }
 
         // If the character faces the other direction, flip the scale and right transform
-        if (transform.localScale.x<0)
+        if (player.transform.localScale.x<0)
         {
             pro.transform.right = -transform.right.normalized;
             Vector3 proScale = pro.transform.localScale;

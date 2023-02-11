@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 8589663318342298076}
   - component: {fileID: 1589277749856111818}
   - component: {fileID: 8930513261856451776}
+  - component: {fileID: 1293468816290101332}
   m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
@@ -296,6 +297,22 @@ MonoBehaviour:
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
+--- !u!114 &1293468816290101332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024425471721291248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 1
+  spawnOrigin: {fileID: 2204496378394938765}
+  projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
+  player: {fileID: 3016257482074367028}
 --- !u!1 &2434522066618130176
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +434,7 @@ GameObject:
   - component: {fileID: 2270851739153014609}
   - component: {fileID: 4888351954668950257}
   - component: {fileID: 8649130518893083904}
-  - component: {fileID: 5367980014787998885}
+  - component: {fileID: 9151882990214347279}
   m_Layer: 7
   m_Name: PlayerPrefab1Libra
   m_TagString: Player
@@ -445,6 +462,8 @@ Transform:
   - {fileID: 743779953244687314}
   - {fileID: 1296854930112708182}
   - {fileID: 7207981399879051487}
+  - {fileID: 3652574736880595736}
+  - {fileID: 603694810036171444}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -521,8 +540,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876586a5a6023f6489fb060da5dc71df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ability1: {fileID: 8649130518893083904}
-  ability2: {fileID: 5367980014787998885}
+  ability1: {fileID: 9151882990214347279}
+  ability2: {fileID: 8649130518893083904}
   moveSpeed: 40
   movementSmoothing: 0.05
   jumpPower: 65
@@ -572,6 +591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cntr: {fileID: 8649130518893083904}
+  damageTaken: 0
   currentHealth: 100
   myPV: {fileID: 0}
 --- !u!114 &3127367030068314295
@@ -653,7 +673,8 @@ MonoBehaviour:
   cooldownTime: 0
   health: {fileID: 7328130180652725418}
   counterLength: 20
---- !u!114 &5367980014787998885
+  damageTaken: 0
+--- !u!114 &9151882990214347279
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -662,12 +683,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3016257482074367028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
+  m_Script: {fileID: 11500000, guid: 3338907856f95fb4a9b1b83e99d4bf36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1
-  spawnOrigin: {fileID: 2204496378394938765}
-  projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
+  cooldownTime: 0
+  spawnPoints:
+  - {fileID: 603694810036171444}
+  - {fileID: 3652574736880595736}
+  _obj: {fileID: 2468615175100282329, guid: b7dc105f572afae489f1fd6502c3bcc1, type: 3}
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,6 +988,37 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!1 &5374265605644760440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603694810036171444}
+  m_Layer: 7
+  m_Name: crescent_L_spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &603694810036171444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5374265605644760440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.85, y: -0.271, z: 0}
+  m_LocalScale: {x: 1, y: 2.3714, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3016257482074367029}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8207456865336748242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,3 +1169,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPV: {fileID: 962539097766529675}
   text: {fileID: 302877324604325225}
+--- !u!1 &9136867896850285883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3652574736880595736}
+  m_Layer: 7
+  m_Name: crescent_R_spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3652574736880595736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9136867896850285883}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.49, y: -0.259, z: 0}
+  m_LocalScale: {x: 1, y: 2.3714, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3016257482074367029}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

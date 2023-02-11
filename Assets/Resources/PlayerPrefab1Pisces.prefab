@@ -246,6 +246,8 @@ MonoBehaviour:
   lifeTime: 0
   hasInfiniteLifeTime: 1
   launchForce: 0
+  hitStunTime: 0.25
+  launchDirection: {x: 0, y: 0}
   ownerID: 0
 --- !u!61 &3958859480390694109
 BoxCollider2D:
@@ -420,8 +422,10 @@ MonoBehaviour:
   moveSpeed: 40
   movementSmoothing: 0.05
   jumpPower: 30
+  fastFallSpeed: 0
   doubleJumpPower: 30
-  groundedCheckObject: {fileID: 4887830797730787154}
+  groundedCheckObjectLeft: {fileID: 0}
+  groundedCheckObjectRight: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -463,6 +467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4981084ca802d44cb8a63c46e20f981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cntr: {fileID: 0}
+  damageTaken: 0
   currentHealth: 100
   myPV: {fileID: 0}
 --- !u!114 &4331885266338997498
@@ -477,6 +483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca76dabed0bfd634eaa63c2395a4a9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldownTime: 0
   raycastOrigin: {fileID: 7327343584912840211}
   raycastDistance: 20
   gunDamage: 10
@@ -493,6 +500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e347fa4df47734fa006f550012eec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldownTime: 0
   movement: {x: 100, y: 5}
   sr: {fileID: 5280423001909542107}
   col: {fileID: 2476616717886758476}

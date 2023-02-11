@@ -4,8 +4,10 @@ using UnityEngine;
 
 public abstract class counter : Ability
 {
-    [SerializeField] Health health;
-    [SerializeField] float counterLength;
+    [SerializeField] protected Health health;
+    [SerializeField] private float counterLength;
+    
+
     public abstract void onCounter();
 
     public override void Use()
