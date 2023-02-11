@@ -20,5 +20,9 @@ MonoBehaviour:
   finisherEndlag: 0.25
   hitStunTime: 0.5
   knockbackPower: 50
-  launchDirection: {x: 10, y: 0}
+  launchDirection: {x: 25, y: 0}
   NextAttackFrameSO: {fileID: 0}
+  chargeTimeAllowed: 5
+  chargeTimeForMax: 3
+  chargeMultiplier: 2
+  freezeFrameName: Attack3Freeze

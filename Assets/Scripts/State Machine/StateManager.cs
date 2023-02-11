@@ -15,6 +15,7 @@ public class StateManager : MonoBehaviour
         AirHeavy,
         Recovery,
         HitStun,
+        Charging,
     }
     //Attacks
     [SerializeField] private AttackFrameSO firstLightGround;
@@ -22,11 +23,13 @@ public class StateManager : MonoBehaviour
     [SerializeField] private AttackFrameSO firstLightAir;
     [SerializeField] private AttackFrameSO firstHeavyAir;
     private AttackFrameSO currentAttack;
+    private States queuedState = States.Idle;
     //Components
     private PhotonView myPV;
     private Rigidbody2D myRB;
     //Aerial variables
     private float originalGravity;
+    [SerializeField] private float airAttackGravityModifier;
     public States currentState { get; private set; }
     [SerializeField] private doDamage hitbox;
     [SerializeField] private Animator playerAnimator;
@@ -37,6 +40,7 @@ public class StateManager : MonoBehaviour
     private float attackTimeRemaining;
     private float recoveryTimeLeft;
     private float hitStunTimeLeft;
+    private float chargeTimeLeft;
     
 
 
@@ -55,6 +59,17 @@ public class StateManager : MonoBehaviour
             return;
         }
 
+        //If charging, handle charging
+        if (currentState == States.Charging)
+        {
+            chargeTimeLeft -= Time.deltaTime;
+            if (chargeTimeLeft <= 0)
+            {
+                EndCharge();
+            }
+            return;
+        }
+
         //Count down recovery time, if over return to neutral
         recoveryTimeLeft -= Time.deltaTime;
         if (currentState == States.Recovery)
@@ -66,6 +81,7 @@ public class StateManager : MonoBehaviour
             return;
         }
 
+        //If hitstunned, handle hitstun
         hitStunTimeLeft -= Time.deltaTime;
         if (currentState == States.HitStun)
         {
@@ -138,6 +154,35 @@ public class StateManager : MonoBehaviour
         myRB.AddForce(new Vector2(Mathf.Sign(transform.localScale.x) * currentAttack.forwardMovement, 0), ForceMode2D.Impulse);
     }
 
+    //Overload for charged attacks
+    private void UpdateAttackInfo(float chargeMulti)
+    {
+        //Starts the countdown for the current attack's duration, changes damage of the hitbox to match the current attack, and starts the corresponding attack anim
+        attackTimeRemaining = currentAttack.duration;
+        hitbox.SetValues(currentAttack.damage * chargeMulti, currentAttack.hitStunTime, currentAttack.knockbackPower, chargeMulti * currentAttack.launchDirection);
+        playerAnimator.SetTrigger(currentAttack.attackAnimationName);
+        myRB.velocity = Vector2.zero;
+        myRB.AddForce(new Vector2(Mathf.Sign(transform.localScale.x) * currentAttack.forwardMovement, 0), ForceMode2D.Impulse);
+    }
+
+    private void EnterCharge()
+    {
+        currentState = States.Charging;
+        chargeTimeLeft = currentAttack.chargeTimeAllowed;
+        playerAnimator.SetTrigger(currentAttack.freezeFrameName);
+    }
+
+    public void EndCharge()
+    {
+        if(currentState == States.Charging)
+        {
+            float multiplier = Mathf.Lerp(1, currentAttack.chargeMultiplier, (currentAttack.chargeTimeAllowed - chargeTimeLeft) / currentAttack.chargeTimeForMax);
+            currentState = queuedState;
+            queuedState = States.Idle;
+            UpdateAttackInfo(multiplier);
+        }
+    }
+
     //When light attack is pressed, check if grounded and idle, if so start the attack chain. If an attack is in progress, allow input buffer.
    public void LightAttackPressed(bool isGrounded)
     {
@@ -156,7 +201,7 @@ public class StateManager : MonoBehaviour
 
         else if (currentState == States.Idle && !isGrounded)
         {
-            myRB.gravityScale = 0;
+            myRB.gravityScale = originalGravity * airAttackGravityModifier;
             currentState = States.AirLight;
             currentAttack = firstLightAir;
             UpdateAttackInfo();
@@ -177,14 +222,14 @@ public class StateManager : MonoBehaviour
 
         if (currentState == States.Idle && isGrounded)
         {
-            currentState = States.GroundHeavy;
+            queuedState = States.GroundHeavy;
             currentAttack = firstHeavyGround;
-            UpdateAttackInfo();
+            EnterCharge();
         }
 
         else if (currentState == States.Idle && !isGrounded)
         {
-            myRB.gravityScale = 0;
+            myRB.gravityScale = originalGravity * airAttackGravityModifier;
             currentState = States.AirHeavy;
             currentAttack = firstHeavyAir;
             UpdateAttackInfo();

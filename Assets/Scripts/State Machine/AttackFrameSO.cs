@@ -15,4 +15,9 @@ public class AttackFrameSO : ScriptableObject
     public float knockbackPower;
     public Vector2 launchDirection;
     public AttackFrameSO NextAttackFrameSO = null;
+    [Header("Heavy Attack Only Values")]
+    public float chargeTimeAllowed;
+    public float chargeTimeForMax;
+    public float chargeMultiplier;
+    public string freezeFrameName;
 }
