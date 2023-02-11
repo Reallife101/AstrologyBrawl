@@ -349,6 +349,7 @@ MonoBehaviour:
   launchForce: 0
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
+  parentSprite: {fileID: 3016257482074367029}
   ownerID: 0
 --- !u!61 &3958859480390694109
 BoxCollider2D:
@@ -571,6 +572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4981084ca802d44cb8a63c46e20f981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cntr: {fileID: 0}
   currentHealth: 100
   myPV: {fileID: 0}
 --- !u!114 &3127367030068314295
@@ -619,6 +621,7 @@ MonoBehaviour:
   firstHeavyGround: {fileID: 11400000, guid: 77da65241b169524cb97801da3d79825, type: 2}
   firstLightAir: {fileID: 11400000, guid: fdb0611cf10c78f4ebedcf8ed6df7861, type: 2}
   firstHeavyAir: {fileID: 11400000, guid: 77da65241b169524cb97801da3d79825, type: 2}
+  airAttackGravityModifier: 0
   hitbox: {fileID: 3780375295810477137}
   playerAnimator: {fileID: 8589663318342298076}
 --- !u!114 &4888351954668950257
@@ -810,6 +813,7 @@ MonoBehaviour:
   launchForce: 20
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
+  parentSprite: {fileID: 0}
   ownerID: 0
 --- !u!114 &2526129928733174280
 MonoBehaviour:
@@ -943,6 +947,7 @@ MonoBehaviour:
   launchForce: 20
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
+  parentSprite: {fileID: 0}
   ownerID: 0
 --- !u!114 &4522046420772155104
 MonoBehaviour:
