@@ -31,7 +31,7 @@ public class SpawnProjectile : Ranged
         {
             pro.transform.right = -transform.right.normalized;
             Vector3 proScale = pro.transform.localScale;
-            pro.transform.localScale = new Vector3(proScale.x, proScale.y, proScale.z);
+            pro.transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
         }
     }
 }
