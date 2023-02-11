@@ -9,9 +9,19 @@ public class SpawnProjectile : Ranged
     [SerializeField] GameObject projectile;
     [SerializeField] GameObject player;
 
+    private PhotonView pv;
+
+    private void Start()
+    {
+        pv = GetComponent<PhotonView>();
+    }
+
     public override void Use()
     {
-        spawn();
+        if (pv.IsMine)
+        {
+            spawn();
+        }
     }
 
     void spawn()
@@ -19,7 +29,6 @@ public class SpawnProjectile : Ranged
         GameObject pro = PhotonNetwork.Instantiate(projectile.name, spawnOrigin.position, Quaternion.identity);
 
         //If spawned object has doDamage and spawner has a photon view
-        PhotonView pv = GetComponent<PhotonView>();
         doDamage dm = pro.GetComponent<doDamage>();
         
         if (pv && dm)
