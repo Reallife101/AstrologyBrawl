@@ -41,8 +41,8 @@ public class SpawnObjects : Ability
         foreach (Transform point in spawnPoints)
         {
             GameObject game_object = PhotonNetwork.Instantiate(_obj.name, point.position, Quaternion.identity);
-            GameObject child = game_object.transform.GetChild(0).gameObject;
-            child.GetComponent<doDamage>().SetSender(gameObject);
+            //Make sure the doDamage is attached to the parent object (aka _obj)
+            game_object.GetComponent<doDamage>().SetSender(gameObject);
         }
     }
 

@@ -233,8 +233,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5802806296285131352}
-  - component: {fileID: 2197935937121934912}
-  - component: {fileID: 3539232333953518265}
   - component: {fileID: 1190379001965235865}
   m_Layer: 0
   m_Name: Square
@@ -258,48 +256,6 @@ Transform:
   m_Father: {fileID: 3977179354115235197}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2197935937121934912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3781957023198862303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  destroyOnTouch: 0
-  lifeTime: 10
-  hasInfiniteLifeTime: 0
-  launchForce: 25
-  hitStunTime: 0.25
-  launchDirection: {x: -25, y: 25}
-  ownerID: 0
---- !u!114 &3539232333953518265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3781957023198862303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents: []
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!212 &1190379001965235865
 SpriteRenderer:
   m_ObjectHideFlags: 0
