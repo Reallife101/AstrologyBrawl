@@ -15,6 +15,7 @@ public class doDamage : MonoBehaviour
     [SerializeField] float launchForce;
     [SerializeField] float hitStunTime = 0.25f;
     [SerializeField] Vector2 launchDirection;
+    [SerializeField] Transform parentSprite;
 
     private float counterDamage = 0;
     private GameObject AttackSender; 
@@ -67,8 +68,9 @@ public class doDamage : MonoBehaviour
             //Check to see which launch we should use
             if (launchDirection.magnitude >.1)
             {
+                
                 //flip the x if we are facing the wrong direction
-                if (transform.localScale.x < 0)
+                if (transform.localScale.x < 0 || (parentSprite != null && parentSprite.localScale.x < 0))
                 {
                     dmg.TakeDamage(damage, new Vector2(-launchDirection.x, launchDirection.y), hitStunTime);
                 }
