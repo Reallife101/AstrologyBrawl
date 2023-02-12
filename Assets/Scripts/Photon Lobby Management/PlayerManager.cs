@@ -74,7 +74,10 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
     public void UpdateHealth()
     {
-        PV.RPC("RPC_UpdateHealthItem", RpcTarget.All);
+        if(PV.IsMine)
+        {
+            PV.RPC("RPC_UpdateHealthItem", RpcTarget.All);
+        }
     }
 
     //Will create new health item if needed and updating playerController with approprate healthItem
@@ -137,6 +140,14 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     {
         gameOver = true;
         StartCoroutine(EndGameCoroutine());
+    }
+
+    public void SetController(GameObject _controller)
+    {
+        if(!PV.IsMine)
+        {
+            controller = _controller;
+        }
     }
 
     public static PlayerManager Find(Player player)
