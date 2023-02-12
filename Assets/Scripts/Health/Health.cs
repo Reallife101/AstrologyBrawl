@@ -4,7 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
-public abstract class Health : MonoBehaviourPunCallbacks, IDamageable//, IPunInstantiateMagicCallback
+public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInstantiateMagicCallback
 {
     [SerializeField] const float MaxHealth = 100f;
     [SerializeField] counter cntr;
@@ -28,7 +28,6 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable//, IPunIns
         Debug.Log("IS IT HERE?");
 
         PlayerManager manager = null;
-        Player _player = null;
 
         if (myPV.IsMine)
         {
