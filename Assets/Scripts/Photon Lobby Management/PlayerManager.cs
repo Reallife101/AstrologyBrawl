@@ -86,7 +86,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         {
             healthItem = healthHUDManager.AddHealthItem(info.Sender.NickName, info.Sender.ActorNumber);
         }
-        Health health = controller.GetComponent<Health>();
+        Health health = controller.GetComponent<PlayerHealth>();
         health.setHealthItem(healthItem);
         healthItem.SetHealthUI(health.getMaxHealth());
     }
