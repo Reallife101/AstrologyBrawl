@@ -69,25 +69,23 @@ public class PlayerManager : MonoBehaviour
         GameObject playerToSpawn = playerPrefabs[(int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]];
         controller = PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
 
-        if(!healthItem)
-        {
-            PV.RPC("RPC_CreateHealthItem", RpcTarget.All);
-        }
+        //for creating and updating playerController with approprate healthItem
+        PV.RPC("RPC_CreateHealthItem", RpcTarget.All);
+        Health health = controller.GetComponent<Health>();
+        health.setHealthItem(healthItem);
+        healthItem.SetHealthUI(health.getMaxHealth());
 
         PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
     }
 
+    //Will create new health item if needed 
     [PunRPC]
     private void RPC_CreateHealthItem(PhotonMessageInfo info)
     {
         healthHUDManager = FindObjectOfType<HealthHUDManager>();
-        if (healthHUDManager != null)
+        if (healthHUDManager != null && healthItem == null)
         {
-            healthHUDManager.AddHealthItem(info.Sender.NickName, info.Sender.ActorNumber);
-        }
-        else
-        {
-            Debug.Log("healthmanager is null :(");
+            healthItem = healthHUDManager.AddHealthItem(info.Sender.NickName, info.Sender.ActorNumber);
         }
     }
 

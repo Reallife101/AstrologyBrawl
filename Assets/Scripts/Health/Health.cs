@@ -16,7 +16,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
 
     private Player lastPlayer;
 
-    private HealthItem healthItem;
+    public HealthItem healthItem;
 
     private void Awake()
     {
@@ -49,7 +49,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
         myPV.RPC("HitStunned", myPV.Owner, hitStunValue);
         currentHealth -= damage;
 
-        healthItem.SetHealth(currentHealth);
+        healthItem.SetHealthUI(currentHealth);
 
         GetComponent<Rigidbody2D>().AddForce(launchVector, ForceMode2D.Impulse);
 
@@ -80,6 +80,16 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
     public abstract void Die();
 
     //make getters and setters
+    public float getMaxHealth()
+    {
+        return MaxHealth;
+    }
+    
+    public void setHealthItem(HealthItem item)
+    {
+        healthItem = item;
+    }
+
     public bool getCounter()
     {
         return counter;

@@ -13,7 +13,6 @@ public class HealthItem : MonoBehaviour
     {
         OwnerActorNumber = actornumber;
         SetPlayerName(nickname);
-        SetHealth(100);
     }
 
     public void SetPlayerName(string nickname)
@@ -21,7 +20,7 @@ public class HealthItem : MonoBehaviour
         PlayerName.text = nickname;
     }
 
-    public void SetHealth(float health)
+    public void SetHealthUI(float health)
     {
         if(health < 0f)
         {

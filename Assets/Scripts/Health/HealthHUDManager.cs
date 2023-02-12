@@ -14,11 +14,12 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
 
     private List<HealthItem> HealthItems = new List<HealthItem>();
 
-    public void AddHealthItem(string nickname, int actornum)
+    public HealthItem AddHealthItem(string nickname, int actornum)
     {
         HealthItem item = Instantiate(HealthItemPrefab, HUDTransform).GetComponent<HealthItem>();
         item.Initialize(nickname, actornum);
         HealthItems.Add(item);
+        return item;
     }
 
     public HealthItem FindMyHealthItem()
