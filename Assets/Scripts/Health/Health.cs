@@ -23,6 +23,29 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
         myPV = GetComponent<PhotonView>();
     }
 
+    public void OnPhotonInstantiate(PhotonMessageInfo info)
+    {
+        Debug.Log("IS IT HERE?");
+
+        PlayerManager manager = null;
+        if (myPV.IsMine)
+        {
+            foreach(Player player in PhotonNetwork.PlayerList)
+            {
+                if(player.ActorNumber == myPV.ViewID / PhotonNetwork.MAX_VIEW_IDS)
+                {
+                    manager = PlayerManager.Find(player);
+                    break;
+                }    
+            }
+
+            if (manager != null)
+            {
+                manager.UpdateHealth();
+            }
+        }
+    }
+
     public void TakeDamage(float damage)
     {
         myPV.RPC("RPC_TakeDamage", myPV.Owner, damage, Vector2.zero);

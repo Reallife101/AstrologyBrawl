@@ -7,7 +7,7 @@ using System.Linq;
 using System.IO;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManager : MonoBehaviourPunCallbacks, IPunInstantiateMagicCallback
 {
     //Player manager will keep track of scoring, tarot cards, and respawning for the player (ie all data we want to persist past player death)
     private PhotonView PV;
@@ -69,9 +69,12 @@ public class PlayerManager : MonoBehaviour
         GameObject playerToSpawn = playerPrefabs[(int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]];
         controller = PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
 
-        PV.RPC("RPC_UpdateHealthItem", RpcTarget.All);
-
         PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
+    }
+
+    public void UpdateHealth()
+    {
+        PV.RPC("RPC_UpdateHealthItem", RpcTarget.All);
     }
 
     //Will create new health item if needed and updating playerController with approprate healthItem
