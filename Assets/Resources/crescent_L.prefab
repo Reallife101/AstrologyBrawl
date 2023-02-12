@@ -58,6 +58,7 @@ MonoBehaviour:
   launchForce: 25
   hitStunTime: 0.25
   launchDirection: {x: -25, y: 25}
+  parentSprite: {fileID: 3977179354115235197}
   ownerID: 0
 --- !u!114 &2266692199534177371
 MonoBehaviour:
