@@ -27,23 +27,25 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     {
         Debug.Log("IS IT HERE?");
 
+        Player player = null;
         PlayerManager manager = null;
 
         if (myPV.IsMine)
         {
-            foreach(Player player in PhotonNetwork.PlayerList)
+            foreach(Player _player in PhotonNetwork.PlayerList)
             {
                 if(player.ActorNumber == myPV.ViewID / PhotonNetwork.MAX_VIEW_IDS)
                 {
-                    Debug.Log(player);
-                    manager = PlayerManager.Find(player);
+                    Debug.Log(_player);
+                    player = _player;
                     break;
                 }    
             }
         }
 
-        if (manager != null)
+        if (player != null)
         {
+            manager = PlayerManager.Find(player);
             manager.SetController(gameObject);
             manager.UpdateHealth();
         }
