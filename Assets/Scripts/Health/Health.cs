@@ -51,13 +51,13 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     public void TakeDamage(float damage)
     {
         myPV.RPC("RPC_TakeDamage", myPV.Owner, damage, Vector2.zero);
-        
+        healthItem.SetHealthUI(damage);
     }
 
     public void TakeDamage(float damage, Vector2 launchVector, float hitStunValue = 0.25f)
     {
         myPV.RPC("RPC_TakeDamage", myPV.Owner, damage, launchVector, hitStunValue);
-
+        healthItem.SetHealthUI(damage);
     }
 
     [PunRPC]
@@ -73,8 +73,6 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
         
         myPV.RPC("HitStunned", myPV.Owner, hitStunValue);
         currentHealth -= damage;
-
-        healthItem.SetHealthUI(currentHealth);
 
         GetComponent<Rigidbody2D>().AddForce(launchVector, ForceMode2D.Impulse);
 
