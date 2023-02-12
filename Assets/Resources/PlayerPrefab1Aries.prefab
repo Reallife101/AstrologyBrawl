@@ -655,6 +655,7 @@ MonoBehaviour:
   cooldownTime: 1
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
+  player: {fileID: 0}
 --- !u!114 &3763205129772730148
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
     [SerializeField] const float MaxHealth = 100f;
     [SerializeField] counter cntr;
 
+    public float damageTaken = 0; 
     public float currentHealth = MaxHealth;
     private bool counter = false;
 
@@ -39,8 +40,9 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
         //Check if we countered
         if (counter && cntr != null)
         {
+            damageTaken = damage;
             cntr.onCounter();
-            counter = false;
+
             return;
         }
         

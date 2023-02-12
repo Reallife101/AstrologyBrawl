@@ -148,7 +148,7 @@ public class StateManager : MonoBehaviour
     {
         //Starts the countdown for the current attack's duration, changes damage of the hitbox to match the current attack, and starts the corresponding attack anim
         attackTimeRemaining = currentAttack.duration;
-        hitbox.SetValues(currentAttack.damage, currentAttack.hitStunTime, currentAttack.knockbackPower, currentAttack.launchDirection);
+        hitbox.SetValues(currentAttack.damage, currentAttack.hitStunTime, currentAttack.knockbackPower, currentAttack.launchDirection, gameObject);
         playerAnimator.SetTrigger(currentAttack.attackAnimationName);
         myRB.velocity = Vector2.zero;
         myRB.AddForce(new Vector2(Mathf.Sign(transform.localScale.x) * currentAttack.forwardMovement, 0), ForceMode2D.Impulse);
@@ -159,7 +159,7 @@ public class StateManager : MonoBehaviour
     {
         //Starts the countdown for the current attack's duration, changes damage of the hitbox to match the current attack, and starts the corresponding attack anim
         attackTimeRemaining = currentAttack.duration;
-        hitbox.SetValues(currentAttack.damage * chargeMulti, currentAttack.hitStunTime, currentAttack.knockbackPower, chargeMulti * currentAttack.launchDirection);
+        hitbox.SetValues(currentAttack.damage * chargeMulti, currentAttack.hitStunTime, currentAttack.knockbackPower, chargeMulti * currentAttack.launchDirection, gameObject);
         playerAnimator.SetTrigger(currentAttack.attackAnimationName);
         myRB.velocity = Vector2.zero;
         myRB.AddForce(new Vector2(Mathf.Sign(transform.localScale.x) * currentAttack.forwardMovement, 0), ForceMode2D.Impulse);
