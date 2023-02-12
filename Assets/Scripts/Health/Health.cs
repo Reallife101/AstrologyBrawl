@@ -4,7 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
-public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInstantiateMagicCallback
+public abstract class Health : MonoBehaviourPunCallbacks, IDamageable//, IPunInstantiateMagicCallback
 {
     [SerializeField] const float MaxHealth = 100f;
     [SerializeField] counter cntr;
@@ -42,7 +42,6 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
                 }    
             }
         }
-
 
         if (manager != null)
         {

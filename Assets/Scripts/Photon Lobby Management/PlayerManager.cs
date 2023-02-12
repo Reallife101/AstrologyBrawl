@@ -72,6 +72,11 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
     }
 
+    public void SetController(GameObject _controller)
+    {
+        controller = _controller;
+    }
+
     public void UpdateHealth()
     {
         if(PV.IsMine)
@@ -88,6 +93,10 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         if (healthHUDManager != null && healthItem == null)
         {
             healthItem = healthHUDManager.AddHealthItem(info.Sender.NickName, info.Sender.ActorNumber);
+        }
+        if(controller == null)
+        {
+            Debug.Log("I AM NULL " + PV.ViewID);
         }
         Health health = controller.GetComponent<PlayerHealth>();
         health.setHealthItem(healthItem);
@@ -140,14 +149,6 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     {
         gameOver = true;
         StartCoroutine(EndGameCoroutine());
-    }
-
-    public void SetController(GameObject _controller)
-    {
-        if(!PV.IsMine)
-        {
-            controller = _controller;
-        }
     }
 
     public static PlayerManager Find(Player player)
