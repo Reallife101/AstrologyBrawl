@@ -7,7 +7,7 @@ using System.Linq;
 using System.IO;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
-public class PlayerManager : MonoBehaviourPunCallbacks, IPunInstantiateMagicCallback
+public class PlayerManager : MonoBehaviourPunCallbacks
 {
     //Player manager will keep track of scoring, tarot cards, and respawning for the player (ie all data we want to persist past player death)
     private PhotonView PV;
