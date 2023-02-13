@@ -162,13 +162,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 50
+  damage: 25
   destroyOnTouch: 1
   lifeTime: 10
   hasInfiniteLifeTime: 0
   launchForce: 0
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
+  parentSprite: {fileID: 0}
   ownerID: 0
 --- !u!114 &1752425406030071846
 MonoBehaviour:

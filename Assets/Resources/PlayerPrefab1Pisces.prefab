@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 6922216371664075038}
   m_Layer: 7
   m_Name: PlayerPrefab1Pisces
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,6 +468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cntr: {fileID: 0}
+  damageTaken: 0
   currentHealth: 100
   myPV: {fileID: 0}
 --- !u!114 &4331885266338997498

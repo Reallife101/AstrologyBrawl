@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 8589663318342298076}
   - component: {fileID: 1589277749856111818}
   - component: {fileID: 8930513261856451776}
+  - component: {fileID: 7170458050373339266}
   m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
@@ -230,7 +231,7 @@ Animator:
   m_GameObject: {fileID: 2024425471721291248}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 86fe0c65f6fc4cf48bfff40fb73df209, type: 2}
+  m_Controller: {fileID: 9100000, guid: 14369aa2552b3484b9f0a76229360060, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -293,9 +294,28 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 1
     Name: HitStunTrigger
+  - Type: 9
+    SynchronizeType: 1
+    Name: Attack3Freeze
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
+--- !u!114 &7170458050373339266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024425471721291248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de87fefeff68ac04fb005f721699223a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 1
+  spawnOrigin: {fileID: 2204496378394938765}
+  projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
+  player: {fileID: 3016257482074367028}
 --- !u!1 &2434522066618130176
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,6 +369,7 @@ MonoBehaviour:
   launchForce: 0
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
+  parentSprite: {fileID: 0}
   ownerID: 0
 --- !u!61 &3958859480390694109
 BoxCollider2D:
@@ -569,6 +590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cntr: {fileID: 0}
+  damageTaken: 0
   currentHealth: 100
   myPV: {fileID: 0}
 --- !u!114 &3127367030068314295
@@ -617,6 +639,7 @@ MonoBehaviour:
   firstHeavyGround: {fileID: 11400000, guid: 77da65241b169524cb97801da3d79825, type: 2}
   firstLightAir: {fileID: 11400000, guid: fdb0611cf10c78f4ebedcf8ed6df7861, type: 2}
   firstHeavyAir: {fileID: 11400000, guid: 77da65241b169524cb97801da3d79825, type: 2}
+  airAttackGravityModifier: 0
   hitbox: {fileID: 3780375295810477137}
   playerAnimator: {fileID: 8589663318342298076}
 --- !u!114 &4888351954668950257
