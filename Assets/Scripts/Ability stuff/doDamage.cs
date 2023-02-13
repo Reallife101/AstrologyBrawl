@@ -104,7 +104,11 @@ public class doDamage : MonoBehaviour
         damage = damageNum;
     }
 
-
+    public void SetValues(float damageNum, float KBValue)
+    {
+        damage = damageNum;
+        launchForce = KBValue;
+    }
     public void SetValues(float damageNum, float hitStunNum, float knockbackNum, Vector2 launchDir, GameObject sender)
     {
         damage = damageNum;

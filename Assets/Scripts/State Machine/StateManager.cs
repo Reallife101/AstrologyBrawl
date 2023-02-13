@@ -41,6 +41,8 @@ public class StateManager : MonoBehaviour
     private float recoveryTimeLeft;
     private float hitStunTimeLeft;
     private float chargeTimeLeft;
+
+    private float lastChargedMultiplier = 1f;
     
 
 
@@ -142,6 +144,7 @@ public class StateManager : MonoBehaviour
     {
         currentState = States.Idle;
         currentAttack = null;
+        lastChargedMultiplier = 1;
     }
 
     private void UpdateAttackInfo()
@@ -180,6 +183,7 @@ public class StateManager : MonoBehaviour
             currentState = queuedState;
             queuedState = States.Idle;
             UpdateAttackInfo(multiplier);
+            lastChargedMultiplier = multiplier;
         }
     }
 
@@ -254,4 +258,8 @@ public class StateManager : MonoBehaviour
         playerAnimator.SetTrigger("HitStunTrigger");
     }
 
+    public void chargedProjectileSetter(doDamage input)
+    {
+        input.SetValues(currentAttack.damage * lastChargedMultiplier, currentAttack.knockbackPower * lastChargedMultiplier);
+    }
 }

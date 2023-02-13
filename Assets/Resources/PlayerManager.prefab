@@ -48,7 +48,7 @@ MonoBehaviour:
   playerPrefabs:
   - {fileID: 3016257482074367028, guid: 0e73f51cbfe3af74eb1ff040598950ec, type: 3}
   - {fileID: 3016257482074367028, guid: bb5ec37e8334bbb4787c4244cd1a79df, type: 3}
-  - {fileID: 3016257482074367028, guid: 9191215d4233e124b88887c49877f9a9, type: 3}
+  - {fileID: 3016257482074367028, guid: 390158d2d194e434ca58a4491eadab90, type: 3}
   - {fileID: 3016257482074367028, guid: b552f72cb113b3445803908fbbe0b27f, type: 3}
   killGoal: 5
 --- !u!114 &6551344503419998623
