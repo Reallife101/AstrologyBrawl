@@ -598,6 +598,7 @@ MonoBehaviour:
   damageTaken: 0
   currentHealth: 100
   myPV: {fileID: 0}
+  healthItem: {fileID: 0}
 --- !u!114 &3127367030068314295
 MonoBehaviour:
   m_ObjectHideFlags: 0
