@@ -81,6 +81,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
             }
         }
 
+        healthHUDManager = FindObjectOfType<HealthHUDManager>();
         healthItem = healthHUDManager.AddHealthItem(nickname, actorNum);
         Health health = controller.GetComponent<PlayerHealth>();
         health.setHealthItem(healthItem);
