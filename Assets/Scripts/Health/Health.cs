@@ -4,7 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
-public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
+public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInstantiateMagicCallback
 {
     [SerializeField] const float MaxHealth = 100f;
     [SerializeField] counter cntr;
@@ -17,21 +17,54 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
 
     private Player lastPlayer;
 
+    public HealthItem healthItem;
+
     private void Awake()
     {
         myPV = GetComponent<PhotonView>();
     }
 
+    //So that we avoid any null reference exceptions
+    public void OnPhotonInstantiate(PhotonMessageInfo info)
+    { 
+        Player player = null;
+        PlayerManager manager = null;
+
+        foreach (Player _player in PhotonNetwork.PlayerList)
+        {
+            if (_player.ActorNumber == myPV.ViewID / PhotonNetwork.MAX_VIEW_IDS)
+            {
+                Debug.Log(_player);
+                player = _player;
+                break;
+            }
+        }
+
+        //HealthItem has no photon view, so we must provide all versions of it the same information through the PlayerManager
+        if (player != null)
+        {
+            manager = PlayerManager.Find(player);
+            manager.SetController(gameObject);
+            manager.UpdateHealth();
+        }
+    }
+
     public void TakeDamage(float damage)
     {
         myPV.RPC("RPC_TakeDamage", myPV.Owner, damage, Vector2.zero);
-
+        myPV.RPC("RPC_UpdateHealthUI", RpcTarget.All, damage);
     }
 
     public void TakeDamage(float damage, Vector2 launchVector, float hitStunValue = 0.25f)
     {
         myPV.RPC("RPC_TakeDamage", myPV.Owner, damage, launchVector, hitStunValue);
+        myPV.RPC("RPC_UpdateHealthUI", RpcTarget.All, damage);
+    }
 
+    [PunRPC]
+    public void RPC_UpdateHealthUI(float damage)
+    {
+        healthItem.DecreaseHealthUI(damage);
     }
 
     [PunRPC]
@@ -78,6 +111,16 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
     public abstract void Die();
 
     //make getters and setters
+    public float getMaxHealth()
+    {
+        return MaxHealth;
+    }
+    
+    public void setHealthItem(HealthItem item)
+    {
+        healthItem = item;
+    }
+
     public bool getCounter()
     {
         return counter;

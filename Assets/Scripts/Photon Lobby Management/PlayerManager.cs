@@ -7,7 +7,7 @@ using System.Linq;
 using System.IO;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManager : MonoBehaviourPunCallbacks
 {
     //Player manager will keep track of scoring, tarot cards, and respawning for the player (ie all data we want to persist past player death)
     private PhotonView PV;
@@ -24,6 +24,8 @@ public class PlayerManager : MonoBehaviour
 
     private addPlayersToFollow targetGroup;
 
+    private HealthHUDManager healthHUDManager;
+    private HealthItem healthItem;
 
     private void Awake()
     {
@@ -66,8 +68,37 @@ public class PlayerManager : MonoBehaviour
 
         GameObject playerToSpawn = playerPrefabs[(int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]];
         controller = PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
-        PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
 
+        PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
+    }
+
+    public void SetController(GameObject _controller)
+    {
+        controller = _controller;
+    }
+
+    public void UpdateHealth()
+    {
+        if(PV.IsMine)
+        {
+            PV.RPC("RPC_UpdateHealthItem", RpcTarget.All);
+        }
+    }
+
+    //Will create new health item if needed and updating playerController with approprate healthItem
+    [PunRPC]
+    private void RPC_UpdateHealthItem(PhotonMessageInfo info)
+    {
+        healthHUDManager = FindObjectOfType<HealthHUDManager>();
+        if (healthHUDManager != null && healthItem == null)
+        {
+            healthItem = healthHUDManager.AddHealthItem(info.Sender.NickName, info.Sender.ActorNumber);
+        }
+
+        //Sets relevant information for the HealthItems
+        Health health = controller.GetComponent<PlayerHealth>();
+        health.setHealthItem(healthItem);
+        healthItem.SetHealthUI(health.getMaxHealth());
     }
 
     public void Die()

@@ -48,6 +48,12 @@ MonoBehaviour:
   - RPC_UpdateCamera
   - RPC_UpdateText
   - RPC_SetKillGoal
+  - RPC_CreateHealthItem
+  - RPC_UpdateHealthItem
+  - RPC_UpdateHealthUI
+  - RPC_DecreaseHealthUI
+  - RPC_SetHealthUI
+  - RPC_SetPlayerName
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
