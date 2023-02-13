@@ -63,7 +63,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     [PunRPC]
     public void RPC_UpdateHealthUI(float damage)
     {
-        healthItem.SetHealthUI(damage);
+        healthItem.DecreaseHealthUI(damage);
     }
 
     [PunRPC]

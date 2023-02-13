@@ -8,6 +8,7 @@ public class HealthItem : MonoBehaviour
     [SerializeField] private TMPro.TMP_Text Health;
 
     private int OwnerActorNumber;
+    private float CurrentHealth;
 
     public void Initialize(string nickname, int actornumber)
     {
@@ -22,10 +23,17 @@ public class HealthItem : MonoBehaviour
 
     public void SetHealthUI(float health)
     {
-        if(health < 0f)
-        {
-            health = 0f;
-        }
         Health.text = health.ToString();
+        CurrentHealth = health;
+    }
+
+    public void DecreaseHealthUI(float damage)
+    {
+        CurrentHealth = CurrentHealth - damage;
+        if (CurrentHealth < 0f)
+        {
+            CurrentHealth = 0f;
+        }
+        Health.text = CurrentHealth.ToString();
     }
 }
