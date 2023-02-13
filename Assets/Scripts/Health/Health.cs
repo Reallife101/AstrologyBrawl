@@ -4,7 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
-public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInstantiateMagicCallback
+public abstract class Health : MonoBehaviourPunCallbacks, IDamageable
 {
     [SerializeField] const float MaxHealth = 100f;
     [SerializeField] counter cntr;
@@ -23,41 +23,14 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
         myPV = GetComponent<PhotonView>();
     }
 
-    public void OnPhotonInstantiate(PhotonMessageInfo info)
-    {
-        Debug.Log("IS IT HERE?");
-
-        Player player = null;
-        PlayerManager manager = null;
-
-        foreach (Player _player in PhotonNetwork.PlayerList)
-        {
-            if (_player.ActorNumber == myPV.ViewID / PhotonNetwork.MAX_VIEW_IDS)
-            {
-                Debug.Log(_player);
-                player = _player;
-                break;
-            }
-        }
-
-        if (player != null)
-        {
-            manager = PlayerManager.Find(player);
-            manager.SetController(gameObject);
-            manager.UpdateHealth();
-        }
-    }
-
     public void TakeDamage(float damage)
     {
         myPV.RPC("RPC_TakeDamage", myPV.Owner, damage, Vector2.zero);
-        myPV.RPC("RPC_UpdateHealthUI", RpcTarget.All, damage);
     }
 
     public void TakeDamage(float damage, Vector2 launchVector, float hitStunValue = 0.25f)
     {
         myPV.RPC("RPC_TakeDamage", myPV.Owner, damage, launchVector, hitStunValue);
-        myPV.RPC("RPC_UpdateHealthUI", RpcTarget.All, damage);
     }
 
     [PunRPC]
@@ -79,6 +52,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
         
         myPV.RPC("HitStunned", myPV.Owner, hitStunValue);
         currentHealth -= damage;
+        healthItem.SetHealthUI(currentHealth);
 
         GetComponent<Rigidbody2D>().AddForce(launchVector, ForceMode2D.Impulse);
 
