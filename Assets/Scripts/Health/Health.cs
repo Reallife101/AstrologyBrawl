@@ -23,10 +23,9 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
         myPV = GetComponent<PhotonView>();
     }
 
+    //So that we avoid any null reference exceptions
     public void OnPhotonInstantiate(PhotonMessageInfo info)
-    {
-        Debug.Log("IS IT HERE?");
-
+    { 
         Player player = null;
         PlayerManager manager = null;
 
@@ -40,6 +39,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
             }
         }
 
+        //HealthItem has no photon view, so we must provide all versions of it the same information through the PlayerManager
         if (player != null)
         {
             manager = PlayerManager.Find(player);

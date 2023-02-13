@@ -16,6 +16,11 @@ public class HealthItem : MonoBehaviour
         SetPlayerName(nickname);
     }
 
+    public int GetOwnerActorNumber()
+    {
+        return OwnerActorNumber;
+    }
+
     public void SetPlayerName(string nickname)
     {
         PlayerName.text = nickname;

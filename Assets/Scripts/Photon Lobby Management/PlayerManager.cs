@@ -94,10 +94,8 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         {
             healthItem = healthHUDManager.AddHealthItem(info.Sender.NickName, info.Sender.ActorNumber);
         }
-        if(controller == null)
-        {
-            Debug.Log("I AM NULL " + PV.ViewID);
-        }
+
+        //Sets relevant information for the HealthItems
         Health health = controller.GetComponent<PlayerHealth>();
         health.setHealthItem(healthItem);
         healthItem.SetHealthUI(health.getMaxHealth());
