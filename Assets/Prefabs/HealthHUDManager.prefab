@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b3273787b866b345b0e45a0733d284d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthItemString: HealthItem
+  HealthItemPrefab: {fileID: 3793421941201907714, guid: 61794307a5df0ff4ca5f7af95647d08b, type: 3}
   HUDTransform: {fileID: 0}
