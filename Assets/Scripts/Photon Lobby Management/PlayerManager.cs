@@ -69,25 +69,38 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         GameObject playerToSpawn = playerPrefabs[(int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]];
         controller = PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
 
-        int actorNum = 0;
-        string nickname = "";
-        foreach (Player _player in PhotonNetwork.PlayerList)
-        {
-            if (_player.ActorNumber == PV.ViewID / PhotonNetwork.MAX_VIEW_IDS)
-            {
-                actorNum = _player.ActorNumber;
-                nickname = _player.NickName;
-                break;
-            }
-        }
+        PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
+    }
 
+    public void SetController(GameObject _controller)
+    {
+        controller = _controller;
+    }
+
+    public void UpdateHealth()
+    {
+        if(PV.IsMine)
+        {
+            PV.RPC("RPC_UpdateHealthItem", RpcTarget.All);
+        }
+    }
+
+    //Will create new health item if needed and updating playerController with approprate healthItem
+    [PunRPC]
+    private void RPC_UpdateHealthItem(PhotonMessageInfo info)
+    {
         healthHUDManager = FindObjectOfType<HealthHUDManager>();
-        healthItem = healthHUDManager.AddHealthItem(nickname, actorNum);
+        if (healthHUDManager != null && healthItem == null)
+        {
+            healthItem = healthHUDManager.AddHealthItem(info.Sender.NickName, info.Sender.ActorNumber);
+        }
+        if(controller == null)
+        {
+            Debug.Log("I AM NULL " + PV.ViewID);
+        }
         Health health = controller.GetComponent<PlayerHealth>();
         health.setHealthItem(healthItem);
         healthItem.SetHealthUI(health.getMaxHealth());
-
-        PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
     }
 
     public void Die()
