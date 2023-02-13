@@ -278,7 +278,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowLayerWeightsInspector: 1
   ShowParameterInspector: 1
-  m_SynchronizeParameters: []
+  m_SynchronizeParameters:
+  - Type: 9
+    SynchronizeType: 1
+    Name: lightLibra
+  - Type: 4
+    SynchronizeType: 1
+    Name: HitStun
+  - Type: 9
+    SynchronizeType: 2
+    Name: heavyLibra
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -498,7 +507,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024425471721291248}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: ad4b6ee03ae9e5f4b8215b7d4ce252b4, type: 2}
   m_CullingMode: 0
@@ -911,13 +920,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f8f6b4a01ea59446a9107c9f033ab08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLightGround: {fileID: 11400000, guid: fdb0611cf10c78f4ebedcf8ed6df7861, type: 2}
-  firstHeavyGround: {fileID: 11400000, guid: 77da65241b169524cb97801da3d79825, type: 2}
-  firstLightAir: {fileID: 11400000, guid: fdb0611cf10c78f4ebedcf8ed6df7861, type: 2}
-  firstHeavyAir: {fileID: 11400000, guid: 77da65241b169524cb97801da3d79825, type: 2}
+  firstLightGround: {fileID: 11400000, guid: b97cdae115ed06f4dad20bb694144e93, type: 2}
+  firstHeavyGround: {fileID: 11400000, guid: 5eaccdf5fc509cc4aaa54d536c7c492a, type: 2}
+  firstLightAir: {fileID: 11400000, guid: b97cdae115ed06f4dad20bb694144e93, type: 2}
+  firstHeavyAir: {fileID: 11400000, guid: 5eaccdf5fc509cc4aaa54d536c7c492a, type: 2}
   airAttackGravityModifier: 0
   hitbox: {fileID: 3780375295810477137}
-  playerAnimator: {fileID: 8589663318342298076}
+  playerAnimator: {fileID: 8694400067546609426}
 --- !u!114 &4888351954668950257
 MonoBehaviour:
   m_ObjectHideFlags: 0
