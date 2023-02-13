@@ -786,14 +786,6 @@ PrefabInstance:
       propertyPath: HUDTransform
       value: 
       objectReference: {fileID: 1605129644}
-    - target: {fileID: 503591550937049549, guid: 4f156ed4a1ec07a439180b92734ec157, type: 3}
-      propertyPath: HealthItemPrefab
-      value: HealthItem
-      objectReference: {fileID: 0}
-    - target: {fileID: 503591550937049549, guid: 4f156ed4a1ec07a439180b92734ec157, type: 3}
-      propertyPath: HealthItemString
-      value: HealthItem
-      objectReference: {fileID: 0}
     - target: {fileID: 1874730483576445849, guid: 4f156ed4a1ec07a439180b92734ec157, type: 3}
       propertyPath: m_Name
       value: HealthHUDManager
