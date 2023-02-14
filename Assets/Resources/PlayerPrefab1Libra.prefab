@@ -125,7 +125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33419741909558062}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: -0.01745534}
+  m_LocalPosition: {x: 1, y: 0.31, z: -0.01745534}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 1
   spawnOrigin: {fileID: 2204496378394938765}
-  projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
+  projectile: {fileID: 793811016547114540, guid: 88e2167586424554cb1915db7704ce57, type: 3}
   player: {fileID: 3016257482074367028}
 --- !u!1 &1789027120670792531
 GameObject:
@@ -827,7 +827,7 @@ MonoBehaviour:
   ability2: {fileID: 8649130518893083904}
   moveSpeed: 40
   movementSmoothing: 0.05
-  jumpPower: 65
+  jumpPower: 40
   fastFallSpeed: 30
   doubleJumpPower: 30
   groundedCheckObjectLeft: {fileID: 4887830797730787154}
@@ -955,9 +955,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 513004987f4cef04ca72638b4f2afbe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0
+  cooldownTime: 3
   health: {fileID: 7328130180652725418}
-  counterLength: 20
+  counterLength: 1
   damageTaken: 0
 --- !u!114 &9151882990214347279
 MonoBehaviour:
@@ -971,7 +971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3338907856f95fb4a9b1b83e99d4bf36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0
+  cooldownTime: 1
   spawnPoints:
   - {fileID: 603694810036171444}
   - {fileID: 3652574736880595736}
@@ -1299,7 +1299,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5374265605644760440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.85, y: 0.365, z: 0}
+  m_LocalPosition: {x: -2.5, y: 0.365, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1480,7 +1480,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9136867896850285883}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.49, y: 0.365, z: 0}
+  m_LocalPosition: {x: 2.5, y: 0.365, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

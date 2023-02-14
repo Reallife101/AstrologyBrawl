@@ -53,7 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   destroyOnTouch: 0
-  lifeTime: 10
+  lifeTime: 0.75
   hasInfiniteLifeTime: 0
   launchForce: 25
   hitStunTime: 0.25
