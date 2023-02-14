@@ -94,7 +94,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6849615246939161011}
   - component: {fileID: 4408492985196759313}
-  - component: {fileID: 4969258062431181897}
   - component: {fileID: 7096948185374185163}
   - component: {fileID: 7300227244499260178}
   - component: {fileID: 4993387843034706464}
@@ -143,32 +142,10 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 4969258062431181897}
   - {fileID: 4993387843034706464}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &4969258062431181897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7395812835021248825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowLayerWeightsInspector: 1
-  ShowParameterInspector: 1
-  m_SynchronizeParameters:
-  - Type: 4
-    SynchronizeType: 0
-    Name: uppercut
-  m_SynchronizeLayers:
-  - SynchronizeType: 0
-    LayerIndex: 0
 --- !u!61 &7096948185374185163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -244,13 +221,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 20
   destroyOnTouch: 0
   lifeTime: 2
   hasInfiniteLifeTime: 0
   launchForce: 0
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
+  parentSprite: {fileID: 0}
   ownerID: 0
 --- !u!114 &1352831060393811335
 MonoBehaviour:
