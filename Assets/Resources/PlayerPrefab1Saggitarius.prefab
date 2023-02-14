@@ -255,7 +255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7217666807969326043
 Transform:
   m_ObjectHideFlags: 0
@@ -332,7 +332,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024425471721291248}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 14369aa2552b3484b9f0a76229360060, type: 2}
   m_CullingMode: 0
@@ -740,13 +740,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f8f6b4a01ea59446a9107c9f033ab08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLightGround: {fileID: 11400000, guid: fdb0611cf10c78f4ebedcf8ed6df7861, type: 2}
-  firstHeavyGround: {fileID: 11400000, guid: 77da65241b169524cb97801da3d79825, type: 2}
-  firstLightAir: {fileID: 11400000, guid: fdb0611cf10c78f4ebedcf8ed6df7861, type: 2}
-  firstHeavyAir: {fileID: 11400000, guid: 77da65241b169524cb97801da3d79825, type: 2}
+  firstLightGround: {fileID: 11400000, guid: 560ee9fb397047344b11f5900c3a3a16, type: 2}
+  firstHeavyGround: {fileID: 11400000, guid: a76b559cee93036409da50c320a1ac45, type: 2}
+  firstLightAir: {fileID: 11400000, guid: 560ee9fb397047344b11f5900c3a3a16, type: 2}
+  firstHeavyAir: {fileID: 11400000, guid: a76b559cee93036409da50c320a1ac45, type: 2}
   airAttackGravityModifier: 0
   hitbox: {fileID: 3780375295810477137}
-  playerAnimator: {fileID: 8589663318342298076}
+  playerAnimator: {fileID: 4757342467156564362}
 --- !u!114 &4888351954668950257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -890,7 +890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3498436832102854139
 Transform:
   m_ObjectHideFlags: 0
@@ -967,7 +967,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6017469816907113681}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 179c159ca4db36b449db9df3fc085c67, type: 2}
   m_CullingMode: 0
@@ -1016,7 +1016,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowLayerWeightsInspector: 1
   ShowParameterInspector: 1
-  m_SynchronizeParameters: []
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 0
+    Name: HitStun
+  - Type: 9
+    SynchronizeType: 0
+    Name: SagHeavy
+  - Type: 9
+    SynchronizeType: 0
+    Name: SagLight
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
