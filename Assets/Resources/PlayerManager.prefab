@@ -51,6 +51,7 @@ MonoBehaviour:
   - {fileID: 3016257482074367028, guid: 390158d2d194e434ca58a4491eadab90, type: 3}
   - {fileID: 3016257482074367028, guid: 47270dd503afb8c4384b8d48c16ad8ba, type: 3}
   - {fileID: 3016257482074367028, guid: 269ac9da2eef138408c93c340fd1ab34, type: 3}
+  - {fileID: 3016257482074367028, guid: 7a5e045d5356dfb4ea4dc04392ad1142, type: 3}
   killGoal: 5
 --- !u!114 &6551344503419998623
 MonoBehaviour:

@@ -22,7 +22,7 @@ MonoBehaviour:
   knockbackPower: 50
   launchDirection: {x: 25, y: 0}
   NextAttackFrameSO: {fileID: 0}
-  chargeTimeAllowed: 5
-  chargeTimeForMax: 3
-  chargeMultiplier: 2
-  freezeFrameName: Attack3Freeze
+  chargeTimeAllowed: 0
+  chargeTimeForMax: 0
+  chargeMultiplier: 0
+  freezeFrameName: 
