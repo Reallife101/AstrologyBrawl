@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da60d73c482bb39469dd75590f34006c, type: 3}
   m_Name: AQ-LA-3
   m_EditorClassIdentifier: 
-  damage: 70
+  damage: 30
   attackAnimationName: Attack3
   duration: 0.5
   inputBufferTime: 0.35
