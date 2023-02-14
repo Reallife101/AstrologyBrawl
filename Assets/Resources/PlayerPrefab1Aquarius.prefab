@@ -657,7 +657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0
+  cooldownTime: 1.5
   spawnOrigin: {fileID: 7327343584912840211}
   projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
   player: {fileID: 3016257482074367028}
@@ -673,7 +673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0
+  cooldownTime: 1.5
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 7395812835021248825, guid: cf08da57f873eee47bef0f4aefb917de, type: 3}
   player: {fileID: 3016257482074367028}

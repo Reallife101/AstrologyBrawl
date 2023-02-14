@@ -1,7 +1,9 @@
 using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
+using System;
 
 public class SpawnProjectile : Ranged
 {
@@ -34,7 +36,17 @@ public class SpawnProjectile : Ranged
         if (pv && dm)
         {
             dm.ownerID = pv.GetInstanceID();
-            dm.SetSender(gameObject.transform.parent.gameObject); //SpawnProjectile is always going to be a child of the player prefab
+
+            if (transform.parent != null)
+            {
+                dm.SetSender(transform.parent.gameObject); //SpawnProjectile is always going to be a child of the player prefab
+            }
+            else
+            {
+                dm.SetSender(gameObject);
+            }
+
+            
         }
 
         // If the character faces the other direction, flip the scale and right transform

@@ -137,7 +137,6 @@ public class playerController : MonoBehaviour
 
             fastFall = false;
             mySM.HeavyAttackPressed(isGrounded);
-            Debug.Log("TheManBehind");
         };
 
         heavyAttackAction.canceled += heavyAttackRelease =>
