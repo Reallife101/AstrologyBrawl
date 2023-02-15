@@ -226,9 +226,18 @@ public class StateManager : MonoBehaviour
 
         if (currentState == States.Idle && isGrounded)
         {
-            queuedState = States.GroundHeavy;
-            currentAttack = firstHeavyGround;
-            EnterCharge();
+            if(firstHeavyGround.chargeTimeAllowed != 0)
+            {
+                queuedState = States.GroundHeavy;
+                currentAttack = firstHeavyGround;
+                EnterCharge();
+            }
+            else
+            {
+                currentState = States.GroundHeavy;
+                currentAttack = firstHeavyGround;
+                UpdateAttackInfo();
+            }
         }
 
         else if (currentState == States.Idle && !isGrounded)
