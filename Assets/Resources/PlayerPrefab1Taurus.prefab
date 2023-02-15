@@ -418,6 +418,7 @@ GameObject:
   - component: {fileID: 2270851739153014609}
   - component: {fileID: 4888351954668950257}
   - component: {fileID: 5367980014787998885}
+  - component: {fileID: 3631343015906704325}
   m_Layer: 7
   m_Name: PlayerPrefab1Taurus
   m_TagString: Player
@@ -521,7 +522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876586a5a6023f6489fb060da5dc71df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ability1: {fileID: 0}
+  ability1: {fileID: 3631343015906704325}
   ability2: {fileID: 5367980014787998885}
   moveSpeed: 40
   movementSmoothing: 0.05
@@ -656,6 +657,22 @@ MonoBehaviour:
   cooldownTime: 1
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 7395812835021248825, guid: b6f02c1ec1dbec441b90b951acd92938, type: 3}
+  player: {fileID: 3016257482074367028}
+--- !u!114 &3631343015906704325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 1
+  spawnOrigin: {fileID: 2204496378394938765}
+  projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
   player: {fileID: 3016257482074367028}
 --- !u!1 &3109441835425417713
 GameObject:
