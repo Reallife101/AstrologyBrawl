@@ -22,7 +22,7 @@ public class playerController : MonoBehaviour
 
     //Standard move values
     private Vector3 StartVelocity = Vector3.zero;
-    private Vector2 movementVector;
+    public Vector2 movementVector;
     [Header("Movement Values")]
     [SerializeField] private float moveSpeed;
     [SerializeField] private float movementSmoothing;
@@ -188,7 +188,7 @@ public class playerController : MonoBehaviour
         Movement();
     }
 
-    private void Movement()
+    public void Movement()
     {
         //If attacking, lock movement
         if (movementLocked)
