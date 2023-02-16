@@ -43,6 +43,9 @@ public class StateManager : MonoBehaviour
     private float chargeTimeLeft;
 
     private float lastChargedMultiplier = 1f;
+
+    [Header("Audio Scripts")]
+    [SerializeField] lightAttackAudio lightAttackAudio;
     
 
 
@@ -197,10 +200,10 @@ public class StateManager : MonoBehaviour
 
         if(currentState == States.Idle && isGrounded)
         {
-
             currentState = States.GroundLight;
             currentAttack = firstLightGround;
             UpdateAttackInfo();
+            lightAttackAudio.CallLightAttack();
         }
 
         else if (currentState == States.Idle && !isGrounded)
@@ -209,6 +212,7 @@ public class StateManager : MonoBehaviour
             currentState = States.AirLight;
             currentAttack = firstLightAir;
             UpdateAttackInfo();
+            lightAttackAudio.CallLightAttack();
         }
 
         if (currentAttack != null && currentState == States.GroundLight || currentState == States.AirLight)

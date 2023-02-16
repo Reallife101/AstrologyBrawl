@@ -52,6 +52,7 @@ public class playerController : MonoBehaviour
 
     [Header("Audio Scripts")]
     jumpAudio jumpAudio;
+    lightAttackAudio lightAttackAudio;
 
     //Components
     private PlayerManager myPM;
@@ -89,8 +90,8 @@ public class playerController : MonoBehaviour
             //If grounded, jump normally
             if (isGrounded)
             {
-                myRB.AddForce(new Vector2(myRB.velocity.y, jumpPower * 25));
                 jumpAudio.CallJump();
+                myRB.AddForce(new Vector2(myRB.velocity.y, jumpPower * 25)); 
             }
 
             //If midair, check if can double jumo
@@ -98,8 +99,8 @@ public class playerController : MonoBehaviour
             {
                 canDoubleJump = false;
                 myRB.velocity = new Vector2(myRB.velocity.x, 0);
-                myRB.AddForce(new Vector2(myRB.velocity.y, doubleJumpPower * 25));
                 jumpAudio.CallJump();
+                myRB.AddForce(new Vector2(myRB.velocity.y, doubleJumpPower * 25));
             }
         };
 
