@@ -1341,10 +1341,11 @@ MonoBehaviour:
   DepthUpdateSpeed: 5
   AngleUpdateSpeed: 7
   PositionUpdateSpeed: 5
-  DepthMax: -10
-  DepthMin: -22
+  DepthMax: 5
+  DepthMin: 9
   AngleMax: 11
   AngleMin: 3
+  cam: {fileID: 1291424024}
 --- !u!81 &1291424023
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1379,7 +1380,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: 0
   m_CullingMask:

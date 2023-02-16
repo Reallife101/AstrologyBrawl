@@ -21,6 +21,8 @@ public class supCam : MonoBehaviour
 
     private float CameraEulerX;
     private Vector3 CameraPosition;
+
+    public Camera cam;
     
     // Start is called before the first frame update
     void Start()
@@ -51,7 +53,9 @@ public class supCam : MonoBehaviour
             Vector3 newPosition = Vector3.zero;
             newPosition.x = Mathf.MoveTowards(position.x, CameraPosition.x, PositionUpdateSpeed * Time.deltaTime);
             newPosition.y = Mathf.MoveTowards(position.y, CameraPosition.y, PositionUpdateSpeed * Time.deltaTime);
-            newPosition.z = Mathf.MoveTowards(position.z, CameraPosition.z, DepthUpdateSpeed * Time.deltaTime);
+            newPosition.z = -10f;
+            //newPosition.z = Mathf.MoveTowards(position.z, CameraPosition.z, DepthUpdateSpeed * Time.deltaTime);
+            cam.depth = Mathf.MoveTowards(position.z, CameraPosition.z, DepthUpdateSpeed * Time.deltaTime);
             gameObject.transform.position = newPosition;
         }
 
