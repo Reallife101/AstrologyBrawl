@@ -627,6 +627,7 @@ GameObject:
   - component: {fileID: 1534817729034488903}
   - component: {fileID: 8092099266509439254}
   - component: {fileID: 7274210829137952063}
+  - component: {fileID: 7214162617025682092}
   m_Layer: 7
   m_Name: PlayerPrefab1Saggitarius
   m_TagString: Player
@@ -902,7 +903,25 @@ MonoBehaviour:
       Data4: 2095233066
     Path: event:/Walkies
   movementspeed: 0.25
-  player: {fileID: 0}
+--- !u!114 &7214162617025682092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b57e2425e8db56845aae91da8ae1cde2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputsound:
+    Guid:
+      Data1: 1540495566
+      Data2: 1121154774
+      Data3: -1102698050
+      Data4: 623309370
+    Path: event:/Jumps
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0

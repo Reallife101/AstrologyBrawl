@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Footsteps : MonoBehaviour
-
 {
-    public FMODUnity.EventReference inputsound;
-    public float movementspeed;
-    public playerController player;
+    [SerializeField] FMODUnity.EventReference inputsound;
+    [SerializeField] float movementspeed;
+    //[SerializeField] playerController player;
     playerController playerController;
 
     void Awake()
@@ -22,8 +21,7 @@ public class Footsteps : MonoBehaviour
         {
             if (playerController.movementVector.x != 0)
             {
-                FMODUnity.RuntimeManager.PlayOneShot(inputsound);
-                
+                FMODUnity.RuntimeManager.PlayOneShot(inputsound);   
             }
         }      
     }  

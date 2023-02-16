@@ -49,6 +49,10 @@ public class playerController : MonoBehaviour
     [SerializeField] private Transform groundedCheckObjectRight;
     [SerializeField] private LayerMask groundLayer;
 
+
+    [Header("Audio Scripts")]
+    jumpAudio jumpAudio;
+
     //Components
     private PlayerManager myPM;
     private PhotonView myPV;
@@ -74,6 +78,8 @@ public class playerController : MonoBehaviour
         heavyAttackAction = input.Player.HeavyAttack;
         scoreboardInputAction = input.Player.Scoreboard;
 
+        jumpAudio = GetComponent<jumpAudio>();
+
         playerJump.started += jumpBehavior =>
         {
             if (!myPV.IsMine || movementLocked)
@@ -84,6 +90,7 @@ public class playerController : MonoBehaviour
             if (isGrounded)
             {
                 myRB.AddForce(new Vector2(myRB.velocity.y, jumpPower * 25));
+                jumpAudio.CallJump();
             }
 
             //If midair, check if can double jumo
@@ -92,6 +99,7 @@ public class playerController : MonoBehaviour
                 canDoubleJump = false;
                 myRB.velocity = new Vector2(myRB.velocity.x, 0);
                 myRB.AddForce(new Vector2(myRB.velocity.y, doubleJumpPower * 25));
+                jumpAudio.CallJump();
             }
         };
 
