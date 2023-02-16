@@ -1564,6 +1564,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e640e8ca139b084e956daa4bab644a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VirtualCamera: {fileID: 1681511474}
+  DepthUpdateSpeed: 5
+  minDepth: 5
+  MaxDepth: 10
+  minDistance: 5
+  MaxDistance: 30
 --- !u!114 &1548554721
 MonoBehaviour:
   m_ObjectHideFlags: 0
