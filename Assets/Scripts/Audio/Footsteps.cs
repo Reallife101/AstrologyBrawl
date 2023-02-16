@@ -5,11 +5,10 @@ using UnityEngine;
 public class Footsteps : MonoBehaviour
 
 {
-    [FMODUnity.EventRef]
-    playerController playerController;
+    public FMODUnity.EventReference inputsound;
     public float movementspeed;
-    //public string inputsound;
     public playerController player;
+    playerController playerController;
 
     void Awake()
     {
@@ -19,12 +18,14 @@ public class Footsteps : MonoBehaviour
     
     void CallFootsteps()
     {
-        if (playerController.movementVector.x != 0)
+        if (playerController.isGrounded)
         {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Walkies");
-            
-        }
-            
+            if (playerController.movementVector.x != 0)
+            {
+                FMODUnity.RuntimeManager.PlayOneShot(inputsound);
+                
+            }
+        }      
     }  
 
     void Start()

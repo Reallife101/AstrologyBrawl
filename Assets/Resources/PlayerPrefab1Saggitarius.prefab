@@ -626,7 +626,7 @@ GameObject:
   - component: {fileID: 4888351954668950257}
   - component: {fileID: 1534817729034488903}
   - component: {fileID: 8092099266509439254}
-  - component: {fileID: 7075444900011964720}
+  - component: {fileID: 7274210829137952063}
   m_Layer: 7
   m_Name: PlayerPrefab1Saggitarius
   m_TagString: Player
@@ -738,6 +738,7 @@ MonoBehaviour:
   jumpPower: 65
   fastFallSpeed: 30
   doubleJumpPower: 30
+  isGrounded: 0
   groundedCheckObjectLeft: {fileID: 4887830797730787154}
   groundedCheckObjectRight: {fileID: 8475485967914335248}
   groundLayer:
@@ -881,7 +882,7 @@ MonoBehaviour:
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
   player: {fileID: 3016257482074367028}
---- !u!114 &7075444900011964720
+--- !u!114 &7274210829137952063
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -893,7 +894,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20aa6f48571e3ca40bbe44c53dae3055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementspeed: 0.5
+  inputsound:
+    Guid:
+      Data1: -1490557312
+      Data2: 1307136215
+      Data3: 1436951690
+      Data4: 2095233066
+    Path: event:/Walkies
+  movementspeed: 0.25
   player: {fileID: 0}
 --- !u!1 &3109441835425417713
 GameObject:

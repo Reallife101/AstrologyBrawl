@@ -38,7 +38,7 @@ public class playerController : MonoBehaviour
     public float DoubleJumpPower { get { return doubleJumpPower; } set { doubleJumpPower = value; } }
 
     //Movement bools
-    private bool isGrounded;
+    public bool isGrounded;
     private bool canDoubleJump;
     private bool movementLocked = false;
     private bool fastFall;
