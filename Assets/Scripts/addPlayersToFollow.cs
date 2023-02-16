@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using Photon.Pun;
 
 public class addPlayersToFollow : MonoBehaviour
 {
@@ -28,7 +29,22 @@ public class addPlayersToFollow : MonoBehaviour
     {
         foreach (GameObject go in players)
         {
-            targetGroup.AddMember(go.transform, 1, 1);
+            PhotonView pv = go.GetComponent<PhotonView>();
+
+            if (pv != null && pv.IsMine)
+            {
+                targetGroup.AddMember(go.transform, 1.25f, 7);
+            }
+            else
+            {
+                targetGroup.AddMember(go.transform, 1, 3);
+            }
+        }
+
+        GameObject center = GameObject.FindGameObjectWithTag("centerStage");
+        if (center != null)
+        {
+            targetGroup.AddMember(center.transform, 1.125f, 1);
         }
     }
 
