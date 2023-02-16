@@ -138,6 +138,17 @@
                 },
                 {
                     "name": "",
+                    "id": "cc4e01f3-69c0-457d-a19e-8ae936d84775",
+                    "path": "<Joystick>/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "5b3e4844-a8a0-4a76-ac9a-1e9b149cd8c5",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -151,6 +162,17 @@
                     "name": "",
                     "id": "c891b381-52b8-4243-8b64-96b618fd9f34",
                     "path": "<Gamepad>/leftStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e4efec54-f92f-44d7-b678-768ad621245b",
+                    "path": "<Joystick>/stick/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -182,6 +204,17 @@
                 },
                 {
                     "name": "",
+                    "id": "a32b92dc-de47-475d-a421-ce5d913e29a6",
+                    "path": "<Joystick>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ability1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "5da78c31-2c3a-4ab2-a900-cdd06361505c",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
@@ -195,6 +228,17 @@
                     "name": "",
                     "id": "d1fc1e41-f1e3-4cdc-8b0e-6fe9fe4fa173",
                     "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LightAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1caab742-a245-413a-819d-6c0e3153f645",
+                    "path": "<HID::Microntek              USB Joystick          >/button2",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -226,6 +270,17 @@
                 },
                 {
                     "name": "",
+                    "id": "529d714d-3eda-4b6e-b41b-85fcb182cd43",
+                    "path": "<HID::Microntek              USB Joystick          >/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HeavyAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "fdb77643-b269-4b98-b402-f8b61d653e87",
                     "path": "<Keyboard>/2",
                     "interactions": "",
@@ -248,6 +303,17 @@
                 },
                 {
                     "name": "",
+                    "id": "b6dd11fe-f0b7-4019-9ce1-3529d97e8e57",
+                    "path": "<HID::Microntek              USB Joystick          >/button4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ability2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "ec457811-7dca-40a1-a6f0-a21b77b71647",
                     "path": "<Keyboard>/tab",
                     "interactions": "",
@@ -261,6 +327,17 @@
                     "name": "",
                     "id": "3b5db967-6487-4abb-a1bf-8f0af1c8daf9",
                     "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Scoreboard",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "69e8d405-236f-4aa4-a693-e35d9236eae4",
+                    "path": "<HID::Microntek              USB Joystick          >/button9",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
