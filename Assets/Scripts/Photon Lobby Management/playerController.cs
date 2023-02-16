@@ -51,8 +51,7 @@ public class playerController : MonoBehaviour
 
 
     [Header("Audio Scripts")]
-    jumpAudio jumpAudio;
-    lightAttackAudio lightAttackAudio;
+    audioManager audioManager;
 
     //Components
     private PlayerManager myPM;
@@ -79,7 +78,7 @@ public class playerController : MonoBehaviour
         heavyAttackAction = input.Player.HeavyAttack;
         scoreboardInputAction = input.Player.Scoreboard;
 
-        jumpAudio = GetComponent<jumpAudio>();
+        audioManager = GetComponent<audioManager>();
 
         playerJump.started += jumpBehavior =>
         {
@@ -90,7 +89,7 @@ public class playerController : MonoBehaviour
             //If grounded, jump normally
             if (isGrounded)
             {
-                jumpAudio.CallJump();
+                audioManager.CallJump();
                 myRB.AddForce(new Vector2(myRB.velocity.y, jumpPower * 25)); 
             }
 
@@ -99,7 +98,7 @@ public class playerController : MonoBehaviour
             {
                 canDoubleJump = false;
                 myRB.velocity = new Vector2(myRB.velocity.x, 0);
-                jumpAudio.CallJump();
+                audioManager.CallJump();
                 myRB.AddForce(new Vector2(myRB.velocity.y, doubleJumpPower * 25));
             }
         };

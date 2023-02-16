@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Footsteps : MonoBehaviour
+public class audioManager : MonoBehaviour
 {
-    [SerializeField] FMODUnity.EventReference inputsound;
+    [SerializeField] FMODUnity.EventReference footsound;
+    [SerializeField] FMODUnity.EventReference lightattacksound;
+    [SerializeField] FMODUnity.EventReference jumpsound;
     [SerializeField] float movementspeed;
-    //[SerializeField] playerController player;
     playerController playerController;
 
     void Awake()
@@ -21,7 +22,7 @@ public class Footsteps : MonoBehaviour
         {
             if (playerController.movementVector.x != 0)
             {
-                FMODUnity.RuntimeManager.PlayOneShot(inputsound);   
+                FMODUnity.RuntimeManager.PlayOneShot(footsound);   
             }
         }      
     }  
@@ -30,5 +31,14 @@ public class Footsteps : MonoBehaviour
     {
         InvokeRepeating ("CallFootsteps",0,movementspeed);
     }
-
+    
+    public void CallLightAttack()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(lightattacksound);
+    }
+    
+    public void CallJump()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(jumpsound);
+    }
 }
