@@ -15,11 +15,64 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638119785092206591
+  lastModified: 638121391182643208
   FileSizes:
   - Name: 
     Value: 882
   Exists: 1
+--- !u!114 &-8564421443649005500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/(TEMP) Main Menu Theme/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1839987030
+    data2: 1741563014
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Value A
+  - Value B
+  Exists: 1
+--- !u!114 &-8412907072117142784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/(TEMP) Battle Theme Reduced
+  m_EditorClassIdentifier: 
+  Path: event:/(TEMP) Battle Theme Reduced
+  Guid:
+    Data1: 69511857
+    Data2: 1243223215
+    Data3: 441812658
+    Data4: -1719780496
+  Banks:
+  - {fileID: -1105131376724052805}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 76504
 --- !u!114 &-8238409646333612872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,6 +101,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 168359
+--- !u!114 &-8058813003692282465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: parameter:/Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1839987030
+    data2: 1741563014
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Value A
+  - Value B
+  Exists: 1
 --- !u!114 &-1105131376724052805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,7 +142,7 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638119785092186606
+  lastModified: 638121391182638214
   FileSizes: []
   Exists: 1
 --- !u!114 &-694125327386692165
@@ -108,16 +187,44 @@ MonoBehaviour:
   - {fileID: -8844762814205021062}
   - {fileID: -1105131376724052805}
   EditorEvents:
-  - {fileID: 1389602570942497364}
-  - {fileID: -8238409646333612872}
+  - {fileID: -8412907072117142784}
+  - {fileID: 816918093522934777}
   EditorParameters:
-  - {fileID: 6897359367507961776}
+  - {fileID: -8058813003692282465}
   MasterBanks:
   - {fileID: -1105131376724052805}
   StringsBanks:
   - {fileID: -8844762814205021062}
-  cacheTime: 638119785092206591
+  cacheTime: 638121391182643208
   cacheVersion: 131601
+--- !u!114 &816918093522934777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/(TEMP) Main Menu Theme
+  m_EditorClassIdentifier: 
+  Path: event:/(TEMP) Main Menu Theme
+  Guid:
+    Data1: 1142580733
+    Data2: 1271012895
+    Data3: -280540998
+    Data4: -1317060781
+  Banks:
+  - {fileID: -1105131376724052805}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8564421443649005500}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 168359
 --- !u!114 &1389602570942497364
 MonoBehaviour:
   m_ObjectHideFlags: 0

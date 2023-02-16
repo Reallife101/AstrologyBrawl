@@ -24,6 +24,9 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
     private addPlayersToFollow targetGroup;
 
+    //Test
+    private supCam supCam;
+
     private HealthHUDManager healthHUDManager;
     private HealthItem healthItem;
 
@@ -45,7 +48,8 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         hash.Add("kills", kills);
         hash.Add("deaths", deaths);
         PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
-        targetGroup = GameObject.FindGameObjectWithTag("targetGroup").GetComponent<addPlayersToFollow>();
+        //targetGroup = GameObject.FindGameObjectWithTag("targetGroup").GetComponent<addPlayersToFollow>();
+        supCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<supCam>();
 
     }
     private void Start()
@@ -123,7 +127,8 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     [PunRPC]
     void RPC_UpdateCamera()
     {
-        targetGroup.changeMembers(GameObject.FindGameObjectsWithTag("Player"));
+        //targetGroup.changeMembers(GameObject.FindGameObjectsWithTag("Player"));
+        supCam.changeMembers(GameObject.FindGameObjectsWithTag("Player"));
     }
 
 

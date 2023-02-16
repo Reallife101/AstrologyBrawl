@@ -4,8 +4,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
-using Photon.Realtime;
-using Photon.Pun;
 
 public class HealthHUDManager : MonoBehaviourPunCallbacks
 {
