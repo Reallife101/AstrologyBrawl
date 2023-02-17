@@ -44,11 +44,10 @@ public class StateManager : MonoBehaviour
 
     private float lastChargedMultiplier = 1f;
 
+    //Audio
     [Header("Audio Scripts")]
     audioManager audioManager;
     
-
-
     private void Awake()
     {
         audioManager = GetComponent<audioManager>();
