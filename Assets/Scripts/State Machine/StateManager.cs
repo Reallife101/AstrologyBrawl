@@ -175,6 +175,7 @@ public class StateManager : MonoBehaviour
         currentState = States.Charging;
         chargeTimeLeft = currentAttack.chargeTimeAllowed;
         playerAnimator.SetTrigger(currentAttack.freezeFrameName);
+        audioManager.CallHeavyAttackCharge();
     }
 
     public void EndCharge()
@@ -186,6 +187,7 @@ public class StateManager : MonoBehaviour
             queuedState = States.Idle;
             UpdateAttackInfo(multiplier);
             lastChargedMultiplier = multiplier;
+            audioManager.CallHeavyAttackRelease();
         }
     }
 

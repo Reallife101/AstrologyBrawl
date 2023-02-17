@@ -14,11 +14,12 @@ public class audioManager : MonoBehaviour
 
     [Header("Attacks")]
     [SerializeField] FMODUnity.EventReference lightattacksound;
+    [SerializeField] FMODUnity.EventReference heavyattackchargesound;
+    [SerializeField] FMODUnity.EventReference heavyattackreleasesound;
+    
     
     // Other variables
     playerController playerController;
-    private float nextFFTime = 10;
-
 
     void Awake()
     {
@@ -49,6 +50,16 @@ public class audioManager : MonoBehaviour
     public void CallLightAttack()
     {
         FMODUnity.RuntimeManager.PlayOneShot(lightattacksound);
+    }
+
+    public void CallHeavyAttackCharge()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(heavyattackchargesound);
+    }
+
+    public void CallHeavyAttackRelease()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(heavyattackreleasesound);
     }
     
     void Start()
