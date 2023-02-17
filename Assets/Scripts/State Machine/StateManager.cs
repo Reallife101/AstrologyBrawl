@@ -45,12 +45,13 @@ public class StateManager : MonoBehaviour
     private float lastChargedMultiplier = 1f;
 
     [Header("Audio Scripts")]
-    [SerializeField] audioManager audioManager;
+    audioManager audioManager;
     
 
 
     private void Awake()
     {
+        audioManager = GetComponent<audioManager>();
         myPV = GetComponent<PhotonView>();
         myRB = GetComponent<Rigidbody2D>();
         originalGravity = myRB.gravityScale;
@@ -97,7 +98,6 @@ public class StateManager : MonoBehaviour
             }
             return;
         }
-
 
 
         //Count down

@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 4888351954668950257}
   - component: {fileID: 8649130518893083904}
   - component: {fileID: 9151882990214347279}
-  - component: {fileID: 1077233858458268922}
+  - component: {fileID: 8429140981890349801}
   m_Layer: 7
   m_Name: PlayerPrefab1Libra
   m_TagString: Player
@@ -643,7 +643,7 @@ MonoBehaviour:
   airAttackGravityModifier: 0
   hitbox: {fileID: 6082466845620916035}
   playerAnimator: {fileID: 8694400067546609426}
-  lightAttackAudio: {fileID: 0}
+  audioManager: {fileID: 0}
 --- !u!114 &4888351954668950257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -693,7 +693,7 @@ MonoBehaviour:
   - {fileID: 603694810036171444}
   - {fileID: 3652574736880595736}
   _obj: {fileID: 2468615175100282329, guid: b7dc105f572afae489f1fd6502c3bcc1, type: 3}
---- !u!114 &1077233858458268922
+--- !u!114 &8429140981890349801
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -702,16 +702,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 3016257482074367028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b57e2425e8db56845aae91da8ae1cde2, type: 3}
+  m_Script: {fileID: 11500000, guid: 42fbfb6a161788e4c8a6910a037b3796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputsound:
+  footsound:
     Guid:
       Data1: 0
       Data2: 0
       Data3: 0
       Data4: 0
     Path: 
+  lightattacksound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  jumpsound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  movementspeed: 0
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0

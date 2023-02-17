@@ -62,6 +62,7 @@ public class playerController : MonoBehaviour
 
     void Awake()
     {
+        audioManager = GetComponent<audioManager>();
         myPV = GetComponent<PhotonView>();
         myRB = GetComponent<Rigidbody2D>();
         mySM = GetComponent<StateManager>();
@@ -77,8 +78,6 @@ public class playerController : MonoBehaviour
         lightAttackAction = input.Player.LightAttack;
         heavyAttackAction = input.Player.HeavyAttack;
         scoreboardInputAction = input.Player.Scoreboard;
-
-        audioManager = GetComponent<audioManager>();
 
         playerJump.started += jumpBehavior =>
         {
