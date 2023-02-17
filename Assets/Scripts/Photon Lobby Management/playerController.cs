@@ -22,7 +22,7 @@ public class playerController : MonoBehaviour
 
     //Standard move values
     private Vector3 StartVelocity = Vector3.zero;
-    private Vector2 movementVector;
+    public Vector2 movementVector;
     [Header("Movement Values")]
     [SerializeField] private float moveSpeed;
     [SerializeField] private float movementSmoothing;
@@ -38,7 +38,7 @@ public class playerController : MonoBehaviour
     public float DoubleJumpPower { get { return doubleJumpPower; } set { doubleJumpPower = value; } }
 
     //Movement bools
-    private bool isGrounded;
+    public bool isGrounded;
     private bool canDoubleJump;
     private bool movementLocked = false;
     private bool fastFall;
@@ -49,6 +49,10 @@ public class playerController : MonoBehaviour
     [SerializeField] private Transform groundedCheckObjectRight;
     [SerializeField] private LayerMask groundLayer;
 
+
+    [Header("Audio Scripts")]
+    audioManager audioManager;
+
     //Components
     private PlayerManager myPM;
     private PhotonView myPV;
@@ -58,6 +62,7 @@ public class playerController : MonoBehaviour
 
     void Awake()
     {
+        audioManager = GetComponent<audioManager>();
         myPV = GetComponent<PhotonView>();
         myRB = GetComponent<Rigidbody2D>();
         mySM = GetComponent<StateManager>();
@@ -83,7 +88,8 @@ public class playerController : MonoBehaviour
             //If grounded, jump normally
             if (isGrounded)
             {
-                myRB.AddForce(new Vector2(myRB.velocity.y, jumpPower * 25));
+                audioManager.CallJump();
+                myRB.AddForce(new Vector2(myRB.velocity.y, jumpPower * 25)); 
             }
 
             //If midair, check if can double jumo
@@ -91,6 +97,7 @@ public class playerController : MonoBehaviour
             {
                 canDoubleJump = false;
                 myRB.velocity = new Vector2(myRB.velocity.x, 0);
+                audioManager.CallJump();
                 myRB.AddForce(new Vector2(myRB.velocity.y, doubleJumpPower * 25));
             }
         };
@@ -188,7 +195,7 @@ public class playerController : MonoBehaviour
         Movement();
     }
 
-    private void Movement()
+    public void Movement()
     {
         //If attacking, lock movement
         if (movementLocked)

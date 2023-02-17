@@ -339,6 +339,7 @@ GameObject:
   - component: {fileID: 4888351954668950257}
   - component: {fileID: 1534817729034488903}
   - component: {fileID: 8092099266509439254}
+  - component: {fileID: 5438246184520808946}
   m_Layer: 7
   m_Name: PlayerPrefab1Saggitarius
   m_TagString: Player
@@ -443,11 +444,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability1: {fileID: 1534817729034488903}
   ability2: {fileID: 8092099266509439254}
+  movementVector: {x: 0, y: 0}
   moveSpeed: 40
   movementSmoothing: 0.05
   jumpPower: 65
   fastFallSpeed: 30
   doubleJumpPower: 30
+  isGrounded: 0
   groundedCheckObjectLeft: {fileID: 4887830797730787154}
   groundedCheckObjectRight: {fileID: 8475485967914335248}
   groundLayer:
@@ -545,6 +548,7 @@ MonoBehaviour:
   airAttackGravityModifier: 0
   hitbox: {fileID: 7039329531965902617}
   playerAnimator: {fileID: 4757342467156564362}
+  audioManager: {fileID: 5438246184520808946}
 --- !u!114 &4888351954668950257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -591,6 +595,40 @@ MonoBehaviour:
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
   player: {fileID: 3016257482074367028}
+--- !u!114 &5438246184520808946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42fbfb6a161788e4c8a6910a037b3796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footsound:
+    Guid:
+      Data1: -1490557312
+      Data2: 1307136215
+      Data3: 1436951690
+      Data4: 2095233066
+    Path: event:/Walkies
+  lightattacksound:
+    Guid:
+      Data1: -357560460
+      Data2: 1289921883
+      Data3: 1160808085
+      Data4: 405861565
+    Path: event:/Light PunchesKicks
+  jumpsound:
+    Guid:
+      Data1: 1540495566
+      Data2: 1121154774
+      Data3: -1102698050
+      Data4: 623309370
+    Path: event:/Jumps
+  movementspeed: 0.25
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0

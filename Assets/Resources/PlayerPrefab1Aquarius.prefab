@@ -422,6 +422,7 @@ GameObject:
   - component: {fileID: 4888351954668950257}
   - component: {fileID: 6222636140674862286}
   - component: {fileID: 5359933801895894963}
+  - component: {fileID: -3679961502371578177}
   m_Layer: 7
   m_Name: PlayerPrefab1Aquarius
   m_TagString: Player
@@ -527,11 +528,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability1: {fileID: 6222636140674862286}
   ability2: {fileID: 5359933801895894963}
+  movementVector: {x: 0, y: 0}
   moveSpeed: 40
   movementSmoothing: 0.05
   jumpPower: 65
   fastFallSpeed: 30
   doubleJumpPower: 30
+  isGrounded: 0
   groundedCheckObjectLeft: {fileID: 4887830797730787154}
   groundedCheckObjectRight: {fileID: 8475485967914335248}
   groundLayer:
@@ -580,6 +583,7 @@ MonoBehaviour:
   currentHealth: 100
   myPV: {fileID: 0}
   healthItem: {fileID: 0}
+  deathEffect: {fileID: 0}
 --- !u!114 &3127367030068314295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -629,6 +633,7 @@ MonoBehaviour:
   airAttackGravityModifier: 0
   hitbox: {fileID: 3780375295810477137}
   playerAnimator: {fileID: 8589663318342298076}
+  audioManager: {fileID: 0}
 --- !u!114 &4888351954668950257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,6 +682,40 @@ MonoBehaviour:
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 7395812835021248825, guid: cf08da57f873eee47bef0f4aefb917de, type: 3}
   player: {fileID: 3016257482074367028}
+--- !u!114 &-3679961502371578177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42fbfb6a161788e4c8a6910a037b3796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footsound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  lightattacksound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  jumpsound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  movementspeed: 0
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0

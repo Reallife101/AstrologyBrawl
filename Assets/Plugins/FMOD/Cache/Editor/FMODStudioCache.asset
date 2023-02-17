@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638119785092206591
+  lastModified: 638121607144856816
   FileSizes:
   - Name: 
-    Value: 882
+    Value: 1018
   Exists: 1
 --- !u!114 &-8238409646333612872
 MonoBehaviour:
@@ -63,7 +63,7 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638119785092186606
+  lastModified: 638121607144847048
   FileSizes: []
   Exists: 1
 --- !u!114 &-694125327386692165
@@ -92,6 +92,33 @@ MonoBehaviour:
   - Value A
   - Value B
   Exists: 1
+--- !u!114 &-253131657168857296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Walkies
+  m_EditorClassIdentifier: 
+  Path: event:/Walkies
+  Guid:
+    Data1: -1490557312
+    Data2: 1307136215
+    Data3: 1436951690
+    Data4: 2095233066
+  Banks:
+  - {fileID: -1105131376724052805}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,13 +137,16 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: 1389602570942497364}
   - {fileID: -8238409646333612872}
+  - {fileID: -253131657168857296}
+  - {fileID: 9101342762772110789}
+  - {fileID: 5464750150503008104}
   EditorParameters:
   - {fileID: 6897359367507961776}
   MasterBanks:
   - {fileID: -1105131376724052805}
   StringsBanks:
   - {fileID: -8844762814205021062}
-  cacheTime: 638119785092206591
+  cacheTime: 638121607144856816
   cacheVersion: 131601
 --- !u!114 &1389602570942497364
 MonoBehaviour:
@@ -145,6 +175,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 76504
+--- !u!114 &5464750150503008104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Light PunchesKicks
+  m_EditorClassIdentifier: 
+  Path: event:/Light PunchesKicks
+  Guid:
+    Data1: -357560460
+    Data2: 1289921883
+    Data3: 1160808085
+    Data4: 405861565
+  Banks:
+  - {fileID: -1105131376724052805}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &6897359367507961776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,3 +228,30 @@ MonoBehaviour:
   - Value A
   - Value B
   Exists: 1
+--- !u!114 &9101342762772110789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Jumps
+  m_EditorClassIdentifier: 
+  Path: event:/Jumps
+  Guid:
+    Data1: 1540495566
+    Data2: 1121154774
+    Data3: -1102698050
+    Data4: 623309370
+  Banks:
+  - {fileID: -1105131376724052805}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 218
