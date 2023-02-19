@@ -633,7 +633,6 @@ MonoBehaviour:
   airAttackGravityModifier: 0
   hitbox: {fileID: 3780375295810477137}
   playerAnimator: {fileID: 8589663318342298076}
-  audioManager: {fileID: 0}
 --- !u!114 &4888351954668950257
 MonoBehaviour:
   m_ObjectHideFlags: 0
