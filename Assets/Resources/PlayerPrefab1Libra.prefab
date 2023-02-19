@@ -709,13 +709,7 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
-  lightattacksound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+  movementspeed: 0
   jumpsound:
     Guid:
       Data1: 0
@@ -723,7 +717,34 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
-  movementspeed: 0
+  fastfallsound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  lightattacksound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  heavyattackchargesound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  heavyattackreleasesound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0

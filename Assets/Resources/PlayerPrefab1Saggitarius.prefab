@@ -614,13 +614,7 @@ MonoBehaviour:
       Data3: 1436951690
       Data4: 2095233066
     Path: event:/Walkies
-  lightattacksound:
-    Guid:
-      Data1: -357560460
-      Data2: 1289921883
-      Data3: 1160808085
-      Data4: 405861565
-    Path: event:/Light PunchesKicks
+  movementspeed: 0.25
   jumpsound:
     Guid:
       Data1: 1540495566
@@ -628,7 +622,34 @@ MonoBehaviour:
       Data3: -1102698050
       Data4: 623309370
     Path: event:/Jumps
-  movementspeed: 0.25
+  fastfallsound:
+    Guid:
+      Data1: 544284601
+      Data2: 1228386974
+      Data3: 311565232
+      Data4: 1173628407
+    Path: event:/FastFall
+  lightattacksound:
+    Guid:
+      Data1: -357560460
+      Data2: 1289921883
+      Data3: 1160808085
+      Data4: 405861565
+    Path: event:/Light PunchesKicks
+  heavyattackchargesound:
+    Guid:
+      Data1: -357560460
+      Data2: 1289921883
+      Data3: 1160808085
+      Data4: 405861565
+    Path: event:/Light PunchesKicks
+  heavyattackreleasesound:
+    Guid:
+      Data1: 544284601
+      Data2: 1228386974
+      Data3: 311565232
+      Data4: 1173628407
+    Path: event:/FastFall
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
