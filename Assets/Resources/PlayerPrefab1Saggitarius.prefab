@@ -499,6 +499,7 @@ MonoBehaviour:
   currentHealth: 100
   myPV: {fileID: 0}
   healthItem: {fileID: 0}
+  deathEffect: {fileID: 0}
 --- !u!114 &3127367030068314295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,7 +549,6 @@ MonoBehaviour:
   airAttackGravityModifier: 0
   hitbox: {fileID: 7039329531965902617}
   playerAnimator: {fileID: 4757342467156564362}
-  audioManager: {fileID: 5438246184520808946}
 --- !u!114 &4888351954668950257
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,9 +1,6 @@
 using Photon.Pun;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
-using System;
+
 
 public class SpawnProjectile : Ranged
 {
@@ -15,7 +12,15 @@ public class SpawnProjectile : Ranged
 
     private void Start()
     {
-        pv = GetComponent<PhotonView>();
+
+        if (transform.parent) 
+        { 
+            pv = transform.parent.gameObject.GetComponent<PhotonView>();
+        }
+        else
+            pv = GetComponent<PhotonView>();
+        
+        Debug.Log(pv.GetInstanceID());
     }
 
     public override void Use()
@@ -25,6 +30,14 @@ public class SpawnProjectile : Ranged
             spawn();
         }
     }
+
+    public void Components() {
+    
+    
+    
+    
+    }
+
 
     void spawn()
     {
@@ -39,14 +52,12 @@ public class SpawnProjectile : Ranged
 
             if (transform.parent != null)
             {
-                dm.SetSender(transform.parent.gameObject); //SpawnProjectile is always going to be a child of the player prefab
+                dm.SetSender(transform.parent.gameObject); 
             }
             else
             {
                 dm.SetSender(gameObject);
             }
-
-            
         }
 
         // If the character faces the other direction, flip the scale and right transform
@@ -54,7 +65,7 @@ public class SpawnProjectile : Ranged
         {
             pro.transform.right = -transform.right.normalized;
             Vector3 proScale = pro.transform.localScale;
-            pro.transform.localScale = new Vector3(proScale.x, proScale.y, proScale.z);
+           // pro.transform.localScale = new Vector3(proScale.x, proScale.y, proScale.z);
         }
     }
 }

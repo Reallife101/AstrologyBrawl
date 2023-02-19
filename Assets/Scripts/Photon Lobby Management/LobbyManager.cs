@@ -139,6 +139,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     void UpdatePlayerList()
     {
         // Destroy old room items and clear list
+        
         foreach (PlayerItem item in playerItemsList)
         {
             Destroy(item.gameObject);

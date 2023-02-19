@@ -15,7 +15,12 @@ public class SagiChargedShot : Ranged
 
     private void Start()
     {
-        pv = GetComponent<PhotonView>();
+        if (transform.parent)
+        {
+            pv = transform.parent.gameObject.GetComponent<PhotonView>();
+        }
+        else
+            pv = GetComponent<PhotonView>();
     }
 
     public override void Use()
@@ -38,7 +43,16 @@ public class SagiChargedShot : Ranged
         if (pv && dm)
         {
             dm.ownerID = pv.GetInstanceID();
-            dm.SetSender(gameObject.transform.parent.gameObject); //SpawnProjectile is always going to be a child of the player prefab
+
+            if (transform.parent != null)
+            {
+                dm.SetSender(transform.parent.gameObject); //SpawnProjectile is always going to be a child of the player prefab
+            }
+            else
+            {
+                dm.SetSender(gameObject);
+            }
+
         }
 
         // If the character faces the other direction, flip the scale and right transform
