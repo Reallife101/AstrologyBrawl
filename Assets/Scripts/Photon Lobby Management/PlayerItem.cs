@@ -32,7 +32,6 @@ public class PlayerItem : MonoBehaviourPunCallbacks
     {
         playerName.text = _player.NickName;
         player = _player;
-        UpdatePlayerItem(player);
     }
 
     public void OnClickLeft()
@@ -69,9 +68,9 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         }
     }
 
-    void UpdatePlayerItem(Player player)
+    void UpdatePlayerItem(Player _player)
     {
-        if (player.CustomProperties.ContainsKey("playerAvatar"))
+        if (_player.CustomProperties.ContainsKey("playerAvatar"))
         {
             playerAvatar.sprite = avatars[(int)player.CustomProperties["playerAvatar"]];
             playerProperties["playerAvatar"] = (int)player.CustomProperties["playerAvatar"];
@@ -79,7 +78,8 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         else
         {
             playerProperties["playerAvatar"] = 0;
-            PhotonNetwork.SetPlayerCustomProperties(playerProperties);
+            if (PhotonNetwork.LocalPlayer == _player)
+                PhotonNetwork.SetPlayerCustomProperties(playerProperties);
         }
     }
 

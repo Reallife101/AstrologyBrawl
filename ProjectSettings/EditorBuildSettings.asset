@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ed&DuncanTest.unity
     guid: 0b6a1fc595ce0a9429fc0fda1fbc0f5e
+  - enabled: 1
+    path: Assets/Scenes/StatScreen.unity
+    guid: 94e07a79491e24f4eadc758047dbf9c7
   m_configObjects: {}

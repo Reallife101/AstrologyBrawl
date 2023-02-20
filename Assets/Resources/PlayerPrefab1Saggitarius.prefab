@@ -409,7 +409,7 @@ Rigidbody2D:
   m_LinearDrag: 4
   m_AngularDrag: 0.05
   m_GravityScale: 4
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9c497a4ce1f356b448c0dd3eca091d35, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -499,6 +499,7 @@ MonoBehaviour:
   currentHealth: 100
   myPV: {fileID: 0}
   healthItem: {fileID: 0}
+  deathEffect: {fileID: 0}
 --- !u!114 &3127367030068314295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,7 +549,6 @@ MonoBehaviour:
   airAttackGravityModifier: 0
   hitbox: {fileID: 7039329531965902617}
   playerAnimator: {fileID: 4757342467156564362}
-  audioManager: {fileID: 5438246184520808946}
 --- !u!114 &4888351954668950257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,6 +578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownTime: 1
+  abilitySoundCheck: 0
   forceVector: {x: 0, y: 10}
 --- !u!114 &8092099266509439254
 MonoBehaviour:
@@ -592,6 +593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownTime: 1
+  abilitySoundCheck: 0
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
   player: {fileID: 3016257482074367028}
@@ -614,13 +616,7 @@ MonoBehaviour:
       Data3: 1436951690
       Data4: 2095233066
     Path: event:/Walkies
-  lightattacksound:
-    Guid:
-      Data1: -357560460
-      Data2: 1289921883
-      Data3: 1160808085
-      Data4: 405861565
-    Path: event:/Light PunchesKicks
+  movementspeed: 0.25
   jumpsound:
     Guid:
       Data1: 1540495566
@@ -628,7 +624,55 @@ MonoBehaviour:
       Data3: -1102698050
       Data4: 623309370
     Path: event:/Jumps
-  movementspeed: 0.25
+  fastfallsound:
+    Guid:
+      Data1: 544284601
+      Data2: 1228386974
+      Data3: 311565232
+      Data4: 1173628407
+    Path: event:/FastFall
+  lightattacksound:
+    Guid:
+      Data1: -357560460
+      Data2: 1289921883
+      Data3: 1160808085
+      Data4: 405861565
+    Path: event:/Light PunchesKicks
+  heavyattackchargesound:
+    Guid:
+      Data1: 1408123473
+      Data2: 1306814630
+      Data3: -1246489950
+      Data4: 412728660
+    Path: event:/Saggi/SaggiBowCharge
+  heavyattackreleasesound:
+    Guid:
+      Data1: -1909211751
+      Data2: 1136059709
+      Data3: 1884798358
+      Data4: -1317846454
+    Path: event:/Saggi/SaggiBowFire
+  ability1sound:
+    Guid:
+      Data1: 724042934
+      Data2: 1093022575
+      Data3: 1691782027
+      Data4: 1085473424
+    Path: event:/Saggi/SaggiKick
+  ability2sound:
+    Guid:
+      Data1: 454824940
+      Data2: 1115747325
+      Data3: 510496912
+      Data4: -1707087921
+    Path: event:/Saggi/SaggiFireBow
+  genericdeathsound:
+    Guid:
+      Data1: 1755445942
+      Data2: 1245857384
+      Data3: 435654846
+      Data4: -1281782737
+    Path: event:/GenericDeath
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,6 +941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownTime: 1
+  abilitySoundCheck: 0
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 793811016547114540, guid: ba1f3b75b0fd9f341add3d480bb563af, type: 3}
   player: {fileID: 3016257482074367028}

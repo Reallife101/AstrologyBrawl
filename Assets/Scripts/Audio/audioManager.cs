@@ -4,17 +4,31 @@ using UnityEngine;
 
 public class audioManager : MonoBehaviour
 {
+    [Header("Footsteps")]
     [SerializeField] FMODUnity.EventReference footsound;
-    [SerializeField] FMODUnity.EventReference lightattacksound;
-    [SerializeField] FMODUnity.EventReference jumpsound;
     [SerializeField] float movementspeed;
+
+    [Header("Movement")]
+    [SerializeField] FMODUnity.EventReference jumpsound;
+    [SerializeField] FMODUnity.EventReference fastfallsound;
+
+    [Header("Attacks")]
+    [SerializeField] FMODUnity.EventReference lightattacksound;
+    [SerializeField] FMODUnity.EventReference heavyattackchargesound;
+    [SerializeField] FMODUnity.EventReference heavyattackreleasesound;
+    [SerializeField] FMODUnity.EventReference ability1sound;
+    [SerializeField] FMODUnity.EventReference ability2sound;
+
+    [Header("Misc")]
+    [SerializeField] FMODUnity.EventReference genericdeathsound;
+    
+    // Other variables
     playerController playerController;
 
     void Awake()
     {
         playerController = GetComponent<playerController>();
     }
-    
     
     void CallFootsteps()
     {
@@ -27,18 +41,48 @@ public class audioManager : MonoBehaviour
         }      
     }  
 
-    void Start()
+    public void CallJump()
     {
-        InvokeRepeating ("CallFootsteps",0,movementspeed);
+        FMODUnity.RuntimeManager.PlayOneShot(jumpsound);
     }
     
+    public void CallFastFall()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(fastfallsound);
+    }
+
     public void CallLightAttack()
     {
         FMODUnity.RuntimeManager.PlayOneShot(lightattacksound);
     }
-    
-    public void CallJump()
+
+    public void CallHeavyAttackCharge()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(jumpsound);
+        FMODUnity.RuntimeManager.PlayOneShot(heavyattackchargesound);
+    }
+
+    public void CallHeavyAttackRelease()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(heavyattackreleasesound);
+    }
+
+        public void CallAbility1()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(ability1sound);
+    }
+
+        public void CallAbility2()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(ability2sound);
+    }
+
+         public void CallDeathGeneric()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(genericdeathsound);
+    }   
+    
+    void Start()
+    {
+        InvokeRepeating ("CallFootsteps",0,movementspeed);
     }
 }
