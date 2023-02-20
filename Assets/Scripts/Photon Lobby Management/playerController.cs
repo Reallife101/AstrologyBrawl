@@ -49,9 +49,10 @@ public class playerController : MonoBehaviour
     [SerializeField] private Transform groundedCheckObjectRight;
     [SerializeField] private LayerMask groundLayer;
 
-
+    //Audio
     [Header("Audio Scripts")]
     audioManager audioManager;
+    private bool fastFallAudioBool;
 
     //Components
     private PlayerManager myPM;
@@ -63,6 +64,7 @@ public class playerController : MonoBehaviour
     void Awake()
     {
         audioManager = GetComponent<audioManager>();
+        fastFallAudioBool = true;
         myPV = GetComponent<PhotonView>();
         myRB = GetComponent<Rigidbody2D>();
         mySM = GetComponent<StateManager>();
@@ -111,6 +113,10 @@ public class playerController : MonoBehaviour
 
             fastFall = false;
             ability1.activate();
+            if (ability1.abilitySoundCheck)
+            {
+                audioManager.CallAbility1();
+            }   
         };
 
         abilityTwoAction.started += ability2Behavior =>
@@ -122,6 +128,10 @@ public class playerController : MonoBehaviour
 
             fastFall = false;
             ability2.activate();
+            if (ability2.abilitySoundCheck)
+            {
+                audioManager.CallAbility2();
+            }   
         };
 
         lightAttackAction.started += lightAttackBehavior =>
@@ -188,6 +198,7 @@ public class playerController : MonoBehaviour
         {
             canDoubleJump = true;
             fastFall = false;
+            fastFallAudioBool = true;
         }
 
         movementLocked = mySM.currentState != StateManager.States.Idle && mySM.currentState != StateManager.States.Recovery;
@@ -219,6 +230,11 @@ public class playerController : MonoBehaviour
         if (fastFall)
         {
             ySpeed = -fastFallSpeed;
+            if (fastFallAudioBool)
+            {
+                audioManager.CallFastFall();
+                fastFallAudioBool = false;
+            }
         }
         else
         {

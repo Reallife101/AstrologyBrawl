@@ -45,11 +45,10 @@ public class StateManager : MonoBehaviour
 
     private float lastChargedMultiplier = 1f;
 
+    //Audio
     [Header("Audio Scripts")]
     audioManager audioManager;
     
-
-
     private void Awake()
     {
         audioManager = GetComponent<audioManager>();
@@ -179,6 +178,7 @@ public class StateManager : MonoBehaviour
         currentState = States.Charging;
         chargeTimeLeft = currentAttack.chargeTimeAllowed;
         playerAnimator.SetTrigger(currentAttack.freezeFrameName);
+        audioManager.CallHeavyAttackCharge();
     }
 
     public void EndCharge()
@@ -190,6 +190,7 @@ public class StateManager : MonoBehaviour
             queuedState = States.Idle;
             UpdateAttackInfo(multiplier);
             lastChargedMultiplier = multiplier;
+            audioManager.CallHeavyAttackRelease();
         }
     }
 
@@ -257,6 +258,7 @@ public class StateManager : MonoBehaviour
             myRB.gravityScale = originalGravity * airAttackGravityModifier;
             currentState = States.AirHeavy;
             currentAttack = firstHeavyAir;
+            audioManager.CallHeavyAttackRelease();
             UpdateAttackInfo();
         }
 

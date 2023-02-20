@@ -492,7 +492,7 @@ Rigidbody2D:
   m_LinearDrag: 4
   m_AngularDrag: 0.05
   m_GravityScale: 4
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9c497a4ce1f356b448c0dd3eca091d35, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -699,6 +699,21 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  movementspeed: 0
+  jumpsound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fastfallsound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   lightattacksound:
     Guid:
       Data1: 0
@@ -706,7 +721,14 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
-  jumpsound:
+  heavyattackchargesound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  heavyattackreleasesound:
     Guid:
       Data1: 0
       Data2: 0
