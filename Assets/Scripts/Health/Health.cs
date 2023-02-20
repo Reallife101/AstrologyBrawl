@@ -19,9 +19,12 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
 
     public HealthItem healthItem;
 
+    audioManager audioManager;
+
     private void Awake()
     {
         myPV = GetComponent<PhotonView>();
+        audioManager = GetComponent<audioManager>();
     }
 
     //So that we avoid any null reference exceptions
@@ -87,6 +90,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
         //if health below 0, die
         if (currentHealth <=0)
         {
+           audioManager.CallDeathGeneric(); 
             Die();
 
             //if you are not yourself or nothing, give them a kill
