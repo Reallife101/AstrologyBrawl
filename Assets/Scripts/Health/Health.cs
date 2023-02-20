@@ -12,6 +12,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     public float damageTaken = 0; 
     public float currentHealth = MaxHealth;
     private bool counter = false;
+    private bool invincible = false;
 
     public PhotonView myPV;
 
@@ -73,6 +74,12 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     [PunRPC]
     public void RPC_TakeDamage(float damage, Vector2 launchVector, float hitStunValue, PhotonMessageInfo info)
     {
+        //Check if invincible
+        if (invincible)
+        {
+            return;
+        }
+
         //Check if we countered
         if (counter && cntr != null)
         {
@@ -133,6 +140,16 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     public void setCounter(bool b)
     {
         counter = b;
+    }
+
+    public bool getInvincible()
+    {
+        return invincible;
+    }
+
+    public void setInvincible(bool b)
+    {
+        invincible = b;
     }
 
 }
