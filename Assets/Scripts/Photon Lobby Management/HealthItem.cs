@@ -29,6 +29,7 @@ public class HealthItem : MonoBehaviour
 
     public void SetHealthUI(float health)
     {
+        HealthBar.maxValue = health;
         HealthBar.value = health;
         CurrentHealth = health;
     }
