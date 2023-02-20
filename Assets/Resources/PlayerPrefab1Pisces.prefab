@@ -345,6 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack_type: 0
   damage: 0
   destroyOnTouch: 0
   lifeTime: 0
@@ -424,6 +425,7 @@ GameObject:
   - component: {fileID: 5327666656528924421}
   - component: {fileID: -4260835527681418972}
   - component: {fileID: 8564507826901839857}
+  - component: {fileID: -6680967773165473317}
   m_Layer: 7
   m_Name: PlayerPrefab1Pisces
   m_TagString: Player
@@ -634,7 +636,6 @@ MonoBehaviour:
   airAttackGravityModifier: 0
   hitbox: {fileID: 3780375295810477137}
   playerAnimator: {fileID: 8589663318342298076}
-  audioManager: {fileID: 0}
 --- !u!114 &4888351954668950257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,6 +693,8 @@ MonoBehaviour:
   cooldownTime: 1.5
   raycastOrigin: {fileID: 7327343584912840211}
   raycastDistance: 20
+  dmgManager: {fileID: -6680967773165473317}
+  atk_state: 3
   gunDamage: 10
   launchForce: -50
 --- !u!114 &-4260835527681418972
@@ -745,6 +748,23 @@ MonoBehaviour:
       Data4: 0
     Path: 
   movementspeed: 0
+--- !u!114 &-6680967773165473317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc48f0f7946f1a41ac126456f565952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Light: 10
+  Heavy: 20
+  Ability1: 10
+  Ability2: 0
+  stacked: 0
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack_type: 0
   damage: 50
   destroyOnTouch: 0
   lifeTime: 0
@@ -1013,6 +1034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack_type: 0
   damage: 50
   destroyOnTouch: 0
   lifeTime: 0

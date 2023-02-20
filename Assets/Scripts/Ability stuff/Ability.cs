@@ -7,7 +7,6 @@ public abstract class Ability : MonoBehaviour
     [SerializeField]
     private float cooldownTime;
     private float currentCooldown;
-
     private void Start()
     {
         currentCooldown = 0f;

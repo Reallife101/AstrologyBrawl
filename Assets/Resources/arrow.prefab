@@ -163,6 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack_type: 0
   damage: 25
   destroyOnTouch: 1
   lifeTime: 10
