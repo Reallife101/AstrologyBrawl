@@ -26,7 +26,6 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
     private HealthHUDManager healthHUDManager;
     private HealthItem healthItem;
-
     private void Awake()
     {
         spawnPointParent = GameObject.FindWithTag("SpawnPoints");
@@ -106,7 +105,8 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         //Deaths can be tracked locally
         PhotonNetwork.Destroy(controller);
         Spawn();
-
+        //Spawns the platform for the player after respawning
+        controller.GetComponent<playerController>().SpawnDeathPlatform();
         deaths++;
 
         Hashtable hash = new Hashtable();
