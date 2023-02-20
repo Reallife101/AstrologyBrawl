@@ -84,6 +84,12 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         }
     }
 
+    [PunRPC]
+    private void RPC_ScreenShake(PhotonMessageInfo info)
+    {
+        CinemachineShake.Instance.ShakeCamera(10f, .15f);
+    }
+
     //Will create new health item if needed and updating playerController with approprate healthItem
     [PunRPC]
     private void RPC_UpdateHealthItem(PhotonMessageInfo info)
@@ -131,6 +137,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     void RPC_GetKill()
     {
         kills++;
+        PV.RPC("RPC_ScreenShake", RpcTarget.All);
 
         Hashtable hash = new Hashtable();
         hash.Add("kills", kills);

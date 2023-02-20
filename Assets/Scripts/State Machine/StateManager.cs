@@ -250,6 +250,7 @@ public class StateManager : MonoBehaviour
             myRB.gravityScale = originalGravity * airAttackGravityModifier;
             currentState = States.AirHeavy;
             currentAttack = firstHeavyAir;
+            audioManager.CallHeavyAttackRelease();
             UpdateAttackInfo();
         }
 

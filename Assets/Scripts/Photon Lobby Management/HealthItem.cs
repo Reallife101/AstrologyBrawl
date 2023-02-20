@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthItem : MonoBehaviour
 {
     [SerializeField] private TMPro.TMP_Text PlayerName;
-    [SerializeField] private TMPro.TMP_Text Health;
+    [SerializeField] private Slider HealthBar;
 
     private int OwnerActorNumber;
     private float CurrentHealth;
@@ -28,7 +29,8 @@ public class HealthItem : MonoBehaviour
 
     public void SetHealthUI(float health)
     {
-        Health.text = health.ToString();
+        HealthBar.maxValue = health;
+        HealthBar.value = health;
         CurrentHealth = health;
     }
 
@@ -39,6 +41,6 @@ public class HealthItem : MonoBehaviour
         {
             CurrentHealth = 0f;
         }
-        Health.text = CurrentHealth.ToString();
+        HealthBar.value = CurrentHealth;
     }
 }

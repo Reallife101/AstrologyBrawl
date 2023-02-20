@@ -12,6 +12,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     public float damageTaken = 0; 
     public float currentHealth = MaxHealth;
     private bool counter = false;
+    private bool invincible = false;
 
     public PhotonView myPV;
 
@@ -19,9 +20,12 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
 
     public HealthItem healthItem;
 
+    audioManager audioManager;
+
     private void Awake()
     {
         myPV = GetComponent<PhotonView>();
+        audioManager = GetComponent<audioManager>();
     }
 
     //So that we avoid any null reference exceptions
@@ -70,6 +74,12 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     [PunRPC]
     public void RPC_TakeDamage(float damage, Vector2 launchVector, float hitStunValue, PhotonMessageInfo info)
     {
+        //Check if invincible
+        if (invincible)
+        {
+            return;
+        }
+
         //Check if we countered
         if (counter && cntr != null)
         {
@@ -87,6 +97,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
         //if health below 0, die
         if (currentHealth <=0)
         {
+           audioManager.CallDeathGeneric(); 
             Die();
 
             //if you are not yourself or nothing, give them a kill
@@ -129,6 +140,16 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     public void setCounter(bool b)
     {
         counter = b;
+    }
+
+    public bool getInvincible()
+    {
+        return invincible;
+    }
+
+    public void setInvincible(bool b)
+    {
+        invincible = b;
     }
 
 }

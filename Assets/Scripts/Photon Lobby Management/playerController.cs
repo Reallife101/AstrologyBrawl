@@ -129,6 +129,10 @@ public class playerController : MonoBehaviour
 
             fastFall = false;
             ability1.activate();
+            if (ability1.abilitySoundCheck)
+            {
+                audioManager.CallAbility1();
+            }   
         };
 
         abilityTwoAction.started += ability2Behavior =>
@@ -141,6 +145,10 @@ public class playerController : MonoBehaviour
 
             fastFall = false;
             ability2.activate();
+            if (ability2.abilitySoundCheck)
+            {
+                audioManager.CallAbility2();
+            }   
         };
 
         lightAttackAction.started += lightAttackBehavior =>
