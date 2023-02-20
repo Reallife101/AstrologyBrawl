@@ -10,7 +10,8 @@ public class SpawnObjects : Ability
 {
     private Action method;
     private int numberToSpawn;
-    
+    private PhotonView pv;
+
     [SerializeField] private List<Transform> spawnPoints = new List<Transform>();
     [SerializeField] private GameObject _obj;
 
@@ -18,7 +19,8 @@ public class SpawnObjects : Ability
     private void Start()
     {
         method = SequentialSpawning;
-    }
+        pv = GetComponent<PhotonView>();
+    }   
 
     public override void Use()
     {     
@@ -42,7 +44,12 @@ public class SpawnObjects : Ability
         {
             GameObject game_object = PhotonNetwork.Instantiate(_obj.name, point.position, Quaternion.identity);
             //Make sure the doDamage is attached to the parent object (aka _obj)
-            game_object.GetComponent<doDamage>().SetSender(gameObject);
+            doDamage dm = game_object.GetComponent<doDamage>();
+            
+            if (pv && dm) {
+                dm.ownerID = pv.GetInstanceID();
+                dm.SetSender(gameObject);
+            }
         }
     }
 
