@@ -16,7 +16,11 @@ public class audioManager : MonoBehaviour
     [SerializeField] FMODUnity.EventReference lightattacksound;
     [SerializeField] FMODUnity.EventReference heavyattackchargesound;
     [SerializeField] FMODUnity.EventReference heavyattackreleasesound;
-    
+    [SerializeField] FMODUnity.EventReference ability1sound;
+    [SerializeField] FMODUnity.EventReference ability2sound;
+
+    [Header("Misc")]
+    [SerializeField] FMODUnity.EventReference genericdeathsound;
     
     // Other variables
     playerController playerController;
@@ -61,6 +65,21 @@ public class audioManager : MonoBehaviour
     {
         FMODUnity.RuntimeManager.PlayOneShot(heavyattackreleasesound);
     }
+
+        public void CallAbility1()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(ability1sound);
+    }
+
+        public void CallAbility2()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(ability2sound);
+    }
+
+         public void CallDeathGeneric()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(genericdeathsound);
+    }   
     
     void Start()
     {

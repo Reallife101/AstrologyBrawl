@@ -18,7 +18,7 @@ MonoBehaviour:
   lastModified: 638123967647250188
   FileSizes:
   - Name: 
-    Value: 1056
+    Value: 1282
   Exists: 1
 --- !u!114 &-8238409646333612872
 MonoBehaviour:
@@ -48,6 +48,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 168359
+--- !u!114 &-3206883452753143964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi/SaggiKick
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi/SaggiKick
+  Guid:
+    Data1: 724042934
+    Data2: 1093022575
+    Data3: 1691782027
+    Data4: 1085473424
+  Banks:
+  - {fileID: -1105131376724052805}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-2754893836709873696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi/SaggiFireBow
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi/SaggiFireBow
+  Guid:
+    Data1: 454824940
+    Data2: 1115747325
+    Data3: 510496912
+    Data4: -1707087921
+  Banks:
+  - {fileID: -1105131376724052805}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 917
 --- !u!114 &-1105131376724052805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,6 +222,11 @@ MonoBehaviour:
   - {fileID: 9101342762772110789}
   - {fileID: 5464750150503008104}
   - {fileID: -55400009841452291}
+  - {fileID: 1419014711020947660}
+  - {fileID: 7560187595897560192}
+  - {fileID: -3206883452753143964}
+  - {fileID: -2754893836709873696}
+  - {fileID: 3335139727297048128}
   EditorParameters:
   - {fileID: 6897359367507961776}
   MasterBanks:
@@ -203,6 +262,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 76504
+--- !u!114 &1419014711020947660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi/SaggiBowCharge
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi/SaggiBowCharge
+  Guid:
+    Data1: 1408123473
+    Data2: 1306814630
+    Data3: -1246489950
+    Data4: 412728660
+  Banks:
+  - {fileID: -1105131376724052805}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1750
+--- !u!114 &3335139727297048128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GenericDeath
+  m_EditorClassIdentifier: 
+  Path: event:/GenericDeath
+  Guid:
+    Data1: 1755445942
+    Data2: 1245857384
+    Data3: 435654846
+    Data4: -1281782737
+  Banks:
+  - {fileID: -1105131376724052805}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &5464750150503008104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +369,33 @@ MonoBehaviour:
   - Value A
   - Value B
   Exists: 1
+--- !u!114 &7560187595897560192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi/SaggiBowFire
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi/SaggiBowFire
+  Guid:
+    Data1: -1909211751
+    Data2: 1136059709
+    Data3: 1884798358
+    Data4: -1317846454
+  Banks:
+  - {fileID: -1105131376724052805}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 678
 --- !u!114 &9101342762772110789
 MonoBehaviour:
   m_ObjectHideFlags: 0
