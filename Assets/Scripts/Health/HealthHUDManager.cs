@@ -11,6 +11,7 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] private GameObject HealthItemPrefab;
     [SerializeField] private Transform HUDTransform;
+    [SerializeField] private RectTransform HorizontalLayoutGroup;
 
     private List<HealthItem> HealthItems = new List<HealthItem>();
 
@@ -19,9 +20,14 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
         HealthItem item = Instantiate(HealthItemPrefab, HUDTransform).GetComponent<HealthItem>();
         item.Initialize(nickname, actornum);
         HealthItems.Add(item);
+        SortHealthItems();
+        return item;
+    }
 
+    public void SortHealthItems()
+    {
         //sort the list (it still does not work, but it is not essential for health to work)
-        /*if(HealthItems.Count > 1)
+        if (HealthItems.Count > 1)
         {
             for (int i = 0; i < HealthItems.Count - 1; i++)
             {
@@ -42,9 +48,8 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
                         HealthItems[j].transform.rotation = temp.transform.rotation;
                     }
                 }
+                HorizontalLayoutGroup.SetSiblingIndex(i);
             }
-        }*/
-
-        return item;
+        }
     }
 }
