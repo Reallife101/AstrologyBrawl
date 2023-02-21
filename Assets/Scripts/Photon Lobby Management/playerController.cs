@@ -283,13 +283,15 @@ public class playerController : MonoBehaviour
     [PunRPC]
     void HealthOnRPC()
     {
-        myHealth.enabled = true;
+        myHealth.setInvincible(false);
+        Debug.Log("Invincible status:" + myHealth.getInvincible());
     }
 
     [PunRPC]
     void HealthOffRPC()
     {
-        myHealth.enabled = false;
+        myHealth.setInvincible(true);
+        Debug.Log("Invincible status:" + myHealth.getInvincible());
     }
 
     private void DestroyDeathPlatform()
@@ -303,8 +305,8 @@ public class playerController : MonoBehaviour
         {
             PhotonNetwork.Destroy(deathPlatformObject);
             deathPlatformObject = null;
+            myPV.RPC(nameof(HealthOnRPC), RpcTarget.All);
         }
-        myPV.RPC(nameof(HealthOnRPC), RpcTarget.All);
     }
 
     private IEnumerator DeathPlatformCountdown()
