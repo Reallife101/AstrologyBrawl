@@ -13,6 +13,6 @@ public class stateTransfer : MonoBehaviour
 
     public void endAnimation()
     {
-        stateManager.EndCasting(.1f);
+        stateManager.EndCasting(.2f);
     }
 }

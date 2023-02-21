@@ -292,6 +292,9 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 0
     Name: mixupLibra
+  - Type: 9
+    SynchronizeType: 0
+    Name: iconicLibra
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -695,10 +698,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 513004987f4cef04ca72638b4f2afbe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 3
+  cooldownTime: 1
   abilitySoundCheck: 0
-  playerAnimator: {fileID: 0}
-  triggerName: 
+  playerAnimator: {fileID: 8694400067546609426}
+  triggerName: iconicLibra
   health: {fileID: 7328130180652725418}
   counterLength: 10
 --- !u!114 &9151882990214347279
