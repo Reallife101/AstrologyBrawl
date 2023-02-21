@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class HealthItem : MonoBehaviour
+public class HealthItem : MonoBehaviourPunCallbacks
 {
     [SerializeField] private TMPro.TMP_Text PlayerName;
     [SerializeField] private Slider HealthBar;
+    [SerializeField] private TMPro.TMP_Text KillText;
 
     private int OwnerActorNumber;
     private float CurrentHealth;
@@ -42,5 +45,16 @@ public class HealthItem : MonoBehaviour
             CurrentHealth = 0f;
         }
         HealthBar.value = CurrentHealth;
+    }
+
+    public override void OnPlayerPropertiesUpdate(Player targetPlayer, ExitGames.Client.Photon.Hashtable changedProps)
+    {
+        if (changedProps.ContainsKey("kills"))
+        {
+            targetPlayer.CustomProperties.TryGetValue("kills", out object kills);
+            string KillString = (string)kills;
+
+            KillText.text = "Kills: " + KillString;
+        }
     }
 }
