@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+using Photon.Pun;
+using Photon.Realtime;
+
 public class playerController : MonoBehaviour
 {
     [SerializeField] Ability ability1;
@@ -60,6 +63,14 @@ public class playerController : MonoBehaviour
     private Rigidbody2D myRB;
     private StateManager mySM;
     private Scoreboard myScoreboard;
+    private PlayerHealth myHealth;
+
+    //Death Platform
+    [SerializeField] private Transform deathPlatformOrigin;
+    [SerializeField] private GameObject deathPlatformPrefab;
+    private GameObject deathPlatformObject;
+    private Coroutine deathPlatformCoroutine;
+    [SerializeField] private float respawnInvulTime = 5;
 
     void Awake()
     {
@@ -68,6 +79,7 @@ public class playerController : MonoBehaviour
         myPV = GetComponent<PhotonView>();
         myRB = GetComponent<Rigidbody2D>();
         mySM = GetComponent<StateManager>();
+        myHealth = GetComponent<PlayerHealth>();
         myScoreboard = FindObjectOfType<Scoreboard>();
 
         myPM = PhotonView.Find((int) myPV.InstantiationData[0]).GetComponent<PlayerManager>();
@@ -87,6 +99,9 @@ public class playerController : MonoBehaviour
             {
                 return;
             }
+
+            DestroyDeathPlatform();
+
             //If grounded, jump normally
             if (isGrounded)
             {
@@ -110,6 +125,7 @@ public class playerController : MonoBehaviour
             {
                 return;
             }
+            DestroyDeathPlatform();
 
             fastFall = false;
             ability1.activate();
@@ -125,6 +141,7 @@ public class playerController : MonoBehaviour
             {
                 return;
             }
+            DestroyDeathPlatform();
 
             fastFall = false;
             ability2.activate();
@@ -140,6 +157,7 @@ public class playerController : MonoBehaviour
             {
                 return;
             }
+            DestroyDeathPlatform();
 
             fastFall = false;
             mySM.LightAttackPressed(isGrounded);
@@ -151,6 +169,7 @@ public class playerController : MonoBehaviour
             {
                 return;
             }
+            DestroyDeathPlatform();
 
             fastFall = false;
             mySM.HeavyAttackPressed(isGrounded);
@@ -215,6 +234,13 @@ public class playerController : MonoBehaviour
         }
         //Grounded movement
         movementVector = playerMove.ReadValue<Vector2>();
+
+        //Check for any respawn movement
+        if (movementVector != Vector2.zero)
+        {
+            DestroyDeathPlatform();
+        }
+
         if (movementVector.x != 0)
         {
             transform.localScale = new Vector3(Mathf.Sign(movementVector.x), transform.localScale.y, transform.localScale.z);
@@ -246,6 +272,49 @@ public class playerController : MonoBehaviour
 
     }
 
+    public void SpawnDeathPlatform()
+    {
+        deathPlatformObject = PhotonNetwork.Instantiate(deathPlatformPrefab.name, deathPlatformOrigin.position, Quaternion.identity, 0, new object[] { myPV.ViewID });
+        Debug.Log("Did you even spawn bro");
+        myPV.RPC(nameof(HealthOffRPC), RpcTarget.All);
+        deathPlatformCoroutine = StartCoroutine(DeathPlatformCountdown());
+    }
+
+    [PunRPC]
+    void HealthOnRPC()
+    {
+        myHealth.setInvincible(false);
+        Debug.Log("Invincible status:" + myHealth.getInvincible());
+    }
+
+    [PunRPC]
+    void HealthOffRPC()
+    {
+        myHealth.setInvincible(true);
+        Debug.Log("Invincible status:" + myHealth.getInvincible());
+    }
+
+    private void DestroyDeathPlatform()
+    {
+        if (deathPlatformCoroutine != null)
+        {
+            StopCoroutine(deathPlatformCoroutine);
+            deathPlatformCoroutine = null;
+        }
+        if (deathPlatformObject)
+        {
+            PhotonNetwork.Destroy(deathPlatformObject);
+            deathPlatformObject = null;
+            myPV.RPC(nameof(HealthOnRPC), RpcTarget.All);
+        }
+    }
+
+    private IEnumerator DeathPlatformCountdown()
+    {
+        yield return new WaitForSeconds(respawnInvulTime);
+        DestroyDeathPlatform();
+    }
+
     public void DisableInput()
     {
         input.Player.Disable();
@@ -272,5 +341,7 @@ public class playerController : MonoBehaviour
         heavyAttackAction.Disable();
         scoreboardInputAction.Disable();
     }
+
+
 
 }
