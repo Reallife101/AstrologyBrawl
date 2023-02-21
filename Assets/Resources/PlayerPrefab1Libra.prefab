@@ -304,6 +304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownTime: 1
+  abilitySoundCheck: 0
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 793811016547114540, guid: 88e2167586424554cb1915db7704ce57, type: 3}
   player: {fileID: 3016257482074367028}
@@ -672,6 +673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownTime: 3
+  abilitySoundCheck: 0
   health: {fileID: 7328130180652725418}
   counterLength: 10
 --- !u!114 &9151882990214347279
@@ -687,6 +689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownTime: 1
+  abilitySoundCheck: 0
   spawnPoints:
   - {fileID: 603694810036171444}
   - {fileID: 3652574736880595736}
@@ -739,7 +742,34 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
-  movementspeed: 0
+  heavyattackreleasesound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  ability1sound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  ability2sound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  genericdeathsound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &4259250144682286860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -757,13 +787,6 @@ MonoBehaviour:
   Ability1: 10
   Ability2: 0
   stacked: 0
-  heavyattackreleasesound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,7 +20,7 @@ public class doDamage : MonoBehaviour
     [SerializeField] Transform parentSprite;
    
     private GameObject AttackSender;
-    private float multiplier; 
+    private float multiplier = 1; 
 
     private DamageManager dmgManager;
 
@@ -50,7 +50,6 @@ public class doDamage : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        Debug.Log(collision.gameObject.GetComponent<PhotonView>()?.GetInstanceID() == ownerID);
         if (!pv || !pv.IsMine || collision.gameObject.GetComponent<PhotonView>()?.GetInstanceID() == ownerID)
             return;
         // Get components
@@ -59,9 +58,9 @@ public class doDamage : MonoBehaviour
         
         if (dmg != null)
         {
+            
             if (AttackSender != null)
             {
-
                 if (!dmgManager)
                     dmgManager = AttackSender.GetComponent<DamageManager>();
 
@@ -70,16 +69,14 @@ public class doDamage : MonoBehaviour
 
             }
 
-            //Debug.Log("BEFORE DAMAGE CHANGE " + damage);
+            Debug.Log("BEFORE DAMAGE CHANGE " + damage);
 
             damage = dmgManager.getAttackValue(attack_type);
 
-            //Debug.Log("After Damage Change" + damage);
+            Debug.Log("After Damage Change" + damage);
             //Check to see which launch we should use
             if (launchDirection.magnitude >.1)
             {
-                Debug.Log(parentSprite);
-                Debug.Log(parentSprite.localScale.x < 0);
                 //flip the x if we are facing the wrong direction
                 if (transform.localScale.x < 0 || (parentSprite != null && parentSprite.localScale.x < 0))
                 {

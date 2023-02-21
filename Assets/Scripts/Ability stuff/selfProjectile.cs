@@ -18,6 +18,7 @@ public class selfProjectile : Ability
         pv = GetComponent<PhotonView>();
         rb = GetComponent<Rigidbody2D>();
         dm.ownerID = pv.GetInstanceID();
+        dm.SetSender(gameObject);
     }
     public override void Use()
     {
