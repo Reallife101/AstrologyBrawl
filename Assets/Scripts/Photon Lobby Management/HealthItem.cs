@@ -10,6 +10,8 @@ public class HealthItem : MonoBehaviourPunCallbacks
     [SerializeField] private TMPro.TMP_Text PlayerName;
     [SerializeField] private Slider HealthBar;
     [SerializeField] private TMPro.TMP_Text KillText;
+    [SerializeField] private Image a1CDCircle;
+    [SerializeField] private Image a2CDCircle;
 
     private int OwnerActorNumber;
     private float CurrentHealth;
@@ -52,15 +54,19 @@ public class HealthItem : MonoBehaviourPunCallbacks
         KillText.text = "Kills: " + kills;
     }
 
-    /*
-    public override void OnPlayerPropertiesUpdate(Player targetPlayer, ExitGames.Client.Photon.Hashtable changedProps)
+    public void UpdateCooldown(float cd1, float cd2)
     {
-        if (changedProps.ContainsKey("kills"))
-        {
-            targetPlayer.CustomProperties.TryGetValue("kills", out object kills);
-            string KillString = kills.ToString();
+        a1CDCircle.fillAmount += 1 / cd1 * Time.deltaTime;
+        a2CDCircle.fillAmount += 1 / cd2 * Time.deltaTime;
 
-            KillText.text = "Kills: " + KillString;
+        if (a1CDCircle.fillAmount >= 1)
+        {
+            a1CDCircle.fillAmount = 0;
         }
-    }*/
+
+        if (a2CDCircle.fillAmount >= 1)
+        {
+            a2CDCircle.fillAmount = 0;
+        }
+    }
 }

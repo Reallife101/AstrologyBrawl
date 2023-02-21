@@ -48,12 +48,18 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         targetGroup = GameObject.FindGameObjectWithTag("targetGroup").GetComponent<addPlayersToFollow>();
 
     }
+
     private void Start()
     {
         if (PV.IsMine)
         {
             Spawn();
         }
+    }
+
+    private void Update()
+    {
+        
     }
 
     //Spawns/Respawn player

@@ -662,6 +662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownTime: 3
+  abilitySoundCheck: 0
   hurtbox: {fileID: 4456246149412257730}
   toggleTime: 0.75
   forceVector: {x: 0, y: 35}
@@ -679,6 +680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownTime: 1
+  abilitySoundCheck: 0
   hurtbox: {fileID: 2926048837673055937}
   toggleTime: 0.5
   forceVector: {x: 150, y: 5}
@@ -732,6 +734,27 @@ MonoBehaviour:
       Data4: 0
     Path: 
   heavyattackreleasesound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  ability1sound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  ability2sound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  genericdeathsound:
     Guid:
       Data1: 0
       Data2: 0
