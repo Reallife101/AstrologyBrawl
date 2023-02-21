@@ -304,6 +304,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownTime: 1
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: 
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 793811016547114540, guid: 88e2167586424554cb1915db7704ce57, type: 3}
   player: {fileID: 3016257482074367028}
@@ -670,6 +673,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownTime: 3
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: 
   health: {fileID: 7328130180652725418}
   counterLength: 1
   damageTaken: 0
@@ -686,6 +692,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownTime: 1
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 8694400067546609426}
+  triggerName: mixupLibra
   spawnPoints:
   - {fileID: 603694810036171444}
   - {fileID: 3652574736880595736}
@@ -739,6 +748,27 @@ MonoBehaviour:
       Data4: 0
     Path: 
   heavyattackreleasesound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  ability1sound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  ability2sound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  genericdeathsound:
     Guid:
       Data1: 0
       Data2: 0
