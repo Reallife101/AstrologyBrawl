@@ -12,6 +12,7 @@ public class HealthItem : MonoBehaviourPunCallbacks
     [SerializeField] private TMPro.TMP_Text KillText;
     [SerializeField] private Image a1CDCircle;
     [SerializeField] private Image a2CDCircle;
+    [SerializeField] private RectTransform HorizontalLayoutGroup;
 
     private int OwnerActorNumber;
     private float CurrentHealth;
@@ -52,6 +53,11 @@ public class HealthItem : MonoBehaviourPunCallbacks
     public void UpdateKillCount(int kills)
     {
         KillText.text = "Kills: " + kills;
+    }
+
+    public void SetOrder(int Index)
+    {
+        HorizontalLayoutGroup.SetSiblingIndex(Index);
     }
 
     public void UpdateCooldown(float cd1, float cd2)

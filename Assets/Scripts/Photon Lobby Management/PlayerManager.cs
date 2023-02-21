@@ -46,7 +46,6 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         hash.Add("deaths", deaths);
         PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         targetGroup = GameObject.FindGameObjectWithTag("targetGroup").GetComponent<addPlayersToFollow>();
-
     }
 
     private void Start()

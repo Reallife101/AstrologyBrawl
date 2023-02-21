@@ -20,11 +20,11 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
         HealthItem item = Instantiate(HealthItemPrefab, HUDTransform).GetComponent<HealthItem>();
         item.Initialize(nickname, actornum);
         HealthItems.Add(item);
-        //SortHealthItems();
+        SortHealthItems();
         return item;
     }
 
-    /*public void SortHealthItems()
+    public void SortHealthItems()
     {
         //sort the list (it still does not work, but it is not essential for health to work)
         if (HealthItems.Count > 1)
@@ -48,8 +48,8 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
                         HealthItems[j].transform.rotation = temp.transform.rotation;
                     }
                 }
-                HorizontalLayoutGroup.SetSiblingIndex(i);
+                HealthItems[i].SetOrder(i);
             }
         }
-    }*/
+    }
 }
