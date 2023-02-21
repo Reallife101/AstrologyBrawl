@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class stateTransfer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] StateManager stateManager;
+
+    public void startAnimation()
     {
-        
+        stateManager.StartCasting();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void endAnimation()
     {
-        
+        stateManager.EndCasting(.1f);
     }
 }
