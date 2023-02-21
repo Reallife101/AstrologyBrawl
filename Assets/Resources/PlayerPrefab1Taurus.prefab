@@ -342,6 +342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack_type: 1
   damage: 0
   destroyOnTouch: 0
   lifeTime: 0
@@ -349,7 +350,7 @@ MonoBehaviour:
   launchForce: 0
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
-  parentSprite: {fileID: 0}
+  parentSprite: {fileID: 7217666807969326043}
   ownerID: 0
 --- !u!61 &3958859480390694109
 BoxCollider2D:
@@ -420,6 +421,7 @@ GameObject:
   - component: {fileID: 5367980014787998885}
   - component: {fileID: 3631343015906704325}
   - component: {fileID: 1724834377098437686}
+  - component: {fileID: -3994509172074583422}
   m_Layer: 7
   m_Name: PlayerPrefab1Taurus
   m_TagString: Player
@@ -737,6 +739,24 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  movementspeed: 0
+--- !u!114 &-3994509172074583422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc48f0f7946f1a41ac126456f565952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Light: 10
+  Heavy: 20
+  Ability1: 20
+  Ability2: 20
+  stacked: 0
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,6 +891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack_type: 0
   damage: 50
   destroyOnTouch: 0
   lifeTime: 0
@@ -1005,6 +1026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack_type: 0
   damage: 50
   destroyOnTouch: 0
   lifeTime: 0

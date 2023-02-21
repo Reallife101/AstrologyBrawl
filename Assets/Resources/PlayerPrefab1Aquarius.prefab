@@ -345,6 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack_type: 0
   damage: 0
   destroyOnTouch: 0
   lifeTime: 0
@@ -423,6 +424,7 @@ GameObject:
   - component: {fileID: 6222636140674862286}
   - component: {fileID: 5359933801895894963}
   - component: {fileID: -3679961502371578177}
+  - component: {fileID: 2788376477822565664}
   m_Layer: 7
   m_Name: PlayerPrefab1Aquarius
   m_TagString: Player
@@ -740,6 +742,24 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  movementspeed: 0
+--- !u!114 &2788376477822565664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc48f0f7946f1a41ac126456f565952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Light: 10
+  Heavy: 20
+  Ability1: 20
+  Ability2: 12
+  stacked: 0
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,6 +925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack_type: 0
   damage: 50
   destroyOnTouch: 0
   lifeTime: 0
@@ -1039,6 +1060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack_type: 0
   damage: 50
   destroyOnTouch: 0
   lifeTime: 0
