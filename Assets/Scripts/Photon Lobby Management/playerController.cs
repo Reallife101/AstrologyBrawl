@@ -72,6 +72,10 @@ public class playerController : MonoBehaviour
     private Coroutine deathPlatformCoroutine;
     [SerializeField] private float respawnInvulTime = 5;
 
+    //Grounded things
+    [Header("Animations")]
+    [SerializeField] Animator anim;
+
     void Awake()
     {
         audioManager = GetComponent<audioManager>();
@@ -234,6 +238,11 @@ public class playerController : MonoBehaviour
         }
         //Grounded movement
         movementVector = playerMove.ReadValue<Vector2>();
+        
+        if (anim != null)
+        {
+            anim.SetFloat("speed", Mathf.Abs(movementVector.x));
+        }
 
         //Check for any respawn movement
         if (movementVector != Vector2.zero)

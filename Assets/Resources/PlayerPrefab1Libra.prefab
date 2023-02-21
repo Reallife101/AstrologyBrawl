@@ -295,6 +295,9 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 0
     Name: iconicLibra
+  - Type: 1
+    SynchronizeType: 0
+    Name: speed
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -577,6 +580,7 @@ MonoBehaviour:
   deathPlatformOrigin: {fileID: 2815563018896991013}
   deathPlatformPrefab: {fileID: 1064442647170568961, guid: e12b7ec82a520a94782f02bf5dfd07bc, type: 3}
   respawnInvulTime: 3
+  anim: {fileID: 8694400067546609426}
 --- !u!61 &2476616717886758476
 BoxCollider2D:
   m_ObjectHideFlags: 0
