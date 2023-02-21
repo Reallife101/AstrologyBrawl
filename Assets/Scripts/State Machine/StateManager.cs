@@ -42,6 +42,7 @@ public class StateManager : MonoBehaviour
     private float recoveryTimeLeft;
     private float hitStunTimeLeft;
     private float chargeTimeLeft;
+    private DamageManager.AttackStates atk_state;  
 
     private float lastChargedMultiplier = 1f;
 
@@ -156,6 +157,7 @@ public class StateManager : MonoBehaviour
     {
         currentState = States.Idle;
         currentAttack = null;
+        atk_state = DamageManager.AttackStates.NoDamage;
         lastChargedMultiplier = 1;
     }
 
@@ -163,7 +165,7 @@ public class StateManager : MonoBehaviour
     {
         //Starts the countdown for the current attack's duration, changes damage of the hitbox to match the current attack, and starts the corresponding attack anim
         attackTimeRemaining = currentAttack.duration;
-        hitbox.SetValues(currentAttack.damage, currentAttack.hitStunTime, currentAttack.knockbackPower, currentAttack.launchDirection, gameObject);
+        hitbox.SetValues(atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, currentAttack.launchDirection, gameObject);
         playerAnimator.SetTrigger(currentAttack.attackAnimationName);
         myRB.velocity = Vector2.zero;
         myRB.AddForce(new Vector2(Mathf.Sign(transform.localScale.x) * currentAttack.forwardMovement, 0), ForceMode2D.Impulse);
@@ -174,7 +176,8 @@ public class StateManager : MonoBehaviour
     {
         //Starts the countdown for the current attack's duration, changes damage of the hitbox to match the current attack, and starts the corresponding attack anim
         attackTimeRemaining = currentAttack.duration;
-        hitbox.SetValues(currentAttack.damage * chargeMulti, currentAttack.hitStunTime, currentAttack.knockbackPower, chargeMulti * currentAttack.launchDirection, gameObject);
+        //hitbox.SetValues(currentAttack.damage * chargeMulti, currentAttack.hitStunTime, currentAttack.knockbackPower, chargeMulti * currentAttack.launchDirection, gameObject);
+        hitbox.SetValues(atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, chargeMulti * currentAttack.launchDirection, gameObject, chargeMulti);
         playerAnimator.SetTrigger(currentAttack.attackAnimationName);
         myRB.velocity = Vector2.zero;
         myRB.AddForce(new Vector2(Mathf.Sign(transform.localScale.x) * currentAttack.forwardMovement, 0), ForceMode2D.Impulse);
@@ -209,10 +212,13 @@ public class StateManager : MonoBehaviour
             return;
         }
 
-        if(currentState == States.Idle && isGrounded)
+        atk_state = DamageManager.AttackStates.Light;
+
+        if (currentState == States.Idle && isGrounded)
         {
             currentState = States.GroundLight;
             currentAttack = firstLightGround;
+           
             UpdateAttackInfo();
             audioManager.CallLightAttack();
         }
@@ -238,6 +244,8 @@ public class StateManager : MonoBehaviour
         {
             return;
         }
+
+        atk_state = DamageManager.AttackStates.Heavy;
 
         if (currentState == States.Idle && isGrounded)
         {
@@ -285,7 +293,7 @@ public class StateManager : MonoBehaviour
 
     public void chargedProjectileSetter(doDamage input)
     {
-        input.SetValues(currentAttack.damage * lastChargedMultiplier, currentAttack.knockbackPower * lastChargedMultiplier);
+        input.SetValues(atk_state, lastChargedMultiplier, currentAttack.knockbackPower * lastChargedMultiplier);
     }
 
     public void StartCasting()

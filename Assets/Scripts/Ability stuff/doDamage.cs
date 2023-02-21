@@ -2,12 +2,14 @@ using ExitGames.Client.Photon;
 using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Unity.Burst.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 
 public class doDamage : MonoBehaviour
 {
+    [SerializeField] private DamageManager.AttackStates attack_type;
     [SerializeField] float damage;
     [SerializeField] bool destroyOnTouch;
     [SerializeField] float lifeTime;
@@ -16,9 +18,11 @@ public class doDamage : MonoBehaviour
     [SerializeField] float hitStunTime = 0.25f;
     [SerializeField] Vector2 launchDirection;
     [SerializeField] Transform parentSprite;
+   
+    private GameObject AttackSender;
+    private float multiplier = 1; 
 
-    private float counterDamage = 0;
-    private GameObject AttackSender; 
+    private DamageManager dmgManager;
 
     public int ownerID;
 
@@ -32,6 +36,8 @@ public class doDamage : MonoBehaviour
             StartCoroutine(WaitAndKill(lifeTime));
         }
 
+        dmgManager = GetComponent<DamageManager>();
+
     }
 
     IEnumerator WaitAndKill(float waitTime)
@@ -43,40 +49,42 @@ public class doDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (!pv || !pv.IsMine || collision.gameObject.GetComponent<PhotonView>()?.GetInstanceID() == ownerID)
             return;
-
         // Get components
         IDamageable dmg = collision.gameObject.GetComponent<IDamageable>();
-       
 
+        
         if (dmg != null)
         {
+            
             if (AttackSender != null)
             {
-                libraCounter counter = AttackSender.GetComponent<libraCounter>();
-                Debug.Log(counter);
-                if (counter != null)
-                {
-                    counterDamage = counter.get_DamageIncrease();
-                    //Debug.Log("Countered Damage " + counterDamage);
-                    damage += counterDamage;
-                    //Debug.Log(damage);
-                    counter.ResetDamage();
-                }
+                if (!dmgManager)
+                    dmgManager = AttackSender.GetComponent<DamageManager>();
+
+                if (dmgManager && dmgManager.stackedDamage > 0)
+                    damage += dmgManager.applyStackDamage(); //aplies stacked damage
+
             }
+
+            Debug.Log("BEFORE DAMAGE CHANGE " + damage);
+
+            damage = dmgManager.getAttackValue(attack_type);
+
+            Debug.Log("After Damage Change" + damage);
             //Check to see which launch we should use
             if (launchDirection.magnitude >.1)
             {
-                
                 //flip the x if we are facing the wrong direction
                 if (transform.localScale.x < 0 || (parentSprite != null && parentSprite.localScale.x < 0))
                 {
-                    dmg.TakeDamage(damage, new Vector2(-launchDirection.x, launchDirection.y), hitStunTime);
+                    dmg.TakeDamage(damage * multiplier, new Vector2(-launchDirection.x, launchDirection.y), hitStunTime);
                 }
                 else
                 {
-                    dmg.TakeDamage(damage, launchDirection, hitStunTime);
+                    dmg.TakeDamage(damage * multiplier, launchDirection, hitStunTime);
                 }
             }
             else
@@ -91,10 +99,6 @@ public class doDamage : MonoBehaviour
                 PhotonNetwork.Destroy(gameObject);
             }
 
-            if (counterDamage > 0) { 
-                damage -= counterDamage;
-                counterDamage = 0;
-            }
         }
     }
 
@@ -104,18 +108,21 @@ public class doDamage : MonoBehaviour
         damage = damageNum;
     }
 
-    public void SetValues(float damageNum, float KBValue)
+    public void SetValues(DamageManager.AttackStates type, float chardgeMultiplier, float KBValue)
     {
-        damage = damageNum;
+        attack_type = type;
+        multiplier = chardgeMultiplier;
         launchForce = KBValue;
     }
-    public void SetValues(float damageNum, float hitStunNum, float knockbackNum, Vector2 launchDir, GameObject sender)
+    public void SetValues(DamageManager.AttackStates type, float hitStunNum, float knockbackNum, Vector2 launchDir, GameObject sender, float chargeMulti = 1)
     {
-        damage = damageNum;
+        //damage = damageNum;
+        attack_type = type;
         hitStunTime = hitStunNum;
         launchForce = knockbackNum;
         launchDirection = launchDir;
         AttackSender = sender;
+        multiplier = chargeMulti;
     }
 
     public void SetSender(GameObject sender) {
@@ -123,7 +130,5 @@ public class doDamage : MonoBehaviour
         AttackSender = sender;
     
     }
-
-
 
 }

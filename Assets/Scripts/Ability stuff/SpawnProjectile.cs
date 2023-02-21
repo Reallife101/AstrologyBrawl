@@ -31,13 +31,6 @@ public class SpawnProjectile : Ranged
         }
     }
 
-    public void Components() {
-    
-    
-    
-    
-    }
-
 
     void spawn()
     {
@@ -45,7 +38,7 @@ public class SpawnProjectile : Ranged
 
         //If spawned object has doDamage and spawner has a photon view
         doDamage dm = pro.GetComponent<doDamage>();
-        
+
         if (pv && dm)
         {
             dm.ownerID = pv.GetInstanceID();
