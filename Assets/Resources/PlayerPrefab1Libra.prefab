@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 8477913722534975730}
   - component: {fileID: 7041575192684781462}
   - component: {fileID: 5740398807661098734}
+  - component: {fileID: 659188652684588319}
   m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
@@ -288,6 +289,9 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 2
     Name: heavyLibra
+  - Type: 9
+    SynchronizeType: 0
+    Name: mixupLibra
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -305,9 +309,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 1
   abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: 
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 793811016547114540, guid: 88e2167586424554cb1915db7704ce57, type: 3}
   player: {fileID: 3016257482074367028}
+--- !u!114 &659188652684588319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060617277697689753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df04f21986edbf148a759ac3f2a6307a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateManager: {fileID: 2270851739153014609}
 --- !u!1 &1789027120670792531
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,6 +697,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 3
   abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: 
   health: {fileID: 7328130180652725418}
   counterLength: 10
 --- !u!114 &9151882990214347279
@@ -694,6 +715,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 1
   abilitySoundCheck: 0
+  playerAnimator: {fileID: 8694400067546609426}
+  triggerName: mixupLibra
   spawnPoints:
   - {fileID: 603694810036171444}
   - {fileID: 3652574736880595736}
