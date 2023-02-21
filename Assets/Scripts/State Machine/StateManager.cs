@@ -16,6 +16,7 @@ public class StateManager : MonoBehaviour
         Recovery,
         HitStun,
         Charging,
+        Casting
     }
     //Attacks
     [SerializeField] private AttackFrameSO firstLightGround;
@@ -276,5 +277,15 @@ public class StateManager : MonoBehaviour
     public void chargedProjectileSetter(doDamage input)
     {
         input.SetValues(currentAttack.damage * lastChargedMultiplier, currentAttack.knockbackPower * lastChargedMultiplier);
+    }
+
+    public void setStateCasting()
+    {
+        currentState = States.Casting;
+    }
+
+    public void setStateIdle()
+    {
+        currentState = States.Idle;
     }
 }
