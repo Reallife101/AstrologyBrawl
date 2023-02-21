@@ -16,6 +16,7 @@ public class StateManager : MonoBehaviour
         Recovery,
         HitStun,
         Charging,
+        Casting,
     }
     //Attacks
     [SerializeField] private AttackFrameSO firstLightGround;
@@ -60,7 +61,7 @@ public class StateManager : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (!myPV.IsMine || currentState == States.Idle)
+        if (!myPV.IsMine || currentState == States.Idle || currentState == States.Casting)
         {
             return;
         }
@@ -139,6 +140,15 @@ public class StateManager : MonoBehaviour
     {
         currentState = States.Recovery;
         recoveryTimeLeft = currentAttack.finisherEndlag;
+        myRB.velocity = Vector2.zero;
+        myRB.gravityScale = originalGravity;
+    }
+
+    //Overload for casting
+    private void InitiateRecovery(float endlag)
+    {
+        currentState = States.Recovery;
+        recoveryTimeLeft = endlag;
         myRB.velocity = Vector2.zero;
         myRB.gravityScale = originalGravity;
     }
@@ -284,5 +294,15 @@ public class StateManager : MonoBehaviour
     public void chargedProjectileSetter(doDamage input)
     {
         input.SetValues(atk_state, lastChargedMultiplier, currentAttack.knockbackPower * lastChargedMultiplier);
+    }
+
+    public void StartCasting()
+    {
+        currentState = States.Casting;
+    }
+
+    public void EndCasting(float endlag)
+    {
+        InitiateRecovery(endlag);
     }
 }
