@@ -47,14 +47,20 @@ public class HealthItem : MonoBehaviourPunCallbacks
         HealthBar.value = CurrentHealth;
     }
 
+    public void UpdateKillCount(int kills)
+    {
+        KillText.text = "Kills: " + kills;
+    }
+
+    /*
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, ExitGames.Client.Photon.Hashtable changedProps)
     {
         if (changedProps.ContainsKey("kills"))
         {
             targetPlayer.CustomProperties.TryGetValue("kills", out object kills);
-            string KillString = (string)kills;
+            string KillString = kills.ToString();
 
             KillText.text = "Kills: " + KillString;
         }
-    }
+    }*/
 }

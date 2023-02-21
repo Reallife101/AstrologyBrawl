@@ -124,6 +124,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     {
         //But we need to tell our killer that they killed us
         PV.RPC(nameof(RPC_GetKill), PV.Owner);
+        healthItem.UpdateKillCount(kills);
     }
 
     [PunRPC]
