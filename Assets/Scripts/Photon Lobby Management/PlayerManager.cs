@@ -124,7 +124,6 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     {
         //But we need to tell our killer that they killed us
         PV.RPC(nameof(RPC_GetKill), PV.Owner);
-        healthItem.UpdateKillCount(kills);
     }
 
     [PunRPC]
@@ -139,6 +138,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     {
         kills++;
         PV.RPC("RPC_ScreenShake", RpcTarget.All);
+        PV.RPC("RPC_UpdateKillCount", RpcTarget.All, kills);
 
         Hashtable hash = new Hashtable();
         hash.Add("kills", kills);
@@ -148,6 +148,12 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         {
             PV.RPC(nameof(RPC_EndGame), RpcTarget.All);
         }
+    }
+
+    [PunRPC]
+    void RPC_UpdateKillCount(int killCount)
+    {
+        healthItem.UpdateKillCount(killCount);
     }
 
     [PunRPC]
