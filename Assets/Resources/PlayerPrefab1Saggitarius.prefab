@@ -462,6 +462,7 @@ MonoBehaviour:
   deathPlatformOrigin: {fileID: 6127537127319422153}
   deathPlatformPrefab: {fileID: 1064442647170568961, guid: e12b7ec82a520a94782f02bf5dfd07bc, type: 3}
   respawnInvulTime: 3
+  anim: {fileID: 0}
 --- !u!61 &2476616717886758476
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -585,6 +586,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 1
   abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: 
   forceVector: {x: 0, y: 10}
 --- !u!114 &8092099266509439254
 MonoBehaviour:
@@ -600,6 +603,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 1
   abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: 
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
   player: {fileID: 3016257482074367028}
@@ -679,12 +684,6 @@ MonoBehaviour:
       Data3: 435654846
       Data4: -1281782737
     Path: event:/GenericDeath
-      Data1: 1540495566
-      Data2: 1121154774
-      Data3: -1102698050
-      Data4: 623309370
-    Path: event:/Jumps
-  movementspeed: 0.25
 --- !u!114 &1016379177814654591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -971,6 +970,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 1
   abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: 
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 793811016547114540, guid: ba1f3b75b0fd9f341add3d480bb563af, type: 3}
   player: {fileID: 3016257482074367028}
