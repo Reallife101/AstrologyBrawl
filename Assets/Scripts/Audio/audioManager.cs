@@ -21,6 +21,7 @@ public class audioManager : MonoBehaviour
 
     [Header("Misc")]
     [SerializeField] FMODUnity.EventReference genericdeathsound;
+    [SerializeField] FMODUnity.EventReference takedamagesound;
     
     // Other variables
     playerController playerController;
@@ -80,7 +81,12 @@ public class audioManager : MonoBehaviour
     {
         FMODUnity.RuntimeManager.PlayOneShot(genericdeathsound);
     }   
-    
+
+         public void CallTakeDamage()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(takedamagesound);
+    }   
+
     void Start()
     {
         InvokeRepeating ("CallFootsteps",0,movementspeed);

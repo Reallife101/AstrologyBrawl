@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638125926254008047
+  lastModified: 638126671745193527
   FileSizes:
   - Name: 
-    Value: 1282
+    Value: 1380
   Exists: 1
 --- !u!114 &-8238409646333612872
 MonoBehaviour:
@@ -102,6 +102,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 917
+--- !u!114 &-2434064459820577030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TakingDamage
+  m_EditorClassIdentifier: 
+  Path: event:/TakingDamage
+  Guid:
+    Data1: -219124643
+    Data2: 1241243363
+    Data3: 529385401
+    Data4: -1657758984
+  Banks:
+  - {fileID: -1105131376724052805}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 367
 --- !u!114 &-1105131376724052805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,7 +144,7 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638125926255988617
+  lastModified: 638126671745173585
   FileSizes: []
   Exists: 1
 --- !u!114 &-694125327386692165
@@ -227,13 +254,15 @@ MonoBehaviour:
   - {fileID: -3206883452753143964}
   - {fileID: -2754893836709873696}
   - {fileID: 3335139727297048128}
+  - {fileID: -2434064459820577030}
+  - {fileID: 6109530538830468745}
   EditorParameters:
   - {fileID: 6897359367507961776}
   MasterBanks:
   - {fileID: -1105131376724052805}
   StringsBanks:
   - {fileID: -8844762814205021062}
-  cacheTime: 638125926255988617
+  cacheTime: 638126671745193527
   cacheVersion: 131601
 --- !u!114 &1389602570942497364
 MonoBehaviour:
@@ -343,6 +372,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &6109530538830468745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Light SwordSwings
+  m_EditorClassIdentifier: 
+  Path: event:/Light SwordSwings
+  Guid:
+    Data1: 1994990593
+    Data2: 1234174971
+    Data3: 140431260
+    Data4: -1452225945
+  Banks:
+  - {fileID: -1105131376724052805}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 265
 --- !u!114 &6897359367507961776
 MonoBehaviour:
   m_ObjectHideFlags: 0
