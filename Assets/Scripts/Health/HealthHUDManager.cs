@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using UnityEngine;
 using Photon.Realtime;
 using Photon.Pun;
+using UnityEngine.UI;
 
 public class HealthHUDManager : MonoBehaviourPunCallbacks
 {
@@ -40,7 +41,7 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
                         HealthItems[j] = tempitem;
                     }
                 }
-                HealthItems[i].SetOrder(i);
+                HealthItems[i].transform.SetSiblingIndex(i);
             }
         }
     }
