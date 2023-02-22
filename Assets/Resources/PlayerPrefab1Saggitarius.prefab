@@ -684,6 +684,13 @@ MonoBehaviour:
       Data3: 435654846
       Data4: -1281782737
     Path: event:/GenericDeath
+  takedamagesound:
+    Guid:
+      Data1: -219124643
+      Data2: 1241243363
+      Data3: 529385401
+      Data4: -1657758984
+    Path: event:/TakingDamage
 --- !u!114 &1016379177814654591
 MonoBehaviour:
   m_ObjectHideFlags: 0
