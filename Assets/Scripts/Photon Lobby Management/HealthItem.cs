@@ -12,15 +12,16 @@ public class HealthItem : MonoBehaviourPunCallbacks
     [SerializeField] private TMPro.TMP_Text KillText;
     [SerializeField] private Image a1CDCircle;
     [SerializeField] private Image a2CDCircle;
-    [SerializeField] private RectTransform HorizontalLayoutGroup;
-
+    
+    private RectTransform HorizontalLayoutGroup;
     private int OwnerActorNumber;
     private float CurrentHealth;
 
-    public void Initialize(string nickname, int actornumber)
+    public void Initialize(string nickname, int actornumber, RectTransform HLG)
     {
         OwnerActorNumber = actornumber;
         SetPlayerName(nickname);
+        HorizontalLayoutGroup = HLG;
     }
 
     public int GetOwnerActorNumber()

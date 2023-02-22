@@ -11,14 +11,13 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] private GameObject HealthItemPrefab;
     [SerializeField] private Transform HUDTransform;
-    [SerializeField] private RectTransform HorizontalLayoutGroup;
 
     private List<HealthItem> HealthItems = new List<HealthItem>();
 
     public HealthItem AddHealthItem(string nickname, int actornum)
     {
         HealthItem item = Instantiate(HealthItemPrefab, HUDTransform).GetComponent<HealthItem>();
-        item.Initialize(nickname, actornum);
+        item.Initialize(nickname, actornum, HUDTransform.GetComponent<RectTransform>());
         HealthItems.Add(item);
         SortHealthItems();
         return item;
@@ -39,13 +38,6 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
                         HealthItem tempitem = HealthItems[i];
                         HealthItems[i] = HealthItems[j];
                         HealthItems[j] = tempitem;
-
-                        //For accurate visible transforms
-                        Transform temp = HealthItems[i].transform;
-                        HealthItems[i].transform.position = HealthItems[j].transform.position;
-                        HealthItems[i].transform.rotation = HealthItems[j].transform.rotation;
-                        HealthItems[j].transform.position = temp.transform.position;
-                        HealthItems[j].transform.rotation = temp.transform.rotation;
                     }
                 }
                 HealthItems[i].SetOrder(i);
