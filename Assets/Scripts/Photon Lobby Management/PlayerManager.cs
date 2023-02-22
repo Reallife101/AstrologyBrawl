@@ -16,6 +16,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     private List<Transform> spawnPoints = new List<Transform>();
 
     GameObject controller;
+    playerController PlayerController;
 
     private int kills = 0;
     private int deaths = 0;
@@ -45,13 +46,21 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         hash.Add("deaths", deaths);
         PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         targetGroup = GameObject.FindGameObjectWithTag("targetGroup").GetComponent<addPlayersToFollow>();
-
     }
+
     private void Start()
     {
         if (PV.IsMine)
         {
             Spawn();
+        }
+    }
+
+    private void Update()
+    {
+        if (PV.IsMine)
+        {
+            healthItem.UpdateCooldown(PlayerController.AbilityOneCurrCooldown, PlayerController.AbilityTwoCurrCooldown);
         }
     }
 
@@ -67,6 +76,9 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
         GameObject playerToSpawn = playerPrefabs[(int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]];
         controller = PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
+        PlayerController = controller.GetComponent<playerController>();
+        healthItem.SetMaxCooldowns(PlayerController.AbilityOneMaxCooldown, PlayerController.AbilityTwoMaxCooldown);
+        healthItem.ActivateTimers();
 
         PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
     }
@@ -138,6 +150,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     {
         kills++;
         PV.RPC("RPC_ScreenShake", RpcTarget.All);
+        PV.RPC("RPC_UpdateKillCount", RpcTarget.All, kills);
 
         Hashtable hash = new Hashtable();
         hash.Add("kills", kills);
@@ -147,6 +160,12 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         {
             PV.RPC(nameof(RPC_EndGame), RpcTarget.All);
         }
+    }
+
+    [PunRPC]
+    void RPC_UpdateKillCount(int killCount)
+    {
+        healthItem.UpdateKillCount(killCount);
     }
 
     [PunRPC]

@@ -39,6 +39,10 @@ public class playerController : MonoBehaviour
     public float JumpPower { get { return jumpPower; } set { jumpPower = value; } }
     public float FastFallSpeedg { get { return fastFallSpeed; } set { fastFallSpeed = value; } }
     public float DoubleJumpPower { get { return doubleJumpPower; } set { doubleJumpPower = value; } }
+    public float AbilityOneCurrCooldown { get { return ability1.CurrCooldownTime(); } }
+    public float AbilityOneMaxCooldown { get { return ability1.MaxCooldownTime(); } }
+    public float AbilityTwoCurrCooldown { get { return ability2.CurrCooldownTime(); } }
+    public float AbilityTwoMaxCooldown { get { return ability2.MaxCooldownTime(); } }
 
     //Movement bools
     public bool isGrounded;
