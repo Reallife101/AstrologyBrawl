@@ -36,6 +36,10 @@ public abstract class Ability : MonoBehaviour
             abilitySoundCheck = false;
          
         }
+        else if (currentCooldown < 0f)
+        {
+            currentCooldown = 0f;
+        }
 
         // Note: Some consideration to using couritines instead, currently no need to though
     }

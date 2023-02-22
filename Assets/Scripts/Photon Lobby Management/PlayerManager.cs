@@ -59,7 +59,10 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
     private void Update()
     {
-        healthItem.UpdateCooldown(PlayerController.AbilityOneCurrCooldown, PlayerController.AbilityTwoCurrCooldown);
+        if (PV.IsMine)
+        {
+            healthItem.UpdateCooldown(PlayerController.AbilityOneCurrCooldown, PlayerController.AbilityTwoCurrCooldown);
+        }
     }
 
     //Spawns/Respawn player
@@ -76,6 +79,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         controller = PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
         PlayerController = controller.GetComponent<playerController>();
         healthItem.SetMaxCooldowns(PlayerController.AbilityOneMaxCooldown, PlayerController.AbilityTwoMaxCooldown);
+        healthItem.ActivateTimers();
 
         PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
     }

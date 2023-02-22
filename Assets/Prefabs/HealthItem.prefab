@@ -282,7 +282,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 0
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
@@ -395,7 +395,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 0
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
@@ -498,6 +498,8 @@ MonoBehaviour:
   PlayerName: {fileID: 7014505568841021692}
   HealthBar: {fileID: 4420477208231917124}
   KillText: {fileID: 533053758918218769}
+  CooldownTimer1: {fileID: 7387907223850357180}
+  CooldownTimer2: {fileID: 5475166335006402085}
   a1CDCircle: {fileID: 6005999267201168153}
   a2CDCircle: {fileID: 1005889072812183236}
   CD1Text: {fileID: 2816405696387957294}
@@ -590,7 +592,7 @@ GameObject:
   - component: {fileID: 1977287852441325239}
   - component: {fileID: 2816405696387957294}
   m_Layer: 0
-  m_Name: cooldown text
+  m_Name: cooldown text1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -936,7 +938,7 @@ GameObject:
   - component: {fileID: 4589458343751029794}
   - component: {fileID: 6436681285789596116}
   m_Layer: 0
-  m_Name: cooldown text
+  m_Name: cooldown text2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1074,7 +1076,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1573916445819172369
 Transform:
   m_ObjectHideFlags: 0
@@ -1083,7 +1085,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5475166335006402085}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.9, y: -29.476837, z: 0.38641444}
+  m_LocalPosition: {x: 220, y: 38, z: 0.38641444}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1186,8 +1188,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1243,7 +1245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7758737191824883301
 Transform:
   m_ObjectHideFlags: 0
@@ -1252,7 +1254,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7387907223850357180}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -80.34616, y: -29.476837, z: 0.38641444}
+  m_LocalPosition: {x: 113, y: 42, z: 0.38641444}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

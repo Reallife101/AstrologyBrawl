@@ -10,6 +10,8 @@ public class HealthItem : MonoBehaviourPunCallbacks
     [SerializeField] private TMPro.TMP_Text PlayerName;
     [SerializeField] private Slider HealthBar;
     [SerializeField] private TMPro.TMP_Text KillText;
+    [SerializeField] private GameObject CooldownTimer1;
+    [SerializeField] private GameObject CooldownTimer2;
     [SerializeField] private Image a1CDCircle;
     [SerializeField] private Image a2CDCircle;
     [SerializeField] private TMPro.TMP_Text CD1Text;
@@ -24,6 +26,12 @@ public class HealthItem : MonoBehaviourPunCallbacks
     {
         OwnerActorNumber = actornumber;
         SetPlayerName(nickname);
+    }
+
+    public void ActivateTimers()
+    {
+        CooldownTimer1.SetActive(true);
+        CooldownTimer2.SetActive(true);
     }
 
     public int GetOwnerActorNumber()
@@ -66,29 +74,25 @@ public class HealthItem : MonoBehaviourPunCallbacks
 
     public void UpdateCooldown(float cd1, float cd2)
     {
-        Debug.Log(cd1 + ", " + cd2);
-        if (cd1 >= Mathf.Epsilon && a1CDCircle.fillAmount < 1)
-        {
-            a1CDCircle.fillAmount += 1 / maxCooldown1 * Time.deltaTime;
-            CD1Text.text = ((int)cd1).ToString();
-        }
+        HandleCooldowns(cd1, maxCooldown1, a1CDCircle, CD1Text);
+        HandleCooldowns(cd2, maxCooldown2, a2CDCircle, CD2Text);
+    }
 
-        if (cd2 >= Mathf.Epsilon && a2CDCircle.fillAmount < 1)
+    private void HandleCooldowns(float cd, float maxcd, Image circle, TMPro.TMP_Text textObject)
+    {
+        // if not on cooldown ...
+        if (cd == 0)
         {
-            a2CDCircle.fillAmount += 1 / maxCooldown2 * Time.deltaTime;
-            CD2Text.text = ((int)cd2).ToString();
+            // ... reset circle and text
+            circle.fillAmount = 0;
+            textObject.text = "";
         }
-
-        if (a1CDCircle.fillAmount >= 1)
+        // otherwise ...
+        else if (cd > 0)
         {
-            a1CDCircle.fillAmount = 0;
-            CD1Text.text = "";
-        }
-
-        if (a2CDCircle.fillAmount >= 1)
-        {
-            a2CDCircle.fillAmount = 0;
-            CD2Text.text = "";
+            // decrement timer ui
+            circle.fillAmount = cd / maxcd + Time.deltaTime;
+            textObject.text = ((int)cd).ToString();
         }
     }
 }
