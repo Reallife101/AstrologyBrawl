@@ -577,6 +577,7 @@ MonoBehaviour:
   deathPlatformOrigin: {fileID: 365365865542485012}
   deathPlatformPrefab: {fileID: 1064442647170568961, guid: e12b7ec82a520a94782f02bf5dfd07bc, type: 3}
   respawnInvulTime: 3
+  anim: {fileID: 0}
 --- !u!61 &2476616717886758476
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -700,6 +701,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 3
   abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: 
   hurtbox: {fileID: 4456246149412257730}
   toggleTime: 0.75
   forceVector: {x: 0, y: 35}
@@ -718,6 +721,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 1
   abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: 
   hurtbox: {fileID: 2926048837673055937}
   toggleTime: 0.5
   forceVector: {x: 150, y: 5}

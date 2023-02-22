@@ -305,4 +305,14 @@ public class StateManager : MonoBehaviour
     {
         InitiateRecovery(endlag);
     }
+
+    public void setStateCasting()
+    {
+        currentState = States.Casting;
+    }
+
+    public void setStateIdle()
+    {
+        currentState = States.Idle;
+    }
 }
