@@ -8,6 +8,8 @@ public abstract class Ability : MonoBehaviour
     private float cooldownTime;
     private float currentCooldown;
     public bool abilitySoundCheck;
+    [SerializeField] private Animator playerAnimator;
+    [SerializeField] private string triggerName;
 
     private void Start()
     {
@@ -21,6 +23,10 @@ public abstract class Ability : MonoBehaviour
         {
             currentCooldown = cooldownTime;
             abilitySoundCheck = true;
+            if (playerAnimator != null)
+            {
+                playerAnimator.SetTrigger(triggerName);
+            }
             Use();
         }
     }

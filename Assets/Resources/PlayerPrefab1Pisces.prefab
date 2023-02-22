@@ -132,6 +132,37 @@ Transform:
   m_Father: {fileID: 3016257482074367029}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1555689602611425355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4078546706007889970}
+  m_Layer: 0
+  m_Name: DeathPlatformOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4078546706007889970
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555689602611425355}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.6000061, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3016257482074367029}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2024425471721291248
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,6 +376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack_type: 0
   damage: 0
   destroyOnTouch: 0
   lifeTime: 0
@@ -424,6 +456,7 @@ GameObject:
   - component: {fileID: 5327666656528924421}
   - component: {fileID: -4260835527681418972}
   - component: {fileID: 8564507826901839857}
+  - component: {fileID: -6680967773165473317}
   m_Layer: 7
   m_Name: PlayerPrefab1Pisces
   m_TagString: Player
@@ -451,6 +484,7 @@ Transform:
   - {fileID: 743779953244687314}
   - {fileID: 1296854930112708182}
   - {fileID: 7207981399879051487}
+  - {fileID: 4078546706007889970}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -541,6 +575,9 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  deathPlatformOrigin: {fileID: 4078546706007889970}
+  deathPlatformPrefab: {fileID: 1064442647170568961, guid: e12b7ec82a520a94782f02bf5dfd07bc, type: 3}
+  respawnInvulTime: 3
 --- !u!61 &2476616717886758476
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -691,6 +728,8 @@ MonoBehaviour:
   cooldownTime: 1.5
   raycastOrigin: {fileID: 7327343584912840211}
   raycastDistance: 20
+  dmgManager: {fileID: -6680967773165473317}
+  atk_state: 3
   gunDamage: 10
   launchForce: -50
 --- !u!114 &-4260835527681418972
@@ -765,6 +804,24 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  movementspeed: 0
+--- !u!114 &-6680967773165473317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc48f0f7946f1a41ac126456f565952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Light: 10
+  Heavy: 20
+  Ability1: 10
+  Ability2: 0
+  stacked: 0
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack_type: 0
   damage: 50
   destroyOnTouch: 0
   lifeTime: 0
@@ -1033,6 +1091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack_type: 0
   damage: 50
   destroyOnTouch: 0
   lifeTime: 0

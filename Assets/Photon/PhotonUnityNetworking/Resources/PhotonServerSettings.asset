@@ -54,8 +54,11 @@ MonoBehaviour:
   - RPC_DecreaseHealthUI
   - RPC_SetHealthUI
   - RPC_SetPlayerName
-  - RPC_ScreenShake
   - RPC_UpdateKillCount
+  - HealthRPC
+  - HealthOffRPC
+  - HealthOnRPC
+  - RPC_ScreenShake
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

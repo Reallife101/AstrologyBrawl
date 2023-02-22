@@ -56,13 +56,11 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     public void TakeDamage(float damage)
     {
         myPV.RPC("RPC_TakeDamage", myPV.Owner, damage, Vector2.zero);
-        myPV.RPC("RPC_UpdateHealthUI", RpcTarget.All, damage);
     }
 
     public void TakeDamage(float damage, Vector2 launchVector, float hitStunValue = 0.25f)
     {
         myPV.RPC("RPC_TakeDamage", myPV.Owner, damage, launchVector, hitStunValue);
-        myPV.RPC("RPC_UpdateHealthUI", RpcTarget.All, damage);
     }
 
     [PunRPC]
@@ -88,7 +86,8 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
 
             return;
         }
-        
+
+        myPV.RPC("RPC_UpdateHealthUI", RpcTarget.All, damage);
         myPV.RPC("HitStunned", myPV.Owner, hitStunValue);
         currentHealth -= damage;
 
