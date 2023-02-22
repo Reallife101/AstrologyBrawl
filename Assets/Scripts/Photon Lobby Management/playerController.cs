@@ -115,6 +115,11 @@ public class playerController : MonoBehaviour
             {
                 audioManager.CallJump();
                 myRB.AddForce(new Vector2(myRB.velocity.y, jumpPower * 25)); 
+
+                if(anim)
+                {
+                    anim.SetTrigger("jump");
+                }
             }
 
             //If midair, check if can double jumo
@@ -124,6 +129,10 @@ public class playerController : MonoBehaviour
                 myRB.velocity = new Vector2(myRB.velocity.x, 0);
                 audioManager.CallJump();
                 myRB.AddForce(new Vector2(myRB.velocity.y, doubleJumpPower * 25));
+                if (anim)
+                {
+                    anim.SetTrigger("jump");
+                }
             }
         };
 
@@ -218,6 +227,10 @@ public class playerController : MonoBehaviour
         bool isGroundedRight = Physics2D.Linecast(transform.position, groundedCheckObjectRight.position, groundLayer);
 
         isGrounded = isGroundedLeft || isGroundedRight;
+        if (anim)
+        {
+            anim.SetBool("isGrounded", isGrounded);
+        }
 
 
 
