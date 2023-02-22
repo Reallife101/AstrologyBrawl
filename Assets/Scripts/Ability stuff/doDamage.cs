@@ -58,20 +58,21 @@ public class doDamage : MonoBehaviour
         
         if (dmg != null)
         {
-            
+            float stacked_dmg = 0;
+
             if (AttackSender != null)
             {
                 if (!dmgManager)
                     dmgManager = AttackSender.GetComponent<DamageManager>();
 
                 if (dmgManager && dmgManager.stackedDamage > 0)
-                    damage += dmgManager.applyStackDamage(); //aplies stacked damage
+                    stacked_dmg = dmgManager.applyStackDamage(); //aplies stacked damage
 
             }
 
             Debug.Log("BEFORE DAMAGE CHANGE " + damage);
 
-            damage = dmgManager.getAttackValue(attack_type);
+            damage = dmgManager.getAttackValue(attack_type) + stacked_dmg;
 
             Debug.Log("After Damage Change" + damage);
             //Check to see which launch we should use
