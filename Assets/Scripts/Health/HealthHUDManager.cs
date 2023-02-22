@@ -18,7 +18,7 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
     public HealthItem AddHealthItem(string nickname, int actornum)
     {
         HealthItem item = Instantiate(HealthItemPrefab, HUDTransform).GetComponent<HealthItem>();
-        item.Initialize(nickname, actornum, HUDTransform.GetComponent<RectTransform>());
+        item.Initialize(nickname, actornum);
         HealthItems.Add(item);
         SortHealthItems();
         return item;

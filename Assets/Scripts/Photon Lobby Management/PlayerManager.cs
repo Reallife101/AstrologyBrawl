@@ -16,6 +16,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     private List<Transform> spawnPoints = new List<Transform>();
 
     GameObject controller;
+    playerController PlayerController;
 
     private int kills = 0;
     private int deaths = 0;
@@ -58,7 +59,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
     private void Update()
     {
-        
+        healthItem.UpdateCooldown(PlayerController.AbilityOneCurrCooldown, PlayerController.AbilityTwoCurrCooldown);
     }
 
     //Spawns/Respawn player
@@ -73,6 +74,8 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
         GameObject playerToSpawn = playerPrefabs[(int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]];
         controller = PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
+        PlayerController = controller.GetComponent<playerController>();
+        healthItem.SetMaxCooldowns(PlayerController.AbilityOneMaxCooldown, PlayerController.AbilityTwoMaxCooldown);
 
         PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
     }

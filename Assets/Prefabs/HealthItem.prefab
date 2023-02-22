@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 3969850959505543037}
   - component: {fileID: 1005889072812183236}
   m_Layer: 5
-  m_Name: ability 2 circle bg
+  m_Name: ability 2 circle cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 5963930438689376685}
   - component: {fileID: 6005999267201168153}
   m_Layer: 5
-  m_Name: ability 1 circle bg
+  m_Name: ability 1 circle cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -498,8 +498,10 @@ MonoBehaviour:
   PlayerName: {fileID: 7014505568841021692}
   HealthBar: {fileID: 4420477208231917124}
   KillText: {fileID: 533053758918218769}
-  a1CDCircle: {fileID: 6564066012331475557}
-  a2CDCircle: {fileID: 1519322381491278835}
+  a1CDCircle: {fileID: 6005999267201168153}
+  a2CDCircle: {fileID: 1005889072812183236}
+  CD1Text: {fileID: 2816405696387957294}
+  CD2Text: {fileID: 6436681285789596116}
 --- !u!1 &3875775363572848506
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,7 +514,7 @@ GameObject:
   - component: {fileID: 8055057361469343482}
   - component: {fileID: 1519322381491278835}
   m_Layer: 5
-  m_Name: ability 2 circle cover
+  m_Name: ability 2 circle bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -642,7 +644,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -651,8 +653,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -723,7 +725,7 @@ GameObject:
   - component: {fileID: 2043161817474037394}
   - component: {fileID: 6564066012331475557}
   m_Layer: 5
-  m_Name: ability 1 circle cover
+  m_Name: ability 1 circle bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -988,7 +990,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -997,8 +999,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
