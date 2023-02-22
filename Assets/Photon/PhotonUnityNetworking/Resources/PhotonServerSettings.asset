@@ -54,6 +54,7 @@ MonoBehaviour:
   - RPC_DecreaseHealthUI
   - RPC_SetHealthUI
   - RPC_SetPlayerName
+  - RPC_UpdateKillCount
   - HealthRPC
   - HealthOffRPC
   - HealthOnRPC

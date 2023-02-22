@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using UnityEngine;
 using Photon.Realtime;
 using Photon.Pun;
+using UnityEngine.UI;
 
 public class HealthHUDManager : MonoBehaviourPunCallbacks
 {
@@ -19,9 +20,14 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
         HealthItem item = Instantiate(HealthItemPrefab, HUDTransform).GetComponent<HealthItem>();
         item.Initialize(nickname, actornum);
         HealthItems.Add(item);
+        SortHealthItems();
+        return item;
+    }
 
+    public void SortHealthItems()
+    {
         //sort the list (it still does not work, but it is not essential for health to work)
-        /*if(HealthItems.Count > 1)
+        if (HealthItems.Count > 1)
         {
             for (int i = 0; i < HealthItems.Count - 1; i++)
             {
@@ -33,18 +39,10 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
                         HealthItem tempitem = HealthItems[i];
                         HealthItems[i] = HealthItems[j];
                         HealthItems[j] = tempitem;
-
-                        //For accurate visible transforms
-                        Transform temp = HealthItems[i].transform;
-                        HealthItems[i].transform.position = HealthItems[j].transform.position;
-                        HealthItems[i].transform.rotation = HealthItems[j].transform.rotation;
-                        HealthItems[j].transform.position = temp.transform.position;
-                        HealthItems[j].transform.rotation = temp.transform.rotation;
                     }
                 }
+                HealthItems[i].transform.SetSiblingIndex(i);
             }
-        }*/
-
-        return item;
+        }
     }
 }
