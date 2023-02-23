@@ -21,6 +21,11 @@ public class PlayerItem : MonoBehaviourPunCallbacks
 
     Player player;
 
+    public Player GetPlayer()
+    {
+        return player;
+    }
+
     public void ApplyLocalChanges()
     {
         backgroundImage.color = highlightColor;

@@ -138,7 +138,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     void UpdatePlayerList()
     {
-        // Destroy old room items and clear list
+        // Destroy old player items and clear list
         
         foreach (PlayerItem item in playerItemsList)
         {
@@ -162,6 +162,17 @@ public class LobbyManager : MonoBehaviourPunCallbacks
             }
 
             playerItemsList.Add(newPlayerItem);
+
+            for(int i = 0; i < playerItemsList.Count - 1; i++)
+            {
+                if(playerItemsList[i].GetPlayer().ActorNumber > playerItemsList[i+1].GetPlayer().ActorNumber)
+                {
+                    PlayerItem temp = playerItemsList[i];
+                    playerItemsList[i] = playerItemsList[i + 1];
+                    playerItemsList[i + 1] = temp;
+                }
+                playerItemsList[i].transform.SetSiblingIndex(i);
+            }
         }
     }
 
