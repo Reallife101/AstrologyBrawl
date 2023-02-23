@@ -259,6 +259,7 @@ public class StateManager : MonoBehaviour
             {
                 currentState = States.GroundHeavy;
                 currentAttack = firstHeavyGround;
+                audioManager.CallHeavyAttackRelease();
                 UpdateAttackInfo();
             }
         }
