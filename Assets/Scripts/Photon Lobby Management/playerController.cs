@@ -368,6 +368,11 @@ public class playerController : MonoBehaviour
         scoreboardInputAction.Disable();
     }
 
+    public void setFastFall(bool b)
+    {
+        fastFall = b;
+    }
+
 
 
 }

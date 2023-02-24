@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 8589663318342298076}
   - component: {fileID: 1589277749856111818}
   - component: {fileID: 8930513261856451776}
+  - component: {fileID: 3149851689025485962}
   m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
@@ -293,9 +294,24 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 1
     Name: HitStunTrigger
+  - Type: 9
+    SynchronizeType: 0
+    Name: Attack3Freeze
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
+--- !u!114 &3149851689025485962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024425471721291248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2cb6ca8c4385c142bd36abf0161c87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2434522066618130176
 GameObject:
   m_ObjectHideFlags: 0
