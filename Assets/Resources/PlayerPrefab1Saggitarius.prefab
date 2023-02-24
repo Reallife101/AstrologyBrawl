@@ -587,9 +587,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 1
   abilitySoundCheck: 0
-  playerAnimator: {fileID: 0}
-  triggerName: 
-  forceVector: {x: 0, y: 10}
+  playerAnimator: {fileID: 4757342467156564362}
+  triggerName: mixup
+  forceVector: {x: -75, y: 30}
 --- !u!114 &5438246184520808946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -847,6 +847,7 @@ GameObject:
   - component: {fileID: 1600041820903878864}
   - component: {fileID: 4468756225437876255}
   - component: {fileID: 2849943503626405151}
+  - component: {fileID: 1224671160799455074}
   m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
@@ -1004,6 +1005,9 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 0
     Name: arrow
+  - Type: 9
+    SynchronizeType: 0
+    Name: mixup
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -1059,7 +1063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   light: {fileID: 0}
   heavy: {fileID: 7782085045422742745}
-  mixup: {fileID: 0}
+  mixup: {fileID: 1224671160799455074}
   iconic: {fileID: 1600041820903878864}
 --- !u!114 &2849943503626405151
 MonoBehaviour:
@@ -1074,6 +1078,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stateManager: {fileID: 2270851739153014609}
+--- !u!114 &1224671160799455074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6017469816907113681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 1
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 4757342467156564362}
+  triggerName: mixup
+  spawnOrigin: {fileID: 1720422183258909639}
+  projectile: {fileID: 793811016547114540, guid: e47cba6085c024340b9d5563d43a06fa, type: 3}
+  player: {fileID: 3016257482074367028}
 --- !u!1 &8207456865336748242
 GameObject:
   m_ObjectHideFlags: 0
