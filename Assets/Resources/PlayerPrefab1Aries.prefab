@@ -803,6 +803,13 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  takedamagesound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &2324208347197343570
 MonoBehaviour:
   m_ObjectHideFlags: 0
