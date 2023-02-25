@@ -80,6 +80,10 @@ public class playerController : MonoBehaviour
     [Header("Animations")]
     [SerializeField] Animator anim;
 
+    //Crown
+    [Header("Crown")]
+    [SerializeField] private GameObject crown;
+
     void Awake()
     {
         audioManager = GetComponent<audioManager>();
@@ -344,6 +348,11 @@ public class playerController : MonoBehaviour
     public void DisableInput()
     {
         input.Player.Disable();
+    }
+
+    public void ToggleCrown(bool isOn)
+    {
+        crown?.SetActive(isOn);
     }
 
     private void OnEnable()
