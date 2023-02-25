@@ -578,6 +578,7 @@ MonoBehaviour:
   deathPlatformPrefab: {fileID: 1064442647170568961, guid: e12b7ec82a520a94782f02bf5dfd07bc, type: 3}
   respawnInvulTime: 3
   anim: {fileID: 0}
+  crown: {fileID: 0}
 --- !u!61 &2476616717886758476
 BoxCollider2D:
   m_ObjectHideFlags: 0
