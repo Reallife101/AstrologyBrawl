@@ -123,6 +123,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         //Deaths can be tracked locally
         PhotonNetwork.Destroy(controller);
         Spawn();
+        UpdateLeader();
         //Spawns the platform for the player after respawning
         controller.GetComponent<playerController>().SpawnDeathPlatform();
         deaths++;
@@ -149,6 +150,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     void RPC_GetKill()
     {
         kills++;
+        PV.RPC(nameof(SyncKills), RpcTarget.Others, kills);
         PV.RPC("RPC_ScreenShake", RpcTarget.All);
         PV.RPC("RPC_UpdateKillCount", RpcTarget.All, kills);
 
@@ -160,6 +162,12 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         {
             PV.RPC(nameof(RPC_EndGame), RpcTarget.All);
         }
+    }
+
+    [PunRPC]
+    void SyncKills(int newKills)
+    {
+        kills = newKills;
     }
 
     [PunRPC]
@@ -191,5 +199,23 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         yield return new WaitForSeconds(3f);
         gameOverText.alpha = 0;
         PhotonNetwork.LoadLevel("StatScreen");
+    }
+
+    public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)
+    {
+        UpdateLeader();
+    }
+
+    private void UpdateLeader()
+    {
+        bool isKing = true;
+        foreach (KeyValuePair<int, Player> player in PhotonNetwork.CurrentRoom.Players)
+        {
+            if ((int)player.Value.CustomProperties["kills"] > kills)
+            {
+                isKing = false;
+            }
+        }
+        controller?.GetComponent<playerController>().ToggleCrown(isKing);
     }
 }
