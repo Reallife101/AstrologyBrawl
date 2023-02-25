@@ -2239,3 +2239,60 @@ MonoBehaviour:
   UsernameText: {fileID: 2917377679464310878}
   KillText: {fileID: 2917377678546083824}
   DeathText: {fileID: 2917377678556270430}
+--- !u!1001 &4182352052918301879
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 907017493063896213, guid: f576bf8c786a2634db63d70f2c0957df, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 907017493063896213, guid: f576bf8c786a2634db63d70f2c0957df, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 976.932
+      objectReference: {fileID: 0}
+    - target: {fileID: 907017493063896213, guid: f576bf8c786a2634db63d70f2c0957df, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 508.70026
+      objectReference: {fileID: 0}
+    - target: {fileID: 907017493063896213, guid: f576bf8c786a2634db63d70f2c0957df, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.1658163
+      objectReference: {fileID: 0}
+    - target: {fileID: 907017493063896213, guid: f576bf8c786a2634db63d70f2c0957df, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 907017493063896213, guid: f576bf8c786a2634db63d70f2c0957df, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 907017493063896213, guid: f576bf8c786a2634db63d70f2c0957df, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 907017493063896213, guid: f576bf8c786a2634db63d70f2c0957df, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 907017493063896213, guid: f576bf8c786a2634db63d70f2c0957df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 907017493063896213, guid: f576bf8c786a2634db63d70f2c0957df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 907017493063896213, guid: f576bf8c786a2634db63d70f2c0957df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994454908217216031, guid: f576bf8c786a2634db63d70f2c0957df, type: 3}
+      propertyPath: m_Name
+      value: CountdownManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f576bf8c786a2634db63d70f2c0957df, type: 3}
