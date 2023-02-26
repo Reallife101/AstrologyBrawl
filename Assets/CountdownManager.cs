@@ -7,15 +7,16 @@ using Photon.Realtime;
 
 public class CountdownManager : MonoBehaviourPunCallbacks
 {
+    [SerializeField] TMPro.TMP_Text countdownText;
+
     ExitGames.Client.Photon.Hashtable ht;
+    playerController[] playerControllerList;
+
+    double timerIncrementValue;
     double startTime;
     bool startTimer;
-    double timerIncrementValue;
-    playerController[] playerControllerList;
     int playerCount = 0;
     bool playersFrozen = true;
-
-    [SerializeField] TMPro.TMP_Text countdownText;
 
     private void FixedUpdate()
     {
@@ -24,8 +25,8 @@ public class CountdownManager : MonoBehaviourPunCallbacks
         if (playerControllerList.Length > playerCount)
         {
             playerCount = playerControllerList.Length;
-            Debug.Log("playerCount: " + playerCount);
             
+            // Disable playercontroler to stop movement
             foreach (playerController pc in playerControllerList)
             {
                 pc.enabled = false;
@@ -43,6 +44,7 @@ public class CountdownManager : MonoBehaviourPunCallbacks
     {
         if (startTimer)
         {
+            // Using PhotonNetwork.Time to sync time across all the clients
             timerIncrementValue = PhotonNetwork.Time - startTime;
 
             if (timerIncrementValue >= 4)
@@ -53,6 +55,7 @@ public class CountdownManager : MonoBehaviourPunCallbacks
             {
                 countdownText.SetText("FIGHT!");
 
+                //Unfreeze the players
                 if (playersFrozen)
                 {
                     foreach (playerController pc in playerControllerList)
@@ -82,8 +85,7 @@ public class CountdownManager : MonoBehaviourPunCallbacks
 
     void StartCountdownTimer()
     {
-        Debug.Log("start countdown timer");
-
+        // Using try catch finally because we will not know which client will be the first to call StartCountdownTimer()
         try
         {
             startTime = double.Parse(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"].ToString());
