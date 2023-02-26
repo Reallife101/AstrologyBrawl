@@ -59,6 +59,7 @@ MonoBehaviour:
   - HealthOffRPC
   - HealthOnRPC
   - RPC_ScreenShake
+  - SyncKills
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
