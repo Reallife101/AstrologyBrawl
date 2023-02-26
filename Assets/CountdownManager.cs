@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -82,18 +83,21 @@ public class CountdownManager : MonoBehaviourPunCallbacks
     void StartCountdownTimer()
     {
         Debug.Log("start countdown timer");
-        if (PhotonNetwork.IsMasterClient)
+
+        try
+        {
+            startTime = double.Parse(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"].ToString());
+        }
+        catch (NullReferenceException)
         {
             ht = new ExitGames.Client.Photon.Hashtable();
             startTime = PhotonNetwork.Time;
             ht.Add("StartTime", startTime);
             PhotonNetwork.CurrentRoom.SetCustomProperties(ht);
         }
-        else
+        finally
         {
-            startTime = double.Parse(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"].ToString());
+            startTimer = true;
         }
-
-        startTimer = true;
     }
 }
