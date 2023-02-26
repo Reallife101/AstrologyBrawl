@@ -1181,7 +1181,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 4757342467156564362}
   triggerName: mixup
   spawnOrigin: {fileID: 1720422183258909639}
-  projectile: {fileID: 7012559378711024040, guid: 1b6e6d7fa021e7f45b54f8a0fd6b6225, type: 3}
+  projectile: {fileID: 793811016547114540, guid: e47cba6085c024340b9d5563d43a06fa, type: 3}
   player: {fileID: 3016257482074367028}
 --- !u!1 &8207456865336748242
 GameObject:
