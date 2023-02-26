@@ -23,6 +23,7 @@ public class CountdownManager : MonoBehaviourPunCallbacks
         if (playerControllerList.Length > playerCount)
         {
             playerCount = playerControllerList.Length;
+            Debug.Log("playerCount: " + playerCount);
             
             foreach (playerController pc in playerControllerList)
             {
@@ -80,6 +81,7 @@ public class CountdownManager : MonoBehaviourPunCallbacks
 
     void StartCountdownTimer()
     {
+        Debug.Log("start countdown timer");
         if (PhotonNetwork.IsMasterClient)
         {
             ht = new ExitGames.Client.Photon.Hashtable();
