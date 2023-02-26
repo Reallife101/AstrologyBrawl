@@ -9,7 +9,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     [SerializeField] const float MaxHealth = 100f;
     [SerializeField] counter cntr;
 
-    public float damageTaken = 0; 
+    public float damageTaken = 0;
     public float currentHealth = MaxHealth;
     private bool counter = false;
     private bool invincible = false;
@@ -30,7 +30,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
 
     //So that we avoid any null reference exceptions
     public void OnPhotonInstantiate(PhotonMessageInfo info)
-    { 
+    {
         Player player = null;
         PlayerManager manager = null;
 
@@ -63,6 +63,29 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     {
         myPV.RPC("RPC_TakeDamage", myPV.Owner, damage, launchVector, hitStunValue);
         audioManager.CallTakeDamage();
+    }
+
+    public void healDamage(float heal)
+    {
+        myPV.RPC("RPC_HealDamage", myPV.Owner, heal);
+        Debug.Log(heal);
+    }
+
+    [PunRPC]
+    public void RPC_HealDamage(float health)
+    {
+        currentHealth += health;
+        if (currentHealth >MaxHealth)
+        {
+            currentHealth = MaxHealth;
+        }
+        myPV.RPC("RPC_SetHealthUI", RpcTarget.All, health);
+    }
+
+    [PunRPC]
+    public void RPC_SetHealthUI(float health)
+    {
+        healthItem.IncreaseHealthUI(health);
     }
 
     [PunRPC]

@@ -1080,19 +1080,19 @@ MonoBehaviour:
     SynchronizeType: 1
     Name: heavyFreeze
   - Type: 1
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: speed
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: isGrounded
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: jump
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: arrow
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: mixup
   m_SynchronizeLayers:
   - SynchronizeType: 1

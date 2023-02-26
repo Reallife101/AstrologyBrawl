@@ -281,17 +281,29 @@ MonoBehaviour:
   ShowParameterInspector: 1
   m_SynchronizeParameters:
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: HitStun
   - Type: 1
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: speed
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: isGrounded
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: jump
+  - Type: 9
+    SynchronizeType: 1
+    Name: lightVirgo
+  - Type: 9
+    SynchronizeType: 1
+    Name: heavyVirgo
+  - Type: 9
+    SynchronizeType: 1
+    Name: mixupVirgo
+  - Type: 9
+    SynchronizeType: 1
+    Name: iconicVirgo
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -336,9 +348,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4705346360906930665}
-  - component: {fileID: 6082466845620916035}
   - component: {fileID: 1101127547381721659}
   - component: {fileID: 322141052962084623}
+  - component: {fileID: 2118536375946803434}
   m_Layer: 0
   m_Name: Hitbox
   m_TagString: Untagged
@@ -361,28 +373,6 @@ Transform:
   m_Father: {fileID: 8252184879413000340}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6082466845620916035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1789027120670792531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attack_type: 2
-  damage: 0
-  destroyOnTouch: 0
-  lifeTime: 0
-  hasInfiniteLifeTime: 1
-  launchForce: 0
-  hitStunTime: 0.25
-  launchDirection: {x: 0, y: 0}
-  parentSprite: {fileID: 0}
-  ownerID: 0
 --- !u!61 &1101127547381721659
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -431,6 +421,30 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &2118536375946803434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789027120670792531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2e3651f407d2a440a162dc0c541416a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack_type: 2
+  damage: 0
+  destroyOnTouch: 0
+  lifeTime: 0
+  hasInfiniteLifeTime: 1
+  launchForce: 0
+  hitStunTime: 0.25
+  launchDirection: {x: 0, y: 0}
+  parentSprite: {fileID: 0}
+  ownerID: 0
+  hp: {fileID: 7328130180652725418}
+  healAmount: 5
 --- !u!1 &3016257482074367028
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,7 +682,7 @@ MonoBehaviour:
   firstLightAir: {fileID: 11400000, guid: f0aa5034140151a4788b8ae38f436db6, type: 2}
   firstHeavyAir: {fileID: 11400000, guid: 5eaccdf5fc509cc4aaa54d536c7c492a, type: 2}
   airAttackGravityModifier: 0
-  hitbox: {fileID: 6082466845620916035}
+  hitbox: {fileID: 2118536375946803434}
   playerAnimator: {fileID: 8694400067546609426}
 --- !u!114 &4888351954668950257
 MonoBehaviour:
