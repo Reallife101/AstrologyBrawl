@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sagittariusMixup
+  m_Name: virgoRun
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,15 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 07cb802a5973ef748bba3aa19229f414, type: 3}
+      value: {fileID: 21300000, guid: 0cdd7b307229be94a9ae030f9a25842b, type: 3}
+    - time: 0.1
+      value: {fileID: 21300000, guid: 0b511a75ef33a144aaa780a1763756f5, type: 3}
+    - time: 0.2
+      value: {fileID: 21300000, guid: 9d983aa098bad0f41acb07c3fdc0a09a, type: 3}
     - time: 0.3
-      value: {fileID: 21300000, guid: 5629848f534622e4a8ce8ba9650778f7, type: 3}
-    - time: 0.4
-      value: {fileID: 21300000, guid: 8be0e3fa161e2ad41b128dfe342e26c7, type: 3}
-    - time: 0.5
-      value: {fileID: 21300000, guid: a77d9c84c9f9143438fdcdec92ebf7f5, type: 3}
-    - time: 0.6
-      value: {fileID: 21300000, guid: 72737523673ed164eba2df79e7de8bb8, type: 3}
+      value: {fileID: 21300000, guid: e77330d2f16381b40b95a64c5e1e40c4, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,17 +46,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 07cb802a5973ef748bba3aa19229f414, type: 3}
-    - {fileID: 21300000, guid: 5629848f534622e4a8ce8ba9650778f7, type: 3}
-    - {fileID: 21300000, guid: 8be0e3fa161e2ad41b128dfe342e26c7, type: 3}
-    - {fileID: 21300000, guid: a77d9c84c9f9143438fdcdec92ebf7f5, type: 3}
-    - {fileID: 21300000, guid: 72737523673ed164eba2df79e7de8bb8, type: 3}
+    - {fileID: 21300000, guid: 0cdd7b307229be94a9ae030f9a25842b, type: 3}
+    - {fileID: 21300000, guid: 0b511a75ef33a144aaa780a1763756f5, type: 3}
+    - {fileID: 21300000, guid: 9d983aa098bad0f41acb07c3fdc0a09a, type: 3}
+    - {fileID: 21300000, guid: e77330d2f16381b40b95a64c5e1e40c4, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.70000005
+    m_StopTime: 0.4
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -77,11 +74,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.2
-    functionName: useMixup
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []
