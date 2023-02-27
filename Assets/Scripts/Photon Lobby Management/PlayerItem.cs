@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using TMPro;
 using Photon.Pun;
 using Photon.Realtime;
-
 public class PlayerItem : MonoBehaviourPunCallbacks
 {
     public TMP_Text playerName;
@@ -14,12 +13,16 @@ public class PlayerItem : MonoBehaviourPunCallbacks
     public Color highlightColor;
     public GameObject leftArrowButton;
     public GameObject rightArrowButton;
+    public Button playerItemButton;
+    public GameObject readyUpTextObject;
 
     ExitGames.Client.Photon.Hashtable playerProperties = new ExitGames.Client.Photon.Hashtable();
     public Image playerAvatar;
     public Sprite[] avatars;
 
     Player player;
+
+    bool isReady = false;
 
     public Player GetPlayer()
     {
@@ -31,6 +34,8 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         backgroundImage.color = highlightColor;
         leftArrowButton.SetActive(true);
         rightArrowButton.SetActive(true);
+        playerItemButton.enabled = true;
+        readyUpTextObject.SetActive(false);
     }
 
     public void SetPlayerInfo(Player _player)
@@ -71,6 +76,11 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         {
             UpdatePlayerItem(targetPlayer);
         }
+
+        if (player.CustomProperties.TryGetValue("ready", out object readyout))
+        {
+            readyUpTextObject.SetActive((bool) readyout);
+        }
     }
 
     void UpdatePlayerItem(Player _player)
@@ -86,6 +96,21 @@ public class PlayerItem : MonoBehaviourPunCallbacks
             if (PhotonNetwork.LocalPlayer == _player)
                 PhotonNetwork.SetPlayerCustomProperties(playerProperties);
         }
+    }
+
+    public void ReadyUpToggle()
+    {
+        Debug.Log("Am I stupid");
+        isReady = !isReady;
+
+        ExitGames.Client.Photon.Hashtable hash = new ExitGames.Client.Photon.Hashtable();
+        hash.Add("ready", isReady);
+        PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+
+        leftArrowButton.SetActive(!isReady);
+        rightArrowButton.SetActive(!isReady);
+        readyUpTextObject.SetActive(isReady);
+
     }
 
 }

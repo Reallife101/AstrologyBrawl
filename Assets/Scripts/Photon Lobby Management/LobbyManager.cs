@@ -5,6 +5,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
 using Unity.VisualScripting;
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
@@ -28,6 +29,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public GameObject selectLevel;
     public levelInfoItem levelInfo;
 
+    public bool allPlayersReady = false;
+
     private void Start()
     {
         if (PhotonNetwork.CurrentRoom != null)
@@ -48,7 +51,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     private void Update()
     {
-        if (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount >=1)
+        if (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount >=1 && allPlayersReady)
         {
             playButton.SetActive(true);
         }
@@ -78,6 +81,11 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
+        //Set ready to false by default on join
+        Hashtable hash = new Hashtable();
+        hash.Add("ready", false);
+        PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+
         lobbyPanel.SetActive(false);
         roomPanel.SetActive(true);
         roomName.text = "Room Name: " + PhotonNetwork.CurrentRoom.Name;
@@ -86,7 +94,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
-        Debug.Log("Man");
         if (Time.time >= nextUpdateTime)
         {
             UpdateRoomList(roomList);
@@ -191,6 +198,19 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         PhotonNetwork.LoadLevel(levelInfo.getSceneName());
         PhotonNetwork.CurrentRoom.IsOpen = false;
         PhotonNetwork.CurrentRoom.IsVisible = false;
+    }
+
+    public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)
+    {
+        bool allReady = true;
+        foreach (KeyValuePair<int, Player> player in PhotonNetwork.CurrentRoom.Players)
+        {
+            if (player.Value.CustomProperties.TryGetValue("ready", out object readyout) && !(bool) readyout)
+            {
+                allReady = false;
+            }
+        }
+        allPlayersReady = allReady;
     }
 
 }
