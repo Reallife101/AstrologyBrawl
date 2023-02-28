@@ -132,6 +132,37 @@ Transform:
   m_Father: {fileID: 3016257482074367029}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2586059873608263193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6702834974374626348}
+  m_Layer: 0
+  m_Name: lightAttackOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6702834974374626348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2586059873608263193}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.7, y: 0.1, z: -0.01745534}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3016257482074367029}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3016257482074367028
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,6 +214,7 @@ Transform:
   - {fileID: 7207981399879051487}
   - {fileID: 210362362261413941}
   - {fileID: 3134765060335993960}
+  - {fileID: 6702834974374626348}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1210,6 +1242,7 @@ GameObject:
   - component: {fileID: 6178118057766367752}
   - component: {fileID: 73722749503345488}
   - component: {fileID: 373246806876060705}
+  - component: {fileID: 4718133020678278869}
   m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
@@ -1342,7 +1375,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowLayerWeightsInspector: 1
   ShowParameterInspector: 1
-  m_SynchronizeParameters: []
+  m_SynchronizeParameters:
+  - Type: 9
+    SynchronizeType: 0
+    Name: lightAquarius
+  - Type: 4
+    SynchronizeType: 0
+    Name: HitStun
+  - Type: 9
+    SynchronizeType: 0
+    Name: heavyAquarius
+  - Type: 9
+    SynchronizeType: 0
+    Name: mixupAquarius
+  - Type: 9
+    SynchronizeType: 0
+    Name: iconicAquarius
+  - Type: 1
+    SynchronizeType: 0
+    Name: speed
+  - Type: 4
+    SynchronizeType: 0
+    Name: isGrounded
+  - Type: 9
+    SynchronizeType: 0
+    Name: jump
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -1360,11 +1417,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 1
   abilitySoundCheck: 0
-  playerAnimator: {fileID: 0}
-  triggerName: 
-  spawnOrigin: {fileID: 0}
-  projectile: {fileID: 793811016547114540, guid: 88e2167586424554cb1915db7704ce57, type: 3}
-  player: {fileID: 0}
+  playerAnimator: {fileID: 1487008377844494123}
+  triggerName: lightAquarius
+  spawnOrigin: {fileID: 6702834974374626348}
+  projectile: {fileID: 793811016547114540, guid: c6b9cd65718e5064c85f0a57d4c731f9, type: 3}
+  player: {fileID: 3016257482074367028}
 --- !u!114 &373246806876060705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1378,3 +1435,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stateManager: {fileID: 0}
+--- !u!114 &4718133020678278869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8234068197884782501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59db80b50577c264ea4d6de2d42baf94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 73722749503345488}
+  heavy: {fileID: 0}
+  mixup: {fileID: 0}
+  iconic: {fileID: 0}
