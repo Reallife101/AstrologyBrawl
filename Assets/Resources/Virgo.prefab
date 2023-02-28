@@ -463,7 +463,7 @@ GameObject:
   - component: {fileID: 3127367030068314295}
   - component: {fileID: 2270851739153014609}
   - component: {fileID: 4888351954668950257}
-  - component: {fileID: 8649130518893083904}
+  - component: {fileID: 778512593599464108}
   - component: {fileID: 9151882990214347279}
   - component: {fileID: 8429140981890349801}
   - component: {fileID: 4259250144682286860}
@@ -573,7 +573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ability1: {fileID: 9151882990214347279}
-  ability2: {fileID: 8649130518893083904}
+  ability2: {fileID: 778512593599464108}
   movementVector: {x: 0, y: 0}
   moveSpeed: 40
   movementSmoothing: 0.05
@@ -629,7 +629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4981084ca802d44cb8a63c46e20f981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cntr: {fileID: 8649130518893083904}
+  cntr: {fileID: 0}
   damageTaken: 0
   currentHealth: 100
   myPV: {fileID: 0}
@@ -700,7 +700,7 @@ MonoBehaviour:
   m_SynchronizeRotation: 0
   m_SynchronizeScale: 1
   m_UseLocal: 1
---- !u!114 &8649130518893083904
+--- !u!114 &778512593599464108
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -709,15 +709,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 3016257482074367028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 513004987f4cef04ca72638b4f2afbe7, type: 3}
+  m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1
+  cooldownTime: 1.5
   abilitySoundCheck: 0
   playerAnimator: {fileID: 8694400067546609426}
-  triggerName: iconicLibra
-  health: {fileID: 7328130180652725418}
-  counterLength: 10
+  triggerName: mixupVirgo
+  spawnOrigin: {fileID: 2204496378394938765}
+  projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
+  player: {fileID: 3016257482074367028}
 --- !u!114 &9151882990214347279
 MonoBehaviour:
   m_ObjectHideFlags: 0
