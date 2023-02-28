@@ -577,9 +577,9 @@ MonoBehaviour:
   movementVector: {x: 0, y: 0}
   moveSpeed: 40
   movementSmoothing: 0.05
-  jumpPower: 40
+  jumpPower: 65
   fastFallSpeed: 30
-  doubleJumpPower: 30
+  doubleJumpPower: 50
   isGrounded: 0
   groundedCheckObjectLeft: {fileID: 4887830797730787154}
   groundedCheckObjectRight: {fileID: 8475485967914335248}

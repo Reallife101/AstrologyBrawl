@@ -568,7 +568,7 @@ MonoBehaviour:
   movementSmoothing: 0.05
   jumpPower: 65
   fastFallSpeed: 30
-  doubleJumpPower: 30
+  doubleJumpPower: 50
   isGrounded: 0
   groundedCheckObjectLeft: {fileID: 4887830797730787154}
   groundedCheckObjectRight: {fileID: 8475485967914335248}
@@ -964,7 +964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack_type: 3
-  damage: 50
+  damage: 35
   destroyOnTouch: 0
   lifeTime: 0
   hasInfiniteLifeTime: 1
@@ -1099,7 +1099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack_type: 4
-  damage: 50
+  damage: 35
   destroyOnTouch: 0
   lifeTime: 0
   hasInfiniteLifeTime: 1

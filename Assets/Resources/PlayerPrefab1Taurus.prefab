@@ -635,7 +635,7 @@ MonoBehaviour:
   movementSmoothing: 0.05
   jumpPower: 65
   fastFallSpeed: 30
-  doubleJumpPower: 30
+  doubleJumpPower: 50
   isGrounded: 0
   groundedCheckObjectLeft: {fileID: 4887830797730787154}
   groundedCheckObjectRight: {fileID: 8475485967914335248}
@@ -768,7 +768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1
+  cooldownTime: 2
   abilitySoundCheck: 0
   playerAnimator: {fileID: 0}
   triggerName: 

@@ -575,9 +575,9 @@ MonoBehaviour:
   movementVector: {x: 0, y: 0}
   moveSpeed: 40
   movementSmoothing: 0.05
-  jumpPower: 40
+  jumpPower: 65
   fastFallSpeed: 30
-  doubleJumpPower: 30
+  doubleJumpPower: 50
   isGrounded: 0
   groundedCheckObjectLeft: {fileID: 4887830797730787154}
   groundedCheckObjectRight: {fileID: 8475485967914335248}
@@ -710,12 +710,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 513004987f4cef04ca72638b4f2afbe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1
+  cooldownTime: 1.5
   abilitySoundCheck: 0
   playerAnimator: {fileID: 8694400067546609426}
   triggerName: iconicLibra
   health: {fileID: 7328130180652725418}
-  counterLength: 10
+  counterLength: 1
 --- !u!114 &9151882990214347279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -831,7 +831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc48f0f7946f1a41ac126456f565952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Light: 25
+  Light: 15
   Heavy: 40
   Ability1: 10
   Ability2: 0
