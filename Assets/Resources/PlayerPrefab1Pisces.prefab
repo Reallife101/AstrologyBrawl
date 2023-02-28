@@ -282,28 +282,28 @@ MonoBehaviour:
   ShowParameterInspector: 1
   m_SynchronizeParameters:
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: lightPisces
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: HitStun
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: heavyPisces
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: mixupPisces
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: iconicPisces
   - Type: 1
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: speed
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: isGrounded
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: jump
   m_SynchronizeLayers:
   - SynchronizeType: 1
