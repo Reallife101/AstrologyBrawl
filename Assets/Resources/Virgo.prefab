@@ -678,9 +678,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstLightGround: {fileID: 11400000, guid: f0aa5034140151a4788b8ae38f436db6, type: 2}
-  firstHeavyGround: {fileID: 11400000, guid: 5eaccdf5fc509cc4aaa54d536c7c492a, type: 2}
+  firstHeavyGround: {fileID: 11400000, guid: bcf4946b91c1fab40ba2d9fffe6848da, type: 2}
   firstLightAir: {fileID: 11400000, guid: f0aa5034140151a4788b8ae38f436db6, type: 2}
-  firstHeavyAir: {fileID: 11400000, guid: 5eaccdf5fc509cc4aaa54d536c7c492a, type: 2}
+  firstHeavyAir: {fileID: 11400000, guid: bcf4946b91c1fab40ba2d9fffe6848da, type: 2}
   airAttackGravityModifier: 0
   hitbox: {fileID: 2118536375946803434}
   playerAnimator: {fileID: 8694400067546609426}
