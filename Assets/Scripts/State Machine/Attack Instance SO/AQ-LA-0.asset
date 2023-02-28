@@ -16,10 +16,10 @@ MonoBehaviour:
   attackAnimationName: lightAquarius
   duration: 0.5
   inputBufferTime: 0.35
-  forwardMovement: 3
+  forwardMovement: 0
   finisherEndlag: 0.15
   hitStunTime: 0.5
-  knockbackPower: 10
+  knockbackPower: 1
   launchDirection: {x: 10, y: 0}
   NextAttackFrameSO: {fileID: 0}
   chargeTimeAllowed: 0

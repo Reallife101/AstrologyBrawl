@@ -553,7 +553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Light: 10
-  Heavy: 20
+  Heavy: 35
   Ability1: 20
   Ability2: 12
   stacked: 0
