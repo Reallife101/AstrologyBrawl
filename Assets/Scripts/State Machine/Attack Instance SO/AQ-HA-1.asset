@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: AQ-HA-1
   m_EditorClassIdentifier: 
   damage: 30
-  attackAnimationName: Attack3
+  attackAnimationName: heavyAquarius
   duration: 0.5
   inputBufferTime: 0.35
   forwardMovement: 10
   finisherEndlag: 0.25
   hitStunTime: 0.5
   knockbackPower: 50
-  launchDirection: {x: 25, y: 0}
+  launchDirection: {x: 0, y: 0}
   NextAttackFrameSO: {fileID: 0}
   chargeTimeAllowed: 0
   chargeTimeForMax: 0
