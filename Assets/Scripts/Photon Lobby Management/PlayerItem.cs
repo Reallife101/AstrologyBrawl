@@ -13,7 +13,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks
     public Color highlightColor;
     public GameObject leftArrowButton;
     public GameObject rightArrowButton;
-    public Button playerItemButton;
+    public GameObject playerItemButton;
     public GameObject readyUpTextObject;
 
     ExitGames.Client.Photon.Hashtable playerProperties = new ExitGames.Client.Photon.Hashtable();
@@ -34,7 +34,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         backgroundImage.color = highlightColor;
         leftArrowButton.SetActive(true);
         rightArrowButton.SetActive(true);
-        playerItemButton.enabled = true;
+        playerItemButton.SetActive(true);
         readyUpTextObject.SetActive(false);
     }
 
