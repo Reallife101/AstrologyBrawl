@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2104,11 +2104,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 69511857
-      Data2: 1243223215
-      Data3: 441812658
-      Data4: -1719780496
-    Path: event:/(TEMP) Battle Theme Reduced
+      Data1: 1624887216
+      Data2: 1135307506
+      Data3: -1937159763
+      Data4: -2101571560
+    Path: event:/Extended Battle Music
   Event: 
   PlayEvent: 1
   StopEvent: 2

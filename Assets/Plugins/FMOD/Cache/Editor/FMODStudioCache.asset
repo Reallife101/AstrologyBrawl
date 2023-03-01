@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638129310466825431
+  lastModified: 638131991173736485
   FileSizes:
   - Name: 
-    Value: 1646
+    Value: 1698
   Exists: 1
 --- !u!114 &-8454167874413230229
 MonoBehaviour:
@@ -252,7 +252,7 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638129310466825431
+  lastModified: 638131991173697426
   FileSizes: []
   Exists: 1
 --- !u!114 &-694125327386692165
@@ -370,13 +370,14 @@ MonoBehaviour:
   - {fileID: -8454167874413230229}
   - {fileID: -6135323989386017881}
   - {fileID: 5835596448543751702}
+  - {fileID: 8941416524094637178}
   EditorParameters:
   - {fileID: 6897359367507961776}
   MasterBanks:
   - {fileID: -1105131376724052805}
   StringsBanks:
   - {fileID: -8844762814205021062}
-  cacheTime: 638129310466825431
+  cacheTime: 638131991173736485
   cacheVersion: 131601
 --- !u!114 &1389602570942497364
 MonoBehaviour:
@@ -620,6 +621,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 678
+--- !u!114 &8941416524094637178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Extended Battle Music
+  m_EditorClassIdentifier: 
+  Path: event:/Extended Battle Music
+  Guid:
+    Data1: 1624887216
+    Data2: 1135307506
+    Data3: -1937159763
+    Data4: -2101571560
+  Banks:
+  - {fileID: -1105131376724052805}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 286275
 --- !u!114 &9101342762772110789
 MonoBehaviour:
   m_ObjectHideFlags: 0

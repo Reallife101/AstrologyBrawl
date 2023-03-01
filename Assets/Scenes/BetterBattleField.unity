@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1032,6 +1032,26 @@ PrefabInstance:
     - target: {fileID: 1306837757352386585, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: m_LocalPosition.y
       value: 4.0923166
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Extended Battle Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: 1624887216
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1135307506
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -1937159763
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -2101571560
       objectReference: {fileID: 0}
     - target: {fileID: 1306837758385738372, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: m_Name
