@@ -49,6 +49,7 @@ public class CountdownManager : MonoBehaviourPunCallbacks
 
             if (timerIncrementValue >= 4)
             {
+                ht.Remove("StartTime");
                 Destroy(gameObject);
             }
             else if (timerIncrementValue >= 3)
