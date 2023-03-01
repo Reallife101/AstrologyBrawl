@@ -889,6 +889,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/(TEMP) Main Menu Theme
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: 1142580733
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1271012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -280540998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -1317060781
+      objectReference: {fileID: 0}
     - target: {fileID: 1306837758385738372, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: m_Name
       value: Camera Stuff

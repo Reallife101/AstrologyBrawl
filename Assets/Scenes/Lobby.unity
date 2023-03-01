@@ -818,6 +818,7 @@ MonoBehaviour:
   playButton: {fileID: 77493019}
   selectLevel: {fileID: 1052982674}
   levelInfo: {fileID: 531901270}
+  allPlayersReady: 0
 --- !u!4 &249306305
 Transform:
   m_ObjectHideFlags: 0
@@ -2036,7 +2037,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 91801776}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999795
+  m_Size: 0.9993846
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2542,6 +2543,7 @@ GameObject:
   - component: {fileID: 1055901032}
   - component: {fileID: 1055901031}
   - component: {fileID: 1055901030}
+  - component: {fileID: 1055901033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2615,6 +2617,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1055901033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055901029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Volume
+  TriggerEvent: 1
+  Value: 0
 --- !u!1 &1132109755
 GameObject:
   m_ObjectHideFlags: 0
@@ -3540,7 +3558,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00044350544}
+  m_AnchoredPosition: {x: 0, y: 0.00033079687}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2060837561
