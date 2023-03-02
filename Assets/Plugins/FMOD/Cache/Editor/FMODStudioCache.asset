@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &-9045670606281936576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra/Libra Ability 1 Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra/Libra Ability 1 Voice
+  Guid:
+    Data1: 1158769573
+    Data2: 1119763798
+    Data3: -677033027
+    Data4: 1861507773
+  Banks:
+  - {fileID: -1105131376724052805}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &-8844762814205021062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,10 +69,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638132790864551816
+  lastModified: 638132880479025196
   FileSizes:
   - Name: 
-    Value: 2004
+    Value: 2122
   Exists: 1
 --- !u!114 &-8579067451076109806
 MonoBehaviour:
@@ -306,7 +333,7 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638132790864501796
+  lastModified: 638132880478976368
   FileSizes: []
   Exists: 1
 --- !u!114 &-694125327386692165
@@ -432,13 +459,15 @@ MonoBehaviour:
   - {fileID: 8775987977193744822}
   - {fileID: 5831343227504926451}
   - {fileID: -8579067451076109806}
+  - {fileID: -9045670606281936576}
+  - {fileID: 3709231723391819915}
   EditorParameters:
   - {fileID: 6897359367507961776}
   MasterBanks:
   - {fileID: -1105131376724052805}
   StringsBanks:
   - {fileID: -8844762814205021062}
-  cacheTime: 638132790864551816
+  cacheTime: 638132880479025196
   cacheVersion: 131601
 --- !u!114 &1389602570942497364
 MonoBehaviour:
@@ -547,7 +576,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8500
+  Length: 9000
 --- !u!114 &3335139727297048128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,6 +604,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &3709231723391819915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra/Libra Charge Attacks Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra/Libra Charge Attacks Voice
+  Guid:
+    Data1: -228327233
+    Data2: 1172903531
+    Data3: 1968146111
+    Data4: -1102220653
+  Banks:
+  - {fileID: -1105131376724052805}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2360
 --- !u!114 &4855262712199076296
 MonoBehaviour:
   m_ObjectHideFlags: 0

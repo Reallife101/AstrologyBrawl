@@ -812,6 +812,20 @@ MonoBehaviour:
       Data3: 329663414
       Data4: 184893349
     Path: event:/Libra/Libra Attacks Voice
+  chargeattackvoice:
+    Guid:
+      Data1: -228327233
+      Data2: 1172903531
+      Data3: 1968146111
+      Data4: -1102220653
+    Path: event:/Libra/Libra Charge Attacks Voice
+  ability1voice:
+    Guid:
+      Data1: 1158769573
+      Data2: 1119763798
+      Data3: -677033027
+      Data4: 1861507773
+    Path: event:/Libra/Libra Ability 1 Voice
   iconicvoice:
     Guid:
       Data1: 1233175572
