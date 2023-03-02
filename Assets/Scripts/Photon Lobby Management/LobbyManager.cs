@@ -31,6 +31,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public bool allPlayersReady = false;
 
+
     private void Start()
     {
         if (PhotonNetwork.CurrentRoom != null)
@@ -85,7 +86,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         Hashtable hash = new Hashtable();
         hash.Add("ready", false);
         PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
-
         lobbyPanel.SetActive(false);
         roomPanel.SetActive(true);
         roomName.text = "Room Name: " + PhotonNetwork.CurrentRoom.Name;

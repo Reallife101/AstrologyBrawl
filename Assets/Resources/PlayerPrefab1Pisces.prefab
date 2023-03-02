@@ -762,6 +762,20 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  attackvoice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  iconicvoice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   genericdeathsound:
     Guid:
       Data1: 0
@@ -770,6 +784,13 @@ MonoBehaviour:
       Data4: 0
     Path: 
   takedamagesound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  characterselect:
     Guid:
       Data1: 0
       Data2: 0

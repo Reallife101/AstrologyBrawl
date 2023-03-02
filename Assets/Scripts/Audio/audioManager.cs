@@ -18,10 +18,16 @@ public class audioManager : MonoBehaviour
     [SerializeField] FMODUnity.EventReference heavyattackreleasesound;
     [SerializeField] FMODUnity.EventReference ability1sound;
     [SerializeField] FMODUnity.EventReference ability2sound;
+    [SerializeField] FMODUnity.EventReference attackvoice;
+    [SerializeField] FMODUnity.EventReference iconicvoice;
 
     [Header("Misc")]
     [SerializeField] FMODUnity.EventReference genericdeathsound;
     [SerializeField] FMODUnity.EventReference takedamagesound;
+    [SerializeField] FMODUnity.EventReference takedamagevoice;
+    [SerializeField] FMODUnity.EventReference characterselect;
+    [SerializeField] FMODUnity.EventReference spawnvoice;
+    
     
     // Other variables
     playerController playerController;
@@ -55,6 +61,7 @@ public class audioManager : MonoBehaviour
     public void CallLightAttack()
     {
         FMODUnity.RuntimeManager.PlayOneShot(lightattacksound);
+        FMODUnity.RuntimeManager.PlayOneShot(attackvoice);
     }
 
     public void CallHeavyAttackCharge()
@@ -65,6 +72,7 @@ public class audioManager : MonoBehaviour
     public void CallHeavyAttackRelease()
     {
         FMODUnity.RuntimeManager.PlayOneShot(heavyattackreleasesound);
+        FMODUnity.RuntimeManager.PlayOneShot(attackvoice);
     }
 
         public void CallAbility1()
@@ -75,6 +83,7 @@ public class audioManager : MonoBehaviour
         public void CallAbility2()
     {
         FMODUnity.RuntimeManager.PlayOneShot(ability2sound);
+        FMODUnity.RuntimeManager.PlayOneShot(iconicvoice);
     }
 
          public void CallDeathGeneric()
@@ -85,7 +94,19 @@ public class audioManager : MonoBehaviour
          public void CallTakeDamage()
     {
         FMODUnity.RuntimeManager.PlayOneShot(takedamagesound);
+        FMODUnity.RuntimeManager.PlayOneShot(takedamagevoice);
     }   
+
+         public void CallCharacterSelect()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(characterselect);
+    }   
+
+         public void CallSpawnVoice()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(spawnvoice);
+    }   
+
 
     void Start()
     {

@@ -805,6 +805,20 @@ MonoBehaviour:
       Data3: 1383783859
       Data4: -449957530
     Path: event:/Libra/Libra S2
+  attackvoice:
+    Guid:
+      Data1: 1286916329
+      Data2: 1155034682
+      Data3: 329663414
+      Data4: 184893349
+    Path: event:/Libra/Libra Attacks Voice
+  iconicvoice:
+    Guid:
+      Data1: 1233175572
+      Data2: 1223296014
+      Data3: 634649991
+      Data4: 1147410623
+    Path: event:/Libra/Libra iconic Voice
   genericdeathsound:
     Guid:
       Data1: 1755445942
@@ -819,6 +833,27 @@ MonoBehaviour:
       Data3: 529385401
       Data4: -1657758984
     Path: event:/TakingDamage
+  takedamagevoice:
+    Guid:
+      Data1: -2072789013
+      Data2: 1322515083
+      Data3: 1025153712
+      Data4: 2054601307
+    Path: event:/Libra/Libra Damage Voice
+  characterselect:
+    Guid:
+      Data1: 1736800558
+      Data2: 1136807987
+      Data3: -223500928
+      Data4: 1253733636
+    Path: event:/Libra/Libra On Select Voice
+  spawnvoice:
+    Guid:
+      Data1: -850475170
+      Data2: 1309601399
+      Data3: -1832606315
+      Data4: -45864446
+    Path: event:/Libra/Libra Respawn Voice
 --- !u!114 &4259250144682286860
 MonoBehaviour:
   m_ObjectHideFlags: 0
