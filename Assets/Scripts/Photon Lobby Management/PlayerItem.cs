@@ -16,13 +16,19 @@ public class PlayerItem : MonoBehaviourPunCallbacks
     public GameObject playerItemButton;
     public GameObject readyUpTextObject;
 
-    ExitGames.Client.Photon.Hashtable playerProperties = new ExitGames.Client.Photon.Hashtable();
+    public ExitGames.Client.Photon.Hashtable playerProperties = new ExitGames.Client.Photon.Hashtable();
     public Image playerAvatar;
     public Sprite[] avatars;
 
     Player player;
+    characterSelect characterSelect;
 
     bool isReady = false;
+
+    public void Awake()
+    {
+        characterSelect = GetComponent<characterSelect>();
+    }
 
     public Player GetPlayer()
     {
@@ -101,6 +107,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks
     public void ReadyUpToggle()
     {
         Debug.Log("Am I stupid");
+        characterSelect.CallCharacterLock();
         isReady = !isReady;
 
         ExitGames.Client.Photon.Hashtable hash = new ExitGames.Client.Photon.Hashtable();

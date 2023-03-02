@@ -145,6 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3305554254204351071}
   - component: {fileID: 6377059073172621493}
+  - component: {fileID: 3973905992332843406}
   m_Layer: 5
   m_Name: PlayerItem
   m_TagString: Untagged
@@ -207,6 +208,25 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7ba34301e22643b499c2e7ba9185264b, type: 3}
   - {fileID: 21300000, guid: 3c8f9c75d8dcf6546bfb0e210954b72b, type: 3}
   - {fileID: 21300000, guid: 0fb2a9af37d16764989747a9b2990d93, type: 3}
+--- !u!114 &3973905992332843406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3305554254204351072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21d36e4da61aad64e981d8bf651f1c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LibraLock:
+    Guid:
+      Data1: 1736800558
+      Data2: 1136807987
+      Data3: -223500928
+      Data4: 1253733636
+    Path: event:/Libra/Libra On Select Voice
 --- !u!1 &3305554254479663719
 GameObject:
   m_ObjectHideFlags: 0
