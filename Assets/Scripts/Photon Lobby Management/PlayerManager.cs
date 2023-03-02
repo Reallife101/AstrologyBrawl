@@ -27,6 +27,8 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
     private HealthHUDManager healthHUDManager;
     private HealthItem healthItem;
+
+
     private void Awake()
     {
         spawnPointParent = GameObject.FindWithTag("SpawnPoints");

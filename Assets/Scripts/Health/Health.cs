@@ -56,13 +56,11 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     public void TakeDamage(float damage)
     {
         myPV.RPC("RPC_TakeDamage", myPV.Owner, damage, Vector2.zero);
-        audioManager.CallTakeDamage();
     }
 
     public void TakeDamage(float damage, Vector2 launchVector, float hitStunValue = 0.25f)
     {
         myPV.RPC("RPC_TakeDamage", myPV.Owner, damage, launchVector, hitStunValue);
-        audioManager.CallTakeDamage();
     }
 
     public void healDamage(float heal)
@@ -114,6 +112,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
 
         myPV.RPC("RPC_UpdateHealthUI", RpcTarget.All, damage);
         myPV.RPC("HitStunned", myPV.Owner, hitStunValue);
+        audioManager.CallTakeDamage();
         currentHealth -= damage;
 
         GetComponent<Rigidbody2D>().AddForce(launchVector, ForceMode2D.Impulse);
@@ -122,6 +121,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
         if (currentHealth <=0)
         {
            audioManager.CallDeathGeneric(); 
+           audioManager.CallSpawnVoice();
             Die();
 
             //if you are not yourself or nothing, give them a kill
