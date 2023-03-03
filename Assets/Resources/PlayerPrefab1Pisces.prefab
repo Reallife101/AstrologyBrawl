@@ -149,6 +149,8 @@ GameObject:
   - component: {fileID: 4222165050303269091}
   - component: {fileID: 8137799586486451805}
   - component: {fileID: 2626130579388279935}
+  - component: {fileID: 7620858030938602641}
+  - component: {fileID: 1855503620430215831}
   m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
@@ -379,6 +381,42 @@ MonoBehaviour:
   triggerName: 
   spawnOrigin: {fileID: 3016257482074367029}
   projectile: {fileID: 100000, guid: cb589879cc6f1c7439854592200da736, type: 3}
+  player: {fileID: 3016257482074367028}
+  spawnAsChild: 0
+--- !u!114 &7620858030938602641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612861564415972768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 237069c351c9e94458d0115bfa5aeb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoke: {fileID: 0}
+  miscParticle1: {fileID: 1855503620430215831}
+  m2: {fileID: 0}
+  i2: {fileID: 0}
+--- !u!114 &1855503620430215831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612861564415972768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 0
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: 
+  spawnOrigin: {fileID: 3016257482074367029}
+  projectile: {fileID: 1687118924408352, guid: 33b8f8ac539069642b992e6073a7e6ba, type: 3}
   player: {fileID: 3016257482074367028}
   spawnAsChild: 0
 --- !u!1 &1555689602611425355
