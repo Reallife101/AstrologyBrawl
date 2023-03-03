@@ -69,10 +69,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638133742566759620
+  lastModified: 638134430879290366
   FileSizes:
   - Name: 
-    Value: 2122
+    Value: 2176
   Exists: 1
 --- !u!114 &-8579067451076109806
 MonoBehaviour:
@@ -128,6 +128,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2125
+--- !u!114 &-8435440635093745140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius/Aquarius Walk
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius/Aquarius Walk
+  Guid:
+    Data1: -1777302120
+    Data2: 1268280268
+    Data3: 1573820297
+    Data4: 596767288
+  Banks:
+  - {fileID: -1105131376724052805}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 851
 --- !u!114 &-8238409646333612872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,7 +360,7 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638133742566720558
+  lastModified: 638134430879272159
   FileSizes: []
   Exists: 1
 --- !u!114 &-694125327386692165
@@ -461,13 +488,14 @@ MonoBehaviour:
   - {fileID: -8579067451076109806}
   - {fileID: -9045670606281936576}
   - {fileID: 3709231723391819915}
+  - {fileID: -8435440635093745140}
   EditorParameters:
   - {fileID: 6897359367507961776}
   MasterBanks:
   - {fileID: -1105131376724052805}
   StringsBanks:
   - {fileID: -8844762814205021062}
-  cacheTime: 638133742566759620
+  cacheTime: 638134430879290366
   cacheVersion: 131601
 --- !u!114 &1389602570942497364
 MonoBehaviour:

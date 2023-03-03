@@ -1884,7 +1884,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: PlayEvent
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Path

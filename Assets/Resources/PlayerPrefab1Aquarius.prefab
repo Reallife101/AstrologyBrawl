@@ -471,26 +471,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  movementspeed: 0
+      Data1: -1777302120
+      Data2: 1268280268
+      Data3: 1573820297
+      Data4: 596767288
+    Path: event:/Aquarius/Aquarius Walk
+  movementspeed: 0.8
   jumpsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1540495566
+      Data2: 1121154774
+      Data3: -1102698050
+      Data4: 623309370
+    Path: event:/Jumps
   fastfallsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 544284601
+      Data2: 1228386974
+      Data3: 311565232
+      Data4: 1173628407
+    Path: event:/FastFall
   lightattacksound:
     Guid:
       Data1: 0
@@ -526,14 +526,63 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
-  genericdeathsound:
+  attackvoice:
     Guid:
       Data1: 0
       Data2: 0
       Data3: 0
       Data4: 0
     Path: 
+  chargeattackvoice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  ability1voice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  iconicvoice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  genericdeathsound:
+    Guid:
+      Data1: 1755445942
+      Data2: 1245857384
+      Data3: 435654846
+      Data4: -1281782737
+    Path: event:/GenericDeath
   takedamagesound:
+    Guid:
+      Data1: -219124643
+      Data2: 1241243363
+      Data3: 529385401
+      Data4: -1657758984
+    Path: event:/TakingDamage
+  takedamagevoice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  characterselect:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  spawnvoice:
     Guid:
       Data1: 0
       Data2: 0
