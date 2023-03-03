@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 1641876902368366320}
   - component: {fileID: 4222165050303269091}
   - component: {fileID: 8137799586486451805}
+  - component: {fileID: 2626130579388279935}
   m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
@@ -359,7 +360,27 @@ MonoBehaviour:
   light: {fileID: 0}
   heavy: {fileID: 0}
   mixup: {fileID: 4222165050303269091}
-  iconic: {fileID: 0}
+  iconic: {fileID: 2626130579388279935}
+--- !u!114 &2626130579388279935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612861564415972768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 0
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: 
+  spawnOrigin: {fileID: 3016257482074367029}
+  projectile: {fileID: 100000, guid: cb589879cc6f1c7439854592200da736, type: 3}
+  player: {fileID: 3016257482074367028}
+  spawnAsChild: 0
 --- !u!1 &1555689602611425355
 GameObject:
   m_ObjectHideFlags: 0
