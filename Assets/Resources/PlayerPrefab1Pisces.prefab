@@ -581,7 +581,7 @@ MonoBehaviour:
   currentHealth: 100
   myPV: {fileID: 0}
   healthItem: {fileID: 0}
-  deathEffect: {fileID: 0}
+  deathEffect: {fileID: 4616214966942819446, guid: 33e08444d544b1c43be65d3d570d05dd, type: 3}
 --- !u!114 &3127367030068314295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -769,6 +769,20 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  chargeattackvoice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  ability1voice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   iconicvoice:
     Guid:
       Data1: 0
@@ -790,7 +804,21 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  takedamagevoice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   characterselect:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  spawnvoice:
     Guid:
       Data1: 0
       Data2: 0
