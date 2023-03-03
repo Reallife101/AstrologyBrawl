@@ -107,16 +107,21 @@ public class PlayerItem : MonoBehaviourPunCallbacks
     public void ReadyUpToggle()
     {
         Debug.Log("Am I stupid");
-        characterSelect.CallCharacterLock();
         isReady = !isReady;
 
         ExitGames.Client.Photon.Hashtable hash = new ExitGames.Client.Photon.Hashtable();
         hash.Add("ready", isReady);
         PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+        
 
         leftArrowButton.SetActive(!isReady);
         rightArrowButton.SetActive(!isReady);
         readyUpTextObject.SetActive(isReady);
+
+        if (isReady)
+        {
+            characterSelect.CallCharacterLock();
+        }
 
     }
 
