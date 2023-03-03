@@ -236,6 +236,37 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!1 &1658321400504641647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2908565863456361506}
+  m_Layer: 0
+  m_Name: Smoke origin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2908565863456361506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658321400504641647}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.52, z: -0.01745534}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3016257482074367029}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2309927968539988049
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,6 +486,7 @@ Transform:
   - {fileID: 6127537127319422153}
   - {fileID: 1720422183258909639}
   - {fileID: 2361321258975009543}
+  - {fileID: 2908565863456361506}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -983,6 +1015,8 @@ GameObject:
   - component: {fileID: 4468756225437876255}
   - component: {fileID: 2849943503626405151}
   - component: {fileID: 1224671160799455074}
+  - component: {fileID: 4022731043701812221}
+  - component: {fileID: 6539120213570333601}
   m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
@@ -1184,6 +1218,7 @@ MonoBehaviour:
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 793811016547114540, guid: efa95cdd675769145a65ca84af7721f9, type: 3}
   player: {fileID: 3016257482074367028}
+  spawnAsChild: 0
 --- !u!114 &4468756225437876255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1232,6 +1267,43 @@ MonoBehaviour:
   spawnOrigin: {fileID: 1720422183258909639}
   projectile: {fileID: 793811016547114540, guid: e47cba6085c024340b9d5563d43a06fa, type: 3}
   player: {fileID: 3016257482074367028}
+  spawnAsChild: 0
+--- !u!114 &4022731043701812221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6017469816907113681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 237069c351c9e94458d0115bfa5aeb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  l2: {fileID: 0}
+  h2: {fileID: 0}
+  m2: {fileID: 6539120213570333601}
+  i2: {fileID: 0}
+--- !u!114 &6539120213570333601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6017469816907113681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 0
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: 
+  spawnOrigin: {fileID: 2908565863456361506}
+  projectile: {fileID: 100000, guid: cb589879cc6f1c7439854592200da736, type: 3}
+  player: {fileID: 3016257482074367028}
+  spawnAsChild: 0
 --- !u!1 &8207456865336748242
 GameObject:
   m_ObjectHideFlags: 0
