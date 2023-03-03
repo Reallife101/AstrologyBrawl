@@ -5,20 +5,20 @@ using UnityEngine;
 public class additionalAbilities : MonoBehaviour
 {
     [SerializeField]
-    Ability l2;
+    Ability smoke;
     [SerializeField]
-    Ability h2;
+    Ability miscParticle1;
     [SerializeField]
     Ability m2;
     [SerializeField]
     Ability i2;
-    public void useL2()
+    public void useSmoke()
     {
-        l2.Use();
+        smoke.Use();
     }
-    public void useH2()
+    public void useMiscParticle1()
     {
-        h2.Use();
+        miscParticle1.Use();
     }
     public void useM2()
     {

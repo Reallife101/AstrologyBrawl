@@ -1280,8 +1280,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 237069c351c9e94458d0115bfa5aeb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  l2: {fileID: 0}
-  h2: {fileID: 0}
+  smoke: {fileID: 6539120213570333601}
+  miscParticle1: {fileID: 0}
   m2: {fileID: 6539120213570333601}
   i2: {fileID: 0}
 --- !u!114 &6539120213570333601
