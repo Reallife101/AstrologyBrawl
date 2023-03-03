@@ -681,7 +681,7 @@ MonoBehaviour:
   firstHeavyGround: {fileID: 11400000, guid: bcf4946b91c1fab40ba2d9fffe6848da, type: 2}
   firstLightAir: {fileID: 11400000, guid: f0aa5034140151a4788b8ae38f436db6, type: 2}
   firstHeavyAir: {fileID: 11400000, guid: bcf4946b91c1fab40ba2d9fffe6848da, type: 2}
-  airAttackGravityModifier: 0
+  airAttackGravityModifier: 0.75
   hitbox: {fileID: 2118536375946803434}
   playerAnimator: {fileID: 8694400067546609426}
 --- !u!114 &4888351954668950257
@@ -808,6 +808,34 @@ MonoBehaviour:
       Data3: 1383783859
       Data4: -449957530
     Path: event:/Libra/Libra S2
+  attackvoice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  chargeattackvoice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  ability1voice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  iconicvoice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   genericdeathsound:
     Guid:
       Data1: 1755445942
@@ -822,6 +850,27 @@ MonoBehaviour:
       Data3: 529385401
       Data4: -1657758984
     Path: event:/TakingDamage
+  takedamagevoice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  characterselect:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  spawnvoice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &4259250144682286860
 MonoBehaviour:
   m_ObjectHideFlags: 0
