@@ -326,6 +326,7 @@ MonoBehaviour:
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 793811016547114540, guid: 88e2167586424554cb1915db7704ce57, type: 3}
   player: {fileID: 3016257482074367028}
+  spawnAsChild: 0
 --- !u!114 &659188652684588319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -719,6 +720,7 @@ MonoBehaviour:
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
   player: {fileID: 3016257482074367028}
+  spawnAsChild: 0
 --- !u!114 &9151882990214347279
 MonoBehaviour:
   m_ObjectHideFlags: 0
