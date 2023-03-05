@@ -49,7 +49,7 @@ public class CountdownManager : MonoBehaviourPunCallbacks
 
             if (timerIncrementValue >= 4)
             {
-                ht.Add("StartTime", -1);
+                ht["StartTime"] = -1;
                 PhotonNetwork.CurrentRoom.SetCustomProperties(ht);
                 Destroy(gameObject);
             }
