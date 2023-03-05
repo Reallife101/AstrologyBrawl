@@ -87,7 +87,7 @@ public class CountdownManager : MonoBehaviourPunCallbacks
 
     void StartCountdownTimer()
     {
-        if(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"] != null || double.Parse(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"].ToString()) == -1)
+        if(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"] == null || double.Parse(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"].ToString()) == -1)
         {
             ht = new ExitGames.Client.Photon.Hashtable();
             startTime = PhotonNetwork.Time;
