@@ -16,7 +16,7 @@ public class TarotManager : MonoBehaviourPunCallbacks
     {
         PV = GetComponent<PhotonView>();
         tarotCards = new List<TarotCard>();
-        TTestCard t = new TTestCard();
+        TarotCardJustice t = new TarotCardJustice();
         tarotCards.Add(t);
         
         //Sets the kill goal on all TarotManagers
