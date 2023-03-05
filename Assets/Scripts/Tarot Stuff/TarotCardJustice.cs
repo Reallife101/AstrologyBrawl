@@ -18,7 +18,7 @@ public class TarotCardJustice : TarotCard
         float NewHealth = CummHealth / Healths.Length;
         foreach (Health health in Healths)
         {
-            health.currentHealth = NewHealth;
+            health.setCurrentHealth(NewHealth);
         }
     }
 }

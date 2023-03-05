@@ -133,6 +133,13 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
         healthItem = item;
     }
 
+    public void setCurrentHealth(float newCurrHealth)
+    {
+        float difference = currentHealth - newCurrHealth;
+        currentHealth = newCurrHealth;
+        myPV.RPC("RPC_UpdateHealthUI", RpcTarget.All, difference);
+    }
+
     public bool getCounter()
     {
         return counter;

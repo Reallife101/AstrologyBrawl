@@ -102,8 +102,6 @@ public class CountdownManager : MonoBehaviourPunCallbacks
 
     void StartCountdownTimer()
     {
-        Debug.Log(ht["StartTime"]);
-
         if (double.Parse(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"].ToString()) == -1)
         {
             startTime = PhotonNetwork.Time;
