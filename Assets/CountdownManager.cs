@@ -18,6 +18,17 @@ public class CountdownManager : MonoBehaviourPunCallbacks
     int playerCount = 0;
     bool playersFrozen = true;
 
+    private void Start()
+    {
+        if (PhotonNetwork.CurrentRoom.CustomProperties["StartTime"] == null)
+        {
+            ht = new ExitGames.Client.Photon.Hashtable();
+            startTime = PhotonNetwork.Time;
+            ht.Add("StartTime", -1);
+            PhotonNetwork.CurrentRoom.SetCustomProperties(ht);
+        }
+    }
+
     private void FixedUpdate()
     {
         playerControllerList = FindObjectsOfType<playerController>();
@@ -87,14 +98,7 @@ public class CountdownManager : MonoBehaviourPunCallbacks
 
     void StartCountdownTimer()
     {
-        if(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"] == null)
-        {
-            ht = new ExitGames.Client.Photon.Hashtable();
-            startTime = PhotonNetwork.Time;
-            ht.Add("StartTime", startTime);
-            PhotonNetwork.CurrentRoom.SetCustomProperties(ht);
-        }
-        else if (double.Parse(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"].ToString()) == -1)
+        if (double.Parse(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"].ToString()) == -1)
         {
             ht = new ExitGames.Client.Photon.Hashtable();
             startTime = PhotonNetwork.Time;
