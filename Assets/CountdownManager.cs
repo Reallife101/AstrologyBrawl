@@ -20,9 +20,13 @@ public class CountdownManager : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-        if (PhotonNetwork.CurrentRoom.CustomProperties["StartTime"] == null)
+        if(ht == null)
         {
             ht = new ExitGames.Client.Photon.Hashtable();
+        }
+
+        if (PhotonNetwork.CurrentRoom.CustomProperties["StartTime"] == null)
+        {
             startTime = PhotonNetwork.Time;
             ht.Add("StartTime", -1);
             PhotonNetwork.CurrentRoom.SetCustomProperties(ht);
@@ -98,9 +102,10 @@ public class CountdownManager : MonoBehaviourPunCallbacks
 
     void StartCountdownTimer()
     {
+        Debug.Log(ht["StartTime"]);
+
         if (double.Parse(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"].ToString()) == -1)
         {
-            ht = new ExitGames.Client.Photon.Hashtable();
             startTime = PhotonNetwork.Time;
             ht["StartTime"] = startTime;
             PhotonNetwork.CurrentRoom.SetCustomProperties(ht);
