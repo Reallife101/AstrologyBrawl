@@ -49,6 +49,8 @@ public class CountdownManager : MonoBehaviourPunCallbacks
 
             if (timerIncrementValue >= 4)
             {
+                ht.Add("StartTime", -1);
+                PhotonNetwork.CurrentRoom.SetCustomProperties(ht);
                 Destroy(gameObject);
             }
             else if (timerIncrementValue >= 3)
@@ -85,21 +87,17 @@ public class CountdownManager : MonoBehaviourPunCallbacks
 
     void StartCountdownTimer()
     {
-        // Using try catch finally because we will not know which client will be the first to call StartCountdownTimer()
-        try
-        {
-            startTime = double.Parse(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"].ToString());
-        }
-        catch (NullReferenceException)
+        if(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"] != null || double.Parse(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"].ToString()) == -1)
         {
             ht = new ExitGames.Client.Photon.Hashtable();
             startTime = PhotonNetwork.Time;
             ht.Add("StartTime", startTime);
             PhotonNetwork.CurrentRoom.SetCustomProperties(ht);
         }
-        finally
+        else
         {
-            startTimer = true;
+            startTime = double.Parse(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"].ToString());
         }
+        startTimer = true;
     }
 }
