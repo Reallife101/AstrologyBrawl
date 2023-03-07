@@ -775,11 +775,11 @@ MonoBehaviour:
   movementspeed: 0
   jumpsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -651570438
+      Data2: 1307461543
+      Data3: -1782645880
+      Data4: -558490802
+    Path: event:/TestSound#1
   fastfallsound:
     Guid:
       Data1: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class audioManager : MonoBehaviour
 {
@@ -33,24 +34,34 @@ public class audioManager : MonoBehaviour
     
     // Other variables
     playerController playerController;
+    PhotonView photonView;
 
     void Awake()
     {
         playerController = GetComponent<playerController>();
     }
     
-    void CallFootsteps()
+
+    public void CallJump()
+    {
+        photonView.RPC("Jump", RpcTarget.All);
+    }
+
+    [PunRPC]
+    public void CallFootsteps()
     {
         if (playerController.isGrounded)
         {
             if (playerController.movementVector.x != 0)
             {
-                FMODUnity.RuntimeManager.PlayOneShot(footsound);   
+                FMODUnity.RuntimeManager.PlayOneShot(footsound);  
+                print ("yourmom");
             }
         }      
     }  
 
-    public void CallJump()
+    [PunRPC]
+    public void Jump()
     {
         FMODUnity.RuntimeManager.PlayOneShot(jumpsound);
     }
@@ -114,5 +125,6 @@ public class audioManager : MonoBehaviour
     void Start()
     {
         InvokeRepeating ("CallFootsteps",0,movementspeed);
+        photonView = GetComponent<PhotonView>();
     }
 }
