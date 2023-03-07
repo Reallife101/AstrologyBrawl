@@ -7,6 +7,7 @@ public class SpawnProjectile : Ranged
     [SerializeField] Transform spawnOrigin;
     [SerializeField] GameObject projectile;
     [SerializeField] GameObject player;
+    [SerializeField] bool spawnAsChild;
 
     private PhotonView pv;
 
@@ -35,6 +36,11 @@ public class SpawnProjectile : Ranged
     void spawn()
     {
         GameObject pro = PhotonNetwork.Instantiate(projectile.name, spawnOrigin.position, Quaternion.identity);
+
+        if (spawnAsChild)
+        {
+            pro.transform.SetParent(gameObject.transform);
+        }
 
         //If spawned object has doDamage and spawner has a photon view
         doDamage dm = pro.GetComponent<doDamage>();

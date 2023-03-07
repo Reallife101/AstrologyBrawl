@@ -63,7 +63,7 @@ public class PlayerStatsItem : MonoBehaviourPunCallbacks
                 crown.SetActive(true);
             }
         }
-        if (player.CustomProperties.TryGetValue("kills", out object deaths))
+        if (player.CustomProperties.TryGetValue("deaths", out object deaths))
         {
             deathsText.text = "Deaths: " + deaths.ToString();
         }

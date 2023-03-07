@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using TMPro;
 using Photon.Pun;
 using Photon.Realtime;
-
 public class PlayerItem : MonoBehaviourPunCallbacks
 {
     public TMP_Text playerName;
@@ -14,12 +13,24 @@ public class PlayerItem : MonoBehaviourPunCallbacks
     public Color highlightColor;
     public GameObject leftArrowButton;
     public GameObject rightArrowButton;
+    public GameObject playerItemButton;
+    public GameObject readyUpTextObject;
+    public TMP_Text readyUpText;
 
-    ExitGames.Client.Photon.Hashtable playerProperties = new ExitGames.Client.Photon.Hashtable();
+    public ExitGames.Client.Photon.Hashtable playerProperties = new ExitGames.Client.Photon.Hashtable();
     public Image playerAvatar;
     public Sprite[] avatars;
 
     Player player;
+    characterSelect characterSelect;
+
+    bool isReady = false;
+
+    public void Awake()
+    {
+        characterSelect = GetComponent<characterSelect>();
+        readyUpText.text = "Ready Up";
+    }
 
     public Player GetPlayer()
     {
@@ -31,6 +42,8 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         backgroundImage.color = highlightColor;
         leftArrowButton.SetActive(true);
         rightArrowButton.SetActive(true);
+        playerItemButton.SetActive(true);
+        readyUpTextObject.SetActive(false);
     }
 
     public void SetPlayerInfo(Player _player)
@@ -71,6 +84,11 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         {
             UpdatePlayerItem(targetPlayer);
         }
+
+        if (player.CustomProperties.TryGetValue("ready", out object readyout))
+        {
+            readyUpTextObject.SetActive((bool) readyout);
+        }
     }
 
     void UpdatePlayerItem(Player _player)
@@ -86,6 +104,35 @@ public class PlayerItem : MonoBehaviourPunCallbacks
             if (PhotonNetwork.LocalPlayer == _player)
                 PhotonNetwork.SetPlayerCustomProperties(playerProperties);
         }
+    }
+
+    public void ReadyUpToggle()
+    {
+        isReady = !isReady;
+
+        if (isReady)
+        {
+            readyUpText.text = "Unselect";
+        }
+        else
+        {
+            readyUpText.text = "Ready Up";
+        }
+
+        ExitGames.Client.Photon.Hashtable hash = new ExitGames.Client.Photon.Hashtable();
+        hash.Add("ready", isReady);
+        PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+        
+
+        leftArrowButton.SetActive(!isReady);
+        rightArrowButton.SetActive(!isReady);
+        readyUpTextObject.SetActive(isReady);
+
+        if (isReady)
+        {
+            characterSelect.CallCharacterLock();
+        }
+
     }
 
 }

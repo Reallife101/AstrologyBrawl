@@ -5,6 +5,7 @@ using UnityEngine;
 public class SingleShotRaycast : Ranged
 {
     [SerializeField] Transform raycastOrigin;
+    [SerializeField] Transform parent;
     //[SerializeField] LayerMask layerMask;
     [SerializeField] float raycastDistance;
     [SerializeField] private DamageManager dmgManager;
@@ -20,7 +21,7 @@ public class SingleShotRaycast : Ranged
     void Shoot()
     {
         RaycastHit2D hit;
-        if (transform.localScale.x <=0)
+        if (parent.localScale.x <=0)
         {
             hit = Physics2D.Raycast(raycastOrigin.position, -Vector2.right, raycastDistance);
         }

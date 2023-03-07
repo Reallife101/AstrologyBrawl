@@ -27,6 +27,8 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
     private HealthHUDManager healthHUDManager;
     private HealthItem healthItem;
+
+
     private void Awake()
     {
         spawnPointParent = GameObject.FindWithTag("SpawnPoints");
@@ -211,7 +213,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         bool isKing = true;
         foreach (KeyValuePair<int, Player> player in PhotonNetwork.CurrentRoom.Players)
         {
-            if ((int)player.Value.CustomProperties["kills"] > kills)
+            if (player.Value.CustomProperties.TryGetValue("kills", out object killsout) && (int)killsout > kills)
             {
                 isKing = false;
             }

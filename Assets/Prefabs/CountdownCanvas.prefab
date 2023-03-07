@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 400277707104299644}
   - component: {fileID: 400277707104299645}
   - component: {fileID: 400277707104299634}
+  - component: {fileID: 3098476500771328839}
   m_Layer: 5
   m_Name: CountdownCanvas
   m_TagString: Untagged
@@ -101,6 +102,25 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3098476500771328839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400277707104299635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a7b2807968327e458485612749c6dfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countsound:
+    Guid:
+      Data1: -651570438
+      Data2: 1307461543
+      Data3: -1782645880
+      Data4: -558490802
+    Path: event:/TestSound#1
 --- !u!1 &400277707142103867
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,7 +16,7 @@ MonoBehaviour:
   attackAnimationName: heavyLibra
   duration: 1
   inputBufferTime: 0.35
-  forwardMovement: 2
+  forwardMovement: 0
   finisherEndlag: 0.15
   hitStunTime: 0.5
   knockbackPower: 10

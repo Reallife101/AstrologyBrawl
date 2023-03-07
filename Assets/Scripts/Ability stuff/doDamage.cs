@@ -75,6 +75,7 @@ public class doDamage : MonoBehaviour
             damage = dmgManager.getAttackValue(attack_type) + stacked_dmg;
 
             Debug.Log("After Damage Change" + damage);
+            extraEffect(damage);
             //Check to see which launch we should use
             if (launchDirection.magnitude >.1)
             {
@@ -130,6 +131,11 @@ public class doDamage : MonoBehaviour
 
         AttackSender = sender;
     
+    }
+
+    public virtual void extraEffect(float damage)
+    {
+        //overide for future use
     }
 
 }

@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack_type: 3
-  damage: 10
+  damage: 15
   destroyOnTouch: 0
   lifeTime: 0.75
   hasInfiniteLifeTime: 0

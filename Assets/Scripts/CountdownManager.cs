@@ -17,6 +17,12 @@ public class CountdownManager : MonoBehaviourPunCallbacks
     bool startTimer;
     int playerCount = 0;
     bool playersFrozen = true;
+    CountdownAudio CountdownAudio;
+
+    public void Awake()
+    {
+        CountdownAudio = GetComponent<CountdownAudio>();
+    }
 
     private void Start()
     {
@@ -31,7 +37,6 @@ public class CountdownManager : MonoBehaviourPunCallbacks
             ht.Add("StartTime", -1);
             PhotonNetwork.CurrentRoom.SetCustomProperties(ht);
         }
-    }
 
     private void FixedUpdate()
     {
@@ -50,6 +55,7 @@ public class CountdownManager : MonoBehaviourPunCallbacks
             if (!startTimer && playerControllerList.Length == PhotonNetwork.CurrentRoom.PlayerCount)
             {
                 StartCountdownTimer();
+                CountdownAudio.CallCountSound();
             }
         }
 

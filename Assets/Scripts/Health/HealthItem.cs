@@ -51,6 +51,22 @@ public class HealthItem : MonoBehaviourPunCallbacks
         CurrentHealth = health;
     }
 
+    public void IncreaseHealthUI(float health)
+    {
+        CurrentHealth = CurrentHealth + health;
+        if (CurrentHealth > HealthBar.maxValue)
+        {
+            CurrentHealth = HealthBar.maxValue;
+        }
+        HealthBar.value = CurrentHealth;
+    }
+
+    public void ChangeHealthUI(float health)
+    {
+        CurrentHealth = health;
+        HealthBar.value = CurrentHealth;
+    }
+
     public void DecreaseHealthUI(float damage)
     {
         CurrentHealth = CurrentHealth - damage;
