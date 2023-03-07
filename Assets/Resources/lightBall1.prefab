@@ -114,7 +114,7 @@ MonoBehaviour:
   attack_type: 1
   damage: 25
   destroyOnTouch: 1
-  lifeTime: 10
+  lifeTime: 0.5
   hasInfiniteLifeTime: 0
   launchForce: 0
   hitStunTime: 0.25
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 659a269ad59defe4f98af1b0fdd720f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xspeed: 15
+  xspeed: 17.5
   yspeed: 0
 --- !u!58 &5889775717091038372
 CircleCollider2D:
