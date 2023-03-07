@@ -1,9 +1,15 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TarotCardJustice : TarotCard
 {
+    private void Start()
+    {
+        cardName = CardNames.JUSTICE;
+    }
+
     public override void Effect(int actorNumber)
     {
         Debug.Log("wOEW ozers ?R !");
