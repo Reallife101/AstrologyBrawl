@@ -6,6 +6,7 @@ using Photon.Realtime;
 using TMPro;
 using Unity.VisualScripting;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
+using UnityEngine.InputSystem;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
@@ -31,6 +32,34 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public bool allPlayersReady = false;
 
+    private PlayerControllerInputAsset input;
+    private InputAction start;
+    private InputAction leave;
+
+    private void Awake()
+    {
+       /* input = new PlayerControllerInputAsset();
+        start = input.UI.Start;
+        leave = input.UI.Back;
+
+
+        start.started += Start =>
+        {
+            if (playButton.activeInHierarchy)
+                OnClickPlayButton();
+        };
+
+        leave.started += Leave =>
+        {
+            OnClickLeaveRoom();
+        };
+
+
+        start.Enable();
+        leave.Enable();*/
+
+    }
+
 
     private void Start()
     {
@@ -46,8 +75,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         else
         {
             PhotonNetwork.JoinLobby();
-        }
-        
+        }     
+
+
     }
 
     private void Update()
@@ -88,7 +118,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         lobbyPanel.SetActive(false);
         roomPanel.SetActive(true);
-        roomName.text = "Room Name: " + PhotonNetwork.CurrentRoom.Name;
+        //roomName.text = "Room Name: " + PhotonNetwork.CurrentRoom.Name;
+        roomName.text = PhotonNetwork.CurrentRoom.Name;
         UpdatePlayerList();
     }
 
@@ -195,6 +226,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public void OnClickPlayButton()
     {
+        start.Disable();
+        leave.Disable();
         PhotonNetwork.LoadLevel(levelInfo.getSceneName());
         PhotonNetwork.CurrentRoom.IsOpen = false;
         PhotonNetwork.CurrentRoom.IsVisible = false;
@@ -212,5 +245,4 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         }
         allPlayersReady = allReady;
     }
-
 }

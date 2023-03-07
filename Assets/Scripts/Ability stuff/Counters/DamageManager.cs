@@ -123,6 +123,11 @@ public class DamageManager : MonoBehaviour
 
     }
 
+    public AttackStates getCurrentAttack() 
+    {
+        return atkState;
+    }
+
     public float applyStackDamage() 
     {
         float dmg = stacked;

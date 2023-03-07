@@ -368,6 +368,281 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Title"",
+            ""id"": ""bbdb2139-918a-45b4-ade8-a78637665ceb"",
+            ""actions"": [
+                {
+                    ""name"": ""Start"",
+                    ""type"": ""Button"",
+                    ""id"": ""a619c660-fbd5-4672-92f8-82114b693e96"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Quit"",
+                    ""type"": ""Button"",
+                    ""id"": ""5d2b79a7-de94-4ad9-83b2-21162c584830"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold"",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""630bb338-e7d1-4181-b2ab-decf001ff8f2"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Start"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""974e0960-4c19-4a01-8615-96ea372f6943"",
+                    ""path"": ""<HID::Microntek              USB Joystick          >/button2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Start"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b5076470-4553-427c-bdc3-59537b5e3293"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Quit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4d1752d6-8f8c-4347-8571-af380d2b76de"",
+                    ""path"": ""<HID::Microntek              USB Joystick          >/button3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Quit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""UI"",
+            ""id"": ""69c088de-df26-4948-b8b9-80813916f1dd"",
+            ""actions"": [
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""Value"",
+                    ""id"": ""a961d337-72c0-4fed-a019-7caa809fefb7"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Select"",
+                    ""type"": ""Button"",
+                    ""id"": ""3218a0d3-d4b6-40fb-93c4-8a338c4ae833"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Increase"",
+                    ""type"": ""Value"",
+                    ""id"": ""3b86e2a1-6119-4209-9e04-7508dbaf0ba0"",
+                    ""expectedControlType"": ""Analog"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Decrease"",
+                    ""type"": ""Button"",
+                    ""id"": ""fb3d9238-9382-4916-a9e3-488dedd57c97"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Start"",
+                    ""type"": ""Button"",
+                    ""id"": ""83a3415c-6ed3-455d-8317-4974aa3a2e28"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Back"",
+                    ""type"": ""Button"",
+                    ""id"": ""1ca1b156-b307-40cc-a406-940ab4ee5453"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""ede72075-2c81-43f4-a263-a9e710af52eb"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Select"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a638611e-4f5b-49c9-b642-623ab5ebee3b"",
+                    ""path"": ""<Gamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Increase"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e2ec253f-7b64-431d-bcd9-56fb13488ca3"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Select"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""aa78a57a-4dab-42dc-997b-2dd6e8466f31"",
+                    ""path"": ""2DVector(mode=2)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""a3c08356-c37b-4518-8158-24d1c2b9a57f"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""89ddddab-6659-4d85-8f5e-c6007d2cd038"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""fa35d023-257a-457b-b3dd-db4f5f61c7a3"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""01065768-8709-404f-afde-1863c9d9cd64"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e14703e9-3953-420b-a933-8f05a67ac779"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2542dd7b-634c-4a10-a331-fa8a6cae7b0a"",
+                    ""path"": ""<Joystick>/stick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ae406438-9234-4dc9-836f-bc573c0ec3be"",
+                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Decrease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dfe147ef-bb47-4652-af4e-e94f6c791dc9"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Start"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3b14aec2-e17c-4bac-9d2f-4dfcfafb6128"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Back"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -381,6 +656,18 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         m_Player_HeavyAttack = m_Player.FindAction("HeavyAttack", throwIfNotFound: true);
         m_Player_Ability2 = m_Player.FindAction("Ability2", throwIfNotFound: true);
         m_Player_Scoreboard = m_Player.FindAction("Scoreboard", throwIfNotFound: true);
+        // Title
+        m_Title = asset.FindActionMap("Title", throwIfNotFound: true);
+        m_Title_Start = m_Title.FindAction("Start", throwIfNotFound: true);
+        m_Title_Quit = m_Title.FindAction("Quit", throwIfNotFound: true);
+        // UI
+        m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
+        m_UI_Move = m_UI.FindAction("Move", throwIfNotFound: true);
+        m_UI_Select = m_UI.FindAction("Select", throwIfNotFound: true);
+        m_UI_Increase = m_UI.FindAction("Increase", throwIfNotFound: true);
+        m_UI_Decrease = m_UI.FindAction("Decrease", throwIfNotFound: true);
+        m_UI_Start = m_UI.FindAction("Start", throwIfNotFound: true);
+        m_UI_Back = m_UI.FindAction("Back", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -517,6 +804,120 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+
+    // Title
+    private readonly InputActionMap m_Title;
+    private ITitleActions m_TitleActionsCallbackInterface;
+    private readonly InputAction m_Title_Start;
+    private readonly InputAction m_Title_Quit;
+    public struct TitleActions
+    {
+        private @PlayerControllerInputAsset m_Wrapper;
+        public TitleActions(@PlayerControllerInputAsset wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Start => m_Wrapper.m_Title_Start;
+        public InputAction @Quit => m_Wrapper.m_Title_Quit;
+        public InputActionMap Get() { return m_Wrapper.m_Title; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(TitleActions set) { return set.Get(); }
+        public void SetCallbacks(ITitleActions instance)
+        {
+            if (m_Wrapper.m_TitleActionsCallbackInterface != null)
+            {
+                @Start.started -= m_Wrapper.m_TitleActionsCallbackInterface.OnStart;
+                @Start.performed -= m_Wrapper.m_TitleActionsCallbackInterface.OnStart;
+                @Start.canceled -= m_Wrapper.m_TitleActionsCallbackInterface.OnStart;
+                @Quit.started -= m_Wrapper.m_TitleActionsCallbackInterface.OnQuit;
+                @Quit.performed -= m_Wrapper.m_TitleActionsCallbackInterface.OnQuit;
+                @Quit.canceled -= m_Wrapper.m_TitleActionsCallbackInterface.OnQuit;
+            }
+            m_Wrapper.m_TitleActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Start.started += instance.OnStart;
+                @Start.performed += instance.OnStart;
+                @Start.canceled += instance.OnStart;
+                @Quit.started += instance.OnQuit;
+                @Quit.performed += instance.OnQuit;
+                @Quit.canceled += instance.OnQuit;
+            }
+        }
+    }
+    public TitleActions @Title => new TitleActions(this);
+
+    // UI
+    private readonly InputActionMap m_UI;
+    private IUIActions m_UIActionsCallbackInterface;
+    private readonly InputAction m_UI_Move;
+    private readonly InputAction m_UI_Select;
+    private readonly InputAction m_UI_Increase;
+    private readonly InputAction m_UI_Decrease;
+    private readonly InputAction m_UI_Start;
+    private readonly InputAction m_UI_Back;
+    public struct UIActions
+    {
+        private @PlayerControllerInputAsset m_Wrapper;
+        public UIActions(@PlayerControllerInputAsset wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Move => m_Wrapper.m_UI_Move;
+        public InputAction @Select => m_Wrapper.m_UI_Select;
+        public InputAction @Increase => m_Wrapper.m_UI_Increase;
+        public InputAction @Decrease => m_Wrapper.m_UI_Decrease;
+        public InputAction @Start => m_Wrapper.m_UI_Start;
+        public InputAction @Back => m_Wrapper.m_UI_Back;
+        public InputActionMap Get() { return m_Wrapper.m_UI; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(UIActions set) { return set.Get(); }
+        public void SetCallbacks(IUIActions instance)
+        {
+            if (m_Wrapper.m_UIActionsCallbackInterface != null)
+            {
+                @Move.started -= m_Wrapper.m_UIActionsCallbackInterface.OnMove;
+                @Move.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnMove;
+                @Move.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnMove;
+                @Select.started -= m_Wrapper.m_UIActionsCallbackInterface.OnSelect;
+                @Select.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnSelect;
+                @Select.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnSelect;
+                @Increase.started -= m_Wrapper.m_UIActionsCallbackInterface.OnIncrease;
+                @Increase.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnIncrease;
+                @Increase.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnIncrease;
+                @Decrease.started -= m_Wrapper.m_UIActionsCallbackInterface.OnDecrease;
+                @Decrease.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnDecrease;
+                @Decrease.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnDecrease;
+                @Start.started -= m_Wrapper.m_UIActionsCallbackInterface.OnStart;
+                @Start.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnStart;
+                @Start.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnStart;
+                @Back.started -= m_Wrapper.m_UIActionsCallbackInterface.OnBack;
+                @Back.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnBack;
+                @Back.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnBack;
+            }
+            m_Wrapper.m_UIActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Move.started += instance.OnMove;
+                @Move.performed += instance.OnMove;
+                @Move.canceled += instance.OnMove;
+                @Select.started += instance.OnSelect;
+                @Select.performed += instance.OnSelect;
+                @Select.canceled += instance.OnSelect;
+                @Increase.started += instance.OnIncrease;
+                @Increase.performed += instance.OnIncrease;
+                @Increase.canceled += instance.OnIncrease;
+                @Decrease.started += instance.OnDecrease;
+                @Decrease.performed += instance.OnDecrease;
+                @Decrease.canceled += instance.OnDecrease;
+                @Start.started += instance.OnStart;
+                @Start.performed += instance.OnStart;
+                @Start.canceled += instance.OnStart;
+                @Back.started += instance.OnBack;
+                @Back.performed += instance.OnBack;
+                @Back.canceled += instance.OnBack;
+            }
+        }
+    }
+    public UIActions @UI => new UIActions(this);
     public interface IPlayerActions
     {
         void OnMove(InputAction.CallbackContext context);
@@ -526,5 +927,19 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         void OnHeavyAttack(InputAction.CallbackContext context);
         void OnAbility2(InputAction.CallbackContext context);
         void OnScoreboard(InputAction.CallbackContext context);
+    }
+    public interface ITitleActions
+    {
+        void OnStart(InputAction.CallbackContext context);
+        void OnQuit(InputAction.CallbackContext context);
+    }
+    public interface IUIActions
+    {
+        void OnMove(InputAction.CallbackContext context);
+        void OnSelect(InputAction.CallbackContext context);
+        void OnIncrease(InputAction.CallbackContext context);
+        void OnDecrease(InputAction.CallbackContext context);
+        void OnStart(InputAction.CallbackContext context);
+        void OnBack(InputAction.CallbackContext context);
     }
 }

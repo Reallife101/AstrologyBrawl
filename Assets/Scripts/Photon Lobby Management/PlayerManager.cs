@@ -200,7 +200,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         gameOverText.alpha = 1;
         yield return new WaitForSeconds(3f);
         gameOverText.alpha = 0;
-        PhotonNetwork.LoadLevel("StatScreen");
+        PhotonNetwork.LoadLevel("StatScreenCopy");
     }
 
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)
