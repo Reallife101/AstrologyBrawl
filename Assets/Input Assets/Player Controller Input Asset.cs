@@ -170,6 +170,61 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""isPartOfComposite"": false
                 },
                 {
+                    ""name"": ""Arrow Keys"",
+                    ""id"": ""78ff344c-73d8-458d-8130-ee503162a8d0"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""039e9b0e-60b0-4b7c-89b5-30dc2d210a91"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""c47fa13a-5e67-446d-afb3-3688ae114839"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""88a4fb92-7298-4379-8f1d-de4cd3e7fbf9"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""9f51518e-2ec6-405a-8522-dc319ceb47b6"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": """",
                     ""id"": ""5b3e4844-a8a0-4a76-ac9a-1e9b149cd8c5"",
                     ""path"": ""<Keyboard>/space"",
@@ -195,6 +250,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""name"": """",
                     ""id"": ""e4efec54-f92f-44d7-b678-768ad621245b"",
                     ""path"": ""<Joystick>/stick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ce552736-c5bf-4a1d-9515-99667f8a9a59"",
+                    ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -237,6 +303,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 },
                 {
                     ""name"": """",
+                    ""id"": ""58e0c65b-91f0-4eb6-82f7-13b23276b43a"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ability1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""5da78c31-2c3a-4ab2-a900-cdd06361505c"",
                     ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
@@ -261,6 +338,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""name"": """",
                     ""id"": ""1caab742-a245-413a-819d-6c0e3153f645"",
                     ""path"": ""<HID::Microntek              USB Joystick          >/button2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LightAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d4260ecf-3df0-467a-b62e-761fd9ebcca5"",
+                    ""path"": ""<Keyboard>/z"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -303,6 +391,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 },
                 {
                     ""name"": """",
+                    ""id"": ""c8053f37-f166-41fc-922d-50c729ccee49"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HeavyAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""fdb77643-b269-4b98-b402-f8b61d653e87"",
                     ""path"": ""<Keyboard>/2"",
                     ""interactions"": """",
@@ -327,6 +426,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""name"": """",
                     ""id"": ""b6dd11fe-f0b7-4019-9ce1-3529d97e8e57"",
                     ""path"": ""<HID::Microntek              USB Joystick          >/button4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ability2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5cdd50fb-0e0e-4325-92ca-bee23717af1f"",
+                    ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
