@@ -39,20 +39,16 @@ public class audioManager : MonoBehaviour
     void Awake()
     {
         playerController = GetComponent<playerController>();
-        
+        photonView = GetComponent<PhotonView>();
     }
     
-    public void Footsteps()
-    {
-        photonView.RPC("CallFootsteps", RpcTarget.All);
-    }
 
     public void CallJump()
     {
         photonView.RPC("Jump", RpcTarget.All);
     }
 
-    [PunRPC]
+
     public void CallFootsteps()
     {
         if (playerController.isGrounded)
@@ -130,6 +126,6 @@ public class audioManager : MonoBehaviour
     void Start()
     {
         InvokeRepeating ("CallFootsteps",0,movementspeed);
-        photonView = GetComponent<PhotonView>();
+
     }
 }
