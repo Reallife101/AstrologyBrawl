@@ -41,8 +41,13 @@ public class audioManager : MonoBehaviour
         playerController = GetComponent<playerController>();
     }
     
-    
 
+    public void CallJump()
+    {
+        photonView.RPC("Jump", RpcTarget.All);
+    }
+
+    [PunRPC]
     public void CallFootsteps()
     {
         if (playerController.isGrounded)
@@ -54,12 +59,6 @@ public class audioManager : MonoBehaviour
             }
         }      
     }  
-
-
-    public void CallJump()
-    {
-        photonView.RPC("Jump", RpcTarget.All);
-    }
 
     [PunRPC]
     public void Jump()
