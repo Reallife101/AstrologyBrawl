@@ -115,7 +115,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""Arrow Keys"",
+                    ""name"": ""WASD"",
                     ""id"": ""78ff344c-73d8-458d-8130-ee503162a8d0"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
@@ -128,7 +128,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 {
                     ""name"": ""up"",
                     ""id"": ""039e9b0e-60b0-4b7c-89b5-30dc2d210a91"",
-                    ""path"": ""<Keyboard>/upArrow"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -139,7 +139,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 {
                     ""name"": ""down"",
                     ""id"": ""c47fa13a-5e67-446d-afb3-3688ae114839"",
-                    ""path"": ""<Keyboard>/downArrow"",
+                    ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -150,7 +150,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 {
                     ""name"": ""left"",
                     ""id"": ""88a4fb92-7298-4379-8f1d-de4cd3e7fbf9"",
-                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -161,7 +161,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 {
                     ""name"": ""right"",
                     ""id"": ""9f51518e-2ec6-405a-8522-dc319ceb47b6"",
-                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -205,7 +205,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 {
                     ""name"": """",
                     ""id"": ""ce552736-c5bf-4a1d-9515-99667f8a9a59"",
-                    ""path"": ""<Keyboard>/upArrow"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -249,7 +249,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 {
                     ""name"": """",
                     ""id"": ""58e0c65b-91f0-4eb6-82f7-13b23276b43a"",
-                    ""path"": ""<Keyboard>/a"",
+                    ""path"": ""<Keyboard>/u"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -293,7 +293,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 {
                     ""name"": """",
                     ""id"": ""d4260ecf-3df0-467a-b62e-761fd9ebcca5"",
-                    ""path"": ""<Keyboard>/z"",
+                    ""path"": ""<Keyboard>/j"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -337,7 +337,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 {
                     ""name"": """",
                     ""id"": ""c8053f37-f166-41fc-922d-50c729ccee49"",
-                    ""path"": ""<Keyboard>/x"",
+                    ""path"": ""<Keyboard>/k"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -381,7 +381,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 {
                     ""name"": """",
                     ""id"": ""5cdd50fb-0e0e-4325-92ca-bee23717af1f"",
-                    ""path"": ""<Keyboard>/s"",
+                    ""path"": ""<Keyboard>/i"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
