@@ -26,7 +26,7 @@ public class CountdownManager : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-        if(ht == null)
+        if (ht == null)
         {
             ht = new ExitGames.Client.Photon.Hashtable();
         }
@@ -37,6 +37,8 @@ public class CountdownManager : MonoBehaviourPunCallbacks
             ht.Add("StartTime", -1);
             PhotonNetwork.CurrentRoom.SetCustomProperties(ht);
         }
+
+    }
 
     private void FixedUpdate()
     {
