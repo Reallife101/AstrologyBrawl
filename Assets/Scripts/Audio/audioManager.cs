@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class audioManager : MonoBehaviour
 {
@@ -37,9 +38,11 @@ public class audioManager : MonoBehaviour
     void Awake()
     {
         playerController = GetComponent<playerController>();
+        view.RPC("CallFootsteps", RpcTarget.All);
     }
     
-    void CallFootsteps()
+    [PunRPC]
+    public void CallFootsteps()
     {
         if (playerController.isGrounded)
         {
