@@ -39,10 +39,19 @@ public class audioManager : MonoBehaviour
     void Awake()
     {
         playerController = GetComponent<playerController>();
-        photonView.RPC("CallFootsteps", RpcTarget.All);
-        photonView.RPC("CallJump", RpcTarget.All);
+        
     }
     
+    public void Footsteps()
+    {
+        photonView.RPC("CallFootsteps", RpcTarget.All);
+    }
+
+    public void CallJump()
+    {
+        photonView.RPC("Jump", RpcTarget.All);
+    }
+
     [PunRPC]
     public void CallFootsteps()
     {
@@ -57,7 +66,7 @@ public class audioManager : MonoBehaviour
     }  
 
     [PunRPC]
-    public void CallJump()
+    public void Jump()
     {
         FMODUnity.RuntimeManager.PlayOneShot(jumpsound);
     }
