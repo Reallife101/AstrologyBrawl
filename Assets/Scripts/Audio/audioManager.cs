@@ -34,11 +34,12 @@ public class audioManager : MonoBehaviour
     
     // Other variables
     playerController playerController;
+    PhotonView photonView;
 
     void Awake()
     {
         playerController = GetComponent<playerController>();
-        view.RPC("CallFootsteps", RpcTarget.All);
+        photonView.RPC("CallFootsteps", RpcTarget.All);
     }
     
     [PunRPC]
@@ -117,5 +118,6 @@ public class audioManager : MonoBehaviour
     void Start()
     {
         InvokeRepeating ("CallFootsteps",0,movementspeed);
+        photonView = GetComponent<PhotonView>();
     }
 }
