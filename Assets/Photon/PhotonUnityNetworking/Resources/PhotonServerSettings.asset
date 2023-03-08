@@ -63,6 +63,7 @@ MonoBehaviour:
   - RPC_HealDamage
   - AddReadyUp
   - SyncReadyUpText
+  - RPC_DisplayCard
   - Jump
   - Footsteps
   - FastFall

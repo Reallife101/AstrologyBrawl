@@ -7,16 +7,18 @@ using Photon.Pun;
 public class TarotManager : MonoBehaviourPunCallbacks
 {
     private PhotonView PV;
+    private TarotDisplayHUDManager tarotDisplayHUDManager;
     private List<TarotCard> tarotCards;
 
     private int KillIndex = 0;
-    [SerializeField] private int MaxKills;    //going to be replaced with the PlayerManager's maxkills
+    private int MaxKills; 
 
     void Awake()
     {
         PV = GetComponent<PhotonView>();
+        tarotDisplayHUDManager = FindObjectOfType<TarotDisplayHUDManager>();
         tarotCards = new List<TarotCard>();
-        TTestCard t = new TTestCard();
+        TarotCardJustice t = new TarotCardJustice();
         tarotCards.Add(t);
         
         //Sets the kill goal on all TarotManagers
@@ -30,8 +32,6 @@ public class TarotManager : MonoBehaviourPunCallbacks
                     int killGoal = (int)killsToWin;
 
                     PV.RPC("RPC_SetKillGoal", RpcTarget.All, killGoal);
-
-                    //TODO: Set the KillThresholds
                 }
             }
         }
@@ -46,10 +46,9 @@ public class TarotManager : MonoBehaviourPunCallbacks
             int NumOfKills = (int)kills;
 
             //OnPlayerProperties updates on initialization, so prevents any tarots from activating at 0
-            if (NumOfKills != 0 && ((float)NumOfKills / MaxKills) % 0.2 == 0)
+            Debug.Log("Math " + (float)NumOfKills + " / " + MaxKills + " % 0.2 = " + ((float)NumOfKills / MaxKills) % 0.2);
+            if (NumOfKills != 0 && (((float)NumOfKills / MaxKills) * 10) % 2 == 0)
             {
-                //TODO: Use KillThresholds as another check
-
                 PV.RPC("RPC_CallEffect", targetPlayer, targetPlayer.ActorNumber);
                 KillIndex++;
                 Debug.Log("NumOfKills is " + NumOfKills);
@@ -65,7 +64,9 @@ public class TarotManager : MonoBehaviourPunCallbacks
         if(ActorNumber == info.Sender.ActorNumber)
         {
             //Picks a random tarot card
-            tarotCards[Random.Range(0, tarotCards.Count)].Effect(ActorNumber);
+            TarotCard ChosenCard = tarotCards[Random.Range(0, tarotCards.Count)];
+            ChosenCard.Effect(ActorNumber);
+            tarotDisplayHUDManager.DisplayCard(ChosenCard.GetCardName());
         }
     }
 
