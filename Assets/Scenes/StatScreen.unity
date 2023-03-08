@@ -436,7 +436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a37eabf3ed512748a1a984668b04584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStatsItemPrefab: {fileID: 3999550141117348282, guid: 3a2abcdeef86dca4589ba6044f01c9d1, type: 3}
+  playerStatsItemPrefab: {fileID: 3305554254204351072, guid: 3a2abcdeef86dca4589ba6044f01c9d1, type: 3}
   playerStatsItemParent: {fileID: 432987612}
   nextGameButton: {fileID: 77493019}
   winnerText: {fileID: 121563583}
