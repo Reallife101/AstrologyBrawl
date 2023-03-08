@@ -42,13 +42,40 @@ public class audioManager : MonoBehaviour
     }
     
 
+    // Sound Calls
     public void CallJump()
     {
         photonView.RPC("Jump", RpcTarget.All);
     }
 
-    [PunRPC]
     public void CallFootsteps()
+    {
+        photonView.RPC("Footsteps", RpcTarget.All);
+    }
+
+    public void CallFastFall()
+    {
+        photonView.RPC("FastFall", RpcTarget.All);
+    }
+
+    public void CallLightAttack()
+    {
+        photonView.RPC("LightAttack", RpcTarget.All);
+    }
+
+    public void CallHeavyAttackCharge()
+    {
+        photonView.RPC("HeavyAttackCharge", RpcTarget.All);
+    }
+
+    public void CallHeavyAttackRelease()
+    {
+        photonView.RPC("HeavyAttackRelease", RpcTarget.All);
+    }
+
+    // Run RPCs
+    [PunRPC]
+    public void Footsteps()
     {
         if (playerController.isGrounded)
         {
@@ -66,23 +93,27 @@ public class audioManager : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot(jumpsound);
     }
     
-    public void CallFastFall()
+    [PunRPC]
+    public void FastFall()
     {
         FMODUnity.RuntimeManager.PlayOneShot(fastfallsound);
     }
 
-    public void CallLightAttack()
+    [PunRPC]
+    public void LightAttack()
     {
         FMODUnity.RuntimeManager.PlayOneShot(lightattacksound);
         FMODUnity.RuntimeManager.PlayOneShot(attackvoice);
     }
 
-    public void CallHeavyAttackCharge()
+    [PunRPC]
+    public void HeavyAttackCharge()
     {
         FMODUnity.RuntimeManager.PlayOneShot(heavyattackchargesound);
     }
 
-    public void CallHeavyAttackRelease()
+    [PunRPC]
+    public void HeavyAttackRelease()
     {
         FMODUnity.RuntimeManager.PlayOneShot(heavyattackreleasesound);
         FMODUnity.RuntimeManager.PlayOneShot(chargeattackvoice);
