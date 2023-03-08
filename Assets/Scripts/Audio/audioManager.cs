@@ -41,6 +41,7 @@ public class audioManager : MonoBehaviour
         playerController = GetComponent<playerController>();
         photonView = GetComponent<PhotonView>();
         photonView.RPC("Start", RpcTarget.All);
+        photonView.RPC("Footsteps", RpcTarget.All);
     }
     
 
