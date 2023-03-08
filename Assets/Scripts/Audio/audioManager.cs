@@ -28,7 +28,6 @@ public class audioManager : MonoBehaviour
     [SerializeField] FMODUnity.EventReference genericdeathsound;
     [SerializeField] FMODUnity.EventReference takedamagesound;
     [SerializeField] FMODUnity.EventReference takedamagevoice;
-    [SerializeField] FMODUnity.EventReference characterselect;
     [SerializeField] FMODUnity.EventReference spawnvoice;
     
     
@@ -76,6 +75,31 @@ public class audioManager : MonoBehaviour
         photonView.RPC("HeavyAttackRelease", RpcTarget.All);
     }
 
+    public void CallAbility1()
+    {
+        photonView.RPC("Ability1", RpcTarget.All);
+    }
+
+    public void CallAbility2()
+    {
+        photonView.RPC("Ability2", RpcTarget.All);
+    }
+
+    public void CallDeathGeneric()
+    {
+        photonView.RPC("GenericDeath", RpcTarget.All);
+    }
+
+    public void CallTakeDamage()
+    {
+        photonView.RPC("TakeDamage", RpcTarget.All);
+    }
+
+    public void CallSpawnVoice()
+    {
+        photonView.RPC("SpawnVoice", RpcTarget.All);
+    }
+
     // Run RPCs
     [PunRPC]
     public void Footsteps()
@@ -121,35 +145,35 @@ public class audioManager : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot(chargeattackvoice);
     }
 
-    public void CallAbility1()
+    [PunRPC]
+    public void Ability1()
     {
         FMODUnity.RuntimeManager.PlayOneShot(ability1sound);
         FMODUnity.RuntimeManager.PlayOneShot(ability1voice);
     }
-
-    public void CallAbility2()
+    
+    [PunRPC]
+    public void Ability2()
     {
         FMODUnity.RuntimeManager.PlayOneShot(ability2sound);
         FMODUnity.RuntimeManager.PlayOneShot(iconicvoice);
     }
 
-    public void CallDeathGeneric()
+    [PunRPC]
+    public void DeathGeneric()
     {
         FMODUnity.RuntimeManager.PlayOneShot(genericdeathsound);
     }   
 
-    public void CallTakeDamage()
+    [PunRPC]
+    public void TakeDamage()
     {
         FMODUnity.RuntimeManager.PlayOneShot(takedamagesound);
         FMODUnity.RuntimeManager.PlayOneShot(takedamagevoice);
     }   
 
-    public void CallCharacterSelect()
-    {
-        FMODUnity.RuntimeManager.PlayOneShot(characterselect);
-    }   
-
-    public void CallSpawnVoice()
+    [PunRPC]
+    public void SpawnVoice()
     {
         FMODUnity.RuntimeManager.PlayOneShot(spawnvoice);
     }   
