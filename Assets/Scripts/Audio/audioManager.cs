@@ -39,6 +39,8 @@ public class audioManager : MonoBehaviour
     void Awake()
     {
         playerController = GetComponent<playerController>();
+        photonView = GetComponent<PhotonView>();
+        photonView.RPC("Start", RpcTarget.All);
     }
     
 
@@ -151,11 +153,10 @@ public class audioManager : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot(spawnvoice);
     }   
 
-
+    [PunRPC]
     public void Start()
     {
         InvokeRepeating ("CallFootsteps",0,movementspeed);
-        photonView = GetComponent<PhotonView>();
     }
 
 }
