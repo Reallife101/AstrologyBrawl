@@ -87,7 +87,7 @@ public class audioManager : MonoBehaviour
 
     public void CallDeathGeneric()
     {
-        photonView.RPC("GenericDeath", RpcTarget.All);
+        photonView.RPC("DeathGeneric", RpcTarget.All);
     }
 
     public void CallTakeDamage()
