@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class audioManager : MonoBehaviour
 {
@@ -27,92 +28,160 @@ public class audioManager : MonoBehaviour
     [SerializeField] FMODUnity.EventReference genericdeathsound;
     [SerializeField] FMODUnity.EventReference takedamagesound;
     [SerializeField] FMODUnity.EventReference takedamagevoice;
-    [SerializeField] FMODUnity.EventReference characterselect;
     [SerializeField] FMODUnity.EventReference spawnvoice;
     
     
     // Other variables
     playerController playerController;
+    PhotonView photonView;
 
     void Awake()
     {
         playerController = GetComponent<playerController>();
+        photonView = GetComponent<PhotonView>();
+        photonView.RPC("Start", RpcTarget.All);
+        photonView.RPC("Footsteps", RpcTarget.All);
     }
     
-    void CallFootsteps()
+
+    // Sound Calls
+    public void CallJump()
+    {
+        photonView.RPC("Jump", RpcTarget.All);
+    }
+
+    public void CallFootsteps()
+    {
+        photonView.RPC("Footsteps", RpcTarget.All);
+    }
+
+    public void CallFastFall()
+    {
+        photonView.RPC("FastFall", RpcTarget.All);
+    }
+
+    public void CallLightAttack()
+    {
+        photonView.RPC("LightAttack", RpcTarget.All);
+    }
+
+    public void CallHeavyAttackCharge()
+    {
+        photonView.RPC("HeavyAttackCharge", RpcTarget.All);
+    }
+
+    public void CallHeavyAttackRelease()
+    {
+        photonView.RPC("HeavyAttackRelease", RpcTarget.All);
+    }
+
+    public void CallAbility1()
+    {
+        photonView.RPC("Ability1", RpcTarget.All);
+    }
+
+    public void CallAbility2()
+    {
+        photonView.RPC("Ability2", RpcTarget.All);
+    }
+
+    public void CallDeathGeneric()
+    {
+        photonView.RPC("DeathGeneric", RpcTarget.All);
+    }
+
+    public void CallTakeDamage()
+    {
+        photonView.RPC("TakeDamage", RpcTarget.All);
+    }
+
+    public void CallSpawnVoice()
+    {
+        photonView.RPC("SpawnVoice", RpcTarget.All);
+    }
+
+    // Run RPCs
+    [PunRPC]
+    public void Footsteps()
     {
         if (playerController.isGrounded)
         {
             if (playerController.movementVector.x != 0)
             {
-                FMODUnity.RuntimeManager.PlayOneShot(footsound);   
+                FMODUnity.RuntimeManager.PlayOneShot(footsound);  
             }
         }      
     }  
 
-    public void CallJump()
+    [PunRPC]
+    public void Jump()
     {
         FMODUnity.RuntimeManager.PlayOneShot(jumpsound);
     }
     
-    public void CallFastFall()
+    [PunRPC]
+    public void FastFall()
     {
         FMODUnity.RuntimeManager.PlayOneShot(fastfallsound);
     }
 
-    public void CallLightAttack()
+    [PunRPC]
+    public void LightAttack()
     {
         FMODUnity.RuntimeManager.PlayOneShot(lightattacksound);
         FMODUnity.RuntimeManager.PlayOneShot(attackvoice);
     }
 
-    public void CallHeavyAttackCharge()
+    [PunRPC]
+    public void HeavyAttackCharge()
     {
         FMODUnity.RuntimeManager.PlayOneShot(heavyattackchargesound);
     }
 
-    public void CallHeavyAttackRelease()
+    [PunRPC]
+    public void HeavyAttackRelease()
     {
         FMODUnity.RuntimeManager.PlayOneShot(heavyattackreleasesound);
         FMODUnity.RuntimeManager.PlayOneShot(chargeattackvoice);
     }
 
-        public void CallAbility1()
+    [PunRPC]
+    public void Ability1()
     {
         FMODUnity.RuntimeManager.PlayOneShot(ability1sound);
         FMODUnity.RuntimeManager.PlayOneShot(ability1voice);
     }
-
-        public void CallAbility2()
+    
+    [PunRPC]
+    public void Ability2()
     {
         FMODUnity.RuntimeManager.PlayOneShot(ability2sound);
         FMODUnity.RuntimeManager.PlayOneShot(iconicvoice);
     }
 
-         public void CallDeathGeneric()
+    [PunRPC]
+    public void DeathGeneric()
     {
         FMODUnity.RuntimeManager.PlayOneShot(genericdeathsound);
     }   
 
-         public void CallTakeDamage()
+    [PunRPC]
+    public void TakeDamage()
     {
         FMODUnity.RuntimeManager.PlayOneShot(takedamagesound);
         FMODUnity.RuntimeManager.PlayOneShot(takedamagevoice);
     }   
 
-         public void CallCharacterSelect()
-    {
-        FMODUnity.RuntimeManager.PlayOneShot(characterselect);
-    }   
-
-         public void CallSpawnVoice()
+    [PunRPC]
+    public void SpawnVoice()
     {
         FMODUnity.RuntimeManager.PlayOneShot(spawnvoice);
     }   
 
-
-    void Start()
+    [PunRPC]
+    public void Start()
     {
         InvokeRepeating ("CallFootsteps",0,movementspeed);
     }
+
 }

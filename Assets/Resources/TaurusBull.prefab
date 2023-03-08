@@ -224,11 +224,11 @@ MonoBehaviour:
   attack_type: 4
   damage: 20
   destroyOnTouch: 0
-  lifeTime: 2
+  lifeTime: 0.3
   hasInfiniteLifeTime: 0
   launchForce: 0
   hitStunTime: 0.25
-  launchDirection: {x: 0, y: 0}
+  launchDirection: {x: 0, y: 25}
   parentSprite: {fileID: 0}
   ownerID: 0
 --- !u!114 &1352831060393811335

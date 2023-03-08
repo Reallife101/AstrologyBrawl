@@ -571,6 +571,7 @@ MonoBehaviour:
   jumpPower: 65
   fastFallSpeed: 30
   doubleJumpPower: 50
+  airSpeedMultiplier: 0.98
   isGrounded: 0
   groundedCheckObjectLeft: {fileID: 4887830797730787154}
   groundedCheckObjectRight: {fileID: 8475485967914335248}

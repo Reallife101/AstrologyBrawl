@@ -7,7 +7,7 @@ using TMPro;
 public class StatScreenManager : MonoBehaviourPunCallbacks
 {
     List<PlayerStatsItem> playerStatsItemsList = new List<PlayerStatsItem>();
-    public PlayerStatsItem playerStatsItemPrefab;
+    public GameObject playerStatsItemPrefab;
     public Transform playerStatsItemParent;
     public GameObject nextGameButton;
     public TMP_Text winnerText;
@@ -53,7 +53,7 @@ public class StatScreenManager : MonoBehaviourPunCallbacks
 
         foreach (KeyValuePair<int, Player> player in PhotonNetwork.CurrentRoom.Players)
         {
-            PlayerStatsItem newPlayerStatsItem = Instantiate(playerStatsItemPrefab, playerStatsItemParent);
+            PlayerStatsItem newPlayerStatsItem = Instantiate(playerStatsItemPrefab, playerStatsItemParent).GetComponent<PlayerStatsItem>();
             newPlayerStatsItem.SetPlayerInfo(player.Value);
 
             if (player.Value == PhotonNetwork.LocalPlayer)
