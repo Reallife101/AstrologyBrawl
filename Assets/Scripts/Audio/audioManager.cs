@@ -82,7 +82,6 @@ public class audioManager : MonoBehaviour
             if (playerController.movementVector.x != 0)
             {
                 FMODUnity.RuntimeManager.PlayOneShot(footsound);  
-                print ("yourmom");
             }
         }      
     }  
@@ -119,43 +118,44 @@ public class audioManager : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot(chargeattackvoice);
     }
 
-        public void CallAbility1()
+    public void CallAbility1()
     {
         FMODUnity.RuntimeManager.PlayOneShot(ability1sound);
         FMODUnity.RuntimeManager.PlayOneShot(ability1voice);
     }
 
-        public void CallAbility2()
+    public void CallAbility2()
     {
         FMODUnity.RuntimeManager.PlayOneShot(ability2sound);
         FMODUnity.RuntimeManager.PlayOneShot(iconicvoice);
     }
 
-         public void CallDeathGeneric()
+    public void CallDeathGeneric()
     {
         FMODUnity.RuntimeManager.PlayOneShot(genericdeathsound);
     }   
 
-         public void CallTakeDamage()
+    public void CallTakeDamage()
     {
         FMODUnity.RuntimeManager.PlayOneShot(takedamagesound);
         FMODUnity.RuntimeManager.PlayOneShot(takedamagevoice);
     }   
 
-         public void CallCharacterSelect()
+    public void CallCharacterSelect()
     {
         FMODUnity.RuntimeManager.PlayOneShot(characterselect);
     }   
 
-         public void CallSpawnVoice()
+    public void CallSpawnVoice()
     {
         FMODUnity.RuntimeManager.PlayOneShot(spawnvoice);
     }   
 
 
-    void Start()
+    public void Start()
     {
         InvokeRepeating ("CallFootsteps",0,movementspeed);
         photonView = GetComponent<PhotonView>();
     }
+
 }
