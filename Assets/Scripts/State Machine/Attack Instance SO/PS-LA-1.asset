@@ -16,7 +16,7 @@ MonoBehaviour:
   attackAnimationName: lightPisces
   duration: 0.5
   inputBufferTime: 0.35
-  forwardMovement: 3
+  forwardMovement: 2
   finisherEndlag: 0.15
   hitStunTime: 0.5
   knockbackPower: 10
