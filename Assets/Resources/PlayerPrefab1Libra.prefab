@@ -618,6 +618,7 @@ MonoBehaviour:
   jumpPower: 65
   fastFallSpeed: 30
   doubleJumpPower: 50
+  airSpeedMultiplier: 0.98
   isGrounded: 0
   groundedCheckObjectLeft: {fileID: 4887830797730787154}
   groundedCheckObjectRight: {fileID: 8475485967914335248}
@@ -894,13 +895,6 @@ MonoBehaviour:
       Data3: 1025153712
       Data4: 2054601307
     Path: event:/Libra/Libra Damage Voice
-  characterselect:
-    Guid:
-      Data1: 1736800558
-      Data2: 1136807987
-      Data3: -223500928
-      Data4: 1253733636
-    Path: event:/Libra/Libra On Select Voice
   spawnvoice:
     Guid:
       Data1: -850475170

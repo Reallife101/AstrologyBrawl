@@ -120,20 +120,21 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
         //if health below 0, die
         if (currentHealth <=0)
         {
-           audioManager.CallDeathGeneric(); 
-           audioManager.CallSpawnVoice();
-            Die();
-
+            audioManager.CallDeathGeneric(); 
+            audioManager.CallSpawnVoice();
             //if you are not yourself or nothing, give them a kill
             if (info.Sender != null && info.Sender != PhotonNetwork.LocalPlayer)
             {
                 PlayerManager.Find(info.Sender).GetKill();
+                myPV.RPC("MakeKillFeedRPC", RpcTarget.All, info.Sender, PhotonNetwork.LocalPlayer);
             }
             //if you have been damaged previously, give them a kill
             else if (lastPlayer != null)
             {
                 PlayerManager.Find(lastPlayer).GetKill();
+                myPV.RPC("MakeKillFeedRPC", RpcTarget.All, lastPlayer, PhotonNetwork.LocalPlayer);
             }
+            Die();
         }
 
         //Update who damaged you last
@@ -141,6 +142,13 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
         {
             lastPlayer = info.Sender;
         }
+    }
+
+    [PunRPC]
+    public void MakeKillFeedRPC(Player Killer, Player KilledPlayer)
+    {
+        Debug.Log("Do we at least rpc?");
+        KillFeed.Instance.MakeKillFeed(Killer, KilledPlayer);
     }
 
     public abstract void Die();
@@ -154,6 +162,13 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     public void setHealthItem(HealthItem item)
     {
         healthItem = item;
+    }
+
+    public void setCurrentHealth(float newCurrHealth)
+    {
+        float difference = currentHealth - newCurrHealth;
+        currentHealth = newCurrHealth;
+        myPV.RPC("RPC_UpdateHealthUI", RpcTarget.All, difference);
     }
 
     public bool getCounter()

@@ -32,6 +32,7 @@ public class playerController : MonoBehaviour
     [SerializeField] private float jumpPower;
     [SerializeField] private float fastFallSpeed;
     [SerializeField] private float doubleJumpPower;
+    [SerializeField] private float airSpeedMultiplier;
 
     //Public setters for move values
     public float MoveSpeed { get { return moveSpeed; } set { moveSpeed = value; } }
@@ -280,6 +281,12 @@ public class playerController : MonoBehaviour
         if (movementVector.y<-0.95f && isGrounded == false)
         {
             fastFall = true;
+        }
+
+        //If in air, multiply by air multiplier
+        if (!isGrounded)
+        {
+            movementVector = movementVector * airSpeedMultiplier;
         }
 
         float ySpeed;

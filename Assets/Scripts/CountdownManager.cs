@@ -17,12 +17,27 @@ public class CountdownManager : MonoBehaviourPunCallbacks
     bool startTimer;
     int playerCount = 0;
     bool playersFrozen = true;
-
     CountdownAudio CountdownAudio;
 
     public void Awake()
     {
         CountdownAudio = GetComponent<CountdownAudio>();
+    }
+
+    private void Start()
+    {
+        if (ht == null)
+        {
+            ht = new ExitGames.Client.Photon.Hashtable();
+        }
+
+        if (PhotonNetwork.CurrentRoom.CustomProperties["StartTime"] == null)
+        {
+            startTime = PhotonNetwork.Time;
+            ht.Add("StartTime", -1);
+            PhotonNetwork.CurrentRoom.SetCustomProperties(ht);
+        }
+
     }
 
     private void FixedUpdate()
@@ -57,7 +72,8 @@ public class CountdownManager : MonoBehaviourPunCallbacks
 
             if (timerIncrementValue >= 4)
             {
-                ht.Remove("StartTime");
+                ht["StartTime"] = -1;
+                PhotonNetwork.CurrentRoom.SetCustomProperties(ht);
                 Destroy(gameObject);
             }
             else if (timerIncrementValue >= 3)
@@ -94,21 +110,16 @@ public class CountdownManager : MonoBehaviourPunCallbacks
 
     void StartCountdownTimer()
     {
-        // Using try catch finally because we will not know which client will be the first to call StartCountdownTimer()
-        try
+        if (double.Parse(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"].ToString()) == -1)
+        {
+            startTime = PhotonNetwork.Time;
+            ht["StartTime"] = startTime;
+            PhotonNetwork.CurrentRoom.SetCustomProperties(ht);
+        }
+        else
         {
             startTime = double.Parse(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"].ToString());
         }
-        catch (NullReferenceException)
-        {
-            ht = new ExitGames.Client.Photon.Hashtable();
-            startTime = PhotonNetwork.Time;
-            ht.Add("StartTime", startTime);
-            PhotonNetwork.CurrentRoom.SetCustomProperties(ht);
-        }
-        finally
-        {
-            startTimer = true;
-        }
+        startTimer = true;
     }
 }

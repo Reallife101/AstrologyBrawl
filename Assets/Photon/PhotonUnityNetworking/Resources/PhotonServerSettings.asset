@@ -63,6 +63,20 @@ MonoBehaviour:
   - RPC_HealDamage
   - AddReadyUp
   - SyncReadyUpText
+  - RPC_DisplayCard
+  - Jump
+  - Footsteps
+  - FastFall
+  - HeavyAttackCharge
+  - HeavyAttackRelease
+  - LightAttack
+  - Start
+  - Ability1
+  - Ability2
+  - DeathGeneric
+  - SpawnVoice
+  - TakeDamage
+  - MakeKillFeedRPC
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

@@ -183,8 +183,8 @@ GameObject:
   - component: {fileID: 4888351954668950257}
   - component: {fileID: 6222636140674862286}
   - component: {fileID: 5359933801895894963}
-  - component: {fileID: -3679961502371578177}
   - component: {fileID: 2788376477822565664}
+  - component: {fileID: 3307503188059390554}
   m_Layer: 7
   m_Name: PlayerPrefab1Aquarius
   m_TagString: Player
@@ -300,6 +300,7 @@ MonoBehaviour:
   jumpPower: 65
   fastFallSpeed: 30
   doubleJumpPower: 50
+  airSpeedMultiplier: 0.98
   isGrounded: 0
   groundedCheckObjectLeft: {fileID: 4887830797730787154}
   groundedCheckObjectRight: {fileID: 8475485967914335248}
@@ -460,7 +461,24 @@ MonoBehaviour:
   projectile: {fileID: 7395812835021248825, guid: cf08da57f873eee47bef0f4aefb917de, type: 3}
   player: {fileID: 3016257482074367028}
   spawnAsChild: 0
---- !u!114 &-3679961502371578177
+--- !u!114 &2788376477822565664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc48f0f7946f1a41ac126456f565952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Light: 10
+  Heavy: 35
+  Ability1: 20
+  Ability2: 12
+  stacked: 0
+--- !u!114 &3307503188059390554
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -474,26 +492,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  movementspeed: 0
+      Data1: -1777302120
+      Data2: 1268280268
+      Data3: 1573820297
+      Data4: 596767288
+    Path: event:/Aquarius/Aquarius Walk
+  movementspeed: 0.8
   jumpsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1540495566
+      Data2: 1121154774
+      Data3: -1102698050
+      Data4: 623309370
+    Path: event:/Jumps
   fastfallsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 544284601
+      Data2: 1228386974
+      Data3: 311565232
+      Data4: 1173628407
+    Path: event:/FastFall
   lightattacksound:
     Guid:
       Data1: 0
@@ -592,23 +610,6 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
---- !u!114 &2788376477822565664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3016257482074367028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fc48f0f7946f1a41ac126456f565952, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Light: 10
-  Heavy: 35
-  Ability1: 20
-  Ability2: 12
-  stacked: 0
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0

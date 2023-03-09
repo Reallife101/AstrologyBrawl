@@ -93,61 +93,6 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
             ],
             ""bindings"": [
                 {
-                    ""name"": ""WASD"",
-                    ""id"": ""e046d80b-4078-4817-9661-1df7861a5af2"",
-                    ""path"": ""2DVector(mode=2)"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""e10b3dc3-e5e2-40e7-b809-3170c5c1a817"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""ac2c1921-288d-4028-9958-9d8b5b72bba3"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""f6bcced3-2913-435a-a025-ffb95e0a60d1"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""54f16fba-0099-4178-a412-87f5b1a55f4b"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
                     ""name"": """",
                     ""id"": ""091b365d-fd24-4a99-af59-1a4da491a91d"",
                     ""path"": ""<Gamepad>/leftStick"",
@@ -168,6 +113,61 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""78ff344c-73d8-458d-8130-ee503162a8d0"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""039e9b0e-60b0-4b7c-89b5-30dc2d210a91"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""c47fa13a-5e67-446d-afb3-3688ae114839"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""88a4fb92-7298-4379-8f1d-de4cd3e7fbf9"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""9f51518e-2ec6-405a-8522-dc319ceb47b6"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 },
                 {
                     ""name"": """",
@@ -195,6 +195,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""name"": """",
                     ""id"": ""e4efec54-f92f-44d7-b678-768ad621245b"",
                     ""path"": ""<Joystick>/stick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ce552736-c5bf-4a1d-9515-99667f8a9a59"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -237,6 +248,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 },
                 {
                     ""name"": """",
+                    ""id"": ""58e0c65b-91f0-4eb6-82f7-13b23276b43a"",
+                    ""path"": ""<Keyboard>/u"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ability1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""5da78c31-2c3a-4ab2-a900-cdd06361505c"",
                     ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
@@ -261,6 +283,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""name"": """",
                     ""id"": ""1caab742-a245-413a-819d-6c0e3153f645"",
                     ""path"": ""<HID::Microntek              USB Joystick          >/button2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LightAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d4260ecf-3df0-467a-b62e-761fd9ebcca5"",
+                    ""path"": ""<Keyboard>/j"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -303,6 +336,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 },
                 {
                     ""name"": """",
+                    ""id"": ""c8053f37-f166-41fc-922d-50c729ccee49"",
+                    ""path"": ""<Keyboard>/k"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HeavyAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""fdb77643-b269-4b98-b402-f8b61d653e87"",
                     ""path"": ""<Keyboard>/2"",
                     ""interactions"": """",
@@ -327,6 +371,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""name"": """",
                     ""id"": ""b6dd11fe-f0b7-4019-9ce1-3529d97e8e57"",
                     ""path"": ""<HID::Microntek              USB Joystick          >/button4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ability2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5cdd50fb-0e0e-4325-92ca-bee23717af1f"",
+                    ""path"": ""<Keyboard>/i"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
