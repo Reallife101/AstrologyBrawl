@@ -19,8 +19,8 @@ MonoBehaviour:
   forwardMovement: 3
   finisherEndlag: 0.25
   hitStunTime: 0.5
-  knockbackPower: 25
-  launchDirection: {x: 0, y: 0}
+  knockbackPower: 15
+  launchDirection: {x: 10, y: 0}
   NextAttackFrameSO: {fileID: 0}
   chargeTimeAllowed: 0
   chargeTimeForMax: 0

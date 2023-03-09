@@ -92,7 +92,7 @@ public class doDamage : MonoBehaviour
             else
             {
                 Vector2 launchVector = new Vector2(collision.transform.position.x - transform.position.x, collision.transform.position.y - transform.position.y + 0.25f);
-                dmg.TakeDamage(damage, launchVector * launchForce, hitStunTime);
+                dmg.TakeDamage(damage, launchVector.normalized * launchForce, hitStunTime);
             }
 
             //Destroy object

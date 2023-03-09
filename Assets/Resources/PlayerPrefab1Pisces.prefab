@@ -346,7 +346,7 @@ MonoBehaviour:
   dmgManager: {fileID: -6680967773165473317}
   atk_state: 3
   gunDamage: 10
-  launchForce: -30
+  launchForce: -10
 --- !u!114 &8137799586486451805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1027,7 +1027,7 @@ MonoBehaviour:
   launchForce: 0
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
-  parentSprite: {fileID: 0}
+  parentSprite: {fileID: 3016257482074367029}
   ownerID: 0
 --- !u!61 &7359940151417232075
 BoxCollider2D:
