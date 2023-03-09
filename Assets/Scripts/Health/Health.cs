@@ -36,6 +36,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
 
         foreach (Player _player in PhotonNetwork.PlayerList)
         {
+            Debug.Log("myPV.ViewID" + myPV.ViewID);
             if (_player.ActorNumber == myPV.ViewID / PhotonNetwork.MAX_VIEW_IDS)
             {
                 Debug.Log(_player);
