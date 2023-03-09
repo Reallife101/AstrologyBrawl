@@ -116,10 +116,10 @@ MonoBehaviour:
   destroyOnTouch: 1
   lifeTime: 0.5
   hasInfiniteLifeTime: 0
-  launchForce: 0
+  launchForce: 2
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
-  parentSprite: {fileID: 0}
+  parentSprite: {fileID: 7640961951212506263}
   ownerID: 0
 --- !u!114 &1752425406030071846
 MonoBehaviour:
