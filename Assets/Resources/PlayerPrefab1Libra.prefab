@@ -432,7 +432,7 @@ MonoBehaviour:
   launchForce: 0
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
-  parentSprite: {fileID: 0}
+  parentSprite: {fileID: 3016257482074367029}
   ownerID: 0
 --- !u!61 &1101127547381721659
 BoxCollider2D:

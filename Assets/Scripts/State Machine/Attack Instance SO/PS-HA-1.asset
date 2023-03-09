@@ -16,11 +16,11 @@ MonoBehaviour:
   attackAnimationName: heavyPisces
   duration: 0.5
   inputBufferTime: 0.35
-  forwardMovement: 10
+  forwardMovement: 3
   finisherEndlag: 0.25
   hitStunTime: 0.5
-  knockbackPower: 50
-  launchDirection: {x: 0, y: 0}
+  knockbackPower: 15
+  launchDirection: {x: 10, y: 0}
   NextAttackFrameSO: {fileID: 0}
   chargeTimeAllowed: 0
   chargeTimeForMax: 0
