@@ -57,7 +57,7 @@ public class PlayerStatsItem : MonoBehaviourPunCallbacks
         }
         if (player.CustomProperties.TryGetValue("kills", out object kills) && player.CustomProperties.TryGetValue("killsToWin", out object killstowin))
         {
-            killsText.text = "Kills: " + kills.ToString();
+            killsText.text = kills.ToString();
             if (kills.ToString() == killstowin.ToString())
             {
                 crown.SetActive(true);
@@ -65,7 +65,7 @@ public class PlayerStatsItem : MonoBehaviourPunCallbacks
         }
         if (player.CustomProperties.TryGetValue("deaths", out object deaths))
         {
-            deathsText.text = "Deaths: " + deaths.ToString();
+            deathsText.text = deaths.ToString();
         }
 
     }

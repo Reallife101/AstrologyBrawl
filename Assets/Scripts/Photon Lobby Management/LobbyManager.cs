@@ -38,7 +38,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     private void Awake()
     {
-       /* input = new PlayerControllerInputAsset();
+        input = new PlayerControllerInputAsset();
         start = input.UI.Start;
         leave = input.UI.Back;
 
@@ -56,7 +56,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
 
         start.Enable();
-        leave.Enable();*/
+        leave.Enable();
 
     }
 
@@ -228,7 +228,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         start.Disable();
         leave.Disable();
-        PhotonNetwork.LoadLevel(levelInfo.getSceneName());
+        PhotonNetwork.LoadLevel(levelInfo.getSceneName());      
         PhotonNetwork.CurrentRoom.IsOpen = false;
         PhotonNetwork.CurrentRoom.IsVisible = false;
     }
