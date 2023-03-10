@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
-using System.IO;
+using UnityEngine;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class PlayerManager : MonoBehaviourPunCallbacks
@@ -64,6 +63,10 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         {
             healthItem.UpdateCooldown(PlayerController.AbilityOneCurrCooldown, PlayerController.AbilityTwoCurrCooldown);
         }
+
+
+        if (Input.GetKeyDown(KeyCode.P))
+            Spawn();
     }
 
     //Spawns/Respawn player
@@ -75,7 +78,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         }
         int randomNumber = Random.Range(0, spawnPoints.Count);
         Transform spawnPoint = spawnPoints[randomNumber];
-
+        //Debug.Log("AVATAR NUMBER " + (int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]);
         GameObject playerToSpawn = playerPrefabs[(int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]];
         controller = PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
         PlayerController = controller.GetComponent<playerController>();
@@ -200,7 +203,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         gameOverText.alpha = 1;
         yield return new WaitForSeconds(3f);
         gameOverText.alpha = 0;
-        PhotonNetwork.LoadLevel("StatScreen");
+        PhotonNetwork.LoadLevel("StatScreenCopy");
     }
 
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)

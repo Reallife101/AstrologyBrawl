@@ -18,7 +18,7 @@ public class StatScreenManager : MonoBehaviourPunCallbacks
         {
             if (player.Value.CustomProperties["kills"].ToString() == player.Value.CustomProperties["killsToWin"].ToString())
             {
-                winnerText.text = "Winner: " + player.Value.NickName;
+                winnerText.text = player.Value.NickName;
             }
         }
 
@@ -79,7 +79,7 @@ public class StatScreenManager : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            PhotonNetwork.LoadLevel("Lobby");
+            PhotonNetwork.LoadLevel("New Lobby");
         }
     }
 }

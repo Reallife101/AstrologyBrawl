@@ -1020,13 +1020,6 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
-  characterselect:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   spawnvoice:
     Guid:
       Data1: 0

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine.InputSystem;
+
 public class KillConditionItem : MonoBehaviourPunCallbacks
 {
     public GameObject leftArrowButton;
@@ -17,12 +19,34 @@ public class KillConditionItem : MonoBehaviourPunCallbacks
     public int killIncrement;
     private int currentKillNum;
 
+
+    private PlayerControllerInputAsset input;
+    private InputAction increase;
+    private InputAction decrease;
+
+
     private void Awake()
     {
         currentKillNum = minKills;
         kill_num_text.text = currentKillNum.ToString();
         ApplyChangesToAll();
 
+        input = new PlayerControllerInputAsset();
+        increase = input.UI.Increase;
+        decrease = input.UI.Decrease;
+
+        increase.started += Increase =>
+        {
+            OnClickRight();
+        };
+
+        decrease.started += Decrease =>
+        {
+            OnClickLeft();
+        };
+
+        increase.Enable();
+        decrease.Enable();
     }
 
     public override void OnJoinedRoom()
@@ -103,6 +127,6 @@ public class KillConditionItem : MonoBehaviourPunCallbacks
             kill_num_text.text = targetPlayer.CustomProperties["killsToWin"].ToString();
             currentKillNum = (int)targetPlayer.CustomProperties["killsToWin"];
         }
-    }
+    }    
 
 }

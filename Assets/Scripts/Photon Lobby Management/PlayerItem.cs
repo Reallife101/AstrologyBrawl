@@ -5,6 +5,9 @@ using UnityEngine.UI;
 using TMPro;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine.InputSystem;
+using Unity.VisualScripting;
+
 public class PlayerItem : MonoBehaviourPunCallbacks
 {
     public TMP_Text playerName;
@@ -24,12 +27,41 @@ public class PlayerItem : MonoBehaviourPunCallbacks
     Player player;
     characterSelect characterSelect;
 
+    private PlayerControllerInputAsset input;
+    private InputAction select;
+    private InputAction move;
+
     bool isReady = false;
 
     public void Awake()
     {
         characterSelect = GetComponent<characterSelect>();
         readyUpText.text = "Ready Up";
+
+
+        input = LobbyManager.input;
+        select = input.UI.Select;
+        move = input.UI.UIMove;
+
+
+        select.started += Select =>
+        {
+            ReadyUpToggle();
+        };
+
+        move.started += Move =>
+        {
+            Vector2 movement = move.ReadValue<Vector2>();
+            if (movement.x < 0)
+                OnClickLeft();
+            else
+                OnClickRight();
+        };
+
+
+        select.Enable();
+        move.Enable();
+
     }
 
     public Player GetPlayer()
@@ -113,9 +145,12 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         if (isReady)
         {
             readyUpText.text = "Unselect";
+            move.Disable();
+
         }
         else
         {
+            move.Enable();
             readyUpText.text = "Ready Up";
         }
 
@@ -134,5 +169,4 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         }
 
     }
-
 }

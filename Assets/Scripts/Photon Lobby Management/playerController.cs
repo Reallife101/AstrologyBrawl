@@ -98,6 +98,7 @@ public class playerController : MonoBehaviour
         myPM = PhotonView.Find((int) myPV.InstantiationData[0]).GetComponent<PlayerManager>();
 
         input = new PlayerControllerInputAsset();
+
         playerMove = input.Player.Move;
         playerJump = input.Player.Jump;
         abilityOneAction = input.Player.Ability1;

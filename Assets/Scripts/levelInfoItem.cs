@@ -35,8 +35,10 @@ public class levelInfoItem : MonoBehaviourPunCallbacks
 
     void updateText()
     {
-        levelText.text = "Level: " + levels[levelIndex];
-        this.photonView.RPC(nameof(RPC_UpdateText), RpcTarget.All, "Level: " + levels[levelIndex]);
+        //levelText.text = "Level: " + levels[levelIndex];
+        levelText.text = levels[levelIndex];
+        //this.photonView.RPC(nameof(RPC_UpdateText), RpcTarget.All, "Level: " + levels[levelIndex]);
+        this.photonView.RPC(nameof(RPC_UpdateText), RpcTarget.All, levels[levelIndex]);
     }
 
     public void updateText(string s)
