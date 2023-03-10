@@ -704,7 +704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab0ac52264491f142a84032a389ab2b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1
+  cooldownTime: 3.5
   abilitySoundCheck: 0
   playerAnimator: {fileID: 4757342467156564362}
   triggerName: mixup
