@@ -64,6 +64,9 @@ public class PlayerManager : MonoBehaviourPunCallbacks
             healthItem.UpdateCooldown(PlayerController.AbilityOneCurrCooldown, PlayerController.AbilityTwoCurrCooldown);
         }
 
+
+        if (Input.GetKeyDown(KeyCode.P))
+            Spawn();
     }
 
     //Spawns/Respawn player
@@ -75,7 +78,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         }
         int randomNumber = Random.Range(0, spawnPoints.Count);
         Transform spawnPoint = spawnPoints[randomNumber];
-        Debug.Log("AVATAR NUMBER " + (int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]);
+        //Debug.Log("AVATAR NUMBER " + (int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]);
         GameObject playerToSpawn = playerPrefabs[(int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]];
         controller = PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
         PlayerController = controller.GetComponent<playerController>();

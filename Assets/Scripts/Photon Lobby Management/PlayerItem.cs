@@ -152,7 +152,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         else
         {
 
-            input.Enable();
+           input.Enable();
             readyUpText.text = "Ready Up";
         }
 
