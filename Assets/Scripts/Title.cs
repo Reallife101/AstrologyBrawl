@@ -84,8 +84,7 @@ public class Title : MonoBehaviour
 
     void LoadScene() 
     {
-        startGame.Disable();
-        quitGame.Disable();
+        input.Dispose();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
     }

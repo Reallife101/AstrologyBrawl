@@ -477,7 +477,7 @@
             "id": "69c088de-df26-4948-b8b9-80813916f1dd",
             "actions": [
                 {
-                    "name": "Move",
+                    "name": "UI Move",
                     "type": "Value",
                     "id": "a961d337-72c0-4fed-a019-7caa809fefb7",
                     "expectedControlType": "Vector2",
@@ -572,7 +572,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "UI Move",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -583,7 +583,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "UI Move",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -627,7 +627,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "UI Move",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -638,7 +638,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "UI Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -649,7 +649,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "UI Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -660,7 +660,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "UI Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -671,7 +671,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "UI Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }

@@ -32,7 +32,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public bool allPlayersReady = false;
 
-    private PlayerControllerInputAsset input;
+    public static PlayerControllerInputAsset input;
     private InputAction start;
     private InputAction leave;
 
@@ -54,11 +54,10 @@ public class LobbyManager : MonoBehaviourPunCallbacks
             OnClickLeaveRoom();
         };
 
-
         start.Enable();
         leave.Enable();
-
-    }
+        
+   }
 
 
     private void Start()
@@ -226,8 +225,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public void OnClickPlayButton()
     {
-        /*start.Disable();
-        leave.Disable();*/
+        input.Dispose();
         PhotonNetwork.LoadLevel(levelInfo.getSceneName());      
         PhotonNetwork.CurrentRoom.IsOpen = false;
         PhotonNetwork.CurrentRoom.IsVisible = false;

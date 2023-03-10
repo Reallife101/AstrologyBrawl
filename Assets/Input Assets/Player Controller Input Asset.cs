@@ -499,7 +499,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
             ""id"": ""69c088de-df26-4948-b8b9-80813916f1dd"",
             ""actions"": [
                 {
-                    ""name"": ""Move"",
+                    ""name"": ""UI Move"",
                     ""type"": ""Value"",
                     ""id"": ""a961d337-72c0-4fed-a019-7caa809fefb7"",
                     ""expectedControlType"": ""Vector2"",
@@ -594,7 +594,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""UI Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -605,7 +605,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""UI Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -649,7 +649,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""UI Move"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -660,7 +660,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""UI Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -671,7 +671,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""UI Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -682,7 +682,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""UI Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -693,7 +693,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""UI Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 }
@@ -717,7 +717,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         m_Title_Quit = m_Title.FindAction("Quit", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
-        m_UI_Move = m_UI.FindAction("Move", throwIfNotFound: true);
+        m_UI_UIMove = m_UI.FindAction("UI Move", throwIfNotFound: true);
         m_UI_Select = m_UI.FindAction("Select", throwIfNotFound: true);
         m_UI_Increase = m_UI.FindAction("Increase", throwIfNotFound: true);
         m_UI_Decrease = m_UI.FindAction("Decrease", throwIfNotFound: true);
@@ -904,7 +904,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
     // UI
     private readonly InputActionMap m_UI;
     private IUIActions m_UIActionsCallbackInterface;
-    private readonly InputAction m_UI_Move;
+    private readonly InputAction m_UI_UIMove;
     private readonly InputAction m_UI_Select;
     private readonly InputAction m_UI_Increase;
     private readonly InputAction m_UI_Decrease;
@@ -914,7 +914,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
     {
         private @PlayerControllerInputAsset m_Wrapper;
         public UIActions(@PlayerControllerInputAsset wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Move => m_Wrapper.m_UI_Move;
+        public InputAction @UIMove => m_Wrapper.m_UI_UIMove;
         public InputAction @Select => m_Wrapper.m_UI_Select;
         public InputAction @Increase => m_Wrapper.m_UI_Increase;
         public InputAction @Decrease => m_Wrapper.m_UI_Decrease;
@@ -929,9 +929,9 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         {
             if (m_Wrapper.m_UIActionsCallbackInterface != null)
             {
-                @Move.started -= m_Wrapper.m_UIActionsCallbackInterface.OnMove;
-                @Move.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnMove;
-                @Move.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnMove;
+                @UIMove.started -= m_Wrapper.m_UIActionsCallbackInterface.OnUIMove;
+                @UIMove.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnUIMove;
+                @UIMove.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnUIMove;
                 @Select.started -= m_Wrapper.m_UIActionsCallbackInterface.OnSelect;
                 @Select.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnSelect;
                 @Select.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnSelect;
@@ -951,9 +951,9 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
             m_Wrapper.m_UIActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Move.started += instance.OnMove;
-                @Move.performed += instance.OnMove;
-                @Move.canceled += instance.OnMove;
+                @UIMove.started += instance.OnUIMove;
+                @UIMove.performed += instance.OnUIMove;
+                @UIMove.canceled += instance.OnUIMove;
                 @Select.started += instance.OnSelect;
                 @Select.performed += instance.OnSelect;
                 @Select.canceled += instance.OnSelect;
@@ -990,7 +990,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
     }
     public interface IUIActions
     {
-        void OnMove(InputAction.CallbackContext context);
+        void OnUIMove(InputAction.CallbackContext context);
         void OnSelect(InputAction.CallbackContext context);
         void OnIncrease(InputAction.CallbackContext context);
         void OnDecrease(InputAction.CallbackContext context);

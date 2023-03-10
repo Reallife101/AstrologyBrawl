@@ -6,6 +6,7 @@ using TMPro;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.InputSystem;
+using Unity.VisualScripting;
 
 public class PlayerItem : MonoBehaviourPunCallbacks
 {
@@ -30,8 +31,6 @@ public class PlayerItem : MonoBehaviourPunCallbacks
     private InputAction select;
     private InputAction move;
 
-
-
     bool isReady = false;
 
     public void Awake()
@@ -40,9 +39,9 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         readyUpText.text = "Ready Up";
 
 
-        input = new PlayerControllerInputAsset();
+        input = LobbyManager.input;
         select = input.UI.Select;
-        move = input.UI.Move;
+        move = input.UI.UIMove;
 
 
         select.started += Select =>
@@ -146,13 +145,12 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         if (isReady)
         {
             readyUpText.text = "Unselect";
-            input.Disable();
+            move.Disable();
 
         }
         else
         {
-
-           input.Enable();
+            move.Enable();
             readyUpText.text = "Ready Up";
         }
 
