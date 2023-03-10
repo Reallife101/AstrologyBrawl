@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da60d73c482bb39469dd75590f34006c, type: 3}
   m_Name: SG-LA-1
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 15
   attackAnimationName: SagLight
   duration: 0.5
   inputBufferTime: 0.35
   forwardMovement: 3
   finisherEndlag: 0.15
   hitStunTime: 0.5
-  knockbackPower: 20
+  knockbackPower: 10
   launchDirection: {x: 0, y: 0}
   NextAttackFrameSO: {fileID: 0}
   chargeTimeAllowed: 0
