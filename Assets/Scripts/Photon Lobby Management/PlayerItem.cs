@@ -146,13 +146,13 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         if (isReady)
         {
             readyUpText.text = "Unselect";
-            select.Enable();
-            move.Enable();
+            input.Disable();
+
         }
         else
         {
-            select.Disable();
-            move.Disable();
+
+            input.Enable();
             readyUpText.text = "Ready Up";
         }
 

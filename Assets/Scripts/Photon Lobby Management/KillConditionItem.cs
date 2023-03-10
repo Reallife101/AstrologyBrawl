@@ -31,7 +31,7 @@ public class KillConditionItem : MonoBehaviourPunCallbacks
         kill_num_text.text = currentKillNum.ToString();
         ApplyChangesToAll();
 
-        input = new PlayerControllerInputAsset(); 
+        input = new PlayerControllerInputAsset();
         increase = input.UI.Increase;
         decrease = input.UI.Decrease;
 
