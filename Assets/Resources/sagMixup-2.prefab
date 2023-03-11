@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1752425406030071846}
   - component: {fileID: 5889775717091038372}
   m_Layer: 0
-  m_Name: sagArrowMixup
+  m_Name: sagMixup-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,7 +168,7 @@ MonoBehaviour:
   destroyOnTouch: 1
   lifeTime: 10
   hasInfiniteLifeTime: 0
-  launchForce: 0
+  launchForce: 10
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 0}
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xspeed: 20
-  yspeed: -20
+  yspeed: -30
 --- !u!58 &5889775717091038372
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -23,8 +23,11 @@ public class SpawnObjects : Ability
     }   
 
     public override void Use()
-    {     
-        method();       
+    {
+        if (pv.IsMine)
+        {
+            method();
+        }     
     }
     public void SpawnSequential() 
     {

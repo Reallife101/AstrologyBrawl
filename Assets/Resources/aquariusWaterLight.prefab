@@ -172,7 +172,7 @@ MonoBehaviour:
   destroyOnTouch: 0
   lifeTime: 3
   hasInfiniteLifeTime: 0
-  launchForce: 10
+  launchForce: 5
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 0}

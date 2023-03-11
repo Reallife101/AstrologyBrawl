@@ -596,13 +596,6 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
-  characterselect:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   spawnvoice:
     Guid:
       Data1: 0
@@ -1111,7 +1104,7 @@ MonoBehaviour:
   launchForce: 0
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
-  parentSprite: {fileID: 0}
+  parentSprite: {fileID: 3016257482074367029}
   ownerID: 0
 --- !u!61 &868218565461086243
 BoxCollider2D:

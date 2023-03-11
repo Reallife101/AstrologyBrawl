@@ -166,6 +166,11 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         roomPanel.SetActive(false);
         lobbyPanel.SetActive(true);
+        if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("ready"))
+        {
+            PhotonNetwork.LocalPlayer.CustomProperties["ready"] = null;
+        }
+        
     }
 
     public override void OnConnectedToMaster()
