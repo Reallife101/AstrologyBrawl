@@ -72,8 +72,11 @@ public class PlayerItem : MonoBehaviourPunCallbacks
     public void ApplyLocalChanges()
     {
         backgroundImage.color = highlightColor;
-        leftArrowButton.SetActive(true);
-        rightArrowButton.SetActive(true);
+        if (!isReady)
+        {
+            leftArrowButton.SetActive(true);
+            rightArrowButton.SetActive(true);
+        }
         playerItemButton.SetActive(true);
         readyUpTextObject.SetActive(false);
     }
@@ -82,6 +85,15 @@ public class PlayerItem : MonoBehaviourPunCallbacks
     {
         playerName.text = _player.NickName;
         player = _player;
+        if (player.CustomProperties.TryGetValue("ready", out object readyout))
+        {
+            if ((bool)readyout)
+            {
+                isReady = (bool) readyout; 
+                readyUpText.text = "Unselect";
+                Debug.Log("Existing player, unselect time");
+            }
+        }
     }
 
     public void OnClickLeft()
