@@ -82,6 +82,14 @@ public class PlayerItem : MonoBehaviourPunCallbacks
     {
         playerName.text = _player.NickName;
         player = _player;
+        if(player.CustomProperties.TryGetValue("ready", out object readyout))
+        {
+            if ((bool)readyout)
+            {
+                readyUpText.text = "Unselect";
+                Debug.Log("Existing player, unselect time");
+            }
+        }
     }
 
     public void OnClickLeft()

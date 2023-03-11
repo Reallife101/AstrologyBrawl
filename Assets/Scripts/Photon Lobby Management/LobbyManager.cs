@@ -105,7 +105,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         if (roomInputField.text.Length >=1)
         {
-            PhotonNetwork.CreateRoom(roomInputField.text, new RoomOptions() { MaxPlayers = 4, BroadcastPropsChangeToAll = true });
+            PhotonNetwork.CreateRoom(roomInputField.text, new RoomOptions() { MaxPlayers = 4, BroadcastPropsChangeToAll = true , DeleteNullProperties = true});
         }
     }
 
@@ -166,6 +166,11 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         roomPanel.SetActive(false);
         lobbyPanel.SetActive(true);
+        if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("ready"))
+        {
+            PhotonNetwork.LocalPlayer.CustomProperties["ready"] = null;
+        }
+        
     }
 
     public override void OnConnectedToMaster()
