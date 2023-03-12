@@ -14,13 +14,10 @@ GameObject:
   - component: {fileID: 4282788691499597098}
   - component: {fileID: 4819595326898402213}
   - component: {fileID: 101489998404344268}
-  - component: {fileID: 5867182734217089990}
-  - component: {fileID: 1608801575091987754}
-  - component: {fileID: 6040620343392228801}
-  - component: {fileID: 5762503204402584187}
-  - component: {fileID: 7196016908460729177}
+  - component: {fileID: 1752425406030071846}
+  - component: {fileID: 5889775717091038372}
   m_Layer: 0
-  m_Name: aquariusWaterLight
+  m_Name: jugDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bea73e64af6866c4fbb98ea979c35429, type: 3}
-  m_Color: {r: 0, g: 0.5437734, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 01e6ffe0d0fec5a48949fba48629f9e4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -113,8 +110,6 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 4819595326898402213}
-  - {fileID: 1608801575091987754}
-  - {fileID: 7196016908460729177}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -168,37 +163,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack_type: 3
-  damage: 20
+  damage: 35
   destroyOnTouch: 0
-  destroyOnImpact: 0
-  lifeTime: 3
+  destroyOnImpact: 1
+  lifeTime: 1
   hasInfiniteLifeTime: 0
-  launchForce: 5
+  launchForce: 10
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 0}
   ownerID: 0
---- !u!95 &5867182734217089990
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793811016547114540}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 59d199088f667d9448a1c9b0c788c50e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1608801575091987754
+--- !u!114 &1752425406030071846
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -207,17 +182,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 793811016547114540}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Script: {fileID: 11500000, guid: 659a269ad59defe4f98af1b0fdd720f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShowLayerWeightsInspector: 1
-  ShowParameterInspector: 1
-  m_SynchronizeParameters: []
-  m_SynchronizeLayers:
-  - SynchronizeType: 1
-    LayerIndex: 0
---- !u!61 &6040620343392228801
-BoxCollider2D:
+  xspeed: 0
+  yspeed: -15
+--- !u!58 &5889775717091038372
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -229,44 +200,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.20230913, y: -0.93062377}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.048, y: 4.384}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 4.1902437, y: 1.9616265}
-  m_EdgeRadius: 0
---- !u!114 &5762503204402584187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793811016547114540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd7bc2bb527350419bd441d46f83e22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7196016908460729177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793811016547114540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
+  m_Radius: 0.575

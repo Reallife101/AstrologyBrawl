@@ -216,6 +216,7 @@ Transform:
   - {fileID: 3134765060335993960}
   - {fileID: 6702834974374626348}
   - {fileID: 1118012802139428960}
+  - {fileID: 6559054374566150191}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -401,7 +402,7 @@ MonoBehaviour:
   firstLightGround: {fileID: 11400000, guid: 4764193e1d9c92446b8f53caf86b4f01, type: 2}
   firstHeavyGround: {fileID: 11400000, guid: 2296db333336f994b882482cd8d8311d, type: 2}
   firstLightAir: {fileID: 11400000, guid: 4764193e1d9c92446b8f53caf86b4f01, type: 2}
-  firstHeavyAir: {fileID: 11400000, guid: 2296db333336f994b882482cd8d8311d, type: 2}
+  firstHeavyAir: {fileID: 11400000, guid: 4ff74dd29cec25f4ebfb50ef87fcd2cd, type: 2}
   airAttackGravityModifier: 0.75
   hitbox: {fileID: 6759375185850580681}
   playerAnimator: {fileID: 1487008377844494123}
@@ -771,6 +772,7 @@ MonoBehaviour:
   attack_type: 0
   damage: 50
   destroyOnTouch: 0
+  destroyOnImpact: 0
   lifeTime: 0
   hasInfiniteLifeTime: 1
   launchForce: 20
@@ -906,6 +908,7 @@ MonoBehaviour:
   attack_type: 0
   damage: 50
   destroyOnTouch: 0
+  destroyOnImpact: 0
   lifeTime: 0
   hasInfiniteLifeTime: 1
   launchForce: 20
@@ -965,6 +968,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3016257482074367029}
   m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6034049766307245696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6559054374566150191}
+  m_Layer: 0
+  m_Name: jugSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6559054374566150191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6034049766307245696}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.097, y: -0.439, z: -0.01745534}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3016257482074367029}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6155701482992311211
 GameObject:
@@ -1099,6 +1133,7 @@ MonoBehaviour:
   attack_type: 2
   damage: 0
   destroyOnTouch: 0
+  destroyOnImpact: 0
   lifeTime: 0
   hasInfiniteLifeTime: 1
   launchForce: 0
@@ -1322,6 +1357,7 @@ GameObject:
   - component: {fileID: 4718133020678278869}
   - component: {fileID: 3084352949971643570}
   - component: {fileID: 1245006447498136100}
+  - component: {fileID: 2988474702218595009}
   m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
@@ -1479,6 +1515,9 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 1
     Name: jump
+  - Type: 9
+    SynchronizeType: 0
+    Name: heavyAquariusAir
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -1528,7 +1567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 73722749503345488}
-  heavy: {fileID: 0}
+  heavy: {fileID: 2988474702218595009}
   mixup: {fileID: 0}
   iconic: {fileID: 0}
 --- !u!114 &3084352949971643570
@@ -1565,5 +1604,25 @@ MonoBehaviour:
   triggerName: 
   spawnOrigin: {fileID: 1118012802139428960}
   projectile: {fileID: 100004, guid: 0558fb49388ab9044899d99bd8d8d448, type: 3}
+  player: {fileID: 3016257482074367028}
+  spawnAsChild: 0
+--- !u!114 &2988474702218595009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8234068197884782501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 0
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 1487008377844494123}
+  triggerName: heavyAirAquarius
+  spawnOrigin: {fileID: 6559054374566150191}
+  projectile: {fileID: 793811016547114540, guid: 4f6b313857c8b074eacc14eb3472fce3, type: 3}
   player: {fileID: 3016257482074367028}
   spawnAsChild: 0

@@ -12,6 +12,7 @@ public class doDamage : MonoBehaviour
     [SerializeField] private DamageManager.AttackStates attack_type;
     [SerializeField] float damage;
     [SerializeField] bool destroyOnTouch;
+    [SerializeField] bool destroyOnImpact;
     [SerializeField] float lifeTime;
     [SerializeField] bool hasInfiniteLifeTime;
     [SerializeField] float launchForce;
@@ -101,6 +102,10 @@ public class doDamage : MonoBehaviour
                 PhotonNetwork.Destroy(gameObject);
             }
 
+        }
+        else if (destroyOnImpact)
+        {
+            PhotonNetwork.Destroy(gameObject);
         }
     }
 
