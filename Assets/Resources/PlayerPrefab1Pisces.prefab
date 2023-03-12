@@ -1020,6 +1020,7 @@ MonoBehaviour:
   attack_type: 2
   damage: 0
   destroyOnTouch: 0
+  destroyOnImpact: 0
   lifeTime: 0
   hasInfiniteLifeTime: 1
   launchForce: 0
@@ -1150,6 +1151,7 @@ MonoBehaviour:
   attack_type: 0
   damage: 50
   destroyOnTouch: 0
+  destroyOnImpact: 0
   lifeTime: 0
   hasInfiniteLifeTime: 1
   launchForce: 20
@@ -1285,6 +1287,7 @@ MonoBehaviour:
   attack_type: 0
   damage: 50
   destroyOnTouch: 0
+  destroyOnImpact: 0
   lifeTime: 0
   hasInfiniteLifeTime: 1
   launchForce: 20

@@ -173,9 +173,9 @@ MonoBehaviour:
   destroyOnImpact: 0
   lifeTime: 3
   hasInfiniteLifeTime: 0
-  launchForce: 5
+  launchForce: 0
   hitStunTime: 0.25
-  launchDirection: {x: 0, y: 0}
+  launchDirection: {x: 5, y: 0}
   parentSprite: {fileID: 0}
   ownerID: 0
 --- !u!95 &5867182734217089990
