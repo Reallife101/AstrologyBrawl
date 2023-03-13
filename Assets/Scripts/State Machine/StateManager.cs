@@ -32,7 +32,7 @@ public class StateManager : MonoBehaviour
     private float originalGravity;
     [SerializeField] private float airAttackGravityModifier;
     public States currentState { get; private set; }
-    [SerializeField] private doDamage hitbox;
+    [SerializeField] private List<doDamage> hitboxes;
     [SerializeField] private Animator playerAnimator;
 
 
@@ -163,9 +163,12 @@ public class StateManager : MonoBehaviour
 
     private void UpdateAttackInfo()
     {
+        foreach(doDamage doD in hitboxes)
+        {
+            doD.SetValues(atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, currentAttack.launchDirection, gameObject);
+        }
         //Starts the countdown for the current attack's duration, changes damage of the hitbox to match the current attack, and starts the corresponding attack anim
         attackTimeRemaining = currentAttack.duration;
-        hitbox.SetValues(atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, currentAttack.launchDirection, gameObject);
         playerAnimator.SetTrigger(currentAttack.attackAnimationName);
         myRB.velocity = Vector2.zero;
         myRB.AddForce(new Vector2(Mathf.Sign(transform.localScale.x) * currentAttack.forwardMovement, 0), ForceMode2D.Impulse);
@@ -174,10 +177,14 @@ public class StateManager : MonoBehaviour
     //Overload for charged attacks
     private void UpdateAttackInfo(float chargeMulti)
     {
+        foreach (doDamage doD in hitboxes)
+        {
+            doD.SetValues(atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, chargeMulti * currentAttack.launchDirection, gameObject, chargeMulti);
+        }
         //Starts the countdown for the current attack's duration, changes damage of the hitbox to match the current attack, and starts the corresponding attack anim
         attackTimeRemaining = currentAttack.duration;
         //hitbox.SetValues(currentAttack.damage * chargeMulti, currentAttack.hitStunTime, currentAttack.knockbackPower, chargeMulti * currentAttack.launchDirection, gameObject);
-        hitbox.SetValues(atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, chargeMulti * currentAttack.launchDirection, gameObject, chargeMulti);
+        //hitbox.SetValues(atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, chargeMulti * currentAttack.launchDirection, gameObject, chargeMulti);
         playerAnimator.SetTrigger(currentAttack.attackAnimationName);
         myRB.velocity = Vector2.zero;
         myRB.AddForce(new Vector2(Mathf.Sign(transform.localScale.x) * currentAttack.forwardMovement, 0), ForceMode2D.Impulse);

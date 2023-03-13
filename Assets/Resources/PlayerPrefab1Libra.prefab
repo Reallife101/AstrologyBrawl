@@ -427,6 +427,7 @@ MonoBehaviour:
   attack_type: 2
   damage: 0
   destroyOnTouch: 0
+  destroyOnImpact: 0
   lifeTime: 0
   hasInfiniteLifeTime: 1
   launchForce: 0
@@ -721,7 +722,8 @@ MonoBehaviour:
   firstLightAir: {fileID: 11400000, guid: b97cdae115ed06f4dad20bb694144e93, type: 2}
   firstHeavyAir: {fileID: 11400000, guid: 5eaccdf5fc509cc4aaa54d536c7c492a, type: 2}
   airAttackGravityModifier: 0.75
-  hitbox: {fileID: 6082466845620916035}
+  hitboxes:
+  - {fileID: 6082466845620916035}
   playerAnimator: {fileID: 8694400067546609426}
 --- !u!114 &4888351954668950257
 MonoBehaviour:

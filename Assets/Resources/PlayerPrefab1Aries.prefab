@@ -672,7 +672,8 @@ MonoBehaviour:
   firstLightAir: {fileID: 11400000, guid: fdb0611cf10c78f4ebedcf8ed6df7861, type: 2}
   firstHeavyAir: {fileID: 11400000, guid: 77da65241b169524cb97801da3d79825, type: 2}
   airAttackGravityModifier: 0.75
-  hitbox: {fileID: 3780375295810477137}
+  hitboxes:
+  - {fileID: 3780375295810477137}
   playerAnimator: {fileID: 8589663318342298076}
 --- !u!114 &4888351954668950257
 MonoBehaviour:
@@ -842,13 +843,6 @@ MonoBehaviour:
       Data4: 0
     Path: 
   takedamagevoice:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  characterselect:
     Guid:
       Data1: 0
       Data2: 0

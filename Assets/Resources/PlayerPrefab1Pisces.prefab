@@ -687,7 +687,8 @@ MonoBehaviour:
   firstLightAir: {fileID: 11400000, guid: 6609be8dc2457f648a9f7cbe43ca9940, type: 2}
   firstHeavyAir: {fileID: 11400000, guid: 3b5f912de5c6a594aaade5d0d16d1347, type: 2}
   airAttackGravityModifier: 0.75
-  hitbox: {fileID: 1483673166507877196}
+  hitboxes:
+  - {fileID: 1483673166507877196}
   playerAnimator: {fileID: 6502463303853110821}
 --- !u!114 &4888351954668950257
 MonoBehaviour:
