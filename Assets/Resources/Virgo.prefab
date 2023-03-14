@@ -830,7 +830,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 8694400067546609426}
   triggerName: mixupVirgo
   spawnOrigin: {fileID: 2204496378394938765}
-  projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
+  projectile: {fileID: 793811016547114540, guid: 63686c2999f41584e92bab55d12af055, type: 3}
   player: {fileID: 3016257482074367028}
   spawnAsChild: 0
 --- !u!114 &8429140981890349801
