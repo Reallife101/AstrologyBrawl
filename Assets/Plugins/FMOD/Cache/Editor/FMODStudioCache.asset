@@ -69,10 +69,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638139007709371290
+  lastModified: 638143965933552690
   FileSizes:
   - Name: 
-    Value: 2220
+    Value: 2176
   Exists: 1
 --- !u!114 &-8579067451076109806
 MonoBehaviour:
@@ -183,6 +183,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2357
+--- !u!114 &-6664421434568165895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi/SaggiFireBow
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi/SaggiFireBow
+  Guid:
+    Data1: 454824940
+    Data2: 1115747325
+    Data3: 510496912
+    Data4: -1707087921
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 917
 --- !u!114 &-6135323989386017881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +237,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1096
+--- !u!114 &-5108364344755235302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra/Libra iconic Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra/Libra iconic Voice
+  Guid:
+    Data1: 1233175572
+    Data2: 1223296014
+    Data3: 634649991
+    Data4: 1147410623
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-4919227303983880982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GenericDeath
+  m_EditorClassIdentifier: 
+  Path: event:/GenericDeath
+  Guid:
+    Data1: 1755445942
+    Data2: 1245857384
+    Data3: 435654846
+    Data4: -1281782737
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &-4322961215632202489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,7 +318,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3500
---- !u!114 &-3715996037570672207
+--- !u!114 &-3783236655924766803
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -246,24 +327,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Aquarius/Aquarius Wall
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/(TEMP) Main Menu Theme/Volume
   m_EditorClassIdentifier: 
-  Path: event:/Aquarius/Aquarius Wall
-  Guid:
-    Data1: 1881940677
-    Data2: 1319905562
-    Data3: -138741613
-    Data4: 28729500
-  Banks:
-  - {fileID: -1105131376724052805}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2925
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1839987030
+    data2: 1741563014
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Value A
+  - Value B
+  Exists: 1
 --- !u!114 &-3206883452753143964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,6 +364,33 @@ MonoBehaviour:
     Data4: 1085473424
   Banks:
   - {fileID: -1105131376724052805}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-2912718759737223867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra/Libra Attacks Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra/Libra Attacks Voice
+  Guid:
+    Data1: 1286916329
+    Data2: 1155034682
+    Data3: 329663414
+    Data4: 184893349
+  Banks:
+  - {fileID: -1003797176319671041}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -318,6 +425,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 917
+--- !u!114 &-2647639365496651094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi/SaggiBowCharge
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi/SaggiBowCharge
+  Guid:
+    Data1: 1408123473
+    Data2: 1306814630
+    Data3: -1246489950
+    Data4: 412728660
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1750
+--- !u!114 &-2500070837409524017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi/SaggiKick
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi/SaggiKick
+  Guid:
+    Data1: 724042934
+    Data2: 1093022575
+    Data3: 1691782027
+    Data4: 1085473424
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-2434064459820577030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,6 +506,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 176
+--- !u!114 &-2301026919663700217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Walkies
+  m_EditorClassIdentifier: 
+  Path: event:/Walkies
+  Guid:
+    Data1: -1490557312
+    Data2: 1307136215
+    Data3: 1436951690
+    Data4: 2095233066
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-1349350301616680429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra/Libra Walk
+  m_EditorClassIdentifier: 
+  Path: event:/Libra/Libra Walk
+  Guid:
+    Data1: -636072389
+    Data2: 1295834086
+    Data3: 567446449
+    Data4: -729169108
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-1105131376724052805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,9 +575,56 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638139007710081931
+  lastModified: 638143965933518115
   FileSizes: []
   Exists: 1
+--- !u!114 &-1003797176319671041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODAssets/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638143968376053602
+  FileSizes:
+  - Name: Desktop
+    Value: 8638400
+  Exists: 1
+--- !u!114 &-818175465456523738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Light PunchesKicks
+  m_EditorClassIdentifier: 
+  Path: event:/Light PunchesKicks
+  Guid:
+    Data1: -357560460
+    Data2: 1289921883
+    Data3: 1160808085
+    Data4: 405861565
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-694125327386692165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,48 +718,234 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -8844762814205021062}
-  - {fileID: -1105131376724052805}
+  - {fileID: 3151856808026860248}
+  - {fileID: -1003797176319671041}
   EditorEvents:
-  - {fileID: 1389602570942497364}
-  - {fileID: -8238409646333612872}
-  - {fileID: -253131657168857296}
-  - {fileID: 9101342762772110789}
-  - {fileID: 5464750150503008104}
-  - {fileID: -55400009841452291}
-  - {fileID: 1419014711020947660}
-  - {fileID: 7560187595897560192}
-  - {fileID: -3206883452753143964}
-  - {fileID: -2754893836709873696}
-  - {fileID: 3335139727297048128}
-  - {fileID: -2434064459820577030}
-  - {fileID: 6109530538830468745}
-  - {fileID: -4322961215632202489}
-  - {fileID: 7102772820061116195}
-  - {fileID: -7010382520243756119}
-  - {fileID: -8454167874413230229}
-  - {fileID: -6135323989386017881}
-  - {fileID: 5835596448543751702}
-  - {fileID: 8941416524094637178}
-  - {fileID: -9170774693396753466}
-  - {fileID: 1507576935708497850}
-  - {fileID: 2529760172681260139}
-  - {fileID: 4855262712199076296}
-  - {fileID: 8775987977193744822}
-  - {fileID: 5831343227504926451}
-  - {fileID: -8579067451076109806}
-  - {fileID: -9045670606281936576}
-  - {fileID: 3709231723391819915}
-  - {fileID: 4623529522711518862}
-  - {fileID: -3715996037570672207}
+  - {fileID: 6922346586618290801}
+  - {fileID: -5108364344755235302}
+  - {fileID: 1262621801103693106}
+  - {fileID: 7924154459426227060}
+  - {fileID: -1349350301616680429}
+  - {fileID: -2647639365496651094}
+  - {fileID: 7973756925949203928}
+  - {fileID: 4297809072883261208}
+  - {fileID: 9172522687656240087}
+  - {fileID: -818175465456523738}
+  - {fileID: -2301026919663700217}
+  - {fileID: 8779024273033492565}
+  - {fileID: 732811786144628514}
+  - {fileID: 4016799768851927014}
+  - {fileID: 64368895897383812}
+  - {fileID: 2399825439687160411}
+  - {fileID: 3220169758539584588}
+  - {fileID: 485084169596800302}
+  - {fileID: -2500070837409524017}
+  - {fileID: -4919227303983880982}
+  - {fileID: 3048027771798240742}
+  - {fileID: 7262963990041644471}
+  - {fileID: 9088074028366108334}
+  - {fileID: 341842085877284757}
+  - {fileID: 627932674837605708}
+  - {fileID: -2912718759737223867}
+  - {fileID: 2391147864479636990}
+  - {fileID: -6664421434568165895}
+  - {fileID: 4277246729416080550}
   EditorParameters:
-  - {fileID: 6897359367507961776}
+  - {fileID: 1096517424297899828}
   MasterBanks:
-  - {fileID: -1105131376724052805}
+  - {fileID: -1003797176319671041}
   StringsBanks:
-  - {fileID: -8844762814205021062}
-  cacheTime: 638139007710081931
+  - {fileID: 3151856808026860248}
+  cacheTime: 638143968376119420
   cacheVersion: 131601
+--- !u!114 &64368895897383812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra/Libra Ability 1 Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra/Libra Ability 1 Voice
+  Guid:
+    Data1: 1158769573
+    Data2: 1119763798
+    Data3: -677033027
+    Data4: 1861507773
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &341842085877284757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Jumps
+  m_EditorClassIdentifier: 
+  Path: event:/Jumps
+  Guid:
+    Data1: 1540495566
+    Data2: 1121154774
+    Data3: -1102698050
+    Data4: 623309370
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 218
+--- !u!114 &485084169596800302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/(TEMP) Battle Theme Reduced
+  m_EditorClassIdentifier: 
+  Path: event:/(TEMP) Battle Theme Reduced
+  Guid:
+    Data1: 69511857
+    Data2: 1243223215
+    Data3: 441812658
+    Data4: -1719780496
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 76504
+--- !u!114 &627932674837605708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra/Libra Victory Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra/Libra Victory Voice
+  Guid:
+    Data1: -1288913440
+    Data2: 1141206271
+    Data3: 1439633814
+    Data4: -499938434
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &732811786144628514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius/Aquarius Walk
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius/Aquarius Walk
+  Guid:
+    Data1: -1777302120
+    Data2: 1268280268
+    Data3: 1573820297
+    Data4: 596767288
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 851
+--- !u!114 &1096517424297899828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: parameter:/Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1839987030
+    data2: 1741563014
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Value A
+  - Value B
+  Exists: 1
+--- !u!114 &1262621801103693106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra/Libra S2
+  m_EditorClassIdentifier: 
+  Path: event:/Libra/Libra S2
+  Guid:
+    Data1: -1072902884
+    Data2: 1303518384
+    Data3: 1383783859
+    Data4: -449957530
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3500
 --- !u!114 &1389602570942497364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,6 +1027,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
+--- !u!114 &2391147864479636990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra/Libra Damage Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra/Libra Damage Voice
+  Guid:
+    Data1: -2072789013
+    Data2: 1322515083
+    Data3: 1025153712
+    Data4: 2054601307
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &2399825439687160411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra/Libra SA1
+  m_EditorClassIdentifier: 
+  Path: event:/Libra/Libra SA1
+  Guid:
+    Data1: -1263338582
+    Data2: 1181528799
+    Data3: -1389501528
+    Data4: -1006291035
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1096
 --- !u!114 &2529760172681260139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -606,6 +1108,80 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9000
+--- !u!114 &3048027771798240742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FastFall
+  m_EditorClassIdentifier: 
+  Path: event:/FastFall
+  Guid:
+    Data1: 544284601
+    Data2: 1228386974
+    Data3: 311565232
+    Data4: 1173628407
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &3151856808026860248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODAssets/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638143968376119420
+  FileSizes:
+  - Name: Desktop
+    Value: 2122
+  Exists: 1
+--- !u!114 &3220169758539584588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Extended Battle Music
+  m_EditorClassIdentifier: 
+  Path: event:/Extended Battle Music
+  Guid:
+    Data1: 1624887216
+    Data2: 1135307506
+    Data3: -1937159763
+    Data4: -2101571560
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 286275
 --- !u!114 &3335139727297048128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -660,6 +1236,88 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2360
+--- !u!114 &4016799768851927014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi/SaggiBowFire
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi/SaggiBowFire
+  Guid:
+    Data1: -1909211751
+    Data2: 1136059709
+    Data3: 1884798358
+    Data4: -1317846454
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 678
+--- !u!114 &4277246729416080550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/(TEMP) Main Menu Theme
+  m_EditorClassIdentifier: 
+  Path: event:/(TEMP) Main Menu Theme
+  Guid:
+    Data1: 1142580733
+    Data2: 1271012895
+    Data3: -280540998
+    Data4: -1317060781
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3783236655924766803}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 168359
+--- !u!114 &4297809072883261208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra/Libra Respawn Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra/Libra Respawn Voice
+  Guid:
+    Data1: -850475170
+    Data2: 1309601399
+    Data3: -1832606315
+    Data4: -45864446
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9000
 --- !u!114 &4623529522711518862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -848,6 +1506,33 @@ MonoBehaviour:
   - Value A
   - Value B
   Exists: 1
+--- !u!114 &6922346586618290801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Light SwordSwings
+  m_EditorClassIdentifier: 
+  Path: event:/Light SwordSwings
+  Guid:
+    Data1: 1994990593
+    Data2: 1234174971
+    Data3: 140431260
+    Data4: -1452225945
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 414
 --- !u!114 &7102772820061116195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -875,6 +1560,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &7262963990041644471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra/Libra Charge Attacks Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra/Libra Charge Attacks Voice
+  Guid:
+    Data1: -228327233
+    Data2: 1172903531
+    Data3: 1968146111
+    Data4: -1102220653
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2360
 --- !u!114 &7560187595897560192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,6 +1614,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 678
+--- !u!114 &7924154459426227060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra/Libra On Select Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra/Libra On Select Voice
+  Guid:
+    Data1: 1736800558
+    Data2: 1136807987
+    Data3: -223500928
+    Data4: 1253733636
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &7973756925949203928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TakingDamage
+  m_EditorClassIdentifier: 
+  Path: event:/TakingDamage
+  Guid:
+    Data1: -219124643
+    Data2: 1241243363
+    Data3: 529385401
+    Data4: -1657758984
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 176
 --- !u!114 &8775987977193744822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -929,6 +1695,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
+--- !u!114 &8779024273033492565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra/Libra NA
+  m_EditorClassIdentifier: 
+  Path: event:/Libra/Libra NA
+  Guid:
+    Data1: 1137302417
+    Data2: 1266483039
+    Data3: -1526947184
+    Data4: 788834218
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2125
 --- !u!114 &8941416524094637178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -956,6 +1749,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 286275
+--- !u!114 &9088074028366108334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra/Libra Tarot Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra/Libra Tarot Voice
+  Guid:
+    Data1: -1869179965
+    Data2: 1256437658
+    Data3: -2033737287
+    Data4: -1090205975
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &9101342762772110789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -983,3 +1803,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 218
+--- !u!114 &9172522687656240087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra/Libra CA
+  m_EditorClassIdentifier: 
+  Path: event:/Libra/Libra CA
+  Guid:
+    Data1: 550263908
+    Data2: 1278454510
+    Data3: 1391707055
+    Data4: -1837866644
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2357
