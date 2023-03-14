@@ -168,6 +168,7 @@ Transform:
   m_Children:
   - {fileID: 4705346360906930665}
   - {fileID: 3814600744336105460}
+  - {fileID: 8512012876218820453}
   m_Father: {fileID: 3016257482074367029}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -438,6 +439,7 @@ MonoBehaviour:
   attack_type: 1
   damage: 0
   destroyOnTouch: 0
+  destroyOnImpact: 0
   lifeTime: 0
   hasInfiniteLifeTime: 1
   launchForce: 0
@@ -544,6 +546,7 @@ MonoBehaviour:
   attack_type: 2
   damage: 40
   destroyOnTouch: 0
+  destroyOnImpact: 0
   lifeTime: 0
   hasInfiniteLifeTime: 1
   launchForce: 0
@@ -572,9 +575,9 @@ GameObject:
   - component: {fileID: 2270851739153014609}
   - component: {fileID: 4888351954668950257}
   - component: {fileID: 778512593599464108}
-  - component: {fileID: 9151882990214347279}
   - component: {fileID: 8429140981890349801}
   - component: {fileID: 4259250144682286860}
+  - component: {fileID: 6296355900872579901}
   m_Layer: 7
   m_Name: Virgo
   m_TagString: Player
@@ -678,7 +681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876586a5a6023f6489fb060da5dc71df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ability1: {fileID: 9151882990214347279}
+  ability1: {fileID: 6296355900872579901}
   ability2: {fileID: 778512593599464108}
   movementVector: {x: 0, y: 0}
   moveSpeed: 40
@@ -792,6 +795,7 @@ MonoBehaviour:
   hitboxes:
   - {fileID: 2118536375946803434}
   - {fileID: 4578110205806340724}
+  - {fileID: 1297891310825874628}
   playerAnimator: {fileID: 8694400067546609426}
 --- !u!114 &4888351954668950257
 MonoBehaviour:
@@ -829,26 +833,6 @@ MonoBehaviour:
   projectile: {fileID: 793811016547114540, guid: 976e25c61ef1fe3449b2c35d2d8467d4, type: 3}
   player: {fileID: 3016257482074367028}
   spawnAsChild: 0
---- !u!114 &9151882990214347279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3016257482074367028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3338907856f95fb4a9b1b83e99d4bf36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownTime: 1
-  abilitySoundCheck: 0
-  playerAnimator: {fileID: 8694400067546609426}
-  triggerName: mixupLibra
-  spawnPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  _obj: {fileID: 2468615175100282329, guid: b7dc105f572afae489f1fd6502c3bcc1, type: 3}
 --- !u!114 &8429140981890349801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -986,11 +970,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc48f0f7946f1a41ac126456f565952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Light: 25
+  Light: 10
   Heavy: 40
-  Ability1: 10
-  Ability2: 0
+  Ability1: 50
+  Ability2: 10
   stacked: 0
+--- !u!114 &6296355900872579901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964d67c06cdda4e478c44f5e4c436e84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 2
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 8694400067546609426}
+  triggerName: iconicVirgo
+  attackData: {fileID: 11400000, guid: 65839e83936abef43bc5d3e3a145d42a, type: 2}
+  isIconic: 1
+  isMixup: 0
+  stateManager: {fileID: 2270851739153014609}
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,6 +1172,111 @@ Transform:
   m_Father: {fileID: 3016257482074367029}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4090433846067347918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8512012876218820453}
+  - component: {fileID: 6579846695702265632}
+  - component: {fileID: 4538498512631336236}
+  - component: {fileID: 1297891310825874628}
+  m_Layer: 0
+  m_Name: Hitbox (Normal)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8512012876218820453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4090433846067347918}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5058594, y: 0.8256775, z: 0.006845236}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8252184879413000340}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &6579846695702265632
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4090433846067347918}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.43688965, y: 0.13825226}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1326904, y: 0.7234955}
+  m_EdgeRadius: 0
+--- !u!114 &4538498512631336236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4090433846067347918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &1297891310825874628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4090433846067347918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack_type: 3
+  damage: 50
+  destroyOnTouch: 0
+  destroyOnImpact: 0
+  lifeTime: 0
+  hasInfiniteLifeTime: 1
+  launchForce: 0
+  hitStunTime: 0.25
+  launchDirection: {x: 10, y: 20}
+  parentSprite: {fileID: 3016257482074367029}
+  ownerID: 0
 --- !u!1 &4785156661360743209
 GameObject:
   m_ObjectHideFlags: 0

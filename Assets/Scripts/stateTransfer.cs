@@ -15,4 +15,5 @@ public class stateTransfer : MonoBehaviour
     {
         stateManager.EndCasting(.2f);
     }
+
 }

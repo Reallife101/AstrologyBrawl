@@ -309,6 +309,22 @@ public class StateManager : MonoBehaviour
         currentState = States.Casting;
     }
 
+    public void StartCastingIconic(AttackFrameSO af)
+    {
+        currentState = States.Casting;
+        atk_state = DamageManager.AttackStates.Ability1;
+        currentAttack = af;
+        UpdateAttackInfo();
+    }
+
+    public void StartCastingMixup(AttackFrameSO af)
+    {
+        currentState = States.Casting;
+        atk_state = DamageManager.AttackStates.Ability2;
+        currentAttack = af;
+        UpdateAttackInfo();
+    }
+
     public void EndCasting(float endlag)
     {
         InitiateRecovery(endlag);
