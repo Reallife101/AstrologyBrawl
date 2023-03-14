@@ -893,6 +893,10 @@ MonoBehaviour:
   abilitySoundCheck: 0
   playerAnimator: {fileID: 6502463303853110821}
   triggerName: mixupPisces
+  attackData: {fileID: 0}
+  isIconic: 0
+  isMixup: 0
+  stateManager: {fileID: 0}
 --- !u!114 &-6680967773165473317
 MonoBehaviour:
   m_ObjectHideFlags: 0
