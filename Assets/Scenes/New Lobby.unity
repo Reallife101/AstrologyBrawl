@@ -960,8 +960,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1872575451}
   m_HandleRect: {fileID: 1872575450}
   m_Direction: 2
-  m_Value: -0.01863354
-  m_Size: 0.99998444
+  m_Value: -0.04375
+  m_Size: 0.99998456
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1540,7 +1540,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.0049902988}
+  m_AnchoredPosition: {x: 66, y: 0.0051179575}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1184701852
@@ -3869,7 +3869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - Ed&DuncanTest
+  - SecondDestination
   - Battlefield
   - BetterBattleField
   - IdiotSandwich
