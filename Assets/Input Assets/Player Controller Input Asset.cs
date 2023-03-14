@@ -215,6 +215,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 },
                 {
                     ""name"": """",
+                    ""id"": ""719053b1-ee6e-497d-925f-74f9db26e79f"",
+                    ""path"": ""<HID::DragonRise Inc.   Generic   USB  Joystick  >/button5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""f2430d5b-367a-490d-a0ae-ae1d40c88140"",
                     ""path"": ""<Keyboard>/1"",
                     ""interactions"": """",
@@ -250,6 +261,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""name"": """",
                     ""id"": ""58e0c65b-91f0-4eb6-82f7-13b23276b43a"",
                     ""path"": ""<Keyboard>/u"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ability1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b7455578-ecde-4f42-97a8-f0652cc0244e"",
+                    ""path"": ""<Joystick>/trigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -303,6 +325,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 },
                 {
                     ""name"": """",
+                    ""id"": ""10e91ba3-0820-4d87-8c63-0cd88b2af819"",
+                    ""path"": ""<HID::DragonRise Inc.   Generic   USB  Joystick  >/button2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LightAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""ac061396-5903-40fd-928a-6310ac6ab963"",
                     ""path"": ""<Mouse>/rightButton"",
                     ""interactions"": """",
@@ -338,6 +371,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""name"": """",
                     ""id"": ""c8053f37-f166-41fc-922d-50c729ccee49"",
                     ""path"": ""<Keyboard>/k"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HeavyAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b6df2cfb-2f50-4dc6-9807-9d7496f737f8"",
+                    ""path"": ""<HID::DragonRise Inc.   Generic   USB  Joystick  >/button3"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -391,6 +435,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 },
                 {
                     ""name"": """",
+                    ""id"": ""ebc95c47-09a1-4244-b5f7-ce5322fa76ee"",
+                    ""path"": ""<HID::DragonRise Inc.   Generic   USB  Joystick  >/button4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ability2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""ec457811-7dca-40a1-a6f0-a21b77b71647"",
                     ""path"": ""<Keyboard>/tab"",
                     ""interactions"": """",
@@ -415,6 +470,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""name"": """",
                     ""id"": ""69e8d405-236f-4aa4-a693-e35d9236eae4"",
                     ""path"": ""<HID::Microntek              USB Joystick          >/button9"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Scoreboard"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2e2f95b5-4e92-4479-bea2-18da9b03cf9d"",
+                    ""path"": ""<HID::DragonRise Inc.   Generic   USB  Joystick  >/button10"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

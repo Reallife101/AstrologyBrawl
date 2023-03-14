@@ -16,6 +16,7 @@ public class HealthItem : MonoBehaviourPunCallbacks
     [SerializeField] private Image a2CDCircle;
     [SerializeField] private TMPro.TMP_Text CD1Text;
     [SerializeField] private TMPro.TMP_Text CD2Text;
+    [SerializeField] private Transform TarotHolder;
 
     private float maxCooldown1;
     private float maxCooldown2;
@@ -110,5 +111,10 @@ public class HealthItem : MonoBehaviourPunCallbacks
             circle.fillAmount = cd / maxcd + Time.deltaTime;
             textObject.text = ((int)cd).ToString();
         }
+    }
+
+    public Transform GetTarotHolder()
+    {
+        return TarotHolder;
     }
 }
