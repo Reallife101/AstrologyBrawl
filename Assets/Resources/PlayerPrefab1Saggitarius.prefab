@@ -181,6 +181,7 @@ MonoBehaviour:
   attack_type: 0
   damage: 0
   destroyOnTouch: 0
+  destroyOnImpact: 0
   lifeTime: 0
   hasInfiniteLifeTime: 1
   launchForce: 0
@@ -868,6 +869,10 @@ MonoBehaviour:
   abilitySoundCheck: 0
   playerAnimator: {fileID: 4757342467156564362}
   triggerName: arrow
+  attackData: {fileID: 0}
+  isIconic: 0
+  isMixup: 0
+  stateManager: {fileID: 0}
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0

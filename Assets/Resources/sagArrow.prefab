@@ -170,6 +170,7 @@ MonoBehaviour:
   attack_type: 3
   damage: 20
   destroyOnTouch: 0
+  destroyOnImpact: 0
   lifeTime: 3
   hasInfiniteLifeTime: 0
   launchForce: 10
