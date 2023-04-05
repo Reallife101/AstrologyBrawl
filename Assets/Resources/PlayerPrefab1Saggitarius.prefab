@@ -782,32 +782,32 @@ MonoBehaviour:
     Path: event:/Saggi/SaggiFireBow
   attackvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -83795675
+      Data2: 1097390913
+      Data3: -1935988089
+      Data4: -1291071886
+    Path: event:/Saggi/Saggi Attack Voice
   chargeattackvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -83795675
+      Data2: 1097390913
+      Data3: -1935988089
+      Data4: -1291071886
+    Path: event:/Saggi/Saggi Attack Voice
   ability1voice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -83795675
+      Data2: 1097390913
+      Data3: -1935988089
+      Data4: -1291071886
+    Path: event:/Saggi/Saggi Attack Voice
   iconicvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -83795675
+      Data2: 1097390913
+      Data3: -1935988089
+      Data4: -1291071886
+    Path: event:/Saggi/Saggi Attack Voice
   genericdeathsound:
     Guid:
       Data1: 1755445942
@@ -824,18 +824,18 @@ MonoBehaviour:
     Path: event:/TakingDamage
   takedamagevoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -2030486782
+      Data2: 1089755701
+      Data3: 2115461765
+      Data4: -905774924
+    Path: event:/Saggi/Saggi Damage Voice
   spawnvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 555938934
+      Data2: 1277800912
+      Data3: -125166946
+      Data4: -1575502301
+    Path: event:/Saggi/Saggi Respawn Voice
 --- !u!114 &1016379177814654591
 MonoBehaviour:
   m_ObjectHideFlags: 0
