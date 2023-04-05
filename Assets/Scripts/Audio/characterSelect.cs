@@ -6,6 +6,7 @@ public class characterSelect : MonoBehaviour
 
 {
     [SerializeField] FMODUnity.EventReference LibraLock;
+    [SerializeField] FMODUnity.EventReference SaggiLock;
 
     PlayerItem PlayerItem;
 
@@ -17,10 +18,13 @@ public class characterSelect : MonoBehaviour
 
     public void CallCharacterLock()
     {
-        if ((int)PlayerItem.playerProperties["playerAvatar"] == 1)
+        if ((int)PlayerItem.playerProperties["playerAvatar"] == 0)
         {
             FMODUnity.RuntimeManager.PlayOneShot(LibraLock);
-            Debug.Log("i am a sussy amogus");
+        }
+        if ((int)PlayerItem.playerProperties["playerAvatar"] == 1)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(SaggiLock);
         }
     }
 }
