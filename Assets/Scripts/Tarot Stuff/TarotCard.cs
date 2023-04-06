@@ -12,7 +12,8 @@ public abstract class TarotCard : MonoBehaviourPunCallbacks
     {
         JUSTICE,
         MAGICIAN,
-        LOVERS
+        LOVERS,
+        FOOL
     }
 
     protected CardNames cardName;

@@ -93,6 +93,11 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         controller = _controller;
     }
 
+    public GameObject GetController()
+    {
+        return controller;
+    }
+
     public void UpdateHealth()
     {
         if(PV.IsMine)

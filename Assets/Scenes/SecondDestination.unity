@@ -208,9 +208,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 174795557}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: spawn
-  m_TagString: Untagged
+  m_TagString: tpPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,9 +239,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 521061777}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: spawn (1)
-  m_TagString: Untagged
+  m_TagString: tpPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -621,9 +621,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 613283101}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: spawn (8)
-  m_TagString: Untagged
+  m_TagString: tpPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -850,9 +850,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 753956944}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: spawn (5)
-  m_TagString: Untagged
+  m_TagString: tpPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -942,9 +942,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 815002062}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: spawn (2)
-  m_TagString: Untagged
+  m_TagString: tpPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1361,9 +1361,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1493433770}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: spawn (6)
-  m_TagString: Untagged
+  m_TagString: tpPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1619,9 +1619,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1730039257}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: spawn (4)
-  m_TagString: Untagged
+  m_TagString: tpPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1650,9 +1650,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1757356397}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: spawn (7)
-  m_TagString: Untagged
+  m_TagString: tpPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1783,9 +1783,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1983620119}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: spawn (3)
-  m_TagString: Untagged
+  m_TagString: tpPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

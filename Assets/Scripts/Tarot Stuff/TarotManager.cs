@@ -8,7 +8,7 @@ public class TarotManager : MonoBehaviourPunCallbacks
 {
     private PhotonView PV;
     private TarotDisplayHUDManager tarotDisplayHUDManager;
-    private List<TarotCard> tarotCards;
+    [SerializeField] private TarotCard[] tarotCards;
 
     private int KillIndex = 0;
     private int MaxKills; 
@@ -17,10 +17,7 @@ public class TarotManager : MonoBehaviourPunCallbacks
     {
         PV = GetComponent<PhotonView>();
         tarotDisplayHUDManager = FindObjectOfType<TarotDisplayHUDManager>();
-        tarotCards = new List<TarotCard>();
-        TarotCardJustice t = new TarotCardJustice();
-        tarotCards.Add(t);
-        
+
         //Sets the kill goal on all TarotManagers
         foreach (Player player in PhotonNetwork.PlayerList)
         {
@@ -64,7 +61,7 @@ public class TarotManager : MonoBehaviourPunCallbacks
         if(ActorNumber == info.Sender.ActorNumber)
         {
             //Picks a random tarot card
-            TarotCard ChosenCard = tarotCards[Random.Range(0, tarotCards.Count)];
+            TarotCard ChosenCard = tarotCards[Random.Range(0, tarotCards.Length)];
             ChosenCard.Effect(ActorNumber);
             tarotDisplayHUDManager.DisplayCard(ChosenCard.GetCardName());
         }
