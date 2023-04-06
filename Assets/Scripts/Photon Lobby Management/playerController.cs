@@ -387,6 +387,12 @@ public class playerController : MonoBehaviour
         scoreboardInputAction.Disable();
     }
 
+    public void magicianDisable()
+    {
+        lightAttackAction.Disable();
+        heavyAttackAction.Disable();
+    }
+
     public void setFastFall(bool b)
     {
         fastFall = b;
