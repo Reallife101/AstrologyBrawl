@@ -378,7 +378,9 @@ public class playerController : MonoBehaviour
     {
         playerMove.Disable();
         playerJump.Disable();
+        //mixup
         abilityOneAction.Disable();
+        //iconic
         abilityTwoAction.Disable();
         lightAttackAction.Disable();
         heavyAttackAction.Disable();
