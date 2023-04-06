@@ -20,7 +20,8 @@ public class TarotManager : MonoBehaviourPunCallbacks
         tarotCards = new List<TarotCard>();
         TarotCardJustice t = new TarotCardJustice();
         tarotCards.Add(t);
-        
+        tarotCards.Add(new TarotCardFool());
+
         //Sets the kill goal on all TarotManagers
         foreach (Player player in PhotonNetwork.PlayerList)
         {
