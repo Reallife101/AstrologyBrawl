@@ -47,10 +47,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayCard: {fileID: 9034031446002839763, guid: c171417b520125f48b323611ce8ca4ef, type: 3}
   LayoutGroupTransform: {fileID: 7998384535096167547}
+  HealthListingTransform: {fileID: 0}
   Images:
   - {fileID: 2800000, guid: 16a77e24041cfd34c95b6b048e96cf21, type: 3}
   - {fileID: 2800000, guid: 048434b40d772c14e96991e68a2a8aa9, type: 3}
   - {fileID: 2800000, guid: f6b754918612b0048a02ca6676babfa7, type: 3}
+  - {fileID: 2800000, guid: 6ce278ca74b41054ca5b49b045778353, type: 3}
   StayTime: 2
 --- !u!114 &7998384534511784937
 MonoBehaviour:

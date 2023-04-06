@@ -9,13 +9,13 @@ using System;
 public class TarotCardFool : TarotCard
 {
 
-    [SerializeField] private float teleportDelay;
+    private static float teleportDelay = .4f;
     private Vector3[] teleportPoints;
     private void Start()
     {
         cardName = CardNames.FOOL;
         //remove    if/when teleport points are set up (not just using respawn)
-        GameObject[] tpObjects = GameObject.FindGameObjectsWithTag("SpawnPoints")[0].GetComponentsInChildren<GameObject>();
+        GameObject[] tpObjects = GameObject.FindGameObjectsWithTag("tpPoints");
         //uncomment if/when teleport points are set up (not just using respawn)
         //GameObject[] tpObjects = GameObject.FindGameObjectsWithTag("FoolTP");
 
@@ -27,7 +27,7 @@ public class TarotCardFool : TarotCard
 
     public override void Effect(int actorNumber)
     {
-        Debug.Log("wOEW ozers ?R !");
+
 
         //something, something, teleport player, wait a bit, teleport, wait, teleport
         Player p = PhotonNetwork.CurrentRoom.GetPlayer(actorNumber);
@@ -37,13 +37,13 @@ public class TarotCardFool : TarotCard
     IEnumerator teleport3Times(Player p)
     {
         GameObject controller = PlayerManager.Find(p).GetController();
-        Vector3[] shuffled = shuffleVectorList(teleportPoints);
+        //Vector3[] shuffled = shuffleVectorList(teleportPoints);
 
-        controller.transform.position = shuffled[0];
+        controller.transform.position = teleportPoints[0];
         yield return new WaitForSeconds(teleportDelay);
-        controller.transform.position = shuffled[1];
+        controller.transform.position = teleportPoints[1];
         yield return new WaitForSeconds(teleportDelay);
-        controller.transform.position = shuffled[2];
+        controller.transform.position = teleportPoints[2];
     }
 
     //input array will have its orders changed
