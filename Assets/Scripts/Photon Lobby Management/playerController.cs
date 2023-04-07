@@ -76,6 +76,7 @@ public class playerController : MonoBehaviour
     private GameObject deathPlatformObject;
     private Coroutine deathPlatformCoroutine;
     [SerializeField] private float respawnInvulTime = 5;
+    [SerializeField] private float deathInputBuffer = 0.5f;
 
     //Grounded things
     [Header("Animations")]
@@ -313,9 +314,17 @@ public class playerController : MonoBehaviour
     public void SpawnDeathPlatform()
     {
         deathPlatformObject = PhotonNetwork.Instantiate(deathPlatformPrefab.name, deathPlatformOrigin.position, Quaternion.identity, 0, new object[] { myPV.ViewID });
-        Debug.Log("Did you even spawn bro");
         myPV.RPC(nameof(HealthOffRPC), RpcTarget.All);
         deathPlatformCoroutine = StartCoroutine(DeathPlatformCountdown());
+        StartCoroutine(SpawnLock());
+    }
+
+    IEnumerator SpawnLock()
+    {
+        Debug.Log("Loch Ness Monster");
+        input.Disable();
+        yield return new WaitForSeconds(deathInputBuffer);
+        input.Enable();
     }
 
     [PunRPC]
