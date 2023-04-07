@@ -74,6 +74,33 @@ MonoBehaviour:
   - Name: 
     Value: 2176
   Exists: 1
+--- !u!114 &-8795746034933454777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi/Saggi Respawn Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi/Saggi Respawn Voice
+  Guid:
+    Data1: 555938934
+    Data2: 1277800912
+    Data3: -125166946
+    Data4: -1575502301
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &-8579067451076109806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,6 +614,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &-1226434210259364905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi/Saggi Attack Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi/Saggi Attack Voice
+  Guid:
+    Data1: -83795675
+    Data2: 1097390913
+    Data3: -1935988089
+    Data4: -1291071886
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &-1105131376724052805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -620,10 +674,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638164167500113335
+  lastModified: 638164172282930382
   FileSizes:
   - Name: Desktop
-    Value: 8992928
+    Value: 9884672
   Exists: 1
 --- !u!114 &-818175465456523738
 MonoBehaviour:
@@ -779,13 +833,19 @@ MonoBehaviour:
   - {fileID: 4277246729416080550}
   - {fileID: -2031375880179708194}
   - {fileID: 7629053057854592390}
+  - {fileID: 8841312889384778736}
+  - {fileID: -1226434210259364905}
+  - {fileID: -8795746034933454777}
+  - {fileID: 8631316216454250864}
+  - {fileID: 6896516217895422126}
+  - {fileID: 9061232662749094474}
   EditorParameters:
   - {fileID: 1096517424297899828}
   MasterBanks:
   - {fileID: -1003797176319671041}
   StringsBanks:
   - {fileID: 3151856808026860248}
-  cacheTime: 638164167500142566
+  cacheTime: 638164172282969449
   cacheVersion: 131601
 --- !u!114 &64368895897383812
 MonoBehaviour:
@@ -1179,10 +1239,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638164167500142566
+  lastModified: 638164172282969449
   FileSizes:
   - Name: Desktop
-    Value: 2244
+    Value: 2520
   Exists: 1
 --- !u!114 &3220169758539584588
 MonoBehaviour:
@@ -1509,6 +1569,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 414
+--- !u!114 &6896516217895422126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi/Saggi Tarot Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi/Saggi Tarot Voice
+  Guid:
+    Data1: -977327650
+    Data2: 1274103921
+    Data3: 77830840
+    Data4: 1009688033
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &6897359367507961776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1724,6 +1811,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 176
+--- !u!114 &8631316216454250864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi/Saggi Victory Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi/Saggi Victory Voice
+  Guid:
+    Data1: 1774902454
+    Data2: 1336048782
+    Data3: 1466027423
+    Data4: -143157867
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &8775987977193744822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1778,6 +1892,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2125
+--- !u!114 &8841312889384778736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi/Saggi Damage Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi/Saggi Damage Voice
+  Guid:
+    Data1: -2030486782
+    Data2: 1089755701
+    Data3: 2115461765
+    Data4: -905774924
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1050
 --- !u!114 &8941416524094637178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1805,6 +1946,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 286275
+--- !u!114 &9061232662749094474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi/Saggi On Select Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi/Saggi On Select Voice
+  Guid:
+    Data1: 1017163237
+    Data2: 1183297019
+    Data3: 964185256
+    Data4: 376819974
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &9088074028366108334
 MonoBehaviour:
   m_ObjectHideFlags: 0
