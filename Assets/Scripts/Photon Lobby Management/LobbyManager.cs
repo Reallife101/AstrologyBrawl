@@ -109,6 +109,11 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         }
     }
 
+    public void Refresh()
+    {
+        PhotonNetwork.LoadLevel("New Lobby");
+    }
+
     public override void OnJoinedRoom()
     {
         //Set ready to false by default on join
