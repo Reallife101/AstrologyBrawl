@@ -110,6 +110,11 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
             return;
         }
 
+        if (gameObject.tag == "Player")
+        {
+            myPV.RPC("ZoomCamRPC", RpcTarget.All, damage);
+        }
+
         myPV.RPC("RPC_UpdateHealthUI", RpcTarget.All, damage);
         myPV.RPC("HitStunned", myPV.Owner, hitStunValue);
         audioManager.CallTakeDamage();
@@ -142,6 +147,13 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
         {
             lastPlayer = info.Sender;
         }
+    }
+
+    [PunRPC]
+    public void ZoomCamRPC(float damage)
+    {
+        Debug.Log("RPC Called - Zoom");
+        ZoomCam.instance.ZoomIn(gameObject, damage);
     }
 
     [PunRPC]
