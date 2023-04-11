@@ -176,7 +176,6 @@ GameObject:
   - component: {fileID: 6444089561079822210}
   - component: {fileID: 2537733571288501683}
   - component: {fileID: 2212813536629527073}
-  - component: {fileID: 2476616717886758476}
   - component: {fileID: 7328130180652725418}
   - component: {fileID: 3127367030068314295}
   - component: {fileID: 2270851739153014609}
@@ -185,6 +184,7 @@ GameObject:
   - component: {fileID: 5359933801895894963}
   - component: {fileID: 2788376477822565664}
   - component: {fileID: 3307503188059390554}
+  - component: {fileID: 2228003283728977349}
   m_Layer: 7
   m_Name: PlayerPrefab1Aquarius
   m_TagString: Player
@@ -311,34 +311,9 @@ MonoBehaviour:
   deathPlatformOrigin: {fileID: 210362362261413941}
   deathPlatformPrefab: {fileID: 1064442647170568961, guid: e12b7ec82a520a94782f02bf5dfd07bc, type: 3}
   respawnInvulTime: 3
+  deathInputBuffer: 0.5
   anim: {fileID: 1487008377844494123}
   crown: {fileID: 6155701482992311211}
---- !u!61 &2476616717886758476
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3016257482074367028}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.032287598, y: 0.089897156}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.75, y: 1.26}
-  m_EdgeRadius: 0
 --- !u!114 &7328130180652725418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,6 +580,37 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+--- !u!60 &2228003283728977349
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.23382568, y: 0.64086914}
+      - {x: -0.12158203, y: 0.6500702}
+      - {x: -0.2320624, y: -0.0022928417}
+      - {x: -0.28389114, y: -0.53106296}
+      - {x: 0.27644503, y: -0.5384786}
+      - {x: 0.32153988, y: 0.033428133}
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
