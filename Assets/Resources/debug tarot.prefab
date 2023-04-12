@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6126602520873760024}
   - component: {fileID: 6126602520873760027}
   m_Layer: 0
-  m_Name: justice tarot
+  m_Name: debug tarot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

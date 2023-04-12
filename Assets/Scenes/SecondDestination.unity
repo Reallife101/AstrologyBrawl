@@ -2588,22 +2588,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
---- !u!1 &7998384534898466442 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1482722692023770879, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
-  m_PrefabInstance: {fileID: 7998384534898466441}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7998384534898466443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7998384534898466442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a13d1b502205454aa1f4a7fe351be8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tarotCards:
-  - {fileID: 6126602520873760026, guid: 2133336e850b2034ebc829c6f2dd2402, type: 3}
