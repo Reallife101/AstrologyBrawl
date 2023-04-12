@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9215758967074723629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/Saggi Victory Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/Saggi Victory Voice
+  Guid:
+    Data1: 1774902454
+    Data2: 1336048782
+    Data3: 1466027423
+    Data4: -143157867
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &-9170774693396753466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,33 +101,6 @@ MonoBehaviour:
   - Name: 
     Value: 2176
   Exists: 1
---- !u!114 &-8795746034933454777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Saggi/Saggi Respawn Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Saggi/Saggi Respawn Voice
-  Guid:
-    Data1: 555938934
-    Data2: 1277800912
-    Data3: -125166946
-    Data4: -1575502301
-  Banks:
-  - {fileID: -1003797176319671041}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5000
 --- !u!114 &-8579067451076109806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,6 +155,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2125
+--- !u!114 &-8451562614030534930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/Saggi Respawn Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/Saggi Respawn Voice
+  Guid:
+    Data1: 555938934
+    Data2: 1277800912
+    Data3: -125166946
+    Data4: -1575502301
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &-8417025469600273984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Heavy Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Heavy Voice
+  Guid:
+    Data1: 766190359
+    Data2: 1300111511
+    Data3: 2081173430
+    Data4: -450985090
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5150
 --- !u!114 &-8238409646333612872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +237,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 168359
+--- !u!114 &-7475908622244087984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Mixup Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Mixup Voice
+  Guid:
+    Data1: -1182395876
+    Data2: 1332786687
+    Data3: 2006464920
+    Data4: 977703238
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &-7386533454776412585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra Walk
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra Walk
+  Guid:
+    Data1: -636072389
+    Data2: 1295834086
+    Data3: 567446449
+    Data4: -729169108
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-7010382520243756119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,7 +318,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2357
---- !u!114 &-6664421434568165895
+--- !u!114 &-6946020308262381998
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,14 +328,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Saggi/SaggiFireBow
+  m_Name: event:/Libra (L)/Libra Tarot Voice
   m_EditorClassIdentifier: 
-  Path: event:/Saggi/SaggiFireBow
+  Path: event:/Libra (L)/Libra Tarot Voice
   Guid:
-    Data1: 454824940
-    Data2: 1115747325
-    Data3: 510496912
-    Data4: -1707087921
+    Data1: -1869179965
+    Data2: 1256437658
+    Data3: -2033737287
+    Data4: -1090205975
   Banks:
   - {fileID: -1003797176319671041}
   IsStream: 0
@@ -236,7 +344,34 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 917
+  Length: 8000
+--- !u!114 &-6753762889334980460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/Saggi On Select Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/Saggi On Select Voice
+  Guid:
+    Data1: 1017163237
+    Data2: 1183297019
+    Data3: 964185256
+    Data4: 376819974
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &-6135323989386017881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,7 +399,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1096
---- !u!114 &-5108364344755235302
+--- !u!114 &-5915872123971814337
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -274,14 +409,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Libra/Libra iconic Voice
+  m_Name: event:/Libra (L)/Libra S2
   m_EditorClassIdentifier: 
-  Path: event:/Libra/Libra iconic Voice
+  Path: event:/Libra (L)/Libra S2
   Guid:
-    Data1: 1233175572
-    Data2: 1223296014
-    Data3: 634649991
-    Data4: 1147410623
+    Data1: -1072902884
+    Data2: 1303518384
+    Data3: 1383783859
+    Data4: -449957530
   Banks:
   - {fileID: -1003797176319671041}
   IsStream: 0
@@ -290,7 +425,34 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2000
+  Length: 3500
+--- !u!114 &-5222942742116795026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/SaggiFireBow
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/SaggiFireBow
+  Guid:
+    Data1: 454824940
+    Data2: 1115747325
+    Data3: 510496912
+    Data4: -1707087921
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 917
 --- !u!114 &-4919227303983880982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,6 +471,87 @@ MonoBehaviour:
     Data2: 1245857384
     Data3: 435654846
     Data4: -1281782737
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &-4831448228408013718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/SaggiKick
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/SaggiKick
+  Guid:
+    Data1: 724042934
+    Data2: 1093022575
+    Data3: 1691782027
+    Data4: 1085473424
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-4657410404668588238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra On Select Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra On Select Voice
+  Guid:
+    Data1: 1736800558
+    Data2: 1136807987
+    Data3: -223500928
+    Data4: 1253733636
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-4349090658977444139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Tarot Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Tarot Voice
+  Guid:
+    Data1: -1570889864
+    Data2: 1314230795
+    Data3: -139076464
+    Data4: 1774606826
   Banks:
   - {fileID: -1003797176319671041}
   IsStream: 0
@@ -345,6 +588,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3500
+--- !u!114 &-3935736995882050884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra Damage Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra Damage Voice
+  Guid:
+    Data1: -2072789013
+    Data2: 1322515083
+    Data3: 1025153712
+    Data4: 2054601307
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &-3783236655924766803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,6 +641,33 @@ MonoBehaviour:
   - Value A
   - Value B
   Exists: 1
+--- !u!114 &-3529952301741215655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Victoriy Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Victoriy Voice
+  Guid:
+    Data1: -885532861
+    Data2: 1239496301
+    Data3: -1371122519
+    Data4: 927858830
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &-3206883452753143964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,7 +695,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &-2912718759737223867
+--- !u!114 &-2774648169384039615
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -408,14 +705,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Libra/Libra Attacks Voice
+  m_Name: event:/Cancer (CN)/Cancer Damage Voice
   m_EditorClassIdentifier: 
-  Path: event:/Libra/Libra Attacks Voice
+  Path: event:/Cancer (CN)/Cancer Damage Voice
   Guid:
-    Data1: 1286916329
-    Data2: 1155034682
-    Data3: 329663414
-    Data4: 184893349
+    Data1: 168782868
+    Data2: 1332589055
+    Data3: 3072182
+    Data4: 1578027079
   Banks:
   - {fileID: -1003797176319671041}
   IsStream: 0
@@ -424,7 +721,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2000
+  Length: 5000
 --- !u!114 &-2754893836709873696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,7 +749,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 917
---- !u!114 &-2647639365496651094
+--- !u!114 &-2443581553726165686
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -462,14 +759,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Saggi/SaggiBowCharge
+  m_Name: event:/Cancer (CN)/Cancer Attack Voice
   m_EditorClassIdentifier: 
-  Path: event:/Saggi/SaggiBowCharge
+  Path: event:/Cancer (CN)/Cancer Attack Voice
   Guid:
-    Data1: 1408123473
-    Data2: 1306814630
-    Data3: -1246489950
-    Data4: 412728660
+    Data1: 1053056811
+    Data2: 1099185330
+    Data3: -1836245877
+    Data4: -887069370
   Banks:
   - {fileID: -1003797176319671041}
   IsStream: 0
@@ -478,34 +775,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1750
---- !u!114 &-2500070837409524017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Saggi/SaggiKick
-  m_EditorClassIdentifier: 
-  Path: event:/Saggi/SaggiKick
-  Guid:
-    Data1: 724042934
-    Data2: 1093022575
-    Data3: 1691782027
-    Data4: 1085473424
-  Banks:
-  - {fileID: -1003797176319671041}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
+  Length: 5000
 --- !u!114 &-2434064459820577030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,8 +856,8 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 109325
---- !u!114 &-1349350301616680429
+  Length: 9578
+--- !u!114 &-1727007470470155864
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -597,41 +867,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Libra/Libra Walk
+  m_Name: event:/Cancer (CN)/Cancer Respawn Vocie
   m_EditorClassIdentifier: 
-  Path: event:/Libra/Libra Walk
+  Path: event:/Cancer (CN)/Cancer Respawn Vocie
   Guid:
-    Data1: -636072389
-    Data2: 1295834086
-    Data3: 567446449
-    Data4: -729169108
-  Banks:
-  - {fileID: -1003797176319671041}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &-1226434210259364905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Saggi/Saggi Attack Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Saggi/Saggi Attack Voice
-  Guid:
-    Data1: -83795675
-    Data2: 1097390913
-    Data3: -1935988089
-    Data4: -1291071886
+    Data1: -1868262821
+    Data2: 1187679142
+    Data3: 259861381
+    Data4: -2009190084
   Banks:
   - {fileID: -1003797176319671041}
   IsStream: 0
@@ -674,10 +917,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638164172282930382
+  lastModified: 638168473065090225
   FileSizes:
   - Name: Desktop
-    Value: 9884672
+    Value: 11072256
   Exists: 1
 --- !u!114 &-818175465456523738
 MonoBehaviour:
@@ -732,6 +975,60 @@ MonoBehaviour:
   - Value A
   - Value B
   Exists: 1
+--- !u!114 &-457547184674416095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra Victory Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra Victory Voice
+  Guid:
+    Data1: -1288913440
+    Data2: 1141206271
+    Data3: 1439633814
+    Data4: -499938434
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-281265479901737373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra CA
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra CA
+  Guid:
+    Data1: 550263908
+    Data2: 1278454510
+    Data3: 1391707055
+    Data4: -1837866644
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2357
 --- !u!114 &-253131657168857296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,77 +1100,59 @@ MonoBehaviour:
   - {fileID: -1003797176319671041}
   EditorEvents:
   - {fileID: 6922346586618290801}
-  - {fileID: -5108364344755235302}
-  - {fileID: 1262621801103693106}
-  - {fileID: 7924154459426227060}
-  - {fileID: -1349350301616680429}
-  - {fileID: -2647639365496651094}
   - {fileID: 7973756925949203928}
-  - {fileID: 4297809072883261208}
-  - {fileID: 9172522687656240087}
   - {fileID: -818175465456523738}
   - {fileID: -2301026919663700217}
-  - {fileID: 8779024273033492565}
   - {fileID: 732811786144628514}
-  - {fileID: 4016799768851927014}
-  - {fileID: 64368895897383812}
-  - {fileID: 2399825439687160411}
   - {fileID: 3220169758539584588}
   - {fileID: 485084169596800302}
-  - {fileID: -2500070837409524017}
   - {fileID: -4919227303983880982}
   - {fileID: 3048027771798240742}
-  - {fileID: 7262963990041644471}
-  - {fileID: 9088074028366108334}
   - {fileID: 341842085877284757}
-  - {fileID: 627932674837605708}
-  - {fileID: -2912718759737223867}
-  - {fileID: 2391147864479636990}
-  - {fileID: -6664421434568165895}
   - {fileID: 4277246729416080550}
   - {fileID: -2031375880179708194}
   - {fileID: 7629053057854592390}
-  - {fileID: 8841312889384778736}
-  - {fileID: -1226434210259364905}
-  - {fileID: -8795746034933454777}
-  - {fileID: 8631316216454250864}
-  - {fileID: 6896516217895422126}
-  - {fileID: 9061232662749094474}
+  - {fileID: 7457868114920832420}
+  - {fileID: -2774648169384039615}
+  - {fileID: 3880363838306564367}
+  - {fileID: -8417025469600273984}
+  - {fileID: -7475908622244087984}
+  - {fileID: -5915872123971814337}
+  - {fileID: 2098436431791447555}
+  - {fileID: -2443581553726165686}
+  - {fileID: -4657410404668588238}
+  - {fileID: -7386533454776412585}
+  - {fileID: -3529952301741215655}
+  - {fileID: 3464862775107781450}
+  - {fileID: -1727007470470155864}
+  - {fileID: 8165533694984221923}
+  - {fileID: -281265479901737373}
+  - {fileID: -8451562614030534930}
+  - {fileID: -4349090658977444139}
+  - {fileID: 7046906323903915116}
+  - {fileID: 3098514902713141742}
+  - {fileID: 4907234374958267569}
+  - {fileID: 9222573508601014496}
+  - {fileID: 9154853794631238766}
+  - {fileID: 1649423896729754632}
+  - {fileID: -4831448228408013718}
+  - {fileID: -9215758967074723629}
+  - {fileID: 6425177277137621587}
+  - {fileID: -6946020308262381998}
+  - {fileID: 2164634319263229803}
+  - {fileID: -457547184674416095}
+  - {fileID: -6753762889334980460}
+  - {fileID: 5692212808363284825}
+  - {fileID: -3935736995882050884}
+  - {fileID: -5222942742116795026}
   EditorParameters:
   - {fileID: 1096517424297899828}
   MasterBanks:
   - {fileID: -1003797176319671041}
   StringsBanks:
   - {fileID: 3151856808026860248}
-  cacheTime: 638164172282969449
+  cacheTime: 638168473065120713
   cacheVersion: 131601
---- !u!114 &64368895897383812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Libra/Libra Ability 1 Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Libra/Libra Ability 1 Voice
-  Guid:
-    Data1: 1158769573
-    Data2: 1119763798
-    Data3: -677033027
-    Data4: 1861507773
-  Banks:
-  - {fileID: -1003797176319671041}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1000
 --- !u!114 &341842085877284757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -928,33 +1207,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 76504
---- !u!114 &627932674837605708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Libra/Libra Victory Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Libra/Libra Victory Voice
-  Guid:
-    Data1: -1288913440
-    Data2: 1141206271
-    Data3: 1439633814
-    Data4: -499938434
-  Banks:
-  - {fileID: -1003797176319671041}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
 --- !u!114 &732811786144628514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1008,33 +1260,6 @@ MonoBehaviour:
   - Value A
   - Value B
   Exists: 1
---- !u!114 &1262621801103693106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Libra/Libra S2
-  m_EditorClassIdentifier: 
-  Path: event:/Libra/Libra S2
-  Guid:
-    Data1: -1072902884
-    Data2: 1303518384
-    Data3: 1383783859
-    Data4: -449957530
-  Banks:
-  - {fileID: -1003797176319671041}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3500
 --- !u!114 &1389602570942497364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1116,7 +1341,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
---- !u!114 &2391147864479636990
+--- !u!114 &1649423896729754632
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1126,14 +1351,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Libra/Libra Damage Voice
+  m_Name: event:/Cancer (CN)/Cancer On Select Voice
   m_EditorClassIdentifier: 
-  Path: event:/Libra/Libra Damage Voice
+  Path: event:/Cancer (CN)/Cancer On Select Voice
   Guid:
-    Data1: -2072789013
-    Data2: 1322515083
-    Data3: 1025153712
-    Data4: 2054601307
+    Data1: 1941250987
+    Data2: 1139303114
+    Data3: 1153192324
+    Data4: -1014409011
   Banks:
   - {fileID: -1003797176319671041}
   IsStream: 0
@@ -1142,8 +1367,8 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8000
---- !u!114 &2399825439687160411
+  Length: 5000
+--- !u!114 &2098436431791447555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1153,14 +1378,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Libra/Libra SA1
+  m_Name: event:/Saggi (SG)/Saggi Attack Voice
   m_EditorClassIdentifier: 
-  Path: event:/Libra/Libra SA1
+  Path: event:/Saggi (SG)/Saggi Attack Voice
   Guid:
-    Data1: -1263338582
-    Data2: 1181528799
-    Data3: -1389501528
-    Data4: -1006291035
+    Data1: -83795675
+    Data2: 1097390913
+    Data3: -1935988089
+    Data4: -1291071886
   Banks:
   - {fileID: -1003797176319671041}
   IsStream: 0
@@ -1169,7 +1394,34 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1096
+  Length: 5000
+--- !u!114 &2164634319263229803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/Saggi Tarot Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/Saggi Tarot Voice
+  Guid:
+    Data1: -977327650
+    Data2: 1274103921
+    Data3: 77830840
+    Data4: 1009688033
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &2529760172681260139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1224,6 +1476,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &3098514902713141742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra NA
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra NA
+  Guid:
+    Data1: 1137302417
+    Data2: 1266483039
+    Data3: -1526947184
+    Data4: 788834218
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2125
 --- !u!114 &3151856808026860248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1239,10 +1518,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638164172282969449
+  lastModified: 638168473065120713
   FileSizes:
   - Name: Desktop
-    Value: 2520
+    Value: 2950
   Exists: 1
 --- !u!114 &3220169758539584588
 MonoBehaviour:
@@ -1298,6 +1577,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &3464862775107781450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/SaggiBowCharge
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/SaggiBowCharge
+  Guid:
+    Data1: 1408123473
+    Data2: 1306814630
+    Data3: -1246489950
+    Data4: 412728660
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1750
 --- !u!114 &3709231723391819915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1325,7 +1631,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2360
---- !u!114 &4016799768851927014
+--- !u!114 &3880363838306564367
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1335,14 +1641,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Saggi/SaggiBowFire
+  m_Name: event:/Libra (L)/Libra iconic Voice
   m_EditorClassIdentifier: 
-  Path: event:/Saggi/SaggiBowFire
+  Path: event:/Libra (L)/Libra iconic Voice
   Guid:
-    Data1: -1909211751
-    Data2: 1136059709
-    Data3: 1884798358
-    Data4: -1317846454
+    Data1: 1233175572
+    Data2: 1223296014
+    Data3: 634649991
+    Data4: 1147410623
   Banks:
   - {fileID: -1003797176319671041}
   IsStream: 0
@@ -1351,7 +1657,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 678
+  Length: 2000
 --- !u!114 &4277246729416080550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1380,33 +1686,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 168359
---- !u!114 &4297809072883261208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Libra/Libra Respawn Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Libra/Libra Respawn Voice
-  Guid:
-    Data1: -850475170
-    Data2: 1309601399
-    Data3: -1832606315
-    Data4: -45864446
-  Banks:
-  - {fileID: -1003797176319671041}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 9000
 --- !u!114 &4623529522711518862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1461,6 +1740,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
+--- !u!114 &4907234374958267569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/SaggiBowFire
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/SaggiBowFire
+  Guid:
+    Data1: -1909211751
+    Data2: 1136059709
+    Data3: 1884798358
+    Data4: -1317846454
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 678
 --- !u!114 &5464750150503008104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1481,6 +1787,33 @@ MonoBehaviour:
     Data4: 405861565
   Banks:
   - {fileID: -1105131376724052805}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &5692212808363284825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra Attacks Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra Attacks Voice
+  Guid:
+    Data1: 1286916329
+    Data2: 1155034682
+    Data3: 329663414
+    Data4: 184893349
+  Banks:
+  - {fileID: -1003797176319671041}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1569,7 +1902,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 414
---- !u!114 &6896516217895422126
+--- !u!114 &6425177277137621587
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1579,14 +1912,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Saggi/Saggi Tarot Voice
+  m_Name: event:/Libra (L)/Libra Charge Attacks Voice
   m_EditorClassIdentifier: 
-  Path: event:/Saggi/Saggi Tarot Voice
+  Path: event:/Libra (L)/Libra Charge Attacks Voice
   Guid:
-    Data1: -977327650
-    Data2: 1274103921
-    Data3: 77830840
-    Data4: 1009688033
+    Data1: -228327233
+    Data2: 1172903531
+    Data3: 1968146111
+    Data4: -1102220653
   Banks:
   - {fileID: -1003797176319671041}
   IsStream: 0
@@ -1595,7 +1928,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5000
+  Length: 2360
 --- !u!114 &6897359367507961776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1649,6 +1982,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 414
+--- !u!114 &7046906323903915116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Iconic Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Iconic Voice
+  Guid:
+    Data1: 300873087
+    Data2: 1109629256
+    Data3: 240547753
+    Data4: -182290035
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &7102772820061116195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1676,7 +2036,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &7262963990041644471
+--- !u!114 &7457868114920832420
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1686,14 +2046,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Libra/Libra Charge Attacks Voice
+  m_Name: event:/Saggi (SG)/Saggi Damage Voice
   m_EditorClassIdentifier: 
-  Path: event:/Libra/Libra Charge Attacks Voice
+  Path: event:/Saggi (SG)/Saggi Damage Voice
   Guid:
-    Data1: -228327233
-    Data2: 1172903531
-    Data3: 1968146111
-    Data4: -1102220653
+    Data1: -2030486782
+    Data2: 1089755701
+    Data3: 2115461765
+    Data4: -905774924
   Banks:
   - {fileID: -1003797176319671041}
   IsStream: 0
@@ -1702,7 +2062,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2360
+  Length: 1050
 --- !u!114 &7560187595897560192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1757,33 +2117,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2925
---- !u!114 &7924154459426227060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Libra/Libra On Select Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Libra/Libra On Select Voice
-  Guid:
-    Data1: 1736800558
-    Data2: 1136807987
-    Data3: -223500928
-    Data4: 1253733636
-  Banks:
-  - {fileID: -1003797176319671041}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
 --- !u!114 &7973756925949203928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1811,7 +2144,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 176
---- !u!114 &8631316216454250864
+--- !u!114 &8165533694984221923
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1821,14 +2154,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Saggi/Saggi Victory Voice
+  m_Name: event:/Libra (L)/Libra Respawn Voice
   m_EditorClassIdentifier: 
-  Path: event:/Saggi/Saggi Victory Voice
+  Path: event:/Libra (L)/Libra Respawn Voice
   Guid:
-    Data1: 1774902454
-    Data2: 1336048782
-    Data3: 1466027423
-    Data4: -143157867
+    Data1: -850475170
+    Data2: 1309601399
+    Data3: -1832606315
+    Data4: -45864446
   Banks:
   - {fileID: -1003797176319671041}
   IsStream: 0
@@ -1837,7 +2170,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5000
+  Length: 9000
 --- !u!114 &8775987977193744822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1865,60 +2198,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
---- !u!114 &8779024273033492565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Libra/Libra NA
-  m_EditorClassIdentifier: 
-  Path: event:/Libra/Libra NA
-  Guid:
-    Data1: 1137302417
-    Data2: 1266483039
-    Data3: -1526947184
-    Data4: 788834218
-  Banks:
-  - {fileID: -1003797176319671041}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2125
---- !u!114 &8841312889384778736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Saggi/Saggi Damage Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Saggi/Saggi Damage Voice
-  Guid:
-    Data1: -2030486782
-    Data2: 1089755701
-    Data3: 2115461765
-    Data4: -905774924
-  Banks:
-  - {fileID: -1003797176319671041}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1050
 --- !u!114 &8941416524094637178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1946,60 +2225,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 286275
---- !u!114 &9061232662749094474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Saggi/Saggi On Select Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Saggi/Saggi On Select Voice
-  Guid:
-    Data1: 1017163237
-    Data2: 1183297019
-    Data3: 964185256
-    Data4: 376819974
-  Banks:
-  - {fileID: -1003797176319671041}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5000
---- !u!114 &9088074028366108334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Libra/Libra Tarot Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Libra/Libra Tarot Voice
-  Guid:
-    Data1: -1869179965
-    Data2: 1256437658
-    Data3: -2033737287
-    Data4: -1090205975
-  Banks:
-  - {fileID: -1003797176319671041}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
 --- !u!114 &9101342762772110789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2027,7 +2252,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 218
---- !u!114 &9172522687656240087
+--- !u!114 &9154853794631238766
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2037,14 +2262,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Libra/Libra CA
+  m_Name: event:/Libra (L)/Libra SA1
   m_EditorClassIdentifier: 
-  Path: event:/Libra/Libra CA
+  Path: event:/Libra (L)/Libra SA1
   Guid:
-    Data1: 550263908
-    Data2: 1278454510
-    Data3: 1391707055
-    Data4: -1837866644
+    Data1: -1263338582
+    Data2: 1181528799
+    Data3: -1389501528
+    Data4: -1006291035
   Banks:
   - {fileID: -1003797176319671041}
   IsStream: 0
@@ -2053,4 +2278,31 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2357
+  Length: 1096
+--- !u!114 &9222573508601014496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra Ability 1 Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra Ability 1 Voice
+  Guid:
+    Data1: 1158769573
+    Data2: 1119763798
+    Data3: -677033027
+    Data4: 1861507773
+  Banks:
+  - {fileID: -1003797176319671041}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
