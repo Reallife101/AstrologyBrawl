@@ -1188,6 +1188,8 @@ GameObject:
   - component: {fileID: 4474876284573430229}
   - component: {fileID: 6010044820890580138}
   - component: {fileID: 7698617104207531558}
+  - component: {fileID: 1080653685376807380}
+  - component: {fileID: 7429282082403004818}
   m_Layer: 0
   m_Name: ShieldIcon
   m_TagString: Untagged
@@ -1282,6 +1284,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 6010044820890580138}
+  - {fileID: 7429282082403004818}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -1303,6 +1306,7 @@ MonoBehaviour:
   shieldIcon: {fileID: 334444404214338013}
   maxSize: 1.26
   playerHealth: {fileID: 7328130180652725418}
+  ai: {fileID: 1080653685376807380}
 --- !u!114 &6010044820890580138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1335,6 +1339,47 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!95 &1080653685376807380
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976939523294001304}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1e8ce0c21b808d04884610bcf964b4e7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7429282082403004818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976939523294001304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 1
+    Name: isActive
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
 --- !u!1 &8151005586860782035
 GameObject:
   m_ObjectHideFlags: 0

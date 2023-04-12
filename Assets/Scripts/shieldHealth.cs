@@ -23,6 +23,9 @@ public class shieldHealth : MonoBehaviourPunCallbacks, IDamageable
     [SerializeField]
     private PlayerHealth playerHealth;
 
+    [SerializeField]
+    private Animator ai;
+
     private bool isActive;
     private bool isInvincible;
     private bool isRegen;
@@ -37,14 +40,12 @@ public class shieldHealth : MonoBehaviourPunCallbacks, IDamageable
         canActivate = true;
         isInvincible = false;
         currentHealth = maxHealth;
-        shieldIcon.enabled = false;
         myPV = GetComponent<PhotonView>();
     }
     public void Die()
     {
         Debug.Log("Shield Broken!");
         isRegen = false;
-        shieldIcon.enabled = false;
         playerHealth.setInvincible(false);
         isInvincible = true;
         canActivate = false;
@@ -62,6 +63,8 @@ public class shieldHealth : MonoBehaviourPunCallbacks, IDamageable
 
     private void Update()
     {
+        ai.SetBool("isActive", isActive);
+
         if (canActivate)
         {
             if (isActive)
@@ -69,7 +72,6 @@ public class shieldHealth : MonoBehaviourPunCallbacks, IDamageable
                 TakeDamage(shieldDrainPerSecond * Time.deltaTime, Vector2.zero, 0);
                 playerHealth.setInvincible(true);
                 isInvincible = false;
-                shieldIcon.enabled = true;
 
                 float size = (currentHealth / maxHealth) * maxSize;
 
@@ -79,7 +81,6 @@ public class shieldHealth : MonoBehaviourPunCallbacks, IDamageable
             {
                 healDamage(shieldRegenPerSecond * Time.deltaTime);
                 playerHealth.setInvincible(false);
-                shieldIcon.enabled = false;
                 isInvincible = true;
             }
         }
