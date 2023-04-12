@@ -49,22 +49,23 @@ public class shieldHealth : MonoBehaviourPunCallbacks, IDamageable
         playerHealth.setInvincible(false);
         isInvincible = true;
         canActivate = false;
+        ai.SetBool("isActive", false);
     }
 
     public void activate()
     {
         isActive = true;
+        ai.SetBool("isActive", true);
     }
 
     public void deactivate()
     {
         isActive = false;
+        ai.SetBool("isActive", false);
     }
 
     private void Update()
     {
-        ai.SetBool("isActive", isActive);
-
         if (canActivate)
         {
             if (isActive)
