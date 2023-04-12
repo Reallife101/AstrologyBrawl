@@ -7,7 +7,7 @@ public class TarotCardDebug : TarotCard
 
     public override void Effect(int actorNumber)
     {
-        Debug.Log("actorNumber");
+        Debug.Log("actorNumber: "+ actorNumber);
 
 
     }

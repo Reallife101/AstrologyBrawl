@@ -30,7 +30,7 @@ public class tarotSpawnManager : MonoBehaviour
             Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Count)];
 
             GameObject tarotCard = tarotCards[Random.Range(0, tarotCards.Count)];
-            PhotonNetwork.Instantiate(tarotCard.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
+            PhotonNetwork.Instantiate(tarotCard.name, spawnPoint.position, Quaternion.identity);
 
         }
     }

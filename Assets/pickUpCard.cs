@@ -7,10 +7,13 @@ using Photon.Realtime;
 public class pickUpCard : MonoBehaviour
 {
     private TarotCard t;
-    
+    private PhotonView pv;
+
+
     void Start()
     {
         t = GetComponent<TarotCard>();
+        pv = GetComponent<PhotonView>();
     }
 
 
@@ -18,8 +21,13 @@ public class pickUpCard : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<playerController>() != null)
         {
-            Player p = collision.gameObject.GetComponent<PhotonView>().Owner;
-            t.Effect(p.ActorNumber);
+
+            if (pv.IsMine)
+            {
+                Player p = collision.gameObject.GetComponent<PhotonView>().Owner;
+                t.Effect(p.ActorNumber);
+                PhotonNetwork.Destroy(gameObject);
+            }
         }
     }
 }
