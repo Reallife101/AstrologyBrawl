@@ -4,6 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
+[RequireComponent(typeof(PhotonView))] 
 public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInstantiateMagicCallback
 {
     [SerializeField] const float MaxHealth = 100f;
@@ -24,7 +25,10 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
 
     private void Awake()
     {
-        myPV = GetComponent<PhotonView>();
+        if (!myPV)
+        {
+            myPV = GetComponent<PhotonView>();
+        }
         audioManager = GetComponent<audioManager>();
     }
 
@@ -38,7 +42,6 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
         {
             if (_player.ActorNumber == myPV.ViewID / PhotonNetwork.MAX_VIEW_IDS)
             {
-                Debug.Log(_player);
                 player = _player;
                 break;
             }
@@ -66,7 +69,6 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     public void healDamage(float heal)
     {
         myPV.RPC("RPC_HealDamage", myPV.Owner, heal);
-        Debug.Log(heal);
     }
 
     [PunRPC]
@@ -83,13 +85,19 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     [PunRPC]
     public void RPC_SetHealthUI(float health)
     {
-        healthItem.IncreaseHealthUI(health);
+        if (healthItem)
+        {
+            healthItem.IncreaseHealthUI(health);
+        }
     }
 
     [PunRPC]
     public void RPC_UpdateHealthUI(float damage)
     {
-        healthItem.DecreaseHealthUI(damage);
+        if (healthItem)
+        {
+            healthItem.DecreaseHealthUI(damage);
+        }
     }
 
     [PunRPC]
@@ -120,7 +128,12 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
         audioManager.CallTakeDamage();
         currentHealth -= damage;
 
-        GetComponent<Rigidbody2D>().AddForce(launchVector, ForceMode2D.Impulse);
+        //apply Force if applicable
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb)
+        {
+            rb.AddForce(launchVector, ForceMode2D.Impulse);
+        }
 
         //if health below 0, die
         if (currentHealth <=0)

@@ -11,6 +11,7 @@ public class playerController : MonoBehaviour
 {
     [SerializeField] Ability ability1;
     [SerializeField] Ability ability2;
+    [SerializeField] shieldHealth shield;
 
     //Input Actions
     private PlayerControllerInputAsset input;
@@ -21,6 +22,7 @@ public class playerController : MonoBehaviour
     public InputAction lightAttackAction { get; private set; }
     public InputAction heavyAttackAction { get; private set; }
     public InputAction scoreboardInputAction { get; private set; }
+    public InputAction playerShield { get; private set; }
 
 
     //Standard move values
@@ -107,6 +109,7 @@ public class playerController : MonoBehaviour
         lightAttackAction = input.Player.LightAttack;
         heavyAttackAction = input.Player.HeavyAttack;
         scoreboardInputAction = input.Player.Scoreboard;
+        playerShield = input.Player.Shield;
 
         playerJump.started += jumpBehavior =>
         {
@@ -218,8 +221,31 @@ public class playerController : MonoBehaviour
                 return;
             }
 
+
             myScoreboard.ToggleScoreboard();
         };
+
+        playerShield.performed += shieldActivate =>
+        {
+            if (!myPV.IsMine)
+            {
+                return;
+            }
+
+            shield.activate();
+        };
+
+        playerShield.canceled += shieldActivate =>
+        {
+            if (!myPV.IsMine)
+            {
+                return;
+            }
+
+            shield.deactivate();
+        };
+
+
     }
 
     // Update is called once per frame
@@ -381,6 +407,7 @@ public class playerController : MonoBehaviour
         lightAttackAction.Enable();
         heavyAttackAction.Enable();
         scoreboardInputAction.Enable();
+        playerShield.Enable();
     }
 
     private void OnDisable()
@@ -394,6 +421,7 @@ public class playerController : MonoBehaviour
         lightAttackAction.Disable();
         heavyAttackAction.Disable();
         scoreboardInputAction.Disable();
+        playerShield.Disable();
     }
 
     public void magicianDisable()
