@@ -1187,6 +1187,7 @@ GameObject:
   - component: {fileID: 3182776710518749582}
   - component: {fileID: 4474876284573430229}
   - component: {fileID: 6010044820890580138}
+  - component: {fileID: 7698617104207531558}
   m_Layer: 0
   m_Name: ShieldIcon
   m_TagString: Untagged
@@ -1318,6 +1319,22 @@ MonoBehaviour:
   m_SynchronizeRotation: 0
   m_SynchronizeScale: 1
   m_UseLocal: 1
+--- !u!58 &7698617104207531558
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976939523294001304}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &8151005586860782035
 GameObject:
   m_ObjectHideFlags: 0
