@@ -13,7 +13,8 @@ public abstract class TarotCard : MonoBehaviourPunCallbacks
         JUSTICE,
         MAGICIAN,
         LOVERS,
-        FOOL
+        FOOL,
+        HERMIT
     }
 
     protected CardNames cardName;
@@ -23,8 +24,9 @@ public abstract class TarotCard : MonoBehaviourPunCallbacks
         return cardName;
     }
 
+    //calls doEffect for everyone described by params me and others
     //do not use for stuff like justice where everything has to be calculated at once before being applied
-    public void doTo(bool me, bool others, int actorNumber)
+    protected void doTo(bool me, bool others, int actorNumber)
     {
         int aNum;
         PhotonView[] controllers = FindObjectsOfType<PhotonView>();
@@ -32,12 +34,12 @@ public abstract class TarotCard : MonoBehaviourPunCallbacks
         {
             for (int i = 0; i < controllers.Length; ++i)
             {
-                Effect(controllers[i].gameObject.GetComponent<PhotonView>().Owner.ActorNumber);
+                doEffect(controllers[i].gameObject.GetComponent<PhotonView>().Owner.ActorNumber);
             }
         }
         else if (me)
         {
-            Effect(actorNumber);
+            doEffect(actorNumber);
         }
         else if (others)
         {
@@ -47,11 +49,15 @@ public abstract class TarotCard : MonoBehaviourPunCallbacks
                 aNum = controllers[i].gameObject.GetComponent<PhotonView>().Owner.ActorNumber;
                 if (aNum != actorNumber)
                 {
-                    Effect(aNum);
+                    doEffect(aNum);
                 }
             }
         }
     }
 
+    //do effect is the behavoir to happen for one player for given actorNumber passed in
+    protected abstract void doEffect(int actorNumber);
+
+    //effect gets called by tarot card collision event
     public abstract void Effect(int actorNumber);
 }

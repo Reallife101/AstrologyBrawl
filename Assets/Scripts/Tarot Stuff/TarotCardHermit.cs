@@ -4,14 +4,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TarotCardMagician : TarotCard
+public class TarotCardHermit : TarotCard
 {
     [SerializeField] private float delay;
-    private static float teleportDelay = .4f;
-    private Vector3[] teleportPoints;
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
-        cardName = CardNames.MAGICIAN;
+        cardName = CardNames.HERMIT;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 
     public override void Effect(int actorNumber)
@@ -24,7 +29,6 @@ public class TarotCardMagician : TarotCard
         Player p = PhotonNetwork.CurrentRoom.GetPlayer(actorNumber);
         PlayerManager pm = PlayerManager.Find(p);
         playerController controller = pm.GetPlayerController();
-        controller.magicianDisable(delay);
+        controller.hermitDisable(delay);
     }
-
 }

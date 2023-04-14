@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea7edf22e475f474781c336244fd9c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0
 --- !u!1 &8821505165250913375
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,6 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tarotCards:
-  - {fileID: 3381779882953563001}
-  - {fileID: 5917596242972577329}
-  - {fileID: 5493755511363477888}
+  - {fileID: 3370260464144262322, guid: 20c2c89dd07d46542ac596f366fae142, type: 3}
+  - {fileID: -7047625774126537778, guid: 58e81af5b9ef33245ac13fa2c729b20b, type: 3}
+  - {fileID: 9072795826238597216, guid: ea5209b4ee2e58246acac42440c22a24, type: 3}
+  - {fileID: 638364993814632538, guid: 42923ccced84e184a8e0623b69faafd3, type: 3}

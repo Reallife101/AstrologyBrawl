@@ -25,7 +25,7 @@ public class TarotCardFool : TarotCard
         }
     }
 
-    public override void Effect(int actorNumber)
+    protected override void doEffect(int actorNumber)
     {
 
 
@@ -65,4 +65,8 @@ public class TarotCardFool : TarotCard
         return rArr;
     }
 
+    public override void Effect(int actorNumber)
+    {
+        doTo(false, true, actorNumber);
+    }
 }

@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 
 using Photon.Pun;
 using Photon.Realtime;
+using System;
+using System.Runtime.CompilerServices;
 
 public class playerController : MonoBehaviour
 {
@@ -396,10 +398,36 @@ public class playerController : MonoBehaviour
         scoreboardInputAction.Disable();
     }
 
-    public void magicianDisable()
+    public void magicianDisable(float delay)
     {
         lightAttackAction.Disable();
         heavyAttackAction.Disable();
+        StartCoroutine(reEnableDelay(delay, magicianReEnable));
+    }
+
+    public void hermitDisable(float delay)
+    {
+        abilityOneAction.Disable();
+        abilityTwoAction.Disable();
+        StartCoroutine(reEnableDelay(delay, hermitReEnable));
+    }
+
+    IEnumerator reEnableDelay(float delay, Action f)
+    {
+        yield return new WaitForSeconds(delay);
+        f();
+    }
+
+    private void magicianReEnable()
+    {
+        lightAttackAction.Enable();
+        heavyAttackAction.Enable();
+    }
+
+    private void hermitReEnable()
+    {
+        abilityOneAction.Enable();
+        abilityTwoAction.Enable();
     }
 
     public void setFastFall(bool b)

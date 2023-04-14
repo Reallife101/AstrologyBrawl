@@ -11,4 +11,9 @@ public class TarotCardDebug : TarotCard
 
 
     }
+
+    protected override void doEffect(int actorNumber)
+    {
+        throw new System.NotImplementedException();
+    }
 }
