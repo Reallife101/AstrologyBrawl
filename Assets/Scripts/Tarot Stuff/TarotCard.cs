@@ -43,6 +43,7 @@ public abstract class TarotCard : MonoBehaviourPunCallbacks
         }
         else if (others)
         {
+            Debug.Log("applying " + cardName + " to others");
             aNum = -1;
             for (int i = 0; i < controllers.Length; ++i)
             {

@@ -400,15 +400,19 @@ public class playerController : MonoBehaviour
 
     public void magicianDisable(float delay)
     {
+        Debug.Log("made it to controller for magician");
         lightAttackAction.Disable();
         heavyAttackAction.Disable();
+        Debug.Log("starting magician coroutine");
         StartCoroutine(reEnableDelay(delay, magicianReEnable));
     }
 
     public void hermitDisable(float delay)
     {
+        Debug.Log("made it to controller for hermit");
         abilityOneAction.Disable();
         abilityTwoAction.Disable();
+        Debug.Log("starting hermit coroutine");
         StartCoroutine(reEnableDelay(delay, hermitReEnable));
     }
 

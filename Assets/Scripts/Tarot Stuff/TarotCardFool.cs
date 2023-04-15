@@ -40,10 +40,13 @@ public class TarotCardFool : TarotCard
         //Vector3[] shuffled = shuffleVectorList(teleportPoints);
 
         controller.transform.position = teleportPoints[0];
+        //Debug.Log("TP 1, player " + p);
         yield return new WaitForSeconds(teleportDelay);
         controller.transform.position = teleportPoints[1];
+        //Debug.Log("TP 2, player " + p);
         yield return new WaitForSeconds(teleportDelay);
         controller.transform.position = teleportPoints[2];
+        //Debug.Log("TP 3, player " + p);
     }
 
     //input array will have its orders changed

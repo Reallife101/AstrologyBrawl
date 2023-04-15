@@ -22,7 +22,7 @@ public class ZoomCam : MonoBehaviour
 
     public void ZoomIn(GameObject focus, float damage)
     {
-        Debug.Log("Zoomin at the speed of sound fr fr");
+        //Debug.Log("Zoomin at the speed of sound fr fr");
         if (damage < damageThreshold)
         {
             return;

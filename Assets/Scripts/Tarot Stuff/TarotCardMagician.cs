@@ -6,9 +6,7 @@ using UnityEngine;
 
 public class TarotCardMagician : TarotCard
 {
-    [SerializeField] private float delay;
-    private static float teleportDelay = .4f;
-    private Vector3[] teleportPoints;
+    private float delay = 3.5f;
     private void Start()
     {
         cardName = CardNames.MAGICIAN;
@@ -16,15 +14,20 @@ public class TarotCardMagician : TarotCard
 
     public override void Effect(int actorNumber)
     {
+        Debug.Log("doing magician");
         doTo(false, true, actorNumber);
     }
 
     protected override void doEffect(int actorNumber)
     {
+        Debug.Log("doing magician to " + actorNumber);
         Player p = PhotonNetwork.CurrentRoom.GetPlayer(actorNumber);
         PlayerManager pm = PlayerManager.Find(p);
         playerController controller = pm.GetPlayerController();
+        Debug.Log("controller: " + controller);
+        Debug.Log("controller call for magician");
         controller.magicianDisable(delay);
+        Debug.Log("magician done");
     }
 
 }
