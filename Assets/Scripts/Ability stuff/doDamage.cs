@@ -100,7 +100,7 @@ public class doDamage : MonoBehaviour
 
             if(shakeTime > 0 && shakePower > 0)
             {
-                pv.RPC("DamageShake", RpcTarget.All);
+                pv.RPC("DamageShake", RpcTarget.All, shakePower, shakeTime);
             }
 
             //Destroy object
@@ -153,9 +153,8 @@ public class doDamage : MonoBehaviour
     }
 
     [PunRPC]
-    private void DamageShake()
+    private void DamageShake(float shakePower, float shakeTime)
     {
-        Debug.Log("Do you even bro, bro?");
         CinemachineShake.Instance.ShakeCamera(shakePower, shakeTime);
     }
 

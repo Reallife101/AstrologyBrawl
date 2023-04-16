@@ -21,7 +21,6 @@ public class CinemachineShake : MonoBehaviour
 
     public void ShakeCamera(float intensity, float time)
     {
-        Debug.Log("AAAAAAAAAAAAAAAAAAA");
         cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = intensity;
         shakeTimer = time;
         shakeTimerTotal = time;

@@ -152,14 +152,12 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     [PunRPC]
     public void ZoomCamRPC(float damage)
     {
-        Debug.Log("RPC Called - Zoom");
         ZoomCam.instance.ZoomIn(gameObject, damage);
     }
 
     [PunRPC]
     public void MakeKillFeedRPC(Player Killer, Player KilledPlayer)
     {
-        Debug.Log("Do we at least rpc?");
         KillFeed.Instance.MakeKillFeed(Killer, KilledPlayer);
     }
 
