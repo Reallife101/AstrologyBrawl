@@ -26,7 +26,7 @@ public class TarotCardMagician : TarotCard
         playerController controller = pm.GetPlayerController();
         Debug.Log("controller: " + controller);
         Debug.Log("controller call for magician");
-        controller.magicianDisable(delay);
+        controller.MagicianDisable(delay);
         Debug.Log("magician done");
     }
 

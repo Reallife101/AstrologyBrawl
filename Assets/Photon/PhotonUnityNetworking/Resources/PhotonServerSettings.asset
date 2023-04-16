@@ -78,6 +78,10 @@ MonoBehaviour:
   - TakeDamage
   - MakeKillFeedRPC
   - ZoomCamRPC
+  - RPC_HermitDisable
+  - RPC_MagicianDisable
+  - RPC_foolTP
+  - RPC_FoolTP
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

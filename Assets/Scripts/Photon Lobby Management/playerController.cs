@@ -398,7 +398,32 @@ public class playerController : MonoBehaviour
         scoreboardInputAction.Disable();
     }
 
-    public void magicianDisable(float delay)
+    public void setFastFall(bool b)
+    {
+        fastFall = b;
+    }
+
+    //you have entered the TAROT ZONE
+    //you have entered the TAROT ZONE
+    //you have entered the TAROT ZONE
+    //you have entered the TAROT ZONE
+    public void MagicianDisable(float delay)
+    {
+        myPV.RPC("RPC_MagicianDisable", myPV.Owner, delay);
+    }
+
+    public void HermitDisable(float delay)
+    {
+        myPV.RPC("RPC_HermitDisable", myPV.Owner, delay);
+    }
+
+    public void FoolTP(Vector3[] points, float delay)
+    {
+        myPV.RPC("RPC_FoolTP", myPV.Owner, points, delay);
+    }
+
+    [PunRPC]
+    private void RPC_MagicianDisable(float delay)
     {
         Debug.Log("made it to controller for magician");
         lightAttackAction.Disable();
@@ -407,7 +432,8 @@ public class playerController : MonoBehaviour
         StartCoroutine(reEnableDelay(delay, magicianReEnable));
     }
 
-    public void hermitDisable(float delay)
+    [PunRPC]
+    private void RPC_HermitDisable(float delay)
     {
         Debug.Log("made it to controller for hermit");
         abilityOneAction.Disable();
@@ -434,11 +460,23 @@ public class playerController : MonoBehaviour
         abilityTwoAction.Enable();
     }
 
-    public void setFastFall(bool b)
+    [PunRPC]
+    private void RPC_FoolTP(Vector3[] points, float delay)
     {
-        fastFall = b;
+        StartCoroutine(teleport3Times(points, delay));
     }
 
+    IEnumerator teleport3Times(Vector3[] points, float delay)
+    {
+        gameObject.transform.position = points[0];
+        //Debug.Log("TP 1, player " + p);
+        yield return new WaitForSeconds(delay);
+        gameObject.transform.position = points[1];
+        //Debug.Log("TP 2, player " + p);
+        yield return new WaitForSeconds(delay);
+        gameObject.transform.position = points[2];
+        //Debug.Log("TP 3, player " + p);
+    }
 
 
 }

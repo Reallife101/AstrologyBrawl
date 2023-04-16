@@ -33,7 +33,7 @@ public class TarotCardHermit : TarotCard
         playerController controller = pm.GetPlayerController();
         Debug.Log("controller: " + controller);
         Debug.Log("controller call for hermit");
-        controller.hermitDisable(delay);
+        controller.HermitDisable(delay);
         Debug.Log("hermit done");
     }
 }
