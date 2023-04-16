@@ -18,6 +18,8 @@ public class doDamage : MonoBehaviour
     [SerializeField] float launchForce;
     [SerializeField] float hitStunTime = 0.25f;
     [SerializeField] Vector2 launchDirection;
+    private float shakeTime = 0f;
+    private float shakePower = 0f;
     [SerializeField] Transform parentSprite;
    
     private GameObject AttackSender;
@@ -96,6 +98,11 @@ public class doDamage : MonoBehaviour
                 dmg.TakeDamage(damage, launchVector.normalized * launchForce, hitStunTime);
             }
 
+            if(shakeTime > 0 && shakePower > 0)
+            {
+                pv.RPC("DamageShake", RpcTarget.All);
+            }
+
             //Destroy object
             if (destroyOnTouch)
             {
@@ -121,7 +128,7 @@ public class doDamage : MonoBehaviour
         multiplier = chardgeMultiplier;
         launchForce = KBValue;
     }
-    public void SetValues(DamageManager.AttackStates type, float hitStunNum, float knockbackNum, Vector2 launchDir, GameObject sender, float chargeMulti = 1)
+    public void SetValues(DamageManager.AttackStates type, float hitStunNum, float knockbackNum, Vector2 launchDir, float shaketime, float shakepower, GameObject sender, float chargeMulti = 1)
     {
         //damage = damageNum;
         attack_type = type;
@@ -130,6 +137,8 @@ public class doDamage : MonoBehaviour
         launchDirection = launchDir;
         AttackSender = sender;
         multiplier = chargeMulti;
+        shakePower = shakepower;
+        shakeTime = shaketime;
     }
 
     public void SetSender(GameObject sender) {
@@ -141,6 +150,13 @@ public class doDamage : MonoBehaviour
     public virtual void extraEffect(float damage)
     {
         //overide for future use
+    }
+
+    [PunRPC]
+    private void DamageShake()
+    {
+        Debug.Log("Do you even bro, bro?");
+        CinemachineShake.Instance.ShakeCamera(shakePower, shakeTime);
     }
 
 }
