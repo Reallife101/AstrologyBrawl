@@ -20,4 +20,6 @@ public class AttackFrameSO : ScriptableObject
     public float chargeTimeForMax;
     public float chargeMultiplier;
     public string freezeFrameName;
+    public float shakeTime;
+    public float shakeIntensity;
 }
