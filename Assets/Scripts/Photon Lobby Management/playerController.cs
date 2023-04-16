@@ -11,6 +11,7 @@ public class playerController : MonoBehaviour
 {
     [SerializeField] Ability ability1;
     [SerializeField] Ability ability2;
+    [SerializeField] shieldHealth shield;
 
     //Input Actions
     private PlayerControllerInputAsset input;
@@ -21,6 +22,7 @@ public class playerController : MonoBehaviour
     public InputAction lightAttackAction { get; private set; }
     public InputAction heavyAttackAction { get; private set; }
     public InputAction scoreboardInputAction { get; private set; }
+    public InputAction playerShield { get; private set; }
 
 
     //Standard move values
@@ -49,6 +51,7 @@ public class playerController : MonoBehaviour
     public bool isGrounded;
     private bool canDoubleJump;
     private bool movementLocked = false;
+    private bool isShielding = false;
     private bool fastFall;
 
     //Grounded things
@@ -107,10 +110,11 @@ public class playerController : MonoBehaviour
         lightAttackAction = input.Player.LightAttack;
         heavyAttackAction = input.Player.HeavyAttack;
         scoreboardInputAction = input.Player.Scoreboard;
+        playerShield = input.Player.Shield;
 
         playerJump.started += jumpBehavior =>
         {
-            if (!myPV.IsMine || movementLocked)
+            if (!myPV.IsMine || movementLocked || isShielding)
             {
                 return;
             }
@@ -145,7 +149,7 @@ public class playerController : MonoBehaviour
 
         abilityOneAction.started += ability1Behavior =>
         {
-            if (!myPV.IsMine || movementLocked)
+            if (!myPV.IsMine || movementLocked || isShielding)
             {
                 return;
             }
@@ -161,7 +165,7 @@ public class playerController : MonoBehaviour
 
         abilityTwoAction.started += ability2Behavior =>
         {
-            if (!myPV.IsMine || movementLocked)
+            if (!myPV.IsMine || movementLocked || isShielding)
             {
                 return;
             }
@@ -177,7 +181,7 @@ public class playerController : MonoBehaviour
 
         lightAttackAction.started += lightAttackBehavior =>
         {
-            if (!myPV.IsMine)
+            if (!myPV.IsMine || isShielding)
             {
                 return;
             }
@@ -189,7 +193,7 @@ public class playerController : MonoBehaviour
 
         heavyAttackAction.performed += heavyAttackBehavior =>
         {
-            if (!myPV.IsMine)
+            if (!myPV.IsMine || isShielding)
             {
                 return;
             }
@@ -218,8 +222,34 @@ public class playerController : MonoBehaviour
                 return;
             }
 
+
             myScoreboard.ToggleScoreboard();
         };
+
+        playerShield.performed += shieldActivate =>
+        {
+            if (!myPV.IsMine)
+            {
+                return;
+            }
+
+            mySM.EndCharge();
+            shield.activate();
+            isShielding = true;
+        };
+
+        playerShield.canceled += shieldActivate =>
+        {
+            if (!myPV.IsMine)
+            {
+                return;
+            }
+
+            shield.deactivate();
+            isShielding = false;
+        };
+
+
     }
 
     // Update is called once per frame
@@ -256,7 +286,7 @@ public class playerController : MonoBehaviour
     public void Movement()
     {
         //If attacking, lock movement
-        if (movementLocked)
+        if (movementLocked || isShielding)
         {
             return;
         }
@@ -381,6 +411,7 @@ public class playerController : MonoBehaviour
         lightAttackAction.Enable();
         heavyAttackAction.Enable();
         scoreboardInputAction.Enable();
+        playerShield.Enable();
     }
 
     private void OnDisable()
@@ -394,6 +425,7 @@ public class playerController : MonoBehaviour
         lightAttackAction.Disable();
         heavyAttackAction.Disable();
         scoreboardInputAction.Disable();
+        playerShield.Disable();
     }
 
     public void magicianDisable()

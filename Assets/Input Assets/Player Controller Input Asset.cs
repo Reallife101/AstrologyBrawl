@@ -89,6 +89,15 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Shield"",
+                    ""type"": ""Button"",
+                    ""id"": ""e3f72685-f50e-4279-a5ac-ed37965b13a8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -487,6 +496,28 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""action"": ""Scoreboard"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bc8a61cc-31b1-41a2-a5d7-639e7d6db772"",
+                    ""path"": ""<Keyboard>/o"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shield"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d5b2f0b3-2ea5-477b-8f84-8e8e77e778d1"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shield"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -777,6 +808,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         m_Player_HeavyAttack = m_Player.FindAction("HeavyAttack", throwIfNotFound: true);
         m_Player_Ability2 = m_Player.FindAction("Ability2", throwIfNotFound: true);
         m_Player_Scoreboard = m_Player.FindAction("Scoreboard", throwIfNotFound: true);
+        m_Player_Shield = m_Player.FindAction("Shield", throwIfNotFound: true);
         // Title
         m_Title = asset.FindActionMap("Title", throwIfNotFound: true);
         m_Title_Start = m_Title.FindAction("Start", throwIfNotFound: true);
@@ -855,6 +887,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
     private readonly InputAction m_Player_HeavyAttack;
     private readonly InputAction m_Player_Ability2;
     private readonly InputAction m_Player_Scoreboard;
+    private readonly InputAction m_Player_Shield;
     public struct PlayerActions
     {
         private @PlayerControllerInputAsset m_Wrapper;
@@ -866,6 +899,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         public InputAction @HeavyAttack => m_Wrapper.m_Player_HeavyAttack;
         public InputAction @Ability2 => m_Wrapper.m_Player_Ability2;
         public InputAction @Scoreboard => m_Wrapper.m_Player_Scoreboard;
+        public InputAction @Shield => m_Wrapper.m_Player_Shield;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -896,6 +930,9 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 @Scoreboard.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnScoreboard;
                 @Scoreboard.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnScoreboard;
                 @Scoreboard.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnScoreboard;
+                @Shield.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShield;
+                @Shield.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShield;
+                @Shield.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShield;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -921,6 +958,9 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 @Scoreboard.started += instance.OnScoreboard;
                 @Scoreboard.performed += instance.OnScoreboard;
                 @Scoreboard.canceled += instance.OnScoreboard;
+                @Shield.started += instance.OnShield;
+                @Shield.performed += instance.OnShield;
+                @Shield.canceled += instance.OnShield;
             }
         }
     }
@@ -1048,6 +1088,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         void OnHeavyAttack(InputAction.CallbackContext context);
         void OnAbility2(InputAction.CallbackContext context);
         void OnScoreboard(InputAction.CallbackContext context);
+        void OnShield(InputAction.CallbackContext context);
     }
     public interface ITitleActions
     {
