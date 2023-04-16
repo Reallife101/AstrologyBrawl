@@ -100,7 +100,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
     public playerController GetPlayerController()
     {
-        return PlayerController;
+        return controller.GetComponent<playerController>();
     }
 
     public void UpdateHealth()

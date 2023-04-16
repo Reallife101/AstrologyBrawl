@@ -288,7 +288,7 @@ public class StateManager : MonoBehaviour
     [PunRPC]
     void HitStunned(float hitStunValue)
     {
-        Debug.Log("Oof ouch owie ow");
+        //Debug.Log("Oof ouch owie ow");
         inputBufferTimeRemaining = 0;
         attackTimeRemaining = 0;
         recoveryTimeLeft = 0;

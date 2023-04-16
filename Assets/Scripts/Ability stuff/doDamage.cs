@@ -73,11 +73,11 @@ public class doDamage : MonoBehaviour
 
             }
 
-            Debug.Log("BEFORE DAMAGE CHANGE " + damage);
+            //Debug.Log("BEFORE DAMAGE CHANGE " + damage);
 
             damage = dmgManager.getAttackValue(attack_type) + stacked_dmg;
 
-            Debug.Log("After Damage Change" + damage);
+            //Debug.Log("After Damage Change" + damage);
             extraEffect(damage);
             //Check to see which launch we should use
             if (launchDirection.magnitude >.1)

@@ -27,4 +27,9 @@ public class TarotCardJustice : TarotCard
             health.setCurrentHealth(NewHealth);
         }
     }
+
+    protected override void doEffect(int actorNumber)
+    {
+        throw new System.NotImplementedException();
+    }
 }

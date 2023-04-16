@@ -4,30 +4,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TarotCardMagician : TarotCard
+public class TarotCardHermit : TarotCard
 {
     private float delay = 3.5f;
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
-        cardName = CardNames.MAGICIAN;
+        cardName = CardNames.HERMIT;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 
     public override void Effect(int actorNumber)
     {
-        Debug.Log("doing magician");
+        Debug.Log("doing hermit");
         doTo(false, true, actorNumber);
     }
 
     protected override void doEffect(int actorNumber)
     {
-        Debug.Log("doing magician to " + actorNumber);
+        Debug.Log("doing hermit to " + actorNumber);
         Player p = PhotonNetwork.CurrentRoom.GetPlayer(actorNumber);
         PlayerManager pm = PlayerManager.Find(p);
         playerController controller = pm.GetPlayerController();
         Debug.Log("controller: " + controller);
-        Debug.Log("controller call for magician");
-        controller.MagicianDisable(delay);
-        Debug.Log("magician done");
+        Debug.Log("controller call for hermit");
+        controller.HermitDisable(delay);
+        Debug.Log("hermit done");
     }
-
 }
