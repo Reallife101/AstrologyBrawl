@@ -210,14 +210,14 @@ public class PlayerManager : MonoBehaviourPunCallbacks
             controller.GetComponent<playerController>().DisableInput();
         }
         float timeElapsed = 0;
-        while (timeElapsed < 10f)
+        while (timeElapsed < 3f)
         {
-            Time.timeScale = Mathf.Lerp(1, 0, timeElapsed / 10f);
+            Time.timeScale = Mathf.Lerp(1, 0, timeElapsed / 3f);
             timeElapsed += Time.unscaledDeltaTime;
             yield return null;
         }
-        Time.timeScale = 1;
         yield return new WaitForSecondsRealtime(1f);
+        Time.timeScale = 1;
         PhotonNetwork.LoadLevel("StatScreenCopy");
         yield return null;
         /*
