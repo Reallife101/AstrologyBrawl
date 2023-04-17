@@ -25,26 +25,16 @@ public class TarotCardFool : TarotCard
         }
     }
 
-    public override void Effect(int actorNumber)
+    protected override void doEffect(int actorNumber)
     {
-
-
         //something, something, teleport player, wait a bit, teleport, wait, teleport
         Player p = PhotonNetwork.CurrentRoom.GetPlayer(actorNumber);
-        StartCoroutine(teleport3Times(p));
+        PlayerManager pm = PlayerManager.Find(p);
+        playerController controller = pm.GetPlayerController();
+        controller.FoolTP(shuffleVectorList(teleportPoints), teleportDelay);
     }
 
-    IEnumerator teleport3Times(Player p)
-    {
-        GameObject controller = PlayerManager.Find(p).GetController();
-        //Vector3[] shuffled = shuffleVectorList(teleportPoints);
-
-        controller.transform.position = teleportPoints[0];
-        yield return new WaitForSeconds(teleportDelay);
-        controller.transform.position = teleportPoints[1];
-        yield return new WaitForSeconds(teleportDelay);
-        controller.transform.position = teleportPoints[2];
-    }
+    
 
     //input array will have its orders changed
     private static Vector3[] shuffleVectorList(Vector3[] arr)
@@ -65,4 +55,8 @@ public class TarotCardFool : TarotCard
         return rArr;
     }
 
+    public override void Effect(int actorNumber)
+    {
+        doTo(false, true, actorNumber);
+    }
 }

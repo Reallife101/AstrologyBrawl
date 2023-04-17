@@ -28,5 +28,10 @@ public class TTestCard : TarotCard
         }
     }
 
-    
+    protected override void doEffect(int actorNumber)
+    {
+        throw new System.NotImplementedException();
+    }
+
+
 }

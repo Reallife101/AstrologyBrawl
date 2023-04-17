@@ -26,7 +26,7 @@ public class KillFeed : MonoBehaviourPunCallbacks
 
     public void MakeKillFeed(Player Killer, Player KilledPlayer)
     {
-        Debug.Log("Please tell me this is working");
+        Debug.Log("Please tell me this is working"); //me fr
         if(Killer != null && KilledPlayer != null)
         {
             KillFeedItem newItem = Instantiate(killFeedItemPrefab, container).GetComponent<KillFeedItem>();

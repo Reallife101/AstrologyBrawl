@@ -21,7 +21,7 @@ public class SpawnProjectile : Ranged
         else
             pv = GetComponent<PhotonView>();
         
-        Debug.Log(pv.GetInstanceID());
+        //Debug.Log(pv.GetInstanceID());
     }
 
     public override void Use()
