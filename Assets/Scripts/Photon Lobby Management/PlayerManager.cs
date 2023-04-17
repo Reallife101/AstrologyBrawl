@@ -209,11 +209,22 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         {
             controller.GetComponent<playerController>().DisableInput();
         }
+        float timeElapsed = 0;
+        while (timeElapsed < 10f)
+        {
+            Time.timeScale = Mathf.Lerp(1, 0, timeElapsed / 10f);
+            timeElapsed += Time.unscaledDeltaTime;
+        }
+        yield return new WaitForSecondsRealtime(1f);
+        PhotonNetwork.LoadLevel("StatScreenCopy");
+        yield return null;
+        /*
         CanvasGroup gameOverText = GameObject.FindWithTag("GameEndSplashText").GetComponent<CanvasGroup>();
         gameOverText.alpha = 1;
         yield return new WaitForSeconds(3f);
         gameOverText.alpha = 0;
         PhotonNetwork.LoadLevel("StatScreenCopy");
+        */
     }
 
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)
