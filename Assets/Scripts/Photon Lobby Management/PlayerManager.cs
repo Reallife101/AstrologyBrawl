@@ -214,7 +214,9 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         {
             Time.timeScale = Mathf.Lerp(1, 0, timeElapsed / 10f);
             timeElapsed += Time.unscaledDeltaTime;
+            yield return null;
         }
+        Time.timeScale = 1;
         yield return new WaitForSecondsRealtime(1f);
         PhotonNetwork.LoadLevel("StatScreenCopy");
         yield return null;
