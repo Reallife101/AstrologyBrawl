@@ -629,6 +629,7 @@ MonoBehaviour:
   deathPlatformOrigin: {fileID: 2815563018896991013}
   deathPlatformPrefab: {fileID: 1064442647170568961, guid: e12b7ec82a520a94782f02bf5dfd07bc, type: 3}
   respawnInvulTime: 3
+  deathInputBuffer: 0.5
   anim: {fileID: 8694400067546609426}
   crown: {fileID: 3132235731925318283}
 --- !u!61 &2476616717886758476

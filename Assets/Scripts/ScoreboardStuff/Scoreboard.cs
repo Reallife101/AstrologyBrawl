@@ -9,6 +9,8 @@ public class Scoreboard : MonoBehaviourPunCallbacks
     [SerializeField] private Transform container;
     [SerializeField] private GameObject scoreboardItemPrefab;
     [SerializeField] private CanvasGroup CanvasGroup;
+    [SerializeField] private GameObject scoreBoardContainer;
+
     private bool scoreboardOff = true;
 
     Dictionary<Player, ScoreboardItem> scoreboardItems = new Dictionary<Player, ScoreboardItem>();
@@ -46,5 +48,8 @@ public class Scoreboard : MonoBehaviourPunCallbacks
             CanvasGroup.alpha = 0;
             scoreboardOff = true;
         }
+
+        scoreBoardContainer.SetActive(!scoreboardOff);                     
+
     }
 }
