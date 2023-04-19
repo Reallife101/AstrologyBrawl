@@ -2526,6 +2526,10 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7714251041973971460, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7998384534511784918, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
       propertyPath: HealthListingTransform
       value: 

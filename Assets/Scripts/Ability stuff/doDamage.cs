@@ -18,6 +18,8 @@ public class doDamage : MonoBehaviour
     [SerializeField] float launchForce;
     [SerializeField] float hitStunTime = 0.25f;
     [SerializeField] Vector2 launchDirection;
+    private float shakeTime = 0f;
+    private float shakePower = 0f;
     [SerializeField] Transform parentSprite;
    
     private GameObject AttackSender;
@@ -71,11 +73,11 @@ public class doDamage : MonoBehaviour
 
             }
 
-            Debug.Log("BEFORE DAMAGE CHANGE " + damage);
+            //Debug.Log("BEFORE DAMAGE CHANGE " + damage);
 
             damage = dmgManager.getAttackValue(attack_type) + stacked_dmg;
 
-            Debug.Log("After Damage Change" + damage);
+            //Debug.Log("After Damage Change" + damage);
             extraEffect(damage);
             //Check to see which launch we should use
             if (launchDirection.magnitude >.1)
@@ -94,6 +96,11 @@ public class doDamage : MonoBehaviour
             {
                 Vector2 launchVector = new Vector2(collision.transform.position.x - transform.position.x, collision.transform.position.y - transform.position.y + 0.25f);
                 dmg.TakeDamage(damage, launchVector.normalized * launchForce, hitStunTime);
+            }
+
+            if(shakeTime > 0 && shakePower > 0)
+            {
+                pv.RPC("DamageShake", RpcTarget.All, shakePower, shakeTime);
             }
 
             //Destroy object
@@ -121,7 +128,7 @@ public class doDamage : MonoBehaviour
         multiplier = chardgeMultiplier;
         launchForce = KBValue;
     }
-    public void SetValues(DamageManager.AttackStates type, float hitStunNum, float knockbackNum, Vector2 launchDir, GameObject sender, float chargeMulti = 1)
+    public void SetValues(DamageManager.AttackStates type, float hitStunNum, float knockbackNum, Vector2 launchDir, float shaketime, float shakepower, GameObject sender, float chargeMulti = 1)
     {
         //damage = damageNum;
         attack_type = type;
@@ -130,6 +137,8 @@ public class doDamage : MonoBehaviour
         launchDirection = launchDir;
         AttackSender = sender;
         multiplier = chargeMulti;
+        shakePower = shakepower;
+        shakeTime = shaketime;
     }
 
     public void SetSender(GameObject sender) {
@@ -141,6 +150,12 @@ public class doDamage : MonoBehaviour
     public virtual void extraEffect(float damage)
     {
         //overide for future use
+    }
+
+    [PunRPC]
+    private void DamageShake(float shakePower, float shakeTime)
+    {
+        CinemachineShake.Instance.ShakeCamera(shakePower, shakeTime);
     }
 
 }

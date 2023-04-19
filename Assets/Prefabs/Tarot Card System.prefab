@@ -282,6 +282,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7998384534658317749}
     m_Modifications:
+    - target: {fileID: 428262151056691364, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 545501925706496026, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -336,6 +340,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+--- !u!1 &1482722692023770879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8821505165250913375, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+  m_PrefabInstance: {fileID: 7998384533520071328}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6682205543194180773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482722692023770879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a13d1b502205454aa1f4a7fe351be8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tarotCards:
+  - {fileID: 6126602520873760026, guid: 20c2c89dd07d46542ac596f366fae142, type: 3}
+  - {fileID: 6126602520873760026, guid: 58e81af5b9ef33245ac13fa2c729b20b, type: 3}
+  - {fileID: 6126602520873760026, guid: ea5209b4ee2e58246acac42440c22a24, type: 3}
+  - {fileID: 6126602520873760026, guid: 42923ccced84e184a8e0623b69faafd3, type: 3}
+  minSpawnTime: 6
+  maxSpawnTime: 7
 --- !u!4 &7597004430339719866 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 545501925706496026, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}

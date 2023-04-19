@@ -54,11 +54,16 @@ public class CountdownManager : MonoBehaviourPunCallbacks
                 pc.enabled = false;
             }
 
-            if (!startTimer && playerControllerList.Length == PhotonNetwork.CurrentRoom.PlayerCount)
+            if (!startTimer && (playerControllerList.Length >= PhotonNetwork.CurrentRoom.PlayerCount))
             {
                 StartCountdownTimer();
                 CountdownAudio.CallCountSound();
             }
+        }
+        else if(!startTimer && PhotonNetwork.CurrentRoom.PlayerCount == 1)
+        {
+            StartCountdownTimer();
+            CountdownAudio.CallCountSound();
         }
 
     }

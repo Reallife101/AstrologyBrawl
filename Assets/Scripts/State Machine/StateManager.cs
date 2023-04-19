@@ -165,7 +165,7 @@ public class StateManager : MonoBehaviour
     {
         foreach(doDamage doD in hitboxes)
         {
-            doD.SetValues(atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, currentAttack.launchDirection, gameObject);
+            doD.SetValues(atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, currentAttack.launchDirection, currentAttack.shakeTime, currentAttack.shakeIntensity, gameObject);
         }
         //Starts the countdown for the current attack's duration, changes damage of the hitbox to match the current attack, and starts the corresponding attack anim
         attackTimeRemaining = currentAttack.duration;
@@ -179,7 +179,7 @@ public class StateManager : MonoBehaviour
     {
         foreach (doDamage doD in hitboxes)
         {
-            doD.SetValues(atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, chargeMulti * currentAttack.launchDirection, gameObject, chargeMulti);
+            doD.SetValues(atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, chargeMulti * currentAttack.launchDirection, currentAttack.shakeTime, currentAttack.shakeIntensity, gameObject, chargeMulti);
         }
         //Starts the countdown for the current attack's duration, changes damage of the hitbox to match the current attack, and starts the corresponding attack anim
         attackTimeRemaining = currentAttack.duration;
@@ -288,7 +288,7 @@ public class StateManager : MonoBehaviour
     [PunRPC]
     void HitStunned(float hitStunValue)
     {
-        Debug.Log("Oof ouch owie ow");
+        //Debug.Log("Oof ouch owie ow");
         inputBufferTimeRemaining = 0;
         attackTimeRemaining = 0;
         recoveryTimeLeft = 0;
