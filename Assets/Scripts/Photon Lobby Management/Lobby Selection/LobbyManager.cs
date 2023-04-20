@@ -7,6 +7,7 @@ using TMPro;
 using Unity.VisualScripting;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 using UnityEngine.InputSystem;
+using ExitGames.Client.Photon;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
@@ -117,14 +118,27 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         //Set ready to false by default on join
+        Debug.Log("JOINING ROOM");
         Hashtable hash = new Hashtable();
         hash.Add("ready", false);
         PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
-        lobbyPanel.SetActive(false);
-        roomPanel.SetActive(true);
+        Debug.Log(PhotonNetwork.LocalPlayer.CustomProperties);
+        if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("left")
+                && (bool)PhotonNetwork.LocalPlayer.CustomProperties["left"])
+        {
+            lobbyPanel.SetActive(true);
+            roomPanel.SetActive(false);
+            PhotonNetwork.LeaveRoom();
+        }
+        else
+        {
+            lobbyPanel.SetActive(false);
+            roomPanel.SetActive(true);
+            UpdatePlayerList();
+        }
         //roomName.text = "Room Name: " + PhotonNetwork.CurrentRoom.Name;
         roomName.text = PhotonNetwork.CurrentRoom.Name;
-        UpdatePlayerList();
+        
     }
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
@@ -235,6 +249,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public void OnClickPlayButton()
     {
+        Debug.Log("PLAY BUTTON");
+        roomPanel.SetActive(false);
+        lobbyPanel.SetActive(true);
         input.Dispose();
         PhotonNetwork.LoadLevel(levelInfo.getSceneName());      
         PhotonNetwork.CurrentRoom.IsOpen = false;

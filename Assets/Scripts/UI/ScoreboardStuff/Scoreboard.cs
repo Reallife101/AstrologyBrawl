@@ -40,16 +40,16 @@ public class Scoreboard : MonoBehaviourPunCallbacks
     {
         if (scoreboardOff)
         {
-            CanvasGroup.alpha = 1;
+            //CanvasGroup.alpha = 1;
             scoreboardOff = false;
         }
         else
         {
-            CanvasGroup.alpha = 0;
+            //CanvasGroup.alpha = 0;
             scoreboardOff = true;
         }
 
-        scoreBoardContainer.SetActive(!scoreboardOff);                     
+        scoreBoardContainer.SetActive(!scoreBoardContainer.activeInHierarchy);                     
 
     }
 }
