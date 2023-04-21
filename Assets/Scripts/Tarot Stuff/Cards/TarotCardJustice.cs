@@ -12,7 +12,6 @@ public class TarotCardJustice : TarotCard
 
     public override void Effect(int actorNumber)
     {
-        Debug.Log("wOEW ozers ?R !");
 
         Health[] Healths = FindObjectsOfType<Health>();
 
