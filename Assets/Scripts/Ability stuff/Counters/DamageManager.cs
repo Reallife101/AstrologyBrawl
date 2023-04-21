@@ -143,7 +143,7 @@ public class DamageManager : MonoBehaviour
     {
         yield return new WaitForSeconds(seconds);
 
-        if (type == "")
+        if (type != "")
         {
             SingleReset(type, damage, wasMultiplied);
         }
@@ -206,7 +206,11 @@ public class DamageManager : MonoBehaviour
         foreach (KeyValuePair<string, Action<float, bool>> funcType in dmgFunctions)
         {
             if (wasMultiplied)
+            {
+                Debug.Log(damage + ", " +  1 / damage);
                 funcType.Value(1 / damage, true); //reciprocal of damage
+                Debug.Log(funcType);
+            }
             else
                 funcType.Value(-damage, false); //(-) symbol for reverting the effects of the damage
         }    

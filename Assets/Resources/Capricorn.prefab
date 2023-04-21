@@ -865,11 +865,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 0}
   triggerName: 
   buffLength: 5
-  lightDamage: 20
-  heavyDamage: 50
-  ability1Damage: 60
-  ability2Damage: 20
-  debuffSpeed: 25
+  damageFactor: 1
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
