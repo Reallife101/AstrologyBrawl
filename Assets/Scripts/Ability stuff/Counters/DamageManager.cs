@@ -23,6 +23,10 @@ public class DamageManager : MonoBehaviour
     }
     //Getter for DoDamage
     public float stackedDamage { get { return stacked; } private set { stacked = value; } }
+    public float lightDamage { get { return Light; } set { Light = value; } }
+    public float heavyDamage { get { return Heavy; } set { Heavy = value; } }
+    public float ability1Damage { get { return Ability1; } set { Ability1 = value; } }
+    public float ability2Damage { get { return Ability2; } set { Ability2 = value; } }
 
     private AttackStates atkState;
 
