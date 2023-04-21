@@ -30,11 +30,8 @@ public class Menu : MonoBehaviourPunCallbacks
     {
         Debug.Log("Leaving Match");
         menuToggle.Disable();
-
-        Hashtable hash = new Hashtable();
-        hash.Add("left", true);
+        Hashtable hash = new Hashtable() { { "left", true } };
         PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
-        Debug.Log(PhotonNetwork.LocalPlayer.CustomProperties);
         PhotonNetwork.LoadLevel(leave_to_level);
     }
 
@@ -54,6 +51,4 @@ public class Menu : MonoBehaviourPunCallbacks
     {
         menuToggle.started -= ToggleMenu; 
     }
-
-
 }

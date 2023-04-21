@@ -118,16 +118,16 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         //Set ready to false by default on join
-        Debug.Log("JOINING ROOM");
         Hashtable hash = new Hashtable();
         hash.Add("ready", false);
         PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
-        Debug.Log(PhotonNetwork.LocalPlayer.CustomProperties);
+
         if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("left")
                 && (bool)PhotonNetwork.LocalPlayer.CustomProperties["left"])
         {
             lobbyPanel.SetActive(true);
             roomPanel.SetActive(false);
+            PhotonNetwork.LocalPlayer.CustomProperties["left"] = null;
             PhotonNetwork.LeaveRoom();
         }
         else
@@ -249,9 +249,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public void OnClickPlayButton()
     {
-        Debug.Log("PLAY BUTTON");
-        roomPanel.SetActive(false);
-        lobbyPanel.SetActive(true);
+
         input.Dispose();
         PhotonNetwork.LoadLevel(levelInfo.getSceneName());      
         PhotonNetwork.CurrentRoom.IsOpen = false;
@@ -260,7 +258,14 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)
     {
+
+        if (changedProps.ContainsKey("left") && (bool)changedProps["left"]) 
+        {
+            PhotonNetwork.LoadLevel("New Lobby");
+        }
+        
         bool allReady = true;
+
         foreach (KeyValuePair<int, Player> player in PhotonNetwork.CurrentRoom.Players)
         {
             if (player.Value.CustomProperties.TryGetValue("ready", out object readyout) && !(bool) readyout)
