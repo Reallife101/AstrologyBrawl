@@ -790,7 +790,7 @@ MonoBehaviour:
   up: {fileID: 5638198919380507358}
   down: {fileID: 4450267995174341297}
   left: {fileID: 3438869680106534213}
-  right: {fileID: 0}
+  right: {fileID: 4650676032788553082}
 --- !u!114 &3438869680106534213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -845,8 +845,8 @@ MonoBehaviour:
   abilitySoundCheck: 0
   playerAnimator: {fileID: 0}
   triggerName: 
-  buffLength: 0
-  newJump: 90
+  buffLength: 5
+  newJump: 100
   newDoubleJump: 75
 --- !u!114 &4650676032788553082
 MonoBehaviour:
@@ -860,6 +860,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6149c158785934c9e20a166a7646d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldownTime: 0
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: 
+  buffLength: 5
+  lightDamage: 20
+  heavyDamage: 50
+  ability1Damage: 60
+  ability2Damage: 20
+  debuffSpeed: 25
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0

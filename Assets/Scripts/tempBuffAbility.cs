@@ -16,6 +16,11 @@ public abstract class tempBuffAbility : Ability
 
     }
 
+    public float getBuffLength()
+    {
+        return buffLength;
+    }
+
     // Start is called before the first frame update
     void Start()
     {

@@ -19,10 +19,10 @@ public class jumpBuff : tempBuffAbility
 
     public override void startEffect()
     {
-        oldJump = pc.MoveSpeed;
+        oldJump = pc.JumpPower;
         pc.JumpPower = newJump;
-        oldDoubleJump = pc.MoveSpeed;
-        pc.JumpPower = newDoubleJump;
+        oldDoubleJump = pc.DoubleJumpPower;
+        pc.DoubleJumpPower = newDoubleJump;
     }
 
     // Start is called before the first frame update

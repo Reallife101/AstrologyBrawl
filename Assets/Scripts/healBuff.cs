@@ -7,40 +7,23 @@ public class healBuff : tempBuffAbility
     [SerializeField] private float tickRate;
     [SerializeField] private float healAmount;
     [SerializeField] private Health playerHealth;
-    private float hold = 0f;
-    private bool check = false;
     public override void endEffect()
     {
-        check = false;
+
     }
 
     public override void startEffect()
     {
-        check = true;
-        hold = tickRate;
+        StartCoroutine(heal());
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        hold = tickRate;
-        check = false;
 
-    }
-
-    // Update is called once per frame
-    void Update()
+    IEnumerator heal()
     {
-        if (check)
+        for (float length = getBuffLength(); length > 0; length -= tickRate)
         {
-            if (hold <=0f)
-            {
-                playerHealth.RPC_HealDamage(healAmount);
-                hold = tickRate;
-            } else 
-            {
-                hold -= Time.deltaTime;
-            }
+            playerHealth.RPC_HealDamage(healAmount);
+            yield return new WaitForSeconds(tickRate);
         }
     }
 }
