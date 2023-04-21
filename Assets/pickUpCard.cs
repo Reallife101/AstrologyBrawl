@@ -21,16 +21,11 @@ public class pickUpCard : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<playerController>() != null)
         {
-            Debug.Log("picked up");
             Player p = collision.gameObject.GetComponent<PhotonView>().Owner;
-            Debug.Log("here 1");
-            t.Effect(p.ActorNumber);
-            Debug.Log("here 2");
             if (pv.IsMine)
             {
-                Debug.Log("by correct player");
+                t.Effect(p.ActorNumber);
                 PhotonNetwork.Destroy(gameObject);
-                Debug.Log("here 3");
             }
         }
     }

@@ -4,18 +4,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TarotCardMagician : TarotCard
+public class TarotDevil : TarotCard
 {
-    private float delay = 3.5f;
-    private void Start()
+    private float delay = 6.66f;
+    private float multiplier = 6.66f;
+    // Start is called before the first frame update
+    void Start()
     {
-        cardName = CardNames.MAGICIAN;
+        cardName = CardNames.JUSTICE;
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
     public override void Effect(int actorNumber)
     {
-        Debug.Log("doing magician");
-        doTo(false, true, actorNumber);
+        doTo(true, false, actorNumber);
     }
 
     protected override void doEffect(int actorNumber)
@@ -23,6 +29,6 @@ public class TarotCardMagician : TarotCard
         Player p = PhotonNetwork.CurrentRoom.GetPlayer(actorNumber);
         PlayerManager pm = PlayerManager.Find(p);
         playerController controller = pm.GetPlayerController();
+        controller.gameObject.GetComponent<DamageManager>().affectAllDamage(multiplier, delay, false, true);
     }
-
 }
