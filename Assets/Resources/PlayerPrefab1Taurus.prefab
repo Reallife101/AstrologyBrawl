@@ -609,33 +609,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footsound:
     Guid:
-      Data1: -1490557312
-      Data2: 1307136215
-      Data3: 1436951690
-      Data4: 2095233066
-    Path: event:/Walkies
-  movementspeed: 0.25
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  movementspeed: 0
   jumpsound:
     Guid:
-      Data1: 1540495566
-      Data2: 1121154774
-      Data3: -1102698050
-      Data4: 623309370
-    Path: event:/Jumps
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   fastfallsound:
     Guid:
-      Data1: 544284601
-      Data2: 1228386974
-      Data3: 311565232
-      Data4: 1173628407
-    Path: event:/FastFall
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   lightattacksound:
     Guid:
-      Data1: 1994990593
-      Data2: 1234174971
-      Data3: 140431260
-      Data4: -1452225945
-    Path: event:/Light SwordSwings
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   heavyattackchargesound:
     Guid:
       Data1: 0
@@ -694,18 +694,18 @@ MonoBehaviour:
     Path: 
   genericdeathsound:
     Guid:
-      Data1: 1755445942
-      Data2: 1245857384
-      Data3: 435654846
-      Data4: -1281782737
-    Path: event:/GenericDeath
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   takedamagesound:
     Guid:
-      Data1: -219124643
-      Data2: 1241243363
-      Data3: 529385401
-      Data4: -1657758984
-    Path: event:/TakingDamage
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   takedamagevoice:
     Guid:
       Data1: 0

@@ -454,10 +454,10 @@ GameObject:
   - component: {fileID: 2270851739153014609}
   - component: {fileID: 4888351954668950257}
   - component: {fileID: 1534817729034488903}
-  - component: {fileID: 5438246184520808946}
   - component: {fileID: 1016379177814654591}
   - component: {fileID: 7052219941287439257}
   - component: {fileID: 1390822457095780555}
+  - component: {fileID: 9206234719804316096}
   m_Layer: 7
   m_Name: PlayerPrefab1Saggitarius
   m_TagString: Player
@@ -688,131 +688,6 @@ MonoBehaviour:
   playerAnimator: {fileID: 4757342467156564362}
   triggerName: mixup
   forceVector: {x: -75, y: 30}
---- !u!114 &5438246184520808946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3016257482074367028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42fbfb6a161788e4c8a6910a037b3796, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  footsound:
-    Guid:
-      Data1: -1490557312
-      Data2: 1307136215
-      Data3: 1436951690
-      Data4: 2095233066
-    Path: event:/Walkies
-  movementspeed: 0.25
-  jumpsound:
-    Guid:
-      Data1: 1540495566
-      Data2: 1121154774
-      Data3: -1102698050
-      Data4: 623309370
-    Path: event:/Jumps
-  fastfallsound:
-    Guid:
-      Data1: 544284601
-      Data2: 1228386974
-      Data3: 311565232
-      Data4: 1173628407
-    Path: event:/FastFall
-  lightattacksound:
-    Guid:
-      Data1: -357560460
-      Data2: 1289921883
-      Data3: 1160808085
-      Data4: 405861565
-    Path: event:/Light PunchesKicks
-  heavyattackchargesound:
-    Guid:
-      Data1: 1408123473
-      Data2: 1306814630
-      Data3: -1246489950
-      Data4: 412728660
-    Path: event:/Saggi/SaggiBowCharge
-  heavyattackreleasesound:
-    Guid:
-      Data1: -1909211751
-      Data2: 1136059709
-      Data3: 1884798358
-      Data4: -1317846454
-    Path: event:/Saggi/SaggiBowFire
-  ability1sound:
-    Guid:
-      Data1: 724042934
-      Data2: 1093022575
-      Data3: 1691782027
-      Data4: 1085473424
-    Path: event:/Saggi/SaggiKick
-  ability2sound:
-    Guid:
-      Data1: 454824940
-      Data2: 1115747325
-      Data3: 510496912
-      Data4: -1707087921
-    Path: event:/Saggi/SaggiFireBow
-  attackvoice:
-    Guid:
-      Data1: -83795675
-      Data2: 1097390913
-      Data3: -1935988089
-      Data4: -1291071886
-    Path: event:/Saggi/Saggi Attack Voice
-  chargeattackvoice:
-    Guid:
-      Data1: -83795675
-      Data2: 1097390913
-      Data3: -1935988089
-      Data4: -1291071886
-    Path: event:/Saggi/Saggi Attack Voice
-  ability1voice:
-    Guid:
-      Data1: -83795675
-      Data2: 1097390913
-      Data3: -1935988089
-      Data4: -1291071886
-    Path: event:/Saggi/Saggi Attack Voice
-  iconicvoice:
-    Guid:
-      Data1: -83795675
-      Data2: 1097390913
-      Data3: -1935988089
-      Data4: -1291071886
-    Path: event:/Saggi/Saggi Attack Voice
-  genericdeathsound:
-    Guid:
-      Data1: 1755445942
-      Data2: 1245857384
-      Data3: 435654846
-      Data4: -1281782737
-    Path: event:/GenericDeath
-  takedamagesound:
-    Guid:
-      Data1: -219124643
-      Data2: 1241243363
-      Data3: 529385401
-      Data4: -1657758984
-    Path: event:/TakingDamage
-  takedamagevoice:
-    Guid:
-      Data1: -2030486782
-      Data2: 1089755701
-      Data3: 2115461765
-      Data4: -905774924
-    Path: event:/Saggi/Saggi Damage Voice
-  spawnvoice:
-    Guid:
-      Data1: 555938934
-      Data2: 1277800912
-      Data3: -125166946
-      Data4: -1575502301
-    Path: event:/Saggi/Saggi Respawn Voice
 --- !u!114 &1016379177814654591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -886,6 +761,131 @@ PolygonCollider2D:
       - {x: 0.2321167, y: 0.12324524}
       - {x: 0.21362305, y: 0.29774475}
       - {x: 0.22211361, y: 0.5788688}
+--- !u!114 &9206234719804316096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42fbfb6a161788e4c8a6910a037b3796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footsound:
+    Guid:
+      Data1: -1490557312
+      Data2: 1307136215
+      Data3: 1436951690
+      Data4: 2095233066
+    Path: event:/Walkies
+  movementspeed: 0.35
+  jumpsound:
+    Guid:
+      Data1: 1540495566
+      Data2: 1121154774
+      Data3: -1102698050
+      Data4: 623309370
+    Path: event:/Jumps
+  fastfallsound:
+    Guid:
+      Data1: 544284601
+      Data2: 1228386974
+      Data3: 311565232
+      Data4: 1173628407
+    Path: event:/FastFall
+  lightattacksound:
+    Guid:
+      Data1: -357560460
+      Data2: 1289921883
+      Data3: 1160808085
+      Data4: 405861565
+    Path: event:/Light PunchesKicks
+  heavyattackchargesound:
+    Guid:
+      Data1: 1408123473
+      Data2: 1306814630
+      Data3: -1246489950
+      Data4: 412728660
+    Path: event:/Saggi (SG)/SaggiBowCharge
+  heavyattackreleasesound:
+    Guid:
+      Data1: -1909211751
+      Data2: 1136059709
+      Data3: 1884798358
+      Data4: -1317846454
+    Path: event:/Saggi (SG)/SaggiBowFire
+  ability1sound:
+    Guid:
+      Data1: 454824940
+      Data2: 1115747325
+      Data3: 510496912
+      Data4: -1707087921
+    Path: event:/Saggi (SG)/SaggiFireBow
+  ability2sound:
+    Guid:
+      Data1: 724042934
+      Data2: 1093022575
+      Data3: 1691782027
+      Data4: 1085473424
+    Path: event:/Saggi (SG)/SaggiKick
+  attackvoice:
+    Guid:
+      Data1: -83795675
+      Data2: 1097390913
+      Data3: -1935988089
+      Data4: -1291071886
+    Path: event:/Saggi (SG)/Saggi Attack Voice
+  chargeattackvoice:
+    Guid:
+      Data1: -83795675
+      Data2: 1097390913
+      Data3: -1935988089
+      Data4: -1291071886
+    Path: event:/Saggi (SG)/Saggi Attack Voice
+  ability1voice:
+    Guid:
+      Data1: -83795675
+      Data2: 1097390913
+      Data3: -1935988089
+      Data4: -1291071886
+    Path: event:/Saggi (SG)/Saggi Attack Voice
+  iconicvoice:
+    Guid:
+      Data1: -83795675
+      Data2: 1097390913
+      Data3: -1935988089
+      Data4: -1291071886
+    Path: event:/Saggi (SG)/Saggi Attack Voice
+  genericdeathsound:
+    Guid:
+      Data1: 1755445942
+      Data2: 1245857384
+      Data3: 435654846
+      Data4: -1281782737
+    Path: event:/GenericDeath
+  takedamagesound:
+    Guid:
+      Data1: -219124643
+      Data2: 1241243363
+      Data3: 529385401
+      Data4: -1657758984
+    Path: event:/TakingDamage
+  takedamagevoice:
+    Guid:
+      Data1: -2030486782
+      Data2: 1089755701
+      Data3: 2115461765
+      Data4: -905774924
+    Path: event:/Saggi (SG)/Saggi Damage Voice
+  spawnvoice:
+    Guid:
+      Data1: 555938934
+      Data2: 1277800912
+      Data3: -125166946
+      Data4: -1575502301
+    Path: event:/Saggi (SG)/Saggi Respawn Voice
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
