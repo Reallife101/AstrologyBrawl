@@ -207,17 +207,9 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         {
             controller.GetComponent<playerController>().DisableInput();
         }
-<<<<<<< HEAD:Assets/Scripts/Photon Lobby Management/player/PlayerManager.cs
-        GameObject gameOverText = GameObject.FindWithTag("GameEndSplashText").transform.GetChild(0).gameObject;
-
-        gameOverText.SetActive(true);
-        yield return new WaitForSeconds(3f);
-        gameOverText.SetActive(false);
-        /*gameOverText.alpha = 1;
-=======
         */
-        CanvasGroup gameOverText = GameObject.FindWithTag("GameEndSplashText").GetComponent<CanvasGroup>();
-        gameOverText.alpha = 1;
+        GameObject gameOverText = GameObject.FindWithTag("GameEndSplashText").transform.GetChild(0).gameObject;
+        gameOverText.SetActive(true);
         float timeElapsed = 0;
         while (timeElapsed < 3f)
         {
@@ -227,17 +219,10 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         }
         yield return new WaitForSecondsRealtime(1f);
         Time.timeScale = 1;
-        gameOverText.alpha = 0;
+        gameOverText.SetActive(false);
         PhotonNetwork.LoadLevel("StatScreenCopy");
         yield return null;
-        /*
-        CanvasGroup gameOverText = GameObject.FindWithTag("GameEndSplashText").GetComponent<CanvasGroup>();
-        gameOverText.alpha = 1;
->>>>>>> master:Assets/Scripts/Photon Lobby Management/PlayerManager.cs
-        yield return new WaitForSeconds(3f);
-        gameOverText.alpha = 0;*/
-        PhotonNetwork.LoadLevel("StatScreenCopy");
-        */
+
     }
 
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)
