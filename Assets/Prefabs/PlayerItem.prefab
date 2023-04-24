@@ -542,14 +542,14 @@ MonoBehaviour:
       Data2: 1136807987
       Data3: -223500928
       Data4: 1253733636
-    Path: event:/Libra/Libra On Select Voice
+    Path: event:/Libra (L)/Libra On Select Voice
   SaggiLock:
     Guid:
       Data1: 1017163237
       Data2: 1183297019
       Data3: 964185256
       Data4: 376819974
-    Path: event:/Saggi/Saggi On Select Voice
+    Path: event:/Saggi (SG)/Saggi On Select Voice
 --- !u!1 &3305554254479663719
 GameObject:
   m_ObjectHideFlags: 0

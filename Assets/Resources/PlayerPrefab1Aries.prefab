@@ -455,8 +455,8 @@ GameObject:
   - component: {fileID: 4888351954668950257}
   - component: {fileID: 3763205129772730148}
   - component: {fileID: 2653056448402107786}
-  - component: {fileID: 7018333871390232831}
   - component: {fileID: 2324208347197343570}
+  - component: {fileID: 316871115358286445}
   m_Layer: 7
   m_Name: PlayerPrefab1Aries
   m_TagString: Player
@@ -734,7 +734,24 @@ MonoBehaviour:
   toggleTime: 0.5
   forceVector: {x: 150, y: 5}
   dm: {fileID: 4742095407731698304}
---- !u!114 &7018333871390232831
+--- !u!114 &2324208347197343570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc48f0f7946f1a41ac126456f565952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Light: 10
+  Heavy: 20
+  Ability1: 50
+  Ability2: 50
+  stacked: 0
+--- !u!114 &316871115358286445
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -859,23 +876,6 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
---- !u!114 &2324208347197343570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3016257482074367028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fc48f0f7946f1a41ac126456f565952, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Light: 10
-  Heavy: 20
-  Ability1: 50
-  Ability2: 50
-  stacked: 0
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
