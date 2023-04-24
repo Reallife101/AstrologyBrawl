@@ -27,7 +27,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks
     Player player;
     characterSelect characterSelect;
 
-    private PlayerControllerInputAsset input;
+    private static PlayerControllerInputAsset input;
     private InputAction select;
     private InputAction move;
 

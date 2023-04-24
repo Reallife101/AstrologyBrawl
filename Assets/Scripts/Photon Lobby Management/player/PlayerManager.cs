@@ -64,10 +64,6 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         {
             healthItem.UpdateCooldown(PlayerController.AbilityOneCurrCooldown, PlayerController.AbilityTwoCurrCooldown);
         }
-
-
-        if (Input.GetKeyDown(KeyCode.P))
-            Spawn();
     }
 
     //Spawns/Respawn player
@@ -212,8 +208,8 @@ public class PlayerManager : MonoBehaviourPunCallbacks
             controller.GetComponent<playerController>().DisableInput();
         }
         */
-        CanvasGroup gameOverText = GameObject.FindWithTag("GameEndSplashText").GetComponent<CanvasGroup>();
-        gameOverText.alpha = 1;
+        GameObject gameOverText = GameObject.FindWithTag("GameEndSplashText").transform.GetChild(0).gameObject;
+        gameOverText.SetActive(true);
         float timeElapsed = 0;
         while (timeElapsed < 3f)
         {
@@ -223,16 +219,10 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         }
         yield return new WaitForSecondsRealtime(1f);
         Time.timeScale = 1;
-        gameOverText.alpha = 0;
+        gameOverText.SetActive(false);
         PhotonNetwork.LoadLevel("StatScreenCopy");
         yield return null;
-        /*
-        CanvasGroup gameOverText = GameObject.FindWithTag("GameEndSplashText").GetComponent<CanvasGroup>();
-        gameOverText.alpha = 1;
-        yield return new WaitForSeconds(3f);
-        gameOverText.alpha = 0;
-        PhotonNetwork.LoadLevel("StatScreenCopy");
-        */
+
     }
 
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)

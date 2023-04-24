@@ -98,6 +98,15 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Menu"",
+                    ""type"": ""Button"",
+                    ""id"": ""83e0bace-4d65-4ded-9ed5-466b71bd20cf"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -518,6 +527,28 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""action"": ""Shield"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8454cd67-49b0-4ec4-959c-9d41bf2b06c3"",
+                    ""path"": ""<Keyboard>/t"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8ed6946c-7650-4526-9628-dd71e127b8d2"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -809,6 +840,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         m_Player_Ability2 = m_Player.FindAction("Ability2", throwIfNotFound: true);
         m_Player_Scoreboard = m_Player.FindAction("Scoreboard", throwIfNotFound: true);
         m_Player_Shield = m_Player.FindAction("Shield", throwIfNotFound: true);
+        m_Player_Menu = m_Player.FindAction("Menu", throwIfNotFound: true);
         // Title
         m_Title = asset.FindActionMap("Title", throwIfNotFound: true);
         m_Title_Start = m_Title.FindAction("Start", throwIfNotFound: true);
@@ -888,6 +920,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
     private readonly InputAction m_Player_Ability2;
     private readonly InputAction m_Player_Scoreboard;
     private readonly InputAction m_Player_Shield;
+    private readonly InputAction m_Player_Menu;
     public struct PlayerActions
     {
         private @PlayerControllerInputAsset m_Wrapper;
@@ -900,6 +933,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         public InputAction @Ability2 => m_Wrapper.m_Player_Ability2;
         public InputAction @Scoreboard => m_Wrapper.m_Player_Scoreboard;
         public InputAction @Shield => m_Wrapper.m_Player_Shield;
+        public InputAction @Menu => m_Wrapper.m_Player_Menu;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -933,6 +967,9 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 @Shield.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShield;
                 @Shield.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShield;
                 @Shield.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShield;
+                @Menu.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
+                @Menu.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
+                @Menu.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -961,6 +998,9 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 @Shield.started += instance.OnShield;
                 @Shield.performed += instance.OnShield;
                 @Shield.canceled += instance.OnShield;
+                @Menu.started += instance.OnMenu;
+                @Menu.performed += instance.OnMenu;
+                @Menu.canceled += instance.OnMenu;
             }
         }
     }
@@ -1089,6 +1129,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         void OnAbility2(InputAction.CallbackContext context);
         void OnScoreboard(InputAction.CallbackContext context);
         void OnShield(InputAction.CallbackContext context);
+        void OnMenu(InputAction.CallbackContext context);
     }
     public interface ITitleActions
     {
