@@ -35,7 +35,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/StatScreen.unity
     guid: 94e07a79491e24f4eadc758047dbf9c7
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/StatsCreenCopy.unity
     guid: 4fc7f8867b00e124295b1af1fabfe076
   m_configObjects: {}

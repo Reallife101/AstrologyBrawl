@@ -26,6 +26,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
     private HealthHUDManager healthHUDManager;
     private HealthItem healthItem;
+    [SerializeField] private AnimationCurve timeSlowCurve;
 
 
     private void Awake()
@@ -201,19 +202,42 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
     private IEnumerator EndGameCoroutine()
     {
+        /*
         if (controller)
         {
             controller.GetComponent<playerController>().DisableInput();
         }
+<<<<<<< HEAD:Assets/Scripts/Photon Lobby Management/player/PlayerManager.cs
         GameObject gameOverText = GameObject.FindWithTag("GameEndSplashText").transform.GetChild(0).gameObject;
 
         gameOverText.SetActive(true);
         yield return new WaitForSeconds(3f);
         gameOverText.SetActive(false);
         /*gameOverText.alpha = 1;
+=======
+        */
+        CanvasGroup gameOverText = GameObject.FindWithTag("GameEndSplashText").GetComponent<CanvasGroup>();
+        gameOverText.alpha = 1;
+        float timeElapsed = 0;
+        while (timeElapsed < 3f)
+        {
+            Time.timeScale = timeSlowCurve.Evaluate(timeElapsed / 3);
+            timeElapsed += Time.unscaledDeltaTime;
+            yield return null;
+        }
+        yield return new WaitForSecondsRealtime(1f);
+        Time.timeScale = 1;
+        gameOverText.alpha = 0;
+        PhotonNetwork.LoadLevel("StatScreenCopy");
+        yield return null;
+        /*
+        CanvasGroup gameOverText = GameObject.FindWithTag("GameEndSplashText").GetComponent<CanvasGroup>();
+        gameOverText.alpha = 1;
+>>>>>>> master:Assets/Scripts/Photon Lobby Management/PlayerManager.cs
         yield return new WaitForSeconds(3f);
         gameOverText.alpha = 0;*/
         PhotonNetwork.LoadLevel("StatScreenCopy");
+        */
     }
 
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)
