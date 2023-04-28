@@ -361,7 +361,7 @@ GameObject:
   - component: {fileID: 8429140981890349801}
   - component: {fileID: 4259250144682286860}
   - component: {fileID: 4971872862019590132}
-  - component: {fileID: 2890454881534688848}
+  - component: {fileID: 4153194197827309814}
   m_Layer: 7
   m_Name: Cancer
   m_TagString: Player
@@ -466,7 +466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876586a5a6023f6489fb060da5dc71df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ability1: {fileID: 2890454881534688848}
+  ability1: {fileID: 4153194197827309814}
   ability2: {fileID: 778512593599464108}
   shield: {fileID: 6934866079556004767}
   movementVector: {x: 0, y: 0}
@@ -589,7 +589,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 8694400067546609426}
   triggerName: mixupVirgo
   spawnOrigin: {fileID: 2204496378394938765}
-  projectile: {fileID: 793811016547114540, guid: 63686c2999f41584e92bab55d12af055, type: 3}
+  projectile: {fileID: 793811016547114540, guid: 3cfc59effa904ea45988eb76187d0171, type: 3}
   player: {fileID: 3016257482074367028}
   spawnAsChild: 0
 --- !u!114 &8429140981890349801
@@ -767,7 +767,7 @@ PolygonCollider2D:
       - {x: 0.19866943, y: -0.011978149}
       - {x: 0.24615479, y: 0.31765747}
       - {x: 0.24610043, y: 0.6913108}
---- !u!114 &2890454881534688848
+--- !u!114 &4153194197827309814
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -783,7 +783,7 @@ MonoBehaviour:
   abilitySoundCheck: 0
   playerAnimator: {fileID: 0}
   triggerName: 
-  spawnOrigin: {fileID: 3016257482074367029}
+  spawnOrigin: {fileID: 0}
   projectile: {fileID: 0}
   player: {fileID: 0}
   spawnAsChild: 0
