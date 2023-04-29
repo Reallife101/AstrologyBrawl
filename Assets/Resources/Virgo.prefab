@@ -809,7 +809,7 @@ MonoBehaviour:
   spawnOrigin: {fileID: 2204496378394938765}
   projectile: {fileID: 793811016547114540, guid: 63686c2999f41584e92bab55d12af055, type: 3}
   player: {fileID: 3016257482074367028}
-  spawnAsChild: 0
+  spawnAsChild: 1
 --- !u!114 &8429140981890349801
 MonoBehaviour:
   m_ObjectHideFlags: 0
