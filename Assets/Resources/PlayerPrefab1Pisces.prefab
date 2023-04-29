@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 2626130579388279935}
   - component: {fileID: 7620858030938602641}
   - component: {fileID: 1855503620430215831}
+  - component: {fileID: 1762311095540328915}
   m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
@@ -359,7 +360,7 @@ MonoBehaviour:
   light: {fileID: 0}
   heavy: {fileID: 0}
   mixup: {fileID: 2424212520170270084}
-  iconic: {fileID: 2626130579388279935}
+  iconic: {fileID: 1762311095540328915}
 --- !u!114 &2626130579388279935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,6 +417,24 @@ MonoBehaviour:
   projectile: {fileID: 1687118924408352, guid: 33b8f8ac539069642b992e6073a7e6ba, type: 3}
   player: {fileID: 3016257482074367028}
   spawnAsChild: 0
+--- !u!114 &1762311095540328915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612861564415972768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a01d21e65a8afc48811532d3d8c8bcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 0
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: iconicPisces
+  ph: {fileID: 7328130180652725418}
+  sm: {fileID: 2270851739153014609}
 --- !u!1 &1555689602611425355
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +486,7 @@ GameObject:
   - component: {fileID: 588164539868698526}
   - component: {fileID: -4260835527681418972}
   - component: {fileID: 2865085918899007960}
+  - component: {fileID: 2227050828701470679}
   - component: {fileID: -6680967773165473317}
   - component: {fileID: 5126118694976086215}
   - component: {fileID: 8199872504141382812}
@@ -578,7 +598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ability1: {fileID: 2865085918899007960}
-  ability2: {fileID: -4260835527681418972}
+  ability2: {fileID: 2227050828701470679}
   shield: {fileID: 6123807670780873708}
   movementVector: {x: 0, y: 0}
   moveSpeed: 40
@@ -716,7 +736,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3016257482074367028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69e347fa4df47734fa006f550012eec3, type: 3}
   m_Name: 
@@ -745,6 +765,26 @@ MonoBehaviour:
   abilitySoundCheck: 0
   playerAnimator: {fileID: 6502463303853110821}
   triggerName: mixupPisces
+  attackData: {fileID: 0}
+  isIconic: 0
+  isMixup: 0
+  stateManager: {fileID: 0}
+--- !u!114 &2227050828701470679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964d67c06cdda4e478c44f5e4c436e84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 2
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 6502463303853110821}
+  triggerName: iconicPisces
   attackData: {fileID: 0}
   isIconic: 0
   isMixup: 0

@@ -351,10 +351,17 @@ public class StateManager : MonoBehaviour
         currentState = States.Casting;
     }
     
+    */
 
     public void setStateIdle()
     {
         currentState = States.Idle;
     }
-    */
+
+    public void enterInfiniteRecovery()
+    {
+        currentState = States.Recovery;
+        recoveryTimeLeft = 100000;
+    }
+    
 }
