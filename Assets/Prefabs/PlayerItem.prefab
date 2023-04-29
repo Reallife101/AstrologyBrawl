@@ -524,6 +524,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3c8f9c75d8dcf6546bfb0e210954b72b, type: 3}
   - {fileID: 21300000, guid: 0fb2a9af37d16764989747a9b2990d93, type: 3}
   - {fileID: 21300002, guid: a75445bb16444f14f96fdf9c734945cc, type: 3}
+  - {fileID: 21300000, guid: 9125c204f566db048a92ebcb64d9d14a, type: 3}
 --- !u!114 &3973905992332843406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,6 +551,34 @@ MonoBehaviour:
       Data3: 964185256
       Data4: 376819974
     Path: event:/Saggi (SG)/Saggi On Select Voice
+  PiscesLock:
+    Guid:
+      Data1: 1246567183
+      Data2: 1320177063
+      Data3: 1323264156
+      Data4: -987561253
+    Path: event:/Pisces (PC)/Pisces On Select Voice
+  TaurusLock:
+    Guid:
+      Data1: -1789533263
+      Data2: 1231328807
+      Data3: 313492112
+      Data4: -1916934584
+    Path: event:/Taurus (TA)/Taurus On Select Voice
+  AquaLock:
+    Guid:
+      Data1: -1417328316
+      Data2: 1286537512
+      Data3: -1788898155
+      Data4: -1801022742
+    Path: event:/Aquarius (AQ)/Aquarius On Select Voice
+  VirgoLock:
+    Guid:
+      Data1: 701842229
+      Data2: 1136924153
+      Data3: -345367372
+      Data4: 934532357
+    Path: event:/Virgo (VG)/Virgo On Select Voice
 --- !u!1 &3305554254479663719
 GameObject:
   m_ObjectHideFlags: 0
