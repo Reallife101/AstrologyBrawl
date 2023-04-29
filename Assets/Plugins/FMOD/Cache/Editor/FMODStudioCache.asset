@@ -97,10 +97,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638179609256744632
+  lastModified: 638183181183490778
   FileSizes:
   - Name: Desktop
-    Value: 14489472
+    Value: 14542432
   Exists: 1
 --- !u!114 &-8660695241562669192
 MonoBehaviour:
@@ -2352,13 +2352,15 @@ MonoBehaviour:
   - {fileID: 4914573189780621543}
   - {fileID: -4198266663645528229}
   - {fileID: 6254346312469881014}
+  - {fileID: 7753220540908684156}
+  - {fileID: 6833332746749565068}
   EditorParameters:
   - {fileID: 2614306763600137121}
   MasterBanks:
   - {fileID: -8825898097862115878}
   StringsBanks:
   - {fileID: 541256043051351972}
-  cacheTime: 638179609256803227
+  cacheTime: 638183181183549366
   cacheVersion: 131601
 --- !u!114 &24763104455481919
 MonoBehaviour:
@@ -2504,10 +2506,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638179609256803227
+  lastModified: 638183181183549366
   FileSizes:
   - Name: Desktop
-    Value: 4286
+    Value: 4366
   Exists: 1
 --- !u!114 &643631350060576329
 MonoBehaviour:
@@ -3904,6 +3906,33 @@ MonoBehaviour:
   - Value A
   - Value B
   Exists: 1
+--- !u!114 &6833332746749565068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Taurus (TA)/Taurus Iconic
+  m_EditorClassIdentifier: 
+  Path: event:/Taurus (TA)/Taurus Iconic
+  Guid:
+    Data1: -1264396393
+    Data2: 1184133421
+    Data3: -1876062283
+    Data4: 1543031840
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1628
 --- !u!114 &6898830527477565884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4015,6 +4044,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
+--- !u!114 &7753220540908684156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Heavy SwordSwings 2
+  m_EditorClassIdentifier: 
+  Path: event:/Heavy SwordSwings 2
+  Guid:
+    Data1: -641284146
+    Data2: 1209009859
+    Data3: 1437124261
+    Data4: 652925392
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2972
 --- !u!114 &7913773995524357412
 MonoBehaviour:
   m_ObjectHideFlags: 0
