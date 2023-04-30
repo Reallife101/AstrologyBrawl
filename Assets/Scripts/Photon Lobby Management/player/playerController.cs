@@ -53,7 +53,6 @@ public class playerController : MonoBehaviour
     public bool isGrounded;
     private bool canDoubleJump;
     private bool movementLocked = false;
-    private bool isShielding = false;
     private bool fastFall;
 
     //Grounded things
@@ -116,7 +115,7 @@ public class playerController : MonoBehaviour
 
         playerJump.started += jumpBehavior =>
         {
-            if (!myPV.IsMine || movementLocked || isShielding)
+            if (!myPV.IsMine || movementLocked)
             {
                 return;
             }
@@ -151,7 +150,7 @@ public class playerController : MonoBehaviour
 
         abilityOneAction.started += ability1Behavior =>
         {
-            if (!myPV.IsMine || movementLocked || isShielding)
+            if (!myPV.IsMine || movementLocked)
             {
                 return;
             }
@@ -167,7 +166,7 @@ public class playerController : MonoBehaviour
 
         abilityTwoAction.started += ability2Behavior =>
         {
-            if (!myPV.IsMine || movementLocked || isShielding)
+            if (!myPV.IsMine || movementLocked)
             {
                 return;
             }
@@ -183,7 +182,7 @@ public class playerController : MonoBehaviour
 
         lightAttackAction.started += lightAttackBehavior =>
         {
-            if (!myPV.IsMine || isShielding)
+            if (!myPV.IsMine || mySM.IsShielding())
             {
                 return;
             }
@@ -195,7 +194,7 @@ public class playerController : MonoBehaviour
 
         heavyAttackAction.performed += heavyAttackBehavior =>
         {
-            if (!myPV.IsMine || isShielding)
+            if (!myPV.IsMine || mySM.IsShielding())
             {
                 return;
             }
@@ -230,14 +229,18 @@ public class playerController : MonoBehaviour
 
         playerShield.performed += shieldActivate =>
         {
-            if (!myPV.IsMine)
+            //If not idle or charging, no shielding allowed
+            if (!myPV.IsMine || !(mySM.currentState == StateManager.States.Idle || mySM.currentState == StateManager.States.Charging))
             {
                 return;
             }
 
-            mySM.EndCharge();
+            if(mySM.currentState == StateManager.States.Charging)
+            {
+                mySM.EndCharge();
+            }
             shield.activate();
-            isShielding = true;
+            mySM.ToggleShield(true);
         };
 
         playerShield.canceled += shieldActivate =>
@@ -248,7 +251,7 @@ public class playerController : MonoBehaviour
             }
 
             shield.deactivate();
-            isShielding = false;
+            mySM.ToggleShield(false);
         };
 
 
@@ -288,7 +291,7 @@ public class playerController : MonoBehaviour
     public void Movement()
     {
         //If attacking, lock movement
-        if (movementLocked || isShielding)
+        if (movementLocked)
         {
             return;
         }
