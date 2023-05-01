@@ -203,10 +203,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638179559325144189
+  lastModified: 638183076454584101
   FileSizes:
   - Name: Desktop
-    Value: 4290
+    Value: 4286
   Exists: 1
 --- !u!114 &-6452595837219697987
 MonoBehaviour:
@@ -424,6 +424,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &-4510535081298668148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Heavy SwordSwings
+  m_EditorClassIdentifier: 
+  Path: event:/Heavy SwordSwings
+  Guid:
+    Data1: -227831648
+    Data2: 1109322166
+    Data3: -1439335233
+    Data4: -965248503
+  Banks:
+  - {fileID: 5839567779806062669}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 908
 --- !u!114 &-4471685551302122756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1108,14 +1135,14 @@ MonoBehaviour:
   - {fileID: -8254928963778501341}
   - {fileID: 6477934397363599496}
   - {fileID: 3530342813511716064}
-  - {fileID: 1416758920252461730}
+  - {fileID: -4510535081298668148}
   EditorParameters:
   - {fileID: -8843665288634594391}
   MasterBanks:
   - {fileID: 5839567779806062669}
   StringsBanks:
   - {fileID: -6490628445310876909}
-  cacheTime: 638179559325144189
+  cacheTime: 638183076454584101
   cacheVersion: 131601
 --- !u!114 &24763104455481919
 MonoBehaviour:
@@ -1252,33 +1279,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &1416758920252461730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Test event
-  m_EditorClassIdentifier: 
-  Path: event:/Test event
-  Guid:
-    Data1: -1230678482
-    Data2: 1155484015
-    Data3: -1748508248
-    Data4: 1424820947
-  Banks:
-  - {fileID: 5839567779806062669}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &1667399502177405261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1753,10 +1753,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638179559325126155
+  lastModified: 638183076454566702
   FileSizes:
   - Name: Desktop
-    Value: 14477344
+    Value: 14489472
   Exists: 1
 --- !u!114 &6041015239135273951
 MonoBehaviour:
