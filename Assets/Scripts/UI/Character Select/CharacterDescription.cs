@@ -163,7 +163,7 @@ public class CharacterDescription : MonoBehaviour
 
     private void ShowDescription(Abilities ability)
     {
-        if (abilityDescription.ContainsKey(currentName))
+        if (abilityDescription.ContainsKey(currentName) && abilityDescription[currentName].ContainsKey(ability))
             descriptionSection.text = abilityDescription[currentName][ability];
         else
             descriptionSection.text = "THIS DESCRIPTION HASN'T BEEN SET UP YET";

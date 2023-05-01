@@ -721,7 +721,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 {
                     ""name"": """",
                     ""id"": ""ede72075-2c81-43f4-a263-a9e710af52eb"",
-                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""path"": ""<Gamepad>/leftStickPress"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
