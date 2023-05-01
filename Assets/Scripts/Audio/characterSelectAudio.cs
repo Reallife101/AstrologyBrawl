@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class characterSelect : MonoBehaviour
+public class characterSelectAudio : MonoBehaviour
 
 {
     [SerializeField] FMODUnity.EventReference LibraLock;
     [SerializeField] FMODUnity.EventReference SaggiLock;
 
-    PlayerItem PlayerItem;
+    CharacterSelect PlayerItem;
 
     public void Awake()
     {
-        PlayerItem = GetComponent<PlayerItem>();
+        PlayerItem = GetComponent<CharacterSelect>();
     }
 
 

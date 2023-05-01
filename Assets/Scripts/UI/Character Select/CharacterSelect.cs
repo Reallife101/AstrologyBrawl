@@ -1,38 +1,50 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 using Photon.Pun;
 using Photon.Realtime;
-using UnityEngine.InputSystem;
-using Unity.VisualScripting;
+using UnityEngine.UI;
 
-public class PlayerItem : MonoBehaviourPunCallbacks
+using UnityEngine;
+
+using UnityEngine.InputSystem;
+using TMPro;
+
+
+public class CharacterSelect : MonoBehaviourPunCallbacks
 {
     public TMP_Text playerName;
-
-    public GameObject playerItemButton;
-
-    public TMP_Text readyUpText;
-
+    //Local Player properties
     public ExitGames.Client.Photon.Hashtable playerProperties = new ExitGames.Client.Photon.Hashtable();
+
+    //Image of the player avatar
     public Image playerAvatar;
+
+    //Sprites of the player avatar for the image
     public Sprite[] avatars;
+    public Sprite[] signs; 
 
-    Player player;
-    characterSelectAudio characterSelect;
-
+    //Variables for controlling input
     private static PlayerControllerInputAsset input;
     private InputAction select;
     private InputAction move;
 
-    bool isReady = false;
+    //Local Player 
+    private Player player = PhotonNetwork.LocalPlayer;
+    
+    //Ready Up Text
+    public TMP_Text readyUpText;
 
-    public void Awake()
+    //Ready Up Bool
+    private bool isReady = false;
+
+    //Audio
+    characterSelectAudio CharacterSelectAudio;
+
+    //Descriptions
+    public CharacterDescription characterDescription;
+
+    void Start()
     {
-        characterSelect = GetComponent<characterSelectAudio>();
-        readyUpText.text = "Ready Up";
+        CharacterSelectAudio = GetComponent<characterSelectAudio>();
+        readyUpText.text = "Ready";
 
 
         input = LobbyManager.input;
@@ -54,26 +66,15 @@ public class PlayerItem : MonoBehaviourPunCallbacks
                 OnClickRight();
         };
 
+        playerName.text =player.NickName;
 
+        characterDescription.ChangeCharacter(0);
         select.Enable();
         move.Enable();
-
     }
 
-    public Player GetPlayer()
-    {
-        return player;
-    }
 
-    public void ApplyLocalChanges()
-    {
-
-
-        playerItemButton.SetActive(true);
-
-    }
-
-    public void SetPlayerInfo(Player _player)
+/*    public void SetPlayerInfo(Player _player)
     {
         playerName.text = _player.NickName;
         player = _player;
@@ -81,29 +82,31 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         {
             if ((bool)readyout)
             {
-                isReady = (bool) readyout; 
+                isReady = (bool)readyout;
                 readyUpText.text = "Unselect";
                 Debug.Log("Existing player, unselect time");
             }
         }
     }
+*/
 
     public void OnClickLeft()
     {
         if ((int)playerProperties["playerAvatar"] == 0)
         {
-            playerProperties["playerAvatar"] = avatars.Length-1;
+            playerProperties["playerAvatar"] = avatars.Length - 1;
         }
         else
         {
             playerProperties["playerAvatar"] = (int)playerProperties["playerAvatar"] - 1;
         }
         PhotonNetwork.SetPlayerCustomProperties(playerProperties);
+        characterDescription.ChangeCharacter((int)playerProperties["playerAvatar"]);
     }
 
     public void OnClickRight()
     {
-        if ((int)playerProperties["playerAvatar"] == avatars.Length-1)
+        if ((int)playerProperties["playerAvatar"] == avatars.Length - 1)
         {
             playerProperties["playerAvatar"] = 0;
         }
@@ -112,6 +115,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks
             playerProperties["playerAvatar"] = (int)playerProperties["playerAvatar"] + 1;
         }
         PhotonNetwork.SetPlayerCustomProperties(playerProperties);
+        characterDescription.ChangeCharacter((int)playerProperties["playerAvatar"]);
     }
 
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, ExitGames.Client.Photon.Hashtable changedProps)
@@ -123,7 +127,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks
 
         if (player.CustomProperties.TryGetValue("ready", out object readyout))
         {
-            
+            isReady = (bool)readyout;
         }
     }
 
@@ -160,12 +164,10 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         ExitGames.Client.Photon.Hashtable hash = new ExitGames.Client.Photon.Hashtable();
         hash.Add("ready", isReady);
         PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
-        
 
         if (isReady)
         {
-            characterSelect.CallCharacterLock();
+            CharacterSelectAudio.CallCharacterLock();
         }
-
     }
 }

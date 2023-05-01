@@ -679,6 +679,42 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""LightAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""7c6c6066-2821-440b-95ed-08659befcc4a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""HeavyAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""e8f48b44-b1c0-48e4-a3a2-08d7fb100354"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Mixup"",
+                    ""type"": ""Button"",
+                    ""id"": ""04568cca-7031-4c9c-8613-0726f8e9d0ee"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Iconic"",
+                    ""type"": ""Button"",
+                    ""id"": ""633de70d-8381-4cea-993d-2cde82628913"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -751,7 +787,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 {
                     ""name"": """",
                     ""id"": ""dfe147ef-bb47-4652-af4e-e94f6c791dc9"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -762,7 +798,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 {
                     ""name"": """",
                     ""id"": ""3b14aec2-e17c-4bac-9d2f-4dfcfafb6128"",
-                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -824,6 +860,94 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""action"": ""UI Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6356180a-fda8-48ff-8a3e-96862d5f0e8c"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LightAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""62ecb199-40e5-4dce-8c39-d38898b668ce"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HeavyAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""264a43a6-905c-4186-aeeb-12b85b113aa6"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mixup"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d239a04e-de3b-4cf8-9d50-22de5c19f919"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Iconic"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bfae73dd-8a77-456c-8f44-9ebba2728ee4"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LightAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b8c4fa19-e03c-4668-b758-9224647a4565"",
+                    ""path"": ""<Keyboard>/k"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HeavyAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1a87344a-2975-4cb9-92ab-bca5f6c74839"",
+                    ""path"": ""<Keyboard>/u"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mixup"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ce1c6905-d2f4-43ba-ace3-e8a1814c0468"",
+                    ""path"": ""<Keyboard>/i"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Iconic"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -853,6 +977,10 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         m_UI_Decrease = m_UI.FindAction("Decrease", throwIfNotFound: true);
         m_UI_Start = m_UI.FindAction("Start", throwIfNotFound: true);
         m_UI_Back = m_UI.FindAction("Back", throwIfNotFound: true);
+        m_UI_LightAttack = m_UI.FindAction("LightAttack", throwIfNotFound: true);
+        m_UI_HeavyAttack = m_UI.FindAction("HeavyAttack", throwIfNotFound: true);
+        m_UI_Mixup = m_UI.FindAction("Mixup", throwIfNotFound: true);
+        m_UI_Iconic = m_UI.FindAction("Iconic", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1056,6 +1184,10 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
     private readonly InputAction m_UI_Decrease;
     private readonly InputAction m_UI_Start;
     private readonly InputAction m_UI_Back;
+    private readonly InputAction m_UI_LightAttack;
+    private readonly InputAction m_UI_HeavyAttack;
+    private readonly InputAction m_UI_Mixup;
+    private readonly InputAction m_UI_Iconic;
     public struct UIActions
     {
         private @PlayerControllerInputAsset m_Wrapper;
@@ -1066,6 +1198,10 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         public InputAction @Decrease => m_Wrapper.m_UI_Decrease;
         public InputAction @Start => m_Wrapper.m_UI_Start;
         public InputAction @Back => m_Wrapper.m_UI_Back;
+        public InputAction @LightAttack => m_Wrapper.m_UI_LightAttack;
+        public InputAction @HeavyAttack => m_Wrapper.m_UI_HeavyAttack;
+        public InputAction @Mixup => m_Wrapper.m_UI_Mixup;
+        public InputAction @Iconic => m_Wrapper.m_UI_Iconic;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1093,6 +1229,18 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 @Back.started -= m_Wrapper.m_UIActionsCallbackInterface.OnBack;
                 @Back.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnBack;
                 @Back.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnBack;
+                @LightAttack.started -= m_Wrapper.m_UIActionsCallbackInterface.OnLightAttack;
+                @LightAttack.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnLightAttack;
+                @LightAttack.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnLightAttack;
+                @HeavyAttack.started -= m_Wrapper.m_UIActionsCallbackInterface.OnHeavyAttack;
+                @HeavyAttack.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnHeavyAttack;
+                @HeavyAttack.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnHeavyAttack;
+                @Mixup.started -= m_Wrapper.m_UIActionsCallbackInterface.OnMixup;
+                @Mixup.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnMixup;
+                @Mixup.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnMixup;
+                @Iconic.started -= m_Wrapper.m_UIActionsCallbackInterface.OnIconic;
+                @Iconic.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnIconic;
+                @Iconic.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnIconic;
             }
             m_Wrapper.m_UIActionsCallbackInterface = instance;
             if (instance != null)
@@ -1115,6 +1263,18 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 @Back.started += instance.OnBack;
                 @Back.performed += instance.OnBack;
                 @Back.canceled += instance.OnBack;
+                @LightAttack.started += instance.OnLightAttack;
+                @LightAttack.performed += instance.OnLightAttack;
+                @LightAttack.canceled += instance.OnLightAttack;
+                @HeavyAttack.started += instance.OnHeavyAttack;
+                @HeavyAttack.performed += instance.OnHeavyAttack;
+                @HeavyAttack.canceled += instance.OnHeavyAttack;
+                @Mixup.started += instance.OnMixup;
+                @Mixup.performed += instance.OnMixup;
+                @Mixup.canceled += instance.OnMixup;
+                @Iconic.started += instance.OnIconic;
+                @Iconic.performed += instance.OnIconic;
+                @Iconic.canceled += instance.OnIconic;
             }
         }
     }
@@ -1144,5 +1304,9 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         void OnDecrease(InputAction.CallbackContext context);
         void OnStart(InputAction.CallbackContext context);
         void OnBack(InputAction.CallbackContext context);
+        void OnLightAttack(InputAction.CallbackContext context);
+        void OnHeavyAttack(InputAction.CallbackContext context);
+        void OnMixup(InputAction.CallbackContext context);
+        void OnIconic(InputAction.CallbackContext context);
     }
 }
