@@ -61,13 +61,13 @@ public class LobbyManager : MonoBehaviourPunCallbacks
                 OnClickPlayButton();
         };
 
-        /*leave.started += Leave =>
+        leave.started += Leave =>
         {
             OnClickLeaveRoom();
         };
-*/
+
         start.Enable();
-        //leave.Enable();
+        leave.Enable();
         
     }
 
