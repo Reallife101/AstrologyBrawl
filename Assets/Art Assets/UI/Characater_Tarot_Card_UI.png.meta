@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a90ff17ae80ee546963f5667485027a
-      internalID: 1328984317
+      spriteID: 01a455abb18ee5b4b8d85e65353cbb67
+      internalID: -1123001049
       vertices: []
       indices: 
       edges: []
@@ -129,8 +129,8 @@ TextureImporter:
       name: Characater_Tarot_Card_UI_1
       rect:
         serializedVersion: 2
-        x: 1323
-        y: 1232
+        x: 1661
+        y: 1410
         width: 206
         height: 234
       alignment: 0
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b02620c3f7ee7ef438bc9ef71ee68fa0
-      internalID: -1036419338
+      spriteID: 84a0bd603e8eda24e9563455982b8c70
+      internalID: -1494203756
       vertices: []
       indices: 
       edges: []
@@ -150,10 +150,10 @@ TextureImporter:
       name: Characater_Tarot_Card_UI_2
       rect:
         serializedVersion: 2
-        x: 1327
-        y: 1034
+        x: 1675
+        y: 864
         width: 206
-        height: 234
+        height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff0b18e2b9d34f4469b3dc0f8df86888
-      internalID: 1377536030
+      spriteID: 77058b1aad345514f92b744a17e2282b
+      internalID: 1642235755
       vertices: []
       indices: 
       edges: []
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c061ed921522f6f49b0437fccb57b365
-      internalID: 823411372
+      spriteID: ff19e05818743834194cfa230c8d8153
+      internalID: 165445983
       vertices: []
       indices: 
       edges: []
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 578c7e5ede7949f48ae4ace386f46cca
-      internalID: -7828196
+      spriteID: 01d0a32c16aa51f428f8c66566997ccb
+      internalID: -583477227
       vertices: []
       indices: 
       edges: []
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d05d5743601c8a4b86a29c2abd33c2b
-      internalID: -951801155
+      spriteID: 5983fae4aeaa8c84783a72f99ac79bfb
+      internalID: -1236159759
       vertices: []
       indices: 
       edges: []
@@ -245,8 +245,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dadac0f65f2aea42adb106932cc847c
-      internalID: 299969414
+      spriteID: 5425f7b6b3439a24e87484bbfc6d0714
+      internalID: 1492278147
       vertices: []
       indices: 
       edges: []
@@ -266,8 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15deb7cfde33b6e4cae861350792ae58
-      internalID: -1763306980
+      spriteID: 8d9e24b60ee8cbf42b183c10073fefb5
+      internalID: 4983410
       vertices: []
       indices: 
       edges: []
@@ -287,8 +287,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88b4590eea5cfd045812d963ea87264c
-      internalID: 1468483233
+      spriteID: 0fa42cd4fa9aa0a4d9bbfaacb34d3a89
+      internalID: 1155681165
       vertices: []
       indices: 
       edges: []
@@ -308,8 +308,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cc431869e1933744b5fcdf6e5b6f93a
-      internalID: 1496757606
+      spriteID: 3f8bb2c78f775fd4eb47b36473ed22be
+      internalID: 228001038
       vertices: []
       indices: 
       edges: []
@@ -329,8 +329,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a8afaa489ba23b4e89f6123599bb78f
-      internalID: 893693934
+      spriteID: 60466dd59ba27054d94c18a7eaa8f614
+      internalID: -1027599312
       vertices: []
       indices: 
       edges: []
@@ -350,8 +350,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a14cba61b02e54d4abf681a41564e39f
-      internalID: 1226538338
+      spriteID: c42a8b383f0058441b862ad1485e5dd4
+      internalID: 576979886
       vertices: []
       indices: 
       edges: []
@@ -371,8 +371,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdc28325d07777a40891f32677ee5388
-      internalID: -67952747
+      spriteID: 90d9ce0a5c89d67488cd6e6310305478
+      internalID: 1747918745
       vertices: []
       indices: 
       edges: []
@@ -392,8 +392,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 010a0dc600a794f46b9280959bfe683a
-      internalID: -1658715049
+      spriteID: abad987bc12a5144b8427b643009f94d
+      internalID: 1201988346
       vertices: []
       indices: 
       edges: []
@@ -413,8 +413,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3eb3f47cd3a1ef149ad1005fa8080fb2
-      internalID: 269199509
+      spriteID: ef8e6eccf5055cb44ae1c3d904ce0ae3
+      internalID: 1707735437
       vertices: []
       indices: 
       edges: []
@@ -434,8 +434,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70020a92c6837a14dadeefd9b030a877
-      internalID: 1707009317
+      spriteID: 9e785b3d5588ca640a33c90683aaf3a1
+      internalID: 374878488
       vertices: []
       indices: 
       edges: []
@@ -451,22 +451,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Characater_Tarot_Card_UI_6: 299969414
-      Characater_Tarot_Card_UI_0: 1328984317
-      Characater_Tarot_Card_UI_14: 269199509
-      Characater_Tarot_Card_UI_4: -7828196
-      Characater_Tarot_Card_UI_9: 1496757606
-      Characater_Tarot_Card_UI_1: -1036419338
-      Characater_Tarot_Card_UI_11: 1226538338
-      Characater_Tarot_Card_UI_3: 823411372
-      Characater_Tarot_Card_UI_7: -1763306980
-      Characater_Tarot_Card_UI_13: -1658715049
-      Characater_Tarot_Card_UI_2: 1377536030
-      Characater_Tarot_Card_UI_12: -67952747
-      Characater_Tarot_Card_UI_15: 1707009317
-      Characater_Tarot_Card_UI_5: -951801155
-      Characater_Tarot_Card_UI_10: 893693934
-      Characater_Tarot_Card_UI_8: 1468483233
+      Characater_Tarot_Card_UI_6: 1492278147
+      Characater_Tarot_Card_UI_0: -1123001049
+      Characater_Tarot_Card_UI_14: 1707735437
+      Characater_Tarot_Card_UI_4: -583477227
+      Characater_Tarot_Card_UI_9: 228001038
+      Characater_Tarot_Card_UI_1: -1494203756
+      Characater_Tarot_Card_UI_11: 576979886
+      Characater_Tarot_Card_UI_3: 165445983
+      Characater_Tarot_Card_UI_7: 4983410
+      Characater_Tarot_Card_UI_13: 1201988346
+      Characater_Tarot_Card_UI_2: 1642235755
+      Characater_Tarot_Card_UI_12: 1747918745
+      Characater_Tarot_Card_UI_15: 374878488
+      Characater_Tarot_Card_UI_5: -1236159759
+      Characater_Tarot_Card_UI_10: -1027599312
+      Characater_Tarot_Card_UI_8: 1155681165
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
