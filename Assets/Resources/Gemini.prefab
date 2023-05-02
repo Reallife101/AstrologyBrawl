@@ -1109,6 +1109,7 @@ MonoBehaviour:
   MaxDistance: 7
   returnSpeed: 10
   reattachDistance: 2.9
+  pv: {fileID: 962539097766529675}
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0

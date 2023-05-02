@@ -1,6 +1,8 @@
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class geminiToss : Ability
@@ -10,6 +12,7 @@ public class geminiToss : Ability
     [SerializeField] private float MaxDistance;
     [SerializeField] private float returnSpeed;
     [SerializeField] private float reattachDistance;
+    [SerializeField] private PhotonView pv;
 
     private bool isAttached;
     private bool isReturning;
@@ -26,15 +29,20 @@ public class geminiToss : Ability
 
         if (isAttached)
         {
-            littleTwin.transform.SetParent(null, true);
-            isAttached = false;
-            toss();
+
+            if (pv.IsMine)
+            {
+                pv.RPC("toss", RpcTarget.All);
+            }
 
         }
         else
         {
             //littleTwin.transform.SetParent(transform, true);
-            bringBack();
+            if (pv.IsMine)
+            {
+                pv.RPC("bringBack", RpcTarget.All);
+            }
         }
     }
 
@@ -78,13 +86,20 @@ public class geminiToss : Ability
        
     }
 
+    [PunRPC]
     void bringBack()
     {
+        littleTwin.transform.SetParent(null, true);
+        isAttached = false;
         isReturning = true;
     }
 
+    [PunRPC]
     void toss()
     {
+        littleTwin.transform.SetParent(null, true);
+        isAttached = false;
+
         if (transform.localScale.x <= 0)
         {
             rb.velocity = new Vector2(-forceVector.x, forceVector.y);
