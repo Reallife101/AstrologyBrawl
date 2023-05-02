@@ -53,7 +53,7 @@ public class doDamage : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (!pv || !pv.IsMine || collision.gameObject.GetComponent<PhotonView>()?.GetInstanceID() == ownerID || extraDamageCheck())
+        if (!pv || !pv.IsMine || collision.gameObject.GetComponent<PhotonView>()?.GetInstanceID() == ownerID || extraDamageCheck(collision))
             return;
         // Get components
         IDamageable dmg = collision.gameObject.GetComponent<IDamageable>();
@@ -152,7 +152,7 @@ public class doDamage : MonoBehaviour
         //overide for future use
     }
 
-    public virtual bool extraDamageCheck()
+    public virtual bool extraDamageCheck(Collider2D collision)
     {
         //overide for future use
         return false;

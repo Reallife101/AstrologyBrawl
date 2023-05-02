@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class doGeminiDamage : doDamage
 {
-    public override bool extraDamageCheck()
+    [SerializeField] private GameObject otherBro;
+    public override bool extraDamageCheck(Collider2D collision)
     {
-        return base.extraDamageCheck();
+        return collision.gameObject.GetComponent<PhotonView>()?.GetInstanceID() == otherBro.GetComponent<PhotonView>()?.GetInstanceID();
     }
 }
