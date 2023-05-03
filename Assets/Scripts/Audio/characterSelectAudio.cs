@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class characterSelect : MonoBehaviour
+public class characterSelectAudio : MonoBehaviour
 
 {
     [SerializeField] FMODUnity.EventReference LibraLock;
@@ -12,11 +12,11 @@ public class characterSelect : MonoBehaviour
     [SerializeField] FMODUnity.EventReference AquaLock;
     [SerializeField] FMODUnity.EventReference VirgoLock;
 
-    PlayerItem PlayerItem;
+    CharacterSelect PlayerItem;
 
     public void Awake()
     {
-        PlayerItem = GetComponent<PlayerItem>();
+        PlayerItem = GetComponent<CharacterSelect>();
     }
 
 
