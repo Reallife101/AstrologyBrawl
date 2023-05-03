@@ -361,11 +361,12 @@ GameObject:
   - component: {fileID: 8429140981890349801}
   - component: {fileID: 4259250144682286860}
   - component: {fileID: 4971872862019590132}
-  - component: {fileID: 8657843435335522492}
-  - component: {fileID: 3438869680106534213}
-  - component: {fileID: 5638198919380507358}
-  - component: {fileID: 4450267995174341297}
-  - component: {fileID: 4650676032788553082}
+  - component: {fileID: 4153194197827309814}
+  - component: {fileID: 2298979600915296208}
+  - component: {fileID: 6648394733506107925}
+  - component: {fileID: 7622008280667429712}
+  - component: {fileID: 5363123803401204161}
+  - component: {fileID: 1184284098584985780}
   m_Layer: 7
   m_Name: Capricorn
   m_TagString: Player
@@ -470,7 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876586a5a6023f6489fb060da5dc71df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ability1: {fileID: 8657843435335522492}
+  ability1: {fileID: 2298979600915296208}
   ability2: {fileID: 778512593599464108}
   shield: {fileID: 6934866079556004767}
   movementVector: {x: 0, y: 0}
@@ -593,7 +594,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 8694400067546609426}
   triggerName: mixupVirgo
   spawnOrigin: {fileID: 2204496378394938765}
-  projectile: {fileID: 793811016547114540, guid: 63686c2999f41584e92bab55d12af055, type: 3}
+  projectile: {fileID: 793811016547114540, guid: 3cfc59effa904ea45988eb76187d0171, type: 3}
   player: {fileID: 3016257482074367028}
   spawnAsChild: 0
 --- !u!114 &8429140981890349801
@@ -771,7 +772,27 @@ PolygonCollider2D:
       - {x: 0.19866943, y: -0.011978149}
       - {x: 0.24615479, y: 0.31765747}
       - {x: 0.24610043, y: 0.6913108}
---- !u!114 &8657843435335522492
+--- !u!114 &4153194197827309814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 0
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: 
+  spawnOrigin: {fileID: 0}
+  projectile: {fileID: 0}
+  player: {fileID: 0}
+  spawnAsChild: 0
+--- !u!114 &2298979600915296208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -786,12 +807,12 @@ MonoBehaviour:
   cooldownTime: 0
   abilitySoundCheck: 0
   playerAnimator: {fileID: 8694400067546609426}
-  triggerName: virgoHeavy
-  up: {fileID: 5638198919380507358}
-  down: {fileID: 4450267995174341297}
-  left: {fileID: 3438869680106534213}
-  right: {fileID: 4650676032788553082}
---- !u!114 &3438869680106534213
+  triggerName: 
+  up: {fileID: 7622008280667429712}
+  down: {fileID: 5363123803401204161}
+  left: {fileID: 6648394733506107925}
+  right: {fileID: 1184284098584985780}
+--- !u!114 &6648394733506107925
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -811,7 +832,7 @@ MonoBehaviour:
   tickRate: 1
   healAmount: 2
   playerHealth: {fileID: 7328130180652725418}
---- !u!114 &5638198919380507358
+--- !u!114 &7622008280667429712
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -829,7 +850,7 @@ MonoBehaviour:
   triggerName: 
   buffLength: 5
   buffSpeed: 60
---- !u!114 &4450267995174341297
+--- !u!114 &5363123803401204161
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -848,7 +869,7 @@ MonoBehaviour:
   buffLength: 5
   newJump: 100
   newDoubleJump: 75
---- !u!114 &4650676032788553082
+--- !u!114 &1184284098584985780
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -865,7 +886,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 0}
   triggerName: 
   buffLength: 5
-  damageFactor: 1
+  damageFactor: 1.2
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0

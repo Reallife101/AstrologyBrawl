@@ -30,6 +30,11 @@ public abstract class Ability : MonoBehaviour
             Use();
         }
     }
+
+    public virtual void release()
+    {
+        //Wait to be overwritten
+    }
     public abstract void Use();
 
     private void Update()
