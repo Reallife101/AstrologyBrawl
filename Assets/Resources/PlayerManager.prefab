@@ -54,6 +54,7 @@ MonoBehaviour:
   - {fileID: 3016257482074367028, guid: 09bdda7ade3fe3749bf9ccf85c659492, type: 3}
   - {fileID: 3016257482074367028, guid: 4a22ed63a0fbe7643a4d1da71125bb17, type: 3}
   - {fileID: 3016257482074367028, guid: 89900526ae8c6744abbde842b906c633, type: 3}
+  - {fileID: 3016257482074367028, guid: 1c3bf9242c1950f41b7b03f71a9c4cf2, type: 3}
   killGoal: 5
   timeSlowCurve:
     serializedVersion: 2

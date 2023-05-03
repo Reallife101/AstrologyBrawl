@@ -696,11 +696,11 @@ MonoBehaviour:
     Path: 
   heavyattackreleasesound:
     Guid:
-      Data1: -227831648
-      Data2: 1109322166
-      Data3: -1439335233
-      Data4: -965248503
-    Path: event:/Heavy SwordSwings
+      Data1: -641284146
+      Data2: 1209009859
+      Data3: 1437124261
+      Data4: 652925392
+    Path: event:/Heavy SwordSwings 2
   ability1sound:
     Guid:
       Data1: 0
@@ -710,11 +710,11 @@ MonoBehaviour:
     Path: 
   ability2sound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1264396393
+      Data2: 1184133421
+      Data3: -1876062283
+      Data4: 1543031840
+    Path: event:/Taurus (TA)/Taurus Iconic
   attackvoice:
     Guid:
       Data1: -646277690
