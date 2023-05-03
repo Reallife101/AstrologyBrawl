@@ -52,6 +52,10 @@ public class geminiToss : Ability
         isAttached = true;
         isReturning = false;
         rb = littleTwin.GetComponent<Rigidbody2D>();
+        littleTwin.transform.position = transform.position;
+        //no idea why this fixed it but it did
+        littleTwin.transform.SetParent(null, true);
+        littleTwin.transform.SetParent(transform, true);
     }
 
     // Update is called once per frame
@@ -60,10 +64,12 @@ public class geminiToss : Ability
 
         if (isReturning)
         {
-            Vector3 diffVector = transform.position - littleTwin.transform.position;
+            Vector3 diffVector =  transform.position - littleTwin.transform.position;
+
+            UnityEngine.Debug.Log("Distance: "+Vector3.Distance(transform.position, littleTwin.transform.position));
 
             //if we are close enough, stop returning
-            if (diffVector.magnitude < reattachDistance)
+            if (Vector3.Distance(transform.position, littleTwin.transform.position) < reattachDistance)
             {
                 rb.velocity = Vector2.zero;
                 isReturning = false;
