@@ -148,7 +148,7 @@ public class playerController : MonoBehaviour
             }
         };
 
-        abilityOneAction.started += ability1Behavior =>
+        abilityOneAction.performed += ability1Behavior =>
         {
             if (!myPV.IsMine || movementLocked)
             {
@@ -164,7 +164,18 @@ public class playerController : MonoBehaviour
             }   
         };
 
-        abilityTwoAction.started += ability2Behavior =>
+        abilityOneAction.canceled += ability1Release =>
+        {
+            if (!myPV.IsMine)
+            {
+                return;
+            }
+
+            ability1.release();
+
+        };
+
+        abilityTwoAction.performed += ability2Behavior =>
         {
             if (!myPV.IsMine || movementLocked)
             {
@@ -178,6 +189,17 @@ public class playerController : MonoBehaviour
             {
                 audioManager.CallAbility2();
             }   
+        };
+
+        abilityTwoAction.canceled += ability2Release =>
+        {
+            if (!myPV.IsMine)
+            {
+                return;
+            }
+
+            ability2.release();
+
         };
 
         lightAttackAction.started += lightAttackBehavior =>
