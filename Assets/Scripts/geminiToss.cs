@@ -68,7 +68,7 @@ public class geminiToss : Ability
                 rb.velocity = Vector2.zero;
                 isReturning = false;
                 isAttached = true;
-                littleTwin.transform.SetParent(transform, true);
+                pv.RPC("rebind", RpcTarget.All);
 
             }
             else
@@ -87,6 +87,13 @@ public class geminiToss : Ability
     }
 
     [PunRPC]
+    void rebind()
+    {
+        littleTwin.transform.position = transform.position;
+        littleTwin.transform.SetParent(transform, true);
+    }
+
+        [PunRPC]
     void bringBack()
     {
         littleTwin.transform.SetParent(null, true);
