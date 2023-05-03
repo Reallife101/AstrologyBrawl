@@ -214,8 +214,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         input.Dispose();
         PhotonNetwork.CurrentRoom.IsOpen = false;
         PhotonNetwork.CurrentRoom.IsVisible = false;
-        //PhotonNetwork.LoadLevel(levelInfo.getSceneName());
-        PhotonNetwork.LoadLevel("Battlefield");
+        PhotonNetwork.LoadLevel(levelInfo.getSceneName());
+        //PhotonNetwork.LoadLevel("Battlefield");
     }
     
     public void OnClickLeaveRoom()
