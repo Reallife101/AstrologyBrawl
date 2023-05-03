@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - SecondDestination
+  - Libra's Lament
   - Battlefield
   - BetterBattleField
   - IdiotSandwich
@@ -3314,7 +3314,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.005179025}
+  m_AnchoredPosition: {x: 66, y: 0.0049278466}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -3444,6 +3444,34 @@ MonoBehaviour:
       Data3: 964185256
       Data4: 376819974
     Path: event:/Saggi/Saggi On Select Voice
+  PiscesLock:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  TaurusLock:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  AquaLock:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  VirgoLock:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &810623147
 GameObject:
   m_ObjectHideFlags: 0
@@ -7770,8 +7798,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1941303875}
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
-  m_Value: -0.05
-  m_Size: 0.99996084
+  m_Value: -0.0062111802
+  m_Size: 0.9999482
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FINAL LOBBY SELECTION.unity
     guid: 7a40b9d5f7b94dd459d1e1750ecb31a3
+  - enabled: 1
+    path: Assets/Scenes/Libra's Lament.unity
+    guid: 9668c0d2e0ce878449058a3241dec811
   m_configObjects: {}
