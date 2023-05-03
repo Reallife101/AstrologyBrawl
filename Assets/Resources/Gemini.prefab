@@ -1106,7 +1106,8 @@ MonoBehaviour:
   triggerName: mixupVirgo
   littleTwin: {fileID: 520713497920522168}
   forceVector: {x: 10, y: 0}
-  MaxDistance: 7
+  MaxDistance: 12
+  MaxPressTime: 2
   returnSpeed: 10
   reattachDistance: 0.25
   pv: {fileID: 962539097766529675}
