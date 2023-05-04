@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Libra's Lament.unity
     guid: 9668c0d2e0ce878449058a3241dec811
+  - enabled: 1
+    path: Assets/Scenes/WALL-B.unity
+    guid: c980cfd3f156c524c88fe63139e53c19
   m_configObjects: {}
