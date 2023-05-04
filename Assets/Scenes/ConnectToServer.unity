@@ -407,6 +407,7 @@ GameObject:
   - component: {fileID: 333185533}
   - component: {fileID: 333185532}
   - component: {fileID: 333185531}
+  - component: {fileID: 333185535}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -502,6 +503,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &333185535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333185530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf8205ff4de6c0c4da693a51944aeaba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiSound:
+    Guid:
+      Data1: 1994990593
+      Data2: 1234174971
+      Data3: 140431260
+      Data4: -1452225945
+    Path: event:/Light SwordSwings
 --- !u!1 &433567071
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,6 +785,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1308639851}
         m_TargetAssemblyTypeName: ConnectToServer, Assembly-CSharp
         m_MethodName: OnClickConnect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 333185535}
+        m_TargetAssemblyTypeName: uiButtons, Assembly-CSharp
+        m_MethodName: playSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
