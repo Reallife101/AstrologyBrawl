@@ -232,7 +232,7 @@ Animator:
   m_GameObject: {fileID: 1060617277697689753}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 862c1ac798552df4bac48bbd3f3311a7, type: 2}
+  m_Controller: {fileID: 9100000, guid: a25765bd9db0e7a438ffdbfe26c502ec, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -293,17 +293,20 @@ MonoBehaviour:
     SynchronizeType: 1
     Name: jump
   - Type: 9
-    SynchronizeType: 1
-    Name: lightVirgo
+    SynchronizeType: 0
+    Name: lightCap
   - Type: 9
-    SynchronizeType: 1
-    Name: heavyVirgo
+    SynchronizeType: 0
+    Name: heavyCap
   - Type: 9
-    SynchronizeType: 1
-    Name: mixupVirgo
+    SynchronizeType: 0
+    Name: mixupCap
   - Type: 9
-    SynchronizeType: 1
-    Name: iconicVirgo
+    SynchronizeType: 0
+    Name: iconicCapPlunge
+  - Type: 9
+    SynchronizeType: 0
+    Name: iconicCapSlide
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -367,6 +370,8 @@ GameObject:
   - component: {fileID: 7622008280667429712}
   - component: {fileID: 5363123803401204161}
   - component: {fileID: 1184284098584985780}
+  - component: {fileID: 1876953723702681367}
+  - component: {fileID: 7858439762415191063}
   m_Layer: 7
   m_Name: Capricorn
   m_TagString: Player
@@ -472,7 +477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ability1: {fileID: 2298979600915296208}
-  ability2: {fileID: 778512593599464108}
+  ability2: {fileID: 1876953723702681367}
   shield: {fileID: 6934866079556004767}
   movementVector: {x: 0, y: 0}
   moveSpeed: 40
@@ -887,6 +892,51 @@ MonoBehaviour:
   triggerName: 
   buffLength: 5
   damageFactor: 1.2
+--- !u!114 &1876953723702681367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60df89457c1d6ae438ef3b85bcf14100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 3
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 8694400067546609426}
+  triggerName: 
+  sm: {fileID: 2270851739153014609}
+  pc: {fileID: 2212813536629527073}
+  rb: {fileID: 6444089561079822210}
+  groundSlide: {fileID: 11400000, guid: 2621de170d66a244d91e6ca8e4fad91b, type: 2}
+  groundSlideTrigger: iconicCapSlide
+  slideSpeed: 50
+  airPlungeTrigger: iconicCapPlunge
+  airPlunge: {fileID: 11400000, guid: 27fa35145efb9114d80b448d791177a6, type: 2}
+  plungeSpeed: 100
+--- !u!114 &7858439762415191063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 2
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 8694400067546609426}
+  triggerName: 
+  spawnOrigin: {fileID: 2204496378394938765}
+  projectile: {fileID: 793811016547114540, guid: 63686c2999f41584e92bab55d12af055, type: 3}
+  player: {fileID: 3016257482074367028}
+  spawnAsChild: 0
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0

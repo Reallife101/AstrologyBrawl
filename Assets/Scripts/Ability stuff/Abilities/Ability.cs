@@ -8,7 +8,7 @@ public abstract class Ability : MonoBehaviour
     private float cooldownTime;
     private float currentCooldown;
     public bool abilitySoundCheck;
-    [SerializeField] private Animator playerAnimator;
+    [SerializeField] protected Animator playerAnimator;
     [SerializeField] private string triggerName;
 
     private void Start()
@@ -42,7 +42,6 @@ public abstract class Ability : MonoBehaviour
         // Reduce cooldown
         if (currentCooldown > 0f)
         {
-            
             currentCooldown -= Time.deltaTime;
             abilitySoundCheck = false;
          

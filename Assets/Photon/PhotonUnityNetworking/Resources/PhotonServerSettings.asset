@@ -82,6 +82,9 @@ MonoBehaviour:
   - RPC_FoolTP
   - RPC_HermitDisable
   - RPC_MagicianDisable
+  - bringBack
+  - rebind
+  - toss
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
