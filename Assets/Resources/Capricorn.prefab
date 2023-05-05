@@ -293,19 +293,19 @@ MonoBehaviour:
     SynchronizeType: 1
     Name: jump
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: lightCap
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: heavyCap
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: mixupCap
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: iconicCapPlunge
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: iconicCapSlide
   m_SynchronizeLayers:
   - SynchronizeType: 1
@@ -1522,8 +1522,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1189826581
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 319297960, guid: 64adb492d92277d4f8d8f6901168ea5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
