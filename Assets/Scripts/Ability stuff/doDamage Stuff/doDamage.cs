@@ -21,6 +21,7 @@ public class doDamage : MonoBehaviour
     private float shakeTime = 0f;
     private float shakePower = 0f;
     [SerializeField] Transform parentSprite;
+    [SerializeField] float baseDamageMultiplier = 1;
    
     private GameObject AttackSender;
     private float multiplier = 1; 
@@ -85,11 +86,11 @@ public class doDamage : MonoBehaviour
                 //flip the x if we are facing the wrong direction
                 if (transform.localScale.x < 0 || (parentSprite != null && parentSprite.localScale.x < 0))
                 {
-                    dmg.TakeDamage(damage * multiplier, new Vector2(-launchDirection.x, launchDirection.y), hitStunTime);
+                    dmg.TakeDamage(damage * multiplier * baseDamageMultiplier, new Vector2(-launchDirection.x, launchDirection.y), hitStunTime);
                 }
                 else
                 {
-                    dmg.TakeDamage(damage * multiplier, launchDirection, hitStunTime);
+                    dmg.TakeDamage(damage * multiplier * baseDamageMultiplier, launchDirection, hitStunTime);
                 }
             }
             else
