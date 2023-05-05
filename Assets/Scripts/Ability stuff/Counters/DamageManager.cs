@@ -207,9 +207,9 @@ public class DamageManager : MonoBehaviour
         {
             if (wasMultiplied)
             {
-                Debug.Log(damage + ", " +  1 / damage);
+                //Debug.Log(damage + ", " +  1 / damage);
                 funcType.Value(1 / damage, true); //reciprocal of damage
-                Debug.Log(funcType);
+                //Debug.Log(funcType);
             }
             else
                 funcType.Value(-damage, false); //(-) symbol for reverting the effects of the damage
