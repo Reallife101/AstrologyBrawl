@@ -564,9 +564,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstLightGround: {fileID: 11400000, guid: ad316175a39dbf442bd836dba6013b47, type: 2}
-  firstHeavyGround: {fileID: 11400000, guid: bcf4946b91c1fab40ba2d9fffe6848da, type: 2}
+  firstHeavyGround: {fileID: 11400000, guid: fb56478bfe0316042bb7f61a09390cac, type: 2}
   firstLightAir: {fileID: 11400000, guid: ad316175a39dbf442bd836dba6013b47, type: 2}
-  firstHeavyAir: {fileID: 11400000, guid: bcf4946b91c1fab40ba2d9fffe6848da, type: 2}
+  firstHeavyAir: {fileID: 11400000, guid: fb56478bfe0316042bb7f61a09390cac, type: 2}
   airAttackGravityModifier: 0.75
   hitboxes:
   - {fileID: 1297891310825874628}
@@ -746,8 +746,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Light: 10
-  Heavy: 40
-  Ability1: 50
+  Heavy: 10
+  Ability1: 10
   Ability2: 10
   stacked: 0
 --- !u!60 &4971872862019590132
@@ -961,7 +961,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3519319104225032428
 Transform:
   m_ObjectHideFlags: 0

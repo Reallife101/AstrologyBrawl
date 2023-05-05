@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da60d73c482bb39469dd75590f34006c, type: 3}
-  m_Name: PS-HA-1
+  m_Name: CAP-HA-1
   m_EditorClassIdentifier: 
-  damage: 30
-  attackAnimationName: heavyPisces
-  duration: 0.5
+  damage: 35
+  attackAnimationName: heavyCap
+  duration: 1
   inputBufferTime: 0.35
-  forwardMovement: 3
-  finisherEndlag: 0.25
+  forwardMovement: 0
+  finisherEndlag: 0.15
   hitStunTime: 0.5
   knockbackPower: 15
-  launchDirection: {x: 10, y: 0}
+  launchDirection: {x: 0, y: 0}
   NextAttackFrameSO: {fileID: 0}
   chargeTimeAllowed: 0
   chargeTimeForMax: 0
   chargeMultiplier: 0
   freezeFrameName: 
-  shakeTime: 1
+  shakeTime: 0.5
   shakeIntensity: 10
