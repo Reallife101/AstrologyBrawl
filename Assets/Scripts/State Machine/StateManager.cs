@@ -164,7 +164,7 @@ public class StateManager : MonoBehaviour
     {
         foreach(doDamage doD in hitboxes)
         {
-            doD.SetValues(atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, currentAttack.launchDirection, currentAttack.shakeTime, currentAttack.shakeIntensity, gameObject);
+            doD.SetValues(currentAttack.damage, atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, currentAttack.launchDirection, currentAttack.shakeTime, currentAttack.shakeIntensity, gameObject);
         }
         //Starts the countdown for the current attack's duration, changes damage of the hitbox to match the current attack, and starts the corresponding attack anim
         attackTimeRemaining = currentAttack.duration;
@@ -178,7 +178,7 @@ public class StateManager : MonoBehaviour
     {
         foreach (doDamage doD in hitboxes)
         {
-            doD.SetValues(atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, chargeMulti * currentAttack.launchDirection, currentAttack.shakeTime, currentAttack.shakeIntensity, gameObject, chargeMulti);
+            doD.SetValues(currentAttack.damage, atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, chargeMulti * currentAttack.launchDirection, currentAttack.shakeTime, currentAttack.shakeIntensity, gameObject, chargeMulti);
         }
         //Starts the countdown for the current attack's duration, changes damage of the hitbox to match the current attack, and starts the corresponding attack anim
         attackTimeRemaining = currentAttack.duration;
@@ -299,7 +299,7 @@ public class StateManager : MonoBehaviour
 
     public void chargedProjectileSetter(doDamage input)
     {
-        input.SetValues(atk_state, lastChargedMultiplier, currentAttack.knockbackPower * lastChargedMultiplier);
+        input.SetValues(currentAttack.damage, atk_state, lastChargedMultiplier, currentAttack.knockbackPower * lastChargedMultiplier, gameObject);
     }
 
     public void StartCasting()

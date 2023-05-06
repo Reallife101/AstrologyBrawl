@@ -77,6 +77,7 @@ public class doDamage : MonoBehaviour
             //Debug.Log("BEFORE DAMAGE CHANGE " + damage);
 
             damage = dmgManager.getAttackValue(attack_type) + stacked_dmg;
+            float buffMult = dmgManager.getBuffValue(attack_type);
 
             //Debug.Log("After Damage Change" + damage);
             extraEffect(damage);
@@ -86,17 +87,17 @@ public class doDamage : MonoBehaviour
                 //flip the x if we are facing the wrong direction
                 if (transform.localScale.x < 0 || (parentSprite != null && parentSprite.localScale.x < 0))
                 {
-                    dmg.TakeDamage(damage * multiplier * baseDamageMultiplier, new Vector2(-launchDirection.x, launchDirection.y), hitStunTime);
+                    dmg.TakeDamage(damage * multiplier * baseDamageMultiplier * buffMult, new Vector2(-launchDirection.x, launchDirection.y), hitStunTime);
                 }
                 else
                 {
-                    dmg.TakeDamage(damage * multiplier * baseDamageMultiplier, launchDirection, hitStunTime);
+                    dmg.TakeDamage(damage * multiplier * baseDamageMultiplier * buffMult, launchDirection, hitStunTime);
                 }
             }
             else
             {
                 Vector2 launchVector = new Vector2(collision.transform.position.x - transform.position.x, collision.transform.position.y - transform.position.y + 0.25f);
-                dmg.TakeDamage(damage, launchVector.normalized * launchForce, hitStunTime);
+                dmg.TakeDamage(damage * multiplier * baseDamageMultiplier * buffMult, launchVector.normalized * launchForce, hitStunTime);
             }
 
             if(shakeTime > 0 && shakePower > 0)
@@ -123,15 +124,17 @@ public class doDamage : MonoBehaviour
         damage = damageNum;
     }
 
-    public void SetValues(DamageManager.AttackStates type, float chardgeMultiplier, float KBValue)
+    public void SetValues(float damage, DamageManager.AttackStates type, float chardgeMultiplier, float KBValue, GameObject sender)
     {
+        sender.GetComponent<DamageManager>().setDamage(attack_type, damage, 0, true);
+        dmgManager.setDamage(attack_type, damage, 0, true);
         attack_type = type;
         multiplier = chardgeMultiplier;
         launchForce = KBValue;
     }
-    public void SetValues(DamageManager.AttackStates type, float hitStunNum, float knockbackNum, Vector2 launchDir, float shaketime, float shakepower, GameObject sender, float chargeMulti = 1)
+    public void SetValues(float damage, DamageManager.AttackStates type, float hitStunNum, float knockbackNum, Vector2 launchDir, float shaketime, float shakepower, GameObject sender, float chargeMulti = 1)
     {
-        //damage = damageNum;
+        sender.GetComponent<DamageManager>().setDamage(attack_type, damage, 0, true);
         attack_type = type;
         hitStunTime = hitStunNum;
         launchForce = knockbackNum;
