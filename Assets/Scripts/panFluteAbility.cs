@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
 [RequireComponent(typeof(playerController))]
 public class panFluteAbility : Ability
@@ -9,12 +11,19 @@ public class panFluteAbility : Ability
     [SerializeField] Ability down;
     [SerializeField] Ability left;
     [SerializeField] Ability right;
+    [SerializeField] private Animator uiAni;
+    [SerializeField] private PhotonView pvAni;
 
     private playerController pc;
     private bool poll = false;
     public override void Use()
     {
         poll = true;
+
+        if (pvAni.IsMine)
+        {
+            uiAni.SetTrigger("select");
+        }
     }
 
     // Start is called before the first frame update
@@ -41,10 +50,12 @@ public class panFluteAbility : Ability
                     if (movementVector.x>0)
                     {
                         right.Use();
+                        uiAni.SetTrigger("damage");
                     }
                     else
                     {
                         left.Use();
+                        uiAni.SetTrigger("heal");
                     }
                 }
                 else
@@ -52,10 +63,12 @@ public class panFluteAbility : Ability
                     if (movementVector.y > 0)
                     {
                         up.Use();
+                        uiAni.SetTrigger("jump");
                     }
                     else
                     {
                         down.Use();
+                        uiAni.SetTrigger("speed");
                     }
                 }
 

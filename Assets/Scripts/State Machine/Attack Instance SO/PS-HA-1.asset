@@ -27,4 +27,4 @@ MonoBehaviour:
   chargeMultiplier: 0
   freezeFrameName: 
   shakeTime: 1
-  shakeIntensity: 50
+  shakeIntensity: 10

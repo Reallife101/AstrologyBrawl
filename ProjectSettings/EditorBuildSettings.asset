@@ -12,13 +12,13 @@ EditorBuildSettings:
     path: Assets/Scenes/ConnectToServer.unity
     guid: dd9add7e48ee5e24eb76f0e1d6bead63
   - enabled: 1
-    path: Assets/Scenes/New Lobby.unity
+    path: Assets/Scenes/Old Levels/New Lobby.unity
     guid: 73b2a640e396940418d50a0c0e1e7237
   - enabled: 1
-    path: Assets/Scenes/Lobby.unity
+    path: Assets/Scenes/Old Levels/Lobby.unity
     guid: 4fc6083706f88b34eb691c9f7fb40301
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/Old Levels/Game.unity
     guid: 7847a205fb6ce5049aed72b5766e369c
   - enabled: 1
     path: Assets/Scenes/Battlefield.unity
@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Libra's Lament.unity
     guid: 9668c0d2e0ce878449058a3241dec811
   - enabled: 1
-    path: Assets/Scenes/WALL-B.unity
+    path: Assets/Scenes/Scrapyard Scuffle.unity
     guid: c980cfd3f156c524c88fe63139e53c19
+  - enabled: 1
+    path: Assets/Scenes/Celestial Clash.unity
+    guid: 05a1ab3f8f76b05498f80e6cd30f33c8
   m_configObjects: {}
