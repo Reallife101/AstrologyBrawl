@@ -26,8 +26,11 @@ public class YankToEnemy : MonoBehaviour
 
     private void Update()
     {
-        lr.SetPosition(0, transform.parent.position);
-        lr.SetPosition(1, transform.position);
+        if (transform.parent)
+        {
+            lr.SetPosition(0, transform.parent.position);
+            lr.SetPosition(1, transform.position);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
