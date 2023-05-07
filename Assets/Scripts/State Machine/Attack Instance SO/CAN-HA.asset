@@ -17,7 +17,7 @@ MonoBehaviour:
   duration: 0.4
   inputBufferTime: 0.35
   forwardMovement: 20
-  finisherEndlag: 0.25
+  finisherEndlag: 0.5
   hitStunTime: 0.2
   knockbackPower: 15
   launchDirection: {x: 0, y: 0}
