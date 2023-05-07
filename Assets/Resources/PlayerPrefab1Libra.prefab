@@ -434,6 +434,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 3016257482074367029}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!61 &1101127547381721659
 BoxCollider2D:
@@ -773,6 +774,11 @@ MonoBehaviour:
   Ability1: 10
   Ability2: 0
   stacked: 0
+  LightBuff: 1
+  HeavyBuff: 1
+  A1Buff: 1
+  A2Buff: 1
+  StackBuff: 1
 --- !u!60 &1587906642664194241
 PolygonCollider2D:
   m_ObjectHideFlags: 0
