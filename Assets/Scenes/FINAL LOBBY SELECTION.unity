@@ -3314,7 +3314,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.005584996}
+  m_AnchoredPosition: {x: 66, y: 0.0049374066}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -3408,6 +3408,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3c8f9c75d8dcf6546bfb0e210954b72b, type: 3}
   - {fileID: 21300000, guid: 0fb2a9af37d16764989747a9b2990d93, type: 3}
   - {fileID: 21300002, guid: a75445bb16444f14f96fdf9c734945cc, type: 3}
+  - {fileID: 21300000, guid: 9125c204f566db048a92ebcb64d9d14a, type: 3}
   signs:
   - {fileID: -903308357, guid: cae197ddf23c31d44b5f8dcfc491df2d, type: 3}
   - {fileID: 1168746494, guid: cae197ddf23c31d44b5f8dcfc491df2d, type: 3}
@@ -7483,7 +7484,7 @@ MonoBehaviour:
   - {fileID: 1097870846}
   - {fileID: 1053673}
   - {fileID: 877123071}
-  characterNames: 040000000a0000000700000003000000000000000b00000009000000
+  characterNames: 040000000a0000000700000003000000000000000b0000000900000005000000
   titles:
   - name: 4
     title: LIBRAMAINUWU
@@ -7798,8 +7799,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1941303875}
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
-  m_Value: -0.13664596
-  m_Size: 0.98720247
+  m_Value: 0
+  m_Size: 0.9998499
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
