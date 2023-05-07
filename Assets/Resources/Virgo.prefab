@@ -446,6 +446,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 3016257482074367029}
+  baseDamageMultiplier: 1
   ownerID: 0
   hp: {fileID: 7328130180652725418}
   healAmount: 10
@@ -553,6 +554,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 3016257482074367029}
+  baseDamageMultiplier: 1
   ownerID: 0
   hp: {fileID: 7328130180652725418}
   selfDamageAmount: 5
@@ -952,6 +954,11 @@ MonoBehaviour:
   Ability1: 50
   Ability2: 10
   stacked: 0
+  LightBuff: 1
+  HeavyBuff: 1
+  A1Buff: 1
+  A2Buff: 1
+  StackBuff: 1
 --- !u!114 &6296355900872579901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1286,6 +1293,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 10, y: 20}
   parentSprite: {fileID: 3016257482074367029}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!1 &4785156661360743209
 GameObject:
