@@ -293,16 +293,16 @@ MonoBehaviour:
     SynchronizeType: 1
     Name: jump
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: lightCancer
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: heavyCancer
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: mixupCancer
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: iconicCancer
   m_SynchronizeLayers:
   - SynchronizeType: 1

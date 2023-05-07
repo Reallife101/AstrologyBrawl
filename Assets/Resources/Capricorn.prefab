@@ -306,10 +306,10 @@ MonoBehaviour:
     SynchronizeType: 1
     Name: iconicCapSlide
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: lightCap1
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: lightCap2
   m_SynchronizeLayers:
   - SynchronizeType: 1
