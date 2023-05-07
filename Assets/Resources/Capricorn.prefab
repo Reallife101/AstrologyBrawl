@@ -926,7 +926,7 @@ MonoBehaviour:
   rb: {fileID: 6444089561079822210}
   groundSlide: {fileID: 11400000, guid: 2621de170d66a244d91e6ca8e4fad91b, type: 2}
   groundSlideTrigger: iconicCapSlide
-  slideSpeed: 50
+  slideSpeed: 30
   airPlungeTrigger: iconicCapPlunge
   airPlunge: {fileID: 11400000, guid: 27fa35145efb9114d80b448d791177a6, type: 2}
   plungeSpeed: 100

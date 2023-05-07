@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 17
   attackAnimationName: mixupCancer
-  duration: 0.75
+  duration: 0.41666666
   inputBufferTime: 0.35
   forwardMovement: 0
   finisherEndlag: 0.15

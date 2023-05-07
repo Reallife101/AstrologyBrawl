@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 25
   attackAnimationName: heavyCancer
-  duration: 0.5
+  duration: 0.4
   inputBufferTime: 0.35
-  forwardMovement: 3
+  forwardMovement: 20
   finisherEndlag: 0.15
   hitStunTime: 0.5
   knockbackPower: 15
