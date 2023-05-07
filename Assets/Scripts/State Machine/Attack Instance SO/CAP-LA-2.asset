@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 7
   attackAnimationName: lightCap2
-  duration: 0.7
+  duration: 0.8
   inputBufferTime: 0.35
   forwardMovement: 0
   finisherEndlag: 0.15
