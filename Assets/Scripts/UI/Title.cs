@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Title : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class Title : MonoBehaviour
 
     [SerializeField]
     TextMeshProUGUI leave_text;
+
+    [SerializeField] List<Sprite> splashArts;
+    [SerializeField] private Image LeftSplash;
+    [SerializeField] private Image RightSplash;
 
     private PlayerControllerInputAsset input;
 
@@ -48,6 +53,14 @@ public class Title : MonoBehaviour
 
         startGame.Enable();
         quitGame.Enable();
+
+        int rightIndex = Random.Range(0, splashArts.Count);
+        RightSplash.sprite = splashArts[rightIndex];
+        splashArts.Remove(splashArts[rightIndex]);
+        int leftIndex = Random.Range(0, splashArts.Count);
+        LeftSplash.sprite = splashArts[leftIndex];
+        splashArts.Remove(splashArts[leftIndex]);
+
 
     }
 
