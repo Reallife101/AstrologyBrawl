@@ -74,24 +74,12 @@ public class CharacterSelect : MonoBehaviourPunCallbacks
     }
 
 
-/*    public void SetPlayerInfo(Player _player)
-    {
-        playerName.text = _player.NickName;
-        player = _player;
-        if (player.CustomProperties.TryGetValue("ready", out object readyout))
-        {
-            if ((bool)readyout)
-            {
-                isReady = (bool)readyout;
-                readyUpText.text = "Unselect";
-                Debug.Log("Existing player, unselect time");
-            }
-        }
-    }
-*/
 
     public void OnClickLeft()
     {
+        if (isReady)
+            return;
+
         if ((int)playerProperties["playerAvatar"] == 0)
         {
             playerProperties["playerAvatar"] = avatars.Length - 1;
@@ -106,6 +94,9 @@ public class CharacterSelect : MonoBehaviourPunCallbacks
 
     public void OnClickRight()
     {
+        if (isReady)
+            return;
+
         if ((int)playerProperties["playerAvatar"] == avatars.Length - 1)
         {
             playerProperties["playerAvatar"] = 0;

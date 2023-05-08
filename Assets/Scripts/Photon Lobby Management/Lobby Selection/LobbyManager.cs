@@ -8,6 +8,8 @@ using Hashtable = ExitGames.Client.Photon.Hashtable;
 using UnityEngine.InputSystem;
 using ExitGames.Client.Photon;
 using System;
+using Unity.VisualScripting;
+using System.Reflection;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
@@ -21,6 +23,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     //GameObjects of the lobby and room
     public GameObject lobbyPanel;
     public GameObject roomPanel;
+    public GameObject levelSelect;
+    public GameObject settings;
     
     //Time for updates between refreses for the room list
     public float timeBetweenUpdates = 1.5f;
@@ -33,20 +37,24 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     //GameObjects associated with the players and their index in the otherPlayersGameObject 
     private Dictionary<int, KeyValuePair<int, GameObject>> otherPlayersViews = new Dictionary<int, KeyValuePair<int, GameObject>>();
 
-    public CharacterSelect character; 
+    public CharacterSelect character;
 
     //Play button stuff
     public GameObject playButton;
+    public GameObject nextButton;
+    private bool nextBtnclicked = false;
     public bool allPlayersReady = false;
 
     //Variables for Selecting the Level and getting the info from the level selected
-    public GameObject selectLevel;
+    public GameObject settingsBtn;
     public levelInfoItem levelInfo;
 
     //Variables for the InputSystem and binding methods to button calls
     public static PlayerControllerInputAsset input;
     private InputAction start;
     private InputAction leave;
+
+
 
     private void Awake()
     {
@@ -57,7 +65,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
         start.started += Start =>
         {
-            if (playButton.activeInHierarchy)
+            if (!nextBtnclicked)
+                OnClickNextButton();
+            else
                 OnClickPlayButton();
         };
 
@@ -94,16 +104,16 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         //Activates PlayButton there is enough players and all players in the room are ready
         if (PhotonNetwork.IsMasterClient && 
                 PhotonNetwork.CurrentRoom.PlayerCount >=1 && allPlayersReady)   
-            playButton.SetActive(true);
+            nextButton.SetActive(true);
         else
-            playButton.SetActive(false);
-        
+            nextButton.SetActive(false);
+
 
         //Turn on Level Changer if master Client
         if (PhotonNetwork.IsMasterClient)
-            selectLevel.SetActive(true);
+            settingsBtn.SetActive(true);
         else
-            selectLevel.SetActive(false);
+            settingsBtn.SetActive(false);
 
     }
 
@@ -206,27 +216,46 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         otherPlayersViews.Remove(hashcode);
     }
 
-    //////// Button Callbacks Methods ///////
+    //////// Button Callbacks Methods ////////
 
     public void OnClickPlayButton()
     {
         //Closes the room to not allow new players to join and disables input. Lastly, loads the Level chosen by the player. 
         input.Dispose();
+        nextBtnclicked = false;
         PhotonNetwork.CurrentRoom.IsOpen = false;
         PhotonNetwork.CurrentRoom.IsVisible = false;
         PhotonNetwork.LoadLevel(levelInfo.getSceneName());
-        //PhotonNetwork.LoadLevel("Battlefield");
     }
-    
+
+    public void OnClickNextButton()
+    {
+        photonView.RPC(nameof(NextButtonClicked), RpcTarget.All);
+    }
+
+
+    [PunRPC]
+    public void NextButtonClicked()
+    {
+        lobbyPanel.SetActive(false);
+        levelSelect.SetActive(true);
+        nextBtnclicked = true;
+    }
+
     public void OnClickLeaveRoom()
     {
         PhotonNetwork.LeaveRoom();
     }
 
+    public void OnClickSettingsButton()
+    {
+        settings.SetActive(!settings.activeInHierarchy);
+    }
+
     public void Refresh()
     {
         // Refreshes the rooms by reloading the scene //
-        PhotonNetwork.LoadLevel("New Lobby");
+        PhotonNetwork.LoadLevel("FINAL SELECTION LOBBY");
     }
 
     public void OnClickCreate()
@@ -301,6 +330,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         Debug.Log("ON LEFT ROOM");
         roomPanel.SetActive(true);
         lobbyPanel.SetActive(false);
+        levelSelect.SetActive(false);
         if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("ready"))
         {
             PhotonNetwork.LocalPlayer.CustomProperties["ready"] = null;
