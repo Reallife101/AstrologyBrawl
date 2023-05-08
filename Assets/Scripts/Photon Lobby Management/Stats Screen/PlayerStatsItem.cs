@@ -55,10 +55,14 @@ public class PlayerStatsItem : MonoBehaviourPunCallbacks
             playerProperties["playerAvatar"] = 0;
             PhotonNetwork.SetPlayerCustomProperties(playerProperties);
         }
-        if (player.CustomProperties.TryGetValue("kills", out object kills) && player.CustomProperties.TryGetValue("killsToWin", out object killstowin))
+        if (player.CustomProperties.TryGetValue("kills", out object kills))
         {
             killsText.text = kills.ToString();
-            if (kills.ToString() == killstowin.ToString())
+        }
+
+        if (player.CustomProperties.TryGetValue("killsToWin", out object killstowin))
+        {     
+            if (killsText.text.ToString() == killstowin.ToString())
             {
                 crown.SetActive(true);
             }
