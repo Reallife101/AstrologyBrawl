@@ -1307,11 +1307,10 @@ MonoBehaviour:
   isIconic: 0
   isMixup: 1
   stateManager: {fileID: 2270851739153014609}
-  pc: {fileID: 2212813536629527073}
   rb: {fileID: 6444089561079822210}
   player: {fileID: 3016257482074367029}
   launchVector: {x: 30, y: 30}
-  dropSpeed: 10000
+  dropSpeed: 25
 --- !u!1 &6579583809600646199
 GameObject:
   m_ObjectHideFlags: 0
