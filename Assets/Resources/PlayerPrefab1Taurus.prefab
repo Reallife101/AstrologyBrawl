@@ -188,6 +188,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 3016257482074367029}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!61 &2291978750233301062
 BoxCollider2D:
@@ -449,7 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876586a5a6023f6489fb060da5dc71df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ability1: {fileID: 3631343015906704325}
+  ability1: {fileID: 2643117773748252893}
   ability2: {fileID: 5367980014787998885}
   shield: {fileID: 3396283411241296210}
   movementVector: {x: 0, y: 0}
@@ -612,6 +613,11 @@ MonoBehaviour:
   Ability1: 20
   Ability2: 20
   stacked: 0
+  LightBuff: 1
+  HeavyBuff: 1
+  A1Buff: 1
+  A2Buff: 1
+  StackBuff: 1
 --- !u!60 &3589453091004020650
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -915,6 +921,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 0}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!114 &2526129928733174280
 MonoBehaviour:
@@ -1051,6 +1058,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 0}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!114 &4522046420772155104
 MonoBehaviour:
@@ -1089,6 +1097,7 @@ GameObject:
   - component: {fileID: 4348463444937792405}
   - component: {fileID: 580766214555348012}
   - component: {fileID: 8070913022771336927}
+  - component: {fileID: 2643117773748252893}
   m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
@@ -1278,6 +1287,31 @@ MonoBehaviour:
   heavy: {fileID: 0}
   mixup: {fileID: 0}
   iconic: {fileID: 0}
+--- !u!114 &2643117773748252893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6231110241372649085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa0fd617530b41469398866cfe35693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 3
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 7193425153408084763}
+  triggerName: mixupTaurus
+  attackData: {fileID: 11400000, guid: 6e753987960a6f14194692a92349bb61, type: 2}
+  isIconic: 0
+  isMixup: 1
+  stateManager: {fileID: 2270851739153014609}
+  pc: {fileID: 2212813536629527073}
+  rb: {fileID: 6444089561079822210}
+  player: {fileID: 3016257482074367029}
+  launchVector: {x: 30, y: 30}
+  dropSpeed: 10000
 --- !u!1 &6579583809600646199
 GameObject:
   m_ObjectHideFlags: 0
