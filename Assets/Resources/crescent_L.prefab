@@ -61,6 +61,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: -25, y: 25}
   parentSprite: {fileID: 3977179354115235197}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!61 &5768133154238573602
 BoxCollider2D:
