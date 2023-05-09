@@ -756,7 +756,9 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 603694810036171444}
   - {fileID: 3652574736880595736}
-  _obj: {fileID: 2468615175100282329, guid: b7dc105f572afae489f1fd6502c3bcc1, type: 3}
+  _obj:
+  - {fileID: 2468615175100282329, guid: b7dc105f572afae489f1fd6502c3bcc1, type: 3}
+  - {fileID: 2468615175100282329, guid: 5e4bf5882cb9c2f4181c4a8f7e1e0cee, type: 3}
 --- !u!114 &4259250144682286860
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4508450692938023946}
   - component: {fileID: 8695364256605719205}
   m_Layer: 0
-  m_Name: crescent_L
+  m_Name: crescent_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6af6b8e0699baaa4aafa4923a87520d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
