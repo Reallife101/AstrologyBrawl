@@ -507,33 +507,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  movementspeed: 0
+      Data1: -1777302120
+      Data2: 1268280268
+      Data3: 1573820297
+      Data4: 596767288
+    Path: event:/Aquarius (AQ)/Aquarius Walk
+  movementspeed: 0.1
   jumpsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1540495566
+      Data2: 1121154774
+      Data3: -1102698050
+      Data4: 623309370
+    Path: event:/Jumps
   fastfallsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 544284601
+      Data2: 1228386974
+      Data3: 311565232
+      Data4: 1173628407
+    Path: event:/FastFall
   lightattacksound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -359362508
+      Data2: 1291022204
+      Data3: 1480557459
+      Data4: 1468188696
+    Path: event:/Aquarius (AQ)/Aquarius Splash Attack
   heavyattackchargesound:
     Guid:
       Data1: 0
@@ -543,67 +543,67 @@ MonoBehaviour:
     Path: 
   heavyattackreleasesound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 506358718
+      Data2: 1100125026
+      Data3: 464510604
+      Data4: 1987611476
+    Path: event:/Aquarius (AQ)/Aquarius Vase Attack
   ability1sound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -551030720
+      Data2: 1108651669
+      Data3: -148578409
+      Data4: -1556125262
+    Path: event:/Aquarius (AQ)/Aquarius Bubble Attack
   ability2sound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1739857195
+      Data2: 1269515713
+      Data3: -1077149509
+      Data4: 1707959568
+    Path: event:/Aquarius (AQ)/Aquarius Wave Attack
   attackvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -481707879
+      Data2: 1249790805
+      Data3: -2077059689
+      Data4: 1278829412
+    Path: event:/Aquarius (AQ)/Aquarius Attack Voice
   chargeattackvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1352868210
+      Data2: 1264241035
+      Data3: -1146706513
+      Data4: -1921092142
+    Path: event:/Aquarius (AQ)/Aquarius Heavy Attack Voice
   ability1voice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -481707879
+      Data2: 1249790805
+      Data3: -2077059689
+      Data4: 1278829412
+    Path: event:/Aquarius (AQ)/Aquarius Attack Voice
   iconicvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -84534936
+      Data2: 1292811821
+      Data3: -1235877487
+      Data4: -1420845508
+    Path: event:/Aquarius (AQ)/Aquarius Title Wave Voice
   genericdeathsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1755445942
+      Data2: 1245857384
+      Data3: 435654846
+      Data4: -1281782737
+    Path: event:/GenericDeath
   takedamagesound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -219124643
+      Data2: 1241243363
+      Data3: 529385401
+      Data4: -1657758984
+    Path: event:/TakingDamage
   takedamagevoice:
     Guid:
       Data1: 0
@@ -613,11 +613,11 @@ MonoBehaviour:
     Path: 
   spawnvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -2117587430
+      Data2: 1079830965
+      Data3: -1895601235
+      Data4: -1750622745
+    Path: event:/Aquarius (AQ)/Aquarius Respawn Voice
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0

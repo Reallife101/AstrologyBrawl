@@ -837,7 +837,7 @@ MonoBehaviour:
       Data3: 567446449
       Data4: -729169108
     Path: event:/Libra (L)/Libra Walk
-  movementspeed: 0.1
+  movementspeed: 0.18
   jumpsound:
     Guid:
       Data1: 1540495566
