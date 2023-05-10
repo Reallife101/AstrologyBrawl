@@ -1631,7 +1631,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1699966572}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3390,7 +3402,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.0049902694}
+  m_AnchoredPosition: {x: 66, y: 0.0049832696}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -3523,42 +3535,56 @@ MonoBehaviour:
       Data2: 1136807987
       Data3: -223500928
       Data4: 1253733636
-    Path: event:/Libra/Libra On Select Voice
+    Path: event:/Libra (L)/Libra On Select Voice
   SaggiLock:
     Guid:
       Data1: 1017163237
       Data2: 1183297019
       Data3: 964185256
       Data4: 376819974
-    Path: event:/Saggi/Saggi On Select Voice
+    Path: event:/Saggi (SG)/Saggi On Select Voice
   PiscesLock:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1246567183
+      Data2: 1320177063
+      Data3: 1323264156
+      Data4: -987561253
+    Path: event:/Pisces (PC)/Pisces On Select Voice
   TaurusLock:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1789533263
+      Data2: 1231328807
+      Data3: 313492112
+      Data4: -1916934584
+    Path: event:/Taurus (TA)/Taurus On Select Voice
   AquaLock:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1417328316
+      Data2: 1286537512
+      Data3: -1788898155
+      Data4: -1801022742
+    Path: event:/Aquarius (AQ)/Aquarius On Select Voice
   VirgoLock:
+    Guid:
+      Data1: 701842229
+      Data2: 1136924153
+      Data3: -345367372
+      Data4: 934532357
+    Path: event:/Virgo (VG)/Virgo On Select Voice
+  CapLock:
     Guid:
       Data1: 0
       Data2: 0
       Data3: 0
       Data4: 0
     Path: 
+  CancerLock:
+    Guid:
+      Data1: 1941250987
+      Data2: 1139303114
+      Data3: 1153192324
+      Data4: -1014409011
+    Path: event:/Cancer (CN)/Cancer On Select Voice
 --- !u!1 &810623147
 GameObject:
   m_ObjectHideFlags: 0
@@ -4619,6 +4645,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1306684694}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1090766160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5646,6 +5684,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1415777062}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1169494714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5771,6 +5821,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1283545689}
         m_TargetAssemblyTypeName: LobbyManager, Assembly-CSharp
         m_MethodName: Refresh
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1415777062}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6250,6 +6312,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296416835}
   m_CullTransparentMesh: 1
+--- !u!1 &1306684693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1306684695}
+  - component: {fileID: 1306684694}
+  m_Layer: 0
+  m_Name: ReadyAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1306684694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306684693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d08fcf4634e735479a7e98d3098bc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIButton:
+    Guid:
+      Data1: 286607804
+      Data2: 1136816583
+      Data3: -1156528714
+      Data4: 1321550430
+    Path: event:/UI/testButton1
+--- !u!4 &1306684695
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306684693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 781.54346, y: 353.52316, z: 2.1967645}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1349982565
 GameObject:
   m_ObjectHideFlags: 0
@@ -6503,6 +6616,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389786627}
   m_CullTransparentMesh: 1
+--- !u!1 &1415777061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1415777063}
+  - component: {fileID: 1415777062}
+  m_Layer: 0
+  m_Name: GenericButtonAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1415777062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415777061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d08fcf4634e735479a7e98d3098bc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIButton:
+    Guid:
+      Data1: -959727029
+      Data2: 1163183864
+      Data3: -1228987717
+      Data4: -516991635
+    Path: event:/UI/testButton2
+--- !u!4 &1415777063
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415777061}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 781.54346, y: 353.52316, z: 2.1967645}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1425100393
 GameObject:
   m_ObjectHideFlags: 0
@@ -7178,6 +7342,7 @@ GameObject:
   - component: {fileID: 1699966571}
   - component: {fileID: 1699966570}
   - component: {fileID: 1699966569}
+  - component: {fileID: 1699966572}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7268,6 +7433,25 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1699966572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699966567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d08fcf4634e735479a7e98d3098bc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIButton:
+    Guid:
+      Data1: -1115074577
+      Data2: 1119489144
+      Data3: -301214804
+      Data4: 1877555012
+    Path: event:/UI/Keystrokes
 --- !u!1 &1719044787
 GameObject:
   m_ObjectHideFlags: 0
@@ -8233,8 +8417,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1941303875}
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
-  m_Value: -0.012345679
-  m_Size: 0.9999844
+  m_Value: -0.01863354
+  m_Size: 0.996435
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

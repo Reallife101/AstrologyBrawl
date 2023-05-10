@@ -11,6 +11,8 @@ public class characterSelectAudio : MonoBehaviour
     [SerializeField] FMODUnity.EventReference TaurusLock;
     [SerializeField] FMODUnity.EventReference AquaLock;
     [SerializeField] FMODUnity.EventReference VirgoLock;
+    [SerializeField] FMODUnity.EventReference CapLock;
+    [SerializeField] FMODUnity.EventReference CancerLock;
 
     CharacterSelect PlayerItem;
 
@@ -45,6 +47,14 @@ public class characterSelectAudio : MonoBehaviour
         if ((int)PlayerItem.playerProperties["playerAvatar"] == 5)
         {
             FMODUnity.RuntimeManager.PlayOneShot(VirgoLock);
+        }
+        if ((int)PlayerItem.playerProperties["playerAvatar"] == 6)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(CapLock);
+        }
+        if ((int)PlayerItem.playerProperties["playerAvatar"] == 7)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(CancerLock);
         }
     }
 }

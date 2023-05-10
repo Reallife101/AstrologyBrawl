@@ -626,7 +626,7 @@ MonoBehaviour:
       Data2: 1295834086
       Data3: 567446449
       Data4: -729169108
-    Path: event:/Libra/Libra Walk
+    Path: event:/Libra (L)/Libra Walk
   movementspeed: 0.15
   jumpsound:
     Guid:
@@ -648,35 +648,35 @@ MonoBehaviour:
       Data2: 1266483039
       Data3: -1526947184
       Data4: 788834218
-    Path: event:/Libra/Libra NA
+    Path: event:/Libra (L)/Libra NA
   heavyattackchargesound:
     Guid:
       Data1: 550263908
       Data2: 1278454510
       Data3: 1391707055
       Data4: -1837866644
-    Path: event:/Libra/Libra CA
+    Path: event:/Libra (L)/Libra CA
   heavyattackreleasesound:
     Guid:
       Data1: 550263908
       Data2: 1278454510
       Data3: 1391707055
       Data4: -1837866644
-    Path: event:/Libra/Libra CA
+    Path: event:/Libra (L)/Libra CA
   ability1sound:
     Guid:
       Data1: -1263338582
       Data2: 1181528799
       Data3: -1389501528
       Data4: -1006291035
-    Path: event:/Libra/Libra SA1
+    Path: event:/Libra (L)/Libra SA1
   ability2sound:
     Guid:
       Data1: -1072902884
       Data2: 1303518384
       Data3: 1383783859
       Data4: -449957530
-    Path: event:/Libra/Libra S2
+    Path: event:/Libra (L)/Libra S2
   attackvoice:
     Guid:
       Data1: 0
