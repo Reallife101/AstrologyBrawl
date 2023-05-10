@@ -457,6 +457,11 @@ MonoBehaviour:
   Ability1: 20
   Ability2: 12
   stacked: 0
+  LightBuff: 1
+  HeavyBuff: 1
+  A1Buff: 1
+  A2Buff: 1
+  StackBuff: 1
 --- !u!60 &2228003283728977349
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -788,6 +793,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 0}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!114 &2526129928733174280
 MonoBehaviour:
@@ -924,6 +930,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 0}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!114 &4522046420772155104
 MonoBehaviour:
@@ -1149,6 +1156,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 3016257482074367029}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!61 &868218565461086243
 BoxCollider2D:

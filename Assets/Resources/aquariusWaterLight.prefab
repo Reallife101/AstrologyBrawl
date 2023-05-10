@@ -177,6 +177,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 5, y: 0}
   parentSprite: {fileID: 0}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!95 &5867182734217089990
 Animator:
