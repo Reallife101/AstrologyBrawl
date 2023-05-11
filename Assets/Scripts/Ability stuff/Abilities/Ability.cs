@@ -54,6 +54,10 @@ public abstract class Ability : MonoBehaviour
         // Note: Some consideration to using couritines instead, currently no need to though
     }
 
+
+
+
+
     public float MaxCooldownTime()
     {
         return cooldownTime;
@@ -61,6 +65,8 @@ public abstract class Ability : MonoBehaviour
 
     public float CurrCooldownTime()
     {
+        if (currentCooldown == 0)
+            return cooldownTime;
         return currentCooldown;
     }
 }

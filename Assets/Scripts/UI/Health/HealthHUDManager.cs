@@ -12,13 +12,15 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] private GameObject HealthItemPrefab;
     [SerializeField] private Transform HUDTransform;
+    [SerializeField] private List<Sprite> characterImages;
 
     private List<HealthItem> HealthItems = new List<HealthItem>();
 
-    public HealthItem AddHealthItem(string nickname, int actornum)
+    public HealthItem AddHealthItem(string nickname, int actornum, Player player)
     {
         HealthItem item = Instantiate(HealthItemPrefab, HUDTransform).GetComponent<HealthItem>();
-        item.Initialize(nickname, actornum);
+        Sprite character = characterImages[(int)player.CustomProperties["playerAvatar"]];
+        item.Initialize(nickname, actornum, character);
         HealthItems.Add(item);
         SortHealthItems();
         return item;

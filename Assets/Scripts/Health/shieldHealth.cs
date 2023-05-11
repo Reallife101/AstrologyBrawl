@@ -29,7 +29,7 @@ public class shieldHealth : MonoBehaviourPunCallbacks, IDamageable
     private bool isActive;
     private bool isInvincible;
     private bool isRegen;
-    private bool canActivate;
+    public bool canActivate { get; private set; }
     private PhotonView myPV;
 
 
