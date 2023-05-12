@@ -10,6 +10,7 @@ using ExitGames.Client.Photon;
 using System;
 using Unity.VisualScripting;
 using System.Reflection;
+using FMODUnity;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
@@ -333,6 +334,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         roomPanel.SetActive(true);
         lobbyPanel.SetActive(false);
         levelSelect.SetActive(false);
+        settings.SetActive(false);
         if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("ready"))
         {
             PhotonNetwork.LocalPlayer.CustomProperties["ready"] = null;

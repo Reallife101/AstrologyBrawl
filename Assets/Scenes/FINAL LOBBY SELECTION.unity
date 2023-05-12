@@ -7167,11 +7167,36 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4294965248
       objectReference: {fileID: 0}
+    - target: {fileID: 4592426623810679229, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
 --- !u!224 &1101554121 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3305554254204351071, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+  m_PrefabInstance: {fileID: 1101554120}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1101554122 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3431094974743995855, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+  m_PrefabInstance: {fileID: 1101554120}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1101554123 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3305554254479663719, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+  m_PrefabInstance: {fileID: 1101554120}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1101554124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3305554255540755198, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
   m_PrefabInstance: {fileID: 1101554120}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1119486188
@@ -8441,6 +8466,7 @@ GameObject:
   - component: {fileID: 1283545690}
   - component: {fileID: 1283545689}
   - component: {fileID: 1283545691}
+  - component: {fileID: 1283545692}
   m_Layer: 0
   m_Name: Lobby Manager
   m_TagString: Untagged
@@ -8516,6 +8542,24 @@ MonoBehaviour:
   sceneViewId: 3
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &1283545692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283545688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94de079ede5a00f449ae856a3bd7a9bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftArrowButton: {fileID: 1101554124}
+  rightArrowButton: {fileID: 1101554123}
+  kill_num_text: {fileID: 1101554122}
+  minKills: 5
+  maxKills: 25
+  killIncrement: 5
 --- !u!1 &1288181483
 GameObject:
   m_ObjectHideFlags: 0

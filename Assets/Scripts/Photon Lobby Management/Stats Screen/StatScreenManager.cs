@@ -14,8 +14,11 @@ public class StatScreenManager : MonoBehaviourPunCallbacks
 
     private void Start()
     {
+
         foreach (KeyValuePair<int, Player> player in PhotonNetwork.CurrentRoom.Players)
         {
+            Debug.Log(player.Value.CustomProperties["kills"].ToString());
+            Debug.Log(player.Value.CustomProperties["killsToWin"].ToString());
             if (player.Value.CustomProperties["kills"].ToString() == player.Value.CustomProperties["killsToWin"].ToString())
             {
                 winnerText.text = player.Value.NickName;
@@ -46,10 +49,12 @@ public class StatScreenManager : MonoBehaviourPunCallbacks
         }
         playerStatsItemsList.Clear();
 
+
         if (PhotonNetwork.CurrentRoom == null)
         {
             return;
         }
+
 
         foreach (KeyValuePair<int, Player> player in PhotonNetwork.CurrentRoom.Players)
         {
