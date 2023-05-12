@@ -174,7 +174,7 @@ public class CharacterDescription : MonoBehaviour
         if (characterTitles.ContainsKey(name))
             characterTitle.text = characterTitles[name];
         else
-            descriptionSection.text = "THIS DESCRIPTION HASN'T BEEN SET UP YET";
+            characterTitle.text = "THIS TITLE HASN'T BEEN SET UP YET";
     }
 
     public void ChangeKeyBindsNames(bool isKeyboard)

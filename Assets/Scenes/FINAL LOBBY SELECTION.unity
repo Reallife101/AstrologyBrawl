@@ -4386,7 +4386,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.0049425145}
+  m_AnchoredPosition: {x: 66, y: 0.0056347647}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -5999,7 +5999,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 185.70001, y: -120.9}
+  m_AnchoredPosition: {x: 185.70001, y: -149.5}
   m_SizeDelta: {x: 371.4, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1090766159
@@ -10819,25 +10819,153 @@ MonoBehaviour:
   characterNames: 040000000a0000000700000003000000000000000b0000000900000005000000
   titles:
   - name: 4
-    title: LIBRAMAINUWU
+    title: The Scales
   - name: 10
-    title: SAGITTARIUSMAINUWU
+    title: The Archer
+  - name: 2
+    title: The Ram
+  - name: 3
+    title: The Bull
+  - name: 8
+    title: The Twins
+  - name: 5
+    title: The Crab
+  - name: 6
+    title: The Lion
+  - name: 11
+    title: The Maiden
+  - name: 1
+    title: The Scorpion
+  - name: 9
+    title: The Goat
+  - name: 0
+    title: The Water-bearer
+  - name: 7
+    title: The Fish
   descriptions:
   - name: 4
     ability: 0
-    description: LIGHT ATTACK
+    description: 'Light ball: Casts a fast moving light projectile that travels a
+      short distance.'
   - name: 4
     ability: 1
-    description: HEAVY ATTACK
+    description: 'Scales of Justice: Combines her scales into one large one to whack
+      down enemies who get too close!'
   - name: 4
     ability: 2
-    description: MIXUP
+    description: 'Crescents of Balance: Casts two upward moving crescents of light
+      magic from her scales on both sides.'
   - name: 4
     ability: 3
-    description: ICONIC
+    description: 'Absorption: Absorbs an incoming attack and redirects that power
+      into her scales, powering up her next attack.'
   - name: 10
     ability: 0
-    description: NOT LIBRA'S LIGHT ATTACK
+    description: 'Barnhouse Kick: Uses her powerful legs to attack opponents directly
+      in front of her with a roundhouse kick.'
+  - name: 10
+    ability: 1
+    description: 'Epsilon Arrows: Shoots an arrow projectile. Can be charged by holding
+      the button.'
+  - name: 10
+    ability: 2
+    description: 'Chiron''s Wisdom: Jumps back and up while shooting three arrows
+      down in front of her.'
+  - name: 10
+    ability: 3
+    description: 'Reign of Arrows: Shoots an arrow in an arc that splits apart and
+      rains shards onto the enemy.'
+  - name: 0
+    ability: 0
+    description: 'Water Jet: Sends out a pulse of water at enemies in front of her.'
+  - name: 10
+    ability: 1
+    description: 'Hydria Smash: Smashes her hydria down to deal heavy damage to enemies
+      directly in front of her.'
+  - name: 10
+    ability: 2
+    description: 'Aqua Sphere: Summons a slow moving ball of water that damages enemies
+      in its wake.'
+  - name: 10
+    ability: 3
+    description: 'Wipe out!: Summons a wall made of water that flows forward. Deals
+      damage to all enemies it contacts and stops projectiles that hit it.'
+  - name: 9
+    ability: 0
+    description: 'Precise aggression: Thrust staff forward, then spin. Does more
+      damage at the end of the staff. This attack can be chained infinitely. '
+  - name: 9
+    ability: 1
+    description: 'Slam: Slams staff onto the ground to unleash heavy damage.'
+  - name: 9
+    ability: 2
+    description: 'Return of Saturn: Slides forward with her staff. If used in the
+      air, performs a downward-diving plunge straight down.'
+  - name: 9
+    ability: 3
+    description: 'Alchemist''s Flute: Plays magical pan flute that allows her to
+      power up her jumps, speed, damage, or gives self healing.'
+  - name: 3
+    ability: 0
+    description: 'Horizontal Slice: Quickly slices enemies in front of him.'
+  - name: 3
+    ability: 1
+    description: 'Ground Smash: Smashes axe down and inflicts tremendous damage to
+      those caught in it. Has a long recovery time.'
+  - name: 3
+    ability: 2
+    description: 'Axe Twirl: Leaps up and spins with his axe, smashing down anyone
+      hit.'
+  - name: 3
+    ability: 3
+    description: 'Call Ferdinand: Summons a bull that rushes forward. If the bull
+      encounters an enemy he flips them backwards with his horns.'
+  - name: 11
+    ability: 0
+    description: "G\xE9n\xE9ration Harmonieuse: Slashes with his harvesting scythe,
+      sapping a bit of health from the enemy hit."
+  - name: 11
+    ability: 1
+    description: 'Sacrificial Slash: Slashes with his reaping scythe, sacrificing
+      a bit of his own health to deal more damage for this attack.'
+  - name: 11
+    ability: 2
+    description: 'Pas de deux: Throws a scythe straightforward. If it collides with
+      an enemy, he pulls himself towards them.'
+  - name: 11
+    ability: 3
+    description: an efficient Zodiac who emphasizes combos and outsmarting his opponent,
+      even sacrificing his own health to further his attacks.
+  - name: 5
+    ability: 0
+    description: 'Crustation Stab: Strikes at quickly to deal rapid damage to enemies
+      in front of him.'
+  - name: 5
+    ability: 1
+    description: 'Crustation Bash: Smashes his shield in front of him to block attacks
+      and deal heavy damage.'
+  - name: 5
+    ability: 2
+    description: 'Herculean Vengeance: Summons a giant crab claw in front of him
+      that strikes enemies'' feet.'
+  - name: 5
+    ability: 3
+    description: 'Celestial Shield: Summons a magical water shield that pushes enemies,
+      reflects projectiles, and can tank a hit. It disappears after a few seconds.'
+  - name: 7
+    ability: 0
+    description: 'Whip: Sends out her fishing rod and whips enemies in front of her.'
+  - name: 7
+    ability: 1
+    description: 'Tail Slap: Delivers a heavy slap with her tail.'
+  - name: 7
+    ability: 2
+    description: 'Let''s Go Fishin'': Sends out a fishing rod that grabs and pulls
+      an enemy to her.'
+  - name: 7
+    ability: 3
+    description: 'Going Under'': Evades incoming enemy attacks by submerging into
+      the ground to freely swim until forced to reemerge.'
 --- !u!1 &1941303873
 GameObject:
   m_ObjectHideFlags: 0
@@ -11131,7 +11259,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1941303875}
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
-  m_Value: -0.0062111802
+  m_Value: -0.14285715
   m_Size: 0.99998444
   m_NumberOfSteps: 0
   m_OnValueChanged:
