@@ -327,6 +327,9 @@ public class playerController : MonoBehaviour
         shieldHeld = false;
         shield.activate();
         mySM.ToggleShield(true);
+        //Shield interupts movement(), which normally handles this
+        myRB.velocity = new Vector2(0, myRB.velocity.y);
+        anim.SetFloat("speed", 0);
     }
 
     public void Movement()
