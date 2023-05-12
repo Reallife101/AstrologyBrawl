@@ -19,6 +19,7 @@ public class CharacterSelect : MonoBehaviourPunCallbacks
 
     //Sprites of the player avatar for the image
     public Sprite[] avatars;
+    public GameObject[] splashes;
     public Sprite[] signs; 
 
     //Variables for controlling input
@@ -135,7 +136,8 @@ public class CharacterSelect : MonoBehaviourPunCallbacks
     {
         if (_player.CustomProperties.ContainsKey("playerAvatar"))
         {
-            playerAvatar.sprite = avatars[(int)player.CustomProperties["playerAvatar"]];
+            //playerAvatar.sprite = avatars[(int)player.CustomProperties["playerAvatar"]];
+            toggleOnSplash((int)player.CustomProperties["playerAvatar"]);
             playerProperties["playerAvatar"] = (int)player.CustomProperties["playerAvatar"];
         }
         else
@@ -144,6 +146,15 @@ public class CharacterSelect : MonoBehaviourPunCallbacks
             if (PhotonNetwork.LocalPlayer == _player)
                 PhotonNetwork.SetPlayerCustomProperties(playerProperties);
         }
+    }
+
+    void toggleOnSplash(int i)
+    {
+        foreach (GameObject go in splashes)
+        {
+            go.SetActive(false);
+        }
+        splashes[i].SetActive(true);
     }
 
     public void ReadyUpToggle()

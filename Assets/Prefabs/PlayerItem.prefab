@@ -460,7 +460,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3305554254204351071}
   - component: {fileID: 6377059073172621493}
-  - component: {fileID: 3973905992332843406}
   m_Layer: 5
   m_Name: PlayerItem
   m_TagString: Untagged
@@ -508,10 +507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: {fileID: 3419666283991761436}
-  leftArrowButton: {fileID: 3305554255540755198}
-  rightArrowButton: {fileID: 3305554254479663719}
   playerItemButton: {fileID: 414570510118433598}
-  readyUpTextObject: {fileID: 1490857803009007843}
   readyUpText: {fileID: 6350101851390439309}
   playerAvatar: {fileID: 768407824205025756}
   avatars:
@@ -524,60 +520,6 @@ MonoBehaviour:
   - {fileID: 21300002, guid: a75445bb16444f14f96fdf9c734945cc, type: 3}
   - {fileID: 21300000, guid: 9125c204f566db048a92ebcb64d9d14a, type: 3}
   - {fileID: 21300000, guid: b8a22c84b9ce85749ad8f47f57d6506e, type: 3}
---- !u!114 &3973905992332843406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3305554254204351072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21d36e4da61aad64e981d8bf651f1c06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LibraLock:
-    Guid:
-      Data1: 1736800558
-      Data2: 1136807987
-      Data3: -223500928
-      Data4: 1253733636
-    Path: event:/Libra (L)/Libra On Select Voice
-  SaggiLock:
-    Guid:
-      Data1: 1017163237
-      Data2: 1183297019
-      Data3: 964185256
-      Data4: 376819974
-    Path: event:/Saggi (SG)/Saggi On Select Voice
-  PiscesLock:
-    Guid:
-      Data1: 1246567183
-      Data2: 1320177063
-      Data3: 1323264156
-      Data4: -987561253
-    Path: event:/Pisces (PC)/Pisces On Select Voice
-  TaurusLock:
-    Guid:
-      Data1: -1789533263
-      Data2: 1231328807
-      Data3: 313492112
-      Data4: -1916934584
-    Path: event:/Taurus (TA)/Taurus On Select Voice
-  AquaLock:
-    Guid:
-      Data1: -1417328316
-      Data2: 1286537512
-      Data3: -1788898155
-      Data4: -1801022742
-    Path: event:/Aquarius (AQ)/Aquarius On Select Voice
-  VirgoLock:
-    Guid:
-      Data1: 701842229
-      Data2: 1136924153
-      Data3: -345367372
-      Data4: 934532357
-    Path: event:/Virgo (VG)/Virgo On Select Voice
 --- !u!1 &3305554254479663719
 GameObject:
   m_ObjectHideFlags: 0

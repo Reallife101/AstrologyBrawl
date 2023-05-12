@@ -274,6 +274,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 0}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!114 &1352831060393811335
 MonoBehaviour:
@@ -287,5 +288,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 659a269ad59defe4f98af1b0fdd720f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xspeed: 7
+  xspeed: 5.25
   yspeed: 0

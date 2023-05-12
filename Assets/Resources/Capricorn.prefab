@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 7041575192684781462}
   - component: {fileID: 5740398807661098734}
   - component: {fileID: 659188652684588319}
+  - component: {fileID: 3993268674623244631}
   m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
@@ -212,7 +213,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d1c6ad23823d4f0478a82cdea7060308, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1118a419f3bea5f43bd1356c457393b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -298,19 +299,19 @@ MonoBehaviour:
     Name: heavyCap
   - Type: 9
     SynchronizeType: 1
-    Name: mixupCap
-  - Type: 9
-    SynchronizeType: 1
-    Name: iconicCapPlunge
-  - Type: 9
-    SynchronizeType: 1
-    Name: iconicCapSlide
-  - Type: 9
-    SynchronizeType: 1
     Name: lightCap1
   - Type: 9
     SynchronizeType: 1
     Name: lightCap2
+  - Type: 9
+    SynchronizeType: 1
+    Name: iconicCap
+  - Type: 9
+    SynchronizeType: 1
+    Name: mixupCapPlunge
+  - Type: 9
+    SynchronizeType: 1
+    Name: mixupCapSlide
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -347,6 +348,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stateManager: {fileID: 2270851739153014609}
+--- !u!114 &3993268674623244631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060617277697689753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f11db337bb2cd6468bab78a9ef16453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cp: {fileID: 1876953723702681367}
 --- !u!1 &3016257482074367028
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,7 +640,7 @@ MonoBehaviour:
       Data2: 1295834086
       Data3: 567446449
       Data4: -729169108
-    Path: event:/Libra/Libra Walk
+    Path: event:/Libra (L)/Libra Walk
   movementspeed: 0.15
   jumpsound:
     Guid:
@@ -648,35 +662,35 @@ MonoBehaviour:
       Data2: 1266483039
       Data3: -1526947184
       Data4: 788834218
-    Path: event:/Libra/Libra NA
+    Path: event:/Libra (L)/Libra NA
   heavyattackchargesound:
     Guid:
       Data1: 550263908
       Data2: 1278454510
       Data3: 1391707055
       Data4: -1837866644
-    Path: event:/Libra/Libra CA
+    Path: event:/Libra (L)/Libra CA
   heavyattackreleasesound:
     Guid:
       Data1: 550263908
       Data2: 1278454510
       Data3: 1391707055
       Data4: -1837866644
-    Path: event:/Libra/Libra CA
+    Path: event:/Libra (L)/Libra CA
   ability1sound:
     Guid:
       Data1: -1263338582
       Data2: 1181528799
       Data3: -1389501528
       Data4: -1006291035
-    Path: event:/Libra/Libra SA1
+    Path: event:/Libra (L)/Libra SA1
   ability2sound:
     Guid:
       Data1: -1072902884
       Data2: 1303518384
       Data3: 1383783859
       Data4: -449957530
-    Path: event:/Libra/Libra S2
+    Path: event:/Libra (L)/Libra S2
   attackvoice:
     Guid:
       Data1: 0
@@ -820,10 +834,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9992dc509c2704380e048733f09df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0
+  cooldownTime: 5
   abilitySoundCheck: 0
   playerAnimator: {fileID: 8694400067546609426}
-  triggerName: 
+  triggerName: iconicCap
   up: {fileID: 5363123803401204161}
   down: {fileID: 7622008280667429712}
   left: {fileID: 6648394733506107925}
@@ -925,9 +939,9 @@ MonoBehaviour:
   pc: {fileID: 2212813536629527073}
   rb: {fileID: 6444089561079822210}
   groundSlide: {fileID: 11400000, guid: 2621de170d66a244d91e6ca8e4fad91b, type: 2}
-  groundSlideTrigger: iconicCapSlide
+  groundSlideTrigger: mixupCapSlide
   slideSpeed: 30
-  airPlungeTrigger: iconicCapPlunge
+  airPlungeTrigger: mixupCapPlunge
   airPlunge: {fileID: 11400000, guid: 27fa35145efb9114d80b448d791177a6, type: 2}
   plungeSpeed: 100
 --- !u!114 &7858439762415191063
