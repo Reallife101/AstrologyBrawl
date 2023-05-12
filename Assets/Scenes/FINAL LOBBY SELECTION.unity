@@ -1989,7 +1989,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17cef3b5c50f2f74fac31e878b8ec84f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d42adcfad1b690441b4ad97617107340, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2932,22 +2932,22 @@ MonoBehaviour:
   levels:
   - btn: {fileID: 1210097713}
     levelName: Libra's Lament
-    description: IDK WHAT TO PUT
+    description: Fair and Balanced
     img: {fileID: 1210097714}
     background: {fileID: 581177392}
   - btn: {fileID: 368627508}
     levelName: Scrapyard Scuffle
-    description: IDK WHAT TO PUT 2
+    description: WALL-B GO HOME
     img: {fileID: 368627509}
     background: {fileID: 1562141358}
   - btn: {fileID: 1622475554}
     levelName: Celestial Clash
-    description: IDK WHAT TO PUT 3
+    description: Jeffrey asked for it
     img: {fileID: 1622475555}
     background: {fileID: 880101433}
   - btn: {fileID: 1814496823}
     levelName: Battlefield
-    description: IDK WHAT TO PUT 3
+    description: Don't pick this
     img: {fileID: 1622475555}
     background: {fileID: 26249412}
   levelText: {fileID: 1856947942}
@@ -4386,7 +4386,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.004934663}
+  m_AnchoredPosition: {x: 66, y: 0.0049425145}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -9268,7 +9268,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17cef3b5c50f2f74fac31e878b8ec84f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f2ddc7fa0c10ef41beb0523874d61ef, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11131,7 +11131,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1941303875}
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
-  m_Value: 0
+  m_Value: -0.0062111802
   m_Size: 0.99998444
   m_NumberOfSteps: 0
   m_OnValueChanged:
