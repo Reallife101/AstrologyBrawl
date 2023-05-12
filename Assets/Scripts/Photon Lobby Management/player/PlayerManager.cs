@@ -26,6 +26,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
     private HealthHUDManager healthHUDManager;
     private HealthItem healthItem;
+
     [SerializeField] private AnimationCurve timeSlowCurve;
     private shieldHealth ShieldHealth;
 
@@ -246,16 +247,26 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         }
         controller?.GetComponent<playerController>().ToggleCrown(isKing);
     }
-
-    private void OnPlayerDisconnected()
+    public override void OnPlayerLeftRoom(Player otherPlayer)
     {
-        Debug.Log("DISCONNECTING");
-        Destroy(healthItem);
+        Debug.Log("PASSING IF ? " + (otherPlayer == PhotonNetwork.LocalPlayer));
+        Debug.Log(otherPlayer.NickName);
+        if (otherPlayer == PhotonNetwork.LocalPlayer)
+            photonView.RPC(nameof(DeleteFrame), RpcTarget.All, healthItem.getLocalIndex());
     }
 
-    private void OnApplicationQuit()
+    public void OnApplicationQuit()
+    {
+        Debug.Log("QUITTING  APPLCITATION");
+        PhotonNetwork.LeaveRoom();
+    }
+
+    [PunRPC]
+    public void DeleteFrame(int index)
     {
         Debug.Log("Quitting");
-        Destroy(healthItem);
+        Destroy(healthHUDManager.HealthItems[index].gameObject);
+        healthHUDManager.HealthItems.RemoveAt(index);
     }
+
 }

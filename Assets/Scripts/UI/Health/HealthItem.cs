@@ -25,6 +25,7 @@ public class HealthItem : MonoBehaviourPunCallbacks
     [SerializeField]
     private Animator mixupAnimator;
 
+    private int index;
 
     private float maxCooldown1;
     private float maxCooldown2;
@@ -32,11 +33,12 @@ public class HealthItem : MonoBehaviourPunCallbacks
     private float CurrentHealth;
     private shieldHealth ShieldHealth;
 
-    public void Initialize(string nickname, int actornumber, Sprite sprite)
+    public void Initialize(string nickname, int actornumber, Sprite sprite, int localIndex)
     {
         OwnerActorNumber = actornumber;
         SetPlayerName(nickname);
         character.sprite = sprite;
+        index = localIndex;
     }
 
     private void Update()
@@ -124,4 +126,10 @@ public class HealthItem : MonoBehaviourPunCallbacks
     {
         return TarotHolder;
     }
+
+    public int getLocalIndex()
+    {
+        return index;
+    }
+    
 }

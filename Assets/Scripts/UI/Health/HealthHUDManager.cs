@@ -4,9 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
-using Photon.Realtime;
-using Photon.Pun;
-using UnityEngine.UI;
+
 
 public class HealthHUDManager : MonoBehaviourPunCallbacks
 {
@@ -14,13 +12,16 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
     [SerializeField] private Transform HUDTransform;
     [SerializeField] private List<Sprite> characterImages;
 
-    private List<HealthItem> HealthItems = new List<HealthItem>();
+    public List<HealthItem> HealthItems = new List<HealthItem>();
+    private int currentIndex;
 
     public HealthItem AddHealthItem(string nickname, int actornum, Player player)
     {
-        HealthItem item = Instantiate(HealthItemPrefab, HUDTransform).GetComponent<HealthItem>();
+        GameObject healthItem = Instantiate(HealthItemPrefab, HUDTransform);
+        currentIndex =  HealthItems.Count == 0 ? 0 : HealthItems.Count - 1;
+        HealthItem item = healthItem.GetComponent<HealthItem>();
         Sprite character = characterImages[(int)player.CustomProperties["playerAvatar"]];
-        item.Initialize(nickname, actornum, character);
+        item.Initialize(nickname, actornum, character, currentIndex);
         HealthItems.Add(item);
         SortHealthItems();
         return item;
@@ -47,4 +48,5 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
             }
         }
     }
+
 }
