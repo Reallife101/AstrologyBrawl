@@ -4789,7 +4789,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.0050229565}
+  m_AnchoredPosition: {x: 66, y: 0.0051230025}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -11996,15 +11996,15 @@ MonoBehaviour:
   - name: 0
     ability: 0
     description: 'Water Jet: Sends out a pulse of water at enemies in front of her.'
-  - name: 10
+  - name: 0
     ability: 1
     description: 'Hydria Smash: Smashes her hydria down to deal heavy damage to enemies
       directly in front of her.'
-  - name: 10
+  - name: 0
     ability: 2
     description: 'Aqua Sphere: Summons a slow moving ball of water that damages enemies
       in its wake.'
-  - name: 10
+  - name: 0
     ability: 3
     description: 'Wipe out!: Summons a wall made of water that flows forward. Deals
       damage to all enemies it contacts and stops projectiles that hit it.'
@@ -12377,8 +12377,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1941303875}
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
-  m_Value: -0.01863354
-  m_Size: 0.9999464
+  m_Value: -0.04347826
+  m_Size: 0.9999794
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
