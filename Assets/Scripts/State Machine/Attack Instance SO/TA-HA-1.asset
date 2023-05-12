@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 30
   attackAnimationName: heavyTaurus
-  duration: 0.5
+  duration: 1.6
   inputBufferTime: 0.35
-  forwardMovement: 0
+  forwardMovement: 2
   finisherEndlag: 0.25
   hitStunTime: 0.5
   knockbackPower: 25
@@ -26,3 +26,5 @@ MonoBehaviour:
   chargeTimeForMax: 0
   chargeMultiplier: 0
   freezeFrameName: 
+  shakeTime: 0
+  shakeIntensity: 0
