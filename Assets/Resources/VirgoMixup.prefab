@@ -112,7 +112,6 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 4819595326898402213}
-  - {fileID: 0}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -169,7 +168,7 @@ MonoBehaviour:
   damage: 35
   destroyOnTouch: 1
   destroyOnImpact: 0
-  lifeTime: 1
+  lifeTime: 0.5
   hasInfiniteLifeTime: 0
   launchForce: 0
   hitStunTime: 0.25
@@ -189,7 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fdba15c53c4a4e65aee900df3d48b8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xspeed: 5
+  xspeed: 10
   yspeed: 0
 --- !u!58 &5889775717091038372
 CircleCollider2D:
