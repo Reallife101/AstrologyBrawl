@@ -4789,7 +4789,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.0051230025}
+  m_AnchoredPosition: {x: 66, y: 0.0049353833}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -12052,8 +12052,8 @@ MonoBehaviour:
       an enemy, he pulls himself towards them.'
   - name: 11
     ability: 3
-    description: an efficient Zodiac who emphasizes combos and outsmarting his opponent,
-      even sacrificing his own health to further his attacks.
+    description: 'Maw of Abaddon: Brings his two scythes together to create one large,
+      powerful scythe to inflict devastating damage.'
   - name: 5
     ability: 0
     description: 'Crustation Stab: Strikes at quickly to deal rapid damage to enemies
@@ -12377,8 +12377,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1941303875}
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
-  m_Value: -0.04347826
-  m_Size: 0.9999794
+  m_Value: -0.0062111802
+  m_Size: 0.9995682
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
