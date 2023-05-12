@@ -33,12 +33,11 @@ public class HealthItem : MonoBehaviourPunCallbacks
     private float CurrentHealth;
     private shieldHealth ShieldHealth;
 
-    public void Initialize(string nickname, int actornumber, Sprite sprite, int localIndex)
+    public void Initialize(string nickname, int actornumber, Sprite sprite)
     {
         OwnerActorNumber = actornumber;
         SetPlayerName(nickname);
         character.sprite = sprite;
-        index = localIndex;
     }
 
     private void Update()
@@ -127,9 +126,9 @@ public class HealthItem : MonoBehaviourPunCallbacks
         return TarotHolder;
     }
 
-    public int getLocalIndex()
+    public int getActorNumber()
     {
-        return index;
+        return OwnerActorNumber;
     }
     
 }

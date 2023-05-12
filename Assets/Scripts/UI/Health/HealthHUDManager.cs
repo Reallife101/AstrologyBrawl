@@ -13,15 +13,13 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
     [SerializeField] private List<Sprite> characterImages;
 
     public List<HealthItem> HealthItems = new List<HealthItem>();
-    private int currentIndex;
 
     public HealthItem AddHealthItem(string nickname, int actornum, Player player)
     {
         GameObject healthItem = Instantiate(HealthItemPrefab, HUDTransform);
-        currentIndex =  HealthItems.Count == 0 ? 0 : HealthItems.Count - 1;
         HealthItem item = healthItem.GetComponent<HealthItem>();
         Sprite character = characterImages[(int)player.CustomProperties["playerAvatar"]];
-        item.Initialize(nickname, actornum, character, currentIndex);
+        item.Initialize(nickname, actornum, character);
         HealthItems.Add(item);
         SortHealthItems();
         return item;
@@ -46,6 +44,16 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
                 }
                 HealthItems[i].transform.SetSiblingIndex(i);
             }
+        }
+    }
+
+
+    public void UpdateFrames()
+    {
+        foreach (HealthItem item in HealthItems)
+        {
+            if (!PhotonNetwork.CurrentRoom.Players.ContainsKey(item.getActorNumber()))
+                Destroy(item.gameObject);
         }
     }
 

@@ -145,7 +145,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
         if (changedProps.ContainsKey("left") && (bool)changedProps["left"])
         {
-            PhotonNetwork.LoadLevel("New Lobby");
+            PhotonNetwork.LoadLevel("FINAL LOBBY SELECTION");
         }
 
 
@@ -287,6 +287,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("left")
                 && (bool)PhotonNetwork.LocalPlayer.CustomProperties["left"])
         {
+            levelSelect.SetActive(false);
             lobbyPanel.SetActive(false);
             roomPanel.SetActive(true);
             PhotonNetwork.LocalPlayer.CustomProperties["left"] = null;
@@ -296,6 +297,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         {
             lobbyPanel.SetActive(true);
             roomPanel.SetActive(false);
+            levelSelect.SetActive(false);
         }
 
         foreach (KeyValuePair<int, Player> info in PhotonNetwork.CurrentRoom.Players)

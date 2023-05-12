@@ -247,26 +247,10 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         }
         controller?.GetComponent<playerController>().ToggleCrown(isKing);
     }
+
     public override void OnPlayerLeftRoom(Player otherPlayer)
     {
-        Debug.Log("PASSING IF ? " + (otherPlayer == PhotonNetwork.LocalPlayer));
-        Debug.Log(otherPlayer.NickName);
-        if (otherPlayer == PhotonNetwork.LocalPlayer)
-            photonView.RPC(nameof(DeleteFrame), RpcTarget.All, healthItem.getLocalIndex());
-    }
-
-    public void OnApplicationQuit()
-    {
-        Debug.Log("QUITTING  APPLCITATION");
-        PhotonNetwork.LeaveRoom();
-    }
-
-    [PunRPC]
-    public void DeleteFrame(int index)
-    {
-        Debug.Log("Quitting");
-        Destroy(healthHUDManager.HealthItems[index].gameObject);
-        healthHUDManager.HealthItems.RemoveAt(index);
+        healthHUDManager.UpdateFrames();
     }
 
 }
