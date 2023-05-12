@@ -434,6 +434,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 3016257482074367029}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!61 &1101127547381721659
 BoxCollider2D:
@@ -755,7 +756,9 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 603694810036171444}
   - {fileID: 3652574736880595736}
-  _obj: {fileID: 2468615175100282329, guid: b7dc105f572afae489f1fd6502c3bcc1, type: 3}
+  _obj:
+  - {fileID: 2468615175100282329, guid: b7dc105f572afae489f1fd6502c3bcc1, type: 3}
+  - {fileID: 2468615175100282329, guid: 5e4bf5882cb9c2f4181c4a8f7e1e0cee, type: 3}
 --- !u!114 &4259250144682286860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,6 +776,11 @@ MonoBehaviour:
   Ability1: 10
   Ability2: 0
   stacked: 0
+  LightBuff: 1
+  HeavyBuff: 1
+  A1Buff: 1
+  A2Buff: 1
+  StackBuff: 1
 --- !u!60 &1587906642664194241
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -829,7 +837,7 @@ MonoBehaviour:
       Data3: 567446449
       Data4: -729169108
     Path: event:/Libra (L)/Libra Walk
-  movementspeed: 0.1
+  movementspeed: 0.18
   jumpsound:
     Guid:
       Data1: 1540495566
