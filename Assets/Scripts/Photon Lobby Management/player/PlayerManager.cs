@@ -246,4 +246,16 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         }
         controller?.GetComponent<playerController>().ToggleCrown(isKing);
     }
+
+    private void OnPlayerDisconnected()
+    {
+        Debug.Log("DISCONNECTING");
+        Destroy(healthItem);
+    }
+
+    private void OnApplicationQuit()
+    {
+        Debug.Log("Quitting");
+        Destroy(healthItem);
+    }
 }

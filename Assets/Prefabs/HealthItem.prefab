@@ -503,10 +503,8 @@ MonoBehaviour:
   HealthBar: {fileID: 4420477208231917124}
   KillText: {fileID: 533053758918218769}
   character: {fileID: 7909685370819049983}
-  CooldownTimer1: {fileID: 0}
-  CooldownTimer2: {fileID: 0}
-  iconicImg: {fileID: 0}
-  mixupImg: {fileID: 0}
+  mixupGO: {fileID: 8814169792553088680}
+  iconicGO: {fileID: 5122362438586557572}
   shield: {fileID: 9124786824423544235}
   TarotHolder: {fileID: 5535601361958949458}
   iconicAnimator: {fileID: 7454993447661961585}
@@ -681,7 +679,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4639482073587000617
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1190,7 +1188,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6975455050812223382
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1426,7 +1424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6506907098459983756
 RectTransform:
   m_ObjectHideFlags: 0

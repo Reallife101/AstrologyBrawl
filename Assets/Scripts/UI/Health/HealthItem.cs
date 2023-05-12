@@ -12,10 +12,8 @@ public class HealthItem : MonoBehaviourPunCallbacks
     [SerializeField] private TMPro.TMP_Text KillText;
     [SerializeField] private Image character;
 
-    [SerializeField] private GameObject CooldownTimer1;
-    [SerializeField] private GameObject CooldownTimer2;
-    [SerializeField] private Image iconicImg;
-    [SerializeField] private Image mixupImg;
+    [SerializeField] private GameObject mixupGO;
+    [SerializeField] private GameObject iconicGO;
     [SerializeField] private GameObject shield;
 
 
@@ -55,8 +53,9 @@ public class HealthItem : MonoBehaviourPunCallbacks
 
     public void ActivateTimers()
     {
-        /*CooldownTimer1.SetActive(true);
-        CooldownTimer2.SetActive(true);*/
+        mixupGO.SetActive(true);
+        iconicGO.SetActive(true);
+        shield.SetActive(true);
     }
 
     public int GetOwnerActorNumber()
