@@ -54,6 +54,7 @@ public class playerController : MonoBehaviour
     private bool canDoubleJump;
     private bool movementLocked = false;
     private bool fastFall;
+    private bool shieldHeld;
 
     //Grounded things
     [Header("Grounded Check Items")]
@@ -251,18 +252,12 @@ public class playerController : MonoBehaviour
 
         playerShield.performed += shieldActivate =>
         {
-            //If not idle or charging, no shielding allowed
-            if (!myPV.IsMine || !(mySM.currentState == StateManager.States.Idle || mySM.currentState == StateManager.States.Charging))
+            if (!myPV.IsMine)
             {
                 return;
             }
 
-            if(mySM.currentState == StateManager.States.Charging)
-            {
-                mySM.EndCharge();
-            }
-            shield.activate();
-            mySM.ToggleShield(true);
+            shieldHeld = true;
         };
 
         playerShield.canceled += shieldActivate =>
@@ -274,6 +269,7 @@ public class playerController : MonoBehaviour
 
             shield.deactivate();
             mySM.ToggleShield(false);
+            shieldHeld = false;
         };
 
 
@@ -308,6 +304,29 @@ public class playerController : MonoBehaviour
         movementLocked = mySM.currentState != StateManager.States.Idle && mySM.currentState != StateManager.States.Recovery;
 
         Movement();
+
+        //If shield is buffered, turn it on
+        if (shieldHeld)
+        {
+            ShieldOn();
+        }
+    }
+
+    //Function to allow for shield to be buffered
+    private void ShieldOn()
+    {
+        //If not idle or charging, no shielding allowed
+        if (mySM.currentState != StateManager.States.Idle && mySM.currentState != StateManager.States.Charging)
+        {
+            return;
+        }
+        if (mySM.currentState == StateManager.States.Charging)
+        {
+            mySM.EndCharge();
+        }
+        shieldHeld = false;
+        shield.activate();
+        mySM.ToggleShield(true);
     }
 
     public void Movement()
