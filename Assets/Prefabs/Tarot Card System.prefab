@@ -326,6 +326,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6682205543194180773, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+      propertyPath: maxSpawnTime
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682205543194180773, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
+      propertyPath: minSpawnTime
+      value: 450
+      objectReference: {fileID: 0}
     - target: {fileID: 8821505165250913375, guid: a0ec6fe7dc79de044bfb34cc2885142c, type: 3}
       propertyPath: m_Name
       value: TarotManager
