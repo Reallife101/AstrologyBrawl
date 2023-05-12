@@ -97,7 +97,7 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638193272433124469
+  lastModified: 638190706062845641
   FileSizes:
   - Name: Desktop
     Value: 14753888
@@ -2622,7 +2622,7 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638193272433174471
+  lastModified: 638190706062894577
   FileSizes:
   - Name: Desktop
     Value: 4778
