@@ -37,6 +37,10 @@ public class capPlunge : Ability
     {
         playerAnimator.SetTrigger(airPlungeTrigger);
         sm.StartCastingIconic(airPlunge);
+    }
+
+    public void Plunge()
+    {
         rb.AddForce(new Vector2(rb.velocity.y, -plungeSpeed * 25));
     }
 
