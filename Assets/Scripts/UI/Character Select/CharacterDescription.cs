@@ -139,6 +139,25 @@ public class CharacterDescription : MonoBehaviour
         ShowDescription(Abilities.LightAttack);
     }
 
+    public void showLight()
+    {
+        ShowDescription(Abilities.LightAttack);
+    }
+
+    public void showHeavy()
+    {
+        ShowDescription(Abilities.HeavyAttack);
+    }
+
+    public void showMixup()
+    {
+        ShowDescription(Abilities.Mixup);
+    }
+    public void showIconic()
+    {
+        ShowDescription(Abilities.Iconic);
+    }
+
     private void GetDescription(InputAction.CallbackContext context)
     {
         switch (context.action.name)
