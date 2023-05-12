@@ -5,8 +5,8 @@ using UnityEngine;
 public abstract class Ability : MonoBehaviour
 {
     [SerializeField]
-    private float cooldownTime;
-    private float currentCooldown;
+    protected float cooldownTime;
+    protected float currentCooldown;
     public bool abilitySoundCheck;
     [SerializeField] protected Animator playerAnimator;
     [SerializeField] private string triggerName;

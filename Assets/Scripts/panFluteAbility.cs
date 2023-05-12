@@ -36,6 +36,18 @@ public class panFluteAbility : Ability
     // Update is called once per frame
     void Update()
     {
+        // Reduce cooldown
+        if (currentCooldown > 0f)
+        {
+            currentCooldown -= Time.deltaTime;
+            abilitySoundCheck = false;
+
+        }
+        else if (currentCooldown < 0f)
+        {
+            currentCooldown = 0f;
+        }
+
         if (poll)
         {
             // Read Movement Controls

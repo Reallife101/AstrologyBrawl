@@ -1310,7 +1310,7 @@ MonoBehaviour:
   rb: {fileID: 6444089561079822210}
   player: {fileID: 3016257482074367029}
   launchVector: {x: 30, y: 30}
-  dropSpeed: 25
+  dropSpeed: 2500
 --- !u!1 &6579583809600646199
 GameObject:
   m_ObjectHideFlags: 0

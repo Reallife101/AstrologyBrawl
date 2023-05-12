@@ -25,7 +25,7 @@ public class taurusLeap : animationAbility
 
     public void Drop()
     {
-        rb.AddForce(transform.up * -dropSpeed * 1000);
+        rb.AddForce(transform.up * -dropSpeed);
         Debug.Log("Moo");
     }
 }
