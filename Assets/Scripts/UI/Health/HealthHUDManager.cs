@@ -4,21 +4,22 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
-using Photon.Realtime;
-using Photon.Pun;
-using UnityEngine.UI;
+
 
 public class HealthHUDManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] private GameObject HealthItemPrefab;
     [SerializeField] private Transform HUDTransform;
+    [SerializeField] private List<Sprite> characterImages;
 
-    private List<HealthItem> HealthItems = new List<HealthItem>();
+    public List<HealthItem> HealthItems = new List<HealthItem>();
 
-    public HealthItem AddHealthItem(string nickname, int actornum)
+    public HealthItem AddHealthItem(string nickname, int actornum, Player player)
     {
-        HealthItem item = Instantiate(HealthItemPrefab, HUDTransform).GetComponent<HealthItem>();
-        item.Initialize(nickname, actornum);
+        GameObject healthItem = Instantiate(HealthItemPrefab, HUDTransform);
+        HealthItem item = healthItem.GetComponent<HealthItem>();
+        Sprite character = characterImages[(int)player.CustomProperties["playerAvatar"]];
+        item.Initialize(nickname, actornum, character);
         HealthItems.Add(item);
         SortHealthItems();
         return item;
@@ -45,4 +46,15 @@ public class HealthHUDManager : MonoBehaviourPunCallbacks
             }
         }
     }
+
+
+    public void UpdateFrames()
+    {
+        foreach (HealthItem item in HealthItems)
+        {
+            if (!PhotonNetwork.CurrentRoom.Players.ContainsKey(item.getActorNumber()))
+                Destroy(item.gameObject);
+        }
+    }
+
 }

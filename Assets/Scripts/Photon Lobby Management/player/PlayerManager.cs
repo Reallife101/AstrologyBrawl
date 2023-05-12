@@ -26,7 +26,9 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
     private HealthHUDManager healthHUDManager;
     private HealthItem healthItem;
+
     [SerializeField] private AnimationCurve timeSlowCurve;
+    private shieldHealth ShieldHealth;
 
 
     private void Awake()
@@ -78,11 +80,14 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         //Debug.Log("AVATAR NUMBER " + (int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]);
         GameObject playerToSpawn = playerPrefabs[(int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]];
         controller = PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
+        PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
         PlayerController = controller.GetComponent<playerController>();
+        ShieldHealth = controller.transform.GetChild(11).GetComponent<shieldHealth>();
+        healthItem.SetShieldHealth(ShieldHealth);
         healthItem.SetMaxCooldowns(PlayerController.AbilityOneMaxCooldown, PlayerController.AbilityTwoMaxCooldown);
         healthItem.ActivateTimers();
 
-        PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
+       
     }
 
     public void SetController(GameObject _controller)
@@ -121,7 +126,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         healthHUDManager = FindObjectOfType<HealthHUDManager>();
         if (healthHUDManager != null && healthItem == null)
         {
-            healthItem = healthHUDManager.AddHealthItem(info.Sender.NickName, info.Sender.ActorNumber);
+            healthItem = healthHUDManager.AddHealthItem(info.Sender.NickName, info.Sender.ActorNumber, info.Sender);
         }
 
         //Sets relevant information for the HealthItems
@@ -242,4 +247,10 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         }
         controller?.GetComponent<playerController>().ToggleCrown(isKing);
     }
+
+    public override void OnPlayerLeftRoom(Player otherPlayer)
+    {
+        healthHUDManager.UpdateFrames();
+    }
+
 }

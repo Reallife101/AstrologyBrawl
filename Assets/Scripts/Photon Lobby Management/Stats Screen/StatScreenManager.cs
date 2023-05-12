@@ -16,7 +16,7 @@ public class StatScreenManager : MonoBehaviourPunCallbacks
     {
         foreach (KeyValuePair<int, Player> player in PhotonNetwork.CurrentRoom.Players)
         {
-            if (player.Value.CustomProperties["kills"].ToString() == "5")//player.Value.CustomProperties["killsToWin"].ToString())
+            if (player.Value.CustomProperties["kills"].ToString() == player.Value.CustomProperties["killsToWin"].ToString())
             {
                 winnerText.text = player.Value.NickName;
             }

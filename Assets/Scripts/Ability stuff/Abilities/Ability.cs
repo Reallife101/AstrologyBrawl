@@ -61,6 +61,8 @@ public abstract class Ability : MonoBehaviour
 
     public float CurrCooldownTime()
     {
-        return currentCooldown;
+        if (currentCooldown == 0)
+            return cooldownTime / cooldownTime;
+        return currentCooldown / cooldownTime;
     }
 }

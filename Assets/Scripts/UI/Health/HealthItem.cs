@@ -3,36 +3,60 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
-using Photon.Realtime;
+
 
 public class HealthItem : MonoBehaviourPunCallbacks
 {
     [SerializeField] private TMPro.TMP_Text PlayerName;
     [SerializeField] private Slider HealthBar;
     [SerializeField] private TMPro.TMP_Text KillText;
-    [SerializeField] private GameObject CooldownTimer1;
-    [SerializeField] private GameObject CooldownTimer2;
-    [SerializeField] private Image a1CDCircle;
-    [SerializeField] private Image a2CDCircle;
-    [SerializeField] private TMPro.TMP_Text CD1Text;
-    [SerializeField] private TMPro.TMP_Text CD2Text;
+    [SerializeField] private Image character;
+
+    [SerializeField] private GameObject mixupGO;
+    [SerializeField] private GameObject iconicGO;
+    [SerializeField] private GameObject shield;
+
+
     [SerializeField] private Transform TarotHolder;
+
+
+    [SerializeField]
+    private Animator iconicAnimator;
+    [SerializeField]
+    private Animator mixupAnimator;
+
+    private int index;
 
     private float maxCooldown1;
     private float maxCooldown2;
     private int OwnerActorNumber;
     private float CurrentHealth;
+    private shieldHealth ShieldHealth;
 
-    public void Initialize(string nickname, int actornumber)
+    public void Initialize(string nickname, int actornumber, Sprite sprite)
     {
         OwnerActorNumber = actornumber;
         SetPlayerName(nickname);
+        character.sprite = sprite;
     }
+
+    private void Update()
+    {
+        if (ShieldHealth)
+            shield.SetActive(ShieldHealth.canActivate);
+    }
+
+    public void SetShieldHealth(shieldHealth s)
+    { 
+        ShieldHealth = s;
+    }
+
 
     public void ActivateTimers()
     {
-        CooldownTimer1.SetActive(true);
-        CooldownTimer2.SetActive(true);
+        mixupGO.SetActive(true);
+        iconicGO.SetActive(true);
+        shield.SetActive(true);
     }
 
     public int GetOwnerActorNumber()
@@ -91,30 +115,20 @@ public class HealthItem : MonoBehaviourPunCallbacks
 
     public void UpdateCooldown(float cd1, float cd2)
     {
-        HandleCooldowns(cd1, maxCooldown1, a1CDCircle, CD1Text);
-        HandleCooldowns(cd2, maxCooldown2, a2CDCircle, CD2Text);
-    }
+        //Debug.Log("Iconic Animator " + cd1 + " Mixup Animator " + cd2);
+        iconicAnimator.SetFloat("percentCooldown", cd1);
+        mixupAnimator.SetFloat("cooldownPercent", cd2);
 
-    private void HandleCooldowns(float cd, float maxcd, Image circle, TMPro.TMP_Text textObject)
-    {
-        // if not on cooldown ...
-        if (cd == 0)
-        {
-            // ... reset circle and text
-            circle.fillAmount = 0;
-            textObject.text = "";
-        }
-        // otherwise ...
-        else if (cd > 0)
-        {
-            // decrement timer ui
-            circle.fillAmount = cd / maxcd + Time.deltaTime;
-            textObject.text = ((int)cd).ToString();
-        }
     }
 
     public Transform GetTarotHolder()
     {
         return TarotHolder;
     }
+
+    public int getActorNumber()
+    {
+        return OwnerActorNumber;
+    }
+    
 }
