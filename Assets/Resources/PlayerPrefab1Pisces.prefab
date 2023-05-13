@@ -864,7 +864,7 @@ MonoBehaviour:
       Data3: 1573820297
       Data4: 596767288
     Path: event:/Aquarius (AQ)/Aquarius Walk
-  movementspeed: 0.1
+  movementspeed: 0.175
   jumpsound:
     Guid:
       Data1: 1540495566
