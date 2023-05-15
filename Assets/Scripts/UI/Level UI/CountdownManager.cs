@@ -8,6 +8,7 @@ using Photon.Realtime;
 public class CountdownManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] TMPro.TMP_Text countdownText;
+    [SerializeField] GameObject loadingScreen;
 
     ExitGames.Client.Photon.Hashtable ht;
     playerController[] playerControllerList;
@@ -115,6 +116,10 @@ public class CountdownManager : MonoBehaviourPunCallbacks
 
     void StartCountdownTimer()
     {
+        if (loadingScreen)
+        {
+            loadingScreen.SetActive(false);
+        }
         if (double.Parse(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"].ToString()) == -1)
         {
             startTime = PhotonNetwork.Time;
