@@ -45,7 +45,7 @@ public class CharacterSelect : MonoBehaviourPunCallbacks
     void Start()
     {
         CharacterSelectAudio = GetComponent<characterSelectAudio>();
-        readyUpText.text = "Ready";
+        readyUpText.text = "Lock In?";
 
 
         input = LobbyManager.input;
