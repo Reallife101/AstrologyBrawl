@@ -5137,7 +5137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.004958041}
+  m_AnchoredPosition: {x: 66, y: 0.004933941}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -7602,7 +7602,7 @@ MonoBehaviour:
   - Libra's voice actor was specially brought in to voice her!
   - I made this tooltip without asking anybody
   - Press [Shift] to Shield
-  - Libra cant see through her blindfold
+  - Libra can't see through her blindfold
   - Virgo is an apple
   - Capricorn's favorite food is figs
   - This was supposed to a winter break project between 5 people
@@ -12984,7 +12984,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
   m_Value: -0.0062111802
-  m_Size: 0.99998444
+  m_Size: 0.99994326
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
