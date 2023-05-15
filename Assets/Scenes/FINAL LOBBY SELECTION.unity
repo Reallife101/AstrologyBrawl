@@ -5137,7 +5137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.0058927825}
+  m_AnchoredPosition: {x: 66, y: 0.004958041}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -7560,7 +7560,7 @@ GameObject:
   - component: {fileID: 1108665552}
   - component: {fileID: 1108665551}
   m_Layer: 5
-  m_Name: Did You Know (1)
+  m_Name: tooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7602,6 +7602,25 @@ MonoBehaviour:
   - Libra's voice actor was specially brought in to voice her!
   - I made this tooltip without asking anybody
   - Press [Shift] to Shield
+  - Libra cant see through her blindfold
+  - Virgo is an apple
+  - Capricorn's favorite food is figs
+  - This was supposed to a winter break project between 5 people
+  - Over half this team is artists
+  - 245.73.111.232
+  - Cancer's mix-up "Herculean Vengeance" was inspired by a Greek myth where Cancer
+    the crab was crushed by Hercules for pinching his toes
+  - " Spawn in a rough spot? If you\u2019ve taken no damage, you can self destruct
+    with no penalty"
+  - Capricorn's favorite activity is sleeping
+  - Pisces turns into a fish to run because the animator did not want to draw a run
+  - A large chunk of the team has never met each other in person
+  - The kill leader has an icon over their head. Target them!
+  - Only the last hit matters! No matter how much damage you do, the kill goes to
+    the last person!
+  - Sagittarius was originally going to have a triple jump.
+  - Libra is associated with kidneys because their function is to bring balance by
+    removing waste from the blood and they are symmetrically balanced in the body.
   tooltipLifetime: 5
   text: {fileID: 1108665552}
 --- !u!114 &1108665552
@@ -7651,8 +7670,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -12964,8 +12983,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1941303875}
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
-  m_Value: -0.2
-  m_Size: 0.9999814
+  m_Value: -0.0062111802
+  m_Size: 0.99998444
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
