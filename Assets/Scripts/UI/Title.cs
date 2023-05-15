@@ -10,6 +10,10 @@ public class Title : MonoBehaviour
 {
     [SerializeField]
     TextMeshProUGUI start_text;
+    [SerializeField]
+    Image Larrow;
+    [SerializeField]
+    Image Rarrow;
 
     [SerializeField]
     TextMeshProUGUI leave_text;
@@ -70,13 +74,11 @@ public class Title : MonoBehaviour
 
         if (Input.GetJoystickNames().Length >= 1 && Input.GetJoystickNames()[0] != "")
         {
-            start_text.text = "press A to start";
-            leave_text.text = "hold B to quit";
+            leave_text.text = "Hold B to quit";
         }
         else
         {
-            start_text.text = "press any button to start";
-            leave_text.text = "hold q to quit";
+            leave_text.text = "Hold q to quit";
         }
 
 
@@ -93,6 +95,9 @@ public class Title : MonoBehaviour
                 alpha_value = 1f;
 
         }
+
+        Larrow.canvasRenderer.SetAlpha(start_text.canvasRenderer.GetAlpha());
+        Rarrow.canvasRenderer.SetAlpha(start_text.canvasRenderer.GetAlpha());
     }
 
     void LoadScene() 
