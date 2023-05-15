@@ -56,7 +56,7 @@ MonoBehaviour:
   destroyOnImpact: 0
   lifeTime: 0.55
   hasInfiniteLifeTime: 0
-  launchForce: 25
+  launchForce: 10
   hitStunTime: 0.25
   launchDirection: {x: -25, y: 25}
   parentSprite: {fileID: 3977179354115235197}
