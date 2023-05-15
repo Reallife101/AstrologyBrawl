@@ -26,7 +26,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public GameObject roomPanel;
     public GameObject levelSelect;
     public GameObject settings;
-    
+    public GameObject loadingScreen;
+
     //Time for updates between refreses for the room list
     public float timeBetweenUpdates = 1.5f;
     float nextUpdateTime;
@@ -224,6 +225,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         //Closes the room to not allow new players to join and disables input. Lastly, loads the Level chosen by the player. 
         input.Dispose();
         nextBtnclicked = false;
+        photonView.RPC(nameof(showLoadingScreen), RpcTarget.All);
         PhotonNetwork.CurrentRoom.IsOpen = false;
         PhotonNetwork.CurrentRoom.IsVisible = false;
         PhotonNetwork.LoadLevel(levelInfo.getSceneName());
@@ -241,6 +243,12 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         lobbyPanel.SetActive(false);
         levelSelect.SetActive(true);
         nextBtnclicked = true;
+    }
+
+    [PunRPC]
+    public void showLoadingScreen()
+    {
+        loadingScreen.SetActive(true);
     }
 
     public void OnClickLeaveRoom()

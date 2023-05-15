@@ -8840,6 +8840,7 @@ MonoBehaviour:
   roomPanel: {fileID: 1119486188}
   levelSelect: {fileID: 545956241}
   settings: {fileID: 1212798836}
+  loadingScreen: {fileID: 1833310481}
   timeBetweenUpdates: 1.5
   otherPlayersViewsGameObject:
   - {fileID: 901671997}
