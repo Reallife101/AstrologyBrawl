@@ -154,13 +154,13 @@ public class CharacterSelect : MonoBehaviourPunCallbacks
 
         if (isReady)
         {
-            readyUpText.text = "Unselect";
+            readyUpText.text = "Unselect?";
             move.Disable();
         }
         else
         {
             move.Enable();
-            readyUpText.text = "Ready Up";
+            readyUpText.text = "Lock In?";
         }
 
         ExitGames.Client.Photon.Hashtable hash = new ExitGames.Client.Photon.Hashtable();
