@@ -654,7 +654,6 @@ MonoBehaviour:
   myPV: {fileID: 0}
   healthItem: {fileID: 0}
   deathEffect: {fileID: 4616214966942819446, guid: 33e08444d544b1c43be65d3d570d05dd, type: 3}
-  lowHealthUI: {fileID: 4454608718897824032}
 --- !u!114 &3127367030068314295
 MonoBehaviour:
   m_ObjectHideFlags: 0
