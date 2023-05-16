@@ -43,6 +43,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     //Play button stuff
     public GameObject playButton;
+    public Animator readyToSlayButton;
     public GameObject nextButton;
     private bool nextBtnclicked = false;
     public bool allPlayersReady = false;
@@ -55,6 +56,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public static PlayerControllerInputAsset input;
     private InputAction start;
     private InputAction leave;
+    private bool slayBool;
 
 
 
@@ -80,6 +82,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
         start.Enable();
         leave.Enable();
+        slayBool = false;
         
     }
 
@@ -105,10 +108,24 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         //Activates PlayButton there is enough players and all players in the room are ready
         if (PhotonNetwork.IsMasterClient && 
-                PhotonNetwork.CurrentRoom.PlayerCount >=1 && allPlayersReady)   
+                PhotonNetwork.CurrentRoom.PlayerCount >=1 && allPlayersReady)
+        {
             nextButton.SetActive(true);
+            if (slayBool)
+            {
+                photonView.RPC(nameof(showSlayBanner), RpcTarget.All);
+                slayBool = !slayBool;
+            }
+        }
         else
+        {
             nextButton.SetActive(false);
+            if (!slayBool)
+            {
+                photonView.RPC(nameof(hideSlayBanner), RpcTarget.All);
+                slayBool = !slayBool;
+            }
+        }
 
 
         //Turn on Level Changer if master Client
@@ -249,6 +266,18 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public void showLoadingScreen()
     {
         loadingScreen.SetActive(true);
+    }
+
+    [PunRPC]
+    public void showSlayBanner()
+    {
+        readyToSlayButton.SetTrigger("start");
+    }
+
+    [PunRPC]
+    public void hideSlayBanner()
+    {
+        readyToSlayButton.SetTrigger("end");
     }
 
     public void OnClickLeaveRoom()
