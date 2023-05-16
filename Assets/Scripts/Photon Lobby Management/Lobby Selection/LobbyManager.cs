@@ -65,6 +65,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         input = new PlayerControllerInputAsset();
         start = input.UI.Start;
         leave = input.UI.Back;
+        loadingScreen.SetActive(false);
 
 
         start.started += Start =>
@@ -242,10 +243,15 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         //Closes the room to not allow new players to join and disables input. Lastly, loads the Level chosen by the player. 
         input.Dispose();
         nextBtnclicked = false;
-        photonView.RPC(nameof(showLoadingScreen), RpcTarget.All);
         PhotonNetwork.CurrentRoom.IsOpen = false;
         PhotonNetwork.CurrentRoom.IsVisible = false;
         PhotonNetwork.LoadLevel(levelInfo.getSceneName());
+    }
+
+    public void showLoadingScreenF()
+    {
+        loadingScreen.SetActive(true);
+        photonView.RPC(nameof(showLoadingScreen), RpcTarget.All);
     }
 
     public void OnClickNextButton()

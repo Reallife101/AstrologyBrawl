@@ -3654,6 +3654,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1283545689}
         m_TargetAssemblyTypeName: LobbyManager, Assembly-CSharp
+        m_MethodName: showLoadingScreenF
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1283545689}
+        m_TargetAssemblyTypeName: LobbyManager, Assembly-CSharp
         m_MethodName: OnClickPlayButton
         m_Mode: 1
         m_Arguments:
@@ -5235,7 +5247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.004911578}
+  m_AnchoredPosition: {x: 66, y: 0.004908276}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -13315,8 +13327,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1941303875}
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
-  m_Value: 0.0061728396
-  m_Size: 0.99997896
+  m_Value: 0.0062111802
+  m_Size: 0.99998444
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
