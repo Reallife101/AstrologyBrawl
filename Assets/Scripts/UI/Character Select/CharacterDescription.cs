@@ -45,7 +45,8 @@ public class CharacterDescription : MonoBehaviour
         LightAttack,
         HeavyAttack, 
         Mixup,
-        Iconic
+        Iconic,
+        Desc
     }
 
     //Names of the characters
@@ -136,7 +137,7 @@ public class CharacterDescription : MonoBehaviour
         characterName.text = characterNames[i].ToString();
         currentName = characterNames[i];
         ShowTitle(currentName);
-        ShowDescription(Abilities.LightAttack);
+        ShowDescription(Abilities.Desc);
     }
 
     public void showLight()
@@ -158,6 +159,11 @@ public class CharacterDescription : MonoBehaviour
         ShowDescription(Abilities.Iconic);
     }
 
+    public void showDesc()
+    {
+        ShowDescription(Abilities.Desc);
+    }
+
     private void GetDescription(InputAction.CallbackContext context)
     {
         switch (context.action.name)
@@ -173,6 +179,9 @@ public class CharacterDescription : MonoBehaviour
                 break;
             case "Iconic":
                 ShowDescription(Abilities.Iconic);
+                break;
+            case "Desc":
+                ShowDescription(Abilities.Desc);
                 break;
             default:
                 Debug.Log("Action name does not match any of the preset action names");
@@ -191,7 +200,9 @@ public class CharacterDescription : MonoBehaviour
     private void ShowTitle(Names name)
     {
         if (characterTitles.ContainsKey(name))
+        {
             characterTitle.text = characterTitles[name];
+        }            
         else
             characterTitle.text = "THIS TITLE HASN'T BEEN SET UP YET";
     }

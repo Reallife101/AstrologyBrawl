@@ -5247,7 +5247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.004908276}
+  m_AnchoredPosition: {x: 66, y: 0.0049026883}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -6287,8 +6287,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 14
@@ -13013,6 +13013,39 @@ MonoBehaviour:
     ability: 3
     description: 'Going Under'': Evades incoming enemy attacks by submerging into
       the ground to freely swim until forced to reemerge.'
+  - name: 0
+    ability: 4
+    description: A long-range zoning Zodiac focused on weaving in attacks and setting
+      up devastating final blows.
+  - name: 3
+    ability: 4
+    description: A young Zodiac with a giant, powerful axe who trades quick attacks
+      for powerful smashes. He can summon his trusty bull familiar, Ferdinand, when
+      he needs help.
+  - name: 4
+    ability: 4
+    description: A versatile Zodiac who will get up in an enemies face and make them
+      question what she will do at any moment.
+  - name: 5
+    ability: 4
+    description: A defensive Zodiac who uses his shield and spear to deal consistent
+      damage and devastating strikes.
+  - name: 7
+    ability: 4
+    description: 'A slippery Zodiac that is able to suddenly engage with enemies
+      with her fishing rod and quickly escape by swimming away. '
+  - name: 9
+    ability: 4
+    description: A versatile and resourceful Zodiac thats uses her precise attacks
+      and flute to adapt to any situation.
+  - name: 10
+    ability: 4
+    description: An agile Zodiac that keeps distance from her opponents with her
+      long-range bow and devastating kicks.
+  - name: 11
+    ability: 4
+    description: An efficient Zodiac who emphasizes combos and outsmarting his opponent,
+      even sacrificing his own health to further his attacks.
 --- !u!1 &1941303873
 GameObject:
   m_ObjectHideFlags: 0
@@ -13327,8 +13360,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1941303875}
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
-  m_Value: 0.0062111802
-  m_Size: 0.99998444
+  m_Value: 0
+  m_Size: 0.99996895
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
