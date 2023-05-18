@@ -362,6 +362,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7ba34301e22643b499c2e7ba9185264b, type: 3}
   - {fileID: 21300000, guid: 3c8f9c75d8dcf6546bfb0e210954b72b, type: 3}
   - {fileID: 21300000, guid: 0fb2a9af37d16764989747a9b2990d93, type: 3}
+  - {fileID: 21300000, guid: a4d522d8fc8dde74a90067eb0e690aea, type: 3}
+  - {fileID: 21300000, guid: 9125c204f566db048a92ebcb64d9d14a, type: 3}
   lifetime: 5
 --- !u!1 &5625054884114645823
 GameObject:

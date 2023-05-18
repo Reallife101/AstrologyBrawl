@@ -9,14 +9,13 @@ public class StateManager : MonoBehaviour
     public enum States
     {
         Idle,
-        GroundLight,
-        GroundHeavy,
-        AirLight,
-        AirHeavy,
+        GroundAttack,
+        AirAttack,
         Recovery,
         HitStun,
         Charging,
         Casting,
+        Shield,
     }
     //Attacks
     [SerializeField] private AttackFrameSO firstLightGround;
@@ -61,7 +60,7 @@ public class StateManager : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (!myPV.IsMine || currentState == States.Idle || currentState == States.Casting)
+        if (!myPV.IsMine || currentState == States.Idle || currentState == States.Casting || currentState == States.Shield)
         {
             return;
         }
@@ -165,7 +164,7 @@ public class StateManager : MonoBehaviour
     {
         foreach(doDamage doD in hitboxes)
         {
-            doD.SetValues(atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, currentAttack.launchDirection, currentAttack.shakeTime, currentAttack.shakeIntensity, gameObject);
+            doD.SetValues(currentAttack.damage, atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, currentAttack.launchDirection, currentAttack.shakeTime, currentAttack.shakeIntensity, gameObject);
         }
         //Starts the countdown for the current attack's duration, changes damage of the hitbox to match the current attack, and starts the corresponding attack anim
         attackTimeRemaining = currentAttack.duration;
@@ -179,7 +178,7 @@ public class StateManager : MonoBehaviour
     {
         foreach (doDamage doD in hitboxes)
         {
-            doD.SetValues(atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, chargeMulti * currentAttack.launchDirection, currentAttack.shakeTime, currentAttack.shakeIntensity, gameObject, chargeMulti);
+            doD.SetValues(currentAttack.damage, atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, chargeMulti * currentAttack.launchDirection, currentAttack.shakeTime, currentAttack.shakeIntensity, gameObject, chargeMulti);
         }
         //Starts the countdown for the current attack's duration, changes damage of the hitbox to match the current attack, and starts the corresponding attack anim
         attackTimeRemaining = currentAttack.duration;
@@ -223,7 +222,7 @@ public class StateManager : MonoBehaviour
 
         if (currentState == States.Idle && isGrounded)
         {
-            currentState = States.GroundLight;
+            currentState = States.GroundAttack;
             currentAttack = firstLightGround;
            
             UpdateAttackInfo();
@@ -233,13 +232,13 @@ public class StateManager : MonoBehaviour
         else if (currentState == States.Idle && !isGrounded)
         {
             myRB.gravityScale = originalGravity * airAttackGravityModifier;
-            currentState = States.AirLight;
+            currentState = States.AirAttack;
             currentAttack = firstLightAir;
             UpdateAttackInfo();
             audioManager.CallLightAttack();
         }
 
-        if (currentAttack != null && currentState == States.GroundLight || currentState == States.AirLight)
+        if (currentAttack != null && currentState == States.GroundAttack || currentState == States.AirAttack)
         {
             inputBufferTimeRemaining = currentAttack.inputBufferTime;
         }
@@ -258,13 +257,13 @@ public class StateManager : MonoBehaviour
         {
             if(firstHeavyGround.chargeTimeAllowed != 0)
             {
-                queuedState = States.GroundHeavy;
+                queuedState = States.GroundAttack;
                 currentAttack = firstHeavyGround;
                 EnterCharge();
             }
             else
             {
-                currentState = States.GroundHeavy;
+                currentState = States.GroundAttack;
                 currentAttack = firstHeavyGround;
                 audioManager.CallHeavyAttackRelease();
                 UpdateAttackInfo();
@@ -274,13 +273,13 @@ public class StateManager : MonoBehaviour
         else if (currentState == States.Idle && !isGrounded)
         {
             myRB.gravityScale = originalGravity * airAttackGravityModifier;
-            currentState = States.AirHeavy;
+            currentState = States.AirAttack;
             currentAttack = firstHeavyAir;
             audioManager.CallHeavyAttackRelease();
             UpdateAttackInfo();
         }
 
-        if (currentAttack != null & currentState == States.GroundHeavy || currentState == States.AirHeavy)
+        if (currentAttack != null & currentState == States.GroundAttack || currentState == States.AirAttack)
         {
             inputBufferTimeRemaining = currentAttack.inputBufferTime;
         }
@@ -288,7 +287,6 @@ public class StateManager : MonoBehaviour
     [PunRPC]
     void HitStunned(float hitStunValue)
     {
-        //Debug.Log("Oof ouch owie ow");
         inputBufferTimeRemaining = 0;
         attackTimeRemaining = 0;
         recoveryTimeLeft = 0;
@@ -301,7 +299,7 @@ public class StateManager : MonoBehaviour
 
     public void chargedProjectileSetter(doDamage input)
     {
-        input.SetValues(atk_state, lastChargedMultiplier, currentAttack.knockbackPower * lastChargedMultiplier);
+        input.SetValues(currentAttack.damage, atk_state, lastChargedMultiplier, currentAttack.knockbackPower * lastChargedMultiplier, gameObject);
     }
 
     public void StartCasting()
@@ -330,13 +328,40 @@ public class StateManager : MonoBehaviour
         InitiateRecovery(endlag);
     }
 
+    public void ToggleShield(bool on)
+    {
+        if (on)
+        {
+            currentState = States.Shield;
+        }
+        else if(currentState == States.Shield)
+        {
+            InitiateRecovery(0.25f);
+        }
+    }
+
+    public bool IsShielding()
+    {
+        return currentState == States.Shield;
+    }
+
+    /*
     public void setStateCasting()
     {
         currentState = States.Casting;
     }
+    
+    */
 
     public void setStateIdle()
     {
         currentState = States.Idle;
     }
+
+    public void enterInfiniteRecovery()
+    {
+        currentState = States.Recovery;
+        recoveryTimeLeft = 100000;
+    }
+    
 }

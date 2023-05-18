@@ -6,6 +6,7 @@ using Photon.Pun;
 public class PlayerHealth : Health
 {
     [SerializeField] GameObject deathEffect;
+    //[SerializeField] GameObject lowHealthUI;
     public override void Die()
     {
         if (deathEffect != null)
@@ -15,4 +16,14 @@ public class PlayerHealth : Health
 
         PhotonView.Find((int)myPV.InstantiationData[0]).GetComponent<PlayerManager>().Die();
     }
+
+    /*
+    private void Update()
+    {
+        if (lowHealthUI != null && currentHealth <= 20f)
+        {
+            lowHealthUI.SetActive(true);
+        }
+    }
+    */
 }

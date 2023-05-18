@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 2626130579388279935}
   - component: {fileID: 7620858030938602641}
   - component: {fileID: 1855503620430215831}
+  - component: {fileID: 1762311095540328915}
   m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
@@ -359,7 +360,7 @@ MonoBehaviour:
   light: {fileID: 0}
   heavy: {fileID: 0}
   mixup: {fileID: 2424212520170270084}
-  iconic: {fileID: 2626130579388279935}
+  iconic: {fileID: 1762311095540328915}
 --- !u!114 &2626130579388279935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,6 +417,24 @@ MonoBehaviour:
   projectile: {fileID: 1687118924408352, guid: 33b8f8ac539069642b992e6073a7e6ba, type: 3}
   player: {fileID: 3016257482074367028}
   spawnAsChild: 0
+--- !u!114 &1762311095540328915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612861564415972768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a01d21e65a8afc48811532d3d8c8bcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 0
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: iconicPisces
+  ph: {fileID: 7328130180652725418}
+  sm: {fileID: 2270851739153014609}
 --- !u!1 &1555689602611425355
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,10 +485,11 @@ GameObject:
   - component: {fileID: 4888351954668950257}
   - component: {fileID: 588164539868698526}
   - component: {fileID: -4260835527681418972}
-  - component: {fileID: 8564507826901839857}
   - component: {fileID: 2865085918899007960}
+  - component: {fileID: 2227050828701470679}
   - component: {fileID: -6680967773165473317}
   - component: {fileID: 5126118694976086215}
+  - component: {fileID: 8199872504141382812}
   m_Layer: 7
   m_Name: PlayerPrefab1Pisces
   m_TagString: Player
@@ -578,7 +598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ability1: {fileID: 2865085918899007960}
-  ability2: {fileID: -4260835527681418972}
+  ability2: {fileID: 2227050828701470679}
   shield: {fileID: 6123807670780873708}
   movementVector: {x: 0, y: 0}
   moveSpeed: 40
@@ -716,7 +736,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3016257482074367028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69e347fa4df47734fa006f550012eec3, type: 3}
   m_Name: 
@@ -729,131 +749,6 @@ MonoBehaviour:
   sr: {fileID: 7934409463488547624}
   col: {fileID: 588164539868698526}
   waitTime: 0.75
---- !u!114 &8564507826901839857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3016257482074367028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42fbfb6a161788e4c8a6910a037b3796, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  footsound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  movementspeed: 0
-  jumpsound:
-    Guid:
-      Data1: -651570438
-      Data2: 1307461543
-      Data3: -1782645880
-      Data4: -558490802
-    Path: event:/TestSound#1
-  fastfallsound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  lightattacksound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  heavyattackchargesound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  heavyattackreleasesound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  ability1sound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  ability2sound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  attackvoice:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  chargeattackvoice:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  ability1voice:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  iconicvoice:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  genericdeathsound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  takedamagesound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  takedamagevoice:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  spawnvoice:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
 --- !u!114 &2865085918899007960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -870,6 +765,26 @@ MonoBehaviour:
   abilitySoundCheck: 0
   playerAnimator: {fileID: 6502463303853110821}
   triggerName: mixupPisces
+  attackData: {fileID: 0}
+  isIconic: 0
+  isMixup: 0
+  stateManager: {fileID: 0}
+--- !u!114 &2227050828701470679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964d67c06cdda4e478c44f5e4c436e84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 2
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 6502463303853110821}
+  triggerName: iconicPisces
   attackData: {fileID: 0}
   isIconic: 0
   isMixup: 0
@@ -891,6 +806,11 @@ MonoBehaviour:
   Ability1: 10
   Ability2: 0
   stacked: 0
+  LightBuff: 1
+  HeavyBuff: 1
+  A1Buff: 1
+  A2Buff: 1
+  StackBuff: 1
 --- !u!60 &5126118694976086215
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -925,6 +845,131 @@ PolygonCollider2D:
       - {x: 0.22218478, y: -0.31934714}
       - {x: 0.1251831, y: 0.17781067}
       - {x: 0.18488216, y: 0.4613914}
+--- !u!114 &8199872504141382812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42fbfb6a161788e4c8a6910a037b3796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footsound:
+    Guid:
+      Data1: -1777302120
+      Data2: 1268280268
+      Data3: 1573820297
+      Data4: 596767288
+    Path: event:/Aquarius (AQ)/Aquarius Walk
+  movementspeed: 0.175
+  jumpsound:
+    Guid:
+      Data1: 1540495566
+      Data2: 1121154774
+      Data3: -1102698050
+      Data4: 623309370
+    Path: event:/Jumps
+  fastfallsound:
+    Guid:
+      Data1: 544284601
+      Data2: 1228386974
+      Data3: 311565232
+      Data4: 1173628407
+    Path: event:/FastFall
+  lightattacksound:
+    Guid:
+      Data1: -907009542
+      Data2: 1218695768
+      Data3: 2141669307
+      Data4: 1654560629
+    Path: event:/Pisces (PC)/Pices Fishing Rod Whip
+  heavyattackchargesound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  heavyattackreleasesound:
+    Guid:
+      Data1: 603489251
+      Data2: 1086727314
+      Data3: -1120550478
+      Data4: 1280202117
+    Path: event:/Pisces (PC)/Pices Tail Slap
+  ability1sound:
+    Guid:
+      Data1: -907009542
+      Data2: 1218695768
+      Data3: 2141669307
+      Data4: 1654560629
+    Path: event:/Pisces (PC)/Pices Fishing Rod Whip
+  ability2sound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  attackvoice:
+    Guid:
+      Data1: -2108402408
+      Data2: 1244025572
+      Data3: -1962647923
+      Data4: 237502819
+    Path: event:/Pisces (PC)/Pisces Atack Voice
+  chargeattackvoice:
+    Guid:
+      Data1: -2108402408
+      Data2: 1244025572
+      Data3: -1962647923
+      Data4: 237502819
+    Path: event:/Pisces (PC)/Pisces Atack Voice
+  ability1voice:
+    Guid:
+      Data1: -2108402408
+      Data2: 1244025572
+      Data3: -1962647923
+      Data4: 237502819
+    Path: event:/Pisces (PC)/Pisces Atack Voice
+  iconicvoice:
+    Guid:
+      Data1: -2108402408
+      Data2: 1244025572
+      Data3: -1962647923
+      Data4: 237502819
+    Path: event:/Pisces (PC)/Pisces Atack Voice
+  genericdeathsound:
+    Guid:
+      Data1: 1755445942
+      Data2: 1245857384
+      Data3: 435654846
+      Data4: -1281782737
+    Path: event:/GenericDeath
+  takedamagesound:
+    Guid:
+      Data1: -219124643
+      Data2: 1241243363
+      Data3: 529385401
+      Data4: -1657758984
+    Path: event:/TakingDamage
+  takedamagevoice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  spawnvoice:
+    Guid:
+      Data1: 1760000380
+      Data2: 1246579140
+      Data3: 1777311412
+      Data4: -2107453122
+    Path: event:/Pisces (PC)/Pisces Respawn Voice
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,6 +1088,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 3016257482074367029}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!61 &7359940151417232075
 BoxCollider2D:
@@ -1174,6 +1220,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 0}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!114 &2526129928733174280
 MonoBehaviour:
@@ -1310,6 +1357,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 0}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!114 &4522046420772155104
 MonoBehaviour:

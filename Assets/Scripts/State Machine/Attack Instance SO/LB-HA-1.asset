@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 40
   attackAnimationName: heavyLibra
-  duration: 1
+  duration: 0.5
   inputBufferTime: 0.35
   forwardMovement: 0
-  finisherEndlag: 0.15
+  finisherEndlag: 0.1
   hitStunTime: 0.5
   knockbackPower: 10
   launchDirection: {x: 10, y: -30}
