@@ -707,18 +707,18 @@ MonoBehaviour:
     Path: event:/Capricorn (CA)/Capricorn Attack Voice
   ability1voice:
     Guid:
-      Data1: -1104027222
-      Data2: 1239861685
-      Data3: -1277083735
-      Data4: 1680414283
-    Path: event:/Capricorn (CA)/Capricorn Attack Voice
-  iconicvoice:
-    Guid:
       Data1: -977189454
       Data2: 1326562620
       Data3: 777324983
       Data4: 1231829924
     Path: event:/Capricorn (CA)/Capricorn Iconic Charge Voice
+  iconicvoice:
+    Guid:
+      Data1: -1104027222
+      Data2: 1239861685
+      Data3: -1277083735
+      Data4: 1680414283
+    Path: event:/Capricorn (CA)/Capricorn Attack Voice
   genericdeathsound:
     Guid:
       Data1: 1755445942
