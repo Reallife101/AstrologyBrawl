@@ -11,6 +11,8 @@ public class TarotDisplayHUDManager : MonoBehaviourPunCallbacks
 {
     private PhotonView view;
 
+    [SerializeField] List<GameObject> tarotDisplays;
+
     [SerializeField] GameObject displayCard;
     [SerializeField] Transform LayoutGroupTransform;
     [SerializeField] Transform HealthListingTransform;
@@ -67,5 +69,22 @@ public class TarotDisplayHUDManager : MonoBehaviourPunCallbacks
         Card.GetComponent<DisplayTarotCard>().OnInitialize(Images[(int)cardName], StayTime);
         StartCoroutine(ChangeTexture(cardName));
         Card.transform.SetParent(LayoutGroupTransform);
+    }
+
+    public void showTarot(int i)
+    {
+        foreach(GameObject g in tarotDisplays)
+        {
+            g.SetActive(false);
+        }
+
+        tarotDisplays[i].SetActive(true);
+        StartCoroutine(Fade(i));
+    }
+
+    IEnumerator Fade(int i)
+    {
+        yield return new WaitForSeconds(3f);
+        tarotDisplays[i].SetActive(false);
     }
 }

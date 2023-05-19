@@ -9,6 +9,8 @@ public class pickUpCard : MonoBehaviour
     private TarotCard t;
     private PhotonView pv;
 
+    [SerializeField] int tarotNumber;
+
 
     void Start()
     {
@@ -25,8 +27,16 @@ public class pickUpCard : MonoBehaviour
             if (pv.IsMine)
             {
                 t.Effect(p.ActorNumber);
+                pv.RPC("showcard", pv.Owner);
                 PhotonNetwork.Destroy(gameObject);
             }
         }
     }
+
+    [PunRPC]
+    public void showcard()
+    {
+        GameObject.FindGameObjectWithTag("tarotManager").GetComponent<TarotDisplayHUDManager>().showTarot(tarotNumber);
+    }
+
 }

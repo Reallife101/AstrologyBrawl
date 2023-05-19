@@ -9,6 +9,7 @@ TagManager:
   - targetGroup
   - centerStage
   - tpPoints
+  - tarotManager
   layers:
   - Default
   - TransparentFX
