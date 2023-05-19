@@ -885,7 +885,7 @@ MonoBehaviour:
       Data2: 1218695768
       Data3: 2141669307
       Data4: 1654560629
-    Path: event:/Pisces (PC)/Pices Fishing Rod Whip
+    Path: event:/Pisces (PC)/Pisces Fishing Rod Whip
   heavyattackchargesound:
     Guid:
       Data1: 0
@@ -906,7 +906,7 @@ MonoBehaviour:
       Data2: 1218695768
       Data3: 2141669307
       Data4: 1654560629
-    Path: event:/Pisces (PC)/Pices Fishing Rod Whip
+    Path: event:/Pisces (PC)/Pisces Fishing Rod Whip
   ability2sound:
     Guid:
       Data1: 0
@@ -958,11 +958,11 @@ MonoBehaviour:
     Path: event:/TakingDamage
   takedamagevoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1821374027
+      Data2: 1126954446
+      Data3: -1690275952
+      Data4: -1159239393
+    Path: event:/Pisces (PC)/Pisces Damage Voice
   spawnvoice:
     Guid:
       Data1: 1760000380

@@ -512,7 +512,7 @@ MonoBehaviour:
       Data3: 1573820297
       Data4: 596767288
     Path: event:/Aquarius (AQ)/Aquarius Walk
-  movementspeed: 0.1
+  movementspeed: 0.18
   jumpsound:
     Guid:
       Data1: 1540495566
@@ -606,11 +606,11 @@ MonoBehaviour:
     Path: event:/TakingDamage
   takedamagevoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -485841161
+      Data2: 1255842819
+      Data3: 2129322161
+      Data4: 324557104
+    Path: event:/Aquarius (AQ)/Aquarius Damage Voice
   spawnvoice:
     Guid:
       Data1: -2117587430

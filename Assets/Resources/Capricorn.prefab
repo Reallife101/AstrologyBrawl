@@ -636,12 +636,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footsound:
     Guid:
-      Data1: -636072389
-      Data2: 1295834086
-      Data3: 567446449
-      Data4: -729169108
-    Path: event:/Libra (L)/Libra Walk
-  movementspeed: 0.15
+      Data1: -1490557312
+      Data2: 1307136215
+      Data3: 1436951690
+      Data4: 2095233066
+    Path: event:/Walkies
+  movementspeed: 0.4
   jumpsound:
     Guid:
       Data1: 1540495566
@@ -658,67 +658,67 @@ MonoBehaviour:
     Path: event:/FastFall
   lightattacksound:
     Guid:
-      Data1: 1137302417
-      Data2: 1266483039
-      Data3: -1526947184
-      Data4: 788834218
-    Path: event:/Libra (L)/Libra NA
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   heavyattackchargesound:
     Guid:
-      Data1: 550263908
-      Data2: 1278454510
-      Data3: 1391707055
-      Data4: -1837866644
-    Path: event:/Libra (L)/Libra CA
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   heavyattackreleasesound:
     Guid:
-      Data1: 550263908
-      Data2: 1278454510
-      Data3: 1391707055
-      Data4: -1837866644
-    Path: event:/Libra (L)/Libra CA
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   ability1sound:
     Guid:
-      Data1: -1263338582
-      Data2: 1181528799
-      Data3: -1389501528
-      Data4: -1006291035
-    Path: event:/Libra (L)/Libra SA1
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   ability2sound:
     Guid:
-      Data1: -1072902884
-      Data2: 1303518384
-      Data3: 1383783859
-      Data4: -449957530
-    Path: event:/Libra (L)/Libra S2
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   attackvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1104027222
+      Data2: 1239861685
+      Data3: -1277083735
+      Data4: 1680414283
+    Path: event:/Capricorn (CA)/Capricorn Attack Voice
   chargeattackvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1104027222
+      Data2: 1239861685
+      Data3: -1277083735
+      Data4: 1680414283
+    Path: event:/Capricorn (CA)/Capricorn Attack Voice
   ability1voice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1104027222
+      Data2: 1239861685
+      Data3: -1277083735
+      Data4: 1680414283
+    Path: event:/Capricorn (CA)/Capricorn Attack Voice
   iconicvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -977189454
+      Data2: 1326562620
+      Data3: 777324983
+      Data4: 1231829924
+    Path: event:/Capricorn (CA)/Capricorn Iconic Charge Voice
   genericdeathsound:
     Guid:
       Data1: 1755445942
@@ -735,18 +735,46 @@ MonoBehaviour:
     Path: event:/TakingDamage
   takedamagevoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1387075763
+      Data2: 1239139020
+      Data3: 1835469218
+      Data4: -1725844810
+    Path: event:/Capricorn (CA)/Capricorn Damage Voice
   spawnvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -573473308
+      Data2: 1153302262
+      Data3: -470959231
+      Data4: 1083486024
+    Path: event:/Capricorn (CA)/Capricorn Respawn Voice
+  damageSound:
+    Guid:
+      Data1: 314669930
+      Data2: 1274650585
+      Data3: -2076143447
+      Data4: 1456430890
+    Path: event:/Capricorn (CA)/Ca Iconic Stregnth Voice
+  healSound:
+    Guid:
+      Data1: -421097076
+      Data2: 1254744464
+      Data3: -1337350759
+      Data4: -2053918514
+    Path: event:/Capricorn (CA)/Ca Iconic Heal Voice
+  jumpSound:
+    Guid:
+      Data1: -1536262662
+      Data2: 1339542559
+      Data3: 1672892590
+      Data4: 1956204553
+    Path: event:/Capricorn (CA)/Ca Iconic Flight Voice
+  speedSound:
+    Guid:
+      Data1: -1260922609
+      Data2: 1276491315
+      Data3: 2046406047
+      Data4: -225144026
+    Path: event:/Capricorn (CA)/Ca Iconic Speed Voice
 --- !u!114 &4259250144682286860
 MonoBehaviour:
   m_ObjectHideFlags: 0

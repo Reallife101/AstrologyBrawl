@@ -765,11 +765,11 @@ MonoBehaviour:
     Path: event:/TakingDamage
   takedamagevoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1451593343
+      Data2: 1120576169
+      Data3: -160908914
+      Data4: 8208989
+    Path: event:/Taurus (TA)/Taurus Damage Voice
   spawnvoice:
     Guid:
       Data1: -1128185588

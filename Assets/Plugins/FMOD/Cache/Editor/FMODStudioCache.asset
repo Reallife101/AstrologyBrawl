@@ -97,10 +97,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638195265676116360
+  lastModified: 638200417363796789
   FileSizes:
   - Name: Desktop
-    Value: 14754496
+    Value: 15145280
   Exists: 1
 --- !u!114 &-8660695241562669192
 MonoBehaviour:
@@ -321,6 +321,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
+--- !u!114 &-7843795695196317983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Virgo (VG)/Virgo Damage Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Virgo (VG)/Virgo Damage Voice
+  Guid:
+    Data1: 1205598160
+    Data2: 1246793452
+    Data3: -131819852
+    Data4: 459491209
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &-7835624574753553507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,6 +429,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2360
+--- !u!114 &-7024012844665150676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pisces (PC)/Pisces Victory Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Pisces (PC)/Pisces Victory Voice
+  Guid:
+    Data1: -1999153862
+    Data2: 1123723950
+    Data3: 1572176054
+    Data4: 500519764
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
 --- !u!114 &-6682556832986259989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,6 +484,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &-6519301816958293150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Ca Iconic Stregnth Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Ca Iconic Stregnth Voice
+  Guid:
+    Data1: 314669930
+    Data2: 1274650585
+    Data3: -2076143447
+    Data4: 1456430890
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &-6511083272500593991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -477,33 +558,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 4290
   Exists: 1
---- !u!114 &-6466487655499810505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/(TEMP) Battle Theme Reduced
-  m_EditorClassIdentifier: 
-  Path: event:/(TEMP) Battle Theme Reduced
-  Guid:
-    Data1: 69511857
-    Data2: 1243223215
-    Data3: 441812658
-    Data4: -1719780496
-  Banks:
-  - {fileID: -8825898097862115878}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 76504
 --- !u!114 &-6452595837219697987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,33 +667,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4666
---- !u!114 &-5865679188573441116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Pisces (PC)/PC Victory Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Pisces (PC)/PC Victory Voice
-  Guid:
-    Data1: -1999153862
-    Data2: 1123723950
-    Data3: 1572176054
-    Data4: 500519764
-  Banks:
-  - {fileID: -8825898097862115878}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4000
 --- !u!114 &-5784844414764025059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1024,6 +1051,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3500
+--- !u!114 &-4573184923053335730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn Victory Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn Victory Voice
+  Guid:
+    Data1: 869527300
+    Data2: 1159464525
+    Data3: 1063042962
+    Data4: 1367324466
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &-4559135362798050863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1518,6 +1572,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &-3464051827183466567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Ca Iconic Speed Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Ca Iconic Speed Voice
+  Guid:
+    Data1: -1260922609
+    Data2: 1276491315
+    Data3: 2046406047
+    Data4: -225144026
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &-3259958349732380209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1953,6 +2034,33 @@ MonoBehaviour:
   Banks:
   - {fileID: 5839567779806062669}
   - {fileID: 312359905476501680}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &-1403285229041480131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pisces (PC)/Pisces Fishing Rod Whip
+  m_EditorClassIdentifier: 
+  Path: event:/Pisces (PC)/Pisces Fishing Rod Whip
+  Guid:
+    Data1: -907009542
+    Data2: 1218695768
+    Data3: 2141669307
+    Data4: 1654560629
+  Banks:
+  - {fileID: -8825898097862115878}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2404,7 +2512,6 @@ MonoBehaviour:
   - {fileID: 417920856356558369}
   - {fileID: -3670722902630669900}
   - {fileID: -1071762711867522202}
-  - {fileID: -5865679188573441116}
   - {fileID: 698709983161290418}
   - {fileID: 4148904014571297873}
   - {fileID: 6165031083238519820}
@@ -2436,7 +2543,6 @@ MonoBehaviour:
   - {fileID: 108744095177704998}
   - {fileID: 5032665255808354147}
   - {fileID: -6153321768560277716}
-  - {fileID: -6466487655499810505}
   - {fileID: -8660695241562669192}
   - {fileID: -5297573182776207622}
   - {fileID: 5899381332033339626}
@@ -2462,21 +2568,38 @@ MonoBehaviour:
   - {fileID: 6254346312469881014}
   - {fileID: 7753220540908684156}
   - {fileID: 6833332746749565068}
-  - {fileID: 1105566131404549267}
   - {fileID: -1490272015885048635}
   - {fileID: -876544900950986243}
   - {fileID: -8589163084881204048}
-  - {fileID: 1636843350616020257}
   - {fileID: -6511083272500593991}
   - {fileID: 5740155610265553300}
   - {fileID: 8940369139615977237}
+  - {fileID: -4573184923053335730}
+  - {fileID: -3464051827183466567}
+  - {fileID: 1047034408304925473}
+  - {fileID: -7024012844665150676}
+  - {fileID: 2032956506234762937}
+  - {fileID: 7470117173907670545}
+  - {fileID: -6519301816958293150}
+  - {fileID: 6016023554784968358}
+  - {fileID: 1549092276979305900}
+  - {fileID: 3413905491616825166}
+  - {fileID: 5650273258762441467}
+  - {fileID: 4414640671674366202}
+  - {fileID: 8399597652572325953}
+  - {fileID: -7843795695196317983}
+  - {fileID: 7883336341528908256}
+  - {fileID: 6829125349300196645}
+  - {fileID: 6589226305664836264}
+  - {fileID: -1403285229041480131}
+  - {fileID: 6287508556568436753}
   EditorParameters:
   - {fileID: 2614306763600137121}
   MasterBanks:
   - {fileID: -8825898097862115878}
   StringsBanks:
   - {fileID: 541256043051351972}
-  cacheTime: 638195265676174842
+  cacheTime: 638200417363865151
   cacheVersion: 131601
 --- !u!114 &24763104455481919
 MonoBehaviour:
@@ -2622,10 +2745,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638195265676174842
+  lastModified: 638200417363865151
   FileSizes:
   - Name: Desktop
-    Value: 4778
+    Value: 5482
   Exists: 1
 --- !u!114 &643631350060576329
 MonoBehaviour:
@@ -2765,6 +2888,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &1047034408304925473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn Iconic Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn Iconic Voice
+  Guid:
+    Data1: -1496951271
+    Data2: 1137564059
+    Data3: 1966341566
+    Data4: 863265180
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1077153498888143542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2792,33 +2942,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
---- !u!114 &1105566131404549267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Pisces (PC)/Pices Fish Swim
-  m_EditorClassIdentifier: 
-  Path: event:/Pisces (PC)/Pices Fish Swim
-  Guid:
-    Data1: -984400570
-    Data2: 1303075193
-    Data3: -721394765
-    Data4: 303674936
-  Banks:
-  - {fileID: -8825898097862115878}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
 --- !u!114 &1289400669282563584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2874,7 +2997,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &1636843350616020257
+--- !u!114 &1549092276979305900
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2884,14 +3007,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Pisces (PC)/Pices Fishing Rod Whip
+  m_Name: event:/Capricorn (CA)/Ca Iconic Heal Voice
   m_EditorClassIdentifier: 
-  Path: event:/Pisces (PC)/Pices Fishing Rod Whip
+  Path: event:/Capricorn (CA)/Ca Iconic Heal Voice
   Guid:
-    Data1: -907009542
-    Data2: 1218695768
-    Data3: 2141669307
-    Data4: 1654560629
+    Data1: -421097076
+    Data2: 1254744464
+    Data3: -1337350759
+    Data4: -2053918514
   Banks:
   - {fileID: -8825898097862115878}
   IsStream: 0
@@ -2900,7 +3023,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1000
+  Length: 8000
 --- !u!114 &1667399502177405261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3012,6 +3135,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9578
+--- !u!114 &2032956506234762937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pisces (PC)/Pisces Fish Swim
+  m_EditorClassIdentifier: 
+  Path: event:/Pisces (PC)/Pisces Fish Swim
+  Guid:
+    Data1: -984400570
+    Data2: 1303075193
+    Data3: -721394765
+    Data4: 303674936
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &2614306763600137121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3147,6 +3297,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2583
+--- !u!114 &3413905491616825166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn Tarot Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn Tarot Voice
+  Guid:
+    Data1: 475510162
+    Data2: 1164902112
+    Data3: 1572658073
+    Data4: 847365052
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &3432014789193938120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3451,6 +3628,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &4414640671674366202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn Iconic Charge Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn Iconic Charge Voice
+  Guid:
+    Data1: -977189454
+    Data2: 1326562620
+    Data3: 777324983
+    Data4: 1231829924
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &4512292590811875924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3726,6 +3930,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &5650273258762441467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn Attack Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn Attack Voice
+  Guid:
+    Data1: -1104027222
+    Data2: 1239861685
+    Data3: -1277083735
+    Data4: 1680414283
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &5740155610265553300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3828,6 +4059,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &6016023554784968358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Taurus (TA)/Taurus Damage Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Taurus (TA)/Taurus Damage Voice
+  Guid:
+    Data1: 1451593343
+    Data2: 1120576169
+    Data3: -160908914
+    Data4: 8208989
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &6039386418983522402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3993,6 +4251,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &6287508556568436753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Ca Iconic Flight Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Ca Iconic Flight Voice
+  Guid:
+    Data1: -1536262662
+    Data2: 1339542559
+    Data3: 1672892590
+    Data4: 1956204553
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &6477934397363599496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4021,6 +4306,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5500
+--- !u!114 &6589226305664836264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius Damage Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius Damage Voice
+  Guid:
+    Data1: -485841161
+    Data2: 1255842819
+    Data3: 2129322161
+    Data4: 324557104
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &6625185877843086509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4103,6 +4415,33 @@ MonoBehaviour:
   - Value A
   - Value B
   Exists: 1
+--- !u!114 &6829125349300196645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn On Select Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn On Select Voice
+  Guid:
+    Data1: 1215762150
+    Data2: 1266104455
+    Data3: -648354652
+    Data4: -236143736
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &6833332746749565068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4185,6 +4524,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 678
+--- !u!114 &7470117173907670545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn Damage Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn Damage Voice
+  Guid:
+    Data1: -1387075763
+    Data2: 1239139020
+    Data3: 1835469218
+    Data4: -1725844810
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &7637644306153481916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4268,6 +4634,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2972
+--- !u!114 &7883336341528908256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn Respawn Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn Respawn Voice
+  Guid:
+    Data1: -573473308
+    Data2: 1153302262
+    Data3: -470959231
+    Data4: 1083486024
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &7913773995524357412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4432,6 +4825,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2357
+--- !u!114 &8399597652572325953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pisces (PC)/Pisces Damage Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Pisces (PC)/Pisces Damage Voice
+  Guid:
+    Data1: -1821374027
+    Data2: 1126954446
+    Data3: -1690275952
+    Data4: -1159239393
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &8428058930880717370
 MonoBehaviour:
   m_ObjectHideFlags: 0
