@@ -5516,7 +5516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.0049150554}
+  m_AnchoredPosition: {x: 66, y: 0.004898372}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -5860,11 +5860,11 @@ MonoBehaviour:
     Path: event:/Virgo (VG)/Virgo On Select Voice
   CapLock:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1215762150
+      Data2: 1266104455
+      Data3: -648354652
+      Data4: -236143736
+    Path: event:/Capricorn (CA)/Capricorn On Select Voice
   CancerLock:
     Guid:
       Data1: 1941250987
@@ -13630,8 +13630,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1941303875}
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.9997587
+  m_Value: 0.0061728396
+  m_Size: 0.9999785
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
