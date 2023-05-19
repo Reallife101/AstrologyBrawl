@@ -41,17 +41,18 @@ public class StatScreenManager : MonoBehaviourPunCallbacks
             {
                 winnerText.text = player.Value.NickName;
 
-                if ((int)CharacterSelect.playerProperties["playerAvatar"] == 0)
+                if ((int)player.Value.CustomProperties["playerAvatar"] == 0)
                 {
                     FMODUnity.RuntimeManager.PlayOneShot(LibraWin);
                     print("leeebra");
                 }
-                if ((int)CharacterSelect.playerProperties["playerAvatar"] == 1)
+                if ((int)player.Value.CustomProperties["playerAvatar"] == 1)
                 {
                     FMODUnity.RuntimeManager.PlayOneShot(SaggiWin);
                     print("soooee");
                 }
             }
+            
         }
 
         UpdatePlayerList();
