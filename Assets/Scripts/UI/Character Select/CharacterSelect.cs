@@ -123,7 +123,7 @@ public class CharacterSelect : MonoBehaviourPunCallbacks
         }
     }
 
-    void UpdatePlayerItem(Player _player)
+    public void UpdatePlayerItem(Player _player)
     {
         if (_player.CustomProperties.ContainsKey("playerAvatar"))
         {

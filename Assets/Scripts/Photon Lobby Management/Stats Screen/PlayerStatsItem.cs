@@ -43,7 +43,7 @@ public class PlayerStatsItem : MonoBehaviourPunCallbacks
         }
     }
 
-    void UpdatePlayerItem(Player player)
+    public void UpdatePlayerItem(Player player)
     {
         if (player.CustomProperties.ContainsKey("playerAvatar"))
         {

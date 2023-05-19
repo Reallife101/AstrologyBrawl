@@ -4,6 +4,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
 
+
 public class StatScreenManager : MonoBehaviourPunCallbacks
 {
     List<PlayerStatsItem> playerStatsItemsList = new List<PlayerStatsItem>();
@@ -12,16 +13,44 @@ public class StatScreenManager : MonoBehaviourPunCallbacks
     public GameObject nextGameButton;
     public TMP_Text winnerText;
 
+    [Header("VICTORY SCREECH")]
+    [SerializeField] FMODUnity.EventReference LibraWin;
+    [SerializeField] FMODUnity.EventReference SaggiWin;
+    [SerializeField] FMODUnity.EventReference PiscesWin;
+    [SerializeField] FMODUnity.EventReference TaurusWin;
+    [SerializeField] FMODUnity.EventReference AquaWin;
+    [SerializeField] FMODUnity.EventReference VirgoWin;
+    [SerializeField] FMODUnity.EventReference CapWin;
+    [SerializeField] FMODUnity.EventReference CancerWin;
+
+    PlayerStatsItem PlayerStatsItem;
+    CharacterSelect CharacterSelect;
+    
+
     private void Start()
     {
+        PlayerStatsItem = GetComponent<PlayerStatsItem>();
+        CharacterSelect = GetComponent<CharacterSelect>();
 
         foreach (KeyValuePair<int, Player> player in PhotonNetwork.CurrentRoom.Players)
         {
             Debug.Log(player.Value.CustomProperties["kills"].ToString());
             Debug.Log(player.Value.CustomProperties["killsToWin"].ToString());
+
             if (player.Value.CustomProperties["kills"].ToString() == player.Value.CustomProperties["killsToWin"].ToString())
             {
                 winnerText.text = player.Value.NickName;
+
+                if ((int)CharacterSelect.playerProperties["playerAvatar"] == 0)
+                {
+                    FMODUnity.RuntimeManager.PlayOneShot(LibraWin);
+                    print("leeebra");
+                }
+                if ((int)CharacterSelect.playerProperties["playerAvatar"] == 1)
+                {
+                    FMODUnity.RuntimeManager.PlayOneShot(SaggiWin);
+                    print("soooee");
+                }
             }
         }
 
