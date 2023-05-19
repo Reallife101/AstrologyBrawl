@@ -892,6 +892,34 @@ MonoBehaviour:
       Data3: -125166946
       Data4: -1575502301
     Path: event:/Saggi (SG)/Saggi Respawn Voice
+  damageSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  healSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  jumpSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  speedSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0

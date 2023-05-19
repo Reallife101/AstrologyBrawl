@@ -7,17 +7,56 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002B7A27B0268 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000002B5012A3F38 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] SystemI::createSound                     : filename = Assets/FMODAssets/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000002B5012302C8, queue head = 000002B7A2B03578, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002B5012302C8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMODAssets/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 14914912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 230080
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002B8BFF5A7E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 8000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Subway_ Eat Fresh (1)', format=5, channels=2, frequency=48000, lengthbytes=2306304, lengthpcm=8081240, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.991699.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002B5012302C8
+[LOG] SoundI::release                          : Subway_ Eat Fresh (1) (000002B8B3589098)
+[LOG] SoundI::release                          :     Subway_ Eat Fresh (1) (000002B8D6DF8F78)
+[LOG] SoundI::release                          :     Subway_ Eat Fresh (1) (000002B7A97DEE18)
+[LOG] SoundI::release                          : Subway_ Eat Fresh (1) (000002B5012302C8)
+[LOG] SoundI::release                          :     Subway_ Eat Fresh (1) (000002B7A306BFF8)
+[LOG] SoundI::release                          :     Subway_ Eat Fresh (1) (000002B8BF984C18)
+[LOG] SoundI::release                          :  (000002B7A994C458)
+[LOG] SoundI::release                          :     SGIdsaygetoff (000002B779B24BE8)
+[LOG] SoundI::release                          :  (000002B7A99483A8)
+[LOG] SoundI::release                          :     death (000002B77C5F0CC8)
+[LOG] SoundI::release                          :  (000002B7A994D878)
+[LOG] SoundI::release                          :     LJusticeHasBeenServed (000002B50322CC58)
+[LOG] SoundI::release                          :  (000002B7A994F538)
+[LOG] SoundI::release                          :     LNeverStoodChance (000002B779B24568)
+[LOG] SoundI::release                          :  (000002B7A994F258)
+[LOG] SoundI::release                          :     LObviouslyThisWas (000002B779B23D48)
+[LOG] SoundI::release                          :  (000002B7A994D708)
+[LOG] SoundI::release                          :     LLibra1Badguys0 (000002B779B23388)
+[LOG] SoundI::release                          :  (000002B7A994FF48)
+[LOG] SoundI::release                          :     LThanos (000002B50322B598)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.

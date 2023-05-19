@@ -676,60 +676,60 @@ MonoBehaviour:
   winnerText: {fileID: 1849806297}
   LibraWin:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1288913440
+      Data2: 1141206271
+      Data3: 1439633814
+      Data4: -499938434
+    Path: event:/Libra (L)/Libra Victory Voice
   SaggiWin:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1774902454
+      Data2: 1336048782
+      Data3: 1466027423
+      Data4: -143157867
+    Path: event:/Saggi (SG)/Saggi Victory Voice
   PiscesWin:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1999153862
+      Data2: 1123723950
+      Data3: 1572176054
+      Data4: 500519764
+    Path: event:/Pisces (PC)/Pisces Victory Voice
   TaurusWin:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 369510289
+      Data2: 1103415948
+      Data3: -1722925409
+      Data4: 658872387
+    Path: event:/Taurus (TA)/Taurus Victory Voice
   AquaWin:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 456479730
+      Data2: 1090458802
+      Data3: -235844467
+      Data4: -698786609
+    Path: event:/Aquarius (AQ)/Aquarius Victory Voice
   VirgoWin:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -934324909
+      Data2: 1308239632
+      Data3: 251439264
+      Data4: -778367763
+    Path: event:/Virgo (VG)/Virgo Victory Voice
   CapWin:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 869527300
+      Data2: 1159464525
+      Data3: 1063042962
+      Data4: 1367324466
+    Path: event:/Capricorn (CA)/Capricorn Victory Voice
   CancerWin:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -885532861
+      Data2: 1239496301
+      Data3: -1371122519
+      Data4: 927858830
+    Path: event:/Cancer (CN)/Cancer Victoriy Voice
 --- !u!1 &1235899660
 GameObject:
   m_ObjectHideFlags: 0
