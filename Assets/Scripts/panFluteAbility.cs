@@ -14,6 +14,9 @@ public class panFluteAbility : Ability
     [SerializeField] private Animator uiAni;
     [SerializeField] private PhotonView pvAni;
 
+    [Header("Audio Scripts")]
+    audioManager audioManager;
+
     private playerController pc;
     private bool poll = false;
     public override void Use()
@@ -30,6 +33,7 @@ public class panFluteAbility : Ability
     void Start()
     {
         pc = GetComponent<playerController>();
+        audioManager = GetComponent<audioManager>();
         poll = false;
     }
 
@@ -63,11 +67,13 @@ public class panFluteAbility : Ability
                     {
                         right.Use();
                         uiAni.SetTrigger("damage");
+                        audioManager.CallCapDamage();
                     }
                     else
                     {
                         left.Use();
                         uiAni.SetTrigger("heal");
+                        audioManager.CallCapHeal();
                     }
                 }
                 else
@@ -76,11 +82,13 @@ public class panFluteAbility : Ability
                     {
                         up.Use();
                         uiAni.SetTrigger("jump");
+                        audioManager.CallCapJump();
                     }
                     else
                     {
                         down.Use();
                         uiAni.SetTrigger("speed");
+                        audioManager.CallCapSpeed();
                     }
                 }
 
