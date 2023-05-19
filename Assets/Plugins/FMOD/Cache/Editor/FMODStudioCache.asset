@@ -97,10 +97,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638200434240810118
+  lastModified: 638200439277130684
   FileSizes:
   - Name: Desktop
-    Value: 15145280
+    Value: 15144992
   Exists: 1
 --- !u!114 &-8660695241562669192
 MonoBehaviour:
@@ -2576,7 +2576,6 @@ MonoBehaviour:
   - {fileID: 8940369139615977237}
   - {fileID: -4573184923053335730}
   - {fileID: -3464051827183466567}
-  - {fileID: 1047034408304925473}
   - {fileID: -7024012844665150676}
   - {fileID: 2032956506234762937}
   - {fileID: 7470117173907670545}
@@ -2599,7 +2598,7 @@ MonoBehaviour:
   - {fileID: -8825898097862115878}
   StringsBanks:
   - {fileID: 541256043051351972}
-  cacheTime: 638200434240878474
+  cacheTime: 638200439277199044
   cacheVersion: 131601
 --- !u!114 &24763104455481919
 MonoBehaviour:
@@ -2745,10 +2744,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638200434240878474
+  lastModified: 638200439277199044
   FileSizes:
   - Name: Desktop
-    Value: 5482
+    Value: 5434
   Exists: 1
 --- !u!114 &643631350060576329
 MonoBehaviour:
@@ -2888,33 +2887,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
---- !u!114 &1047034408304925473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Capricorn (CA)/Capricorn Iconic Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Capricorn (CA)/Capricorn Iconic Voice
-  Guid:
-    Data1: -1496951271
-    Data2: 1137564059
-    Data3: 1966341566
-    Data4: 863265180
-  Banks:
-  - {fileID: -8825898097862115878}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &1077153498888143542
 MonoBehaviour:
   m_ObjectHideFlags: 0
