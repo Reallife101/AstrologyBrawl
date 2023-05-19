@@ -88,6 +88,10 @@ MonoBehaviour:
   - RPC_DisplayLevel
   - NextButtonClicked
   - DeleteFrame
+  - hideSlayBanner
+  - showLoadingScreen
+  - showSlayBanner
+  - RPC_DevilBuff
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

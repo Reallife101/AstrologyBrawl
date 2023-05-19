@@ -70,6 +70,7 @@ public class DamageManager : MonoBehaviour
     }
     public void affectAllDamage(float factor, float time, bool forever = false, bool multiply = false)
     {
+        Debug.Log("DAMAGE BUFF");
         foreach(KeyValuePair<string, Action<float, bool>> funcType in dmgFunctions) { 
             funcType.Value(factor, multiply);
         }
@@ -173,7 +174,7 @@ public class DamageManager : MonoBehaviour
     IEnumerator EffectTime(float seconds, float damage, bool wasMultiplied, string type = "")
     {
         yield return new WaitForSeconds(seconds);
-
+        Debug.Log("BUFF OVER");
         if (type != "")
         {
             SingleReset(type, damage, wasMultiplied);

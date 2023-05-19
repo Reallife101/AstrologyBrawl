@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 186332502}
   m_Layer: 0
   m_Name: spawn (2)
-  m_TagString: Untagged
+  m_TagString: tpPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -912,7 +912,7 @@ GameObject:
   - component: {fileID: 305080891}
   m_Layer: 0
   m_Name: spawn (4)
-  m_TagString: Untagged
+  m_TagString: tpPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1000,7 +1000,7 @@ GameObject:
   - component: {fileID: 378300701}
   m_Layer: 0
   m_Name: spawn (3)
-  m_TagString: Untagged
+  m_TagString: tpPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1322,7 +1322,7 @@ GameObject:
   - component: {fileID: 559197420}
   m_Layer: 0
   m_Name: spawn
-  m_TagString: Untagged
+  m_TagString: tpPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1497,7 +1497,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7998384534658317746, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7998384534658317749, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
       propertyPath: m_RootOrder
@@ -2304,7 +2304,7 @@ GameObject:
   - component: {fileID: 1245782372}
   m_Layer: 0
   m_Name: spawn (1)
-  m_TagString: Untagged
+  m_TagString: tpPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3003,6 +3003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdownText: {fileID: 1261472665}
+  loadingScreen: {fileID: 0}
 --- !u!114 &1648960234
 MonoBehaviour:
   m_ObjectHideFlags: 0

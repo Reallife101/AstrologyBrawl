@@ -496,6 +496,11 @@ public class playerController : MonoBehaviour
         myPV.RPC("RPC_HermitDisable", myPV.Owner, delay);
     }
 
+    public void DevilEffect(float muliplier, float delay)
+    {
+        myPV.RPC("RPC_DevilBuff", myPV.Owner, muliplier, delay);
+    }
+
     public void FoolTP(Vector3[] points, float delay)
     {
         myPV.RPC("RPC_FoolTP", myPV.Owner, points, delay);
@@ -504,21 +509,27 @@ public class playerController : MonoBehaviour
     [PunRPC]
     private void RPC_MagicianDisable(float delay)
     {
-        Debug.Log("made it to controller for magician");
+        //Debug.Log("made it to controller for magician");
         lightAttackAction.Disable();
         heavyAttackAction.Disable();
-        Debug.Log("starting magician coroutine");
+        //Debug.Log("starting magician coroutine");
         StartCoroutine(reEnableDelay(delay, magicianReEnable));
     }
 
     [PunRPC]
     private void RPC_HermitDisable(float delay)
     {
-        Debug.Log("made it to controller for hermit");
+        //Debug.Log("made it to controller for hermit");
         abilityOneAction.Disable();
         abilityTwoAction.Disable();
-        Debug.Log("starting hermit coroutine");
+        //Debug.Log("starting hermit coroutine");
         StartCoroutine(reEnableDelay(delay, hermitReEnable));
+    }
+
+    [PunRPC]
+    private void RPC_DevilBuff(float multiplier, float delay)
+    {
+        gameObject.GetComponent<DamageManager>().affectAllDamage(multiplier, delay, false, true);
     }
 
     IEnumerator reEnableDelay(float delay, Action f)
