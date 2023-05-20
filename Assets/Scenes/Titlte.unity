@@ -423,6 +423,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7238bd29e2d4f8f49b0d477b3298ff76, type: 3}
   - {fileID: 21300000, guid: 9f298c16a62a98745b51c909c8b50252, type: 3}
   - {fileID: 21300000, guid: 602a0ffe55fb7d94ba38ce8360409a66, type: 3}
+  - {fileID: 21300000, guid: 18a33ef4745e35c499b1ce16df90f3d8, type: 3}
+  - {fileID: 21300000, guid: 8c60e05348edc514780d450e61575033, type: 3}
   LeftSplash: {fileID: 848668048}
   RightSplash: {fileID: 1325125982}
   duration: 1
