@@ -39,6 +39,8 @@ public class YankToEnemy : MonoBehaviour
             return;
 
         Rigidbody2D playerRB = GetComponentInParent<Rigidbody2D>();
+        virgoYankSupport vys = GetComponentInParent<virgoYankSupport>();
+        vys.VirgoMixupOnHitAnimTrigger();
 
         Vector2 VecToEnemy = collision.transform.position - playerRB.transform.position;
 

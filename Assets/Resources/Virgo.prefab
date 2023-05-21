@@ -586,6 +586,7 @@ GameObject:
   - component: {fileID: 4259250144682286860}
   - component: {fileID: 6296355900872579901}
   - component: {fileID: 4971872862019590132}
+  - component: {fileID: 949115586922390652}
   m_Layer: 7
   m_Name: Virgo
   m_TagString: Player
@@ -943,6 +944,34 @@ MonoBehaviour:
       Data3: 1595074994
       Data4: 309103581
     Path: event:/Virgo (VG)/Virgo Respawn Voice
+  damageSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  healSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  jumpSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  speedSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &4259250144682286860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1018,6 +1047,19 @@ PolygonCollider2D:
       - {x: 0.19866943, y: -0.011978149}
       - {x: 0.24615479, y: 0.31765747}
       - {x: 0.24610043, y: 0.6913108}
+--- !u!114 &949115586922390652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f35ed221358422d428741e1b1b0738f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 8694400067546609426}
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
