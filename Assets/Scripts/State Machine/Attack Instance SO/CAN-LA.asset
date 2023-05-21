@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da60d73c482bb39469dd75590f34006c, type: 3}
   m_Name: CAN-LA
   m_EditorClassIdentifier: 
-  damage: 13
+  damage: 10
   attackAnimationName: lightCancer
   duration: 0.2857143
   inputBufferTime: 0.35
