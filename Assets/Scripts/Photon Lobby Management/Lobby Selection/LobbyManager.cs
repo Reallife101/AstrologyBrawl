@@ -11,6 +11,7 @@ using System;
 using Unity.VisualScripting;
 using System.Reflection;
 using FMODUnity;
+using System.Collections;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
@@ -245,6 +246,13 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         nextBtnclicked = false;
         PhotonNetwork.CurrentRoom.IsOpen = false;
         PhotonNetwork.CurrentRoom.IsVisible = false;
+        StartCoroutine(load());
+        //PhotonNetwork.LoadLevel(levelInfo.getSceneName());
+    }
+
+    IEnumerator load()
+    {
+        yield return new WaitForSeconds(1f);
         PhotonNetwork.LoadLevel(levelInfo.getSceneName());
     }
 
