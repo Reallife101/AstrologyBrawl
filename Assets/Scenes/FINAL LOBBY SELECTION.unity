@@ -5516,7 +5516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.004898372}
+  m_AnchoredPosition: {x: 66, y: 0.005731757}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -13190,7 +13190,7 @@ MonoBehaviour:
       down in front of her.'
   - name: 10
     ability: 3
-    description: 'Reign of Arrows: Shoots an arrow in an arc that splits apart and
+    description: 'Rein of Arrows: Shoots an arrow in an arc that splits apart and
       rains shards onto the enemy.'
   - name: 0
     ability: 0
@@ -13630,8 +13630,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1941303875}
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
-  m_Value: 0.0061728396
-  m_Size: 0.9999785
+  m_Value: -0.16770187
+  m_Size: 0.9994326
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
