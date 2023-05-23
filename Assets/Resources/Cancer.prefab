@@ -605,7 +605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1.5
+  cooldownTime: 2.5
   abilitySoundCheck: 0
   playerAnimator: {fileID: 8694400067546609426}
   triggerName: iconicCancer
@@ -732,6 +732,34 @@ MonoBehaviour:
       Data4: 0
     Path: 
   spawnvoice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  damageSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  healSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  jumpSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  speedSound:
     Guid:
       Data1: 0
       Data2: 0
