@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
+using UnityEngine.Rendering.PostProcessing;
 
 public class PlayerManager : MonoBehaviourPunCallbacks
 {
@@ -30,9 +31,13 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     [SerializeField] private AnimationCurve timeSlowCurve;
     private shieldHealth ShieldHealth;
 
+    [SerializeField] private PostProcessVolume PPV;
+    private Vignette vig;
+    [SerializeField] float maxIntensity;
 
     private void Awake()
     {
+        
         spawnPointParent = GameObject.FindWithTag("SpawnPoints");
         PV = GetComponent<PhotonView>();
         foreach (Transform point in spawnPointParent.transform)
@@ -50,10 +55,19 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         hash.Add("deaths", deaths);
         PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         targetGroup = GameObject.FindGameObjectWithTag("targetGroup").GetComponent<addPlayersToFollow>();
+        if (!PV.IsMine)
+        {
+            PPV.enabled = false;
+        }
+        else
+        {
+            PPV.profile.TryGetSettings<Vignette>(out vig);
+        }
     }
 
     private void Start()
     {
+        vig.intensity.Override(0);
         if (PV.IsMine)
         {
             Spawn();
@@ -65,6 +79,10 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         if (PV.IsMine)
         {
             healthItem.UpdateCooldown(PlayerController.AbilityOneCurrCooldown, PlayerController.AbilityTwoCurrCooldown);
+            Health health = controller.GetComponent<PlayerHealth>();
+            float percent = health.currentHealth / health.getMaxHealth();
+            float currentIntensity = Mathf.Lerp(maxIntensity, 0, percent);
+            vig.intensity.Override(currentIntensity);
         }
     }
 
