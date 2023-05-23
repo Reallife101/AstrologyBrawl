@@ -455,7 +455,7 @@ MonoBehaviour:
   baseDamageMultiplier: 1
   ownerID: 0
   hp: {fileID: 7328130180652725418}
-  healAmount: 10
+  healAmount: 8
 --- !u!1 &2884006064712803025
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,7 +563,7 @@ MonoBehaviour:
   baseDamageMultiplier: 1
   ownerID: 0
   hp: {fileID: 7328130180652725418}
-  selfDamageAmount: 10
+  selfDamageAmount: 8
 --- !u!1 &3016257482074367028
 GameObject:
   m_ObjectHideFlags: 0
