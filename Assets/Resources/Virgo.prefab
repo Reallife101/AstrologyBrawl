@@ -563,7 +563,7 @@ MonoBehaviour:
   baseDamageMultiplier: 1
   ownerID: 0
   hp: {fileID: 7328130180652725418}
-  selfDamageAmount: 5
+  selfDamageAmount: 10
 --- !u!1 &3016257482074367028
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,7 +811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1.5
+  cooldownTime: 3
   abilitySoundCheck: 0
   playerAnimator: {fileID: 8694400067546609426}
   triggerName: mixupVirgo
