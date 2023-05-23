@@ -126,7 +126,8 @@ public class doDamage : MonoBehaviour
 
     public void SetValues(float damage, DamageManager.AttackStates type, float chardgeMultiplier, float KBValue, GameObject sender)
     {
-        sender.GetComponent<DamageManager>().setDamage(attack_type, damage, 0, true);
+        Debug.Log("FROM DO DAMAGE: Damage: " + damage + " Type: " + type);
+        sender.GetComponent<DamageManager>().setDamage(type, damage, 0, true);
         dmgManager.setDamage(attack_type, damage, 0, true);
         attack_type = type;
         multiplier = chardgeMultiplier;
@@ -134,7 +135,8 @@ public class doDamage : MonoBehaviour
     }
     public void SetValues(float damage, DamageManager.AttackStates type, float hitStunNum, float knockbackNum, Vector2 launchDir, float shaketime, float shakepower, GameObject sender, float chargeMulti = 1)
     {
-        sender.GetComponent<DamageManager>().setDamage(attack_type, damage, 0, true);
+        Debug.Log("FROM DO DAMAGE (LONG FUNCTION): Damage: " + damage + " Type: " + type);
+        sender.GetComponent<DamageManager>().setDamage(type, damage, 0, true);
         attack_type = type;
         hitStunTime = hitStunNum;
         launchForce = knockbackNum;

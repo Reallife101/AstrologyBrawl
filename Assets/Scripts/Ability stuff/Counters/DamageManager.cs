@@ -81,8 +81,10 @@ public class DamageManager : MonoBehaviour
         }
     }
 
-    public void setDamage(DamageManager.AttackStates type, float dmg, float time, bool forever = false)
+    public void setDamage(AttackStates type, float dmg, float time, bool forever = false)
     {
+        Debug.Log("Setting damage " + dmg + " for " + type.ToString());
+
         switch (type)
         {
             case DamageManager.AttackStates.Light:
