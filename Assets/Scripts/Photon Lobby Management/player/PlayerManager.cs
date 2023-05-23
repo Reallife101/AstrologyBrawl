@@ -82,7 +82,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         controller = PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
         PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
         PlayerController = controller.GetComponent<playerController>();
-        ShieldHealth = controller.transform.GetChild(11).GetComponent<shieldHealth>();
+        ShieldHealth = controller.transform.GetComponentInChildren<shieldHealth>();
         healthItem.SetShieldHealth(ShieldHealth);
         healthItem.SetMaxCooldowns(PlayerController.AbilityOneMaxCooldown, PlayerController.AbilityTwoMaxCooldown);
         healthItem.ActivateTimers();
@@ -225,7 +225,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         yield return new WaitForSecondsRealtime(1f);
         Time.timeScale = 1;
         gameOverText.SetActive(false);
-        PhotonNetwork.LoadLevel("StatScreenCopy");
+        PhotonNetwork.LoadLevel("FINAL STATS SCREEN");
         yield return null;
 
     }
