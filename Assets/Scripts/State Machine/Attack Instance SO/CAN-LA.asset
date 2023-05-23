@@ -15,7 +15,7 @@ MonoBehaviour:
   damage: 10
   attackAnimationName: lightCancer
   duration: 0.2857143
-  inputBufferTime: 0.35
+  inputBufferTime: 0.25
   forwardMovement: 5
   finisherEndlag: 0.05
   hitStunTime: 0.5
