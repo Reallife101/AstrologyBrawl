@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3433409771868405020}
   - component: {fileID: 3433409771868404995}
   - component: {fileID: 6551344503419998623}
+  - component: {fileID: 1724586136003095672}
   m_Layer: 0
   m_Name: PlayerManager
   m_TagString: Untagged
@@ -89,6 +90,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  PPV: {fileID: 1724586136003095672}
+  maxIntensity: 0.7
 --- !u!114 &6551344503419998623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,3 +114,20 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &1724586136003095672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3433409771868405021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: d5dd5ef2babc32a47a08c0bab4b67611, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
