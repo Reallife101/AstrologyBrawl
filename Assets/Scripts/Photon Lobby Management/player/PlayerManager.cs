@@ -225,7 +225,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         yield return new WaitForSecondsRealtime(1f);
         Time.timeScale = 1;
         gameOverText.SetActive(false);
-        PhotonNetwork.LoadLevel("StatScreenCopy");
+        PhotonNetwork.LoadLevel("FINAL STATS SCREEN");
         yield return null;
 
     }
