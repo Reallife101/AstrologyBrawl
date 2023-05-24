@@ -2725,23 +2725,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Path
-      value: event:/Extended Battle Music
+      value: event:/Music/WalB
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Guid.Data1
-      value: 1624887216
+      value: 2007828365
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Guid.Data2
-      value: 1135307506
+      value: 1228640462
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Guid.Data3
-      value: -1937159763
+      value: 1446049696
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Guid.Data4
-      value: -2101571560
+      value: -964102593
       objectReference: {fileID: 0}
     - target: {fileID: 1306837758385738372, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: m_Name
