@@ -772,9 +772,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc48f0f7946f1a41ac126456f565952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Light: 15
-  Heavy: 40
-  Ability1: 10
+  Light: 8
+  Heavy: 14
+  Ability1: 8
   Ability2: 0
   stacked: 0
   LightBuff: 1

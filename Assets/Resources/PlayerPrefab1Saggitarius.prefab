@@ -688,7 +688,7 @@ MonoBehaviour:
   abilitySoundCheck: 0
   playerAnimator: {fileID: 4757342467156564362}
   triggerName: mixup
-  forceVector: {x: -75, y: 30}
+  forceVector: {x: -65, y: 25}
 --- !u!114 &1016379177814654591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,8 +703,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Light: 25
   Heavy: 15
-  Ability1: 20
-  Ability2: 20
+  Ability1: 8
+  Ability2: 8
   stacked: 0
   LightBuff: 1
   HeavyBuff: 1
@@ -723,7 +723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 964d67c06cdda4e478c44f5e4c436e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1
+  cooldownTime: 2.5
   abilitySoundCheck: 0
   playerAnimator: {fileID: 4757342467156564362}
   triggerName: arrow
