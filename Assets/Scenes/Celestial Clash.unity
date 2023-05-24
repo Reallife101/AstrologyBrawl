@@ -1351,23 +1351,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Path
-      value: event:/Extended Battle Music
+      value: event:/Music/Celestial Clash Music
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Guid.Data1
-      value: 1624887216
+      value: -170502654
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Guid.Data2
-      value: 1135307506
+      value: 1194449377
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Guid.Data3
-      value: -1937159763
+      value: -1662100302
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Guid.Data4
-      value: -2101571560
+      value: 1318313397
       objectReference: {fileID: 0}
     - target: {fileID: 1306837758385738372, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: m_Name

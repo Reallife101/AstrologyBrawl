@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.043304414, g: 0.12642506, b: 0.23677349, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1119,7 +1119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Path
-      value: event:/Extended Battle Music
+      value: event:/Music/Extended Battle Music
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Guid.Data1

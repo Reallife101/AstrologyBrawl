@@ -1421,11 +1421,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1142580733
-      Data2: 1271012895
-      Data3: -280540998
-      Data4: -1317060781
-    Path: event:/(TEMP) Main Menu Theme
+      Data1: 1348328034
+      Data2: 1317507737
+      Data3: -1685221969
+      Data4: -897854348
+    Path: event:/Music/Main Menu
   Event: 
   PlayEvent: 1
   StopEvent: 0
