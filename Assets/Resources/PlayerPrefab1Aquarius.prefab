@@ -218,6 +218,7 @@ Transform:
   - {fileID: 1118012802139428960}
   - {fileID: 6559054374566150191}
   - {fileID: 339398028869739712}
+  - {fileID: 6166988354735755507}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -436,7 +437,7 @@ MonoBehaviour:
   abilitySoundCheck: 0
   playerAnimator: {fileID: 1487008377844494123}
   triggerName: iconicAquarius
-  spawnOrigin: {fileID: 2204496378394938765}
+  spawnOrigin: {fileID: 6166988354735755507}
   projectile: {fileID: 7395812835021248825, guid: cf08da57f873eee47bef0f4aefb917de, type: 3}
   player: {fileID: 3016257482074367028}
   spawnAsChild: 0
@@ -982,6 +983,37 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!1 &5427402302783134574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6166988354735755507}
+  m_Layer: 0
+  m_Name: waterWallOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6166988354735755507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5427402302783134574}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1, y: 0.5, z: -0.01745534}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3016257482074367029}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5503615422033894490
 GameObject:
   m_ObjectHideFlags: 0
