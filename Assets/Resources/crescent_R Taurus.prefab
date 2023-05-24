@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4508450692938023946}
   - component: {fileID: 8695364256605719205}
   m_Layer: 0
-  m_Name: crescent_R
+  m_Name: crescent_R Taurus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack_type: 3
-  damage: 8
+  damage: 14
   destroyOnTouch: 0
   destroyOnImpact: 0
   lifeTime: 0.55

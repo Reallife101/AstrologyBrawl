@@ -238,6 +238,68 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!1 &1027746293355202495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7608713863195536288}
+  m_Layer: 7
+  m_Name: crescent_L_spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7608713863195536288
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027746293355202495}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.5, y: 0.1499939, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3016257482074367029}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1451074934203966780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 522995339404873157}
+  m_Layer: 7
+  m_Name: crescent_R_spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &522995339404873157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451074934203966780}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.5, y: 0.1499939, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3016257482074367029}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2398753381573119326
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,6 +406,7 @@ GameObject:
   - component: {fileID: -3994509172074583422}
   - component: {fileID: 3589453091004020650}
   - component: {fileID: 4367065555949618787}
+  - component: {fileID: 6436245148458945025}
   m_Layer: 7
   m_Name: PlayerPrefab1Taurus
   m_TagString: Player
@@ -374,6 +437,8 @@ Transform:
   - {fileID: 404723288407734030}
   - {fileID: 7225621170571523329}
   - {fileID: 1747501984338155216}
+  - {fileID: 522995339404873157}
+  - {fileID: 7608713863195536288}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -568,7 +633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 2
+  cooldownTime: 2.5
   abilitySoundCheck: 0
   playerAnimator: {fileID: 7193425153408084763}
   triggerName: iconicTaurus
@@ -608,10 +673,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc48f0f7946f1a41ac126456f565952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Light: 10
-  Heavy: 20
-  Ability1: 20
-  Ability2: 20
+  Light: 11
+  Heavy: 17
+  Ability1: 14
+  Ability2: 10
   stacked: 0
   LightBuff: 1
   HeavyBuff: 1
@@ -805,6 +870,28 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+--- !u!114 &6436245148458945025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3338907856f95fb4a9b1b83e99d4bf36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 0
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: 
+  spawnPoints:
+  - {fileID: 7608713863195536288}
+  - {fileID: 522995339404873157}
+  _obj:
+  - {fileID: 2468615175100282329, guid: c3d099bf2af8839429eacbeff100d5dc, type: 3}
+  - {fileID: 2468615175100282329, guid: e70b497a951eb8b49bb0c8d2224dedba, type: 3}
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,7 +1414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa0fd617530b41469398866cfe35693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 3
+  cooldownTime: 2
   abilitySoundCheck: 0
   playerAnimator: {fileID: 7193425153408084763}
   triggerName: mixupTaurus

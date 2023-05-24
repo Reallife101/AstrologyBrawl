@@ -585,7 +585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 964d67c06cdda4e478c44f5e4c436e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 2
+  cooldownTime: 1.5
   abilitySoundCheck: 0
   playerAnimator: {fileID: 8694400067546609426}
   triggerName: mixupCancer
@@ -605,7 +605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1.5
+  cooldownTime: 2.5
   abilitySoundCheck: 0
   playerAnimator: {fileID: 8694400067546609426}
   triggerName: iconicCancer
@@ -738,6 +738,34 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  damageSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  healSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  jumpSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  speedSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &4259250144682286860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -750,10 +778,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc48f0f7946f1a41ac126456f565952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Light: 13
-  Heavy: 25
-  Ability1: 0
-  Ability2: 17
+  Light: 10
+  Heavy: 8
+  Ability1: 14
+  Ability2: 10
   stacked: 0
   LightBuff: 1
   HeavyBuff: 1
