@@ -761,7 +761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 964d67c06cdda4e478c44f5e4c436e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1
+  cooldownTime: 1.5
   abilitySoundCheck: 0
   playerAnimator: {fileID: 6502463303853110821}
   triggerName: mixupPisces
@@ -802,7 +802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Light: 10
-  Heavy: 20
+  Heavy: 12
   Ability1: 10
   Ability2: 0
   stacked: 0
