@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class castingManager : StateMachineBehaviour
 {
-    [SerializeField] stateTransfer st;
+    stateTransfer st;
+    [SerializeField] float endlag = 0.2f;
 
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -26,8 +27,8 @@ public class castingManager : StateMachineBehaviour
     {
         GameObject self = animator.gameObject;
         st = self.GetComponent<stateTransfer>();
-        st.endAnimation()
-;    }
+        st.endAnimation(endlag);
+    }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
     //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

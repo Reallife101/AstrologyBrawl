@@ -927,7 +927,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 0}
   triggerName: 
   buffLength: 5
-  newJump: 100
+  newJump: 90
   newDoubleJump: 75
 --- !u!114 &1184284098584985780
 MonoBehaviour:
@@ -946,7 +946,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 0}
   triggerName: 
   buffLength: 5
-  damageFactor: 1.2
+  damageFactor: 1.25
 --- !u!114 &1876953723702681367
 MonoBehaviour:
   m_ObjectHideFlags: 0
