@@ -85,7 +85,7 @@ public class doDamage : MonoBehaviour
             if (launchDirection.magnitude >.1)
             {
                 //flip the x if we are facing the wrong direction
-                if (transform.localScale.x < 0 || (parentSprite != null && parentSprite.localScale.x < 0))
+                if (transform.localScale.x < 0 || (parentSprite != null && parentSprite.localScale.x < 0) || (AttackSender != null && AttackSender.transform.localScale.x < 0))
                 {
                     dmg.TakeDamage(damage * multiplier * baseDamageMultiplier * buffMult, new Vector2(-launchDirection.x, launchDirection.y), hitStunTime);
                 }
