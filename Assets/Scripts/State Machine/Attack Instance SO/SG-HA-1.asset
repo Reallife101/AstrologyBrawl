@@ -12,19 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da60d73c482bb39469dd75590f34006c, type: 3}
   m_Name: SG-HA-1
   m_EditorClassIdentifier: 
-  damage: 15
+  damage: 5
   attackAnimationName: SagHeavy
   duration: 0.5
   inputBufferTime: 0.35
   forwardMovement: 0
-  finisherEndlag: 0.25
+  finisherEndlag: 0.3
   hitStunTime: 0.5
   knockbackPower: 5
   launchDirection: {x: 0, y: 0}
   NextAttackFrameSO: {fileID: 0}
   chargeTimeAllowed: 3.5
   chargeTimeForMax: 2.5
-  chargeMultiplier: 3
+  chargeMultiplier: 7
   freezeFrameName: heavyFreeze
   shakeTime: 0
   shakeIntensity: 0

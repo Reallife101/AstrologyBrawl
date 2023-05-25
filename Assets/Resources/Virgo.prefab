@@ -308,10 +308,7 @@ MonoBehaviour:
     Name: iconicVirgo
   - Type: 9
     SynchronizeType: 1
-    Name: hitMixup
-  - Type: 9
-    SynchronizeType: 1
-    Name: missMixup
+    Name: mixupConnected
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -455,7 +452,7 @@ MonoBehaviour:
   baseDamageMultiplier: 1
   ownerID: 0
   hp: {fileID: 7328130180652725418}
-  healAmount: 10
+  healAmount: 8
 --- !u!1 &2884006064712803025
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,7 +560,7 @@ MonoBehaviour:
   baseDamageMultiplier: 1
   ownerID: 0
   hp: {fileID: 7328130180652725418}
-  selfDamageAmount: 5
+  selfDamageAmount: 8
 --- !u!1 &3016257482074367028
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,7 +808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1.5
+  cooldownTime: 2.5
   abilitySoundCheck: 0
   playerAnimator: {fileID: 8694400067546609426}
   triggerName: mixupVirgo
@@ -984,9 +981,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc48f0f7946f1a41ac126456f565952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Light: 10
-  Heavy: 40
-  Ability1: 50
+  Light: 8
+  Heavy: 15
+  Ability1: 20
   Ability2: 10
   stacked: 0
   LightBuff: 1

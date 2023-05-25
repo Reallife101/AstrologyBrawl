@@ -413,7 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1.5
+  cooldownTime: 3
   abilitySoundCheck: 0
   playerAnimator: {fileID: 1487008377844494123}
   triggerName: mixupAquarius
@@ -433,7 +433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1.5
+  cooldownTime: 3
   abilitySoundCheck: 0
   playerAnimator: {fileID: 1487008377844494123}
   triggerName: iconicAquarius
@@ -455,8 +455,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Light: 10
   Heavy: 35
-  Ability1: 20
-  Ability2: 12
+  Ability1: 8
+  Ability2: 10
   stacked: 0
   LightBuff: 1
   HeavyBuff: 1

@@ -1345,7 +1345,7 @@ MonoBehaviour:
       Data2: 1135307506
       Data3: -1937159763
       Data4: -2101571560
-    Path: event:/Extended Battle Music
+    Path: event:/Music/Extended Battle Music
   Event: 
   PlayEvent: 1
   StopEvent: 2
