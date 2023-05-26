@@ -8,11 +8,8 @@ using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
 {
-    //private PlayerControllerInputAsset input;
-
-    //private InputAction startGame;
-    //private InputAction quitGame;
-
+    [SerializeField] GameObject mainMenu;
+    [SerializeField] GameObject howToPlay;
 
     private void Awake()
     {
@@ -51,7 +48,8 @@ public class MainMenuManager : MonoBehaviour
     {
         //input.Dispose();
         Debug.Log("Going to How to Play");
-        //SceneManager.LoadScene("HowToPlay");
+        mainMenu.SetActive(!mainMenu.activeInHierarchy);
+        howToPlay.SetActive(!howToPlay.activeInHierarchy);
     }
 
     public void Quit()
