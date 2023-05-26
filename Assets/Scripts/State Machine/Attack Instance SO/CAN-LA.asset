@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   attackAnimationName: lightCancer
-  duration: 0.2857143
+  duration: 0.375
   inputBufferTime: 0.35
   forwardMovement: 5
   finisherEndlag: 0.05

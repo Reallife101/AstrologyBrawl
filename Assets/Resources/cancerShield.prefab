@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 6264589772445978475}
   - component: {fileID: 5261851469978681104}
   - component: {fileID: 3634811611061147123}
+  - component: {fileID: -2795286199490646577}
   m_Layer: 0
   m_Name: cancerShield
   m_TagString: Untagged
@@ -247,6 +248,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-2795286199490646577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793811016547114540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack_type: 4
+  damage: 10
+  destroyOnTouch: 0
+  destroyOnImpact: 0
+  lifeTime: 0
+  hasInfiniteLifeTime: 1
+  launchForce: 0
+  hitStunTime: 0.25
+  launchDirection: {x: 0, y: 0}
+  parentSprite: {fileID: 0}
+  baseDamageMultiplier: 1
+  ownerID: 0
 --- !u!1 &2027397575018666990
 GameObject:
   m_ObjectHideFlags: 0
