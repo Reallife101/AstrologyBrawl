@@ -2130,6 +2130,7 @@ GameObject:
   - component: {fileID: 1981424155}
   - component: {fileID: 1981424154}
   - component: {fileID: 1981424156}
+  - component: {fileID: 1981424157}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2225,6 +2226,22 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &1981424157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981424152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Volume
+  TriggerEvent: 11
+  Value: 0
 --- !u!1 &2008578865
 GameObject:
   m_ObjectHideFlags: 0

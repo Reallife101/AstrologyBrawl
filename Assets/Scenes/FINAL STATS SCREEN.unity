@@ -447,6 +447,7 @@ GameObject:
   - component: {fileID: 342073760}
   - component: {fileID: 342073762}
   - component: {fileID: 342073761}
+  - component: {fileID: 342073763}
   m_Layer: 5
   m_Name: Center
   m_TagString: Untagged
@@ -512,6 +513,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342073759}
   m_CullTransparentMesh: 1
+--- !u!114 &342073763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342073759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 845027891
+      Data2: 1224739031
+      Data3: 164497049
+      Data4: 394414120
+    Path: event:/UI/impact1 2
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &371470223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,6 +1618,7 @@ GameObject:
   - component: {fileID: 1277732233}
   - component: {fileID: 1277732235}
   - component: {fileID: 1277732234}
+  - component: {fileID: 1277732236}
   m_Layer: 5
   m_Name: Left
   m_TagString: Untagged
@@ -1652,6 +1684,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277732232}
   m_CullTransparentMesh: 1
+--- !u!114 &1277732236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277732232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2026312088
+      Data2: 1176558599
+      Data3: -366173249
+      Data4: 570158571
+    Path: event:/UI/impact1.1
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1322426767
 GameObject:
   m_ObjectHideFlags: 0
@@ -3303,6 +3365,7 @@ GameObject:
   - component: {fileID: 2075177070}
   - component: {fileID: 2075177072}
   - component: {fileID: 2075177071}
+  - component: {fileID: 2075177073}
   m_Layer: 5
   m_Name: Right
   m_TagString: Untagged
@@ -3368,6 +3431,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075177069}
   m_CullTransparentMesh: 1
+--- !u!114 &2075177073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075177069}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1775074155
+      Data2: 1317908135
+      Data3: -1313859696
+      Data4: -686544165
+    Path: event:/UI/impact1
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2144327814
 GameObject:
   m_ObjectHideFlags: 0
