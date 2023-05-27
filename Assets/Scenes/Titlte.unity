@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 13508971}
   - component: {fileID: 13508973}
   - component: {fileID: 13508972}
+  - component: {fileID: 13508974}
   m_Layer: 5
   m_Name: start btn
   m_TagString: Untagged
@@ -260,6 +261,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13508970}
   m_CullTransparentMesh: 1
+--- !u!114 &13508974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13508970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -926631733
+      Data2: 1145537893
+      Data3: -910011212
+      Data4: -1022674830
+    Path: event:/UI/titleUi
+  Event: 
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &570548595
 GameObject:
   m_ObjectHideFlags: 0

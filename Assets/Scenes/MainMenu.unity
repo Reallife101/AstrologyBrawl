@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 97067735}
+  - component: {fileID: 97067736}
   m_Layer: 5
   m_Name: Functional Buttons
   m_TagString: Untagged
@@ -164,6 +165,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &97067736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97067734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d08fcf4634e735479a7e98d3098bc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIButton:
+    Guid:
+      Data1: -1143937807
+      Data2: 1106699243
+      Data3: -788742743
+      Data4: 368500647
+    Path: event:/UI/SelectUi
 --- !u!1 &267355460
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,6 +375,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1581633392}
         m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 97067736}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -574,6 +606,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 491253641}
+  - component: {fileID: 491253642}
   m_Layer: 5
   m_Name: How To Play
   m_TagString: Untagged
@@ -602,6 +635,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &491253642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491253640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d08fcf4634e735479a7e98d3098bc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIButton:
+    Guid:
+      Data1: -1759689433
+      Data2: 1233711861
+      Data3: -609466955
+      Data4: -1558573176
+    Path: event:/UI/UnselectUi
 --- !u!1 &522079159
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +740,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1581633392}
         m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
         m_MethodName: HowToPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 97067736}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -897,6 +961,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1581633392}
         m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
         m_MethodName: Credits
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 97067736}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1153,6 +1229,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 491253642}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1284385044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1323,6 +1411,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1750406008}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1290611413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1447,6 +1547,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1581633392}
         m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
         m_MethodName: Gallery
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 97067736}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1721,6 +1833,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1750406007}
+  - component: {fileID: 1750406008}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -1749,6 +1862,25 @@ RectTransform:
   m_AnchoredPosition: {x: 134.8, y: -133.7}
   m_SizeDelta: {x: 253.4, y: 106.2}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1750406008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750406006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d08fcf4634e735479a7e98d3098bc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIButton:
+    Guid:
+      Data1: -1759689433
+      Data2: 1233711861
+      Data3: -609466955
+      Data4: -1558573176
+    Path: event:/UI/UnselectUi
 --- !u!1 &1756562885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,7 +2129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1981424155}
   - component: {fileID: 1981424154}
-  - component: {fileID: 1981424153}
+  - component: {fileID: 1981424156}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2005,14 +2137,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1981424153
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1981424152}
-  m_Enabled: 1
 --- !u!20 &1981424154
 Camera:
   m_ObjectHideFlags: 0
@@ -2071,6 +2195,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1981424156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981424152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1348328034
+      Data2: 1317507737
+      Data3: -1685221969
+      Data4: -897854348
+    Path: event:/Music/Main Menu
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2008578865
 GameObject:
   m_ObjectHideFlags: 0
