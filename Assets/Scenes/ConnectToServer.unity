@@ -568,11 +568,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UIButton:
     Guid:
-      Data1: -959727029
-      Data2: 1163183864
-      Data3: -1228987717
-      Data4: -516991635
-    Path: event:/UI/testButton2
+      Data1: -1143937807
+      Data2: 1106699243
+      Data3: -788742743
+      Data4: 368500647
+    Path: event:/UI/SelectUi
 --- !u!1 &433567071
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,7 +1339,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1055901032}
   - component: {fileID: 1055901031}
-  - component: {fileID: 1055901033}
   - component: {fileID: 1055901034}
   m_Layer: 0
   m_Name: Main Camera
@@ -1406,36 +1405,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1055901033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1055901029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 1348328034
-      Data2: 1317507737
-      Data3: -1685221969
-      Data4: -897854348
-    Path: event:/Music/Main Menu
-  Event: 
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!114 &1055901034
 MonoBehaviour:
   m_ObjectHideFlags: 0

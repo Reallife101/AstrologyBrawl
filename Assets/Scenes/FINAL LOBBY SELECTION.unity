@@ -777,6 +777,57 @@ RectTransform:
   m_AnchoredPosition: {x: -231.2, y: -3.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &63844592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 63844594}
+  - component: {fileID: 63844593}
+  m_Layer: 0
+  m_Name: SelectUIAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &63844593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63844592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d08fcf4634e735479a7e98d3098bc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIButton:
+    Guid:
+      Data1: -1143937807
+      Data2: 1106699243
+      Data3: -788742743
+      Data4: 368500647
+    Path: event:/UI/SelectUi
+--- !u!4 &63844594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63844592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 781.54346, y: 353.52316, z: 2.1967645}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &68179178
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,6 +1485,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182620769}
   m_CullTransparentMesh: 1
+--- !u!1 &185808452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 185808454}
+  - component: {fileID: 185808453}
+  m_Layer: 0
+  m_Name: NeutralUiAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &185808453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185808452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d08fcf4634e735479a7e98d3098bc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIButton:
+    Guid:
+      Data1: -427644310
+      Data2: 1108868445
+      Data3: 189116075
+      Data4: 1197443566
+    Path: event:/UI/NeutralUi
+--- !u!4 &185808454
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185808452}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 781.54346, y: 353.52316, z: 2.1967645}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &236249582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,6 +1698,18 @@ MonoBehaviour:
       - m_Target: {fileID: 808890353}
         m_TargetAssemblyTypeName: CharacterSelect, Assembly-CSharp
         m_MethodName: OnClickRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 185808453}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3005,6 +3119,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 185808453}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &472090872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3610,6 +3736,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8520208379818531324, guid: 54750b71e1acc4a4fa938d350286feaf, type: 3}
   m_PrefabInstance: {fileID: 543366491}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &543366494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543366492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178742357
+      Data2: 1189879377
+      Data3: 1907597457
+      Data4: 1737288912
+    Path: event:/Announcer/Aquarius
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &545956241
 GameObject:
   m_ObjectHideFlags: 0
@@ -4318,6 +4474,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5416778591628692299, guid: db273bd7ce4d7e0498b3f9e44f17ee3e, type: 3}
   m_PrefabInstance: {fileID: 625363015}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &625363018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625363017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1223665776
+      Data2: 1214094676
+      Data3: -1164788036
+      Data4: -595582908
+    Path: event:/Announcer/Virgo
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &632037208
 GameObject:
   m_ObjectHideFlags: 0
@@ -5145,6 +5331,52 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8103291526814623279, guid: 9ea7f96e6a41e684aa3c9702c7cd6dc7, type: 3}
   m_PrefabInstance: {fileID: 783191306}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &783191309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783191308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1365889855
+      Data2: 1125739926
+      Data3: -1103859317
+      Data4: -1547910583
+    Path: event:/Announcer/Cancer
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &783191310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783191308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Parameter 1
+  TriggerEvent: 11
+  Value: 1
 --- !u!1 &784558674
 GameObject:
   m_ObjectHideFlags: 0
@@ -5179,7 +5411,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.004968139}
+  m_AnchoredPosition: {x: 66, y: 0.004918932}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -8230,7 +8462,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 63844593}
         m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
         m_MethodName: callUIAudio
         m_Mode: 1
@@ -8376,7 +8608,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 185808453}
         m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
         m_MethodName: callUIAudio
         m_Mode: 1
@@ -8435,6 +8667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1187211227}
+  - component: {fileID: 1187211228}
   m_Layer: 5
   m_Name: Lobby Panel
   m_TagString: Untagged
@@ -8474,6 +8707,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1187211228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187211226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1466128180
+      Data2: 1150216829
+      Data3: 1208489611
+      Data4: 80150440
+    Path: event:/Announcer/Choose
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1193905033
 GameObject:
   m_ObjectHideFlags: 0
@@ -11447,6 +11710,7 @@ GameObject:
   - component: {fileID: 1788928205}
   - component: {fileID: 1788928207}
   - component: {fileID: 1788928206}
+  - component: {fileID: 1788928208}
   m_Layer: 5
   m_Name: Capricorn
   m_TagString: Untagged
@@ -11512,6 +11776,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788928204}
   m_CullTransparentMesh: 1
+--- !u!114 &1788928208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788928204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 583838856
+      Data2: 1285570630
+      Data3: 980489370
+      Data4: -906983756
+    Path: event:/Announcer/Capricorn
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1795786996
 GameObject:
   m_ObjectHideFlags: 0
@@ -12969,8 +13263,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1941303875}
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
-  m_Value: -0.0124223605
-  m_Size: 0.99094826
+  m_Value: -0.0062111802
+  m_Size: 0.9993472
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13816,6 +14110,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 133989980669699859, guid: bed4f4b7d5101f64895df48a08896124, type: 3}
   m_PrefabInstance: {fileID: 2109248161}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2109248164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109248162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 931241406
+      Data2: 1141793210
+      Data3: 1221785473
+      Data4: 804555774
+    Path: event:/Announcer/Saggi
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &2109248165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109248162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Parameter 1
+  TriggerEvent: 11
+  Value: 1
 --- !u!1001 &2111190488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13903,6 +14243,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7299311160738289377, guid: 5eb925890c323ec46be886307cff7b0a, type: 3}
   m_PrefabInstance: {fileID: 2111190488}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2111190491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111190490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1436120717
+      Data2: 1155067785
+      Data3: 621703311
+      Data4: -1751653803
+    Path: event:/Announcer/Taurus
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2114762729
 GameObject:
   m_ObjectHideFlags: 0
@@ -14427,6 +14797,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5562575714581902227}
+  - component: {fileID: 5562575714581902228}
   m_Layer: 0
   m_Name: Pisces Illustration Animation
   m_TagString: Untagged
@@ -14705,6 +15076,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7189279623637859603}
+  - component: {fileID: 7189279623637859604}
   m_Layer: 0
   m_Name: Libra Illustration Animation
   m_TagString: Untagged
@@ -14728,6 +15100,36 @@ Transform:
   m_Father: {fileID: 881784866}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5562575714581902228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052282153849995532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -601522667
+      Data2: 1308830846
+      Data3: -779053638
+      Data4: 1182578633
+    Path: event:/Announcer/Pisces
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6330856707495739060
 GameObject:
   m_ObjectHideFlags: 0
@@ -15045,6 +15447,36 @@ Transform:
   m_Father: {fileID: 881784866}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7189279623637859604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5453034076003347219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1966995081
+      Data2: 1243814356
+      Data3: 1885168060
+      Data4: 268375705
+    Path: event:/Announcer/Libra
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &7638205979045299376
 Transform:
   m_ObjectHideFlags: 0
