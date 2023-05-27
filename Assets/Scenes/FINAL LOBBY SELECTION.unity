@@ -1371,6 +1371,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 924003067}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &162836174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1624,6 +1636,7 @@ GameObject:
   - component: {fileID: 239303052}
   - component: {fileID: 239303051}
   - component: {fileID: 239303050}
+  - component: {fileID: 239303053}
   m_Layer: 5
   m_Name: Right Arrow
   m_TagString: Untagged
@@ -1757,6 +1770,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239303048}
   m_CullTransparentMesh: 1
+--- !u!114 &239303053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239303048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: SettinsShutup
+  TriggerEvent: 0
+  Value: 0
 --- !u!1 &249331078
 GameObject:
   m_ObjectHideFlags: 0
@@ -2486,7 +2515,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1562141359}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 185808453}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &368627509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3036,6 +3077,7 @@ GameObject:
   - component: {fileID: 472090873}
   - component: {fileID: 472090872}
   - component: {fileID: 472090871}
+  - component: {fileID: 472090874}
   m_Layer: 5
   m_Name: Left Arrow
   m_TagString: Untagged
@@ -3169,6 +3211,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472090869}
   m_CullTransparentMesh: 1
+--- !u!114 &472090874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472090869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: SettinsShutup
+  TriggerEvent: 13
+  Value: 0
 --- !u!1 &485854877
 GameObject:
   m_ObjectHideFlags: 0
@@ -3777,6 +3835,7 @@ GameObject:
   - component: {fileID: 545956242}
   - component: {fileID: 545956244}
   - component: {fileID: 545956243}
+  - component: {fileID: 545956245}
   m_Layer: 5
   m_Name: Level Select
   m_TagString: Untagged
@@ -3869,6 +3928,22 @@ MonoBehaviour:
   description: {fileID: 968847263}
   levelImage: {fileID: 1041463356}
   playbtn: {fileID: 570875081}
+--- !u!114 &545956245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545956241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Volume
+  TriggerEvent: 11
+  Value: 0
 --- !u!1 &570875081
 GameObject:
   m_ObjectHideFlags: 0
@@ -3968,6 +4043,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1283545689}
         m_TargetAssemblyTypeName: LobbyManager, Assembly-CSharp
         m_MethodName: OnClickPlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1081245913}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4308,7 +4395,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1045131817}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 185808453}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &622187581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5206,6 +5305,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 63844593}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &764207207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5374,7 +5485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Parameter: Parameter 1
+  Parameter: AnnouncerTalk
   TriggerEvent: 11
   Value: 1
 --- !u!1 &784558674
@@ -5411,7 +5522,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.004918932}
+  m_AnchoredPosition: {x: 66, y: 0.0049304403}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -6366,6 +6477,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920437104}
   m_CullTransparentMesh: 1
+--- !u!1 &924003066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 924003068}
+  - component: {fileID: 924003067}
+  m_Layer: 0
+  m_Name: DeselectUIAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &924003067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924003066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d08fcf4634e735479a7e98d3098bc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIButton:
+    Guid:
+      Data1: -1759689433
+      Data2: 1233711861
+      Data3: -609466955
+      Data4: -1558573176
+    Path: event:/UI/UnselectUi
+--- !u!4 &924003068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924003066}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 781.54346, y: 353.52316, z: 2.1967645}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &940763473
 GameObject:
   m_ObjectHideFlags: 0
@@ -6720,7 +6882,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1562141359}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 185808453}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &978146347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7295,6 +7469,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069339077}
   m_CullTransparentMesh: 1
+--- !u!1 &1081245910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1081245912}
+  - component: {fileID: 1081245913}
+  m_Layer: 0
+  m_Name: BigUiAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1081245912
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081245910}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 781.54346, y: 353.52316, z: 2.1967645}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1081245913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081245910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d08fcf4634e735479a7e98d3098bc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIButton:
+    Guid:
+      Data1: -926631733
+      Data2: 1145537893
+      Data3: -910011212
+      Data4: -1022674830
+    Path: event:/UI/titleUi
 --- !u!1 &1090766157
 GameObject:
   m_ObjectHideFlags: 0
@@ -7382,18 +7607,6 @@ MonoBehaviour:
       - m_Target: {fileID: 808890353}
         m_TargetAssemblyTypeName: CharacterSelect, Assembly-CSharp
         m_MethodName: ReadyUpToggle
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
-        m_MethodName: callUIAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7687,6 +7900,34 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3305554254479663717, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305554254479663717, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305554254479663717, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 185808453}
+    - target: {fileID: 3305554254479663717, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305554254479663717, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: callUIAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305554254479663717, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UIAudio, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305554254479663717, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3305554254479663718, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
       propertyPath: m_SizeDelta.x
       value: 24.6407
@@ -7774,6 +8015,34 @@ PrefabInstance:
     - target: {fileID: 3305554255540755195, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
       propertyPath: m_Color.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305554255540755196, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305554255540755196, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305554255540755196, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 185808453}
+    - target: {fileID: 3305554255540755196, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305554255540755196, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: callUIAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305554255540755196, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UIAudio, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305554255540755196, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3305554255540755197, guid: 32a7473d78a84b24d991bffccfaed8e5, type: 3}
       propertyPath: m_SizeDelta.x
@@ -8668,6 +8937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1187211227}
   - component: {fileID: 1187211228}
+  - component: {fileID: 1187211229}
   m_Layer: 5
   m_Name: Lobby Panel
   m_TagString: Untagged
@@ -8737,6 +9007,22 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &1187211229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187211226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Volume
+  TriggerEvent: 11
+  Value: 0
 --- !u!1 &1193905033
 GameObject:
   m_ObjectHideFlags: 0
@@ -8857,7 +9143,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1562141359}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 185808453}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1210097714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8905,6 +9203,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1212798837}
+  - component: {fileID: 1212798839}
+  - component: {fileID: 1212798841}
+  - component: {fileID: 1212798840}
+  - component: {fileID: 1212798842}
   m_Layer: 5
   m_Name: SettingsContainer
   m_TagString: Untagged
@@ -8934,6 +9236,70 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1212798839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212798836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: SettinsShutup
+  TriggerEvent: 11
+  Value: 1
+--- !u!114 &1212798840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212798836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: AnnouncerTalk
+  TriggerEvent: 12
+  Value: 1
+--- !u!114 &1212798841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212798836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: AnnouncerTalk
+  TriggerEvent: 11
+  Value: 0
+--- !u!114 &1212798842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212798836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: SettinsShutup
+  TriggerEvent: 12
+  Value: 0
 --- !u!1 &1239927556
 GameObject:
   m_ObjectHideFlags: 0
@@ -10924,7 +11290,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 880101434}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 185808453}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1622475555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11954,7 +12332,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 26249413}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 185808453}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1814496824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12214,6 +12604,52 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1678947144566418957, guid: ec7f8056283473f45ad0ff5e0720ce86, type: 3}
   m_PrefabInstance: {fileID: 1678947144118023967}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1833310483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833310481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Volume
+  TriggerEvent: 11
+  Value: 1
+--- !u!114 &1833310484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833310481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 714408118
+      Data2: 1193095025
+      Data3: 547371402
+      Data4: 317877398
+    Path: event:/Music/loading screen
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1842432913
 GameObject:
   m_ObjectHideFlags: 0
@@ -12510,7 +12946,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 449923802}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 185808453}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1888725311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13038,6 +13486,8 @@ GameObject:
   - component: {fileID: 1945035375}
   - component: {fileID: 1945035374}
   - component: {fileID: 1945035377}
+  - component: {fileID: 1945035379}
+  - component: {fileID: 1945035378}
   m_Layer: 5
   m_Name: Level Select button
   m_TagString: Untagged
@@ -13122,6 +13572,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 63844593}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1945035375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13180,6 +13642,38 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1945035378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945035372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: SettinsShutup
+  TriggerEvent: 12
+  Value: 0
+--- !u!114 &1945035379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945035372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: SettinsShutup
+  TriggerEvent: 11
+  Value: 1
 --- !u!1 &1969832331
 GameObject:
   m_ObjectHideFlags: 0
@@ -13264,7 +13758,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
   m_Value: -0.0062111802
-  m_Size: 0.9993472
+  m_Size: 0.99992925
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13849,7 +14343,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1905278542}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 185808453}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: callUIAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2058326313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14153,7 +14659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Parameter: Parameter 1
+  Parameter: AnnouncerTalk
   TriggerEvent: 11
   Value: 1
 --- !u!1001 &2111190488
