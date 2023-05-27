@@ -53,8 +53,8 @@ public class playerController : MonoBehaviour
     public bool isGrounded;
     private bool canDoubleJump;
     private bool movementLocked = false;
-    private bool isShielding = false;
     private bool fastFall;
+    private bool shieldHeld;
 
     //Grounded things
     [Header("Grounded Check Items")]
@@ -116,7 +116,7 @@ public class playerController : MonoBehaviour
 
         playerJump.started += jumpBehavior =>
         {
-            if (!myPV.IsMine || movementLocked || isShielding)
+            if (!myPV.IsMine || movementLocked)
             {
                 return;
             }
@@ -149,9 +149,9 @@ public class playerController : MonoBehaviour
             }
         };
 
-        abilityOneAction.started += ability1Behavior =>
+        abilityOneAction.performed += ability1Behavior =>
         {
-            if (!myPV.IsMine || movementLocked || isShielding)
+            if (!myPV.IsMine || movementLocked)
             {
                 return;
             }
@@ -165,9 +165,20 @@ public class playerController : MonoBehaviour
             }   
         };
 
-        abilityTwoAction.started += ability2Behavior =>
+        abilityOneAction.canceled += ability1Release =>
         {
-            if (!myPV.IsMine || movementLocked || isShielding)
+            if (!myPV.IsMine)
+            {
+                return;
+            }
+
+            ability1.release();
+
+        };
+
+        abilityTwoAction.performed += ability2Behavior =>
+        {
+            if (!myPV.IsMine || movementLocked)
             {
                 return;
             }
@@ -181,9 +192,20 @@ public class playerController : MonoBehaviour
             }   
         };
 
+        abilityTwoAction.canceled += ability2Release =>
+        {
+            if (!myPV.IsMine)
+            {
+                return;
+            }
+
+            ability2.release();
+
+        };
+
         lightAttackAction.started += lightAttackBehavior =>
         {
-            if (!myPV.IsMine || isShielding)
+            if (!myPV.IsMine || mySM.IsShielding())
             {
                 return;
             }
@@ -195,7 +217,7 @@ public class playerController : MonoBehaviour
 
         heavyAttackAction.performed += heavyAttackBehavior =>
         {
-            if (!myPV.IsMine || isShielding)
+            if (!myPV.IsMine || mySM.IsShielding())
             {
                 return;
             }
@@ -235,9 +257,7 @@ public class playerController : MonoBehaviour
                 return;
             }
 
-            mySM.EndCharge();
-            shield.activate();
-            isShielding = true;
+            shieldHeld = true;
         };
 
         playerShield.canceled += shieldActivate =>
@@ -248,7 +268,8 @@ public class playerController : MonoBehaviour
             }
 
             shield.deactivate();
-            isShielding = false;
+            mySM.ToggleShield(false);
+            shieldHeld = false;
         };
 
 
@@ -283,12 +304,38 @@ public class playerController : MonoBehaviour
         movementLocked = mySM.currentState != StateManager.States.Idle && mySM.currentState != StateManager.States.Recovery;
 
         Movement();
+
+        //If shield is buffered, turn it on
+        if (shieldHeld)
+        {
+            ShieldOn();
+        }
+    }
+
+    //Function to allow for shield to be buffered
+    private void ShieldOn()
+    {
+        //If not idle or charging, no shielding allowed
+        if (mySM.currentState != StateManager.States.Idle && mySM.currentState != StateManager.States.Charging)
+        {
+            return;
+        }
+        if (mySM.currentState == StateManager.States.Charging)
+        {
+            mySM.EndCharge();
+        }
+        shieldHeld = false;
+        shield.activate();
+        mySM.ToggleShield(true);
+        //Shield interupts movement(), which normally handles this
+        myRB.velocity = new Vector2(0, myRB.velocity.y);
+        anim.SetFloat("speed", 0);
     }
 
     public void Movement()
     {
         //If attacking, lock movement
-        if (movementLocked || isShielding)
+        if (movementLocked)
         {
             return;
         }
@@ -449,6 +496,11 @@ public class playerController : MonoBehaviour
         myPV.RPC("RPC_HermitDisable", myPV.Owner, delay);
     }
 
+    public void DevilEffect(float muliplier, float delay)
+    {
+        myPV.RPC("RPC_DevilBuff", myPV.Owner, muliplier, delay);
+    }
+
     public void FoolTP(Vector3[] points, float delay)
     {
         myPV.RPC("RPC_FoolTP", myPV.Owner, points, delay);
@@ -457,21 +509,27 @@ public class playerController : MonoBehaviour
     [PunRPC]
     private void RPC_MagicianDisable(float delay)
     {
-        Debug.Log("made it to controller for magician");
+        //Debug.Log("made it to controller for magician");
         lightAttackAction.Disable();
         heavyAttackAction.Disable();
-        Debug.Log("starting magician coroutine");
+        //Debug.Log("starting magician coroutine");
         StartCoroutine(reEnableDelay(delay, magicianReEnable));
     }
 
     [PunRPC]
     private void RPC_HermitDisable(float delay)
     {
-        Debug.Log("made it to controller for hermit");
+        //Debug.Log("made it to controller for hermit");
         abilityOneAction.Disable();
         abilityTwoAction.Disable();
-        Debug.Log("starting hermit coroutine");
+        //Debug.Log("starting hermit coroutine");
         StartCoroutine(reEnableDelay(delay, hermitReEnable));
+    }
+
+    [PunRPC]
+    private void RPC_DevilBuff(float multiplier, float delay)
+    {
+        gameObject.GetComponent<DamageManager>().affectAllDamage(multiplier, delay, false, true);
     }
 
     IEnumerator reEnableDelay(float delay, Action f)

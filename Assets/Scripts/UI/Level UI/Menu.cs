@@ -14,7 +14,7 @@ public class Menu : MonoBehaviourPunCallbacks
     private PlayerControllerInputAsset input;
     private InputAction menuToggle;
 
-    private string leave_to_level = "New Lobby";
+    private string leave_to_level = "FINAL LOBBY SELECTION";
 
     private void Start()
     {

@@ -11,7 +11,7 @@ public class TarotDevil : TarotCard
     // Start is called before the first frame update
     void Start()
     {
-        cardName = CardNames.JUSTICE;
+        cardName = CardNames.DEVIL;
     }
 
     // Update is called once per frame
@@ -29,6 +29,6 @@ public class TarotDevil : TarotCard
         Player p = PhotonNetwork.CurrentRoom.GetPlayer(actorNumber);
         PlayerManager pm = PlayerManager.Find(p);
         playerController controller = pm.GetPlayerController();
-        controller.gameObject.GetComponent<DamageManager>().affectAllDamage(multiplier, delay, false, true);
+        controller.DevilEffect(multiplier, delay);
     }
 }

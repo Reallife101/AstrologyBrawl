@@ -12,12 +12,8 @@ public class PlayerItem : MonoBehaviourPunCallbacks
 {
     public TMP_Text playerName;
 
-    public Image backgroundImage;
-    public Color highlightColor;
-    public GameObject leftArrowButton;
-    public GameObject rightArrowButton;
     public GameObject playerItemButton;
-    public GameObject readyUpTextObject;
+
     public TMP_Text readyUpText;
 
     public ExitGames.Client.Photon.Hashtable playerProperties = new ExitGames.Client.Photon.Hashtable();
@@ -25,7 +21,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks
     public Sprite[] avatars;
 
     Player player;
-    characterSelect characterSelect;
+    characterSelectAudio characterSelect;
 
     private static PlayerControllerInputAsset input;
     private InputAction select;
@@ -35,7 +31,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks
 
     public void Awake()
     {
-        characterSelect = GetComponent<characterSelect>();
+        characterSelect = GetComponent<characterSelectAudio>();
         readyUpText.text = "Ready Up";
 
 
@@ -71,14 +67,10 @@ public class PlayerItem : MonoBehaviourPunCallbacks
 
     public void ApplyLocalChanges()
     {
-        backgroundImage.color = highlightColor;
-        if (!isReady)
-        {
-            leftArrowButton.SetActive(true);
-            rightArrowButton.SetActive(true);
-        }
+
+
         playerItemButton.SetActive(true);
-        readyUpTextObject.SetActive(false);
+
     }
 
     public void SetPlayerInfo(Player _player)
@@ -131,7 +123,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks
 
         if (player.CustomProperties.TryGetValue("ready", out object readyout))
         {
-            readyUpTextObject.SetActive((bool) readyout);
+            
         }
     }
 
@@ -158,7 +150,6 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         {
             readyUpText.text = "Unselect";
             move.Disable();
-
         }
         else
         {
@@ -170,10 +161,6 @@ public class PlayerItem : MonoBehaviourPunCallbacks
         hash.Add("ready", isReady);
         PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         
-
-        leftArrowButton.SetActive(!isReady);
-        rightArrowButton.SetActive(!isReady);
-        readyUpTextObject.SetActive(isReady);
 
         if (isReady)
         {

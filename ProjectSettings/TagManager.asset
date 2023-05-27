@@ -9,6 +9,7 @@ TagManager:
   - targetGroup
   - centerStage
   - tpPoints
+  - tarotManager
   layers:
   - Default
   - TransparentFX
@@ -43,6 +44,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Furthest back Background
+    uniqueID: 3254962687
+    locked: 0
+  - name: Further Back Background
+    uniqueID: 351462173
+    locked: 0
+  - name: Background
+    uniqueID: 1784795573
+    locked: 0
+  - name: MiddleGround
+    uniqueID: 2395105993
+    locked: 0
+  - name: Foreground
+    uniqueID: 1276891811
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Infront of Default
+    uniqueID: 3105140715
     locked: 0

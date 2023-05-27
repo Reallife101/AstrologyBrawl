@@ -5,10 +5,10 @@ using UnityEngine;
 public abstract class Ability : MonoBehaviour
 {
     [SerializeField]
-    private float cooldownTime;
-    private float currentCooldown;
+    protected float cooldownTime;
+    protected float currentCooldown;
     public bool abilitySoundCheck;
-    [SerializeField] private Animator playerAnimator;
+    [SerializeField] protected Animator playerAnimator;
     [SerializeField] private string triggerName;
 
     private void Start()
@@ -30,6 +30,11 @@ public abstract class Ability : MonoBehaviour
             Use();
         }
     }
+
+    public virtual void release()
+    {
+        //Wait to be overwritten
+    }
     public abstract void Use();
 
     private void Update()
@@ -37,7 +42,6 @@ public abstract class Ability : MonoBehaviour
         // Reduce cooldown
         if (currentCooldown > 0f)
         {
-            
             currentCooldown -= Time.deltaTime;
             abilitySoundCheck = false;
          
@@ -57,6 +61,8 @@ public abstract class Ability : MonoBehaviour
 
     public float CurrCooldownTime()
     {
-        return currentCooldown;
+        if (currentCooldown == 0)
+            return cooldownTime / cooldownTime;
+        return currentCooldown / cooldownTime;
     }
 }

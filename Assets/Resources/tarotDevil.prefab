@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3408053b98986a24096ea934f5215c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tarotNumber: 1
 --- !u!114 &3822077711508932104
 MonoBehaviour:
   m_ObjectHideFlags: 0

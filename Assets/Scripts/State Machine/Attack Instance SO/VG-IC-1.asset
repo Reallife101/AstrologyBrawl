@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da60d73c482bb39469dd75590f34006c, type: 3}
   m_Name: VG-IC-1
   m_EditorClassIdentifier: 
-  damage: 50
-  attackAnimationName: heavyVirgo
+  damage: 20
+  attackAnimationName: iconicVirgo
   duration: 0.5
   inputBufferTime: 0.35
   forwardMovement: 1
@@ -26,3 +26,5 @@ MonoBehaviour:
   chargeTimeForMax: 0
   chargeMultiplier: 0
   freezeFrameName: 
+  shakeTime: 0
+  shakeIntensity: 0

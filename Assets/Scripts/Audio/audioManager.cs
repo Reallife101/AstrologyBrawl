@@ -30,6 +30,11 @@ public class audioManager : MonoBehaviour
     [SerializeField] FMODUnity.EventReference takedamagevoice;
     [SerializeField] FMODUnity.EventReference spawnvoice;
     
+    [Header("Capricorn Iconic")]
+    [SerializeField] FMODUnity.EventReference damageSound;
+    [SerializeField] FMODUnity.EventReference healSound;
+    [SerializeField] FMODUnity.EventReference jumpSound;
+    [SerializeField] FMODUnity.EventReference speedSound;
     
     // Other variables
     playerController playerController;
@@ -98,6 +103,26 @@ public class audioManager : MonoBehaviour
     public void CallSpawnVoice()
     {
         photonView.RPC("SpawnVoice", RpcTarget.All);
+    }
+
+    public void CallCapDamage()
+    {
+        photonView.RPC("CapDamage", RpcTarget.All);
+    }
+
+    public void CallCapHeal()
+    {
+        photonView.RPC("CapHeal", RpcTarget.All);
+    }
+
+    public void CallCapJump()
+    {
+        photonView.RPC("CapJump", RpcTarget.All);
+    }
+
+    public void CallCapSpeed()
+    {
+        photonView.RPC("CapSpeed", RpcTarget.All);
     }
 
     // Run RPCs
@@ -177,6 +202,31 @@ public class audioManager : MonoBehaviour
     {
         FMODUnity.RuntimeManager.PlayOneShot(spawnvoice);
     }   
+
+
+    [PunRPC]
+    public void CapDamage()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(damageSound);
+    }
+
+    [PunRPC]
+    public void CapHeal()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(healSound);
+    }
+
+    [PunRPC]
+    public void CapJump()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(jumpSound);
+    }
+
+    [PunRPC]
+    public void CapSpeed()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(speedSound);
+    }
 
     [PunRPC]
     public void Start()

@@ -350,7 +350,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 4.1, y: 108.7}
+  m_AnchoredPosition: {x: -0.0000061989, y: 110}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &4729464552310583708
@@ -460,7 +460,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3305554254204351071}
   - component: {fileID: 6377059073172621493}
-  - component: {fileID: 3973905992332843406}
   m_Layer: 5
   m_Name: PlayerItem
   m_TagString: Untagged
@@ -508,12 +507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: {fileID: 3419666283991761436}
-  backgroundImage: {fileID: 3305554254653456673}
-  highlightColor: {r: 0.8396226, g: 0.41585082, b: 0.75046766, a: 1}
-  leftArrowButton: {fileID: 3305554255540755198}
-  rightArrowButton: {fileID: 3305554254479663719}
   playerItemButton: {fileID: 414570510118433598}
-  readyUpTextObject: {fileID: 1490857803009007843}
   readyUpText: {fileID: 6350101851390439309}
   playerAvatar: {fileID: 768407824205025756}
   avatars:
@@ -524,32 +518,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3c8f9c75d8dcf6546bfb0e210954b72b, type: 3}
   - {fileID: 21300000, guid: 0fb2a9af37d16764989747a9b2990d93, type: 3}
   - {fileID: 21300002, guid: a75445bb16444f14f96fdf9c734945cc, type: 3}
---- !u!114 &3973905992332843406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3305554254204351072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21d36e4da61aad64e981d8bf651f1c06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LibraLock:
-    Guid:
-      Data1: 1736800558
-      Data2: 1136807987
-      Data3: -223500928
-      Data4: 1253733636
-    Path: event:/Libra (L)/Libra On Select Voice
-  SaggiLock:
-    Guid:
-      Data1: 1017163237
-      Data2: 1183297019
-      Data3: 964185256
-      Data4: 376819974
-    Path: event:/Saggi (SG)/Saggi On Select Voice
+  - {fileID: 21300000, guid: 9125c204f566db048a92ebcb64d9d14a, type: 3}
+  - {fileID: 21300000, guid: b8a22c84b9ce85749ad8f47f57d6506e, type: 3}
 --- !u!1 &3305554254479663719
 GameObject:
   m_ObjectHideFlags: 0

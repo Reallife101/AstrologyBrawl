@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3433409771868405020}
   - component: {fileID: 3433409771868404995}
   - component: {fileID: 6551344503419998623}
+  - component: {fileID: 1724586136003095672}
   m_Layer: 0
   m_Name: PlayerManager
   m_TagString: Untagged
@@ -52,7 +53,9 @@ MonoBehaviour:
   - {fileID: 3016257482074367028, guid: 269ac9da2eef138408c93c340fd1ab34, type: 3}
   - {fileID: 3016257482074367028, guid: 7a5e045d5356dfb4ea4dc04392ad1142, type: 3}
   - {fileID: 3016257482074367028, guid: 09bdda7ade3fe3749bf9ccf85c659492, type: 3}
-  - {fileID: 3016257482074367028, guid: 4a22ed63a0fbe7643a4d1da71125bb17, type: 3}
+  - {fileID: 3016257482074367028, guid: d2af79f7292057e4f809af3f532531b6, type: 3}
+  - {fileID: 3016257482074367028, guid: 89900526ae8c6744abbde842b906c633, type: 3}
+  - {fileID: 3016257482074367028, guid: 1c3bf9242c1950f41b7b03f71a9c4cf2, type: 3}
   killGoal: 5
   timeSlowCurve:
     serializedVersion: 2
@@ -87,6 +90,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  PPV: {fileID: 1724586136003095672}
+  maxIntensity: 0.7
 --- !u!114 &6551344503419998623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,3 +114,20 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &1724586136003095672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3433409771868405021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: d5dd5ef2babc32a47a08c0bab4b67611, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0

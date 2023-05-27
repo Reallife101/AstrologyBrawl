@@ -2,85 +2,77 @@ using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using Photon.Realtime;
+using System;
 
 public class levelInfoItem : MonoBehaviourPunCallbacks
 {
-    [SerializeField]
-    private string[] levels;
+    [Serializable]
+    public struct Level
+    {
+        public Button btn;
+        public string levelName;
+        public string description;
+        public Image img;
+        public GameObject background;
+    }
 
-    private int levelIndex;
+    [SerializeField]
+    private List<Level> levels;
+
+    [SerializeField]
     private TMP_Text levelText;
+    [SerializeField]
+    private TMP_Text description;
+    [SerializeField]
+    private Image levelImage;
+    [SerializeField]
+    private GameObject playbtn;
+
+
+    private GameObject lastbackgroundImage;
+
+
     
     // Start is called before the first frame update
     void Start()
     {
-        levelText = GetComponent<TMP_Text>();
-        levelIndex = 0;
+        playbtn.SetActive(false);
+
         if (PhotonNetwork.IsMasterClient)
+            playbtn.SetActive(true);
+
+        for(int i = 0; i < levels.Count; ++i)
         {
-            updateText();
+            int indexCopy = i;
+            levels[i].btn.onClick.AddListener(delegate { DisplayLevel(indexCopy); } );
         }
-    }
 
-    public override void OnPlayerEnteredRoom(Player newPlayer)
-    {
-        if (PhotonNetwork.IsMasterClient)
-        {
-            updateText();
-        }
-    }
-
-
-    void updateText()
-    {
-        //levelText.text = "Level: " + levels[levelIndex];
-        levelText.text = levels[levelIndex];
-        //this.photonView.RPC(nameof(RPC_UpdateText), RpcTarget.All, "Level: " + levels[levelIndex]);
-        this.photonView.RPC(nameof(RPC_UpdateText), RpcTarget.All, levels[levelIndex]);
-    }
-
-    public void updateText(string s)
-    {
-        levelText.text = s;
-    }
-
-    [PunRPC]
-    void RPC_UpdateText(string s)
-    {
-        updateText(s);
+        DisplayLevel(0); //by default it would put the first button
     }
 
     public string getSceneName()
     {
-        return levels[levelIndex];
+        return levelText.text;
     }
 
-    public void OnClickLeft()
+    public void DisplayLevel(int index)
     {
-        if (levelIndex == 0)
-        {
-            levelIndex = levels.Length - 1;
-        }
-        else
-        {
-            levelIndex = levelIndex - 1;
-        }
-        updateText();
+        photonView.RPC(nameof(RPC_DisplayLevel), RpcTarget.All, index);
     }
 
-    public void OnClickRight()
+    [PunRPC]
+    public void RPC_DisplayLevel(int index)
     {
-        if (levelIndex == levels.Length - 1)
-        {
-            levelIndex = 0;
-        }
-        else
-        {
-            levelIndex = levelIndex + 1;
-        }
-        updateText();
+        if (lastbackgroundImage)
+            lastbackgroundImage.SetActive(false);
+        levelText.text =  levels[index].levelName;
+        description.text = levels[index].description;
+        levelImage.sprite = levels[index].img.sprite;
+        lastbackgroundImage = levels[index].background;
+        lastbackgroundImage.SetActive(true);
     }
 
 }

@@ -14,7 +14,7 @@ public class TarotCardMagician : TarotCard
 
     public override void Effect(int actorNumber)
     {
-        Debug.Log("doing magician");
+        //Debug.Log("doing magician");
         doTo(false, true, actorNumber);
     }
 
@@ -23,6 +23,7 @@ public class TarotCardMagician : TarotCard
         Player p = PhotonNetwork.CurrentRoom.GetPlayer(actorNumber);
         PlayerManager pm = PlayerManager.Find(p);
         playerController controller = pm.GetPlayerController();
+        controller.MagicianDisable(delay);
     }
 
 }

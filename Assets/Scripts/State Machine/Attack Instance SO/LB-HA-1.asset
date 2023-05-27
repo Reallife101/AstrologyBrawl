@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da60d73c482bb39469dd75590f34006c, type: 3}
   m_Name: LB-HA-1
   m_EditorClassIdentifier: 
-  damage: 40
+  damage: 14
   attackAnimationName: heavyLibra
-  duration: 1
+  duration: 0.5
   inputBufferTime: 0.35
   forwardMovement: 0
-  finisherEndlag: 0.15
+  finisherEndlag: 0.1
   hitStunTime: 0.5
   knockbackPower: 10
   launchDirection: {x: 10, y: -30}

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da60d73c482bb39469dd75590f34006c, type: 3}
+  m_Name: CAP-PLUNG
+  m_EditorClassIdentifier: 
+  damage: 14
+  attackAnimationName: 
+  duration: 0
+  inputBufferTime: 0
+  forwardMovement: 0
+  finisherEndlag: 0
+  hitStunTime: 0.5
+  knockbackPower: 10
+  launchDirection: {x: 0, y: 0}
+  NextAttackFrameSO: {fileID: 0}
+  chargeTimeAllowed: 0
+  chargeTimeForMax: 0
+  chargeMultiplier: 0
+  freezeFrameName: 
+  shakeTime: 0
+  shakeIntensity: 0

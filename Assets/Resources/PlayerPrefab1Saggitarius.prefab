@@ -125,7 +125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33419741909558062}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.7, y: 1.85, z: -0.01745534}
+  m_LocalPosition: {x: 3, y: 3, z: -0.01745534}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -188,6 +188,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 0}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!61 &8342185714624354490
 BoxCollider2D:
@@ -687,7 +688,7 @@ MonoBehaviour:
   abilitySoundCheck: 0
   playerAnimator: {fileID: 4757342467156564362}
   triggerName: mixup
-  forceVector: {x: -75, y: 30}
+  forceVector: {x: -65, y: 25}
 --- !u!114 &1016379177814654591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,9 +703,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Light: 25
   Heavy: 15
-  Ability1: 20
-  Ability2: 20
+  Ability1: 8
+  Ability2: 8
   stacked: 0
+  LightBuff: 1
+  HeavyBuff: 1
+  A1Buff: 1
+  A2Buff: 1
+  StackBuff: 1
 --- !u!114 &7052219941287439257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,7 +723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 964d67c06cdda4e478c44f5e4c436e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1
+  cooldownTime: 2.5
   abilitySoundCheck: 0
   playerAnimator: {fileID: 4757342467156564362}
   triggerName: arrow
@@ -886,6 +892,34 @@ MonoBehaviour:
       Data3: -125166946
       Data4: -1575502301
     Path: event:/Saggi (SG)/Saggi Respawn Voice
+  damageSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  healSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  jumpSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  speedSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0

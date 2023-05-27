@@ -16,4 +16,9 @@ public class stateTransfer : MonoBehaviour
         stateManager.EndCasting(.2f);
     }
 
+    public void endAnimation(float time)
+    {
+        stateManager.EndCasting(time);
+    }
+
 }

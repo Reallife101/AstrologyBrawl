@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
+using UnityEngine.Rendering.PostProcessing;
 
 public class PlayerManager : MonoBehaviourPunCallbacks
 {
@@ -26,11 +27,17 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
     private HealthHUDManager healthHUDManager;
     private HealthItem healthItem;
-    [SerializeField] private AnimationCurve timeSlowCurve;
 
+    [SerializeField] private AnimationCurve timeSlowCurve;
+    private shieldHealth ShieldHealth;
+
+    [SerializeField] private PostProcessVolume PPV;
+    private Vignette vig;
+    [SerializeField] float maxIntensity;
 
     private void Awake()
     {
+        
         spawnPointParent = GameObject.FindWithTag("SpawnPoints");
         PV = GetComponent<PhotonView>();
         foreach (Transform point in spawnPointParent.transform)
@@ -48,10 +55,19 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         hash.Add("deaths", deaths);
         PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
         targetGroup = GameObject.FindGameObjectWithTag("targetGroup").GetComponent<addPlayersToFollow>();
+        if (!PV.IsMine)
+        {
+            PPV.enabled = false;
+        }
+        else
+        {
+            PPV.profile.TryGetSettings<Vignette>(out vig);
+        }
     }
 
     private void Start()
     {
+        vig.intensity.Override(0);
         if (PV.IsMine)
         {
             Spawn();
@@ -63,6 +79,10 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         if (PV.IsMine)
         {
             healthItem.UpdateCooldown(PlayerController.AbilityOneCurrCooldown, PlayerController.AbilityTwoCurrCooldown);
+            Health health = controller.GetComponent<PlayerHealth>();
+            float percent = health.currentHealth / health.getMaxHealth();
+            float currentIntensity = Mathf.Lerp(maxIntensity, 0, percent);
+            vig.intensity.Override(currentIntensity);
         }
     }
 
@@ -78,11 +98,14 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         //Debug.Log("AVATAR NUMBER " + (int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]);
         GameObject playerToSpawn = playerPrefabs[(int)PhotonNetwork.LocalPlayer.CustomProperties["playerAvatar"]];
         controller = PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity, 0, new object[] { PV.ViewID });
+        PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
         PlayerController = controller.GetComponent<playerController>();
+        ShieldHealth = controller.transform.GetComponentInChildren<shieldHealth>();
+        healthItem.SetShieldHealth(ShieldHealth);
         healthItem.SetMaxCooldowns(PlayerController.AbilityOneMaxCooldown, PlayerController.AbilityTwoMaxCooldown);
         healthItem.ActivateTimers();
 
-        PV.RPC(nameof(RPC_UpdateCamera), RpcTarget.All);
+       
     }
 
     public void SetController(GameObject _controller)
@@ -121,7 +144,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         healthHUDManager = FindObjectOfType<HealthHUDManager>();
         if (healthHUDManager != null && healthItem == null)
         {
-            healthItem = healthHUDManager.AddHealthItem(info.Sender.NickName, info.Sender.ActorNumber);
+            healthItem = healthHUDManager.AddHealthItem(info.Sender.NickName, info.Sender.ActorNumber, info.Sender);
         }
 
         //Sets relevant information for the HealthItems
@@ -220,7 +243,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         yield return new WaitForSecondsRealtime(1f);
         Time.timeScale = 1;
         gameOverText.SetActive(false);
-        PhotonNetwork.LoadLevel("StatScreenCopy");
+        PhotonNetwork.LoadLevel("FINAL STATS SCREEN");
         yield return null;
 
     }
@@ -242,4 +265,10 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         }
         controller?.GetComponent<playerController>().ToggleCrown(isKing);
     }
+
+    public override void OnPlayerLeftRoom(Player otherPlayer)
+    {
+        healthHUDManager.UpdateFrames();
+    }
+
 }

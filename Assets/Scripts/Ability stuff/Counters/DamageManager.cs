@@ -13,13 +13,20 @@ public class DamageManager : MonoBehaviour
     [SerializeField] private float Ability2;
     [SerializeField] private float stacked;
 
+    [SerializeField] private float LightBuff=1;
+    [SerializeField] private float HeavyBuff=1;
+    [SerializeField] private float A1Buff=1;
+    [SerializeField] private float A2Buff=1;
+    [SerializeField] private float StackBuff=1;
+
     public enum AttackStates
     {
         NoDamage,
         Light,
         Heavy,
         Ability1,
-        Ability2
+        Ability2,
+        Stacked
     }
     //Getter for DoDamage
     public float stackedDamage { get { return stacked; } private set { stacked = value; } }
@@ -63,6 +70,7 @@ public class DamageManager : MonoBehaviour
     }
     public void affectAllDamage(float factor, float time, bool forever = false, bool multiply = false)
     {
+        Debug.Log("DAMAGE BUFF");
         foreach(KeyValuePair<string, Action<float, bool>> funcType in dmgFunctions) { 
             funcType.Value(factor, multiply);
         }
@@ -73,23 +81,25 @@ public class DamageManager : MonoBehaviour
         }
     }
 
-    public void setDamage(string type, float dmg, float time, bool forever = false)
+    public void setDamage(AttackStates type, float dmg, float time, bool forever = false)
     {
+        Debug.Log("Setting damage " + dmg + " for " + type.ToString());
+
         switch (type)
         {
-            case "light":
+            case DamageManager.AttackStates.Light:
                 Light = dmg;
                 break;
-            case "heavy":
+            case DamageManager.AttackStates.Heavy:
                 Heavy = dmg;
                 break;
-            case "ability1":
+            case DamageManager.AttackStates.Ability1:
                 Ability1 = dmg;
                 break;
-            case "ability2":
+            case DamageManager.AttackStates.Ability2:
                 Ability2 = dmg;
                 break;
-            case "stack":
+            case DamageManager.AttackStates.Stacked:
                 stacked = dmg;
                 break;
             default:
@@ -126,6 +136,30 @@ public class DamageManager : MonoBehaviour
         }
 
     }
+    public float getBuffValue(AttackStates type)
+    {
+
+        switch (type)
+        {
+            case AttackStates.Light:
+                atkState = AttackStates.Light;
+                return LightBuff;
+            case AttackStates.Heavy:
+                atkState = AttackStates.Heavy;
+                return HeavyBuff;
+            case AttackStates.Ability1:
+                atkState = AttackStates.Ability1;
+                return A1Buff;
+            case AttackStates.Ability2:
+                atkState = AttackStates.Ability2;
+                return A2Buff;
+            default:
+                atkState = AttackStates.NoDamage;
+                Debug.Log("Unknown attack type " + type + ". Expected: light, heavy, ability1, or ability2");
+                return 1;
+        }
+
+    }
 
     public AttackStates getCurrentAttack() 
     {
@@ -142,7 +176,7 @@ public class DamageManager : MonoBehaviour
     IEnumerator EffectTime(float seconds, float damage, bool wasMultiplied, string type = "")
     {
         yield return new WaitForSeconds(seconds);
-
+        Debug.Log("BUFF OVER");
         if (type != "")
         {
             SingleReset(type, damage, wasMultiplied);
@@ -159,7 +193,7 @@ public class DamageManager : MonoBehaviour
         if (!multiply)
             Light += damage;
         else
-            Light *= damage;
+            LightBuff *= damage;
     }
 
     private void affectHeavyDamage(float damage, bool multiply)
@@ -167,14 +201,14 @@ public class DamageManager : MonoBehaviour
         if (!multiply)
             Heavy += damage;
         else
-            Heavy *= damage;
+            HeavyBuff *= damage;
     }
     private void affectAbility1Damage(float damage, bool multiply)
     {
         if (!multiply)
             Ability1 += damage;
         else
-            Ability1 *= damage;
+            A1Buff *= damage;
     }
 
     private void affectAbility2Damage(float damage, bool multiply)
@@ -182,7 +216,7 @@ public class DamageManager : MonoBehaviour
         if (!multiply)
             Ability2 += damage;
         else
-            Ability2 *= damage;
+            A2Buff *= damage;
     }
 
     private void affectStackDamage(float damage, bool multiply)
@@ -190,7 +224,7 @@ public class DamageManager : MonoBehaviour
         if (!multiply)
             stacked += damage;
         else
-            stacked *= damage;
+            StackBuff *= damage;
     }
 
     private void SingleReset(string type, float damage, bool wasMultiplied)
@@ -207,9 +241,9 @@ public class DamageManager : MonoBehaviour
         {
             if (wasMultiplied)
             {
-                Debug.Log(damage + ", " +  1 / damage);
+                //Debug.Log(damage + ", " +  1 / damage);
                 funcType.Value(1 / damage, true); //reciprocal of damage
-                Debug.Log(funcType);
+                //Debug.Log(funcType);
             }
             else
                 funcType.Value(-damage, false); //(-) symbol for reverting the effects of the damage

@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 7041575192684781462}
   - component: {fileID: 5740398807661098734}
   - component: {fileID: 659188652684588319}
+  - component: {fileID: 3993268674623244631}
   m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
@@ -167,6 +168,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8512012876218820453}
+  - {fileID: 4561026630484644764}
   m_Father: {fileID: 3016257482074367029}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -211,7 +213,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d1c6ad23823d4f0478a82cdea7060308, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1118a419f3bea5f43bd1356c457393b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -232,7 +234,7 @@ Animator:
   m_GameObject: {fileID: 1060617277697689753}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 862c1ac798552df4bac48bbd3f3311a7, type: 2}
+  m_Controller: {fileID: 9100000, guid: a25765bd9db0e7a438ffdbfe26c502ec, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -294,16 +296,22 @@ MonoBehaviour:
     Name: jump
   - Type: 9
     SynchronizeType: 1
-    Name: lightVirgo
+    Name: heavyCap
   - Type: 9
     SynchronizeType: 1
-    Name: heavyVirgo
+    Name: lightCap1
   - Type: 9
     SynchronizeType: 1
-    Name: mixupVirgo
+    Name: lightCap2
   - Type: 9
     SynchronizeType: 1
-    Name: iconicVirgo
+    Name: iconicCap
+  - Type: 9
+    SynchronizeType: 1
+    Name: mixupCapPlunge
+  - Type: 9
+    SynchronizeType: 1
+    Name: mixupCapSlide
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -340,6 +348,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stateManager: {fileID: 2270851739153014609}
+--- !u!114 &3993268674623244631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060617277697689753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f11db337bb2cd6468bab78a9ef16453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cp: {fileID: 1876953723702681367}
 --- !u!1 &3016257482074367028
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,12 +382,14 @@ GameObject:
   - component: {fileID: 8429140981890349801}
   - component: {fileID: 4259250144682286860}
   - component: {fileID: 4971872862019590132}
-  - component: {fileID: 8657843435335522492}
-  - component: {fileID: 3438869680106534213}
-  - component: {fileID: 5638198919380507358}
-  - component: {fileID: 4450267995174341297}
-  - component: {fileID: 4650676032788553082}
-  - component: {fileID: 8485929204713157519}
+  - component: {fileID: 4153194197827309814}
+  - component: {fileID: 2298979600915296208}
+  - component: {fileID: 6648394733506107925}
+  - component: {fileID: 7622008280667429712}
+  - component: {fileID: 5363123803401204161}
+  - component: {fileID: 1184284098584985780}
+  - component: {fileID: 1876953723702681367}
+  - component: {fileID: 7858439762415191063}
   m_Layer: 7
   m_Name: Capricorn
   m_TagString: Player
@@ -395,6 +418,8 @@ Transform:
   - {fileID: 2815563018896991013}
   - {fileID: 8498561954334590604}
   - {fileID: 6295977284482735133}
+  - {fileID: 3519319104225032428}
+  - {fileID: 3858595956341221458}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -471,8 +496,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876586a5a6023f6489fb060da5dc71df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ability1: {fileID: 8657843435335522492}
-  ability2: {fileID: 778512593599464108}
+  ability1: {fileID: 2298979600915296208}
+  ability2: {fileID: 1876953723702681367}
   shield: {fileID: 6934866079556004767}
   movementVector: {x: 0, y: 0}
   moveSpeed: 40
@@ -553,13 +578,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f8f6b4a01ea59446a9107c9f033ab08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLightGround: {fileID: 11400000, guid: f0aa5034140151a4788b8ae38f436db6, type: 2}
-  firstHeavyGround: {fileID: 11400000, guid: bcf4946b91c1fab40ba2d9fffe6848da, type: 2}
-  firstLightAir: {fileID: 11400000, guid: f0aa5034140151a4788b8ae38f436db6, type: 2}
-  firstHeavyAir: {fileID: 11400000, guid: bcf4946b91c1fab40ba2d9fffe6848da, type: 2}
+  firstLightGround: {fileID: 11400000, guid: ad316175a39dbf442bd836dba6013b47, type: 2}
+  firstHeavyGround: {fileID: 11400000, guid: fb56478bfe0316042bb7f61a09390cac, type: 2}
+  firstLightAir: {fileID: 11400000, guid: ad316175a39dbf442bd836dba6013b47, type: 2}
+  firstHeavyAir: {fileID: 11400000, guid: fb56478bfe0316042bb7f61a09390cac, type: 2}
   airAttackGravityModifier: 0.75
   hitboxes:
   - {fileID: 1297891310825874628}
+  - {fileID: 1766490981445284358}
   playerAnimator: {fileID: 8694400067546609426}
 --- !u!114 &4888351954668950257
 MonoBehaviour:
@@ -594,7 +620,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 8694400067546609426}
   triggerName: mixupVirgo
   spawnOrigin: {fileID: 2204496378394938765}
-  projectile: {fileID: 793811016547114540, guid: 63686c2999f41584e92bab55d12af055, type: 3}
+  projectile: {fileID: 793811016547114540, guid: 3cfc59effa904ea45988eb76187d0171, type: 3}
   player: {fileID: 3016257482074367028}
   spawnAsChild: 0
 --- !u!114 &8429140981890349801
@@ -611,26 +637,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  movementspeed: 0
+      Data1: -1490557312
+      Data2: 1307136215
+      Data3: 1436951690
+      Data4: 2095233066
+    Path: event:/Walkies
+  movementspeed: 0.4
   jumpsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1540495566
+      Data2: 1121154774
+      Data3: -1102698050
+      Data4: 623309370
+    Path: event:/Jumps
   fastfallsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 544284601
+      Data2: 1228386974
+      Data3: 311565232
+      Data4: 1173628407
+    Path: event:/FastFall
   lightattacksound:
     Guid:
       Data1: 0
@@ -668,60 +694,88 @@ MonoBehaviour:
     Path: 
   attackvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1104027222
+      Data2: 1239861685
+      Data3: -1277083735
+      Data4: 1680414283
+    Path: event:/Capricorn (CA)/Capricorn Attack Voice
   chargeattackvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1104027222
+      Data2: 1239861685
+      Data3: -1277083735
+      Data4: 1680414283
+    Path: event:/Capricorn (CA)/Capricorn Attack Voice
   ability1voice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -977189454
+      Data2: 1326562620
+      Data3: 777324983
+      Data4: 1231829924
+    Path: event:/Capricorn (CA)/Capricorn Iconic Charge Voice
   iconicvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1104027222
+      Data2: 1239861685
+      Data3: -1277083735
+      Data4: 1680414283
+    Path: event:/Capricorn (CA)/Capricorn Attack Voice
   genericdeathsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1755445942
+      Data2: 1245857384
+      Data3: 435654846
+      Data4: -1281782737
+    Path: event:/GenericDeath
   takedamagesound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -219124643
+      Data2: 1241243363
+      Data3: 529385401
+      Data4: -1657758984
+    Path: event:/TakingDamage
   takedamagevoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1387075763
+      Data2: 1239139020
+      Data3: 1835469218
+      Data4: -1725844810
+    Path: event:/Capricorn (CA)/Capricorn Damage Voice
   spawnvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -573473308
+      Data2: 1153302262
+      Data3: -470959231
+      Data4: 1083486024
+    Path: event:/Capricorn (CA)/Capricorn Respawn Voice
+  damageSound:
+    Guid:
+      Data1: 314669930
+      Data2: 1274650585
+      Data3: -2076143447
+      Data4: 1456430890
+    Path: event:/Capricorn (CA)/Ca Iconic Stregnth Voice
+  healSound:
+    Guid:
+      Data1: -421097076
+      Data2: 1254744464
+      Data3: -1337350759
+      Data4: -2053918514
+    Path: event:/Capricorn (CA)/Ca Iconic Heal Voice
+  jumpSound:
+    Guid:
+      Data1: -1536262662
+      Data2: 1339542559
+      Data3: 1672892590
+      Data4: 1956204553
+    Path: event:/Capricorn (CA)/Ca Iconic Flight Voice
+  speedSound:
+    Guid:
+      Data1: -1260922609
+      Data2: 1276491315
+      Data3: 2046406047
+      Data4: -225144026
+    Path: event:/Capricorn (CA)/Ca Iconic Speed Voice
 --- !u!114 &4259250144682286860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -735,10 +789,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Light: 10
-  Heavy: 40
-  Ability1: 50
+  Heavy: 10
+  Ability1: 10
   Ability2: 10
   stacked: 0
+  LightBuff: 1
+  HeavyBuff: 1
+  A1Buff: 1
+  A2Buff: 1
+  StackBuff: 1
 --- !u!60 &4971872862019590132
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -772,7 +831,27 @@ PolygonCollider2D:
       - {x: 0.19866943, y: -0.011978149}
       - {x: 0.24615479, y: 0.31765747}
       - {x: 0.24610043, y: 0.6913108}
---- !u!114 &8657843435335522492
+--- !u!114 &4153194197827309814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 0
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 0}
+  triggerName: 
+  spawnOrigin: {fileID: 0}
+  projectile: {fileID: 0}
+  player: {fileID: 0}
+  spawnAsChild: 0
+--- !u!114 &2298979600915296208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -784,15 +863,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9992dc509c2704380e048733f09df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0
+  cooldownTime: 5
   abilitySoundCheck: 0
   playerAnimator: {fileID: 8694400067546609426}
-  triggerName: virgoHeavy
-  up: {fileID: 5638198919380507358}
-  down: {fileID: 4450267995174341297}
-  left: {fileID: 3438869680106534213}
-  right: {fileID: 4650676032788553082}
---- !u!114 &3438869680106534213
+  triggerName: iconicCap
+  up: {fileID: 5363123803401204161}
+  down: {fileID: 7622008280667429712}
+  left: {fileID: 6648394733506107925}
+  right: {fileID: 1184284098584985780}
+  uiAni: {fileID: 3918467169802061480}
+  pvAni: {fileID: 2598929221644579022}
+--- !u!114 &6648394733506107925
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -812,7 +893,7 @@ MonoBehaviour:
   tickRate: 1
   healAmount: 2
   playerHealth: {fileID: 7328130180652725418}
---- !u!114 &5638198919380507358
+--- !u!114 &7622008280667429712
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -830,7 +911,7 @@ MonoBehaviour:
   triggerName: 
   buffLength: 5
   buffSpeed: 60
---- !u!114 &4450267995174341297
+--- !u!114 &5363123803401204161
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -847,9 +928,9 @@ MonoBehaviour:
   playerAnimator: {fileID: 0}
   triggerName: 
   buffLength: 5
-  newJump: 100
+  newJump: 90
   newDoubleJump: 75
---- !u!114 &4650676032788553082
+--- !u!114 &1184284098584985780
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -866,8 +947,8 @@ MonoBehaviour:
   playerAnimator: {fileID: 0}
   triggerName: 
   buffLength: 5
-  damageFactor: 1
---- !u!114 &8485929204713157519
+  damageFactor: 1.25
+--- !u!114 &1876953723702681367
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -876,122 +957,88 @@ MonoBehaviour:
   m_GameObject: {fileID: 3016257482074367028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42fbfb6a161788e4c8a6910a037b3796, type: 3}
+  m_Script: {fileID: 11500000, guid: 60df89457c1d6ae438ef3b85bcf14100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  footsound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  movementspeed: 0
-  jumpsound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  fastfallsound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  lightattacksound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  heavyattackchargesound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  heavyattackreleasesound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  ability1sound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  ability2sound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  attackvoice:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  chargeattackvoice:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  ability1voice:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  iconicvoice:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  genericdeathsound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  takedamagesound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  takedamagevoice:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  spawnvoice:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+  cooldownTime: 3
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 8694400067546609426}
+  triggerName: 
+  sm: {fileID: 2270851739153014609}
+  pc: {fileID: 2212813536629527073}
+  rb: {fileID: 6444089561079822210}
+  groundSlide: {fileID: 11400000, guid: 2621de170d66a244d91e6ca8e4fad91b, type: 2}
+  groundSlideTrigger: mixupCapSlide
+  slideSpeed: 30
+  airPlungeTrigger: mixupCapPlunge
+  airPlunge: {fileID: 11400000, guid: 27fa35145efb9114d80b448d791177a6, type: 2}
+  plungeSpeed: 100
+--- !u!114 &7858439762415191063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016257482074367028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 2
+  abilitySoundCheck: 0
+  playerAnimator: {fileID: 8694400067546609426}
+  triggerName: 
+  spawnOrigin: {fileID: 2204496378394938765}
+  projectile: {fileID: 793811016547114540, guid: 63686c2999f41584e92bab55d12af055, type: 3}
+  player: {fileID: 3016257482074367028}
+  spawnAsChild: 0
+--- !u!1 &3030045804852646134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3519319104225032428}
+  - component: {fileID: 1988356497664908528}
+  m_Layer: 0
+  m_Name: CapricornUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3519319104225032428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3030045804852646134}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 639419211262956375}
+  m_Father: {fileID: 3016257482074367029}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1988356497664908528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3030045804852646134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f8a611252862234b91fd224597872a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 3016257482074367029}
 --- !u!1 &3109441835425417713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,6 +1320,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 10, y: 20}
   parentSprite: {fileID: 3016257482074367029}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!1 &4785156661360743209
 GameObject:
@@ -1305,6 +1353,196 @@ Transform:
   m_Father: {fileID: 3016257482074367029}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7503399032425632104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4561026630484644764}
+  - component: {fileID: 8830750931686398215}
+  - component: {fileID: 9296504151083572}
+  - component: {fileID: 1766490981445284358}
+  m_Layer: 0
+  m_Name: Hitbox(Tipper)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4561026630484644764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7503399032425632104}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5058594, y: 0.8256775, z: 0.006845236}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8252184879413000340}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &8830750931686398215
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7503399032425632104}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.43688965, y: 0.13825226}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1326904, y: 0.7234955}
+  m_EdgeRadius: 0
+--- !u!114 &9296504151083572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7503399032425632104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &1766490981445284358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7503399032425632104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1abb6e641e7a125498e0a10c749305ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack_type: 3
+  damage: 50
+  destroyOnTouch: 0
+  destroyOnImpact: 0
+  lifeTime: 0
+  hasInfiniteLifeTime: 1
+  launchForce: 0
+  hitStunTime: 0.25
+  launchDirection: {x: 10, y: 20}
+  parentSprite: {fileID: 3016257482074367029}
+  baseDamageMultiplier: 2
+  ownerID: 0
+--- !u!1 &7911612730617098907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3858595956341221458}
+  - component: {fileID: 3282912407312103280}
+  m_Layer: 0
+  m_Name: Square
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3858595956341221458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7911612730617098907}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2.8969588}
+  m_LocalScale: {x: 1.2020999, y: 1.4813, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3016257482074367029}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &3282912407312103280
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7911612730617098907}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &8207456865336748242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1455,6 +1693,169 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPV: {fileID: 962539097766529675}
   text: {fileID: 302877324604325225}
+--- !u!1 &8714059955510689848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 639419211262956375}
+  - component: {fileID: 683272640014107599}
+  - component: {fileID: 3918467169802061480}
+  - component: {fileID: 8631974860800779695}
+  - component: {fileID: 2598929221644579022}
+  m_Layer: 0
+  m_Name: UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &639419211262956375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8714059955510689848}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3519319104225032428}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &683272640014107599
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8714059955510689848}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1189826581
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 20c05d3c084bb304e8de193a3eba6fca, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 4, y: 4.5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &3918467169802061480
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8714059955510689848}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f3570ad076abf3240bb26ce520cc0ae2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8631974860800779695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8714059955510689848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 9
+    SynchronizeType: 1
+    Name: select
+  - Type: 9
+    SynchronizeType: 1
+    Name: jump
+  - Type: 9
+    SynchronizeType: 1
+    Name: damage
+  - Type: 9
+    SynchronizeType: 1
+    Name: speed
+  - Type: 9
+    SynchronizeType: 1
+    Name: heal
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
+--- !u!114 &2598929221644579022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8714059955510689848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 8631974860800779695}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1001 &1431588041339810164
 PrefabInstance:
   m_ObjectHideFlags: 0

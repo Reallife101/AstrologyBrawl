@@ -9,33 +9,45 @@ EditorBuildSettings:
     path: Assets/Scenes/Titlte.unity
     guid: e388ee65303235f468ccf0a8ac71a1b9
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 16200eb02295e42deb6117d723dcae5d
+  - enabled: 1
     path: Assets/Scenes/ConnectToServer.unity
     guid: dd9add7e48ee5e24eb76f0e1d6bead63
   - enabled: 1
-    path: Assets/Scenes/New Lobby.unity
+    path: Assets/Scenes/Old Levels/New Lobby.unity
     guid: 73b2a640e396940418d50a0c0e1e7237
   - enabled: 1
-    path: Assets/Scenes/Lobby.unity
+    path: Assets/Scenes/Old Levels/Lobby.unity
     guid: 4fc6083706f88b34eb691c9f7fb40301
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/Old Levels/Game.unity
     guid: 7847a205fb6ce5049aed72b5766e369c
   - enabled: 1
     path: Assets/Scenes/Battlefield.unity
     guid: 7c1a26a3b81c82047bdee67c4f3520a6
-  - enabled: 0
-    path: Assets/Scenes/BetterBattleField.unity
-    guid: 53e73c1d6e497b045a00ca663cd270e2
-  - enabled: 0
-    path: Assets/Scenes/IdiotSandwich.unity
-    guid: 013699f005b3413429497a4a907f1407
   - enabled: 1
     path: Assets/Scenes/SecondDestination.unity
     guid: 0b6a1fc595ce0a9429fc0fda1fbc0f5e
-  - enabled: 0
-    path: Assets/Scenes/StatScreen.unity
-    guid: 94e07a79491e24f4eadc758047dbf9c7
   - enabled: 1
     path: Assets/Scenes/StatsCreenCopy.unity
     guid: 4fc7f8867b00e124295b1af1fabfe076
+  - enabled: 1
+    path: Assets/Scenes/FINAL LOBBY SELECTION.unity
+    guid: 7a40b9d5f7b94dd459d1e1750ecb31a3
+  - enabled: 1
+    path: Assets/Scenes/Libra's Lament.unity
+    guid: 9668c0d2e0ce878449058a3241dec811
+  - enabled: 1
+    path: Assets/Scenes/Scrapyard Scuffle.unity
+    guid: c980cfd3f156c524c88fe63139e53c19
+  - enabled: 1
+    path: Assets/Scenes/Celestial Clash.unity
+    guid: 05a1ab3f8f76b05498f80e6cd30f33c8
+  - enabled: 1
+    path: Assets/Scenes/FINAL STATS SCREEN.unity
+    guid: 9e9a264bb6fee9542a72c55ad5c7aa3a
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: c6873ee10657b8b42aa5105b30309c07
   m_configObjects: {}

@@ -218,6 +218,7 @@ Transform:
   - {fileID: 1118012802139428960}
   - {fileID: 6559054374566150191}
   - {fileID: 339398028869739712}
+  - {fileID: 6166988354735755507}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -412,7 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1.5
+  cooldownTime: 3
   abilitySoundCheck: 0
   playerAnimator: {fileID: 1487008377844494123}
   triggerName: mixupAquarius
@@ -432,11 +433,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87af28242b41c3e4e91ab7f2a6c2d23e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1.5
+  cooldownTime: 3
   abilitySoundCheck: 0
   playerAnimator: {fileID: 1487008377844494123}
   triggerName: iconicAquarius
-  spawnOrigin: {fileID: 2204496378394938765}
+  spawnOrigin: {fileID: 6166988354735755507}
   projectile: {fileID: 7395812835021248825, guid: cf08da57f873eee47bef0f4aefb917de, type: 3}
   player: {fileID: 3016257482074367028}
   spawnAsChild: 0
@@ -454,9 +455,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Light: 10
   Heavy: 35
-  Ability1: 20
-  Ability2: 12
+  Ability1: 8
+  Ability2: 10
   stacked: 0
+  LightBuff: 1
+  HeavyBuff: 1
+  A1Buff: 1
+  A2Buff: 1
+  StackBuff: 1
 --- !u!60 &2228003283728977349
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -470,7 +476,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -502,33 +508,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  movementspeed: 0
+      Data1: -1777302120
+      Data2: 1268280268
+      Data3: 1573820297
+      Data4: 596767288
+    Path: event:/Aquarius (AQ)/Aquarius Walk
+  movementspeed: 0.18
   jumpsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1540495566
+      Data2: 1121154774
+      Data3: -1102698050
+      Data4: 623309370
+    Path: event:/Jumps
   fastfallsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 544284601
+      Data2: 1228386974
+      Data3: 311565232
+      Data4: 1173628407
+    Path: event:/FastFall
   lightattacksound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -359362508
+      Data2: 1291022204
+      Data3: 1480557459
+      Data4: 1468188696
+    Path: event:/Aquarius (AQ)/Aquarius Splash Attack
   heavyattackchargesound:
     Guid:
       Data1: 0
@@ -538,75 +544,103 @@ MonoBehaviour:
     Path: 
   heavyattackreleasesound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 506358718
+      Data2: 1100125026
+      Data3: 464510604
+      Data4: 1987611476
+    Path: event:/Aquarius (AQ)/Aquarius Vase Attack
   ability1sound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -551030720
+      Data2: 1108651669
+      Data3: -148578409
+      Data4: -1556125262
+    Path: event:/Aquarius (AQ)/Aquarius Bubble Attack
   ability2sound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1739857195
+      Data2: 1269515713
+      Data3: -1077149509
+      Data4: 1707959568
+    Path: event:/Aquarius (AQ)/Aquarius Wave Attack
   attackvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -481707879
+      Data2: 1249790805
+      Data3: -2077059689
+      Data4: 1278829412
+    Path: event:/Aquarius (AQ)/Aquarius Attack Voice
   chargeattackvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1352868210
+      Data2: 1264241035
+      Data3: -1146706513
+      Data4: -1921092142
+    Path: event:/Aquarius (AQ)/Aquarius Heavy Attack Voice
   ability1voice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -481707879
+      Data2: 1249790805
+      Data3: -2077059689
+      Data4: 1278829412
+    Path: event:/Aquarius (AQ)/Aquarius Attack Voice
   iconicvoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -84534936
+      Data2: 1292811821
+      Data3: -1235877487
+      Data4: -1420845508
+    Path: event:/Aquarius (AQ)/Aquarius Title Wave Voice
   genericdeathsound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1755445942
+      Data2: 1245857384
+      Data3: 435654846
+      Data4: -1281782737
+    Path: event:/GenericDeath
   takedamagesound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -219124643
+      Data2: 1241243363
+      Data3: 529385401
+      Data4: -1657758984
+    Path: event:/TakingDamage
   takedamagevoice:
+    Guid:
+      Data1: -485841161
+      Data2: 1255842819
+      Data3: 2129322161
+      Data4: 324557104
+    Path: event:/Aquarius (AQ)/Aquarius Damage Voice
+  spawnvoice:
+    Guid:
+      Data1: -2117587430
+      Data2: 1079830965
+      Data3: -1895601235
+      Data4: -1750622745
+    Path: event:/Aquarius (AQ)/Aquarius Respawn Voice
+  damageSound:
     Guid:
       Data1: 0
       Data2: 0
       Data3: 0
       Data4: 0
     Path: 
-  spawnvoice:
+  healSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  jumpSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  speedSound:
     Guid:
       Data1: 0
       Data2: 0
@@ -788,6 +822,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 0}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!114 &2526129928733174280
 MonoBehaviour:
@@ -924,6 +959,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 0}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!114 &4522046420772155104
 MonoBehaviour:
@@ -947,6 +983,37 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!1 &5427402302783134574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6166988354735755507}
+  m_Layer: 0
+  m_Name: waterWallOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6166988354735755507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5427402302783134574}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1, y: 0.5, z: -0.01745534}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3016257482074367029}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5503615422033894490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,6 +1216,7 @@ MonoBehaviour:
   hitStunTime: 0.25
   launchDirection: {x: 0, y: 0}
   parentSprite: {fileID: 3016257482074367029}
+  baseDamageMultiplier: 1
   ownerID: 0
 --- !u!61 &868218565461086243
 BoxCollider2D:
@@ -1382,7 +1450,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8234068197884782501}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.05, z: 0}
+  m_LocalPosition: {x: 0, y: 0.15, z: 0}
   m_LocalScale: {x: 0.59999996, y: 0.59999996, z: 0.59999996}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1431,7 +1499,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 96326cab1cab8e2409a0db3e48120571, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ac97d7055d70274699154a7c3dcf207, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

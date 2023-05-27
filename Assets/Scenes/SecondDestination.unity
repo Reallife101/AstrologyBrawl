@@ -1463,6 +1463,7 @@ MonoBehaviour:
   container: {fileID: 1518825422}
   scoreboardItemPrefab: {fileID: 1061198782892396643, guid: eed205f4af12c354e81e672de9df37e5, type: 3}
   CanvasGroup: {fileID: 1071920815}
+  scoreBoardContainer: {fileID: 0}
 --- !u!1 &1605129643
 GameObject:
   m_ObjectHideFlags: 0
@@ -1902,7 +1903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Path
-      value: event:/Extended Battle Music
+      value: event:/Music/Extended Battle Music
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Guid.Data1
