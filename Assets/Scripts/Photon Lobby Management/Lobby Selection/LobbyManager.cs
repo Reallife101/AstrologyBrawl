@@ -307,7 +307,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public void Refresh()
     {
         // Refreshes the rooms by reloading the scene //
-        PhotonNetwork.LoadLevel("FINAL SELECTION LOBBY");
+        PhotonNetwork.LoadLevel("FINAL LOBBY SELECTION");
     }
 
     public void OnClickCreate()

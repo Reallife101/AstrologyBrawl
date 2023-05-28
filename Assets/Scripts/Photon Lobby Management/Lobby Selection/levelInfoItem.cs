@@ -60,6 +60,8 @@ public class levelInfoItem : MonoBehaviourPunCallbacks
 
     public void DisplayLevel(int index)
     {
+        if (!PhotonNetwork.IsMasterClient)
+            return;
         photonView.RPC(nameof(RPC_DisplayLevel), RpcTarget.All, index);
     }
 
