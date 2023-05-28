@@ -49,8 +49,20 @@ public class KillConditionItem : MonoBehaviourPunCallbacks
         decrease.Enable();
     }
 
+
+    public void Start()
+    {
+        if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("killsToWin"))
+        {
+            kill_num_text.text = PhotonNetwork.LocalPlayer.CustomProperties["killsToWin"].ToString();
+            currentKillNum = (int)PhotonNetwork.LocalPlayer.CustomProperties["killsToWin"];
+            ApplyChangesToAll();
+        }
+    }
+
     public override void OnJoinedRoom()
     {
+
         ApplyChangesToAll();
     }
 

@@ -130,6 +130,7 @@ public class CharacterSelect : MonoBehaviourPunCallbacks
             //playerAvatar.sprite = avatars[(int)player.CustomProperties["playerAvatar"]];
             toggleOnSplash((int)player.CustomProperties["playerAvatar"]);
             playerProperties["playerAvatar"] = (int)player.CustomProperties["playerAvatar"];
+            characterDescription.ChangeCharacter((int)playerProperties["playerAvatar"]);
         }
         else
         {

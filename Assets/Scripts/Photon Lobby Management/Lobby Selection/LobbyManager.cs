@@ -386,6 +386,13 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         lobbyPanel.SetActive(false);
         levelSelect.SetActive(false);
         settings.SetActive(false);
+
+        foreach (GameObject GO in otherPlayersViewsGameObject)
+            GO.SetActive(false);
+       
+
+        otherPlayersViews.Clear();
+
         if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("ready"))
         {
             PhotonNetwork.LocalPlayer.CustomProperties["ready"] = null;
