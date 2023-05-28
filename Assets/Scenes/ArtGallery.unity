@@ -1026,7 +1026,7 @@ MonoBehaviour:
   m_fontSizeMax: 30
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1085,7 +1085,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -200}
+  m_AnchoredPosition: {x: 0, y: -193}
   m_SizeDelta: {x: 474, y: 51.2605}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &628597166
@@ -1220,7 +1220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artPieces:
   - sprite: {fileID: 21300000, guid: f1d39bdeaea014efa8b72f685c7fc09e, type: 3}
-    artName: Mouth of Madness bg
+    artName: Mouth of Madness Background
     artist: Kanoa
   - sprite: {fileID: 21300000, guid: 5e9212bde3618e340becff49724daf53, type: 3}
     artName: Cancer Splash Art
@@ -1261,6 +1261,9 @@ MonoBehaviour:
   - sprite: {fileID: 21300000, guid: c7796c3d9d09f41a597fbc9e8f79a7e2, type: 3}
     artName: URP Bug
     artist: Jerry
+  - sprite: {fileID: 21300000, guid: 369acce6420554760b05b2f0dc39ddbb, type: 3}
+    artName: Cancer's Crustacean Confluence Background
+    artist: Daniel
   artViewImage: {fileID: 483151648}
   description: {fileID: 564765306}
 --- !u!4 &908322065
@@ -2054,6 +2057,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -12.9}
+  m_AnchoredPosition: {x: 0, y: -5.5}
   m_SizeDelta: {x: 468.9583, y: 312.7297}
   m_Pivot: {x: 0.5, y: 0.5}
