@@ -1689,6 +1689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 1880299884}
   howToPlay: {fileID: 491253640}
+  music: {fileID: 1981424156}
 --- !u!1 &1596988138
 GameObject:
   m_ObjectHideFlags: 0
