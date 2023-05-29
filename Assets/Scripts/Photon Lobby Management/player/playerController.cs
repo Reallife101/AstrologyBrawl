@@ -74,6 +74,8 @@ public class playerController : MonoBehaviour
     private StateManager mySM;
     private Scoreboard myScoreboard;
     private PlayerHealth myHealth;
+    private TarotParticleManager myTPM;
+
 
     //Death Platform
     [SerializeField] private Transform deathPlatformOrigin;
@@ -98,6 +100,7 @@ public class playerController : MonoBehaviour
         myPV = GetComponent<PhotonView>();
         myRB = GetComponent<Rigidbody2D>();
         mySM = GetComponent<StateManager>();
+        myTPM = GetComponentInChildren<TarotParticleManager>();
         myHealth = GetComponent<PlayerHealth>();
         myScoreboard = FindObjectOfType<Scoreboard>();
 
@@ -486,6 +489,7 @@ public class playerController : MonoBehaviour
     //you have entered the TAROT ZONE
     //you have entered the TAROT ZONE
     //you have entered the TAROT ZONE
+
     public void MagicianDisable(float delay)
     {
         myPV.RPC("RPC_MagicianDisable", myPV.Owner, delay);
@@ -512,6 +516,7 @@ public class playerController : MonoBehaviour
         //Debug.Log("made it to controller for magician");
         lightAttackAction.Disable();
         heavyAttackAction.Disable();
+        myPV.RPC("RPC_ParticlesOnDelay", RpcTarget.All, "magician", delay);
         //Debug.Log("starting magician coroutine");
         StartCoroutine(reEnableDelay(delay, magicianReEnable));
     }
@@ -522,6 +527,7 @@ public class playerController : MonoBehaviour
         //Debug.Log("made it to controller for hermit");
         abilityOneAction.Disable();
         abilityTwoAction.Disable();
+        myPV.RPC("RPC_ParticlesOnDelay", RpcTarget.All, "hermit", delay);
         //Debug.Log("starting hermit coroutine");
         StartCoroutine(reEnableDelay(delay, hermitReEnable));
     }
@@ -529,6 +535,7 @@ public class playerController : MonoBehaviour
     [PunRPC]
     private void RPC_DevilBuff(float multiplier, float delay)
     {
+        myPV.RPC("RPC_ParticlesOnDelay", RpcTarget.All, "devil", delay);
         gameObject.GetComponent<DamageManager>().affectAllDamage(multiplier, delay, false, true);
     }
 
@@ -559,14 +566,51 @@ public class playerController : MonoBehaviour
     IEnumerator teleport3Times(Vector3[] points, float delay)
     {
         gameObject.transform.position = points[0];
+        myPV.RPC("RPC_ParticlesOn", RpcTarget.All, "fool");
         //Debug.Log("TP 1, player " + p);
         yield return new WaitForSeconds(delay);
         gameObject.transform.position = points[1];
+        myPV.RPC("RPC_ParticlesOn", RpcTarget.All, "fool");
         //Debug.Log("TP 2, player " + p);
         yield return new WaitForSeconds(delay);
         gameObject.transform.position = points[2];
+        myPV.RPC("RPC_ParticlesOn", RpcTarget.All, "fool");
         //Debug.Log("TP 3, player " + p);
     }
 
+    [PunRPC]
+    private void RPC_ParticlesOnDelay(string name, float delay)
+    {
+        Debug.Log("CALLING TPM");
+        switch (name)
+        {
+            case "hermit":
+                myTPM.doHermit(delay);
+                break;
+            case "magician":
+                myTPM.doMagician(delay);
+                break;
+            case "devil":
+                myTPM.doDevil(delay);
+                break;
+            case "lovers":
+                myTPM.doLovers(delay);
+                break;
+        }
+    }
 
+    [PunRPC]
+    private void RPC_ParticlesOn(string name)
+    {
+        Debug.Log("CALLING TPM");
+        switch (name)
+        {
+            case "justice":
+                myTPM.doJustice();
+                break;
+            case "fool":
+                myTPM.doFool();
+                break;
+        }
+    }
 }
