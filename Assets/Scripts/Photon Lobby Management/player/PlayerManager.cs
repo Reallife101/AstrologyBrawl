@@ -234,7 +234,8 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         }
         */
         GameObject gameOverText = GameObject.FindWithTag("GameEndSplashText");
-        gameOverText.SetActive(true);
+        Debug.Log(gameOverText);
+        gameOverText.transform.GetChild(0).gameObject.SetActive(true);
         if (isWinner)
         {
             gameOverText.GetComponent<GameOverImage>().SetWinnerImage();
