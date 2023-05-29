@@ -603,7 +603,6 @@ MonoBehaviour:
   firstLightAir: {fileID: 11400000, guid: 31ca3266c8c66024f903dfbc8ef44547, type: 2}
   firstHeavyAir: {fileID: 11400000, guid: ba09624c9362dc243bafed5b4ab18449, type: 2}
   airAttackGravityModifier: 0.75
-  currentState: 0
   hitboxes:
   - {fileID: 6367700975174501177}
   playerAnimator: {fileID: 7193425153408084763}
@@ -1372,6 +1371,9 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 1
     Name: jump
+  - Type: 9
+    SynchronizeType: 1
+    Name: HitStunTrigger
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0

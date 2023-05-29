@@ -306,6 +306,9 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 1
     Name: jump
+  - Type: 9
+    SynchronizeType: 1
+    Name: HitStunTrigger
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0

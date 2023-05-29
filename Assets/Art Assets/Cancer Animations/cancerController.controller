@@ -452,6 +452,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+  - m_Name: HitStunTrigger
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -554,7 +560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f5e31e9d2b149443983e4e453769f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  st: {fileID: 0}
+  endlag: 0.2
 --- !u!1102 &376590446640835568
 AnimatorState:
   serializedVersion: 6
@@ -616,6 +622,9 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: HitStun
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: HitStunTrigger
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -8126871377142055625}
@@ -851,4 +860,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f5e31e9d2b149443983e4e453769f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  st: {fileID: 0}
+  endlag: 0.2
