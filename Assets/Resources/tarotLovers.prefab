@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6126602520873760006}
   - component: {fileID: 6126602520873760025}
   - component: {fileID: 6126602520873760027}
-  - component: {fileID: 3822077711508932104}
+  - component: {fileID: -596434293536887409}
   m_Layer: 0
-  m_Name: tarotDevil
+  m_Name: tarotLovers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 73135f93c3a792d459056c9f2b7d3303, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3634af3862c60714a90777528813a152, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,7 +127,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.8, y: 4.68}
+    oldSize: {x: 12.8, y: 16.68}
     newSize: {x: 9, y: 15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3408053b98986a24096ea934f5215c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tarotNumber: 1
---- !u!114 &3822077711508932104
+  tarotNumber: 0
+--- !u!114 &-596434293536887409
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,6 +158,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6126602520873760026}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34770958b2e803c4aaed9e6f7ac8a191, type: 3}
+  m_Script: {fileID: 11500000, guid: fae3ed84c5e49e34d8fe91e9ea1a8484, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
