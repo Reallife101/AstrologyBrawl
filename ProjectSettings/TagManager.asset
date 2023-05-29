@@ -10,6 +10,7 @@ TagManager:
   - centerStage
   - tpPoints
   - tarotManager
+  - TarotSpawn
   layers:
   - Default
   - TransparentFX
