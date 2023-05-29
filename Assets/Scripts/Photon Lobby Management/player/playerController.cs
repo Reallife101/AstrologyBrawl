@@ -37,6 +37,7 @@ public class playerController : MonoBehaviour
     [SerializeField] private float fastFallSpeed;
     [SerializeField] private float doubleJumpPower;
     [SerializeField] private float airSpeedMultiplier;
+    private float oldSpeed;
 
     //Public setters for move values
     public float MoveSpeed { get { return moveSpeed; } set { moveSpeed = value; } }
@@ -116,6 +117,8 @@ public class playerController : MonoBehaviour
         heavyAttackAction = input.Player.HeavyAttack;
         scoreboardInputAction = input.Player.Scoreboard;
         playerShield = input.Player.Shield;
+
+        oldSpeed = moveSpeed;
 
         playerJump.started += jumpBehavior =>
         {
@@ -505,6 +508,16 @@ public class playerController : MonoBehaviour
         myPV.RPC("RPC_DevilBuff", myPV.Owner, muliplier, delay);
     }
 
+    public void LoversInvincible(float delay)
+    {
+        myPV.RPC("RPC_LoversInvincible", myPV.Owner, delay);
+    }
+
+    public void LoversTarget(float delay, float speedMultiplier)
+    {
+        myPV.RPC("RPC_LoversTarget", myPV.Owner, delay, speedMultiplier);
+    }
+
     public void FoolTP(Vector3[] points, float delay)
     {
         myPV.RPC("RPC_FoolTP", myPV.Owner, points, delay);
@@ -539,6 +552,21 @@ public class playerController : MonoBehaviour
         gameObject.GetComponent<DamageManager>().affectAllDamage(multiplier, delay, false, true);
     }
 
+    [PunRPC]
+    private void RPC_LoversInvincible(float delay)
+    {
+        myHealth.setInvincible(true);
+        StartCoroutine(reEnableDelay(delay, loversReEnable));
+    }
+
+    [PunRPC]
+    private void RPC_LoversTarget(float delay, float speedMultiplier)
+    {
+        moveSpeed = oldSpeed * speedMultiplier;
+        myPV.RPC("RPC_ParticlesOnDelay", RpcTarget.All, "lovers", delay);
+        StartCoroutine(reEnableDelay(delay, loversTargetDisable));
+    }
+
     IEnumerator reEnableDelay(float delay, Action f)
     {
         yield return new WaitForSeconds(delay);
@@ -555,6 +583,16 @@ public class playerController : MonoBehaviour
     {
         abilityOneAction.Enable();
         abilityTwoAction.Enable();
+    }
+
+    private void loversReEnable()
+    {
+        myHealth.setInvincible(false);
+    }
+
+    private void loversTargetDisable()
+    {
+        moveSpeed = oldSpeed;
     }
 
     [PunRPC]
