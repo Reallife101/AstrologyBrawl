@@ -98,6 +98,7 @@ MonoBehaviour:
   - CapJump
   - CapSpeed
   - RPC_ParticlesOn
+  - RPC_ParticlesOnDelay
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
