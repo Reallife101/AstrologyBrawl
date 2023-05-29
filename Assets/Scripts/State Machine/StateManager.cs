@@ -325,7 +325,10 @@ public class StateManager : MonoBehaviour
 
     public void EndCasting(float endlag)
     {
-        InitiateRecovery(endlag);
+        if(currentState != States.HitStun)
+        {
+            InitiateRecovery(endlag);
+        }
     }
 
     public void ToggleShield(bool on)
