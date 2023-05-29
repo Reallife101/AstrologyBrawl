@@ -22,6 +22,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     private int deaths = 0;
     [SerializeField] private int killGoal;
     private bool gameOver = false;
+    private bool isWinner = false;
 
     private addPlayersToFollow targetGroup;
 
@@ -67,7 +68,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-        vig.intensity.Override(0);
+        vig?.intensity.Override(0);
         if (PV.IsMine)
         {
             Spawn();
@@ -195,6 +196,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
 
         if (kills >= killGoal)
         {
+            isWinner = true;
             PV.RPC(nameof(RPC_EndGame), RpcTarget.All);
         }
     }
@@ -231,8 +233,12 @@ public class PlayerManager : MonoBehaviourPunCallbacks
             controller.GetComponent<playerController>().DisableInput();
         }
         */
-        GameObject gameOverText = GameObject.FindWithTag("GameEndSplashText").transform.GetChild(0).gameObject;
+        GameObject gameOverText = GameObject.FindWithTag("GameEndSplashText");
         gameOverText.SetActive(true);
+        if (isWinner)
+        {
+            gameOverText.GetComponent<GameOverImage>().SetWinnerImage();
+        }
         float timeElapsed = 0;
         while (timeElapsed < 3f)
         {
