@@ -16,6 +16,7 @@ public class killbox : MonoBehaviour
         if (dmg != null)
         {
             //kill the player
+            collision.gameObject.GetComponent<PlayerHealth>().setInvincible(false);
             dmg.TakeDamage(9999999, Vector2.zero, 10);
             PhotonNetwork.Instantiate(deathPrefab.name, collision.transform.position, gameObject.transform.rotation, 0);
 

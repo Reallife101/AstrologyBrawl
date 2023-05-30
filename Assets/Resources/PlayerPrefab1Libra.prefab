@@ -629,6 +629,7 @@ MonoBehaviour:
   doubleJumpPower: 50
   airSpeedMultiplier: 0.98
   isGrounded: 0
+  devilReceivedMult: 0.1
   groundedCheckObjectLeft: {fileID: 4887830797730787154}
   groundedCheckObjectRight: {fileID: 8475485967914335248}
   groundLayer:
