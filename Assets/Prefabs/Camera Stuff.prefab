@@ -659,7 +659,7 @@ MonoBehaviour:
   zoomCam: {fileID: 6087724042230909170}
   timeDilation: 0.1
   zoomTime: 1
-  damageThreshold: 35
+  damageThreshold: 20
 --- !u!1 &5818222853000476902
 GameObject:
   m_ObjectHideFlags: 0
