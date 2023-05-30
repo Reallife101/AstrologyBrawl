@@ -26,5 +26,5 @@ MonoBehaviour:
   chargeTimeForMax: 0
   chargeMultiplier: 0
   freezeFrameName: 
-  shakeTime: 0
-  shakeIntensity: 0
+  shakeTime: 0.75
+  shakeIntensity: 2
