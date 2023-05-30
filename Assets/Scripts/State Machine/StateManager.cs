@@ -299,7 +299,7 @@ public class StateManager : MonoBehaviour
 
     public void chargedProjectileSetter(doDamage input)
     {
-        input.SetValues(currentAttack.damage, atk_state, lastChargedMultiplier, currentAttack.knockbackPower * lastChargedMultiplier, gameObject);
+        input.SetValues(currentAttack.damage, atk_state, currentAttack.hitStunTime, currentAttack.knockbackPower, currentAttack.launchDirection, currentAttack.shakeTime, currentAttack.shakeIntensity, gameObject, lastChargedMultiplier);
     }
 
     public void StartCasting()
