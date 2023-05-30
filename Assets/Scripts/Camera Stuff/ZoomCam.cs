@@ -22,6 +22,9 @@ public class ZoomCam : MonoBehaviour
 
     public void ZoomIn(GameObject focus, float damage)
     {
+        //Ganon cam is no longer supported in this version, therefore we return
+        return;
+
         if (damage < damageThreshold || damage > 10000)
         {
             return;
