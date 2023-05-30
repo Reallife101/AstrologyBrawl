@@ -85,6 +85,7 @@ public class CountdownManager : MonoBehaviourPunCallbacks
             else if (timerIncrementValue >= 3)
             {
                 countdownText.SetText("FIGHT!");
+                CountdownAudio.CallSlaySound();
 
                 //Unfreeze the players
                 if (playersFrozen)
@@ -100,14 +101,17 @@ public class CountdownManager : MonoBehaviourPunCallbacks
             else if (timerIncrementValue >= 2)
             {
                 countdownText.SetText("1");
+                CountdownAudio.CallOneSound();
             }
             else if (timerIncrementValue >= 1)
             {
                 countdownText.SetText("2");
+                CountdownAudio.CallTwoSound();
             }
             else if (timerIncrementValue >= 0)
             {
                 countdownText.SetText("3");
+                CountdownAudio.CallThreeSound();
             }
         }
     }

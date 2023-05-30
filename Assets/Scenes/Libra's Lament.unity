@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.043305345, g: 0.12642488, b: 0.23677322, a: 1}
+  m_IndirectSpecularColor: {r: 0.043301895, g: 0.12642431, b: 0.236772, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2412,13 +2412,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a7b2807968327e458485612749c6dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countsound:
+  threeSound:
     Guid:
-      Data1: -651570438
-      Data2: 1307461543
-      Data3: -1782645880
-      Data4: -558490802
-    Path: event:/TestSound#1
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  twoSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  oneSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  slaySound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  CountSound:
+    Guid:
+      Data1: 1391915311
+      Data2: 1267270304
+      Data3: 1312401816
+      Data4: 818059262
+    Path: event:/Announcer/321Slay
 --- !u!114 &1648960235
 MonoBehaviour:
   m_ObjectHideFlags: 0

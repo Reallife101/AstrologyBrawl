@@ -2218,7 +2218,7 @@ MonoBehaviour:
       Data4: -897854348
     Path: event:/Music/Main Menu
   Event: 
-  PlayEvent: 1
+  PlayEvent: 11
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
