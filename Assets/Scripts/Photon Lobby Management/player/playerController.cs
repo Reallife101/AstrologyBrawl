@@ -535,6 +535,11 @@ public class playerController : MonoBehaviour
         myPV.RPC("RPC_FoolTP", myPV.Owner, points, delay);
     }
 
+    public void DoJustice()
+    {
+        myPV.RPC("RPC_DoJustice", myPV.Owner);
+    }
+
     [PunRPC]
     private void RPC_MagicianDisable(float delay)
     {
@@ -574,6 +579,12 @@ public class playerController : MonoBehaviour
         }
     }
 
+    [PunRPC]
+    private void RPC_DoJustice()
+    {
+        myHealth.setCurrentHealth(myHealth.getMaxHealth() / 2f);
+        myPV.RPC("RPC_ParticlesOn", RpcTarget.All, "justice");
+    }
 
     [PunRPC]
     private void RPC_LoversInvincible(float delay)
