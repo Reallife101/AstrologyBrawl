@@ -3920,9 +3920,9 @@ MonoBehaviour:
     img: {fileID: 1622475555}
     background: {fileID: 880101433}
   - btn: {fileID: 1814496823}
-    levelName: Battlefield
-    description: Don't pick this
-    img: {fileID: 1622475555}
+    levelName: Cancer's Confluence
+    description: Space by the Ocean
+    img: {fileID: 1814496824}
     background: {fileID: 26249412}
   levelText: {fileID: 1856947942}
   description: {fileID: 968847263}
@@ -5522,7 +5522,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.0049210023}
+  m_AnchoredPosition: {x: 66, y: 0.004893546}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -12434,7 +12434,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17cef3b5c50f2f74fac31e878b8ec84f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dc26e462b819c6a438a478b0c3cd7435, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13826,8 +13826,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1941303875}
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
-  m_Value: -0.0062111802
-  m_Size: 0.999781
+  m_Value: -0.00625
+  m_Size: 0.99997395
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
