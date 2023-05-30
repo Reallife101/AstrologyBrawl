@@ -9,7 +9,7 @@ using System;
 public class TarotCardFool : TarotCard
 {
 
-    private static float teleportDelay = .4f;
+    private static float teleportDelay = .5f;
     private Vector3[] teleportPoints;
     private void Start()
     {
