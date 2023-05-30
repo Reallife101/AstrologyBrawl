@@ -115,13 +115,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a7b2807968327e458485612749c6dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countsound:
+  threeSound:
     Guid:
-      Data1: -651570438
-      Data2: 1307461543
-      Data3: -1782645880
-      Data4: -558490802
-    Path: event:/TestSound#1
+      Data1: 1747877047
+      Data2: 1340037773
+      Data3: 868667575
+      Data4: 108451491
+    Path: event:/Announcer/3...
+  twoSound:
+    Guid:
+      Data1: -1284115808
+      Data2: 1237778456
+      Data3: 968809397
+      Data4: -589822538
+    Path: event:/Announcer/2...
+  oneSound:
+    Guid:
+      Data1: 1264240086
+      Data2: 1105528390
+      Data3: -274889600
+      Data4: 1278233302
+    Path: event:/Announcer/1...
+  slaySound:
+    Guid:
+      Data1: 1030979091
+      Data2: 1282668029
+      Data3: 1355236771
+      Data4: 733032710
+    Path: event:/Announcer/Slay
+  CountSound:
+    Guid:
+      Data1: 1391915311
+      Data2: 1267270304
+      Data3: 1312401816
+      Data4: 818059262
+    Path: event:/Announcer/321Slay
 --- !u!114 &7559605052088422129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdownText: {fileID: 400277707142103845}
+  loadingScreen: {fileID: 0}
 --- !u!1 &400277707142103867
 GameObject:
   m_ObjectHideFlags: 0

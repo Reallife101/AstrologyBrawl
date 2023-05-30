@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack_type: 3
-  damage: 5
+  damage: 8
   destroyOnTouch: 0
   destroyOnImpact: 0
   lifeTime: 3
