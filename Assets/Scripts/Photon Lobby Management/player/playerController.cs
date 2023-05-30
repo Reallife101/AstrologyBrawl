@@ -57,6 +57,12 @@ public class playerController : MonoBehaviour
     private bool fastFall;
     private bool shieldHeld;
 
+    //tarot stuff
+    [Header("Devil card")]
+    private bool devilOn;
+    //reciprocal damage multiplier 
+    [SerializeField] private float devilReceivedMult = .2f;
+
     //Grounded things
     [Header("Grounded Check Items")]
     [SerializeField] private Transform groundedCheckObjectLeft;
@@ -96,6 +102,7 @@ public class playerController : MonoBehaviour
 
     void Awake()
     {
+        devilOn = false;
         audioManager = GetComponent<audioManager>();
         fastFallAudioBool = true;
         myPV = GetComponent<PhotonView>();
@@ -493,6 +500,11 @@ public class playerController : MonoBehaviour
     //you have entered the TAROT ZONE
     //you have entered the TAROT ZONE
 
+    public void doDevilDamage(float value)
+    {
+        myPV.RPC("RPC_DevilDamage", myPV.Owner, value);
+    }
+
     public void MagicianDisable(float delay)
     {
         myPV.RPC("RPC_MagicianDisable", myPV.Owner, delay);
@@ -549,8 +561,19 @@ public class playerController : MonoBehaviour
     private void RPC_DevilBuff(float multiplier, float delay)
     {
         myPV.RPC("RPC_ParticlesOnDelay", RpcTarget.All, "devil", delay);
+        this.devilOn = true;
         gameObject.GetComponent<DamageManager>().affectAllDamage(multiplier, delay, false, true);
     }
+
+    [PunRPC]
+    private void RPC_DevilDamage(float value)
+    {
+        if (devilOn)
+        {
+            myHealth.TakeDamage(value * devilReceivedMult);
+        }
+    }
+
 
     [PunRPC]
     private void RPC_LoversInvincible(float delay)
@@ -593,6 +616,11 @@ public class playerController : MonoBehaviour
     private void loversTargetDisable()
     {
         moveSpeed = oldSpeed;
+    }
+
+    private void devilDisable()
+    {
+        devilOn = false;
     }
 
     [PunRPC]

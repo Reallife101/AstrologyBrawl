@@ -105,6 +105,7 @@ public class doDamage : MonoBehaviour
                 pv.RPC("DamageShake", RpcTarget.All, shakePower, shakeTime);
             }
 
+            AttackSender.GetComponent<playerController>().doDevilDamage(damage * multiplier * baseDamageMultiplier * buffMult);
             //Destroy object
             if (destroyOnTouch)
             {

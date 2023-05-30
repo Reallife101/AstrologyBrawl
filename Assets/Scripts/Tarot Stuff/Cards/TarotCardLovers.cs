@@ -8,7 +8,7 @@ using UnityEngine;
 public class TarotCardLovers : TarotCard
 {
     private float delay = 6.9f;
-    private float speedMultiplier = 2f;
+    private float speedMultiplier = 1.420f;
 
     private void Start()
     {

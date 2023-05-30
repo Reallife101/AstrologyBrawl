@@ -22,7 +22,7 @@ public class tarotSpawnManager : MonoBehaviour
 
     void Start()
     {
-        GameObject[] spawnPointObjects = GameObject.FindGameObjectsWithTag("tpPoints");
+        GameObject[] spawnPointObjects = GameObject.FindGameObjectsWithTag("TarotSpawn");
         PV = GetComponent<PhotonView>();
         foreach (GameObject g in spawnPointObjects)
         {

@@ -101,6 +101,7 @@ MonoBehaviour:
   - RPC_ParticlesOnDelay
   - RPC_LoversInvincible
   - RPC_LoversTarget
+  - RPC_DevilDamage
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
