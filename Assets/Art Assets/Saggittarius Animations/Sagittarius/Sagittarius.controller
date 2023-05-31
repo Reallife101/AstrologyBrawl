@@ -153,12 +153,6 @@ AnimatorStateMachine:
     m_State: {fileID: -2957751613405678940}
     m_Position: {x: 500, y: 110, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 2518425906037133577}
-    m_Position: {x: 790, y: 570, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -5759184477108246384}
-    m_Position: {x: 430, y: 580, z: 0}
-  - serializedVersion: 1
     m_State: {fileID: 8118875130352111306}
     m_Position: {x: 510, y: 220, z: 0}
   - serializedVersion: 1
@@ -207,32 +201,6 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 550, y: -130, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -7882349051873475349}
---- !u!1102 &-5759184477108246384
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: sagittariusUpkick
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 666a0f34ac6c2bb45b96a324771e1853, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1102 &-5698133938262179718
 AnimatorState:
   serializedVersion: 6
@@ -724,32 +692,6 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 2f2a17a48d41f214f886cf0aba32534c, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &2518425906037133577
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: sagittariusSweep
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a03778d8bd199a24e98e7e918125370a, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
