@@ -92,6 +92,20 @@ MonoBehaviour:
     m_RotationOrder: 4
   PPV: {fileID: 1724586136003095672}
   maxIntensity: 0.7
+  victorysound:
+    Guid:
+      Data1: -984106899
+      Data2: 1126282685
+      Data3: -426437502
+      Data4: 95791802
+    Path: event:/Announcer/Victory
+  burntsound:
+    Guid:
+      Data1: -952488486
+      Data2: 1300653006
+      Data3: 1302476731
+      Data4: -347987142
+    Path: event:/Announcer/BurntOut
 --- !u!114 &6551344503419998623
 MonoBehaviour:
   m_ObjectHideFlags: 0
