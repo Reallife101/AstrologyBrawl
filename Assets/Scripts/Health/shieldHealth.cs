@@ -44,10 +44,9 @@ public class shieldHealth : MonoBehaviourPunCallbacks, IDamageable
     }
     public void Die()
     {
-        Debug.Log("Shield Broken!");
         isRegen = false;
         playerHealth.setInvincible(false);
-        isInvincible = true;
+        isInvincible = false;
         canActivate = false;
         ai.SetBool("isActive", false);
     }
@@ -68,11 +67,11 @@ public class shieldHealth : MonoBehaviourPunCallbacks, IDamageable
     {
         if (canActivate)
         {
-            if (isActive)
+            if (isActive && currentHealth > 0)
             {
-                TakeDamage(shieldDrainPerSecond * Time.deltaTime, Vector2.zero, 0);
                 playerHealth.setInvincible(true);
                 isInvincible = false;
+                TakeDamage(shieldDrainPerSecond * Time.deltaTime, Vector2.zero, 0);
 
                 float size = (currentHealth / maxHealth) * maxSize;
 
@@ -133,6 +132,7 @@ public class shieldHealth : MonoBehaviourPunCallbacks, IDamageable
         //if health below 0, die
         if (currentHealth <= 0)
         {
+            playerHealth.setInvincible(false);
             Die();
         }
     }
@@ -140,7 +140,6 @@ public class shieldHealth : MonoBehaviourPunCallbacks, IDamageable
     [PunRPC]
     public void ZoomCamRPC(float damage)
     {
-        Debug.Log("RPC Called - Zoom");
         ZoomCam.instance.ZoomIn(gameObject, damage);
     }
 }

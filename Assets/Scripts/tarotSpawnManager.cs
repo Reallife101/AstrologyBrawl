@@ -22,11 +22,11 @@ public class tarotSpawnManager : MonoBehaviour
 
     void Start()
     {
-        GameObject spawnPointParent = GameObject.FindWithTag("SpawnPoints");
+        GameObject[] spawnPointObjects = GameObject.FindGameObjectsWithTag("TarotSpawn");
         PV = GetComponent<PhotonView>();
-        foreach (Transform point in spawnPointParent.transform)
+        foreach (GameObject g in spawnPointObjects)
         {
-            spawnPoints.Add(point);
+            spawnPoints.Add(g.transform);
         }
 
         timer = Random.Range(minSpawnTime, maxSpawnTime);

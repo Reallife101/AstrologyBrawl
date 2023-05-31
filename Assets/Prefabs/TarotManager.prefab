@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 545501925706496026}
   - component: {fileID: 7112092622711952794}
-  - component: {fileID: 428262151056691364}
   - component: {fileID: 6682205543194180773}
   m_Layer: 0
   m_Name: TarotManager
@@ -56,23 +55,6 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &428262151056691364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8821505165250913375}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d53748b3cab3084d980817b61fa7fa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tarotCards:
-  - {fileID: 3370260464144262322, guid: 20c2c89dd07d46542ac596f366fae142, type: 3}
-  - {fileID: -7047625774126537778, guid: 58e81af5b9ef33245ac13fa2c729b20b, type: 3}
-  - {fileID: 9072795826238597216, guid: ea5209b4ee2e58246acac42440c22a24, type: 3}
-  - {fileID: 638364993814632538, guid: 42923ccced84e184a8e0623b69faafd3, type: 3}
 --- !u!114 &6682205543194180773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,5 +73,6 @@ MonoBehaviour:
   - {fileID: 6126602520873760026, guid: ea5209b4ee2e58246acac42440c22a24, type: 3}
   - {fileID: 6126602520873760026, guid: 42923ccced84e184a8e0623b69faafd3, type: 3}
   - {fileID: 6126602520873760026, guid: c5c63b71afe022c409ee55cb91780148, type: 3}
-  minSpawnTime: 6
-  maxSpawnTime: 7
+  - {fileID: 6126602520873760026, guid: 5a7312836ab45bb4189211acff817a0f, type: 3}
+  minSpawnTime: 30
+  maxSpawnTime: 45

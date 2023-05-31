@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 101489998404344268}
   - component: {fileID: 1752425406030071846}
   - component: {fileID: 5889775717091038372}
-  - component: {fileID: -4036833209494859274}
   m_Layer: 0
   m_Name: arrow
   m_TagString: Untagged
@@ -165,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack_type: 2
-  damage: 25
+  damage: 5
   destroyOnTouch: 1
   destroyOnImpact: 0
   lifeTime: 10
@@ -206,28 +205,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &-4036833209494859274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793811016547114540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fc48f0f7946f1a41ac126456f565952, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Light: 0
-  Heavy: 0
-  Ability1: 0
-  Ability2: 0
-  stacked: 0
-  LightBuff: 1
-  HeavyBuff: 1
-  A1Buff: 1
-  A2Buff: 1
-  StackBuff: 1
 --- !u!1001 &7509613762868454867
 PrefabInstance:
   m_ObjectHideFlags: 0

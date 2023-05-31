@@ -97,6 +97,12 @@ MonoBehaviour:
   - CapHeal
   - CapJump
   - CapSpeed
+  - RPC_ParticlesOn
+  - RPC_ParticlesOnDelay
+  - RPC_LoversInvincible
+  - RPC_LoversTarget
+  - RPC_DevilDamage
+  - RPC_DoJustice
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

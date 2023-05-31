@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6126602520873760025}
   - component: {fileID: 6126602520873760027}
   - component: {fileID: 3370260464144262322}
+  - component: {fileID: 3453136585583660493}
   m_Layer: 0
   m_Name: tarotFool
   m_TagString: Untagged
@@ -29,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6126602520873760026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.38, y: -2.25, z: 0}
-  m_LocalScale: {x: 0.1177, y: 0.1177, z: 0.1177}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e6c30e99b2f3d1848b77be00cf3cdcfd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1967343b918351e4f8db3b85d5b01d3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,7 +128,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.66, y: 4.09}
+    oldSize: {x: 10.2, y: 16.2}
     newSize: {x: 9, y: 15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -161,3 +162,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d5cef2d2badf3a469e9df0b557b70b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &3453136585583660493
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6126602520873760026}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 69df2fac87c8350428e085109dc6f2ef, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

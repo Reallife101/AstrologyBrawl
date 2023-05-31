@@ -125,10 +125,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638208782802132157
+  lastModified: 638210554141163987
   FileSizes:
   - Name: Desktop
-    Value: 24854528
+    Value: 25039776
   Exists: 1
 --- !u!114 &-8660695241562669192
 MonoBehaviour:
@@ -349,6 +349,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1933
+--- !u!114 &-8204770136975911987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Slay
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Slay
+  Guid:
+    Data1: 1030979091
+    Data2: 1282668029
+    Data3: 1355236771
+    Data4: 733032710
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 756
 --- !u!114 &-7926858662207350676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3146,6 +3173,11 @@ MonoBehaviour:
   - {fileID: 2474696184730368622}
   - {fileID: -4472826989689316268}
   - {fileID: -2288401289001557033}
+  - {fileID: -8204770136975911987}
+  - {fileID: 5350709434471615386}
+  - {fileID: 3706126622172293624}
+  - {fileID: 5139235712135693402}
+  - {fileID: 5557008380662526767}
   EditorParameters:
   - {fileID: 2614306763600137121}
   - {fileID: -1147675118884633411}
@@ -3154,7 +3186,7 @@ MonoBehaviour:
   - {fileID: -8825898097862115878}
   StringsBanks:
   - {fileID: 541256043051351972}
-  cacheTime: 638208782802132157
+  cacheTime: 638210554141173969
   cacheVersion: 131601
 --- !u!114 &24763104455481919
 MonoBehaviour:
@@ -3300,10 +3332,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638208782800240449
+  lastModified: 638210554141173969
   FileSizes:
   - Name: Desktop
-    Value: 6428
+    Value: 6628
   Exists: 1
 --- !u!114 &643631350060576329
 MonoBehaviour:
@@ -4010,6 +4042,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2502
+--- !u!114 &3706126622172293624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/3...
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/3...
+  Guid:
+    Data1: 1747877047
+    Data2: 1340037773
+    Data3: 868667575
+    Data4: 108451491
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 756
 --- !u!114 &3734355416139499510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4529,6 +4588,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &5139235712135693402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/1...
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/1...
+  Guid:
+    Data1: 1264240086
+    Data2: 1105528390
+    Data3: -274889600
+    Data4: 1278233302
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 756
 --- !u!114 &5186585346193422320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4553,6 +4639,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &5350709434471615386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/2...
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/2...
+  Guid:
+    Data1: -1284115808
+    Data2: 1237778456
+    Data3: 968809397
+    Data4: -589822538
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 756
 --- !u!114 &5377318330185110134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4636,6 +4749,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &5557008380662526767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/321Slay
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/321Slay
+  Guid:
+    Data1: 1391915311
+    Data2: 1267270304
+    Data3: 1312401816
+    Data4: 818059262
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3093
 --- !u!114 &5606822700371448256
 MonoBehaviour:
   m_ObjectHideFlags: 0
