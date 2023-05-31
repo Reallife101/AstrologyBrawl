@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6126602520873760025}
   - component: {fileID: 6126602520873760027}
   - component: {fileID: 3822077711508932104}
+  - component: {fileID: -1260523272484336087}
   m_Layer: 0
   m_Name: tarotDevil
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 6126602520873760026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1177, y: 0.1177, z: 0.1177}
+  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -161,3 +162,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34770958b2e803c4aaed9e6f7ac8a191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &-1260523272484336087
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6126602520873760026}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 69df2fac87c8350428e085109dc6f2ef, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
