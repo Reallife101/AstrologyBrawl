@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 101489998404344268}
   - component: {fileID: 1752425406030071846}
   - component: {fileID: 5889775717091038372}
+  - component: {fileID: 2818676057711970888}
   m_Layer: 0
   m_Name: jugDrop
   m_TagString: Untagged
@@ -204,3 +205,23 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.575
+--- !u!95 &2818676057711970888
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793811016547114540}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9046f09dc64e8b2488ca96df388daa48, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
