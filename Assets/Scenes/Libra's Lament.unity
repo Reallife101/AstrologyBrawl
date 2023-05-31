@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.043304414, g: 0.12642506, b: 0.23677349, a: 1}
+  m_IndirectSpecularColor: {r: 0.043305688, g: 0.12642506, b: 0.23677385, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1296,6 +1296,58 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3622036297688614405, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
+      propertyPath: tarotCardsList.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622036297688614405, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
+      propertyPath: tarotCardsList.Array.data[0].name
+      value: Fool
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622036297688614405, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
+      propertyPath: tarotCardsList.Array.data[1].name
+      value: Hermit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622036297688614405, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
+      propertyPath: tarotCardsList.Array.data[2].name
+      value: Justice
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622036297688614405, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
+      propertyPath: tarotCardsList.Array.data[3].name
+      value: Magician
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622036297688614405, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
+      propertyPath: tarotCardsList.Array.data[4].name
+      value: Devil
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622036297688614405, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
+      propertyPath: tarotCardsList.Array.data[5].name
+      value: Lovers
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622036297688614405, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
+      propertyPath: tarotCardsList.Array.data[0].TarotGO
+      value: 
+      objectReference: {fileID: 6126602520873760026, guid: 20c2c89dd07d46542ac596f366fae142, type: 3}
+    - target: {fileID: 3622036297688614405, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
+      propertyPath: tarotCardsList.Array.data[1].TarotGO
+      value: 
+      objectReference: {fileID: 6126602520873760026, guid: 58e81af5b9ef33245ac13fa2c729b20b, type: 3}
+    - target: {fileID: 3622036297688614405, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
+      propertyPath: tarotCardsList.Array.data[2].TarotGO
+      value: 
+      objectReference: {fileID: 6126602520873760026, guid: ea5209b4ee2e58246acac42440c22a24, type: 3}
+    - target: {fileID: 3622036297688614405, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
+      propertyPath: tarotCardsList.Array.data[3].TarotGO
+      value: 
+      objectReference: {fileID: 6126602520873760026, guid: 42923ccced84e184a8e0623b69faafd3, type: 3}
+    - target: {fileID: 3622036297688614405, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
+      propertyPath: tarotCardsList.Array.data[4].TarotGO
+      value: 
+      objectReference: {fileID: 6126602520873760026, guid: c5c63b71afe022c409ee55cb91780148, type: 3}
+    - target: {fileID: 3622036297688614405, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
+      propertyPath: tarotCardsList.Array.data[5].TarotGO
+      value: 
+      objectReference: {fileID: 6126602520873760026, guid: 5a7312836ab45bb4189211acff817a0f, type: 3}
     - target: {fileID: 5744460631056519873, guid: a019dae0d158da34fbbd17760b4e2ea7, type: 3}
       propertyPath: sceneViewId
       value: 2

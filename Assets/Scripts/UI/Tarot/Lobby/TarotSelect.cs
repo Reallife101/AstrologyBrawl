@@ -88,7 +88,7 @@ public class TarotSelect : MonoBehaviour
 
     public void MoveCarousel(int direction)
     {
-        Debug.Log("Moving in " + direction);
+        //Debug.Log("Moving in " + direction);
         if (direction < 0 && top % carousel.Count == 0)
             top = carousel.Count - 1;
         else
@@ -114,7 +114,7 @@ public class TarotSelect : MonoBehaviour
 
     public void ReplaceImages()
     {
-        Debug.Log("Replacing Images");
+        //Debug.Log("Replacing Images");
         int top_copy = top;
         // Debug.Log("Bottom " + bottom);
         // Debug.Log("VIEW CARD INDEX " + viewCardIndex);
@@ -141,7 +141,7 @@ public class TarotSelect : MonoBehaviour
 
     public void ChangeSortingOrder(int direction)
     {
-        Debug.Log("CHAGING ORDER " + direction);
+        //Debug.Log("CHAGING ORDER " + direction);
         int start = 0;
         int end = visibleCarousel.Count - 2;
         bool flipped_sign = false;
@@ -172,7 +172,7 @@ public class TarotSelect : MonoBehaviour
 
     public void ResetSortingOrder()
     {
-        Debug.Log("SORTING ORDER");
+        //Debug.Log("SORTING ORDER");
         int max_order = 7;
         int mid = visibleCarousel.Count / 2;
 
@@ -222,11 +222,11 @@ public class TarotSelect : MonoBehaviour
     {
         Hashtable hash = new Hashtable();
         string baseName = "TarotCards";
-        int[] cards = new int[MaxNumOfCards];
+        string[] cards = new string[MaxNumOfCards];
         
         for (int i = 0; i < cardsSelected.Count; ++i)
         {
-            cards[i] = (int)cardsSelected[i];
+            cards[i] = cardsSelected[i].ToString();
         }
 
         hash.Add(baseName, cards);
@@ -242,6 +242,7 @@ public class TarotSelect : MonoBehaviour
         {
             TarotCard card = cardsNotSelected[random.Next(0, cardsNotSelected.Count)];
             cardsSelected.Add(card);
+            cardsNotSelected.Remove(card);
         }
 
         SaveSelectedCards();
@@ -256,7 +257,7 @@ public class TarotSelect : MonoBehaviour
 
     public void RotateWheel(CharacterAssociation character)
     {
-        Debug.Log("Rotating Wheel");
+        //Debug.Log("Rotating Wheel");
         Debug.Log((int)character);
         tarotWheel.SetInteger("Name", (int)character);   
     }
