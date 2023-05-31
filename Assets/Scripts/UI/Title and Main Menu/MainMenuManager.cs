@@ -29,13 +29,11 @@ public class MainMenuManager : MonoBehaviour
 
     public void Credits()
     {
-        music.Stop();
         SceneManager.LoadScene("Credits");
     }
 
     public void Gallery()
     {
-        music.Stop();
         SceneManager.LoadScene("ArtGallery");
     }
 }
