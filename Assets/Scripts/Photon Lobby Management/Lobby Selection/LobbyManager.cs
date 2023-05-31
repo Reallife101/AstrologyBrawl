@@ -59,7 +59,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     private InputAction leave;
     private bool slayBool;
 
-
+    public TarotSelect tarotSelect;
 
     private void Awake()
     {
@@ -253,6 +253,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     IEnumerator load()
     {
         yield return new WaitForSeconds(1f);
+        tarotSelect.SaveCards();
         PhotonNetwork.LoadLevel(levelInfo.getSceneName());
     }
 
