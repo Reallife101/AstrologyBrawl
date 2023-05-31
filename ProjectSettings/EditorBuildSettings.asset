@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mouth of Madness.unity
     guid: be126ffaf97eeea47a2c359c0cd8ee36
+  - enabled: 1
+    path: Assets/Scenes/Target Practice.unity
+    guid: 22961fcf30d491f40a304a373456aedc
   m_configObjects: {}
