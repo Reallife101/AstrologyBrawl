@@ -125,10 +125,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638210040913325555
+  lastModified: 638210872266361032
   FileSizes:
   - Name: Desktop
-    Value: 25039776
+    Value: 25154272
   Exists: 1
 --- !u!114 &-8660695241562669192
 MonoBehaviour:
@@ -593,6 +593,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4000
+--- !u!114 &-6896731647092160385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/BurntOut
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/BurntOut
+  Guid:
+    Data1: -952488486
+    Data2: 1300653006
+    Data3: 1302476731
+    Data4: -347987142
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1406
 --- !u!114 &-6879743283077546750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3254,11 +3281,13 @@ MonoBehaviour:
   - {fileID: 2474696184730368622}
   - {fileID: -4472826989689316268}
   - {fileID: -2288401289001557033}
-  - {fileID: -3485710055289767736}
-  - {fileID: -3934279804857849446}
-  - {fileID: -6332277448386973375}
-  - {fileID: 137229404988885584}
-  - {fileID: 6737472644099623607}
+  - {fileID: -8204770136975911987}
+  - {fileID: 5350709434471615386}
+  - {fileID: 3706126622172293624}
+  - {fileID: 5139235712135693402}
+  - {fileID: 5557008380662526767}
+  - {fileID: 4429779551673743037}
+  - {fileID: -6896731647092160385}
   EditorParameters:
   - {fileID: 2614306763600137121}
   - {fileID: -1147675118884633411}
@@ -3267,7 +3296,7 @@ MonoBehaviour:
   - {fileID: -8825898097862115878}
   StringsBanks:
   - {fileID: 541256043051351972}
-  cacheTime: 638210040913395618
+  cacheTime: 638210872266441105
   cacheVersion: 131601
 --- !u!114 &24763104455481919
 MonoBehaviour:
@@ -3440,10 +3469,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638210040913395618
+  lastModified: 638210872266441105
   FileSizes:
   - Name: Desktop
-    Value: 6628
+    Value: 6714
   Exists: 1
 --- !u!114 &643631350060576329
 MonoBehaviour:
@@ -4443,6 +4472,33 @@ MonoBehaviour:
     Data2: 1326562620
     Data3: 777324983
     Data4: 1231829924
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &4429779551673743037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Victory
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Victory
+  Guid:
+    Data1: -984106899
+    Data2: 1126282685
+    Data3: -426437502
+    Data4: 95791802
   Banks:
   - {fileID: -8825898097862115878}
   IsStream: 0

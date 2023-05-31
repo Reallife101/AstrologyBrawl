@@ -36,6 +36,10 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     private Vignette vig;
     [SerializeField] float maxIntensity;
 
+    [Header("Audio")]
+    [SerializeField] FMODUnity.EventReference victorysound;
+    [SerializeField] FMODUnity.EventReference burntsound;
+
     private void Awake()
     {
         
@@ -239,6 +243,11 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         if (isWinner)
         {
             gameOverText.GetComponent<GameOverImage>().SetWinnerImage();
+            FMODUnity.RuntimeManager.PlayOneShot(victorysound);
+        }
+        else
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(burntsound);
         }
         float timeElapsed = 0;
         while (timeElapsed < 3f)
