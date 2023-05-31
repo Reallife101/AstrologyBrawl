@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Realtime;
 using Photon.Pun;
+using Mono.Cecil;
 
 public class TarotManager : MonoBehaviourPunCallbacks
 {
@@ -11,7 +12,8 @@ public class TarotManager : MonoBehaviourPunCallbacks
     [SerializeField] private TarotCard[] tarotCards;
 
     private int KillIndex = 0;
-    private int MaxKills; 
+    private int MaxKills;
+
 
     void Awake()
     {

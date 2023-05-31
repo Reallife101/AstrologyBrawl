@@ -828,6 +828,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1050
+--- !u!114 &-6332277448386973375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/2...
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/2...
+  Guid:
+    Data1: -1284115808
+    Data2: 1237778456
+    Data3: 968809397
+    Data4: -589822538
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 756
 --- !u!114 &-6325587306856951154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1703,6 +1730,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &-3934279804857849446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/321Slay
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/321Slay
+  Guid:
+    Data1: 1391915311
+    Data2: 1267270304
+    Data3: 1312401816
+    Data4: 818059262
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3093
 --- !u!114 &-3840451436484984386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1894,6 +1948,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &-3485710055289767736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Slay
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Slay
+  Guid:
+    Data1: 1030979091
+    Data2: 1282668029
+    Data3: 1355236771
+    Data4: 733032710
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 756
 --- !u!114 &-3464051827183466567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3272,6 +3353,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1096
+--- !u!114 &137229404988885584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/3...
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/3...
+  Guid:
+    Data1: 1747877047
+    Data2: 1340037773
+    Data3: 868667575
+    Data4: 108451491
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 756
 --- !u!114 &312359905476501680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5372,6 +5480,33 @@ MonoBehaviour:
   - Value A
   - Value B
   Exists: 1
+--- !u!114 &6737472644099623607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/1...
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/1...
+  Guid:
+    Data1: 1264240086
+    Data2: 1105528390
+    Data3: -274889600
+    Data4: 1278233302
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 756
 --- !u!114 &6829125349300196645
 MonoBehaviour:
   m_ObjectHideFlags: 0

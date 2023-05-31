@@ -66,3 +66,6 @@ TagManager:
   - name: Infront of Default
     uniqueID: 3105140715
     locked: 0
+  - name: Tarot Card
+    uniqueID: 1097286097
+    locked: 0
