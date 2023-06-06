@@ -5079,6 +5079,16 @@ MonoBehaviour:
     description: Aim for the Stars
     img: {fileID: 2058326313}
     background: {fileID: 1905278541}
+  - btn: {fileID: 978146346}
+    levelName: Aquarius Aquarium
+    description: Plenty of Fish in the Sea
+    img: {fileID: 978146347}
+    background: {fileID: 344874138}
+  - btn: {fileID: 622187580}
+    levelName: Capricorn's Sancturary
+    description: G.O.A.T.E.D
+    img: {fileID: 622187581}
+    background: {fileID: 1045131816}
   levelText: {fileID: 1856947942}
   description: {fileID: 968847263}
   levelImage: {fileID: 1041463356}
@@ -5583,7 +5593,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17cef3b5c50f2f74fac31e878b8ec84f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 408ffecc4ee064e47bd4a163fb6db866, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6677,7 +6687,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.0049061887}
+  m_AnchoredPosition: {x: 66, y: 0.0048861066}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -8395,7 +8405,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17cef3b5c50f2f74fac31e878b8ec84f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a4fb69702e52cfd409ddc04b7ae6c76c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16731,7 +16741,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
   m_Value: 0.0062111802
-  m_Size: 0.9999657
+  m_Size: 0.99998444
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

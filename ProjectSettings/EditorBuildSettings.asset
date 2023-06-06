@@ -62,4 +62,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Target Practice.unity
     guid: 22961fcf30d491f40a304a373456aedc
+  - enabled: 1
+    path: Assets/Scenes/Capricorn's Sancturary.unity
+    guid: 66e769c95b4d3fd4f84f6448b5387fd5
+  - enabled: 1
+    path: Assets/Scenes/Aquarius Aquarium.unity
+    guid: 1aae002b8d1c66c4c8b6ba6e35c4f70b
   m_configObjects: {}
