@@ -47,11 +47,12 @@ MonoBehaviour:
   HealthItemPrefab: {fileID: 3793421941201907714, guid: 61794307a5df0ff4ca5f7af95647d08b, type: 3}
   HUDTransform: {fileID: 0}
   characterImages:
-  - {fileID: 21300000, guid: de456d87228a6f64c80e5598560d38e6, type: 3}
-  - {fileID: 21300000, guid: 5f4fec1c02071274da08f29c3836ad80, type: 3}
-  - {fileID: 21300000, guid: a6ab76a69d260a04f8317ca67da44686, type: 3}
-  - {fileID: 21300000, guid: 7ba34301e22643b499c2e7ba9185264b, type: 3}
-  - {fileID: 21300000, guid: 3c8f9c75d8dcf6546bfb0e210954b72b, type: 3}
-  - {fileID: 21300000, guid: 0fb2a9af37d16764989747a9b2990d93, type: 3}
-  - {fileID: 21300002, guid: a75445bb16444f14f96fdf9c734945cc, type: 3}
-  - {fileID: 21300000, guid: 9125c204f566db048a92ebcb64d9d14a, type: 3}
+  - {fileID: 859200004, guid: 03fae27c041ecc248b2f60e962417866, type: 3}
+  - {fileID: -366932196, guid: 03fae27c041ecc248b2f60e962417866, type: 3}
+  - {fileID: 974893905, guid: 03fae27c041ecc248b2f60e962417866, type: 3}
+  - {fileID: -473459419, guid: 03fae27c041ecc248b2f60e962417866, type: 3}
+  - {fileID: 762319848, guid: 03fae27c041ecc248b2f60e962417866, type: 3}
+  - {fileID: 626607025, guid: 03fae27c041ecc248b2f60e962417866, type: 3}
+  - {fileID: -1025431533, guid: 03fae27c041ecc248b2f60e962417866, type: 3}
+  - {fileID: 507424075, guid: 03fae27c041ecc248b2f60e962417866, type: 3}
+  HealthItems: []
