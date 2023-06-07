@@ -94,7 +94,7 @@ public class tarotSpawnManager : MonoBehaviourPunCallbacks
     {
         Transform spawnPoint = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Count)];
 
-        string name = tarotPool[UnityEngine.Random.Range(0, tarotCards.Count)];
+        string name = tarotPool[UnityEngine.Random.Range(0, tarotPool.Length)];
         GameObject tarotCard = tarotCardsDict[name];
         PhotonNetwork.Instantiate(tarotCard.name, spawnPoint.position, Quaternion.identity);
     }

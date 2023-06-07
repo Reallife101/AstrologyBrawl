@@ -37,7 +37,6 @@ public class playerController : MonoBehaviour
     [SerializeField] private float fastFallSpeed;
     [SerializeField] private float doubleJumpPower;
     [SerializeField] private float airSpeedMultiplier;
-    private float oldSpeed;
 
     //Public setters for move values
     public float MoveSpeed { get { return moveSpeed; } set { moveSpeed = value; } }
@@ -58,10 +57,11 @@ public class playerController : MonoBehaviour
     private bool shieldHeld;
 
     //tarot stuff
+    private float loversSpeed = 1;
     [Header("Devil card")]
-    private bool devilOn;
     //reciprocal damage multiplier 
     [SerializeField] private float devilReceivedMult = .2f;
+    private bool devilOn;
 
     //Grounded things
     [Header("Grounded Check Items")]
@@ -125,7 +125,6 @@ public class playerController : MonoBehaviour
         scoreboardInputAction = input.Player.Scoreboard;
         playerShield = input.Player.Shield;
 
-        oldSpeed = moveSpeed;
 
         playerJump.started += jumpBehavior =>
         {
@@ -398,7 +397,7 @@ public class playerController : MonoBehaviour
             ySpeed = myRB.velocity.y;
         }
 
-        Vector3 VelocityChange = new Vector2(Time.fixedDeltaTime * moveSpeed * 10 * movementVector.x, ySpeed);
+        Vector3 VelocityChange = new Vector2(Time.fixedDeltaTime * moveSpeed * 10 * movementVector.x * loversSpeed, ySpeed);
         myRB.velocity = Vector3.SmoothDamp(myRB.velocity, VelocityChange, ref StartVelocity, movementSmoothing);
 
     }
@@ -596,7 +595,7 @@ public class playerController : MonoBehaviour
     [PunRPC]
     private void RPC_LoversTarget(float delay, float speedMultiplier)
     {
-        moveSpeed = oldSpeed * speedMultiplier;
+        loversSpeed = speedMultiplier;
         myPV.RPC("RPC_ParticlesOnDelay", RpcTarget.All, "lovers", delay);
         StartCoroutine(reEnableDelay(delay, loversTargetDisable));
     }
@@ -626,7 +625,7 @@ public class playerController : MonoBehaviour
 
     private void loversTargetDisable()
     {
-        moveSpeed = oldSpeed;
+        loversSpeed = 1;
     }
 
     private void devilDisable()
