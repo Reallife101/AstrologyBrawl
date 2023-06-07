@@ -61,6 +61,11 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public TarotSelect tarotSelect;
 
+
+    public InputAction enter { get; private set; }
+    [SerializeField] UIAudio uiAudio;
+
+
     private void Awake()
     {
         input = new PlayerControllerInputAsset();
@@ -85,7 +90,20 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         start.Enable();
         leave.Enable();
         slayBool = false;
-        
+
+        input = new PlayerControllerInputAsset();
+        enter = input.UI.Enter;
+
+        enter.performed += EnterButton =>
+        {
+            if (roomPanel.activeInHierarchy)
+            {
+                Debug.Log("hit enter");
+                OnClickCreate();
+            }
+        };
+        enter.Enable();
+
     }
 
 
