@@ -4,7 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
-[RequireComponent(typeof(PhotonView))] 
+[RequireComponent(typeof(PhotonView))]
 public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInstantiateMagicCallback
 {
     [SerializeField] const float MaxHealth = 100f;
@@ -14,6 +14,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     public float currentHealth = MaxHealth;
     private bool counter = false;
     private bool invincible = false;
+    private bool lovers = false;
 
     public PhotonView myPV;
 
@@ -75,7 +76,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     public void RPC_HealDamage(float health)
     {
         currentHealth += health;
-        if (currentHealth >MaxHealth)
+        if (currentHealth > MaxHealth)
         {
             currentHealth = MaxHealth;
         }
@@ -103,8 +104,12 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     [PunRPC]
     public void RPC_TakeDamage(float damage, Vector2 launchVector, float hitStunValue, PhotonMessageInfo info)
     {
+        if (damage > 10000)
+        {
+            lovers = false;
+        }
         //Check if invincible
-        if (invincible)
+        if (invincible || lovers)
         {
             return;
         }
@@ -136,9 +141,9 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
         }
 
         //if health below 0, die
-        if (currentHealth <=0)
+        if (currentHealth <= 0)
         {
-            audioManager.CallDeathGeneric(); 
+            audioManager.CallDeathGeneric();
             audioManager.CallSpawnVoice();
             //if you are not yourself or nothing, give them a kill
             if (info.Sender != null && info.Sender != PhotonNetwork.LocalPlayer)
@@ -181,7 +186,7 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     {
         return MaxHealth;
     }
-    
+
     public void setHealthItem(HealthItem item)
     {
         healthItem = item;
@@ -217,6 +222,11 @@ public abstract class Health : MonoBehaviourPunCallbacks, IDamageable, IPunInsta
     public void setInvincible(bool b)
     {
         invincible = b;
+    }
+
+    public void setLoversInvincible(bool b)
+    {
+        lovers = b;
     }
 
 }
