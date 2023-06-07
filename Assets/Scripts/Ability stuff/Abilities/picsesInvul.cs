@@ -6,20 +6,18 @@ public class picsesInvul : Ability
 {
     [SerializeField] PlayerHealth ph;
     [SerializeField] StateManager sm;
-    bool isActive = false;
+
     public override void Use()
     {
-        isActive = !isActive;
-        ph.setInvincible(isActive);
     }
 
     public void Dive()
     {
-        sm.enterInfiniteRecovery();
+        ph.setInvincible(true);
     }
 
-    public void Surface()
+    public void EndDive()
     {
-        sm.setStateIdle();
+        ph.setInvincible(false);
     }
 }
