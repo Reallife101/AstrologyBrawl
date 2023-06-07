@@ -27,7 +27,7 @@ public class pickUpCard : MonoBehaviour
             if (pv.IsMine)
             {
                 t.Effect(p.ActorNumber);
-                pv.RPC("showcard", pv.Owner);
+                pv.RPC("showcard", RpcTarget.All);
                 PhotonNetwork.Destroy(gameObject);
             }
         }
