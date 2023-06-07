@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine.UI;
 
 public class CountdownManager : MonoBehaviourPunCallbacks
 {
-    [SerializeField] TMPro.TMP_Text countdownText;
+    [SerializeField] List<GameObject> countdownImages;
     [SerializeField] GameObject loadingScreen;
 
     ExitGames.Client.Photon.Hashtable ht;
@@ -84,7 +85,8 @@ public class CountdownManager : MonoBehaviourPunCallbacks
             }
             else if (timerIncrementValue >= 3)
             {
-                countdownText.SetText("FIGHT!");
+                countdownImages[3].SetActive(true);
+                countdownImages[2].SetActive(false);
                 CountdownAudio.CallSlaySound();
 
                 //Unfreeze the players
@@ -100,17 +102,19 @@ public class CountdownManager : MonoBehaviourPunCallbacks
             }
             else if (timerIncrementValue >= 2)
             {
-                countdownText.SetText("1");
+                countdownImages[2].SetActive(true);
+                countdownImages[1].SetActive(false);
                 CountdownAudio.CallOneSound();
             }
             else if (timerIncrementValue >= 1)
             {
-                countdownText.SetText("2");
+                countdownImages[1].SetActive(true);
+                countdownImages[0].SetActive(false);
                 CountdownAudio.CallTwoSound();
             }
             else if (timerIncrementValue >= 0)
             {
-                countdownText.SetText("3");
+                countdownImages[0].SetActive(true);
                 CountdownAudio.CallThreeSound();
             }
         }
