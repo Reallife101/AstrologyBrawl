@@ -115,6 +115,10 @@ public class CountdownManager : MonoBehaviourPunCallbacks
             else if (timerIncrementValue >= 0)
             {
                 countdownImages[0].SetActive(true);
+                if (loadingScreen)
+                {
+                    loadingScreen.SetActive(false);
+                }
                 CountdownAudio.CallThreeSound();
             }
         }
@@ -124,10 +128,6 @@ public class CountdownManager : MonoBehaviourPunCallbacks
 
     void StartCountdownTimer()
     {
-        if (loadingScreen)
-        {
-            loadingScreen.SetActive(false);
-        }
         if (double.Parse(PhotonNetwork.CurrentRoom.CustomProperties["StartTime"].ToString()) == -1)
         {
             startTime = PhotonNetwork.Time;
