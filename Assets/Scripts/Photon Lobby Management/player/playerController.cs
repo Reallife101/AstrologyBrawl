@@ -37,7 +37,6 @@ public class playerController : MonoBehaviour
     [SerializeField] private float fastFallSpeed;
     [SerializeField] private float doubleJumpPower;
     [SerializeField] private float airSpeedMultiplier;
-    private float oldSpeed;
 
     //Public setters for move values
     public float MoveSpeed { get { return moveSpeed; } set { moveSpeed = value; } }
@@ -58,10 +57,11 @@ public class playerController : MonoBehaviour
     private bool shieldHeld;
 
     //tarot stuff
+    private float loversSpeed = 1;
     [Header("Devil card")]
-    private bool devilOn;
     //reciprocal damage multiplier 
     [SerializeField] private float devilReceivedMult = .2f;
+    private bool devilOn;
 
     //Grounded things
     [Header("Grounded Check Items")]
@@ -112,7 +112,7 @@ public class playerController : MonoBehaviour
         myHealth = GetComponent<PlayerHealth>();
         myScoreboard = FindObjectOfType<Scoreboard>();
 
-        myPM = PhotonView.Find((int) myPV.InstantiationData[0]).GetComponent<PlayerManager>();
+        myPM = PhotonView.Find((int)myPV.InstantiationData[0]).GetComponent<PlayerManager>();
 
         input = new PlayerControllerInputAsset();
 
@@ -125,7 +125,6 @@ public class playerController : MonoBehaviour
         scoreboardInputAction = input.Player.Scoreboard;
         playerShield = input.Player.Shield;
 
-        oldSpeed = moveSpeed;
 
         playerJump.started += jumpBehavior =>
         {
@@ -140,9 +139,9 @@ public class playerController : MonoBehaviour
             if (isGrounded)
             {
                 audioManager.CallJump();
-                myRB.AddForce(new Vector2(myRB.velocity.y, jumpPower * 25)); 
+                myRB.AddForce(new Vector2(myRB.velocity.y, jumpPower * 25));
 
-                if(anim)
+                if (anim)
                 {
                     anim.SetTrigger("jump");
                 }
@@ -175,7 +174,7 @@ public class playerController : MonoBehaviour
             if (ability1.abilitySoundCheck)
             {
                 audioManager.CallAbility1();
-            }   
+            }
         };
 
         abilityOneAction.canceled += ability1Release =>
@@ -202,7 +201,7 @@ public class playerController : MonoBehaviour
             if (ability2.abilitySoundCheck)
             {
                 audioManager.CallAbility2();
-            }   
+            }
         };
 
         abilityTwoAction.canceled += ability2Release =>
@@ -354,7 +353,7 @@ public class playerController : MonoBehaviour
         }
         //Grounded movement
         movementVector = playerMove.ReadValue<Vector2>();
-        
+
         if (anim != null)
         {
             anim.SetFloat("speed", Mathf.Abs(movementVector.x));
@@ -372,7 +371,7 @@ public class playerController : MonoBehaviour
         }
 
         // Check for fastFall
-        if (movementVector.y<-0.95f && isGrounded == false)
+        if (movementVector.y < -0.95f && isGrounded == false)
         {
             fastFall = true;
         }
@@ -398,7 +397,7 @@ public class playerController : MonoBehaviour
             ySpeed = myRB.velocity.y;
         }
 
-        Vector3 VelocityChange = new Vector2(Time.fixedDeltaTime * moveSpeed * 10 * movementVector.x, ySpeed);
+        Vector3 VelocityChange = new Vector2(Time.fixedDeltaTime * moveSpeed * 10 * movementVector.x * loversSpeed, ySpeed);
         myRB.velocity = Vector3.SmoothDamp(myRB.velocity, VelocityChange, ref StartVelocity, movementSmoothing);
 
     }
@@ -589,14 +588,14 @@ public class playerController : MonoBehaviour
     [PunRPC]
     private void RPC_LoversInvincible(float delay)
     {
-        myHealth.setInvincible(true);
+        myHealth.setLoversInvincible(true);
         StartCoroutine(reEnableDelay(delay, loversReEnable));
     }
 
     [PunRPC]
     private void RPC_LoversTarget(float delay, float speedMultiplier)
     {
-        moveSpeed = oldSpeed * speedMultiplier;
+        loversSpeed = speedMultiplier;
         myPV.RPC("RPC_ParticlesOnDelay", RpcTarget.All, "lovers", delay);
         StartCoroutine(reEnableDelay(delay, loversTargetDisable));
     }
@@ -621,12 +620,12 @@ public class playerController : MonoBehaviour
 
     private void loversReEnable()
     {
-        myHealth.setInvincible(false);
+        myHealth.setLoversInvincible(false);
     }
 
     private void loversTargetDisable()
     {
-        moveSpeed = oldSpeed;
+        loversSpeed = 1;
     }
 
     private void devilDisable()

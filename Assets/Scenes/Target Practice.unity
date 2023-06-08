@@ -123,6 +123,107 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &25233433
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832704, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832710, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: m_Name
+      value: CountdownCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896920597441832711, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
+      propertyPath: loadingScreen
+      value: 
+      objectReference: {fileID: 730822748}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c0395eca6b6acf94fa2174527e4a185d, type: 3}
 --- !u!1 &72283933
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,23 +1003,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Path
-      value: event:/Music/BussInPoots
+      value: event:/Music/More Guitars
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Guid.Data1
-      value: 1349669798
+      value: 1463931739
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Guid.Data2
-      value: 1093663179
+      value: 1253229809
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Guid.Data3
-      value: -1827256953
+      value: -907661944
       objectReference: {fileID: 0}
     - target: {fileID: 1306837757352386587, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: EventReference.Guid.Data4
-      value: -429874171
+      value: -552830706
       objectReference: {fileID: 0}
     - target: {fileID: 1306837758385738372, guid: 70e2e99b752f9b7419dfb1a00beb80e4, type: 3}
       propertyPath: m_Name
@@ -2306,7 +2407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422533f3d3ba7334bb9a08934b7a940a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdownText: {fileID: 1261472665}
+  countdownImages: []
   loadingScreen: {fileID: 730822748}
 --- !u!114 &1648960234
 MonoBehaviour:

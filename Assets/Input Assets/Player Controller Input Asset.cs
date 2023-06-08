@@ -715,6 +715,15 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Enter"",
+                    ""type"": ""Button"",
+                    ""id"": ""be188c5a-3dce-4b5a-b947-5e5e3d070630"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -948,6 +957,17 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                     ""action"": ""Iconic"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d79fa4ba-1283-4989-9ccb-f2db12de02a1"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Enter"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -981,6 +1001,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         m_UI_HeavyAttack = m_UI.FindAction("HeavyAttack", throwIfNotFound: true);
         m_UI_Mixup = m_UI.FindAction("Mixup", throwIfNotFound: true);
         m_UI_Iconic = m_UI.FindAction("Iconic", throwIfNotFound: true);
+        m_UI_Enter = m_UI.FindAction("Enter", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1188,6 +1209,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
     private readonly InputAction m_UI_HeavyAttack;
     private readonly InputAction m_UI_Mixup;
     private readonly InputAction m_UI_Iconic;
+    private readonly InputAction m_UI_Enter;
     public struct UIActions
     {
         private @PlayerControllerInputAsset m_Wrapper;
@@ -1202,6 +1224,7 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         public InputAction @HeavyAttack => m_Wrapper.m_UI_HeavyAttack;
         public InputAction @Mixup => m_Wrapper.m_UI_Mixup;
         public InputAction @Iconic => m_Wrapper.m_UI_Iconic;
+        public InputAction @Enter => m_Wrapper.m_UI_Enter;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1241,6 +1264,9 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 @Iconic.started -= m_Wrapper.m_UIActionsCallbackInterface.OnIconic;
                 @Iconic.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnIconic;
                 @Iconic.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnIconic;
+                @Enter.started -= m_Wrapper.m_UIActionsCallbackInterface.OnEnter;
+                @Enter.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnEnter;
+                @Enter.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnEnter;
             }
             m_Wrapper.m_UIActionsCallbackInterface = instance;
             if (instance != null)
@@ -1275,6 +1301,9 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
                 @Iconic.started += instance.OnIconic;
                 @Iconic.performed += instance.OnIconic;
                 @Iconic.canceled += instance.OnIconic;
+                @Enter.started += instance.OnEnter;
+                @Enter.performed += instance.OnEnter;
+                @Enter.canceled += instance.OnEnter;
             }
         }
     }
@@ -1308,5 +1337,6 @@ public partial class @PlayerControllerInputAsset : IInputActionCollection2, IDis
         void OnHeavyAttack(InputAction.CallbackContext context);
         void OnMixup(InputAction.CallbackContext context);
         void OnIconic(InputAction.CallbackContext context);
+        void OnEnter(InputAction.CallbackContext context);
     }
 }

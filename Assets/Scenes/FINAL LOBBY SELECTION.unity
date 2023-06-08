@@ -6687,7 +6687,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0.0049254}
+  m_AnchoredPosition: {x: 66, y: 0.004930321}
   m_SizeDelta: {x: -173.617, y: 316.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &784558676
@@ -7713,7 +7713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 46.53035, y: -36.919235}
+  m_AnchoredPosition: {x: 46.530396, y: -36.91925}
   m_SizeDelta: {x: 93.0607, y: 56.6287}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &901671999
@@ -11470,6 +11470,7 @@ MonoBehaviour:
   settingsBtn: {fileID: 764207204}
   levelInfo: {fileID: 53921322}
   tarotSelect: {fileID: 1589846447}
+  uiAudio: {fileID: 63844593}
 --- !u!4 &1283545690
 Transform:
   m_ObjectHideFlags: 0
@@ -16762,7 +16763,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 337.6276, y: 27.300003}
+  m_AnchoredPosition: {x: 337.6276, y: 27.300049}
   m_SizeDelta: {x: 115.7631, y: 30.9522}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1945035374
@@ -17007,7 +17008,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1941303874}
   m_Direction: 2
   m_Value: -0.00625
-  m_Size: 0.9999814
+  m_Size: 0.99998456
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
