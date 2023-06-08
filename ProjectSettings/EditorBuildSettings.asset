@@ -39,7 +39,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Libra's Lament.unity
     guid: 9668c0d2e0ce878449058a3241dec811
   - enabled: 1
-    path: Assets/Scenes/Scrapyard Scuffle.unity
+    path: 
     guid: c980cfd3f156c524c88fe63139e53c19
   - enabled: 1
     path: 
@@ -71,4 +71,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Celestial Clash.unity
     guid: b6198b04e85e3ae4c83724a6a56587f6
+  - enabled: 1
+    path: Assets/Scenes/Scrapyard Scuffle.unity
+    guid: e72c02aaaed9c064a87a55275167986d
   m_configObjects: {}
