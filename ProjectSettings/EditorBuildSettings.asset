@@ -42,7 +42,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Scrapyard Scuffle.unity
     guid: c980cfd3f156c524c88fe63139e53c19
   - enabled: 1
-    path: Assets/Scenes/Celestial Clash.unity
+    path: 
     guid: 05a1ab3f8f76b05498f80e6cd30f33c8
   - enabled: 1
     path: Assets/Scenes/FINAL STATS SCREEN.unity
@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Aquarius Aquarium.unity
     guid: 1aae002b8d1c66c4c8b6ba6e35c4f70b
+  - enabled: 1
+    path: Assets/Scenes/Celestial Clash.unity
+    guid: b6198b04e85e3ae4c83724a6a56587f6
   m_configObjects: {}
