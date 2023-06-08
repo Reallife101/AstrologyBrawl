@@ -3053,21 +3053,21 @@ MonoBehaviour:
     leftBolt: {fileID: 21300000, guid: 245e1d974e183bd49838ac9bb68a01a6, type: 3}
     rightBolt: {fileID: 21300000, guid: b4d760ac802b6d048a453905d0ab4f3a, type: 3}
     centerBolt: {fileID: 1469664454, guid: 45a8b93cc65f0464dafbce704ba4d931, type: 3}
-  - splashArt: {fileID: 0}
-    avatarFrame: {fileID: 0}
-    leftBolt: {fileID: 0}
-    rightBolt: {fileID: 0}
-    centerBolt: {fileID: 0}
+  - splashArt: {fileID: 21300000, guid: 7ee5894c35b475a499e674c09a1c4d00, type: 3}
+    avatarFrame: {fileID: -909746140, guid: 96115246966fcd24eab773e70fcb9578, type: 3}
+    leftBolt: {fileID: 21300000, guid: a9cb8d46f2dcc6343b54a47210b25b88, type: 3}
+    rightBolt: {fileID: 21300000, guid: d6d3b3a380d60f342ab949012a5ee10b, type: 3}
+    centerBolt: {fileID: 21300000, guid: 236a155e50102e841ac9c9441decb6a8, type: 3}
   - splashArt: {fileID: 21300000, guid: 3beeec9be0a70fa4895566212f3e28ee, type: 3}
     avatarFrame: {fileID: 366327081, guid: b78a700afb6392740966a5ef2e61530c, type: 3}
     leftBolt: {fileID: 21300000, guid: 0a92e256ce663d94a9590f37b09f0909, type: 3}
     rightBolt: {fileID: 21300000, guid: 1d87b942008327c43bca2cc7a4bdb1c3, type: 3}
     centerBolt: {fileID: 743969502, guid: 04f5a661fae2fad43be987c2c30a5df6, type: 3}
-  - splashArt: {fileID: 0}
-    avatarFrame: {fileID: 0}
-    leftBolt: {fileID: 0}
-    rightBolt: {fileID: 0}
-    centerBolt: {fileID: 0}
+  - splashArt: {fileID: 21300000, guid: e3414fbf64a4a1141a9d7dc831842ccf, type: 3}
+    avatarFrame: {fileID: 1240560177, guid: 96115246966fcd24eab773e70fcb9578, type: 3}
+    leftBolt: {fileID: 21300000, guid: efe5c70118bef504991ce8bf2d412e24, type: 3}
+    rightBolt: {fileID: 21300000, guid: 3880fe4eea0075b4a9a7a98a70b1bba6, type: 3}
+    centerBolt: {fileID: -108640937, guid: cf1180f260d21764a85f6ebe1228a1d6, type: 3}
   - splashArt: {fileID: 21300000, guid: 5e9212bde3618e340becff49724daf53, type: 3}
     avatarFrame: {fileID: -444606453, guid: b78a700afb6392740966a5ef2e61530c, type: 3}
     leftBolt: {fileID: 21300000, guid: 1695563bdd0398e4f9e2a418fb29b200, type: 3}
