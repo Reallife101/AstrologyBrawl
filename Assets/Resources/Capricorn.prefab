@@ -747,11 +747,11 @@ MonoBehaviour:
     Path: event:/FastFall
   lightattacksound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 533802810
+      Data2: 1243693032
+      Data3: -906701904
+      Data4: -831920323
+    Path: event:/Capricorn (CA)/Capricorn spear
   heavyattackchargesound:
     Guid:
       Data1: 0
@@ -761,11 +761,11 @@ MonoBehaviour:
     Path: 
   heavyattackreleasesound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 533802810
+      Data2: 1243693032
+      Data3: -906701904
+      Data4: -831920323
+    Path: event:/Capricorn (CA)/Capricorn spear
   ability1sound:
     Guid:
       Data1: 0
@@ -775,11 +775,11 @@ MonoBehaviour:
     Path: 
   ability2sound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1264464040
+      Data2: 1179024794
+      Data3: -1763680362
+      Data4: 1918761761
+    Path: event:/Capricorn (CA)/Capricorn sLide
   attackvoice:
     Guid:
       Data1: -1104027222
