@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: 564997270
     Data4: -1126912555
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -46,7 +46,7 @@ MonoBehaviour:
     Data3: -1228987717
     Data4: -516991635
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -54,142 +54,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3465
---- !u!114 &-8488749411895992398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Capricorn (CA)/Capricorn Victory Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Capricorn (CA)/Capricorn Victory Voice
-  Guid:
-    Data1: 869527300
-    Data2: 1159464525
-    Data3: 1063042962
-    Data4: 1367324466
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
---- !u!114 &-8409273424665994597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Virgo (VG)/Virgo Damage Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Virgo (VG)/Virgo Damage Voice
-  Guid:
-    Data1: 1205598160
-    Data2: 1246793452
-    Data3: -131819852
-    Data4: 459491209
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
---- !u!114 &-8356484153128492873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Taurus
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/Taurus
-  Guid:
-    Data1: -1436120717
-    Data2: 1155067785
-    Data3: 621703311
-    Data4: -1751653803
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 6364695904951752388}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &-8222587944653003359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Capricorn (CA)/Capricorn Attack Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Capricorn (CA)/Capricorn Attack Voice
-  Guid:
-    Data1: -1104027222
-    Data2: 1239861685
-    Data3: -1277083735
-    Data4: 1680414283
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
---- !u!114 &-7944024992747899263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Hermit
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/Hermit
-  Guid:
-    Data1: -1889848023
-    Data2: 1300722442
-    Data3: 288359859
-    Data4: 670545370
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2843
 --- !u!114 &-7616757528538731731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,7 +73,7 @@ MonoBehaviour:
     Data3: 1884798358
     Data4: -1317846454
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -236,7 +100,7 @@ MonoBehaviour:
     Data3: 1437124261
     Data4: 652925392
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -244,30 +108,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2972
---- !u!114 &-7382552766045341844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Libra/AnnouncerTalk
-  m_EditorClassIdentifier: 
-  Name: AnnouncerTalk
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 246210629
-    data2: 2095916552
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
 --- !u!114 &-7350249272793856034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,7 +127,7 @@ MonoBehaviour:
     Data3: -1102698050
     Data4: 623309370
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -295,33 +135,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 218
---- !u!114 &-7304383560784335671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/321Slay
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/321Slay
-  Guid:
-    Data1: 1391915311
-    Data2: 1267270304
-    Data3: 1312401816
-    Data4: 818059262
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3812
 --- !u!114 &-7285416223523789095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,7 +154,7 @@ MonoBehaviour:
     Data3: 1573820297
     Data4: 596767288
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -349,112 +162,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 851
---- !u!114 &-6930112243324732438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Virgo (VG)/Virgo Attack
-  m_EditorClassIdentifier: 
-  Path: event:/Virgo (VG)/Virgo Attack
-  Guid:
-    Data1: -247246527
-    Data2: 1107207506
-    Data3: -1919763023
-    Data4: -874639183
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 801
---- !u!114 &-6834676923208619102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Capricorn
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/Capricorn
-  Guid:
-    Data1: 583838856
-    Data2: 1285570630
-    Data3: 980489370
-    Data4: -906983756
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -6709601964425037898}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1750
---- !u!114 &-6709601964425037898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Capricorn/SettinsShutup
-  m_EditorClassIdentifier: 
-  Name: SettinsShutup
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1966042459
-    data2: 2710536665
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-6590059678681737038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Keystrokes
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Keystrokes
-  Guid:
-    Data1: -1115074577
-    Data2: 1119489144
-    Data3: -301214804
-    Data4: 1877555012
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 78
 --- !u!114 &-6568536987899936222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,7 +181,7 @@ MonoBehaviour:
     Data3: 1391707055
     Data4: -1837866644
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -501,7 +208,7 @@ MonoBehaviour:
     Data3: 634649991
     Data4: 1147410623
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -509,7 +216,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &-6037072545927275516
+--- !u!114 &-6218431442636099865
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -519,51 +226,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Justice
+  m_Name: event:/(TEMP) Main Menu Theme
   m_EditorClassIdentifier: 
-  Path: event:/Announcer/Justice
+  Path: event:/(TEMP) Main Menu Theme
   Guid:
-    Data1: 390059741
-    Data2: 1229428092
-    Data3: -2058298218
-    Data4: 2059401460
+    Data1: 1142580733
+    Data2: 1271012895
+    Data3: -280540998
+    Data4: -1317060781
   Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
+  - {fileID: 910700195325563845}
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &-5931174721605891382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Virgo
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/Virgo
-  Guid:
-    Data1: -1223665776
-    Data2: 1214094676
-    Data3: -1164788036
-    Data4: -595582908
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
-  - {fileID: 8943437988637838088}
+  - {fileID: -3842981004010903497}
   MinDistance: 1
   MaxDistance: 20
-  Length: 968
+  Length: 168359
 --- !u!114 &-5842873284545672320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -583,7 +263,7 @@ MonoBehaviour:
     Data3: 1691782027
     Data4: 1085473424
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -610,7 +290,7 @@ MonoBehaviour:
     Data3: 397945496
     Data4: -709250645
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -637,7 +317,7 @@ MonoBehaviour:
     Data3: -677033027
     Data4: 1861507773
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -664,7 +344,7 @@ MonoBehaviour:
     Data3: 1160808085
     Data4: 405861565
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -717,7 +397,7 @@ MonoBehaviour:
     Data3: -2077059689
     Data4: 1278829412
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -725,169 +405,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &-4949130272824331707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Capricorn (CA)/Ca Iconic Stregnth Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Capricorn (CA)/Ca Iconic Stregnth Voice
-  Guid:
-    Data1: 314669930
-    Data2: 1274650585
-    Data3: -2076143447
-    Data4: 1456430890
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1625
---- !u!114 &-4828083951354538098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/impact1 2
-  m_EditorClassIdentifier: 
-  Path: event:/UI/impact1 2
-  Guid:
-    Data1: 845027891
-    Data2: 1224739031
-    Data3: 164497049
-    Data4: 394414120
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4796
---- !u!114 &-4815091511254873646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Capricorn (CA)/Capricorn Damage Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Capricorn (CA)/Capricorn Damage Voice
-  Guid:
-    Data1: -1387075763
-    Data2: 1239139020
-    Data3: 1835469218
-    Data4: -1725844810
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
---- !u!114 &-4673643018391920031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/BussInPoots
-  m_EditorClassIdentifier: 
-  Path: event:/Music/BussInPoots
-  Guid:
-    Data1: 1349669798
-    Data2: 1093663179
-    Data3: -1827256953
-    Data4: -429874171
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 145037
---- !u!114 &-4514876365749259543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Libra
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/Libra
-  Guid:
-    Data1: 1966995081
-    Data2: 1243814356
-    Data3: 1885168060
-    Data4: 268375705
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -7382552766045341844}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
---- !u!114 &-4506099226893095456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Cancer (CN)/Cancer Shield
-  m_EditorClassIdentifier: 
-  Path: event:/Cancer (CN)/Cancer Shield
-  Guid:
-    Data1: -1261290147
-    Data2: 1231724638
-    Data3: 1919622330
-    Data4: -1974474101
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4117
 --- !u!114 &-4366192454331590454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -907,7 +424,7 @@ MonoBehaviour:
     Data3: -138741613
     Data4: 28729500
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -915,57 +432,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2925
---- !u!114 &-4155293376680256491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Pisces (PC)/Pisces Victory Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Pisces (PC)/Pisces Victory Voice
-  Guid:
-    Data1: -1999153862
-    Data2: 1123723950
-    Data3: 1572176054
-    Data4: 500519764
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4000
---- !u!114 &-3875103083308518905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SettinsShutup
-  m_EditorClassIdentifier: 
-  Name: SettinsShutup
-  StudioPath: parameter:/SettinsShutup
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1966042459
-    data2: 2710536665
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
 --- !u!114 &-3867045300390919784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -985,7 +451,7 @@ MonoBehaviour:
     Data3: 510496912
     Data4: -1707087921
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -993,7 +459,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 917
---- !u!114 &-3791333253392645349
+--- !u!114 &-3842981004010903497
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1002,24 +468,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Aquarius (AQ)/Aquarius Damage Voice
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/(TEMP) Main Menu Theme/Volume
   m_EditorClassIdentifier: 
-  Path: event:/Aquarius (AQ)/Aquarius Damage Voice
-  Guid:
-    Data1: -485841161
-    Data2: 1255842819
-    Data3: 2129322161
-    Data4: 324557104
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1839987030
+    data2: 1741563014
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Value A
+  - Value B
+  Exists: 1
 --- !u!114 &-3765266435257821101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1039,7 +504,7 @@ MonoBehaviour:
     Data3: 3072182
     Data4: 1578027079
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1047,60 +512,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
---- !u!114 &-3762231240372877815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Capricorn (CA)/Capricorn Respawn Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Capricorn (CA)/Capricorn Respawn Voice
-  Guid:
-    Data1: -573473308
-    Data2: 1153302262
-    Data3: -470959231
-    Data4: 1083486024
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
---- !u!114 &-3718211490842926672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Cancer (CN)/Cancer Charge
-  m_EditorClassIdentifier: 
-  Path: event:/Cancer (CN)/Cancer Charge
-  Guid:
-    Data1: -1517887447
-    Data2: 1098368656
-    Data3: -2105465685
-    Data4: 1065794497
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1053
 --- !u!114 &-3679000357358842019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1120,7 +531,7 @@ MonoBehaviour:
     Data3: -1722925409
     Data4: 658872387
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1128,30 +539,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
---- !u!114 &-3407434337811629415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Aquarius/SettinsShutup
-  m_EditorClassIdentifier: 
-  Name: SettinsShutup
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1966042459
-    data2: 2710536665
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
 --- !u!114 &-3335018163260484010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1171,7 +558,7 @@ MonoBehaviour:
     Data3: 1383783859
     Data4: -449957530
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1198,7 +585,7 @@ MonoBehaviour:
     Data3: -1507220337
     Data4: -140887778
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1206,114 +593,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &-3271605384277266005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Islands
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Islands
-  Guid:
-    Data1: 775248801
-    Data2: 1219035378
-    Data3: -772691830
-    Data4: 1562494399
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 252813
---- !u!114 &-3251223045455474871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Celestial Clash Music
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Celestial Clash Music
-  Guid:
-    Data1: -170502654
-    Data2: 1194449377
-    Data3: -1662100302
-    Data4: 1318313397
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 186000
---- !u!114 &-3217899853899495800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/loading screen
-  m_EditorClassIdentifier: 
-  Path: event:/Music/loading screen
-  Guid:
-    Data1: 714408118
-    Data2: 1193095025
-    Data3: 547371402
-    Data4: 317877398
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 20000
---- !u!114 &-3166016570376576153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Virgo (VG)/Virgo Heavy Attack
-  m_EditorClassIdentifier: 
-  Path: event:/Virgo (VG)/Virgo Heavy Attack
-  Guid:
-    Data1: 469820706
-    Data2: 1266553227
-    Data3: 1242640553
-    Data4: 1862659302
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1474
 --- !u!114 &-3143920400263041233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1333,7 +612,7 @@ MonoBehaviour:
     Data3: 1153192324
     Data4: -1014409011
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1341,33 +620,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
---- !u!114 &-3056286344521619527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Aquarius (AQ)/Aquarius Title Wave Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Aquarius (AQ)/Aquarius Title Wave Voice
-  Guid:
-    Data1: -84534936
-    Data2: 1292811821
-    Data3: -1235877487
-    Data4: -1420845508
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
 --- !u!114 &-2986071066422277214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1387,7 +639,7 @@ MonoBehaviour:
     Data3: -1389501528
     Data4: -1006291035
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1414,7 +666,7 @@ MonoBehaviour:
     Data3: 311565232
     Data4: 1173628407
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1422,115 +674,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &-2702765725181113288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/1...
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/1...
-  Guid:
-    Data1: 1264240086
-    Data2: 1105528390
-    Data3: -274889600
-    Data4: 1278233302
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 756
---- !u!114 &-2599419772389147929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/(TEMP) Main Menu Theme
-  m_EditorClassIdentifier: 
-  Path: event:/Music/(TEMP) Main Menu Theme
-  Guid:
-    Data1: 1142580733
-    Data2: 1271012895
-    Data3: -280540998
-    Data4: -1317060781
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 3627179244465005877}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 168359
---- !u!114 &-2462118521170024594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/3...
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/3...
-  Guid:
-    Data1: 1747877047
-    Data2: 1340037773
-    Data3: 868667575
-    Data4: 108451491
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 756
---- !u!114 &-2150209589944865842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Fool
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/Fool
-  Guid:
-    Data1: -1567433552
-    Data2: 1164271591
-    Data3: -654593106
-    Data4: -1507531412
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3343
 --- !u!114 &-2066331625435853405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1550,7 +693,7 @@ MonoBehaviour:
     Data3: 567446449
     Data4: -729169108
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1577,7 +720,7 @@ MonoBehaviour:
     Data3: 329663414
     Data4: 184893349
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1604,7 +747,7 @@ MonoBehaviour:
     Data3: 1190805427
     Data4: 936428293
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1612,57 +755,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 851
---- !u!114 &-1934931016338430628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/AnnouncerTalk
-  m_EditorClassIdentifier: 
-  Name: AnnouncerTalk
-  StudioPath: parameter:/AnnouncerTalk
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 246210629
-    data2: 2095916552
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-1878284343584055070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/NeutralUi
-  m_EditorClassIdentifier: 
-  Path: event:/UI/NeutralUi
-  Guid:
-    Data1: -427644310
-    Data2: 1108868445
-    Data3: 189116075
-    Data4: 1197443566
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2502
 --- !u!114 &-1777255760358067772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1682,7 +774,7 @@ MonoBehaviour:
     Data3: -1246489950
     Data4: 412728660
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1690,7 +782,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1750
---- !u!114 &-1772333980007223227
+--- !u!114 &-1651008114022119569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1699,51 +791,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Capricorn (CA)/Capricorn sLide
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: event:/Capricorn (CA)/Capricorn sLide
-  Guid:
-    Data1: -1264464040
-    Data2: 1179024794
-    Data3: -1763680362
-    Data4: 1918761761
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1000
---- !u!114 &-1489029855961638409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Magician
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/Magician
-  Guid:
-    Data1: 1047448305
-    Data2: 1266051591
-    Data3: -1086944868
-    Data4: 306392912
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2562
+  Path: ../../AstrologyBrawl/Assets/FMODAssets/Desktop/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638218756622902433
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-1428845291307465229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1763,7 +819,7 @@ MonoBehaviour:
     Data3: -1935988089
     Data4: -1291071886
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1790,7 +846,7 @@ MonoBehaviour:
     Data3: -1526947184
     Data4: 788834218
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1817,7 +873,7 @@ MonoBehaviour:
     Data3: -1876062283
     Data4: 1543031840
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1844,34 +900,7 @@ MonoBehaviour:
     Data3: -2033737287
     Data4: -1090205975
   Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
---- !u!114 &-844111625997615919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Pisces (PC)/Pisces Damage Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Pisces (PC)/Pisces Damage Voice
-  Guid:
-    Data1: -1821374027
-    Data2: 1126954446
-    Data3: -1690275952
-    Data4: -1159239393
-  Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1898,7 +927,7 @@ MonoBehaviour:
     Data3: 529385401
     Data4: -1657758984
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1925,7 +954,7 @@ MonoBehaviour:
     Data3: -1962647923
     Data4: 237502819
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1952,7 +981,7 @@ MonoBehaviour:
     Data3: 2115461765
     Data4: -905774924
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1960,80 +989,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1050
---- !u!114 &-423576715907244823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMODAssets/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638218741132792305
-  FileSizes:
-  - Name: Desktop
-    Value: 7540
-  Exists: 1
---- !u!114 &-419084589831450097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/impact1
-  m_EditorClassIdentifier: 
-  Path: event:/UI/impact1
-  Guid:
-    Data1: 1775074155
-    Data2: 1317908135
-    Data3: -1313859696
-    Data4: -686544165
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 585
---- !u!114 &-341042742000911648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/More Guitars
-  m_EditorClassIdentifier: 
-  Path: event:/Music/More Guitars
-  Guid:
-    Data1: 1463931739
-    Data2: 1253229809
-    Data3: -907661944
-    Data4: -552830706
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 103680
 --- !u!114 &-78691100123447270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2053,7 +1008,7 @@ MonoBehaviour:
     Data3: 140431260
     Data4: -1452225945
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2074,163 +1029,97 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -423576715907244823}
-  - {fileID: 5699252278564185875}
+  - {fileID: -1651008114022119569}
+  - {fileID: 910700195325563845}
   EditorEvents:
   - {fileID: -78691100123447270}
   - {fileID: -439492028236129477}
-  - {fileID: -3251223045455474871}
-  - {fileID: -8488749411895992398}
-  - {fileID: 111372003117428352}
   - {fileID: 978611887220548427}
   - {fileID: 6053082743254461098}
-  - {fileID: 2256456953597922448}
-  - {fileID: 4165382548872628894}
   - {fileID: -3765266435257821101}
   - {fileID: -6483053597717437425}
-  - {fileID: 6418898718521070447}
   - {fileID: 6138761524405980204}
   - {fileID: -684834414825000215}
   - {fileID: 1871934415848060467}
   - {fileID: 3961065775026169113}
   - {fileID: -3335018163260484010}
-  - {fileID: -3166016570376576153}
   - {fileID: -1428845291307465229}
-  - {fileID: 3131734064899439894}
-  - {fileID: -7944024992747899263}
-  - {fileID: -3718211490842926672}
   - {fileID: 4043949412816014561}
   - {fileID: 9085232414821057743}
   - {fileID: 4593242121145280466}
-  - {fileID: -7304383560784335671}
-  - {fileID: -4828083951354538098}
   - {fileID: 8346856308836847952}
   - {fileID: 8078834840099683431}
-  - {fileID: 8540598636879207322}
-  - {fileID: -4155293376680256491}
   - {fileID: -2066331625435853405}
-  - {fileID: 7860827766547468475}
   - {fileID: 3673829253854948431}
-  - {fileID: -6930112243324732438}
   - {fileID: 4709293013915733927}
   - {fileID: 4455382454194963154}
-  - {fileID: 1638978676860585811}
   - {fileID: -8550140095383896637}
-  - {fileID: 685319234161672257}
   - {fileID: 1636204277741448980}
-  - {fileID: -4815091511254873646}
   - {fileID: -1777255760358067772}
   - {fileID: 3066689170312980949}
-  - {fileID: -1772333980007223227}
   - {fileID: 4227458148643175281}
-  - {fileID: -341042742000911648}
-  - {fileID: 1458492227310775104}
-  - {fileID: -4506099226893095456}
   - {fileID: -736029140543508117}
   - {fileID: 3719329730685618539}
-  - {fileID: 8603148992003737467}
   - {fileID: 6100926398562129783}
   - {fileID: -6568536987899936222}
-  - {fileID: -3056286344521619527}
   - {fileID: -5668213203879038544}
-  - {fileID: -4949130272824331707}
-  - {fileID: -1878284343584055070}
-  - {fileID: -419084589831450097}
-  - {fileID: 6343624449635531141}
-  - {fileID: 7088379722427431478}
-  - {fileID: -8356484153128492873}
   - {fileID: -5259422602184141858}
   - {fileID: 7263251950023504049}
   - {fileID: 1752164435273198650}
-  - {fileID: 5905339629590798651}
   - {fileID: 2823316963382892198}
-  - {fileID: 3505112024907210717}
   - {fileID: 3357464053147953461}
   - {fileID: 3531050255776895219}
-  - {fileID: 6778930990282300071}
   - {fileID: -1949484004039023257}
-  - {fileID: -6834676923208619102}
-  - {fileID: -4514876365749259543}
-  - {fileID: 2243066518774910211}
-  - {fileID: 2946185169351413204}
-  - {fileID: 3165220850111729279}
-  - {fileID: -5931174721605891382}
   - {fileID: -3679000357358842019}
   - {fileID: -1304062251402408108}
-  - {fileID: 6316310394032404481}
   - {fileID: -1293595666112218422}
-  - {fileID: 2106283524334279380}
   - {fileID: -7285416223523789095}
   - {fileID: -4954259644272995270}
   - {fileID: -7616757528538731731}
   - {fileID: 9210938443173184042}
   - {fileID: 8086281631162656011}
-  - {fileID: 6092289790490629670}
-  - {fileID: -3271605384277266005}
   - {fileID: -5665577190261935462}
-  - {fileID: -4673643018391920031}
-  - {fileID: -8222587944653003359}
   - {fileID: -2986071066422277214}
   - {fileID: -3143920400263041233}
-  - {fileID: 1644305213321731364}
-  - {fileID: 5628814043565699391}
-  - {fileID: 2791117383575777906}
-  - {fileID: -2150209589944865842}
   - {fileID: 7206392799360559966}
-  - {fileID: 7694617575108619914}
-  - {fileID: -844111625997615919}
-  - {fileID: -3217899853899495800}
   - {fileID: -5842873284545672320}
   - {fileID: 3971922913437575621}
   - {fileID: 4696831364075090870}
-  - {fileID: -2462118521170024594}
   - {fileID: -2723915550942604804}
   - {fileID: 5923335152042764339}
   - {fileID: 8748156863949148304}
-  - {fileID: 5366362718635007803}
   - {fileID: 4597554948296424854}
   - {fileID: 2013456539417885}
   - {fileID: -1225503484679032928}
   - {fileID: -4366192454331590454}
   - {fileID: -8940426239386040061}
-  - {fileID: 8191450688674279838}
   - {fileID: 6284826613271733291}
-  - {fileID: 2328062140091999998}
   - {fileID: -7350249272793856034}
   - {fileID: -7409618456165250379}
-  - {fileID: -8409273424665994597}
-  - {fileID: -2702765725181113288}
-  - {fileID: 5642342269519091856}
-  - {fileID: -6037072545927275516}
   - {fileID: 8450886221247965010}
   - {fileID: 8413092221969431644}
   - {fileID: 4149557530260193912}
   - {fileID: 4844895680634704090}
-  - {fileID: -3762231240372877815}
   - {fileID: 778879419295014844}
-  - {fileID: 5518699302507917675}
   - {fileID: -1988114938967124445}
   - {fileID: 7693278665004268738}
   - {fileID: -3867045300390919784}
-  - {fileID: -6590059678681737038}
-  - {fileID: -1489029855961638409}
-  - {fileID: 8873335755337751098}
   - {fileID: 765871553185909564}
   - {fileID: -3289437425630369647}
-  - {fileID: -3791333253392645349}
-  - {fileID: 2022401058966245245}
-  - {fileID: 6636871252955763244}
-  - {fileID: -2599419772389147929}
-  - {fileID: 9183477917242721176}
+  - {fileID: 6641812388216685941}
+  - {fileID: 1493133440687102646}
+  - {fileID: 5427715483871821627}
+  - {fileID: 577714576624968674}
+  - {fileID: 5861730576162907018}
+  - {fileID: 9059200747553110896}
+  - {fileID: -6218431442636099865}
   EditorParameters:
   - {fileID: -5137650889311086173}
-  - {fileID: -1934931016338430628}
-  - {fileID: -3875103083308518905}
   MasterBanks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   StringsBanks:
-  - {fileID: -423576715907244823}
-  cacheTime: 638218741132792305
+  - {fileID: -1651008114022119569}
+  cacheTime: 638218756622902433
   cacheVersion: 131601
 --- !u!114 &2013456539417885
 MonoBehaviour:
@@ -2251,7 +1140,7 @@ MonoBehaviour:
     Data3: 1135499949
     Data4: 587341009
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2259,7 +1148,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9578
---- !u!114 &111372003117428352
+--- !u!114 &577714576624968674
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2269,74 +1158,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Lovers
+  m_Name: event:/(TEMP) Battle Theme Reduced
   m_EditorClassIdentifier: 
-  Path: event:/Announcer/Lovers
+  Path: event:/(TEMP) Battle Theme Reduced
   Guid:
-    Data1: 1320660746
-    Data2: 1198000841
-    Data3: -1232029802
-    Data4: 914891046
+    Data1: 69511857
+    Data2: 1243223215
+    Data3: 441812658
+    Data4: -1719780496
   Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
+  - {fileID: 910700195325563845}
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2750
---- !u!114 &198549635895498610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Saggi/SettinsShutup
-  m_EditorClassIdentifier: 
-  Name: SettinsShutup
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1966042459
-    data2: 2710536665
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &685319234161672257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Virgo (VG)/Virgo Pull Attack
-  m_EditorClassIdentifier: 
-  Path: event:/Virgo (VG)/Virgo Pull Attack
-  Guid:
-    Data1: -2050635957
-    Data2: 1321921361
-    Data3: -621096297
-    Data4: 1572796885
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1187
+  Length: 76504
 --- !u!114 &765871553185909564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2356,7 +1194,7 @@ MonoBehaviour:
     Data3: -235844467
     Data4: -698786609
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2383,7 +1221,7 @@ MonoBehaviour:
     Data3: 964185256
     Data4: 376819974
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2391,6 +1229,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &910700195325563845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../AstrologyBrawl/Assets/FMODAssets/Desktop/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638218756622832295
+  FileSizes: []
+  Exists: 1
 --- !u!114 &978611887220548427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2410,7 +1266,7 @@ MonoBehaviour:
     Data3: 1685316263
     Data4: -997324729
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2418,7 +1274,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5395
---- !u!114 &1458492227310775104
+--- !u!114 &1493133440687102646
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2428,23 +1284,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Cancer (CN)/Cancer Heavy 2
+  m_Name: event:/Pisces (PC)/Pices Fish Swim
   m_EditorClassIdentifier: 
-  Path: event:/Cancer (CN)/Cancer Heavy 2
+  Path: event:/Pisces (PC)/Pices Fish Swim
   Guid:
-    Data1: -430308003
-    Data2: 1306152499
-    Data3: -1594798707
-    Data4: 1152901815
+    Data1: -984400570
+    Data2: 1303075193
+    Data3: -721394765
+    Data4: 303674936
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 964
+  Length: 8000
 --- !u!114 &1636204277741448980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2464,7 +1320,7 @@ MonoBehaviour:
     Data3: 76588210
     Data4: -1051428563
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2472,61 +1328,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 343
---- !u!114 &1638978676860585811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Pisces (PC)/Pisces Fish Swim
-  m_EditorClassIdentifier: 
-  Path: event:/Pisces (PC)/Pisces Fish Swim
-  Guid:
-    Data1: -984400570
-    Data2: 1303075193
-    Data3: -721394765
-    Data4: 303674936
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
---- !u!114 &1644305213321731364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Aquarius
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/Aquarius
-  Guid:
-    Data1: -1178742357
-    Data2: 1189879377
-    Data3: 1907597457
-    Data4: 1737288912
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -3407434337811629415}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2363
 --- !u!114 &1752164435273198650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2546,7 +1347,7 @@ MonoBehaviour:
     Data3: -139076464
     Data4: 1774606826
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2573,7 +1374,7 @@ MonoBehaviour:
     Data3: -1895601235
     Data4: -1750622745
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2581,168 +1382,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3500
---- !u!114 &2022401058966245245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Pisces (PC)/Pisces Fishing Rod Whip
-  m_EditorClassIdentifier: 
-  Path: event:/Pisces (PC)/Pisces Fishing Rod Whip
-  Guid:
-    Data1: -907009542
-    Data2: 1218695768
-    Data3: 2141669307
-    Data4: 1654560629
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1000
---- !u!114 &2106283524334279380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/impact1.1
-  m_EditorClassIdentifier: 
-  Path: event:/UI/impact1.1
-  Guid:
-    Data1: 2026312088
-    Data2: 1176558599
-    Data3: -366173249
-    Data4: 570158571
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 659
---- !u!114 &2243066518774910211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Capricorn (CA)/Capricorn GroundPound
-  m_EditorClassIdentifier: 
-  Path: event:/Capricorn (CA)/Capricorn GroundPound
-  Guid:
-    Data1: 403828107
-    Data2: 1228274105
-    Data3: -2110872416
-    Data4: -1069981324
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1000
---- !u!114 &2256456953597922448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Capricorn (CA)/Ca Iconic Speed Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Capricorn (CA)/Ca Iconic Speed Voice
-  Guid:
-    Data1: -1260922609
-    Data2: 1276491315
-    Data3: 2046406047
-    Data4: -225144026
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
---- !u!114 &2328062140091999998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Choose
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/Choose
-  Guid:
-    Data1: -1466128180
-    Data2: 1150216829
-    Data3: 1208489611
-    Data4: 80150440
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2843
---- !u!114 &2791117383575777906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Extended Battle Music
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Extended Battle Music
-  Guid:
-    Data1: 1624887216
-    Data2: 1135307506
-    Data3: -1937159763
-    Data4: -2101571560
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 286275
 --- !u!114 &2823316963382892198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2762,34 +1401,7 @@ MonoBehaviour:
     Data3: 1777311412
     Data4: -2107453122
   Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
---- !u!114 &2946185169351413204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Capricorn (CA)/Ca Iconic Heal Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Capricorn (CA)/Ca Iconic Heal Voice
-  Guid:
-    Data1: -421097076
-    Data2: 1254744464
-    Data3: -1337350759
-    Data4: -2053918514
-  Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2816,7 +1428,7 @@ MonoBehaviour:
     Data3: 251439264
     Data4: -778367763
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2824,60 +1436,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6000
---- !u!114 &3131734064899439894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/UnselectUi
-  m_EditorClassIdentifier: 
-  Path: event:/UI/UnselectUi
-  Guid:
-    Data1: -1759689433
-    Data2: 1233711861
-    Data3: -609466955
-    Data4: -1558573176
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2006
---- !u!114 &3165220850111729279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/WalB
-  m_EditorClassIdentifier: 
-  Path: event:/Music/WalB
-  Guid:
-    Data1: 2007828365
-    Data2: 1228640462
-    Data3: 1446049696
-    Data4: -964102593
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 111624
 --- !u!114 &3357464053147953461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2897,7 +1455,7 @@ MonoBehaviour:
     Data3: 240547753
     Data4: -182290035
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2905,33 +1463,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
---- !u!114 &3505112024907210717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Taurus (TA)/Taurus Damage Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Taurus (TA)/Taurus Damage Voice
-  Guid:
-    Data1: 1451593343
-    Data2: 1120576169
-    Data3: -160908914
-    Data4: 8208989
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
 --- !u!114 &3531050255776895219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2951,7 +1482,7 @@ MonoBehaviour:
     Data3: 1436951690
     Data4: 2095233066
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2959,32 +1490,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &3627179244465005877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/(TEMP) Main Menu Theme/Volume
-  m_EditorClassIdentifier: 
-  Name: Volume
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1839987030
-    data2: 1741563014
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Value A
-  - Value B
-  Exists: 1
 --- !u!114 &3673829253854948431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3004,7 +1509,7 @@ MonoBehaviour:
     Data3: -148578409
     Data4: -1556125262
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3031,14 +1536,14 @@ MonoBehaviour:
     Data3: -1832606315
     Data4: -45864446
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8875
+  Length: 9000
 --- !u!114 &3961065775026169113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3058,7 +1563,7 @@ MonoBehaviour:
     Data3: 2006464920
     Data4: 977703238
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3085,7 +1590,7 @@ MonoBehaviour:
     Data3: 1466027423
     Data4: -143157867
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3112,7 +1617,7 @@ MonoBehaviour:
     Data3: -1077149509
     Data4: 1707959568
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3139,7 +1644,7 @@ MonoBehaviour:
     Data3: 1762665647
     Data4: 1224170781
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3147,33 +1652,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2583
---- !u!114 &4165382548872628894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Slay
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/Slay
-  Guid:
-    Data1: 1030979091
-    Data2: 1282668029
-    Data3: 1355236771
-    Data4: 733032710
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 756
 --- !u!114 &4227458148643175281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3193,7 +1671,7 @@ MonoBehaviour:
     Data3: 259861381
     Data4: -2009190084
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3220,7 +1698,7 @@ MonoBehaviour:
     Data3: -1788898155
     Data4: -1801022742
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3247,7 +1725,7 @@ MonoBehaviour:
     Data3: -223500928
     Data4: 1253733636
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3274,7 +1752,7 @@ MonoBehaviour:
     Data3: 1968146111
     Data4: -1102220653
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3282,30 +1760,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2360
---- !u!114 &4647956028788367559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Pisces/SettinsShutup
-  m_EditorClassIdentifier: 
-  Name: SettinsShutup
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1966042459
-    data2: 2710536665
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
 --- !u!114 &4696831364075090870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3325,7 +1779,7 @@ MonoBehaviour:
     Data3: 435654846
     Data4: -1281782737
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3352,7 +1806,7 @@ MonoBehaviour:
     Data3: -1371122519
     Data4: 927858830
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3379,7 +1833,7 @@ MonoBehaviour:
     Data3: -1120550478
     Data4: 1280202117
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3387,7 +1841,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
---- !u!114 &5366362718635007803
+--- !u!114 &5427715483871821627
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3397,52 +1851,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Saggi
+  m_Name: event:/Extended Battle Music
   m_EditorClassIdentifier: 
-  Path: event:/Announcer/Saggi
+  Path: event:/Extended Battle Music
   Guid:
-    Data1: 931241406
-    Data2: 1141793210
-    Data3: 1221785473
-    Data4: 804555774
+    Data1: 1624887216
+    Data2: 1135307506
+    Data3: -1937159763
+    Data4: -2101571560
   Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
+  - {fileID: 910700195325563845}
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 198549635895498610}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2199
---- !u!114 &5518699302507917675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Capricorn (CA)/Capricorn On Select Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Capricorn (CA)/Capricorn On Select Voice
-  Guid:
-    Data1: 1215762150
-    Data2: 1266104455
-    Data3: -648354652
-    Data4: -236143736
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8000
---- !u!114 &5628814043565699391
+  Length: 286275
+--- !u!114 &5861730576162907018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3452,97 +1878,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Capricorn (CA)/Capricorn spear 2
+  m_Name: event:/Aquarium Song
   m_EditorClassIdentifier: 
-  Path: event:/Capricorn (CA)/Capricorn spear 2
+  Path: event:/Aquarium Song
   Guid:
-    Data1: -872434516
-    Data2: 1151191681
-    Data3: 2037100943
-    Data4: 972618601
+    Data1: -339995970
+    Data2: 1100960549
+    Data3: -196670544
+    Data4: -944121244
   Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
+  - {fileID: 910700195325563845}
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1500
---- !u!114 &5642342269519091856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/BurntOut
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/BurntOut
-  Guid:
-    Data1: -952488486
-    Data2: 1300653006
-    Data3: 1302476731
-    Data4: -347987142
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1406
---- !u!114 &5699252278564185875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMODAssets/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638218741132723936
-  FileSizes:
-  - Name: Desktop
-    Value: 32979328
-  Exists: 1
---- !u!114 &5905339629590798651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Devil
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/Devil
-  Guid:
-    Data1: 1452373627
-    Data2: 1274321196
-    Data3: -758143848
-    Data4: 988583424
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3812
+  Length: 184864
 --- !u!114 &5923335152042764339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3562,7 +1914,7 @@ MonoBehaviour:
     Data3: -1156528714
     Data4: 1321550430
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3589,7 +1941,7 @@ MonoBehaviour:
     Data3: 1323264156
     Data4: -987561253
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3597,33 +1949,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
---- !u!114 &6092289790490629670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/2...
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/2...
-  Guid:
-    Data1: -1284115808
-    Data2: 1237778456
-    Data3: 968809397
-    Data4: -589822538
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 756
 --- !u!114 &6100926398562129783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3643,7 +1968,7 @@ MonoBehaviour:
     Data3: 1595074994
     Data4: 309103581
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3651,30 +1976,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4000
---- !u!114 &6127501102234760167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Cancer/SettinsShutup
-  m_EditorClassIdentifier: 
-  Name: SettinsShutup
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1966042459
-    data2: 2710536665
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
 --- !u!114 &6138761524405980204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3694,7 +1995,7 @@ MonoBehaviour:
     Data3: 2081173430
     Data4: -450985090
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3721,7 +2022,7 @@ MonoBehaviour:
     Data3: 1697489289
     Data4: 293667316
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3729,7 +2030,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &6316310394032404481
+--- !u!114 &6641812388216685941
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3739,183 +2040,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Capricorn (CA)/Capricorn Tarot Voice
+  m_Name: event:/Pisces (PC)/PC Victory Voice
   m_EditorClassIdentifier: 
-  Path: event:/Capricorn (CA)/Capricorn Tarot Voice
+  Path: event:/Pisces (PC)/PC Victory Voice
   Guid:
-    Data1: 475510162
-    Data2: 1164902112
-    Data3: 1572658073
-    Data4: 847365052
+    Data1: -1999153862
+    Data2: 1123723950
+    Data3: 1572176054
+    Data4: 500519764
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8000
---- !u!114 &6343624449635531141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Victory
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/Victory
-  Guid:
-    Data1: -984106899
-    Data2: 1126282685
-    Data3: -426437502
-    Data4: 95791802
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &6364695904951752388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Taurus/SettinsShutup
-  m_EditorClassIdentifier: 
-  Name: SettinsShutup
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1966042459
-    data2: 2710536665
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &6418898718521070447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Pisces
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/Pisces
-  Guid:
-    Data1: -601522667
-    Data2: 1308830846
-    Data3: -779053638
-    Data4: 1182578633
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 4647956028788367559}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1156
---- !u!114 &6636871252955763244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Capricorn (CA)/Ca Iconic Flight Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Capricorn (CA)/Ca Iconic Flight Voice
-  Guid:
-    Data1: -1536262662
-    Data2: 1339542559
-    Data3: 1672892590
-    Data4: 1956204553
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
---- !u!114 &6778930990282300071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Cancer (CN)/Cancer Attack
-  m_EditorClassIdentifier: 
-  Path: event:/Cancer (CN)/Cancer Attack
-  Guid:
-    Data1: 1586669444
-    Data2: 1338643371
-    Data3: -13173116
-    Data4: -81618317
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1009
---- !u!114 &7088379722427431478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Aquarius (AQ)/Aquarius Heavy Attack Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Aquarius (AQ)/Aquarius Heavy Attack Voice
-  Guid:
-    Data1: 1352868210
-    Data2: 1264241035
-    Data3: -1146706513
-    Data4: -1921092142
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
+  Length: 4000
 --- !u!114 &7206392799360559966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3935,7 +2076,7 @@ MonoBehaviour:
     Data3: 313492112
     Data4: -1916934584
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3962,7 +2103,7 @@ MonoBehaviour:
     Data3: -125166946
     Data4: -1575502301
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3970,32 +2111,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
---- !u!114 &7486530707295170229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Main Menu/Volume
-  m_EditorClassIdentifier: 
-  Name: Volume
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1839987030
-    data2: 1741563014
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Value A
-  - Value B
-  Exists: 1
 --- !u!114 &7693278665004268738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4015,7 +2130,7 @@ MonoBehaviour:
     Data3: 1025153712
     Data4: 2054601307
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4023,61 +2138,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
---- !u!114 &7694617575108619914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Capricorn (CA)/Capricorn Iconic Charge Voice
-  m_EditorClassIdentifier: 
-  Path: event:/Capricorn (CA)/Capricorn Iconic Charge Voice
-  Guid:
-    Data1: -977189454
-    Data2: 1326562620
-    Data3: 777324983
-    Data4: 1231829924
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &7860827766547468475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Announcer/Cancer
-  m_EditorClassIdentifier: 
-  Path: event:/Announcer/Cancer
-  Guid:
-    Data1: 1365889855
-    Data2: 1125739926
-    Data3: -1103859317
-    Data4: -1547910583
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 6127501102234760167}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1668
 --- !u!114 &8078834840099683431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4097,7 +2157,7 @@ MonoBehaviour:
     Data3: -345367372
     Data4: 934532357
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4124,7 +2184,7 @@ MonoBehaviour:
     Data3: -715757421
     Data4: -286641755
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4132,33 +2192,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &8191450688674279838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/titleUi
-  m_EditorClassIdentifier: 
-  Path: event:/UI/titleUi
-  Guid:
-    Data1: -926631733
-    Data2: 1145537893
-    Data3: -910011212
-    Data4: -1022674830
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1933
 --- !u!114 &8346856308836847952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4178,7 +2211,7 @@ MonoBehaviour:
     Data3: 1480557459
     Data4: 1468188696
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4205,7 +2238,7 @@ MonoBehaviour:
     Data3: 1439633814
     Data4: -499938434
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4232,7 +2265,7 @@ MonoBehaviour:
     Data3: 77830840
     Data4: 1009688033
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4240,61 +2273,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
---- !u!114 &8540598636879207322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Capricorn (CA)/Capricorn spear
-  m_EditorClassIdentifier: 
-  Path: event:/Capricorn (CA)/Capricorn spear
-  Guid:
-    Data1: 533802810
-    Data2: 1243693032
-    Data3: -906701904
-    Data4: -831920323
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 812
---- !u!114 &8603148992003737467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Main Menu
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Main Menu
-  Guid:
-    Data1: 1348328034
-    Data2: 1317507737
-    Data3: -1685221969
-    Data4: -897854348
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 7486530707295170229}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 171557
 --- !u!114 &8748156863949148304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4314,7 +2292,7 @@ MonoBehaviour:
     Data3: 464510604
     Data4: 1987611476
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4322,7 +2300,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1497
---- !u!114 &8873335755337751098
+--- !u!114 &9059200747553110896
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4332,47 +2310,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/SelectUi
+  m_Name: event:/Pisces (PC)/Pices Fishing Rod Whip
   m_EditorClassIdentifier: 
-  Path: event:/UI/SelectUi
+  Path: event:/Pisces (PC)/Pices Fishing Rod Whip
   Guid:
-    Data1: -1143937807
-    Data2: 1106699243
-    Data3: -788742743
-    Data4: 368500647
+    Data1: -907009542
+    Data2: 1218695768
+    Data3: 2141669307
+    Data4: 1654560629
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2006
---- !u!114 &8943437988637838088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Virgo/SettinsShutup
-  m_EditorClassIdentifier: 
-  Name: SettinsShutup
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1966042459
-    data2: 2710536665
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
+  Length: 1000
 --- !u!114 &9085232414821057743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4392,7 +2346,7 @@ MonoBehaviour:
     Data3: -1836245877
     Data4: -887069370
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4400,33 +2354,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
---- !u!114 &9183477917242721176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Aquarius Stage
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Aquarius Stage
-  Guid:
-    Data1: -511891074
-    Data2: 1212124290
-    Data3: 1132987040
-    Data4: 1996723085
-  Banks:
-  - {fileID: 5699252278564185875}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 184920
 --- !u!114 &9210938443173184042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4446,7 +2373,7 @@ MonoBehaviour:
     Data3: -1439335233
     Data4: -965248503
   Banks:
-  - {fileID: 5699252278564185875}
+  - {fileID: 910700195325563845}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
