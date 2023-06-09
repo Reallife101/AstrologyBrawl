@@ -1349,6 +1349,9 @@ MonoBehaviour:
   - sprite: {fileID: 21300000, guid: 0a9ac648b10614563a10fc4be7e505fa, type: 3}
     artName: The Devil Tarot
     artist: Daisy
+  - sprite: {fileID: 21300000, guid: 73135f93c3a792d459056c9f2b7d3303, type: 3}
+    artName: Devil Card Place Holder
+    artist: Cole
   - sprite: {fileID: 21300000, guid: 5efe607625660324793fac4f3dd929a0, type: 3}
     artName: Tarot Back
     artist: Joyce
@@ -1358,12 +1361,6 @@ MonoBehaviour:
   - sprite: {fileID: 21300000, guid: 369acce6420554760b05b2f0dc39ddbb, type: 3}
     artName: Cancer's Crustacean Confluence Background
     artist: Daniel
-  - sprite: {fileID: 21300000, guid: 0a9ac648b10614563a10fc4be7e505fa, type: 3}
-    artName: Devil Tarot Card
-    artist: Daisy
-  - sprite: {fileID: 21300000, guid: 73135f93c3a792d459056c9f2b7d3303, type: 3}
-    artName: Devil Card Place Holder
-    artist: Cole
   - sprite: {fileID: 21300000, guid: 408ffecc4ee064e47bd4a163fb6db866, type: 3}
     artName: Capricorn's Level
     artist: Daniel
@@ -1379,6 +1376,12 @@ MonoBehaviour:
   - sprite: {fileID: 21300000, guid: 771c5a33b3a4d9d46bb8cd3805148de7, type: 3}
     artName: Capricorn Concept
     artist: Khai
+  - sprite: {fileID: 21300000, guid: 58622e2fdab2f4d2ebba9119c90c3124, type: 3}
+    artName: Capricorn Splash
+    artist: Khai
+  - sprite: {fileID: 21300000, guid: 8f0a6e8d073fe425682a1e17d43b2692, type: 3}
+    artName: Capricorn Splash
+    artist: Joyce
   - sprite: {fileID: 21300000, guid: cf02d3fba9f4a8243ba0627fb5508279, type: 3}
     artName: Gemini Concept
     artist: Ocean

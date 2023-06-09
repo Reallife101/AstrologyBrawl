@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 400277707104299644}
   - component: {fileID: 400277707104299645}
   - component: {fileID: 400277707104299634}
-  - component: {fileID: 3098476500771328839}
   - component: {fileID: 7559605052088422129}
   m_Layer: 5
   m_Name: CountdownCanvas
@@ -103,53 +102,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &3098476500771328839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400277707104299635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a7b2807968327e458485612749c6dfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  threeSound:
-    Guid:
-      Data1: 1747877047
-      Data2: 1340037773
-      Data3: 868667575
-      Data4: 108451491
-    Path: event:/Announcer/3...
-  twoSound:
-    Guid:
-      Data1: -1284115808
-      Data2: 1237778456
-      Data3: 968809397
-      Data4: -589822538
-    Path: event:/Announcer/2...
-  oneSound:
-    Guid:
-      Data1: 1264240086
-      Data2: 1105528390
-      Data3: -274889600
-      Data4: 1278233302
-    Path: event:/Announcer/1...
-  slaySound:
-    Guid:
-      Data1: 1030979091
-      Data2: 1282668029
-      Data3: 1355236771
-      Data4: 733032710
-    Path: event:/Announcer/Slay
-  CountSound:
-    Guid:
-      Data1: 1391915311
-      Data2: 1267270304
-      Data3: 1312401816
-      Data4: 818059262
-    Path: event:/Announcer/321Slay
 --- !u!114 &7559605052088422129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422533f3d3ba7334bb9a08934b7a940a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdownText: {fileID: 400277707142103845}
+  countdownImages: []
   loadingScreen: {fileID: 0}
 --- !u!1 &400277707142103867
 GameObject:
