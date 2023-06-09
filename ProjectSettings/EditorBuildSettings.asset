@@ -38,12 +38,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Libra's Lament.unity
     guid: 9668c0d2e0ce878449058a3241dec811
-  - enabled: 1
+  - enabled: 0
     path: 
-    guid: c980cfd3f156c524c88fe63139e53c19
-  - enabled: 1
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: 
-    guid: 05a1ab3f8f76b05498f80e6cd30f33c8
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/FINAL STATS SCREEN.unity
     guid: 9e9a264bb6fee9542a72c55ad5c7aa3a
