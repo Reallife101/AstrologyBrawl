@@ -1975,10 +1975,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638218727706300310
+  lastModified: 638218741132792305
   FileSizes:
   - Name: Desktop
-    Value: 7496
+    Value: 7540
   Exists: 1
 --- !u!114 &-419084589831450097
 MonoBehaviour:
@@ -2221,6 +2221,7 @@ MonoBehaviour:
   - {fileID: 2022401058966245245}
   - {fileID: 6636871252955763244}
   - {fileID: -2599419772389147929}
+  - {fileID: 9183477917242721176}
   EditorParameters:
   - {fileID: -5137650889311086173}
   - {fileID: -1934931016338430628}
@@ -2229,7 +2230,7 @@ MonoBehaviour:
   - {fileID: 5699252278564185875}
   StringsBanks:
   - {fileID: -423576715907244823}
-  cacheTime: 638218727706300310
+  cacheTime: 638218741132792305
   cacheVersion: 131601
 --- !u!114 &2013456539417885
 MonoBehaviour:
@@ -3510,10 +3511,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638218727706212724
+  lastModified: 638218741132723936
   FileSizes:
   - Name: Desktop
-    Value: 30451520
+    Value: 32979328
   Exists: 1
 --- !u!114 &5905339629590798651
 MonoBehaviour:
@@ -4399,6 +4400,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &9183477917242721176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Aquarius Stage
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Aquarius Stage
+  Guid:
+    Data1: -511891074
+    Data2: 1212124290
+    Data3: 1132987040
+    Data4: 1996723085
+  Banks:
+  - {fileID: 5699252278564185875}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 184920
 --- !u!114 &9210938443173184042
 MonoBehaviour:
   m_ObjectHideFlags: 0
