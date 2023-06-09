@@ -1403,6 +1403,9 @@ MonoBehaviour:
   - sprite: {fileID: 21300000, guid: e235611412779b3489eee6e95b65cb17, type: 3}
     artName: Style Guideline
     artist: Kiana and Ashley
+  - sprite: {fileID: 21300000, guid: f26482a629b3b654eb53717648c61225, type: 3}
+    artName: Aries Concept Splash
+    artist: Pedro
   - sprite: {fileID: 21300000, guid: ccaf24f29e518dc4a8d391594aad020f, type: 3}
     artName: Broken Sprite Base
     artist: Ocean and Megan
