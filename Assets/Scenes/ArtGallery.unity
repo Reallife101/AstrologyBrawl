@@ -1349,6 +1349,72 @@ MonoBehaviour:
   - sprite: {fileID: 21300000, guid: 369acce6420554760b05b2f0dc39ddbb, type: 3}
     artName: Cancer's Crustacean Confluence Background
     artist: Daniel
+  - sprite: {fileID: 21300000, guid: 0a9ac648b10614563a10fc4be7e505fa, type: 3}
+    artName: Devil Tarot Card
+    artist: Daisy
+  - sprite: {fileID: 21300000, guid: 73135f93c3a792d459056c9f2b7d3303, type: 3}
+    artName: Devil Card Place Holder
+    artist: Cole
+  - sprite: {fileID: 21300000, guid: 408ffecc4ee064e47bd4a163fb6db866, type: 3}
+    artName: Capricorn's Level
+    artist: Daniel
+  - sprite: {fileID: 21300000, guid: 1d30503de6221ee4ea95f62e8a4bac34, type: 3}
+    artName: Leo Sprite
+    artist: Daisy
+  - sprite: {fileID: 21300000, guid: dd2a333248a95bb4a8007b38615d6dbb, type: 3}
+    artName: Aquarius Sketch
+    artist: Mia
+  - sprite: {fileID: 21300000, guid: 5b5d62bc457be744e940aea2e659e421, type: 3}
+    artName: Cancer Pass 3
+    artist: Kris
+  - sprite: {fileID: 21300000, guid: 771c5a33b3a4d9d46bb8cd3805148de7, type: 3}
+    artName: Capricorn Concept
+    artist: Khai
+  - sprite: {fileID: 21300000, guid: cf02d3fba9f4a8243ba0627fb5508279, type: 3}
+    artName: Gemini Concept
+    artist: Ocean
+  - sprite: {fileID: 21300000, guid: 5c0d5c0a479beb946a9c2583f724dfff, type: 3}
+    artName: Gemini Splash
+    artist: Daniel
+  - sprite: {fileID: 21300000, guid: b2de8355812cd9b49a816bc2b3a74150, type: 3}
+    artName: Libra Pass 2
+    artist: Joyce
+  - sprite: {fileID: 21300000, guid: fc255154a3a14c54e88d6d05905fa49a, type: 3}
+    artName: Astral Onslaught
+    artist: Megan
+  - sprite: {fileID: 21300000, guid: 8ce8b37b20174b84ab701107fe4a9a73, type: 3}
+    artName: Pisces Lineup 1
+    artist: Ocean
+  - sprite: {fileID: 21300000, guid: 0ee998d3fbc7cb24cbbe421ec09b2f84, type: 3}
+    artName: Sagittarius Color Lineup 1
+    artist: Kiana
+  - sprite: {fileID: 21300000, guid: a4458f5e10e542745897c034172c15f3, type: 3}
+    artName: Taurus Final 1
+    artist: Gray
+  - sprite: {fileID: 21300000, guid: 2be65dc2aa7f08d41987461361c61662, type: 3}
+    artName: Taurus Pass 2-1
+    artist: Gray
+  - sprite: {fileID: 21300000, guid: fb6ce111577267a40ab5100b478906d2, type: 3}
+    artName: Virgo Pass 3-4
+    artist: Britney
+  - sprite: {fileID: 21300000, guid: 7684f5d890c4efb42982ee125bd14a0f, type: 3}
+    artName: V1.6 Patch Notes
+    artist: Hunter
+  - sprite: {fileID: 21300000, guid: e235611412779b3489eee6e95b65cb17, type: 3}
+    artName: Style Guideline
+    artist: Kiana and Ashley
+  - sprite: {fileID: 21300000, guid: f26482a629b3b654eb53717648c61225, type: 3}
+    artName: Aries Concept Splash
+    artist: Pedro
+  - sprite: {fileID: 21300000, guid: ccaf24f29e518dc4a8d391594aad020f, type: 3}
+    artName: Broken Sprite Base
+    artist: Ocean and Megan
+  - sprite: {fileID: 21300000, guid: 07b6e4c77d3f2d34ebad9007b6b2f0c0, type: 3}
+    artName: Astral Onsalught Draw Pile
+    artist: Everyone
+  - sprite: {fileID: 21300000, guid: 6db6028cf2df8a94a87c326b76033baf, type: 3}
+    artName: Astral Onsalught Z3 Poster
+    artist: Kiana
   artViewImage: {fileID: 483151648}
   description: {fileID: 564765306}
 --- !u!4 &908322065
