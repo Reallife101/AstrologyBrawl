@@ -2786,7 +2786,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -437, y: 67}
-  m_SizeDelta: {x: 725.1188, y: 906.8643}
+  m_SizeDelta: {x: 850, y: 850}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1891702197
 CanvasRenderer:
@@ -2816,7 +2816,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6a728bf64a63b354c8d9d0502395a607, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75847895ecdc7004d85b361686ffc8f2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3048,7 +3048,7 @@ MonoBehaviour:
     leftBolt: {fileID: 21300000, guid: 01f49d89daa99b341ae76e1a381de366, type: 3}
     rightBolt: {fileID: 21300000, guid: 0c02f1f72eb22b949b139532927fde54, type: 3}
     centerBolt: {fileID: -1087366869, guid: 04f5a661fae2fad43be987c2c30a5df6, type: 3}
-  - splashArt: {fileID: 21300000, guid: ccb64bc2f77143a4b9f44c3c284e44a9, type: 3}
+  - splashArt: {fileID: 21300000, guid: 5aa23bccdfd23f44584f5eb844c50e57, type: 3}
     avatarFrame: {fileID: 2107948727, guid: a976d572d68292b43a7df114b3b31586, type: 3}
     leftBolt: {fileID: 21300000, guid: 245e1d974e183bd49838ac9bb68a01a6, type: 3}
     rightBolt: {fileID: 21300000, guid: b4d760ac802b6d048a453905d0ab4f3a, type: 3}
@@ -3068,7 +3068,7 @@ MonoBehaviour:
     leftBolt: {fileID: 21300000, guid: efe5c70118bef504991ce8bf2d412e24, type: 3}
     rightBolt: {fileID: 21300000, guid: 3880fe4eea0075b4a9a7a98a70b1bba6, type: 3}
     centerBolt: {fileID: -108640937, guid: cf1180f260d21764a85f6ebe1228a1d6, type: 3}
-  - splashArt: {fileID: 21300000, guid: 5e9212bde3618e340becff49724daf53, type: 3}
+  - splashArt: {fileID: 21300000, guid: 75847895ecdc7004d85b361686ffc8f2, type: 3}
     avatarFrame: {fileID: -444606453, guid: b78a700afb6392740966a5ef2e61530c, type: 3}
     leftBolt: {fileID: 21300000, guid: 1695563bdd0398e4f9e2a418fb29b200, type: 3}
     rightBolt: {fileID: 21300000, guid: f733b87d29054df46bc51ab1aa3f73a0, type: 3}
@@ -3613,7 +3613,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2144368081
 RectTransform:
   m_ObjectHideFlags: 0
