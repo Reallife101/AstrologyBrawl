@@ -84,6 +84,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 968
+--- !u!114 &-8920296459965418704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn GroundPound
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn GroundPound
+  Guid:
+    Data1: 403828107
+    Data2: 1228274105
+    Data3: -2110872416
+    Data4: -1069981324
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &-8843665288634594391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,10 +152,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638218589076238879
+  lastModified: 638218602521623155
   FileSizes:
   - Name: Desktop
-    Value: 30280800
+    Value: 30365728
   Exists: 1
 --- !u!114 &-8660695241562669192
 MonoBehaviour:
@@ -185,6 +212,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &-8603097172761001234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Virgo (VG)/Virgo Heavy Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Virgo (VG)/Virgo Heavy Attack
+  Guid:
+    Data1: 469820706
+    Data2: 1266553227
+    Data3: 1242640553
+    Data4: 1862659302
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1474
 --- !u!114 &-8589163084881204048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1347,6 +1401,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3500
+--- !u!114 &-4585064184572412187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn spear 2
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn spear 2
+  Guid:
+    Data1: -872434516
+    Data2: 1151191681
+    Data3: 2037100943
+    Data4: 972618601
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
 --- !u!114 &-4573184923053335730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2168,6 +2249,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6000
+--- !u!114 &-3014987022815764430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn spear
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn spear
+  Guid:
+    Data1: 533802810
+    Data2: 1243693032
+    Data3: -906701904
+    Data4: -831920323
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 812
 --- !u!114 &-2940684056635308713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3282,6 +3390,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2125
+--- !u!114 &-57353081013912198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Virgo (VG)/Virgo Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Virgo (VG)/Virgo Attack
+  Guid:
+    Data1: -247246527
+    Data2: 1107207506
+    Data3: -1919763023
+    Data4: -874639183
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 801
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3431,6 +3566,13 @@ MonoBehaviour:
   - {fileID: 3349803584718013991}
   - {fileID: -1258946373283408625}
   - {fileID: -2913774511256961640}
+  - {fileID: -8603097172761001234}
+  - {fileID: -57353081013912198}
+  - {fileID: 3352648982351793910}
+  - {fileID: -3014987022815764430}
+  - {fileID: -8920296459965418704}
+  - {fileID: -4585064184572412187}
+  - {fileID: 5663286052979319240}
   EditorParameters:
   - {fileID: 2614306763600137121}
   - {fileID: -1147675118884633411}
@@ -3439,7 +3581,7 @@ MonoBehaviour:
   - {fileID: -8825898097862115878}
   StringsBanks:
   - {fileID: 541256043051351972}
-  cacheTime: 638218589076320584
+  cacheTime: 638218602521732396
   cacheVersion: 131601
 --- !u!114 &24763104455481919
 MonoBehaviour:
@@ -3612,10 +3754,10 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638218589076320584
+  lastModified: 638218602521732396
   FileSizes:
   - Name: Desktop
-    Value: 7040
+    Value: 7336
   Exists: 1
 --- !u!114 &643631350060576329
 MonoBehaviour:
@@ -4239,6 +4381,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &3352648982351793910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Virgo (VG)/Virgo Pull Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Virgo (VG)/Virgo Pull Attack
+  Guid:
+    Data1: -2050635957
+    Data2: 1321921361
+    Data3: -621096297
+    Data4: 1572796885
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1187
 --- !u!114 &3410103218978256549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5219,6 +5388,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
+--- !u!114 &5663286052979319240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn sLide
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn sLide
+  Guid:
+    Data1: -1264464040
+    Data2: 1179024794
+    Data3: -1763680362
+    Data4: 1918761761
+  Banks:
+  - {fileID: -8825898097862115878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &5740155610265553300
 MonoBehaviour:
   m_ObjectHideFlags: 0

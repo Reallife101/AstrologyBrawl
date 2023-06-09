@@ -720,6 +720,7 @@ MonoBehaviour:
   doubleJumpPower: 50
   airSpeedMultiplier: 0.98
   isGrounded: 0
+  devilReceivedMult: 0.2
   groundedCheckObjectLeft: {fileID: 4887830797730787154}
   groundedCheckObjectRight: {fileID: 8475485967914335248}
   groundLayer:
@@ -873,11 +874,11 @@ MonoBehaviour:
     Path: event:/FastFall
   lightattacksound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -247246527
+      Data2: 1107207506
+      Data3: -1919763023
+      Data4: -874639183
+    Path: event:/Virgo (VG)/Virgo Attack
   heavyattackchargesound:
     Guid:
       Data1: 0
@@ -887,25 +888,25 @@ MonoBehaviour:
     Path: 
   heavyattackreleasesound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 469820706
+      Data2: 1266553227
+      Data3: 1242640553
+      Data4: 1862659302
+    Path: event:/Virgo (VG)/Virgo Heavy Attack
   ability1sound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -2050635957
+      Data2: 1321921361
+      Data3: -621096297
+      Data4: 1572796885
+    Path: event:/Virgo (VG)/Virgo Pull Attack
   ability2sound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 469820706
+      Data2: 1266553227
+      Data3: 1242640553
+      Data4: 1862659302
+    Path: event:/Virgo (VG)/Virgo Heavy Attack
   attackvoice:
     Guid:
       Data1: 757930858

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.73352826, g: 0.41373247, b: 0.43253133, a: 1}
+  m_IndirectSpecularColor: {r: 0.7335317, g: 0.4137323, b: 0.4325305, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2386,7 +2386,6 @@ GameObject:
   - component: {fileID: 1648960237}
   - component: {fileID: 1648960236}
   - component: {fileID: 1648960235}
-  - component: {fileID: 1648960234}
   - component: {fileID: 1648960233}
   m_Layer: 5
   m_Name: In-Game Canvas
@@ -2409,53 +2408,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countdownImages: []
   loadingScreen: {fileID: 730822748}
---- !u!114 &1648960234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1648960232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a7b2807968327e458485612749c6dfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  threeSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  twoSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  oneSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  slaySound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  CountSound:
-    Guid:
-      Data1: 1391915311
-      Data2: 1267270304
-      Data3: 1312401816
-      Data4: 818059262
-    Path: event:/Announcer/321Slay
 --- !u!114 &1648960235
 MonoBehaviour:
   m_ObjectHideFlags: 0
