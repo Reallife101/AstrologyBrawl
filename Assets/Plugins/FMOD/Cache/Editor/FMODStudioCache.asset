@@ -1,0 +1,4428 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9221344371206407609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra CA
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra CA
+  Guid:
+    Data1: 550263908
+    Data2: 1278454510
+    Data3: 1391707055
+    Data4: -1837866644
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2357
+--- !u!114 &-9151186285858106561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: parameter:/Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1839987030
+    data2: 1741563014
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Value A
+  - Value B
+  Exists: 1
+--- !u!114 &-9141439230585313487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra On Select Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra On Select Voice
+  Guid:
+    Data1: 1736800558
+    Data2: 1136807987
+    Data3: -223500928
+    Data4: 1253733636
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-9124223777352834573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Pisces/SettinsShutup
+  m_EditorClassIdentifier: 
+  Name: SettinsShutup
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1966042459
+    data2: 2710536665
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-9119543461528106041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/Saggi Victory Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/Saggi Victory Voice
+  Guid:
+    Data1: 1774902454
+    Data2: 1336048782
+    Data3: 1466027423
+    Data4: -143157867
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &-8726919518614156402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Taurus (TA)/Taurus Iconic
+  m_EditorClassIdentifier: 
+  Path: event:/Taurus (TA)/Taurus Iconic
+  Guid:
+    Data1: -1264396393
+    Data2: 1184133421
+    Data3: -1876062283
+    Data4: 1543031840
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1628
+--- !u!114 &-8695987271669129653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra S2
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra S2
+  Guid:
+    Data1: -1072902884
+    Data2: 1303518384
+    Data3: 1383783859
+    Data4: -449957530
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3500
+--- !u!114 &-8665417548353266815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Devil
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Devil
+  Guid:
+    Data1: 1452373627
+    Data2: 1274321196
+    Data3: -758143848
+    Data4: 988583424
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3812
+--- !u!114 &-8517931851994688156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/AnnouncerTalk
+  m_EditorClassIdentifier: 
+  Name: AnnouncerTalk
+  StudioPath: parameter:/AnnouncerTalk
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 246210629
+    data2: 2095916552
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-8246734859578602788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn spear
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn spear
+  Guid:
+    Data1: 533802810
+    Data2: 1243693032
+    Data3: -906701904
+    Data4: -831920323
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 812
+--- !u!114 &-8246680913521792527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Tarot Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Tarot Voice
+  Guid:
+    Data1: -1570889864
+    Data2: 1314230795
+    Data3: -139076464
+    Data4: 1774606826
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &-8133423167486211385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/(TEMP) Main Menu Theme
+  m_EditorClassIdentifier: 
+  Path: event:/Music/(TEMP) Main Menu Theme
+  Guid:
+    Data1: 1142580733
+    Data2: 1271012895
+    Data3: -280540998
+    Data4: -1317060781
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6679448628112619900}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 168359
+--- !u!114 &-8018470404435404997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Lovers
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Lovers
+  Guid:
+    Data1: 1320660746
+    Data2: 1198000841
+    Data3: -1232029802
+    Data4: 914891046
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2750
+--- !u!114 &-7905212112588621651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius Normal Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius Normal Attack
+  Guid:
+    Data1: -1308181939
+    Data2: 1325887999
+    Data3: 76588210
+    Data4: -1051428563
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 343
+--- !u!114 &-7818871955992539336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Choose
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Choose
+  Guid:
+    Data1: -1466128180
+    Data2: 1150216829
+    Data3: 1208489611
+    Data4: 80150440
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2843
+--- !u!114 &-7815335954504985053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Attack
+  Guid:
+    Data1: 1586669444
+    Data2: 1338643371
+    Data3: -13173116
+    Data4: -81618317
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1009
+--- !u!114 &-7683085308772510819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra SA1
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra SA1
+  Guid:
+    Data1: -1263338582
+    Data2: 1181528799
+    Data3: -1389501528
+    Data4: -1006291035
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1096
+--- !u!114 &-7560544614626707451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Taurus (TA)/Taurus Respawn Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Taurus (TA)/Taurus Respawn Voice
+  Guid:
+    Data1: -1128185588
+    Data2: 1158729100
+    Data3: 1685316263
+    Data4: -997324729
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5395
+--- !u!114 &-7542995145305221351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Extended Battle Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Extended Battle Music
+  Guid:
+    Data1: 1624887216
+    Data2: 1135307506
+    Data3: -1937159763
+    Data4: -2101571560
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 286275
+--- !u!114 &-7539429848744980359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pisces (PC)/Pisces Damage Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Pisces (PC)/Pisces Damage Voice
+  Guid:
+    Data1: -1821374027
+    Data2: 1126954446
+    Data3: -1690275952
+    Data4: -1159239393
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-7530391980265819578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pisces (PC)/Pices Tail Slap
+  m_EditorClassIdentifier: 
+  Path: event:/Pisces (PC)/Pices Tail Slap
+  Guid:
+    Data1: 603489251
+    Data2: 1086727314
+    Data3: -1120550478
+    Data4: 1280202117
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &-7496693105872429033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/SelectUi
+  m_EditorClassIdentifier: 
+  Path: event:/UI/SelectUi
+  Guid:
+    Data1: -1143937807
+    Data2: 1106699243
+    Data3: -788742743
+    Data4: 368500647
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2006
+--- !u!114 &-7425625776166762513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Virgo (VG)/Virgo Respawn Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Virgo (VG)/Virgo Respawn Voice
+  Guid:
+    Data1: 158815844
+    Data2: 1162253572
+    Data3: 1595074994
+    Data4: 309103581
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &-7242310407253759347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Heavy SwordSwings
+  m_EditorClassIdentifier: 
+  Path: event:/Heavy SwordSwings
+  Guid:
+    Data1: -227831648
+    Data2: 1109322166
+    Data3: -1439335233
+    Data4: -965248503
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 908
+--- !u!114 &-7090633304617463582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Virgo (VG)/Virgo On Select Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Virgo (VG)/Virgo On Select Voice
+  Guid:
+    Data1: 701842229
+    Data2: 1136924153
+    Data3: -345367372
+    Data4: 934532357
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5239
+--- !u!114 &-6997041982265621215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra Attacks Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra Attacks Voice
+  Guid:
+    Data1: 1286916329
+    Data2: 1155034682
+    Data3: 329663414
+    Data4: 184893349
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-6789099250951381048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pisces (PC)/Pisces Respawn Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Pisces (PC)/Pisces Respawn Voice
+  Guid:
+    Data1: 1760000380
+    Data2: 1246579140
+    Data3: 1777311412
+    Data4: -2107453122
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-6679448628112619900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/(TEMP) Main Menu Theme/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1839987030
+    data2: 1741563014
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Value A
+  - Value B
+  Exists: 1
+--- !u!114 &-6656582755825531601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/testButton2
+  m_EditorClassIdentifier: 
+  Path: event:/UI/testButton2
+  Guid:
+    Data1: -959727029
+    Data2: 1163183864
+    Data3: -1228987717
+    Data4: -516991635
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3465
+--- !u!114 &-6588017984129756963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/SaggiBowFire
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/SaggiBowFire
+  Guid:
+    Data1: -1909211751
+    Data2: 1136059709
+    Data3: 1884798358
+    Data4: -1317846454
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 678
+--- !u!114 &-6581163798954228791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Mixup Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Mixup Voice
+  Guid:
+    Data1: -1182395876
+    Data2: 1332786687
+    Data3: 2006464920
+    Data4: 977703238
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &-6348091814465911996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius Victory Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius Victory Voice
+  Guid:
+    Data1: 456479730
+    Data2: 1090458802
+    Data3: -235844467
+    Data4: -698786609
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5500
+--- !u!114 &-6295166819495299679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Taurus (TA)/Taurus Tarot Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Taurus (TA)/Taurus Tarot Voice
+  Guid:
+    Data1: -70716702
+    Data2: 1194271846
+    Data3: 1762665647
+    Data4: 1224170781
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2583
+--- !u!114 &-6221757664238189442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn GroundPound
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn GroundPound
+  Guid:
+    Data1: 403828107
+    Data2: 1228274105
+    Data3: -2110872416
+    Data4: -1069981324
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &-5854090123024679003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius Damage Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius Damage Voice
+  Guid:
+    Data1: -485841161
+    Data2: 1255842819
+    Data3: 2129322161
+    Data4: 324557104
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-5532061634135694282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Heavy SwordSwings 2
+  m_EditorClassIdentifier: 
+  Path: event:/Heavy SwordSwings 2
+  Guid:
+    Data1: -641284146
+    Data2: 1209009859
+    Data3: 1437124261
+    Data4: 652925392
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2972
+--- !u!114 &-5432088026060867581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Justice
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Justice
+  Guid:
+    Data1: 390059741
+    Data2: 1229428092
+    Data3: -2058298218
+    Data4: 2059401460
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-5399253473057164338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/2...
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/2...
+  Guid:
+    Data1: -1284115808
+    Data2: 1237778456
+    Data3: 968809397
+    Data4: -589822538
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 756
+--- !u!114 &-5264671459700341784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Capricorn/SettinsShutup
+  m_EditorClassIdentifier: 
+  Name: SettinsShutup
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1966042459
+    data2: 2710536665
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-5232013411193206056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TakingDamage
+  m_EditorClassIdentifier: 
+  Path: event:/TakingDamage
+  Guid:
+    Data1: -219124643
+    Data2: 1241243363
+    Data3: 529385401
+    Data4: -1657758984
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 176
+--- !u!114 &-5226680127881512698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/SaggiBowCharge
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/SaggiBowCharge
+  Guid:
+    Data1: 1408123473
+    Data2: 1306814630
+    Data3: -1246489950
+    Data4: 412728660
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1750
+--- !u!114 &-5212683168638102427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn Victory Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn Victory Voice
+  Guid:
+    Data1: 869527300
+    Data2: 1159464525
+    Data3: 1063042962
+    Data4: 1367324466
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-5113415818877585689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer On Select Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer On Select Voice
+  Guid:
+    Data1: 1941250987
+    Data2: 1139303114
+    Data3: 1153192324
+    Data4: -1014409011
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &-5046522521864132021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/321Slay
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/321Slay
+  Guid:
+    Data1: 1391915311
+    Data2: 1267270304
+    Data3: 1312401816
+    Data4: 818059262
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3812
+--- !u!114 &-5035235549804485418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODAssets/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638218643577744867
+  FileSizes:
+  - Name: Desktop
+    Value: 7496
+  Exists: 1
+--- !u!114 &-5011704282934105407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Virgo/SettinsShutup
+  m_EditorClassIdentifier: 
+  Name: SettinsShutup
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1966042459
+    data2: 2710536665
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-4676566055401958381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/Saggi Respawn Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/Saggi Respawn Voice
+  Guid:
+    Data1: 555938934
+    Data2: 1277800912
+    Data3: -125166946
+    Data4: -1575502301
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &-4483325929015450091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius Wave Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius Wave Attack
+  Guid:
+    Data1: 1739857195
+    Data2: 1269515713
+    Data3: -1077149509
+    Data4: 1707959568
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1613
+--- !u!114 &-4217274608366818196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Victory
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Victory
+  Guid:
+    Data1: -984106899
+    Data2: 1126282685
+    Data3: -426437502
+    Data4: 95791802
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-4144073000908032080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Shield
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Shield
+  Guid:
+    Data1: -1261290147
+    Data2: 1231724638
+    Data3: 1919622330
+    Data4: -1974474101
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4117
+--- !u!114 &-4136217770321156464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Main Menu
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Main Menu
+  Guid:
+    Data1: 1348328034
+    Data2: 1317507737
+    Data3: -1685221969
+    Data4: -897854348
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1861925409127648131}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 171557
+--- !u!114 &-3993467044020265360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra iconic Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra iconic Voice
+  Guid:
+    Data1: 1233175572
+    Data2: 1223296014
+    Data3: 634649991
+    Data4: 1147410623
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-3857984716026526932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SettinsShutup
+  m_EditorClassIdentifier: 
+  Name: SettinsShutup
+  StudioPath: parameter:/SettinsShutup
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1966042459
+    data2: 2710536665
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-3695729057743173923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/Saggi Damage Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/Saggi Damage Voice
+  Guid:
+    Data1: -2030486782
+    Data2: 1089755701
+    Data3: 2115461765
+    Data4: -905774924
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1050
+--- !u!114 &-3607245726830753550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Light SwordSwings
+  m_EditorClassIdentifier: 
+  Path: event:/Light SwordSwings
+  Guid:
+    Data1: 1994990593
+    Data2: 1234174971
+    Data3: 140431260
+    Data4: -1452225945
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 414
+--- !u!114 &-3530164792012233298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Capricorn
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Capricorn
+  Guid:
+    Data1: 583838856
+    Data2: 1285570630
+    Data3: 980489370
+    Data4: -906983756
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -5264671459700341784}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1750
+--- !u!114 &-3434957689391451688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Damage Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Damage Voice
+  Guid:
+    Data1: 168782868
+    Data2: 1332589055
+    Data3: 3072182
+    Data4: 1578027079
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &-3254079414210436418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Virgo (VG)/Virgo Victory Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Virgo (VG)/Virgo Victory Voice
+  Guid:
+    Data1: -934324909
+    Data2: 1308239632
+    Data3: 251439264
+    Data4: -778367763
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
+--- !u!114 &-2702397761759594281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Saggi/SettinsShutup
+  m_EditorClassIdentifier: 
+  Name: SettinsShutup
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1966042459
+    data2: 2710536665
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-2572398081697558132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/impact1 2
+  m_EditorClassIdentifier: 
+  Path: event:/UI/impact1 2
+  Guid:
+    Data1: 845027891
+    Data2: 1224739031
+    Data3: 164497049
+    Data4: 394414120
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4796
+--- !u!114 &-2572330604553908350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius Walk
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius Walk
+  Guid:
+    Data1: -1777302120
+    Data2: 1268280268
+    Data3: 1573820297
+    Data4: 596767288
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 851
+--- !u!114 &-2483299114128756599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/SaggiFireBow
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/SaggiFireBow
+  Guid:
+    Data1: 454824940
+    Data2: 1115747325
+    Data3: 510496912
+    Data4: -1707087921
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 917
+--- !u!114 &-2465346127777463717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra Tarot Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra Tarot Voice
+  Guid:
+    Data1: -1869179965
+    Data2: 1256437658
+    Data3: -2033737287
+    Data4: -1090205975
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-2339031695458195717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius Vase Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius Vase Attack
+  Guid:
+    Data1: 506358718
+    Data2: 1100125026
+    Data3: 464510604
+    Data4: 1987611476
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1497
+--- !u!114 &-2291453070264265771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius Heavy Attack Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius Heavy Attack Voice
+  Guid:
+    Data1: 1352868210
+    Data2: 1264241035
+    Data3: -1146706513
+    Data4: -1921092142
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-2279384179434535783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Taurus (TA)/Taurus Attack Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Taurus (TA)/Taurus Attack Voice
+  Guid:
+    Data1: -646277690
+    Data2: 1238080918
+    Data3: 564997270
+    Data4: -1126912555
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-2192753907212476361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Virgo (VG)/Virgo Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Virgo (VG)/Virgo Attack
+  Guid:
+    Data1: -247246527
+    Data2: 1107207506
+    Data3: -1919763023
+    Data4: -874639183
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 801
+--- !u!114 &-2087500133989833914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/BurntOut
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/BurntOut
+  Guid:
+    Data1: -952488486
+    Data2: 1300653006
+    Data3: 1302476731
+    Data4: -347987142
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1406
+--- !u!114 &-2051935278197161114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/Saggi On Select Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/Saggi On Select Voice
+  Guid:
+    Data1: 1017163237
+    Data2: 1183297019
+    Data3: 964185256
+    Data4: 376819974
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &-2039544836900635439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Ca Iconic Flight Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Ca Iconic Flight Voice
+  Guid:
+    Data1: -1536262662
+    Data2: 1339542559
+    Data3: 1672892590
+    Data4: 1956204553
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-1985054156567251197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Libra
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Libra
+  Guid:
+    Data1: 1966995081
+    Data2: 1243814356
+    Data3: 1885168060
+    Data4: 268375705
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 7427636306984672942}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-1984969030602935752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Fool
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Fool
+  Guid:
+    Data1: -1567433552
+    Data2: 1164271591
+    Data3: -654593106
+    Data4: -1507531412
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3343
+--- !u!114 &-1861925409127648131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Main Menu/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1839987030
+    data2: 1741563014
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Value A
+  - Value B
+  Exists: 1
+--- !u!114 &-1717191729997093109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn spear 2
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn spear 2
+  Guid:
+    Data1: -872434516
+    Data2: 1151191681
+    Data3: 2037100943
+    Data4: 972618601
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
+--- !u!114 &-1531774409693124127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Taurus (TA)/Taurus Victory Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Taurus (TA)/Taurus Victory Voice
+  Guid:
+    Data1: 369510289
+    Data2: 1103415948
+    Data3: -1722925409
+    Data4: 658872387
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-1258010367388964500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Aquarius/SettinsShutup
+  m_EditorClassIdentifier: 
+  Name: SettinsShutup
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1966042459
+    data2: 2710536665
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-1025484824813820892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Taurus (TA)/Taurus Damage Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Taurus (TA)/Taurus Damage Voice
+  Guid:
+    Data1: 1451593343
+    Data2: 1120576169
+    Data3: -160908914
+    Data4: 8208989
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-879019698321348093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn On Select Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn On Select Voice
+  Guid:
+    Data1: 1215762150
+    Data2: 1266104455
+    Data3: -648354652
+    Data4: -236143736
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-692882607561091303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODAssets/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638218643577652316
+  FileSizes:
+  - Name: Desktop
+    Value: 30451520
+  Exists: 1
+--- !u!114 &-684960066789451459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Heavy 2
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Heavy 2
+  Guid:
+    Data1: -430308003
+    Data2: 1306152499
+    Data3: -1594798707
+    Data4: 1152901815
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 964
+--- !u!114 &-680693294861148863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pisces (PC)/Pisces On Select Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Pisces (PC)/Pisces On Select Voice
+  Guid:
+    Data1: 1246567183
+    Data2: 1320177063
+    Data3: 1323264156
+    Data4: -987561253
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-624186544505505629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius Respawn Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius Respawn Voice
+  Guid:
+    Data1: -2117587430
+    Data2: 1079830965
+    Data3: -1895601235
+    Data4: -1750622745
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3500
+--- !u!114 &-566795038985800463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Attack Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Attack Voice
+  Guid:
+    Data1: 1053056811
+    Data2: 1099185330
+    Data3: -1836245877
+    Data4: -887069370
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &-257960220451068154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pisces (PC)/Pisces Victory Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Pisces (PC)/Pisces Victory Voice
+  Guid:
+    Data1: -1999153862
+    Data2: 1123723950
+    Data3: 1572176054
+    Data4: 500519764
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &-98141034308737862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pisces (PC)/Pisces Tarot Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Pisces (PC)/Pisces Tarot Voice
+  Guid:
+    Data1: -1638285325
+    Data2: 1175684692
+    Data3: -1507220337
+    Data4: -140887778
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-97887997589999680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra Victory Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra Victory Voice
+  Guid:
+    Data1: -1288913440
+    Data2: 1141206271
+    Data3: 1439633814
+    Data4: -499938434
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-35927643124346101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra Damage Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra Damage Voice
+  Guid:
+    Data1: -2072789013
+    Data2: 1322515083
+    Data3: 1025153712
+    Data4: 2054601307
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -5035235549804485418}
+  - {fileID: -692882607561091303}
+  EditorEvents:
+  - {fileID: -3607245726830753550}
+  - {fileID: -3695729057743173923}
+  - {fileID: 267468860947180679}
+  - {fileID: -5212683168638102427}
+  - {fileID: -8018470404435404997}
+  - {fileID: -7560544614626707451}
+  - {fileID: -680693294861148863}
+  - {fileID: 8960192796336870816}
+  - {fileID: 2461536988553090875}
+  - {fileID: -3434957689391451688}
+  - {fileID: -3993467044020265360}
+  - {fileID: 5272587173177160482}
+  - {fileID: 8200659110951881998}
+  - {fileID: 7910089105047610741}
+  - {fileID: -624186544505505629}
+  - {fileID: -6581163798954228791}
+  - {fileID: -8695987271669129653}
+  - {fileID: 1821891211745646704}
+  - {fileID: 516864457881115507}
+  - {fileID: 2406209640295720418}
+  - {fileID: 1355629717475218132}
+  - {fileID: -4483325929015450091}
+  - {fileID: -566795038985800463}
+  - {fileID: -9141439230585313487}
+  - {fileID: -5046522521864132021}
+  - {fileID: -2572398081697558132}
+  - {fileID: 6842650374406087789}
+  - {fileID: -7090633304617463582}
+  - {fileID: -8246734859578602788}
+  - {fileID: -257960220451068154}
+  - {fileID: 5895930321417949534}
+  - {fileID: 4142523614485779604}
+  - {fileID: 7841821264498398465}
+  - {fileID: -2192753907212476361}
+  - {fileID: 1463965149270342709}
+  - {fileID: 179891320838627899}
+  - {fileID: 4819083635581434684}
+  - {fileID: -6656582755825531601}
+  - {fileID: 5679778433543454010}
+  - {fileID: -7905212112588621651}
+  - {fileID: 8577349745525217282}
+  - {fileID: -5226680127881512698}
+  - {fileID: -3254079414210436418}
+  - {fileID: 5229162380600432036}
+  - {fileID: 4870481497050992181}
+  - {fileID: 2353189136129293810}
+  - {fileID: -5232013411193206056}
+  - {fileID: 4887971141774148353}
+  - {fileID: -4136217770321156464}
+  - {fileID: -7425625776166762513}
+  - {fileID: -9221344371206407609}
+  - {fileID: 1815761730182713630}
+  - {fileID: 5054157042464753422}
+  - {fileID: 6699648927093769897}
+  - {fileID: 4024113676666752594}
+  - {fileID: 6483740573132880576}
+  - {fileID: -4217274608366818196}
+  - {fileID: -2291453070264265771}
+  - {fileID: 8255037904814055538}
+  - {fileID: 8143705782841533848}
+  - {fileID: -4676566055401958381}
+  - {fileID: -8246680913521792527}
+  - {fileID: -8665417548353266815}
+  - {fileID: -6789099250951381048}
+  - {fileID: -1025484824813820892}
+  - {fileID: 7328366877366769259}
+  - {fileID: 5230296372605932167}
+  - {fileID: 6814341840497253772}
+  - {fileID: -3530164792012233298}
+  - {fileID: -1985054156567251197}
+  - {fileID: -6221757664238189442}
+  - {fileID: 6467997987398859746}
+  - {fileID: 3863284922086128652}
+  - {fileID: 5289959387891317757}
+  - {fileID: -1531774409693124127}
+  - {fileID: 1038203046046046146}
+  - {fileID: 7783320598905589524}
+  - {fileID: -8726919518614156402}
+  - {fileID: 2798731816938113752}
+  - {fileID: -2572330604553908350}
+  - {fileID: 763009092691467243}
+  - {fileID: -6588017984129756963}
+  - {fileID: -7242310407253759347}
+  - {fileID: 5283736811929221782}
+  - {fileID: -5399253473057164338}
+  - {fileID: 45402059008682195}
+  - {fileID: 6348033808933872071}
+  - {fileID: 4911452153476711583}
+  - {fileID: 8343802282818910764}
+  - {fileID: -7683085308772510819}
+  - {fileID: -5113415818877585689}
+  - {fileID: 7832134922159235246}
+  - {fileID: -1717191729997093109}
+  - {fileID: -7542995145305221351}
+  - {fileID: -1984969030602935752}
+  - {fileID: 6352467088865324341}
+  - {fileID: 8235112269499183796}
+  - {fileID: -7539429848744980359}
+  - {fileID: 5163636389456907172}
+  - {fileID: 8560768483528255733}
+  - {fileID: -9119543461528106041}
+  - {fileID: 4443231377112067539}
+  - {fileID: 1882490853129603506}
+  - {fileID: 592867189245284397}
+  - {fileID: 6683635517186909473}
+  - {fileID: -2339031695458195717}
+  - {fileID: 7524119619288880022}
+  - {fileID: 7231670499075931959}
+  - {fileID: 3725783412148710894}
+  - {fileID: -2465346127777463717}
+  - {fileID: 7601688080225798771}
+  - {fileID: -2279384179434535783}
+  - {fileID: 6970435321451806773}
+  - {fileID: 8621566818046324237}
+  - {fileID: -7818871955992539336}
+  - {fileID: 4445689128064839857}
+  - {fileID: -5532061634135694282}
+  - {fileID: 3450651887906987503}
+  - {fileID: 303631010441949159}
+  - {fileID: -2087500133989833914}
+  - {fileID: -5432088026060867581}
+  - {fileID: 7937183134530568839}
+  - {fileID: -97887997589999680}
+  - {fileID: -6295166819495299679}
+  - {fileID: -7530391980265819578}
+  - {fileID: 5593305507630151327}
+  - {fileID: -2051935278197161114}
+  - {fileID: -879019698321348093}
+  - {fileID: -6997041982265621215}
+  - {fileID: -35927643124346101}
+  - {fileID: -2483299114128756599}
+  - {fileID: 1524825308166726930}
+  - {fileID: 3831924532758255092}
+  - {fileID: -7496693105872429033}
+  - {fileID: -6348091814465911996}
+  - {fileID: -98141034308737862}
+  - {fileID: -5854090123024679003}
+  - {fileID: 4885457039069301734}
+  - {fileID: -2039544836900635439}
+  - {fileID: -8133423167486211385}
+  - {fileID: 5591096626211135590}
+  - {fileID: -4144073000908032080}
+  - {fileID: -7815335954504985053}
+  - {fileID: -684960066789451459}
+  EditorParameters:
+  - {fileID: -9151186285858106561}
+  - {fileID: -8517931851994688156}
+  - {fileID: -3857984716026526932}
+  MasterBanks:
+  - {fileID: -692882607561091303}
+  StringsBanks:
+  - {fileID: -5035235549804485418}
+  cacheTime: 638218643577744867
+  cacheVersion: 131601
+--- !u!114 &45402059008682195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Islands
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Islands
+  Guid:
+    Data1: 775248801
+    Data2: 1219035378
+    Data3: -772691830
+    Data4: 1562494399
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 252813
+--- !u!114 &179891320838627899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius On Select Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius On Select Voice
+  Guid:
+    Data1: -1417328316
+    Data2: 1286537512
+    Data3: -1788898155
+    Data4: -1801022742
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4666
+--- !u!114 &267468860947180679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Celestial Clash Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Celestial Clash Music
+  Guid:
+    Data1: -170502654
+    Data2: 1194449377
+    Data3: -1662100302
+    Data4: 1318313397
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 186000
+--- !u!114 &303631010441949159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/1...
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/1...
+  Guid:
+    Data1: 1264240086
+    Data2: 1105528390
+    Data3: -274889600
+    Data4: 1278233302
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 756
+--- !u!114 &516864457881115507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/Saggi Attack Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/Saggi Attack Voice
+  Guid:
+    Data1: -83795675
+    Data2: 1097390913
+    Data3: -1935988089
+    Data4: -1291071886
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &592867189245284397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FastFall
+  m_EditorClassIdentifier: 
+  Path: event:/FastFall
+  Guid:
+    Data1: 544284601
+    Data2: 1228386974
+    Data3: 311565232
+    Data4: 1173628407
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &763009092691467243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius Attack Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius Attack Voice
+  Guid:
+    Data1: -481707879
+    Data2: 1249790805
+    Data3: -2077059689
+    Data4: 1278829412
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &1038203046046046146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra NA
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra NA
+  Guid:
+    Data1: 1137302417
+    Data2: 1266483039
+    Data3: -1526947184
+    Data4: 788834218
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2125
+--- !u!114 &1355629717475218132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Hermit
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Hermit
+  Guid:
+    Data1: -1889848023
+    Data2: 1300722442
+    Data3: 288359859
+    Data4: 670545370
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2843
+--- !u!114 &1463965149270342709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Victoriy Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Victoriy Voice
+  Guid:
+    Data1: -885532861
+    Data2: 1239496301
+    Data3: -1371122519
+    Data4: 927858830
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &1524825308166726930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Keystrokes
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Keystrokes
+  Guid:
+    Data1: -1115074577
+    Data2: 1119489144
+    Data3: -301214804
+    Data4: 1877555012
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 78
+--- !u!114 &1815761730182713630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius Title Wave Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius Title Wave Voice
+  Guid:
+    Data1: -84534936
+    Data2: 1292811821
+    Data3: -1235877487
+    Data4: -1420845508
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &1821891211745646704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Virgo (VG)/Virgo Heavy Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Virgo (VG)/Virgo Heavy Attack
+  Guid:
+    Data1: 469820706
+    Data2: 1266553227
+    Data3: 1242640553
+    Data4: 1862659302
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1474
+--- !u!114 &1882490853129603506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/3...
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/3...
+  Guid:
+    Data1: 1747877047
+    Data2: 1340037773
+    Data3: 868667575
+    Data4: 108451491
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 756
+--- !u!114 &2353189136129293810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/More Guitars
+  m_EditorClassIdentifier: 
+  Path: event:/Music/More Guitars
+  Guid:
+    Data1: 1463931739
+    Data2: 1253229809
+    Data3: -907661944
+    Data4: -552830706
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 103680
+--- !u!114 &2406209640295720418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UnselectUi
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UnselectUi
+  Guid:
+    Data1: -1759689433
+    Data2: 1233711861
+    Data3: -609466955
+    Data4: -1558573176
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2006
+--- !u!114 &2461536988553090875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Slay
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Slay
+  Guid:
+    Data1: 1030979091
+    Data2: 1282668029
+    Data3: 1355236771
+    Data4: 733032710
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 756
+--- !u!114 &2798731816938113752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/impact1.1
+  m_EditorClassIdentifier: 
+  Path: event:/UI/impact1.1
+  Guid:
+    Data1: 2026312088
+    Data2: 1176558599
+    Data3: -366173249
+    Data4: 570158571
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 659
+--- !u!114 &2903253542763925840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Taurus/SettinsShutup
+  m_EditorClassIdentifier: 
+  Name: SettinsShutup
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1966042459
+    data2: 2710536665
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &3450651887906987503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Virgo (VG)/Virgo Damage Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Virgo (VG)/Virgo Damage Voice
+  Guid:
+    Data1: 1205598160
+    Data2: 1246793452
+    Data3: -131819852
+    Data4: 459491209
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &3725783412148710894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Astral Onslaught Voices/Title Screen
+  m_EditorClassIdentifier: 
+  Path: event:/Astral Onslaught Voices/Title Screen
+  Guid:
+    Data1: 1982136256
+    Data2: 1341669898
+    Data3: 1135499949
+    Data4: 587341009
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9578
+--- !u!114 &3831924532758255092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Magician
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Magician
+  Guid:
+    Data1: 1047448305
+    Data2: 1266051591
+    Data3: -1086944868
+    Data4: 306392912
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2562
+--- !u!114 &3863284922086128652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/WalB
+  m_EditorClassIdentifier: 
+  Path: event:/Music/WalB
+  Guid:
+    Data1: 2007828365
+    Data2: 1228640462
+    Data3: 1446049696
+    Data4: -964102593
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 111624
+--- !u!114 &3884760919142356179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Cancer/SettinsShutup
+  m_EditorClassIdentifier: 
+  Name: SettinsShutup
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1966042459
+    data2: 2710536665
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &4024113676666752594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/NeutralUi
+  m_EditorClassIdentifier: 
+  Path: event:/UI/NeutralUi
+  Guid:
+    Data1: -427644310
+    Data2: 1108868445
+    Data3: 189116075
+    Data4: 1197443566
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2502
+--- !u!114 &4142523614485779604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Cancer
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Cancer
+  Guid:
+    Data1: 1365889855
+    Data2: 1125739926
+    Data3: -1103859317
+    Data4: -1547910583
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 3884760919142356179}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1668
+--- !u!114 &4443231377112067539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GenericDeath
+  m_EditorClassIdentifier: 
+  Path: event:/GenericDeath
+  Guid:
+    Data1: 1755445942
+    Data2: 1245857384
+    Data3: 435654846
+    Data4: -1281782737
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &4445689128064839857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Jumps
+  m_EditorClassIdentifier: 
+  Path: event:/Jumps
+  Guid:
+    Data1: 1540495566
+    Data2: 1121154774
+    Data3: -1102698050
+    Data4: 623309370
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 218
+--- !u!114 &4819083635581434684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pisces (PC)/Pisces Fish Swim
+  m_EditorClassIdentifier: 
+  Path: event:/Pisces (PC)/Pisces Fish Swim
+  Guid:
+    Data1: -984400570
+    Data2: 1303075193
+    Data3: -721394765
+    Data4: 303674936
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &4870481497050992181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Respawn Vocie
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Respawn Vocie
+  Guid:
+    Data1: -1868262821
+    Data2: 1187679142
+    Data3: 259861381
+    Data4: -2009190084
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &4885457039069301734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pisces (PC)/Pisces Fishing Rod Whip
+  m_EditorClassIdentifier: 
+  Path: event:/Pisces (PC)/Pisces Fishing Rod Whip
+  Guid:
+    Data1: -907009542
+    Data2: 1218695768
+    Data3: 2141669307
+    Data4: 1654560629
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &4887971141774148353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra Respawn Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra Respawn Voice
+  Guid:
+    Data1: -850475170
+    Data2: 1309601399
+    Data3: -1832606315
+    Data4: -45864446
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9000
+--- !u!114 &4911452153476711583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/BussInPoots
+  m_EditorClassIdentifier: 
+  Path: event:/Music/BussInPoots
+  Guid:
+    Data1: 1349669798
+    Data2: 1093663179
+    Data3: -1827256953
+    Data4: -429874171
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145037
+--- !u!114 &5054157042464753422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Virgo (VG)/Virgo Attack Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Virgo (VG)/Virgo Attack Voice
+  Guid:
+    Data1: 757930858
+    Data2: 1098152757
+    Data3: 397945496
+    Data4: -709250645
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 875
+--- !u!114 &5163636389456907172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/loading screen
+  m_EditorClassIdentifier: 
+  Path: event:/Music/loading screen
+  Guid:
+    Data1: 714408118
+    Data2: 1193095025
+    Data3: 547371402
+    Data4: 317877398
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 20000
+--- !u!114 &5229162380600432036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn sLide
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn sLide
+  Guid:
+    Data1: -1264464040
+    Data2: 1179024794
+    Data3: -1763680362
+    Data4: 1918761761
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &5230296372605932167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Walkies
+  m_EditorClassIdentifier: 
+  Path: event:/Walkies
+  Guid:
+    Data1: -1490557312
+    Data2: 1307136215
+    Data3: 1436951690
+    Data4: 2095233066
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &5272587173177160482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Pisces
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Pisces
+  Guid:
+    Data1: -601522667
+    Data2: 1308830846
+    Data3: -779053638
+    Data4: 1182578633
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -9124223777352834573}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1156
+--- !u!114 &5283736811929221782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius Tarot Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius Tarot Voice
+  Guid:
+    Data1: 919638432
+    Data2: 1097824862
+    Data3: -715757421
+    Data4: -286641755
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &5289959387891317757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Virgo
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Virgo
+  Guid:
+    Data1: -1223665776
+    Data2: 1214094676
+    Data3: -1164788036
+    Data4: -595582908
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -5011704282934105407}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 968
+--- !u!114 &5591096626211135590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Charge
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Charge
+  Guid:
+    Data1: -1517887447
+    Data2: 1098368656
+    Data3: -2105465685
+    Data4: 1065794497
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1053
+--- !u!114 &5593305507630151327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn Respawn Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn Respawn Voice
+  Guid:
+    Data1: -573473308
+    Data2: 1153302262
+    Data3: -470959231
+    Data4: 1083486024
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &5679778433543454010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Virgo (VG)/Virgo Pull Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Virgo (VG)/Virgo Pull Attack
+  Guid:
+    Data1: -2050635957
+    Data2: 1321921361
+    Data3: -621096297
+    Data4: 1572796885
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1187
+--- !u!114 &5895930321417949534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra Walk
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra Walk
+  Guid:
+    Data1: -636072389
+    Data2: 1295834086
+    Data3: 567446449
+    Data4: -729169108
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &6348033808933872071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra Ability 1 Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra Ability 1 Voice
+  Guid:
+    Data1: 1158769573
+    Data2: 1119763798
+    Data3: -677033027
+    Data4: 1861507773
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &6352467088865324341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Taurus (TA)/Taurus On Select Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Taurus (TA)/Taurus On Select Voice
+  Guid:
+    Data1: -1789533263
+    Data2: 1231328807
+    Data3: 313492112
+    Data4: -1916934584
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &6467997987398859746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Ca Iconic Heal Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Ca Iconic Heal Voice
+  Guid:
+    Data1: -421097076
+    Data2: 1254744464
+    Data3: -1337350759
+    Data4: -2053918514
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &6483740573132880576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/impact1
+  m_EditorClassIdentifier: 
+  Path: event:/UI/impact1
+  Guid:
+    Data1: 1775074155
+    Data2: 1317908135
+    Data3: -1313859696
+    Data4: -686544165
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 585
+--- !u!114 &6683635517186909473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/testButton1
+  m_EditorClassIdentifier: 
+  Path: event:/UI/testButton1
+  Guid:
+    Data1: 286607804
+    Data2: 1136816583
+    Data3: -1156528714
+    Data4: 1321550430
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5615
+--- !u!114 &6699648927093769897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Ca Iconic Stregnth Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Ca Iconic Stregnth Voice
+  Guid:
+    Data1: 314669930
+    Data2: 1274650585
+    Data3: -2076143447
+    Data4: 1456430890
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &6814341840497253772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius Walk 2
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius Walk 2
+  Guid:
+    Data1: 593363077
+    Data2: 1322629316
+    Data3: 1190805427
+    Data4: 936428293
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 851
+--- !u!114 &6842650374406087789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius Splash Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius Splash Attack
+  Guid:
+    Data1: -359362508
+    Data2: 1291022204
+    Data3: 1480557459
+    Data4: 1468188696
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 921
+--- !u!114 &6970435321451806773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/titleUi
+  m_EditorClassIdentifier: 
+  Path: event:/UI/titleUi
+  Guid:
+    Data1: -926631733
+    Data2: 1145537893
+    Data3: -910011212
+    Data4: -1022674830
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1933
+--- !u!114 &7231670499075931959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Libra (L)/Libra Charge Attacks Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Libra (L)/Libra Charge Attacks Voice
+  Guid:
+    Data1: -228327233
+    Data2: 1172903531
+    Data3: 1968146111
+    Data4: -1102220653
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2360
+--- !u!114 &7328366877366769259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Iconic Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Iconic Voice
+  Guid:
+    Data1: 300873087
+    Data2: 1109629256
+    Data3: 240547753
+    Data4: -182290035
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &7427636306984672942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Libra/AnnouncerTalk
+  m_EditorClassIdentifier: 
+  Name: AnnouncerTalk
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 246210629
+    data2: 2095916552
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &7524119619288880022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Saggi
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Saggi
+  Guid:
+    Data1: 931241406
+    Data2: 1141793210
+    Data3: 1221785473
+    Data4: 804555774
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2702397761759594281}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2199
+--- !u!114 &7601688080225798771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius Wall
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius Wall
+  Guid:
+    Data1: 1881940677
+    Data2: 1319905562
+    Data3: -138741613
+    Data4: 28729500
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2925
+--- !u!114 &7783320598905589524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn Tarot Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn Tarot Voice
+  Guid:
+    Data1: 475510162
+    Data2: 1164902112
+    Data3: 1572658073
+    Data4: 847365052
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &7832134922159235246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Aquarius
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Aquarius
+  Guid:
+    Data1: -1178742357
+    Data2: 1189879377
+    Data3: 1907597457
+    Data4: 1737288912
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -1258010367388964500}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2363
+--- !u!114 &7841821264498398465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Aquarius (AQ)/Aquarius Bubble Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Aquarius (AQ)/Aquarius Bubble Attack
+  Guid:
+    Data1: -551030720
+    Data2: 1108651669
+    Data3: -148578409
+    Data4: -1556125262
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2304
+--- !u!114 &7910089105047610741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pisces (PC)/Pisces Atack Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Pisces (PC)/Pisces Atack Voice
+  Guid:
+    Data1: -2108402408
+    Data2: 1244025572
+    Data3: -1962647923
+    Data4: 237502819
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &7937183134530568839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/Saggi Tarot Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/Saggi Tarot Voice
+  Guid:
+    Data1: -977327650
+    Data2: 1274103921
+    Data3: 77830840
+    Data4: 1009688033
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &8143705782841533848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Light PunchesKicks
+  m_EditorClassIdentifier: 
+  Path: event:/Light PunchesKicks
+  Guid:
+    Data1: -357560460
+    Data2: 1289921883
+    Data3: 1160808085
+    Data4: 405861565
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &8200659110951881998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cancer (CN)/Cancer Heavy Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Cancer (CN)/Cancer Heavy Voice
+  Guid:
+    Data1: 766190359
+    Data2: 1300111511
+    Data3: 2081173430
+    Data4: -450985090
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5150
+--- !u!114 &8235112269499183796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn Iconic Charge Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn Iconic Charge Voice
+  Guid:
+    Data1: -977189454
+    Data2: 1326562620
+    Data3: 777324983
+    Data4: 1231829924
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &8255037904814055538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Announcer/Taurus
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Taurus
+  Guid:
+    Data1: -1436120717
+    Data2: 1155067785
+    Data3: 621703311
+    Data4: -1751653803
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 2903253542763925840}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &8343802282818910764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn Attack Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn Attack Voice
+  Guid:
+    Data1: -1104027222
+    Data2: 1239861685
+    Data3: -1277083735
+    Data4: 1680414283
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &8560768483528255733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Saggi (SG)/SaggiKick
+  m_EditorClassIdentifier: 
+  Path: event:/Saggi (SG)/SaggiKick
+  Guid:
+    Data1: 724042934
+    Data2: 1093022575
+    Data3: 1691782027
+    Data4: 1085473424
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &8577349745525217282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Capricorn Damage Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Capricorn Damage Voice
+  Guid:
+    Data1: -1387075763
+    Data2: 1239139020
+    Data3: 1835469218
+    Data4: -1725844810
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &8621566818046324237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Virgo (VG)/Virgo Tarot Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Virgo (VG)/Virgo Tarot Voice
+  Guid:
+    Data1: -1538146869
+    Data2: 1287121998
+    Data3: 1697489289
+    Data4: 293667316
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &8960192796336870816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Capricorn (CA)/Ca Iconic Speed Voice
+  m_EditorClassIdentifier: 
+  Path: event:/Capricorn (CA)/Ca Iconic Speed Voice
+  Guid:
+    Data1: -1260922609
+    Data2: 1276491315
+    Data3: 2046406047
+    Data4: -225144026
+  Banks:
+  - {fileID: -692882607561091303}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000

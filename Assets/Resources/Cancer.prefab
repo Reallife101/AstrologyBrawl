@@ -654,11 +654,11 @@ MonoBehaviour:
     Path: event:/FastFall
   lightattacksound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1586669444
+      Data2: 1338643371
+      Data3: -13173116
+      Data4: -81618317
+    Path: event:/Cancer (CN)/Cancer Attack
   heavyattackchargesound:
     Guid:
       Data1: 0
@@ -668,25 +668,25 @@ MonoBehaviour:
     Path: 
   heavyattackreleasesound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1517887447
+      Data2: 1098368656
+      Data3: -2105465685
+      Data4: 1065794497
+    Path: event:/Cancer (CN)/Cancer Charge
   ability1sound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -430308003
+      Data2: 1306152499
+      Data3: -1594798707
+      Data4: 1152901815
+    Path: event:/Cancer (CN)/Cancer Heavy 2
   ability2sound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1261290147
+      Data2: 1231724638
+      Data3: 1919622330
+      Data4: -1974474101
+    Path: event:/Cancer (CN)/Cancer Shield
   attackvoice:
     Guid:
       Data1: 1053056811
