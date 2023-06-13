@@ -970,7 +970,7 @@ MonoBehaviour:
   m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 14
-  m_CharacterLimit: 8
+  m_CharacterLimit: 12
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls: []
@@ -2724,6 +2724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usernameInput: {fileID: 433567073}
   buttonText: {fileID: 211180617}
+  uiAudio: {fileID: 0}
 --- !u!4 &1308639852
 Transform:
   m_ObjectHideFlags: 0
